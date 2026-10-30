@@ -1,22 +1,22 @@
 {
  "openrouter": {
   "ok": true,
-  "coletadoEm": "2026-10-30T14:11:20.084Z",
-  "tentativa": "2026-10-30T14:11:20.084Z"
+  "coletadoEm": "2026-10-30T14:13:59.334Z",
+  "tentativa": "2026-10-30T14:13:59.334Z"
  },
  "livebench": {
   "ok": true,
-  "coletadoEm": "2026-10-30T14:01:18.303Z",
-  "tentativa": "2026-10-30T14:01:18.303Z"
+  "coletadoEm": "2026-10-30T14:13:59.803Z",
+  "tentativa": "2026-10-30T14:13:59.803Z"
  },
  "lmarena": {
   "ok": true,
-  "coletadoEm": "2026-10-30T14:01:22.636Z",
-  "tentativa": "2026-10-30T14:01:22.636Z"
+  "coletadoEm": "2026-10-30T14:14:02.191Z",
+  "tentativa": "2026-10-30T14:14:02.191Z"
  },
  "artificialanalysis": {
   "ok": false,
   "erro": "sem AA_API_KEY",
-  "tentativa": "2026-10-30T14:01:22.638Z"
+  "tentativa": "2026-10-30T14:14:02.192Z"
  }
 }

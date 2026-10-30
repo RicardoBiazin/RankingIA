@@ -1,20 +1,20 @@
 {
- "geradoEm": "2026-10-30T14:11:20.172Z",
+ "geradoEm": "2026-10-30T14:14:02.245Z",
  "fontes": {
   "openrouter": {
    "ok": true,
-   "coletadoEm": "2026-10-30T14:11:20.084Z",
+   "coletadoEm": "2026-10-30T14:13:59.334Z",
    "erro": null
   },
   "livebench": {
    "ok": true,
-   "coletadoEm": "2026-10-30T14:01:18.303Z",
+   "coletadoEm": "2026-10-30T14:13:59.803Z",
    "erro": null,
    "release": "2026-10-25"
   },
   "lmarena": {
    "ok": true,
-   "coletadoEm": "2026-10-30T14:01:22.636Z",
+   "coletadoEm": "2026-10-30T14:14:02.191Z",
    "erro": null,
    "datas": {
     "texto": "2026-10-28",
@@ -3441,8 +3441,8 @@
    "hf": null,
    "lancamento": "2026-08-01",
    "contexto": 1048576,
-   "precoEntrada": 0.0314,
-   "precoSaida": 0.1887,
+   "precoEntrada": 0.0304,
+   "precoSaida": 0.3,
    "velocidade": null,
    "ttft": null,
    "metricas": {
@@ -5781,7 +5781,7 @@
    "chave": "step-3",
    "slug": "step-3",
    "nome": "Step-3",
-   "empresa": "Stepfun",
+   "empresa": "StepFun",
    "aberto": true,
    "hf": null,
    "lancamento": null,
@@ -6066,7 +6066,7 @@
    "chave": "step-1o-turbo",
    "slug": "step-1o-turbo",
    "nome": "Step-1o Turbo",
-   "empresa": "Stepfun",
+   "empresa": "StepFun",
    "aberto": false,
    "hf": null,
    "lancamento": null,
@@ -6346,7 +6346,7 @@
    "chave": "step-2-16k",
    "slug": "step-2-16k",
    "nome": "Step-2 16K Exp",
-   "empresa": "Stepfun",
+   "empresa": "StepFun",
    "aberto": false,
    "hf": null,
    "lancamento": null,
@@ -11846,7 +11846,7 @@
    "chave": "step-1o-vision-32k",
    "slug": "step-1o-vision-32k",
    "nome": "Step-1o Vision 32K",
-   "empresa": "Stepfun",
+   "empresa": "StepFun",
    "aberto": false,
    "hf": null,
    "lancamento": null,
@@ -11873,7 +11873,7 @@
    "chave": "step-1v-32k",
    "slug": "step-1v-32k",
    "nome": "Step-1V 32K",
-   "empresa": "Stepfun",
+   "empresa": "StepFun",
    "aberto": false,
    "hf": null,
    "lancamento": null,

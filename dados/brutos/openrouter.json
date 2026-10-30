@@ -1,6 +1,6 @@
 {
  "fonte": "openrouter",
- "coletadoEm": "2026-10-30T14:11:20.084Z",
+ "coletadoEm": "2026-10-30T14:13:59.334Z",
  "modelos": [
   {
    "origem": "particle-ai/particle-1",
@@ -1171,8 +1171,8 @@
    "chave": "deepseek-v4-flash",
    "nome": "DeepSeek V4 Flash Latest",
    "empresa": "~deepseek",
-   "precoEntrada": 0.0314,
-   "precoSaida": 0.1887,
+   "precoEntrada": 0.0304,
+   "precoSaida": 0.3,
    "contexto": 1048576,
    "lancamento": "2026-08-01",
    "aberto": false,
