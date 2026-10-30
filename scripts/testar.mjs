@@ -87,6 +87,8 @@ conferir(linhasRanking === ranking.length, `tabela do ranking com ${linhasRankin
 const externos = [...index.matchAll(/<(?:script|link)[^>]+(?:src|href)="(https?:[^"]+)"/g)].map((m) => m[1]).filter((u) => !u.startsWith('https://rankingia.biazin.com.br') && !(PERFIL.cloudflareToken && u.startsWith('https://static.cloudflareinsights.com/')));
 conferir(!externos.length, `sem script/estilo externo ${externos.join(' ')}`);
 if (d.fontes.artificialanalysis?.coletadoEm) conferir(index.includes('href="https://artificialanalysis.ai/"'), 'citação da Artificial Analysis no rodapé (obrigatória)');
+conferir(index.includes('<select id="moeda"') && /data-usd="/.test(index), 'seletor de moeda e preços marcados com data-usd');
+if (d.cambio) conferir(d.cambio.BRL > 1 && d.cambio.EUR > 0.3 && index.includes(`data-cambio-brl="${d.cambio.BRL}"`), `câmbio no <html> (R$ ${d.cambio.BRL}, € ${d.cambio.EUR})`);
 const cliente = JSON.parse(readFileSync(pub('dados/ranking.json'), 'utf8'));
 conferir(cliente.modelos.length === d.modelos.length && cliente.versao === versao, 'public/dados/ranking.json coerente');
 conferir(existsSync(pub('vendor/chart.umd.min.js')), 'Chart.js local em /vendor');

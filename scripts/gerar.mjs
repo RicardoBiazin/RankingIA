@@ -23,7 +23,10 @@ mkdirSync(caminho('public/modelo'), { recursive: true });
 
 // ---------- formatação ----------
 const nf = (v, casas = 1) => v == null ? '—' : Number(v).toLocaleString('pt-BR', { minimumFractionDigits: casas, maximumFractionDigits: casas });
+// Preço em US$ (texto puro, para metas) e em HTML com data-usd, que o moeda.js converte.
 const preco = (v) => v == null ? '—' : v === 0 ? 'grátis' : '$' + nf(v, v < 0.1 ? 3 : 2);
+const precoH = (v) => `<span data-usd="${nv(v)}">${preco(v)}</span>`;
+const SIGLA = '<span class="sigla-moeda">US$</span>';
 const contexto = (n) => n == null ? '—' : n >= 1e6 ? `${nf(n / 1e6, n % 1e6 ? 1 : 0)} M` : `${Math.round(n / 1000)} mil`;
 const valor = (m, id) => {
   const v = m.metricas[id];
@@ -66,8 +69,8 @@ function linhaRanking(m) {
 ${ponderadas.map((x) => cel(x.id)).join('')}
 ${categorias.map((x) => cel(x.id, 'cat')).join('')}
 ${extras.map((x) => cel(x.id, 'cat')).join('')}
-<td data-v="${nv(m.precoEntrada)}">${preco(m.precoEntrada)}</td>
-<td data-v="${nv(m.precoSaida)}">${preco(m.precoSaida)}</td>
+<td data-v="${nv(m.precoEntrada)}">${precoH(m.precoEntrada)}</td>
+<td data-v="${nv(m.precoSaida)}">${precoH(m.precoSaida)}</td>
 <td data-v="${nv(m.contexto)}">${contexto(m.contexto)}</td>
 <td data-v="${nv(m.lancamento)}">${dataBR(m.lancamento)}</td>
 <td><input type="checkbox" class="sel" value="${esc(m.slug)}" aria-label="Comparar ${esc(m.nome)}"></td>
@@ -78,8 +81,8 @@ function linhaOutro(m) {
   return `<tr data-busca="${esc((m.nome + ' ' + (m.empresa ?? '') + ' ' + m.chave).toLowerCase())}" data-empresa="${esc(m.empresa ?? '')}" data-aberto="${m.aberto ? 1 : 0}" data-preco="${nv(m.precoEntrada)}" data-slug="${esc(m.slug)}">
 <td class="esq modelo" data-v="${esc(m.nome.toLowerCase())}"><a href="/modelo/${esc(m.slug)}.html">${esc(m.nome)}</a>${selo(m)}<small>${esc(m.empresa ?? '—')}</small></td>
 ${['arena_texto', 'arena_webdev', 'arena_visao'].filter((id) => met[id]).map((id) => `<td data-v="${nv(m.metricas[id])}">${valor(m, id)}</td>`).join('')}
-<td data-v="${nv(m.precoEntrada)}">${preco(m.precoEntrada)}</td>
-<td data-v="${nv(m.precoSaida)}">${preco(m.precoSaida)}</td>
+<td data-v="${nv(m.precoEntrada)}">${precoH(m.precoEntrada)}</td>
+<td data-v="${nv(m.precoSaida)}">${precoH(m.precoSaida)}</td>
 <td data-v="${nv(m.contexto)}">${contexto(m.contexto)}</td>
 <td data-v="${nv(m.lancamento)}">${dataBR(m.lancamento)}</td>
 <td><input type="checkbox" class="sel" value="${esc(m.slug)}" aria-label="Comparar ${esc(m.nome)}"></td>
@@ -98,7 +101,7 @@ const filtros = `<div class="filtros" role="search">
 <label class="oculto" for="f-tipo">Tipo</label>
 <select id="f-tipo"><option value="">Abertos e fechados</option><option value="1">Só pesos abertos</option><option value="0">Só fechados</option></select>
 <label class="oculto" for="f-preco">Preço de entrada</label>
-<select id="f-preco"><option value="">Qualquer preço</option><option value="0.5">até $0,50 / 1M</option><option value="2">até $2 / 1M</option><option value="5">até $5 / 1M</option></select>
+<select id="f-preco"><option value="">Qualquer preço</option><option value="0.5" data-usd-rotulo="0.5">até $0,50 / 1M</option><option value="2" data-usd-rotulo="2">até $2 / 1M</option><option value="5" data-usd-rotulo="5">até $5 / 1M</option></select>
 <label class="caixa"><input type="checkbox" id="f-cat"> Mostrar categorias</label>
 <span class="contagem" id="contagem" aria-live="polite"></span>
 </div>`;
@@ -124,7 +127,7 @@ const index = pagina({
 </div>
 <div class="podio">
 ${cartao('1º lugar geral', top, `Nota ${nf(top?.nota)}`)}
-${cartao('Melhor custo-benefício', custoBeneficio, custoBeneficio ? `Nota ${nf(custoBeneficio.nota)} · ${preco(custoBeneficio.precoEntrada)} / ${preco(custoBeneficio.precoSaida)} por 1M` : '')}
+${cartao('Melhor custo-benefício', custoBeneficio, custoBeneficio ? `Nota ${nf(custoBeneficio.nota)} · ${precoH(custoBeneficio.precoEntrada)} / ${precoH(custoBeneficio.precoSaida)} por 1M` : '')}
 ${cartao('Melhor de pesos abertos', topAberto, topAberto ? `Nota ${nf(topAberto.nota)} · ${topAberto.posicao}º lugar` : '')}
 ${cartao('Preferido pelas pessoas (Arena)', topArena, topArena ? `Elo ${Math.round(topArena.metricas.arena_texto)}` : '')}
 </div>
@@ -141,8 +144,8 @@ ${th('Nota', { titulo: 'Nota RankingIA (0 a 100)' })}
 ${ponderadas.map((x) => th(esc(x.curto), { titulo: x.desc })).join('')}
 ${categorias.map((x) => th(esc(x.curto), { cls: 'cat', titulo: x.desc })).join('')}
 ${extras.map((x) => th(esc(x.curto), { cls: 'cat', titulo: x.desc })).join('')}
-${th('Entrada', { titulo: 'US$ por 1 milhão de tokens de entrada' })}
-${th('Saída', { titulo: 'US$ por 1 milhão de tokens de saída' })}
+${th('Entrada', { titulo: 'Preço por 1 milhão de tokens de entrada' })}
+${th('Saída', { titulo: 'Preço por 1 milhão de tokens de saída' })}
 ${th('Contexto', { titulo: 'Janela de contexto em tokens' })}
 ${th('Lançado', { titulo: 'Data em que entrou no OpenRouter' })}
 <th scope="col">Comparar</th>
@@ -161,8 +164,8 @@ ${ranking.map(linhaRanking).join('\n')}
 <thead><tr>
 ${th('Modelo', { esq: true, tipo: 'texto' })}
 ${['arena_texto', 'arena_webdev', 'arena_visao'].filter((id) => met[id]).map((id) => th(esc(met[id].curto), { titulo: met[id].desc })).join('')}
-${th('Entrada', { titulo: 'US$ por 1 milhão de tokens de entrada' })}
-${th('Saída', { titulo: 'US$ por 1 milhão de tokens de saída' })}
+${th('Entrada', { titulo: 'Preço por 1 milhão de tokens de entrada' })}
+${th('Saída', { titulo: 'Preço por 1 milhão de tokens de saída' })}
 ${th('Contexto')}
 ${th('Lançado')}
 <th scope="col">Comparar</th>
@@ -219,7 +222,7 @@ ${m.parcial
 </div>
 </div>
 <dl class="fichas">
-<div class="cartao"><dt>Entrada / saída</dt><dd>${precoTxt}</dd><small>US$ por 1M tokens</small></div>
+<div class="cartao"><dt>Entrada / saída</dt><dd>${m.precoEntrada != null ? `${precoH(m.precoEntrada)} / ${precoH(m.precoSaida)}` : '—'}</dd><small>${SIGLA} por 1M tokens</small></div>
 <div class="cartao"><dt>Contexto</dt><dd>${contexto(m.contexto)}</dd><small>tokens</small></div>
 <div class="cartao"><dt>Lançamento</dt><dd>${dataBR(m.lancamento)}</dd><small>entrada no OpenRouter</small></div>
 <div class="cartao"><dt>Pesos</dt><dd>${m.aberto ? 'Abertos' : m.aberto === false ? 'Fechados' : '—'}</dd><small>${m.hf ? `<a href="https://huggingface.co/${esc(m.hf)}" rel="noopener">${esc(m.hf)}</a>` : '&nbsp;'}</small></div>
@@ -342,7 +345,7 @@ gravarTexto('public/404.html', pagina({
 const css = readFileSync(caminho('src/assets/estilo.css'), 'utf8')
   + '\n/* Larguras das barras (geradas) */\n' + Array.from({ length: 101 }, (_, i) => `.barra i.w${i}{width:${i}%}`).join('\n') + '\n';
 gravarTexto('public/assets/estilo.css', css);
-for (const a of ['tema.js', 'tabela.js', 'graficos.js', 'comparar.js', 'comum.js']) copyFileSync(caminho('src/assets/' + a), caminho('public/assets/' + a));
+for (const a of ['tema.js', 'moeda.js', 'tabela.js', 'graficos.js', 'comparar.js', 'comum.js']) copyFileSync(caminho('src/assets/' + a), caminho('public/assets/' + a));
 mkdirSync(caminho('public/vendor'), { recursive: true });
 copyFileSync(caminho('node_modules/chart.js/dist/chart.umd.min.js'), caminho('public/vendor/chart.umd.min.js'));
 gravarTexto('public/favicon.svg', '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#2a78d6"/><rect x="7" y="17" width="4.5" height="8" rx="1.5" fill="#fff"/><rect x="13.75" y="8" width="4.5" height="17" rx="1.5" fill="#fff"/><rect x="20.5" y="13" width="4.5" height="12" rx="1.5" fill="#fff"/></svg>\n');

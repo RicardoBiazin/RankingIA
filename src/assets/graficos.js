@@ -23,7 +23,7 @@
         animation: false,
         scales: {
           x: { type: logX ? 'logarithmic' : 'linear', title: { display: true, text: eixoX }, grid: { display: false },
-            ticks: logX ? { autoSkip: false, maxRotation: 0, callback: function (v) { return MARCAS.indexOf(Number(v.toPrecision(3))) >= 0 ? R.preco(v).replace(/,?0+$/, '') : ''; } } : {} },
+            ticks: logX ? { autoSkip: false, maxRotation: 0, callback: function (v) { return MARCAS.indexOf(Number(v.toPrecision(3))) >= 0 ? MOEDA.formatar(v).replace(/,?0+$/, '') : ''; } } : {} },
           y: { title: { display: true, text: eixoY } },
         },
         plugins: {
@@ -69,11 +69,11 @@
 
     // 1. Nota × preço (abertos e fechados).
     var np = ranking.filter(function (m) { return R.precoMedio(m) > 0; });
-    var ponto = function (m, y, rotulo) { return { x: R.precoMedio(m), y: y, nome: m.n, slug: m.s, rotulo: rotulo }; };
+    var ponto = function (m, y, rotulo) { return { x: MOEDA.converter(R.precoMedio(m)), y: y, nome: m.n, slug: m.s, rotulo: rotulo }; };
     dispersao('nota-preco', [
       { nome: 'Pesos fechados', pontos: np.filter(function (m) { return !m.a; }).map(function (m) { return ponto(m, m.nota, 'nota ' + R.nf(m.nota) + ' · ' + R.preco(R.precoMedio(m)) + '/1M'); }) },
       { nome: 'Pesos abertos', pontos: np.filter(function (m) { return m.a; }).map(function (m) { return ponto(m, m.nota, 'nota ' + R.nf(m.nota) + ' · ' + R.preco(R.precoMedio(m)) + '/1M'); }) },
-    ], 'Preço médio (US$ / 1M tokens, escala log)', 'Nota RankingIA', true);
+    ], 'Preço médio (' + MOEDA.sigla() + ' / 1M tokens, escala log)', 'Nota RankingIA', true);
     dados('nota-preco', ['Modelo', 'Nota', 'Preço médio / 1M'], np.map(function (m) { return [m.n, R.nf(m.nota), R.preco(R.precoMedio(m))]; }));
 
     // 2. Arena × preço (inclui quem está fora do ranking).
@@ -81,7 +81,7 @@
     dispersao('arena-preco', [
       { nome: 'Pesos fechados', pontos: ap.filter(function (m) { return !m.a; }).map(function (m) { return ponto(m, m.m.arena_texto, 'Elo ' + m.m.arena_texto + ' · ' + R.preco(R.precoMedio(m)) + '/1M'); }) },
       { nome: 'Pesos abertos', pontos: ap.filter(function (m) { return m.a; }).map(function (m) { return ponto(m, m.m.arena_texto, 'Elo ' + m.m.arena_texto + ' · ' + R.preco(R.precoMedio(m)) + '/1M'); }) },
-    ], 'Preço médio (US$ / 1M tokens, escala log)', 'Elo LMArena (texto)', true);
+    ], 'Preço médio (' + MOEDA.sigla() + ' / 1M tokens, escala log)', 'Elo LMArena (texto)', true);
     dados('arena-preco', ['Modelo', 'Elo', 'Preço médio / 1M'], ap.sort(function (a, b) { return b.m.arena_texto - a.m.arena_texto; }).map(function (m) { return [m.n, m.m.arena_texto, R.preco(R.precoMedio(m))]; }));
 
     // 3. Nota × velocidade (só com Artificial Analysis).
@@ -121,6 +121,7 @@
   R.carregar().then(function (d) {
     desenhar(d);
     document.addEventListener('tema', function () { desenhar(d); });
+    document.addEventListener('moeda', function () { desenhar(d); });
     matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function () { desenhar(d); });
   }).catch(function (e) {
     document.querySelector('.graficos').replaceChildren(R.el('p', { class: 'aviso', text: 'Não consegui carregar os dados dos gráficos (' + e.message + ').' }));

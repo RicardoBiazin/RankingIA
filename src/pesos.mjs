@@ -38,6 +38,7 @@ export const FONTES = {
   lmarena: { nome: 'LMArena', url: 'https://lmarena.ai/leaderboard', licenca: 'dataset lmarena-ai/leaderboard-dataset no Hugging Face' },
   openrouter: { nome: 'OpenRouter', url: 'https://openrouter.ai/models', licenca: 'API pública de modelos do OpenRouter' },
   artificialanalysis: { nome: 'Artificial Analysis', url: 'https://artificialanalysis.ai/', licenca: 'API gratuita da Artificial Analysis (citação obrigatória)' },
+  cambio: { nome: 'Câmbio do BCE (Frankfurter)', url: 'https://frankfurter.dev/', licenca: 'cotação de referência do Banco Central Europeu' },
 };
 
 // Encolhimento: a nota soma este peso extra com percentil 50. Quem tem só uma

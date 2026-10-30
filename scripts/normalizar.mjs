@@ -12,6 +12,7 @@ const or = lerJSON('dados/brutos/openrouter.json');
 const lb = lerJSON('dados/brutos/livebench.json');
 const arena = lerJSON('dados/brutos/lmarena.json');
 const aa = lerJSON('dados/brutos/artificialanalysis.json');
+const cambio = lerJSON('dados/brutos/cambio.json');
 
 const modelos = new Map();
 const pegar = (c) => {
@@ -142,6 +143,7 @@ gravarJSON('dados/modelos.json', {
   fontes,
   metricas: disponiveis,
   exigeUmaDe: EXIGE_UMA_DE,
+  cambio: cambio ? { data: cambio.data, ...cambio.taxas } : null,
   modelos: lista,
 });
 gravarJSON('dados/candidatos-alias.json', candidatos);

@@ -7,9 +7,10 @@ import * as openrouter from './fontes/openrouter.mjs';
 import * as livebench from './fontes/livebench.mjs';
 import * as lmarena from './fontes/lmarena.mjs';
 import * as artificialanalysis from './fontes/artificialanalysis.mjs';
+import * as cambio from './fontes/cambio.mjs';
 
 carregarEnv();
-const FONTES = [openrouter, livebench, lmarena, artificialanalysis];
+const FONTES = [openrouter, livebench, lmarena, artificialanalysis, cambio];
 const pedidas = process.argv.slice(2);
 const status = lerJSON('dados/status.json', {});
 let falhas = 0, tentadas = 0;

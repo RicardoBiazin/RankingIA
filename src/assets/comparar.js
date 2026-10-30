@@ -54,8 +54,8 @@
         linhas.push([x.nome, function (m) { return m.m[x.id]; }, function (v) { return v == null ? '—' : x.unidade === 'Elo' ? String(Math.round(v)) : R.nf(v); }, 1]);
       });
       linhas.push(
-        ['Entrada (US$/1M)', function (m) { return m.pi; }, R.preco, -1],
-        ['Saída (US$/1M)', function (m) { return m.po; }, R.preco, -1],
+        ['Entrada (' + MOEDA.sigla() + '/1M)', function (m) { return m.pi; }, R.preco, -1],
+        ['Saída (' + MOEDA.sigla() + '/1M)', function (m) { return m.po; }, R.preco, -1],
         ['Contexto', function (m) { return m.ctx; }, R.contexto, 1],
         ['Velocidade (tok/s)', function (m) { return m.v; }, function (v) { return R.nf(v, 0); }, 1],
         ['Lançamento', function (m) { return m.l; }, R.dataBR, 0],
@@ -101,6 +101,7 @@
     }
 
     document.addEventListener('tema', desenhar);
+    document.addEventListener('moeda', desenhar);
     matchMedia('(prefers-color-scheme: dark)').addEventListener('change', desenhar);
   }).catch(function (e) {
     document.getElementById('comparativo').replaceChildren(R.el('p', { class: 'aviso', text: 'Não consegui carregar os dados (' + e.message + ').' }));

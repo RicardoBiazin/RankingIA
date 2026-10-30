@@ -1,5 +1,10 @@
 # Histórico
 
+## 0.3.0 — 30/10/2026
+
+- Escolha da moeda dos preços no cabeçalho: US$ (original), R$ ou €. A escolha vale para a tabela, o filtro de preço, a página do modelo, a comparação e os gráficos, e fica guardada no navegador.
+- Câmbio de referência do BCE pela API do Frankfurter, coletado todo dia junto com as fontes. A cotação e a data aparecem no rodapé.
+
 ## 0.2.0 — 30/10/2026
 
 - Artificial Analysis ativa.

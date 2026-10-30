@@ -13,7 +13,7 @@
     if (v == null) return '—';
     return Number(v).toLocaleString('pt-BR', { minimumFractionDigits: casas == null ? 1 : casas, maximumFractionDigits: casas == null ? 1 : casas });
   }
-  function preco(v) { return v == null ? '—' : v === 0 ? 'grátis' : '$' + nf(v, v < 0.1 ? 3 : 2); }
+  function preco(usd) { return window.MOEDA.preco(usd); } // converte para a moeda escolhida
   function precoMedio(m) { return m.pi == null || m.po == null ? null : (3 * m.pi + m.po) / 4; }
   function contexto(n) { return n == null ? '—' : n >= 1e6 ? nf(n / 1e6, n % 1e6 ? 1 : 0) + ' M' : Math.round(n / 1000) + ' mil'; }
   function dataBR(iso) { return iso ? iso.slice(8, 10) + '/' + iso.slice(5, 7) + '/' + iso.slice(0, 4) : '—'; }
