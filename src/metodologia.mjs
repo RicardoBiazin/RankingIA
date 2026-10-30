@@ -4,7 +4,7 @@
 
 const L = (url, nome) => `<a href="${url}" rel="noopener">${nome}</a>`;
 const LB = L('https://livebench.ai/', 'LiveBench');
-const LA = L('https://lmarena.ai/leaderboard', 'LMArena');
+const LA = L('https://arena.ai/leaderboard', 'LMArena (arena.ai)');
 const OR = L('https://openrouter.ai/models', 'OpenRouter');
 const AA = L('https://artificialanalysis.ai/', 'Artificial Analysis');
 const FR = L('https://frankfurter.dev/', 'Frankfurter');
@@ -43,6 +43,13 @@ ${c.cats}
 <li>Elo mede preferência, não acerto. Estilo e tamanho da resposta influenciam.</li>
 <li>O preço é o do OpenRouter (o menor entre provedores); o preço direto no fabricante pode ser outro.</li>
 </ul>
+<h2>Outras referências</h2>
+<p>Estes sites também acompanham modelos de IA, mas não entram na nota:</p>
+<ul>
+<li>${L('https://benchlm.ai/', 'BenchLM')}: agrega centenas de benchmarks. Os termos dele pedem um acordo à parte para exibir os dados num site público.</li>
+<li>${L('https://hai.stanford.edu/ai-index', 'Stanford HAI — AI Index')}: relatório anual sobre o estado da IA; não é um placar por modelo atualizado todo dia.</li>
+<li>${L('https://swen.ia.br/ranking', 'SWEN.AI')}: ranking em português feito só com dados da Artificial Analysis, que o RankingIA já usa direto da fonte.</li>
+</ul>
 <h2>Situação das fontes</h2>
 ${c.status}
 <p>Os dados de cada fonte são de seus donos e seguem os termos deles. O código do RankingIA é aberto, licença MIT, em ${GH}.</p>`,
@@ -77,6 +84,13 @@ ${c.cats}
 <li>Percentiles depend on the group: when a strong model arrives, others can drop without getting worse.</li>
 <li>Elo measures preference, not accuracy. Style and answer length have an effect.</li>
 <li>Prices come from OpenRouter (the lowest across providers); the vendor's own price may differ.</li>
+</ul>
+<h2>Other references</h2>
+<p>These sites also track AI models but are not part of the score:</p>
+<ul>
+<li>${L('https://benchlm.ai/', 'BenchLM')}: aggregates hundreds of benchmarks. Its terms require a separate agreement to display its data on a public site.</li>
+<li>${L('https://hai.stanford.edu/ai-index', 'Stanford HAI — AI Index')}: annual report on the state of AI; not a per-model leaderboard updated daily.</li>
+<li>${L('https://swen.ia.br/ranking', 'SWEN.AI')}: Portuguese-language ranking built only on Artificial Analysis data, which RankingIA already uses directly.</li>
 </ul>
 <h2>Source status</h2>
 ${c.status}
@@ -113,6 +127,13 @@ ${c.cats}
 <li>El Elo mide preferencia, no acierto. El estilo y la longitud de la respuesta influyen.</li>
 <li>El precio es el de OpenRouter (el menor entre proveedores); el precio directo del fabricante puede ser otro.</li>
 </ul>
+<h2>Otras referencias</h2>
+<p>Estos sitios también siguen modelos de IA, pero no entran en la nota:</p>
+<ul>
+<li>${L('https://benchlm.ai/', 'BenchLM')}: agrega cientos de benchmarks. Sus términos exigen un acuerdo aparte para mostrar sus datos en un sitio público.</li>
+<li>${L('https://hai.stanford.edu/ai-index', 'Stanford HAI — AI Index')}: informe anual sobre el estado de la IA; no es una tabla por modelo actualizada a diario.</li>
+<li>${L('https://swen.ia.br/ranking', 'SWEN.AI')}: ranking en portugués hecho solo con datos de Artificial Analysis, que RankingIA ya usa directamente.</li>
+</ul>
 <h2>Estado de las fuentes</h2>
 ${c.status}
 <p>Los datos de cada fuente pertenecen a sus dueños y siguen sus términos. El código de RankingIA es abierto, con licencia MIT, en ${GH}.</p>`,
@@ -148,6 +169,13 @@ ${c.cats}
 <li>L’Elo mesure une préférence, pas l’exactitude. Le style et la longueur des réponses comptent.</li>
 <li>Le prix est celui d’OpenRouter (le plus bas parmi les fournisseurs) ; le prix direct de l’éditeur peut différer.</li>
 </ul>
+<h2>Autres références</h2>
+<p>Ces sites suivent aussi les modèles d’IA, mais ne comptent pas dans le score :</p>
+<ul>
+<li>${L('https://benchlm.ai/', 'BenchLM')} : agrège des centaines de benchmarks. Ses conditions exigent un accord séparé pour afficher ses données sur un site public.</li>
+<li>${L('https://hai.stanford.edu/ai-index', 'Stanford HAI — AI Index')} : rapport annuel sur l’état de l’IA ; pas un classement par modèle mis à jour chaque jour.</li>
+<li>${L('https://swen.ia.br/ranking', 'SWEN.AI')} : classement en portugais construit uniquement sur les données d’Artificial Analysis, que RankingIA utilise déjà directement.</li>
+</ul>
 <h2>État des sources</h2>
 ${c.status}
 <p>Les données de chaque source appartiennent à leurs propriétaires et suivent leurs conditions. Le code de RankingIA est ouvert, sous licence MIT, sur ${GH}.</p>`,
@@ -182,6 +210,13 @@ ${c.cats}
 <li>百分位取决于群体：强模型加入后，其他模型可能在没有变差的情况下名次下降。</li>
 <li>Elo 衡量的是偏好而非正确率，回答风格和长度会产生影响。</li>
 <li>价格取自 OpenRouter（各提供商中的最低价）；厂商直售价格可能不同。</li>
+</ul>
+<h2>其他参考</h2>
+<p>以下网站同样跟踪 AI 模型，但不计入评分：</p>
+<ul>
+<li>${L('https://benchlm.ai/', 'BenchLM')}：汇总数百项基准。其条款规定，在公开网站展示其数据需另行签订协议。</li>
+<li>${L('https://hai.stanford.edu/ai-index', 'Stanford HAI — AI Index')}：关于 AI 现状的年度报告，并非每日更新的逐模型榜单。</li>
+<li>${L('https://swen.ia.br/ranking', 'SWEN.AI')}：仅基于 Artificial Analysis 数据的葡萄牙语排行榜，RankingIA 已直接使用该来源。</li>
 </ul>
 <h2>数据源状态</h2>
 ${c.status}

@@ -235,7 +235,7 @@ ${outros.map(linhaOutro).join('\n')}
     const links = [
       o.openrouter && [`https://openrouter.ai/${o.openrouter}`, 'OpenRouter'],
       m.hf && [`https://huggingface.co/${m.hf}`, t('mod.hf')],
-      o.lmarena && ['https://lmarena.ai/leaderboard', 'LMArena'],
+      o.lmarena && ['https://arena.ai/leaderboard', 'LMArena'],
       o.livebench && ['https://livebench.ai/', 'LiveBench'],
       o.artificialanalysis && [`https://artificialanalysis.ai/models/${o.artificialanalysis}`, 'Artificial Analysis'],
     ].filter(Boolean);

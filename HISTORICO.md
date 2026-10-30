@@ -1,5 +1,13 @@
 # Histórico
 
+## 0.6.1 — 30/10/2026
+
+- LMArena agora aponta para arena.ai (o lmarena.ai redireciona para lá). Os dados continuam vindo do dataset oficial no Hugging Face.
+- Metodologia: nova seção "Outras referências", com BenchLM, Stanford HAI (AI Index) e SWEN.AI, e o motivo de nenhum deles entrar na nota:
+  - BenchLM: os termos pedem um acordo para exibir os dados;
+  - AI Index: é um relatório anual;
+  - SWEN.AI: usa só a Artificial Analysis, que o site já usa direto da fonte.
+
 ## 0.6.0 — 30/10/2026
 
 - Cinco idiomas: português (raiz), inglês (/en), espanhol (/es), francês (/fr) e chinês (/zh).

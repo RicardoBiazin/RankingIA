@@ -35,7 +35,7 @@ export const EXIGE_UMA_DE = ['lb_geral', 'aa_inteligencia', 'aa_hle'];
 
 export const FONTES = {
   livebench: { nome: 'LiveBench', url: 'https://livebench.ai/', licenca: 'dados públicos do LiveBench' },
-  lmarena: { nome: 'LMArena', url: 'https://lmarena.ai/leaderboard', licenca: 'dataset lmarena-ai/leaderboard-dataset no Hugging Face' },
+  lmarena: { nome: 'LMArena', url: 'https://arena.ai/leaderboard', licenca: 'dataset lmarena-ai/leaderboard-dataset no Hugging Face' },
   openrouter: { nome: 'OpenRouter', url: 'https://openrouter.ai/models', licenca: 'API pública de modelos do OpenRouter' },
   artificialanalysis: { nome: 'Artificial Analysis', url: 'https://artificialanalysis.ai/', licenca: 'API gratuita da Artificial Analysis (citação obrigatória)' },
   cambio: { nome: 'Câmbio do BCE (Frankfurter)', url: 'https://frankfurter.dev/', licenca: 'cotação de referência do Banco Central Europeu' },
