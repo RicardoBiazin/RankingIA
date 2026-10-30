@@ -2,6 +2,12 @@
 // categoria, limitar a quantidade e escolher modelos para comparar.
 (function () {
   'use strict';
+  var LOC = (window.IDIOMA && window.IDIOMA.locale) || 'pt-BR';
+  var PRE = (window.IDIOMA && window.IDIOMA.pre) || '';
+  function t(chave, vars) {
+    var s = (window.T && window.T[chave]) || chave;
+    return s.replace(/\{(\w+)\}/g, function (_, k) { return vars && k in vars ? vars[k] : '{' + k + '}'; });
+  }
   var tabelas = ['ranking', 'outros'].map(function (id) { return document.getElementById(id); }).filter(Boolean);
   var busca = document.getElementById('busca');
   var fEmpresa = document.getElementById('f-empresa');
@@ -22,7 +28,7 @@
       var va = a.cells[col].dataset.v, vb = b.cells[col].dataset.v;
       if (va === '' || va == null) return (vb === '' || vb == null) ? 0 : 1;
       if (vb === '' || vb == null) return -1;
-      var r = texto || isNaN(va) || isNaN(vb) ? va.localeCompare(vb, 'pt-BR') : Number(va) - Number(vb);
+      var r = texto || isNaN(va) || isNaN(vb) ? va.localeCompare(vb, LOC) : Number(va) - Number(vb);
       return asc ? r : -r;
     });
     linhas.forEach(function (l) { corpo.appendChild(l); });
@@ -76,7 +82,8 @@
         tr.hidden = !ok || achados > limite;
       });
       var mostrados = Math.min(achados, limite);
-      var txt = (mostrados < achados ? mostrados + ' de ' : '') + achados + (achados === 1 ? ' modelo' : ' modelos') + (achados < total ? ' (de ' + total + ')' : '');
+      var n = achados === 1 ? t('js.n1') : t('js.n', { n: achados });
+      var txt = (mostrados < achados ? t('js.parcial', { a: mostrados, b: n }) : n) + (achados < total ? ' ' + t('js.total', { t: total }) : '');
       var alvo = i === 0 ? contagem : document.getElementById('contagem-outros');
       if (alvo) alvo.textContent = txt;
     });
@@ -91,8 +98,8 @@
   var escolhidos = [];
   function atualizar() {
     barra.hidden = escolhidos.length === 0;
-    nTxt.textContent = escolhidos.length + (escolhidos.length === 1 ? ' modelo' : ' modelos') + (escolhidos.length < 2 ? ' (escolha mais um)' : '');
-    ir.href = '/comparar.html?m=' + escolhidos.map(encodeURIComponent).join(',');
+    nTxt.textContent = (escolhidos.length === 1 ? t('js.n1') : t('js.n', { n: escolhidos.length })) + (escolhidos.length < 2 ? ' ' + t('js.maisUm') : '');
+    ir.href = PRE + '/comparar.html?m=' + escolhidos.map(encodeURIComponent).join(',');
     document.querySelectorAll('input.sel').forEach(function (c) {
       c.checked = escolhidos.indexOf(c.value) >= 0;
       c.disabled = !c.checked && escolhidos.length >= 4;

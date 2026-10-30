@@ -30,19 +30,19 @@
   ]
  },
  {
-  "chave": "grok-4.20-v2",
-  "parecidas": [
-   "grok",
-   "grok-4.20"
-  ]
- },
- {
   "chave": "qwen3.6",
   "parecidas": [
    "qwen3.6-flash",
    "qwen3.6-35b-a3b",
    "qwen3.6-27b",
    "qwen3.6-plus"
+  ]
+ },
+ {
+  "chave": "grok-4.20-v2",
+  "parecidas": [
+   "grok",
+   "grok-4.20"
   ]
  },
  {
@@ -123,15 +123,21 @@
   ]
  },
  {
-  "chave": "grok-3-mini",
+  "chave": "claude-opus-4",
   "parecidas": [
-   "grok"
+   "claude-opus"
   ]
  },
  {
   "chave": "deepseek-r1-qwen3-8b",
   "parecidas": [
    "deepseek-r1"
+  ]
+ },
+ {
+  "chave": "grok-3-mini",
+  "parecidas": [
+   "grok"
   ]
  },
  {
@@ -163,6 +169,12 @@
   "chave": "phi-4-multimodal",
   "parecidas": [
    "phi-4"
+  ]
+ },
+ {
+  "chave": "claude-sonnet-4",
+  "parecidas": [
+   "claude-sonnet"
   ]
  },
  {
@@ -217,6 +229,12 @@
   "chave": "nova-premier",
   "parecidas": [
    "nova-premier-v1"
+  ]
+ },
+ {
+  "chave": "claude-sonnet-3.7",
+  "parecidas": [
+   "claude-sonnet"
   ]
  },
  {
@@ -306,6 +324,12 @@
   ]
  },
  {
+  "chave": "claude-sonnet-3.5",
+  "parecidas": [
+   "claude-sonnet"
+  ]
+ },
+ {
   "chave": "command-r",
   "parecidas": [
    "command-r-08",
@@ -322,6 +346,30 @@
   "chave": "gpt-4-turbo",
   "parecidas": [
    "gpt-4"
+  ]
+ },
+ {
+  "chave": "claude-haiku-3.5",
+  "parecidas": [
+   "claude-haiku"
+  ]
+ },
+ {
+  "chave": "claude-haiku-3",
+  "parecidas": [
+   "claude-haiku"
+  ]
+ },
+ {
+  "chave": "claude-opus-3",
+  "parecidas": [
+   "claude-opus"
+  ]
+ },
+ {
+  "chave": "claude-sonnet-3",
+  "parecidas": [
+   "claude-sonnet"
   ]
  },
  {
@@ -383,18 +431,6 @@
   "chave": "qwen3.5-flash",
   "parecidas": [
    "qwen3.5-flash-02-23"
-  ]
- },
- {
-  "chave": "claude-opus-4",
-  "parecidas": [
-   "claude-opus"
-  ]
- },
- {
-  "chave": "claude-sonnet-4",
-  "parecidas": [
-   "claude-sonnet"
   ]
  },
  {

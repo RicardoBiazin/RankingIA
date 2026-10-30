@@ -1,5 +1,17 @@
 # Histórico
 
+## 0.6.0 — 30/10/2026
+
+- Cinco idiomas: português (raiz), inglês (/en), espanhol (/es), francês (/fr) e chinês (/zh).
+  - Menu de idioma no cabeçalho, que funciona sem JavaScript.
+  - `hreflang` e sitemap com as URLs de todos os idiomas.
+  - Números, datas e moedas no formato de cada idioma.
+  - Textos em `src/i18n.mjs` e metodologia em `src/metodologia.mjs`; o teste confere se todo texto existe nos 5 idiomas, com os mesmos marcadores.
+- Evolução da família na página de cada modelo (por exemplo Claude Opus 3 → 4 → 4.5 → 5.5), com a nota e o índice AA por versão, em ordem de lançamento. Clicar num ponto abre a versão.
+  - A família é a chave sem os números de versão.
+  - "Claude 4 Opus" e "Claude Opus 4" agora viram o mesmo modelo.
+- Rodapé avisa que a coleta e os resultados são gerados de forma autônoma, sem edição manual das notas.
+
 ## 0.5.0 — 30/10/2026
 
 - Botões de categoria acima do ranking (como no LiveBench): Todas, Agêntico, Código, Raciocínio, Análise de dados, Pesquisa, Design, Navegador, Conversa e Visão.

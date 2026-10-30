@@ -2,7 +2,7 @@
 // e a cobertura. Grava dados/modelos.json e o snapshot do dia em dados/historico/.
 // Uso: node scripts/normalizar.mjs
 
-import { chave, empresaPorNome, gravarJSON, lerJSON } from './util.mjs';
+import { chave, empresaPorNome, familia, versao, gravarJSON, lerJSON } from './util.mjs';
 import { METRICAS, CATEGORIAS_LB, CATEGORIAS, EXIGE_UMA_DE, PESO_NEUTRO } from '../src/pesos.mjs';
 
 const aliases = lerJSON('dados/aliases.json', {});
@@ -77,6 +77,8 @@ const lista = [...modelos.values()].map((r) => {
   return {
     chave: r.chave,
     slug: r.chave.replace(/\+/g, '-plus'),
+    familia: familia(r.chave),
+    versao: versao(r.chave),
     nome: o?.nome ?? r.aa?.nome ?? r.nomeArena ?? r.nomeLB ?? r.chave,
     empresa: o?.empresa ?? r.aa?.empresa ?? r.empresaArena ?? empresaPorNome(r.chave),
     aberto: o ? (o.aberto || r.abertoArena === true) : (r.abertoArena ?? null),

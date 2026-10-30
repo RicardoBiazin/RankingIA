@@ -9,6 +9,14 @@ O site junta placares públicos numa nota de 0 a 100 e mostra preço, contexto e
 - **Página por modelo**: todas as notas por fonte, com percentil, preço, contexto e links.
 - **Comparar**: de 2 a 4 modelos lado a lado, mais um radar de percentis. O link guarda a escolha.
 
+## Idiomas
+
+O site existe em português (raiz), inglês (`/en`), espanhol (`/es`), francês (`/fr`) e chinês (`/zh`).
+
+- Os textos ficam em [`src/i18n.mjs`](src/i18n.mjs), no formato `[pt, en, es, fr, zh]`.
+- A metodologia fica em [`src/metodologia.mjs`](src/metodologia.mjs).
+- O `testar` falha se faltar tradução.
+
 ## Fontes
 
 | Fonte | O que traz | Acesso |

@@ -11,15 +11,17 @@
   try { var salva = localStorage.getItem('moeda'); if (taxas[salva]) atual = salva; } catch (e) { /* sem storage */ }
 
   // Mesma regra do gerar.mjs (src/moedas.mjs): sempre 2 casas.
-  function fmt(v) { return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: atual, minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(v); }
+  var LOC = (window.IDIOMA && window.IDIOMA.locale) || 'pt-BR';
+  var T = window.T || {};
+  function fmt(v) { return new Intl.NumberFormat(LOC, { style: 'currency', currency: atual, minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(v); }
   function converter(usd) { return usd == null ? null : usd * taxas[atual]; }
   function formatar(v) {
     if (v == null) return '—';
-    if (v === 0) return 'grátis';
+    if (v === 0) return T.gratis || 'grátis';
     return v < 0.005 ? '< ' + fmt(0.01) : fmt(v);
   }
   function sigla() {
-    var p = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: atual }).formatToParts(1).filter(function (x) { return x.type === 'currency'; })[0];
+    var p = new Intl.NumberFormat(LOC, { style: 'currency', currency: atual }).formatToParts(1).filter(function (x) { return x.type === 'currency'; })[0];
     return p ? p.value : atual;
   }
   function aplicar() {
@@ -28,7 +30,7 @@
     });
     document.querySelectorAll('.sigla-moeda').forEach(function (el) { el.textContent = sigla(); });
     document.querySelectorAll('option[data-usd-rotulo]').forEach(function (op) {
-      op.textContent = 'até ' + formatar(converter(Number(op.dataset.usdRotulo))) + ' / 1M';
+      op.textContent = (T.ate || 'até {p} / 1M').replace('{p}', formatar(converter(Number(op.dataset.usdRotulo))));
     });
   }
 

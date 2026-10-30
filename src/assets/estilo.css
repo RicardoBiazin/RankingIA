@@ -241,3 +241,13 @@ tr[hidden] { display: none; }
 .pad { padding: 16px; }
 main.conteudo { padding-top: 24px; padding-bottom: 48px; }
 .tabela tbody th { text-transform: none; letter-spacing: 0; font-size: inherit; font-weight: 500; color: var(--texto); background: none; position: static; }
+
+/* Seletor de idioma (details/summary: funciona sem JavaScript) */
+.idiomas { position: relative; }
+.idiomas summary { list-style: none; cursor: pointer; height: 34px; min-width: 40px; padding: 0 8px; display: grid; place-items: center; border: 1px solid var(--borda); border-radius: 8px; color: var(--texto-2); font-size: .85rem; font-weight: 600; }
+.idiomas summary::-webkit-details-marker { display: none; }
+.idiomas ul { position: absolute; right: 0; top: 40px; margin: 0; padding: 6px; list-style: none; background: var(--superficie); border: 1px solid var(--borda); border-radius: 10px; box-shadow: 0 8px 24px rgb(0 0 0 / 15%); z-index: 30; min-width: 150px; }
+.idiomas li a { display: block; padding: 6px 10px; border-radius: 6px; color: var(--texto); }
+.idiomas li a:hover { background: var(--superficie-2); text-decoration: none; }
+.idiomas li a[aria-current="true"] { color: var(--destaque-texto); font-weight: 600; }
+.rodape .autonomo { font-style: italic; }

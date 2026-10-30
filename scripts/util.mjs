@@ -45,6 +45,7 @@ export function chave(nome) {
   s = s.replace(/-(\d{4}-\d{2}-\d{2}|\d{8}|\d{6}|\d{4})(?=-|$)/g, '');
   s = s.replace(/-(thinking|reasoning|xhigh|high|medium|low|max|effort|auto|latest)(?=-|$)/g, '');
   s = s.replace(/(-(preview|exp|experimental|beta|it|instruct))+$/, '');
+  s = s.replace(/^claude-(\d+(?:\.\d+)?)-(opus|sonnet|haiku)/, 'claude-$2-$1'); // "Claude 4 Opus" = "Claude Opus 4"
   s = s.replace(/[^a-z0-9.+-]/g, '').replace(/-+/g, '-').replace(/^-|-$/g, '');
   return s;
 }
@@ -101,4 +102,16 @@ const PREFIXOS = [
 ];
 export function empresaPorNome(c) {
   return PREFIXOS.find(([re]) => re.test(c))?.[1] ?? null;
+}
+
+// Família do modelo: a chave sem os números de versão. "claude-opus-4.6" e
+// "claude-opus-5.5" são "claude-opus"; "gemini-3.7-flash" é "gemini-flash".
+export function familia(c) {
+  return c.split('-').map((t) => t.replace(/^v?\d+(\.\d+)*$/, '').replace(/^([a-z]+)\d+(\.\d+)*$/, '$1')).filter(Boolean).join('-');
+}
+
+// Número da versão para ordenar quando falta a data de lançamento: "claude-opus-4.6" -> 4.6.
+export function versao(c) {
+  const m = c.match(/(?:^|-)v?(\d+(?:\.\d+)?)(?:-|$)/) ?? c.match(/[a-z](\d+(?:\.\d+)?)/);
+  return m ? Number(m[1]) : 0;
 }

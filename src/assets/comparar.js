@@ -14,13 +14,13 @@
 
     // Opções: ranking geral primeiro, depois os outros por nome.
     var grupos = [
-      ['Ranking geral', d.modelos.filter(function (m) { return m.pos != null; })],
-      ['Outros modelos', d.modelos.filter(function (m) { return m.pos == null; }).sort(function (a, b) { return a.n.localeCompare(b.n, 'pt-BR'); })],
+      [R.t('js.rankingGeral'), d.modelos.filter(function (m) { return m.pos != null; })],
+      [R.t('js.outros'), d.modelos.filter(function (m) { return m.pos == null; }).sort(function (a, b) { return a.n.localeCompare(b.n, R.loc); })],
     ];
     selects.forEach(function (s) {
       grupos.forEach(function (g) {
         var og = R.el('optgroup', { label: g[0] });
-        g[1].forEach(function (m) { og.appendChild(R.el('option', { value: m.s, text: (m.pos ? m.pos + 'º ' : '') + m.n + (m.e ? ' · ' + m.e : '') })); });
+        g[1].forEach(function (m) { og.appendChild(R.el('option', { value: m.s, text: (m.pos ? R.posicao(m.pos) + ' ' : '') + m.n + (m.e ? ' · ' + m.e : '') })); });
         s.appendChild(og);
       });
       s.addEventListener('change', mudar);
@@ -44,22 +44,22 @@
     function desenhar() {
       var ms = escolhidos();
       var alvo = document.getElementById('comparativo');
-      if (!ms.length) { alvo.replaceChildren(R.el('p', { class: 'fraco pad', text: 'Escolha os modelos acima.' })); radarDesenhar([]); return; }
+      if (!ms.length) { alvo.replaceChildren(R.el('p', { class: 'fraco pad', text: R.t('cmp.escolhaAcima') })); radarDesenhar([]); return; }
       var linhas = [
-        ['Posição', function (m) { return m.pos; }, function (v) { return v == null ? 'fora' : v + 'º'; }, -1],
-        ['Nota RankingIA', function (m) { return m.nota; }, function (v) { return R.nf(v); }, 1],
+        [R.t('th.posicao'), function (m) { return m.pos; }, function (v) { return v == null ? R.t('js.fora') : R.posicao(v); }, -1],
+        [R.t('js.notaRankingIA'), function (m) { return m.nota; }, function (v) { return R.nf(v); }, 1],
       ];
       d.metricas.forEach(function (x) {
         if (!ms.some(function (m) { return m.m[x.id] != null; })) return;
-        linhas.push([x.nome, function (m) { return m.m[x.id]; }, function (v) { return v == null ? '—' : x.unidade === 'Elo' ? String(Math.round(v)) : R.nf(v); }, 1]);
+        linhas.push([R.nomeMet(x), function (m) { return m.m[x.id]; }, function (v) { return v == null ? '—' : x.unidade === 'Elo' ? String(Math.round(v)) : R.nf(v); }, 1]);
       });
       linhas.push(
-        ['Entrada (' + MOEDA.sigla() + '/1M)', function (m) { return m.pi; }, R.preco, -1],
-        ['Saída (' + MOEDA.sigla() + '/1M)', function (m) { return m.po; }, R.preco, -1],
-        ['Contexto', function (m) { return m.ctx; }, R.contexto, 1],
-        ['Velocidade (tok/s)', function (m) { return m.v; }, function (v) { return R.nf(v, 0); }, 1],
-        ['Lançamento', function (m) { return m.l; }, R.dataBR, 0],
-        ['Pesos', function (m) { return m.a; }, function (v) { return v ? 'abertos' : v === false ? 'fechados' : '—'; }, 0]
+        [R.t('js.entrada', { s: MOEDA.sigla() }), function (m) { return m.pi; }, R.preco, -1],
+        [R.t('js.saida', { s: MOEDA.sigla() }), function (m) { return m.po; }, R.preco, -1],
+        [R.t('th.contexto'), function (m) { return m.ctx; }, R.contexto, 1],
+        [R.t('js.velocidade'), function (m) { return m.v; }, function (v) { return R.nf(v, 0); }, 1],
+        [R.t('th.lancado'), function (m) { return m.l; }, R.dataBR, 0],
+        [R.t('mod.pesos'), function (m) { return m.a; }, function (v) { return v ? R.t('js.abertos') : v === false ? R.t('js.fechados') : '—'; }, 0]
       );
       var corpo = R.el('tbody');
       linhas.forEach(function (l) {
@@ -72,7 +72,7 @@
         }))));
       });
       var cab = R.el('thead', null, [R.el('tr', null, [R.el('th', { scope: 'col', text: '' })].concat(ms.map(function (m) {
-        return R.el('th', { scope: 'col' }, [R.el('a', { href: '/modelo/' + m.s + '.html', text: m.n })]);
+        return R.el('th', { scope: 'col' }, [R.el('a', { href: R.pre + '/modelo/' + m.s + '.html', text: m.n })]);
       })))]);
       alvo.replaceChildren(R.el('table', { class: 'tabela-comp' }, [cab, corpo]));
       radarDesenhar(ms);
@@ -86,7 +86,7 @@
       radar = new Chart(document.getElementById('radar'), {
         type: 'radar',
         data: {
-          labels: ids.map(function (id) { return met[id].curto; }),
+          labels: ids.map(function (id) { return R.curtoMet(met[id]); }),
           datasets: ms.map(function (m, i) {
             return { label: m.n, data: ids.map(function (id) { return m.p[id] == null ? null : m.p[id]; }), borderColor: R.serie(i), backgroundColor: 'transparent', borderWidth: 2, pointRadius: 3, pointBackgroundColor: R.serie(i), spanGaps: true };
           }),
@@ -104,6 +104,6 @@
     document.addEventListener('moeda', desenhar);
     matchMedia('(prefers-color-scheme: dark)').addEventListener('change', desenhar);
   }).catch(function (e) {
-    document.getElementById('comparativo').replaceChildren(R.el('p', { class: 'aviso', text: 'Não consegui carregar os dados (' + e.message + ').' }));
+    document.getElementById('comparativo').replaceChildren(R.el('p', { class: 'aviso', text: R.t('js.erroDados', { e: e.message }) }));
   });
 })();

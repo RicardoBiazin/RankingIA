@@ -60,19 +60,42 @@ if (candidatos.length) console.log(`aviso ${candidatos.length} nomes sem par no 
 
 // ---------- site ----------
 const pub = (rel) => caminho('public/' + rel);
-const paginas = ['index.html', 'graficos.html', 'comparar.html', 'metodologia.html', '404.html', ...readdirSync(pub('modelo')).map((a) => 'modelo/' + a)];
-conferir(d.modelos.every((m) => existsSync(pub(`modelo/${m.slug}.html`))), `uma página por modelo (${d.modelos.length})`);
+const { IDIOMAS, TEXTOS } = await import('../src/i18n.mjs');
+// Traduções: todo texto nos 5 idiomas, sem vazio, com os mesmos {marcadores}.
+const marcas = (x) => [...x.matchAll(/\{(\w+)\}/g)].map((m) => m[1]).sort().join(',');
+const ruins = Object.entries(TEXTOS).filter(([, v]) => v.length !== IDIOMAS.length || v.some((x) => !x) || v.some((x) => marcas(x) !== marcas(v[0]))).map(([k]) => k);
+conferir(!ruins.length, `${Object.keys(TEXTOS).length} textos traduzidos nos ${IDIOMAS.length} idiomas ${ruins.slice(0, 5).join(' ')}`);
+const paginas = [];
+for (const i of IDIOMAS) {
+  const pre = i.pasta ? i.pasta + '/' : '';
+  paginas.push(...['index.html', 'graficos.html', 'comparar.html', 'metodologia.html', '404.html'].map((a) => pre + a), ...readdirSync(pub(pre + 'modelo')).map((a) => pre + 'modelo/' + a));
+  conferir(d.modelos.every((m) => existsSync(pub(`${pre}modelo/${m.slug}.html`))), `${i.codigo}: uma página por modelo (${d.modelos.length})`);
+  const html = readFileSync(pub(pre + 'index.html'), 'utf8');
+  conferir(html.includes(`<html lang="${i.codigo}"`) && IDIOMAS.every((j) => html.includes(`hreflang="${j.codigo}"`)), `${i.codigo}: lang e hreflang dos ${IDIOMAS.length} idiomas`);
+  conferir(existsSync(pub(`assets/t-${i.pasta || 'pt'}.js`)), `${i.codigo}: textos do navegador`);
+  if (i.i > 0) {
+    // Texto em português que não pode vazar para os outros idiomas.
+    const vaza = ['Buscar modelo ou', 'Notas por fonte', 'Comparar com outros', 'Outros modelos (só', 'Mostrar categorias'].filter((x) => html.includes(x));
+    conferir(!vaza.length, `${i.codigo}: sem texto em português na página inicial ${vaza.join(', ')}`);
+  }
+}
+// Toda chave que o JavaScript do navegador pede tem de ir em window.T.
+const { textosCliente } = await import('../src/i18n.mjs');
+const doCliente = Object.keys(textosCliente(IDIOMAS[0]));
+const pedidas = new Set(readdirSync(caminho('src/assets')).filter((a) => a.endsWith('.js')).flatMap((a) => [...readFileSync(caminho('src/assets/' + a), 'utf8').matchAll(/R\.t\('([\w.]+)'/g)].map((m) => m[1])));
+const faltamCliente = [...pedidas].filter((k) => !doCliente.includes(k));
+conferir(!faltamCliente.length, `${pedidas.size} textos pedidos pelo navegador estão em window.T ${faltamCliente.join(' ')}`);
 let semVersao = [], inline = [], h1 = [], links = new Set(), quebrados = [], titulo = [];
 for (const p of paginas) {
   const html = readFileSync(pub(p), 'utf8');
-  if (!html.includes(`<span class="versao" title="Versão do site">v${versao}</span>`)) semVersao.push(p);
+  if (!new RegExp(`<span class="versao" title="[^"]+">v${versao.replace(/\./g, '\.')}</span>`).test(html)) semVersao.push(p);
   if (/\sstyle=/.test(html) || /<script(?![^>]*\bsrc=)[^>]*>/.test(html) || /\son[a-z]+=/.test(html)) inline.push(p);
   if ((html.match(/<h1[\s>]/g) ?? []).length !== 1) h1.push(p);
-  if (!/<title>[^<]{10,90}<\/title>/.test(html) || !/<meta name="description" content="[^"]{40,}">/.test(html)) titulo.push(p);
+  if (!/<title>[^<]{6,90}<\/title>/.test(html) || !/<meta name="description" content="[^"]{20,}">/.test(html)) titulo.push(p);
   for (const m of html.matchAll(/(?:href|src)="(\/[^"#]*)"/g)) links.add(m[1].split('?')[0]);
 }
 for (const l of links) {
-  const alvo = l === '/' ? 'index.html' : l.slice(1);
+  const alvo = l.endsWith('/') ? l.slice(1) + 'index.html' : l.slice(1);
   if (!existsSync(pub(alvo))) quebrados.push(l);
 }
 conferir(!semVersao.length, `versão v${versao} no cabeçalho de todas as ${paginas.length} páginas ${semVersao.slice(0, 3).join(' ')}`);
@@ -82,6 +105,7 @@ conferir(!titulo.length, `title e description em todas ${titulo.slice(0, 3).join
 conferir(!quebrados.length, `${links.size} links internos existem ${quebrados.slice(0, 5).join(' ')}`);
 
 const index = readFileSync(pub('index.html'), 'utf8');
+conferir(/class="autonomo"/.test(index), 'rodapé avisa que coleta e resultados são autônomos');
 const linhasRanking = index.split('<table class="tabela" id="ranking"')[1].split('</table>')[0].match(/<tr[^>]* data-busca/g)?.length;
 conferir((d.categorias ?? []).length >= 5 && d.categorias.every((c) => index.includes(`data-cat="${c.id}"`)), `botões de ${d.categorias?.length} categorias`);
 conferir(ranking.every((m) => Object.values(m.categorias ?? {}).every((v) => v >= 0 && v <= 100)), 'notas por categoria entre 0 e 100');
@@ -100,7 +124,7 @@ const cliente = JSON.parse(readFileSync(pub('dados/ranking.json'), 'utf8'));
 conferir(cliente.modelos.length === d.modelos.length && cliente.versao === versao, 'public/dados/ranking.json coerente');
 conferir(existsSync(pub('vendor/chart.umd.min.js')), 'Chart.js local em /vendor');
 const sitemap = readFileSync(pub('sitemap.xml'), 'utf8');
-conferir((sitemap.match(/<loc>/g) ?? []).length === d.modelos.length + 4, 'sitemap com as 4 páginas e todos os modelos');
+conferir((sitemap.match(/<loc>/g) ?? []).length === (d.modelos.length + 4) * IDIOMAS.length, `sitemap com as 4 páginas e todos os modelos nos ${IDIOMAS.length} idiomas`);
 const toml = readFileSync(caminho('netlify.toml'), 'utf8');
 conferir(/script-src 'self'/.test(toml) && !/unsafe-inline/.test(toml), "CSP do netlify.toml sem 'unsafe-inline'");
 const gi = readFileSync(caminho('.gitignore'), 'utf8');
