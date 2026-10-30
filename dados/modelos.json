@@ -1,20 +1,20 @@
 {
- "geradoEm": "2026-10-30T14:35:21.653Z",
+ "geradoEm": "2026-10-30T14:45:02.425Z",
  "fontes": {
   "openrouter": {
    "ok": true,
-   "coletadoEm": "2026-10-30T14:13:59.334Z",
+   "coletadoEm": "2026-10-30T14:45:00.245Z",
    "erro": null
   },
   "livebench": {
    "ok": true,
-   "coletadoEm": "2026-10-30T14:13:59.803Z",
+   "coletadoEm": "2026-10-30T14:45:00.401Z",
    "erro": null,
    "release": "2026-10-25"
   },
   "lmarena": {
    "ok": true,
-   "coletadoEm": "2026-10-30T14:14:02.191Z",
+   "coletadoEm": "2026-10-30T14:45:01.941Z",
    "erro": null,
    "datas": {
     "texto": "2026-10-28",
@@ -24,7 +24,7 @@
   },
   "artificialanalysis": {
    "ok": true,
-   "coletadoEm": "2026-10-30T14:34:56.431Z",
+   "coletadoEm": "2026-10-30T14:45:02.288Z",
    "erro": null
   }
  },
@@ -198,8 +198,8 @@
    "contexto": 1000000,
    "precoEntrada": 4,
    "precoSaida": 20,
-   "velocidade": 97.481,
-   "ttft": 562.71,
+   "velocidade": 97.535,
+   "ttft": 516.763,
    "metricas": {
     "lb_geral": 85.14,
     "lb_agentico": 72.8,
@@ -256,8 +256,8 @@
    "contexto": null,
    "precoEntrada": 4,
    "precoSaida": 20,
-   "velocidade": 87.523,
-   "ttft": 65.976,
+   "velocidade": 87.412,
+   "ttft": 68.484,
    "metricas": {
     "arena_texto": 1540,
     "arena_webdev": 1768,
@@ -292,8 +292,8 @@
    "contexto": 1000000,
    "precoEntrada": 10,
    "precoSaida": 50,
-   "velocidade": 62.62,
-   "ttft": 41.809,
+   "velocidade": 62.259,
+   "ttft": 40.263,
    "metricas": {
     "lb_geral": 85.69,
     "lb_agentico": 77.9,
@@ -393,8 +393,8 @@
    "contexto": 1050000,
    "precoEntrada": 10,
    "precoSaida": 50,
-   "velocidade": 88.339,
-   "ttft": 184.026,
+   "velocidade": 82.686,
+   "ttft": 181.033,
    "metricas": {
     "lb_geral": 85.64,
     "lb_agentico": 77.5,
@@ -512,7 +512,7 @@
    "precoEntrada": 2,
    "precoSaida": 10,
    "velocidade": 80.413,
-   "ttft": 27.767,
+   "ttft": 28.869,
    "metricas": {
     "lb_geral": 79.3,
     "lb_agentico": 61.2,
@@ -608,8 +608,8 @@
    "contexto": 1050000,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 83.543,
-   "ttft": 176.148,
+   "velocidade": 79.738,
+   "ttft": 172.013,
    "metricas": {
     "lb_geral": 84.07,
     "lb_agentico": 68.7,
@@ -703,7 +703,7 @@
    "precoEntrada": 1,
    "precoSaida": 5,
    "velocidade": 91.03,
-   "ttft": 171.321,
+   "ttft": 165.555,
    "metricas": {
     "lb_geral": 77.79,
     "lb_agentico": 48.6,
@@ -756,7 +756,7 @@
    "contexto": 1048576,
    "precoEntrada": 4,
    "precoSaida": 20,
-   "velocidade": 157.987,
+   "velocidade": 149.714,
    "ttft": 25.183,
    "metricas": {
     "lb_geral": 74.15,
@@ -1008,8 +1008,8 @@
    "contexto": 1048576,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 30.47,
-   "ttft": 2.667,
+   "velocidade": 29.499,
+   "ttft": 2.629,
    "metricas": {
     "lb_geral": 71.29,
     "lb_agentico": 39.1,
@@ -1309,7 +1309,7 @@
    "precoEntrada": 0.15,
    "precoSaida": 0.47,
    "velocidade": 52.089,
-   "ttft": 1.433,
+   "ttft": 1.378,
    "metricas": {
     "arena_webdev": 1628,
     "aa_hle": 38,
@@ -1344,7 +1344,7 @@
    "contexto": 1048576,
    "precoEntrada": 0.15,
    "precoSaida": 0.6,
-   "velocidade": 163.217,
+   "velocidade": 159.161,
    "ttft": 0.887,
    "metricas": {
     "lb_geral": 74.02,
@@ -1520,7 +1520,7 @@
    "contexto": 1048576,
    "precoEntrada": 2,
    "precoSaida": 12,
-   "velocidade": 140.789,
+   "velocidade": 139.362,
    "ttft": 15.036,
    "metricas": {
     "arena_texto": 1480,
@@ -1680,7 +1680,7 @@
    "contexto": 1050000,
    "precoEntrada": 0.435,
    "precoSaida": 0.87,
-   "velocidade": 42.445,
+   "velocidade": 41.802,
    "ttft": 2.893,
    "metricas": {
     "lb_geral": 68.48,
@@ -1798,8 +1798,8 @@
    "contexto": 1048576,
    "precoEntrada": 2,
    "precoSaida": 6,
-   "velocidade": 38.417,
-   "ttft": 1.942,
+   "velocidade": 38.438,
+   "ttft": 1.939,
    "metricas": {
     "aa_hle": 42.4,
     "aa_terminal": 11.1,
@@ -2054,7 +2054,7 @@
    "contexto": 1048576,
    "precoEntrada": 0.2156,
    "precoSaida": 0.6468,
-   "velocidade": 158.371,
+   "velocidade": 157.569,
    "ttft": 1.126,
    "metricas": {
     "aa_hle": 34.5,
@@ -2215,7 +2215,7 @@
    "hf": null,
    "lancamento": "2026-08-01",
    "contexto": 1048576,
-   "precoEntrada": 0.0304,
+   "precoEntrada": 0.0522,
    "precoSaida": 0.3,
    "velocidade": 0,
    "ttft": 0,
@@ -2257,7 +2257,7 @@
    "precoEntrada": 2,
    "precoSaida": 6,
    "velocidade": 38.231,
-   "ttft": 2.111,
+   "ttft": 1.982,
    "metricas": {
     "lb_geral": 61.56,
     "lb_agentico": 29.9,
@@ -2316,8 +2316,8 @@
    "contexto": null,
    "precoEntrada": 0.1,
    "precoSaida": 0.3,
-   "velocidade": 120.155,
-   "ttft": 0.639,
+   "velocidade": 121.097,
+   "ttft": 0.644,
    "metricas": {
     "aa_hle": 37.5,
     "aa_gpqa": 90.5,
@@ -2465,7 +2465,7 @@
    "precoEntrada": 0.1,
    "precoSaida": 0.5,
    "velocidade": 235.344,
-   "ttft": 243.62,
+   "ttft": 224.529,
    "metricas": {
     "lb_geral": 69.85,
     "lb_agentico": 40,
@@ -2652,7 +2652,7 @@
    "contexto": 500000,
    "precoEntrada": 2,
    "precoSaida": 6,
-   "velocidade": 69.839,
+   "velocidade": 68.721,
    "ttft": 10.254,
    "metricas": {
     "lb_geral": 70.14,
@@ -2802,8 +2802,8 @@
    "contexto": 1050000,
    "precoEntrada": 0.14,
    "precoSaida": 0.28,
-   "velocidade": 47.525,
-   "ttft": 3.088,
+   "velocidade": 46.377,
+   "ttft": 3.157,
    "metricas": {
     "arena_texto": 1451,
     "arena_webdev": 1637,
@@ -2884,7 +2884,7 @@
    "contexto": 1048576,
    "precoEntrada": 0.825,
    "precoSaida": 4.125,
-   "velocidade": 127.237,
+   "velocidade": 125.535,
    "ttft": 18.006,
    "metricas": {
     "lb_geral": 59.21,
@@ -3257,7 +3257,7 @@
    "contexto": 262144,
    "precoEntrada": 0.132,
    "precoSaida": 0.528,
-   "velocidade": 85.261,
+   "velocidade": 85.583,
    "ttft": 1.878,
    "metricas": {
     "arena_texto": 1439,
@@ -3296,7 +3296,7 @@
    "contexto": 1048576,
    "precoEntrada": 0.66,
    "precoSaida": 1.98,
-   "velocidade": 76.885,
+   "velocidade": 75.393,
    "ttft": 1.073,
    "metricas": {
     "arena_texto": 1451,
@@ -3337,8 +3337,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.15,
    "precoSaida": 0.6,
-   "velocidade": 120.422,
-   "ttft": 0.843,
+   "velocidade": 112.873,
+   "ttft": 0.772,
    "metricas": {
     "lb_geral": 66.89,
     "lb_agentico": 28.8,
@@ -3390,9 +3390,9 @@
    "lancamento": "2026-08-26",
    "contexto": 1048576,
    "precoEntrada": 0.018,
-   "precoSaida": 0.1324,
+   "precoSaida": 0.1402,
    "velocidade": 65.58,
-   "ttft": 1.267,
+   "ttft": 1.252,
    "metricas": {
     "lb_geral": 62.07,
     "lb_agentico": 19,
@@ -3525,7 +3525,7 @@
    "precoEntrada": 0.1,
    "precoSaida": 0.4,
    "velocidade": 112.172,
-   "ttft": 1.043,
+   "ttft": 1.05,
    "metricas": {
     "aa_hle": 25.8,
     "aa_terminal": 1,
@@ -3770,8 +3770,8 @@
    "contexto": 400000,
    "precoEntrada": 1.75,
    "precoSaida": 14,
-   "velocidade": 85.795,
-   "ttft": 50.881,
+   "velocidade": 83.963,
+   "ttft": 49.142,
    "metricas": {
     "arena_webdev": 1407,
     "aa_hle": 42.5,
@@ -3867,7 +3867,7 @@
    "contexto": null,
    "precoEntrada": 0.11,
    "precoSaida": 0.33,
-   "velocidade": 154.628,
+   "velocidade": 149.796,
    "ttft": 0.54,
    "metricas": {
     "aa_hle": 18.7,
@@ -4075,8 +4075,8 @@
    "contexto": 1048576,
    "precoEntrada": 1,
    "precoSaida": 2.7,
-   "velocidade": 162.781,
-   "ttft": 0.7,
+   "velocidade": 151.223,
+   "ttft": 0.698,
    "metricas": {
     "lb_geral": 58.61,
     "lb_agentico": 19.4,
@@ -4256,7 +4256,7 @@
    "contexto": null,
    "precoEntrada": 0.4,
    "precoSaida": 4.8,
-   "velocidade": 102.877,
+   "velocidade": 102.449,
    "ttft": 1.098,
    "metricas": {
     "aa_hle": 14.9,
@@ -4287,8 +4287,8 @@
    "contexto": null,
    "precoEntrada": 0.3,
    "precoSaida": 2.5,
-   "velocidade": 104.465,
-   "ttft": 2.175,
+   "velocidade": 114.528,
+   "ttft": 2.131,
    "metricas": {
     "aa_hle": 21.6,
     "aa_terminal": 0.5,
@@ -4897,8 +4897,8 @@
    "contexto": 1050000,
    "precoEntrada": 0.1,
    "precoSaida": 0.5,
-   "velocidade": 113.016,
-   "ttft": 117.754,
+   "velocidade": 114.074,
+   "ttft": 104.544,
    "metricas": {
     "lb_geral": 64.59,
     "lb_agentico": 30.9,
@@ -4955,8 +4955,8 @@
    "contexto": null,
    "precoEntrada": 0.3,
    "precoSaida": 2.5,
-   "velocidade": 189.648,
-   "ttft": 17.265,
+   "velocidade": 197.672,
+   "ttft": 14.909,
    "metricas": {
     "aa_hle": 11.6,
     "aa_gpqa": 81.1,
@@ -4986,7 +4986,7 @@
    "contexto": 262144,
    "precoEntrada": 0.5,
    "precoSaida": 3.6,
-   "velocidade": 58.878,
+   "velocidade": 58.994,
    "ttft": 1.643,
    "metricas": {
     "arena_texto": 1438,
@@ -5280,8 +5280,8 @@
    "contexto": null,
    "precoEntrada": 0.042,
    "precoSaida": 0.17,
-   "velocidade": 179.952,
-   "ttft": 0.972,
+   "velocidade": 177.477,
+   "ttft": 0.968,
    "metricas": {
     "aa_hle": 11,
     "aa_gpqa": 73.8,
@@ -5374,7 +5374,7 @@
    "precoEntrada": 2,
    "precoSaida": 8,
    "velocidade": 131.999,
-   "ttft": 5.613,
+   "ttft": 5.08,
    "metricas": {
     "arena_texto": 1410,
     "arena_visao": 1214,
@@ -5672,7 +5672,7 @@
    "precoEntrada": 0,
    "precoSaida": 0,
    "velocidade": 89.335,
-   "ttft": 0.247,
+   "ttft": 0.241,
    "metricas": {
     "aa_hle": 11.1,
     "aa_terminal": 0.5,
@@ -5896,7 +5896,7 @@
    "contexto": null,
    "precoEntrada": 0.03,
    "precoSaida": 0.15,
-   "velocidade": 19.856,
+   "velocidade": 19.257,
    "ttft": 0.583,
    "metricas": {
     "aa_hle": 9.9,
@@ -6063,8 +6063,8 @@
    "contexto": null,
    "precoEntrada": 1.25,
    "precoSaida": 10,
-   "velocidade": 134.256,
-   "ttft": 12.682,
+   "velocidade": 132.554,
+   "ttft": 13.727,
    "metricas": {
     "aa_hle": 9.4,
     "aa_gpqa": 78.5,
@@ -6169,7 +6169,7 @@
    "precoEntrada": 0.15,
    "precoSaida": 1.875,
    "velocidade": 39.133,
-   "ttft": 1.232,
+   "ttft": 1.222,
    "metricas": {
     "lb_geral": 58.38,
     "lb_agentico": 20.6,
@@ -6572,7 +6572,7 @@
    "precoEntrada": 0.1,
    "precoSaida": 0.8,
    "velocidade": 225.902,
-   "ttft": 0.896,
+   "ttft": 0.898,
    "metricas": {
     "aa_hle": 7.6,
     "aa_gpqa": 74.2,
@@ -6740,7 +6740,7 @@
    "contexto": null,
    "precoEntrada": 0.25,
    "precoSaida": 0.97,
-   "velocidade": 109.681,
+   "velocidade": 110.229,
    "ttft": 0.907,
    "metricas": {
     "aa_hle": 7.5,
@@ -6802,8 +6802,8 @@
    "contexto": 262144,
    "precoEntrada": 0.1,
    "precoSaida": 0.9,
-   "velocidade": 139.969,
-   "ttft": 1.067,
+   "velocidade": 136.722,
+   "ttft": 1.065,
    "metricas": {
     "aa_hle": 22.2,
     "aa_terminal": 0,
@@ -7037,7 +7037,7 @@
    "precoEntrada": 0.4,
    "precoSaida": 1.2,
    "velocidade": 310.848,
-   "ttft": 0.5,
+   "ttft": 0.502,
    "metricas": {
     "aa_inteligencia": 17.7,
     "aa_hle": 34.7,
@@ -7069,8 +7069,8 @@
    "contexto": null,
    "precoEntrada": 0,
    "precoSaida": 0,
-   "velocidade": 750.165,
-   "ttft": 1.4,
+   "velocidade": 699.564,
+   "ttft": 1.394,
    "metricas": {
     "aa_inteligencia": 17.8,
     "aa_hle": 32,
@@ -7176,8 +7176,8 @@
    "contexto": 262144,
    "precoEntrada": 0.6,
    "precoSaida": 2.4,
-   "velocidade": 151.006,
-   "ttft": 0.834,
+   "velocidade": 151.324,
+   "ttft": 0.836,
    "metricas": {
     "arena_texto": 1445,
     "aa_inteligencia": 11.8,
@@ -7714,8 +7714,8 @@
    "contexto": 1048576,
    "precoEntrada": 1.25,
    "precoSaida": 4.25,
-   "velocidade": 140.005,
-   "ttft": 0.484,
+   "velocidade": 139.84,
+   "ttft": 0.476,
    "metricas": {
     "lb_geral": 51.63,
     "lb_agentico": 11.7,
@@ -7987,7 +7987,7 @@
    "contexto": 1048576,
    "precoEntrada": 0.3,
    "precoSaida": 2.5,
-   "velocidade": 411.17,
+   "velocidade": 399.371,
    "ttft": 4.766,
    "metricas": {
     "arena_texto": 1435,
@@ -8343,8 +8343,8 @@
    "contexto": null,
    "precoEntrada": 0.3,
    "precoSaida": 1.2,
-   "velocidade": 88.21,
-   "ttft": 1.039,
+   "velocidade": 87.902,
+   "ttft": 1.063,
    "metricas": {
     "arena_texto": 1389,
     "arena_webdev": 1370,
@@ -8475,8 +8475,8 @@
    "contexto": 524288,
    "precoEntrada": 0.45,
    "precoSaida": 1.2,
-   "velocidade": 180.559,
-   "ttft": 1.392,
+   "velocidade": 179.731,
+   "ttft": 1.41,
    "metricas": {
     "arena_texto": 1414,
     "arena_webdev": 1409,
@@ -8847,7 +8847,7 @@
    "precoEntrada": 0.345,
    "precoSaida": 0.345,
    "velocidade": 25.166,
-   "ttft": 0.555,
+   "ttft": 0.546,
    "metricas": {
     "aa_hle": 5.5,
     "aa_gpqa": 22.1,
@@ -9330,7 +9330,7 @@
    "contexto": 131072,
    "precoEntrada": 0.15,
    "precoSaida": 0.6,
-   "velocidade": 183.233,
+   "velocidade": 181.482,
    "ttft": 0.503,
    "metricas": {
     "arena_texto": 1365,
@@ -9400,7 +9400,7 @@
    "contexto": 262144,
    "precoEntrada": 0.12,
    "precoSaida": 0.8,
-   "velocidade": 77.673,
+   "velocidade": 78.038,
    "ttft": 0.715,
    "metricas": {
     "aa_hle": 10.1,
@@ -9641,8 +9641,8 @@
    "contexto": null,
    "precoEntrada": 0,
    "precoSaida": 0,
-   "velocidade": 131.396,
-   "ttft": 0.181,
+   "velocidade": 131.736,
+   "ttft": 0.184,
    "metricas": {
     "aa_hle": 5.2,
     "aa_gpqa": 30.5,
@@ -9711,7 +9711,7 @@
    "contexto": null,
    "precoEntrada": 0,
    "precoSaida": 0,
-   "velocidade": 57.524,
+   "velocidade": 57.645,
    "ttft": 1.572,
    "metricas": {
     "aa_hle": 9.3,
@@ -9961,8 +9961,8 @@
    "contexto": null,
    "precoEntrada": 0.1,
    "precoSaida": 0.2,
-   "velocidade": 151.528,
-   "ttft": 2.459,
+   "velocidade": 152.57,
+   "ttft": 2.456,
    "metricas": {
     "aa_hle": 5,
     "aa_gpqa": 25.6,
@@ -10083,8 +10083,8 @@
    "contexto": null,
    "precoEntrada": 0.08,
    "precoSaida": 0.32,
-   "velocidade": 17.125,
-   "ttft": 0.428,
+   "velocidade": 17.098,
+   "ttft": 0.401,
    "metricas": {
     "aa_hle": 5,
     "aa_gpqa": 31.5
@@ -10361,7 +10361,7 @@
    "contexto": null,
    "precoEntrada": 0.2,
    "precoSaida": 0.7,
-   "velocidade": 1721.338,
+   "velocidade": 1691.693,
    "ttft": 0.399,
    "metricas": {
     "aa_hle": 6.8,
@@ -10465,7 +10465,7 @@
    "contexto": 524288,
    "precoEntrada": 1,
    "precoSaida": 4.05,
-   "velocidade": 150.376,
+   "velocidade": 168.312,
    "ttft": 2,
    "metricas": {
     "lb_geral": 47.05,
@@ -10645,7 +10645,7 @@
    "contexto": null,
    "precoEntrada": 0.4,
    "precoSaida": 1.365,
-   "velocidade": 227.903,
+   "velocidade": 229.355,
    "ttft": 0.423,
    "metricas": {
     "aa_hle": 4.8,
@@ -10714,8 +10714,8 @@
    "contexto": 262144,
    "precoEntrada": 0.06,
    "precoSaida": 0.24,
-   "velocidade": 231.563,
-   "ttft": 0.407,
+   "velocidade": 234.721,
+   "ttft": 0.398,
    "metricas": {
     "arena_texto": 1348,
     "aa_hle": 11.4,
@@ -10780,8 +10780,8 @@
    "contexto": 262144,
    "precoEntrada": 0.2,
    "precoSaida": 0.4,
-   "velocidade": 35.115,
-   "ttft": 0.954,
+   "velocidade": 35.224,
+   "ttft": 0.924,
    "metricas": {
     "lb_geral": 38.72,
     "lb_agentico": 10.7,
@@ -11268,8 +11268,8 @@
    "contexto": null,
    "precoEntrada": 0.1,
    "precoSaida": 0.1,
-   "velocidade": 184.892,
-   "ttft": 0.447,
+   "velocidade": 197.002,
+   "ttft": 0.442,
    "metricas": {
     "aa_hle": 5.4,
     "aa_terminal": 0,
@@ -11428,7 +11428,7 @@
    "precoEntrada": 0.1,
    "precoSaida": 0.2,
    "velocidade": 90.448,
-   "ttft": 0.84,
+   "ttft": 0.833,
    "metricas": {
     "aa_hle": 4.4,
     "aa_gpqa": 52.9,
@@ -11494,7 +11494,7 @@
    "precoEntrada": 0.3,
    "precoSaida": 1.2,
    "velocidade": 138.528,
-   "ttft": 0.417,
+   "ttft": 0.411,
    "metricas": {
     "arena_texto": 1389,
     "arena_webdev": 1355,
@@ -12212,8 +12212,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.15,
    "precoSaida": 0.5,
-   "velocidade": 410.431,
-   "ttft": 0.56,
+   "velocidade": 416.988,
+   "ttft": 0.561,
    "metricas": {
     "lb_geral": 50.23,
     "lb_agentico": 11.7,
@@ -12270,8 +12270,8 @@
    "contexto": 131072,
    "precoEntrada": 0.06,
    "precoSaida": 0.15,
-   "velocidade": 56.778,
-   "ttft": 0.406,
+   "velocidade": 58.944,
+   "ttft": 0.402,
    "metricas": {
     "arena_texto": 1319,
     "aa_hle": 9.7,
@@ -12513,7 +12513,7 @@
    "precoEntrada": 0.2,
    "precoSaida": 0.2,
    "velocidade": 57.691,
-   "ttft": 0.678,
+   "ttft": 0.657,
    "metricas": {
     "aa_hle": 4.6,
     "aa_terminal": 0,
@@ -12608,7 +12608,7 @@
    "contexto": null,
    "precoEntrada": 0,
    "precoSaida": 0,
-   "velocidade": 145.963,
+   "velocidade": 144.546,
    "ttft": 0.206,
    "metricas": {
     "aa_inteligencia": 6.2,
@@ -12794,8 +12794,8 @@
    "contexto": 131072,
    "precoEntrada": 0.018,
    "precoSaida": 0.09,
-   "velocidade": 137.496,
-   "ttft": 0.416,
+   "velocidade": 139.114,
+   "ttft": 0.419,
    "metricas": {
     "arena_texto": 1287,
     "aa_hle": 11,
@@ -13224,8 +13224,8 @@
    "contexto": 262144,
    "precoEntrada": 0.07,
    "precoSaida": 0.2,
-   "velocidade": 275.974,
-   "ttft": 0.44,
+   "velocidade": 278.134,
+   "ttft": 0.436,
    "metricas": {
     "aa_inteligencia": 5.5,
     "aa_hle": 10.6,
@@ -13414,7 +13414,7 @@
    "contexto": null,
    "precoEntrada": 0.6,
    "precoSaida": 0.71,
-   "velocidade": 97.22,
+   "velocidade": 97.15,
    "ttft": 0.645,
    "metricas": {
     "aa_hle": 3.6,
@@ -13675,7 +13675,7 @@
    "precoEntrada": 0.1,
    "precoSaida": 0.3,
    "velocidade": 134.881,
-   "ttft": 0.614,
+   "ttft": 0.608,
    "metricas": {
     "aa_hle": 3.8,
     "aa_terminal": 0,
@@ -13809,8 +13809,8 @@
    "contexto": 256000,
    "precoEntrada": 2.5,
    "precoSaida": 10,
-   "velocidade": 18.422,
-   "ttft": 0.645,
+   "velocidade": 17.387,
+   "ttft": 0.685,
    "metricas": {
     "arena_texto": 1331,
     "aa_hle": 4,
@@ -14052,7 +14052,7 @@
    "chave": "kimi-linear-48b-a3b",
    "slug": "kimi-linear-48b-a3b",
    "nome": "Kimi Linear 48B A3B Instruct",
-   "empresa": "Kimi",
+   "empresa": "Moonshot AI",
    "aberto": null,
    "hf": null,
    "lancamento": "2025-10-30",
@@ -14267,7 +14267,7 @@
    "precoEntrada": 0.15,
    "precoSaida": 0.6,
    "velocidade": 171.756,
-   "ttft": 0.64,
+   "ttft": 0.638,
    "metricas": {
     "aa_inteligencia": 4.3,
     "aa_hle": 9.9,
@@ -15052,8 +15052,8 @@
    "contexto": 16384,
    "precoEntrada": 0.07,
    "precoSaida": 0.14,
-   "velocidade": 42.963,
-   "ttft": 0.889,
+   "velocidade": 42.358,
+   "ttft": 0.902,
    "metricas": {
     "arena_texto": 1217,
     "aa_hle": 3.8,

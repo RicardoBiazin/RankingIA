@@ -1,6 +1,6 @@
 {
  "fonte": "openrouter",
- "coletadoEm": "2026-10-30T14:13:59.334Z",
+ "coletadoEm": "2026-10-30T14:45:00.245Z",
  "modelos": [
   {
    "origem": "particle-ai/particle-1",
@@ -896,7 +896,7 @@
    "nome": "GLM Flash Latest",
    "empresa": "~z Ai",
    "precoEntrada": 0.018,
-   "precoSaida": 0.1324,
+   "precoSaida": 0.1402,
    "contexto": 1048576,
    "lancamento": "2026-08-27",
    "aberto": false,
@@ -920,7 +920,7 @@
    "nome": "GLM 5.3 Flash",
    "empresa": "Z.ai",
    "precoEntrada": 0.018,
-   "precoSaida": 0.1324,
+   "precoSaida": 0.1402,
    "contexto": 1048576,
    "lancamento": "2026-08-26",
    "aberto": true,
@@ -1171,7 +1171,7 @@
    "chave": "deepseek-v4-flash",
    "nome": "DeepSeek V4 Flash Latest",
    "empresa": "~deepseek",
-   "precoEntrada": 0.0304,
+   "precoEntrada": 0.0522,
    "precoSaida": 0.3,
    "contexto": 1048576,
    "lancamento": "2026-08-01",
