@@ -18,6 +18,10 @@ const ponderadas = metricas.filter((m) => m.peso > 0);
 const categorias = metricas.filter((m) => m.categoria);
 const extras = metricas.filter((m) => m.peso === 0 && !m.categoria);
 const met = Object.fromEntries(metricas.map((m) => [m.id, m]));
+const cats = dados.categorias ?? [];
+// Em quais categorias cada métrica aparece; 'todas' = visão padrão (métricas com peso >= 1).
+const catsDe = (id) => [...(met[id]?.peso >= 1 ? ['todas'] : []), ...cats.filter((c) => c.metricas.includes(id)).map((c) => c.id)].join(' ');
+const colunasMetricas = [...ponderadas, ...categorias, ...extras].filter((x) => catsDe(x.id));
 
 rmSync(caminho('public'), { recursive: true, force: true });
 mkdirSync(caminho('public/modelo'), { recursive: true });
@@ -40,8 +44,14 @@ const nv = (v) => v == null ? '' : v; // data-v vazio vai para o fim na ordenaç
 
 // ---------- JSON para o navegador ----------
 const historicoNota = {};
+const historicoModelo = {}; // chave -> { dias, nota, pos }
 for (const arq of readdirSync(caminho('dados/historico')).filter((a) => /^\d{4}-\d{2}-\d{2}\.json$/.test(a)).sort()) {
-  historicoNota[arq.slice(0, 10)] = Object.fromEntries(Object.entries(lerJSON(`dados/historico/${arq}`)).map(([k, v]) => [k, v[0]]));
+  const dia = arq.slice(0, 10), snap = lerJSON(`dados/historico/${arq}`);
+  historicoNota[dia] = Object.fromEntries(Object.entries(snap).map(([k, v]) => [k, v[0]]));
+  for (const [k, [nota, pos]] of Object.entries(snap)) {
+    const h = (historicoModelo[k] ??= { dias: [], nota: [], pos: [] });
+    h.dias.push(dia); h.nota.push(nota); h.pos.push(pos);
+  }
 }
 const lb = lerJSON('dados/brutos/livebench.json');
 const aliases = lerJSON('dados/aliases.json', {});
@@ -62,14 +72,14 @@ gravarJSON('public/dados/ranking.json', {
 
 // ---------- ranking (index) ----------
 function linhaRanking(m) {
-  const cel = (id, cls = '') => `<td class="${cls}" data-v="${nv(m.metricas[id])}">${valor(m, id)}</td>`;
-  return `<tr data-busca="${esc((m.nome + ' ' + (m.empresa ?? '') + ' ' + m.chave).toLowerCase())}" data-empresa="${esc(m.empresa ?? '')}" data-aberto="${m.aberto ? 1 : 0}" data-preco="${nv(m.precoEntrada)}" data-slug="${esc(m.slug)}"${m.posicao === 1 ? ' class="top1"' : ''}>
+  const cel = (id) => `<td data-cats="${catsDe(id)}" data-v="${nv(m.metricas[id])}">${valor(m, id)}</td>`;
+  const posCats = cats.map((c) => ` data-r-${c.id}="${m.posCategorias?.[c.id] ?? ''}"`).join('');
+  return `<tr${posCats} data-pos="${m.posicao}" data-busca="${esc((m.nome + ' ' + (m.empresa ?? '') + ' ' + m.chave).toLowerCase())}" data-empresa="${esc(m.empresa ?? '')}" data-aberto="${m.aberto ? 1 : 0}" data-preco="${nv(m.precoEntrada)}" data-slug="${esc(m.slug)}"${m.posicao === 1 ? ' class="top1"' : ''}>
 <td class="pos" data-v="${m.posicao}">${m.posicao}</td>
 <td class="esq modelo" data-v="${esc(m.nome.toLowerCase())}"><a href="/modelo/${esc(m.slug)}.html">${esc(m.nome)}</a>${selo(m)}<small>${esc(m.empresa ?? '—')}</small></td>
+${cats.map((c) => `<td class="nota" data-cats="${c.id}" data-v="${nv(m.categorias?.[c.id])}">${m.categorias?.[c.id] != null ? nf(m.categorias[c.id]) + barra(m.categorias[c.id]) : '—'}</td>`).join('')}
 <td class="nota" data-v="${m.nota}">${nf(m.nota)}${barra(m.nota)}</td>
-${ponderadas.map((x) => cel(x.id, x.peso < 1 ? 'cat' : '')).join('')}
-${categorias.map((x) => cel(x.id, 'cat')).join('')}
-${extras.map((x) => cel(x.id, 'cat')).join('')}
+${colunasMetricas.map((x) => cel(x.id)).join('')}
 <td data-v="${nv(m.precoEntrada)}">${precoH(m.precoEntrada)}</td>
 <td data-v="${nv(m.precoSaida)}">${precoH(m.precoSaida)}</td>
 <td data-v="${nv(m.contexto)}">${contexto(m.contexto)}</td>
@@ -90,8 +100,8 @@ ${['arena_texto', 'arena_webdev', 'arena_visao'].filter((id) => met[id]).map((id
 </tr>`;
 }
 
-const th = (rotulo, { esq = false, cls = '', titulo = '', tipo = 'num' } = {}) =>
-  `<th scope="col" class="${[esq ? 'esq' : '', cls].join(' ').trim()}" data-tipo="${tipo}"${titulo ? ` title="${esc(titulo)}"` : ''}><button type="button">${rotulo}</button></th>`;
+const th = (rotulo, { esq = false, cls = '', titulo = '', tipo = 'num', cats: dc = '' } = {}) =>
+  `<th scope="col" class="${[esq ? 'esq' : '', cls].join(' ').trim()}" data-tipo="${tipo}"${dc ? ` data-cats="${dc}"` : ''}${titulo ? ` title="${esc(titulo)}"` : ''}><button type="button">${rotulo}</button></th>`;
 
 const empresas = [...new Set(modelos.map((m) => m.empresa).filter(Boolean))].sort((a, b) => a.localeCompare(b));
 const filtros = `<div class="filtros" role="search">
@@ -103,10 +113,14 @@ const filtros = `<div class="filtros" role="search">
 <select id="f-tipo"><option value="">Abertos e fechados</option><option value="1">Só pesos abertos</option><option value="0">Só fechados</option></select>
 <label class="oculto" for="f-preco">Preço de entrada</label>
 <select id="f-preco"><option value="">Qualquer preço</option>${[0.5, 2, 5].map((v) => `<option value="${v}" data-usd-rotulo="${v}">até ${preco(v)} / 1M</option>`).join('')}</select>
-<label class="caixa"><input type="checkbox" id="f-cat"> Mostrar categorias</label>
 <label class="caixa" for="f-mostrar">Mostrar</label>
 <select id="f-mostrar" title="Quantos modelos mostrar em cada tabela"><option value="10" selected>10</option><option value="20">20</option><option value="50">50</option><option value="100">100</option><option value="">Todos</option></select>
 <span class="contagem" id="contagem" aria-live="polite"></span>
+</div>
+<div class="chips" role="group" aria-label="Categoria">
+<span class="rotulo-chips">Categoria</span>
+<button type="button" class="chip" data-cat="todas" aria-pressed="true">Todas</button>
+${cats.map((c) => `<button type="button" class="chip" data-cat="${c.id}" aria-pressed="false" title="${esc(c.metricas.map((id) => met[id].nome).join(', '))}">${esc(c.nome)}</button>`).join('\n')}
 </div>`;
 
 const melhor = (lista, f) => lista.filter((m) => f(m) != null).sort((a, b) => f(b) - f(a))[0];
@@ -138,15 +152,14 @@ ${cartao('Preferido pelas pessoas (Arena)', topArena, topArena ? `Elo ${Math.rou
 <h2 id="t-ranking" class="oculto">Ranking geral</h2>
 ${filtros}
 <div class="rolagem">
-<table class="tabela" id="ranking">
+<table class="tabela" id="ranking" data-cat="todas">
 <caption class="oculto">Ranking geral: ${ranking.length} modelos com benchmark objetivo</caption>
 <thead><tr>
 ${th('#', { titulo: 'Posição' })}
 ${th('Modelo', { esq: true, tipo: 'texto' })}
-${th('Nota', { titulo: 'Nota RankingIA (0 a 100)' })}
-${ponderadas.map((x) => th(esc(x.curto), { cls: x.peso < 1 ? 'cat' : '', titulo: x.desc })).join('')}
-${categorias.map((x) => th(esc(x.curto), { cls: 'cat', titulo: x.desc })).join('')}
-${extras.map((x) => th(esc(x.curto), { cls: 'cat', titulo: x.desc })).join('')}
+${cats.map((c) => th(`Nota ${esc(c.nome.toLowerCase())}`, { cls: 'nota-cat', cats: c.id, titulo: `Nota em ${c.nome} (0 a 100): média dos percentis de ${c.metricas.map((id) => met[id].nome).join(', ')}` })).join('')}
+${th('Nota', { cls: 'nota-geral', titulo: 'Nota RankingIA geral (0 a 100)' })}
+${colunasMetricas.map((x) => th(esc(x.curto), { cats: catsDe(x.id), titulo: x.desc })).join('')}
 ${th('Entrada', { titulo: 'Preço por 1 milhão de tokens de entrada' })}
 ${th('Saída', { titulo: 'Preço por 1 milhão de tokens de saída' })}
 ${th('Contexto', { titulo: 'Janela de contexto em tokens' })}
@@ -212,6 +225,7 @@ function paginaModelo(m) {
     descricao: resumo,
     caminho: `/modelo/${m.slug}.html`,
     versao, dados,
+    scripts: (historicoModelo[m.chave]?.dias.length ?? 0) >= 2 ? ['/vendor/chart.umd.min.js', '/assets/comum.js', '/assets/modelo.js'] : [],
     conteudo: `<nav class="fraco"><a href="/">Ranking</a> › ${esc(m.nome)}</nav>
 <div class="cabeca-modelo">
 <div>
@@ -242,6 +256,21 @@ ${linhas}
 </table>
 </div>
 </section>
+${!m.parcial && cats.some((c) => m.categorias?.[c.id] != null) ? `<h2>Por categoria</h2>
+<section class="cartao"><div class="rolagem"><table class="tabela">
+<thead><tr><th scope="col" class="esq">Categoria</th><th scope="col">Nota</th><th scope="col">Posição</th><th scope="col" class="esq">Métricas</th></tr></thead>
+<tbody>
+${cats.filter((c) => m.categorias?.[c.id] != null).map((c) => `<tr><th scope="row" class="esq">${esc(c.nome)}</th><td>${nf(m.categorias[c.id])}${barra(m.categorias[c.id])}</td><td>${m.posCategorias[c.id]}º</td><td class="esq fraco">${esc(c.metricas.filter((id) => m.metricas[id] != null).map((id) => met[id].nome).join(', '))}</td></tr>`).join('\n')}
+</tbody></table></div></section>` : ''}
+${!m.parcial ? (() => {
+    const h = historicoModelo[m.chave] ?? { dias: [], nota: [], pos: [] };
+    return `<h2>Evolução</h2>
+<section class="cartao grafico"><p>Nota RankingIA em cada dia de coleta (passe o mouse para ver a posição).</p>
+${h.dias.length >= 2
+    ? `<div class="tela baixa"><canvas id="g-modelo" role="img" aria-label="Evolução da nota de ${esc(m.nome)}" data-serie="${esc(JSON.stringify(h))}"></canvas></div>`
+    : `<p class="fraco">A coleta diária começou em ${dataBR(Object.keys(historicoNota)[0])}. O gráfico aparece a partir do segundo dia em que o modelo estiver no ranking.</p>`}
+</section>`;
+  })() : ''}
 <p></p>
 <p><a class="botao" href="/comparar.html?m=${encodeURIComponent(m.slug)}${top && top.slug !== m.slug ? ',' + encodeURIComponent(top.slug) : ''}">Comparar com outros modelos</a></p>
 ${links.length ? `<h2>Nas fontes</h2>\n<ul class="links">${links.map(([u, n]) => `<li><a class="botao leve" href="${esc(u)}" rel="noopener">${n}</a></li>`).join('')}</ul>` : ''}`,
@@ -267,6 +296,7 @@ gravarTexto('public/graficos.html', pagina({
 ${blocoGrafico('nota-preco', 'Nota RankingIA × preço', 'Quanto mais para cima e para a esquerda, melhor o custo-benefício.')}
 ${blocoGrafico('arena-preco', 'Preferência humana (Arena) × preço', 'Elo de texto da LMArena; inclui modelos fora do ranking geral.')}
 ${dados.fontes.artificialanalysis?.coletadoEm ? blocoGrafico('nota-velocidade', 'Nota RankingIA × velocidade', 'Tokens por segundo medidos pela Artificial Analysis.') : ''}
+${blocoGrafico('fronteira', 'Evolução das IAs', 'Cada ponto é um modelo do ranking, na data de lançamento. As linhas mostram a melhor nota já lançada até cada data, para pesos fechados e abertos.', { largo: true })}
 ${blocoGrafico('evolucao', 'Evolução no LiveBench', 'Nota geral do LiveBench 2.0 em cada release, para os 8 primeiros do ranking.', { largo: true })}
 ${blocoGrafico('historico', 'Evolução da Nota RankingIA', 'Nota diária dos 8 primeiros do ranking desde que o site começou a coletar.', { largo: true })}
 </div>`,
@@ -346,9 +376,12 @@ gravarTexto('public/404.html', pagina({
 
 // ---------- arquivos de apoio ----------
 const css = readFileSync(caminho('src/assets/estilo.css'), 'utf8')
+  + '\n/* Colunas por categoria (geradas): só aparece a coluna marcada com a categoria ativa */\n'
+  + '#ranking [data-cats] { display: none; }\n'
+  + ['todas', ...cats.map((c) => c.id)].map((id) => `#ranking[data-cat="${id}"] [data-cats~="${id}"] { display: table-cell; }`).join('\n') + '\n'
   + '\n/* Larguras das barras (geradas) */\n' + Array.from({ length: 101 }, (_, i) => `.barra i.w${i}{width:${i}%}`).join('\n') + '\n';
 gravarTexto('public/assets/estilo.css', css);
-for (const a of ['tema.js', 'moeda.js', 'tabela.js', 'graficos.js', 'comparar.js', 'comum.js']) copyFileSync(caminho('src/assets/' + a), caminho('public/assets/' + a));
+for (const a of ['tema.js', 'moeda.js', 'tabela.js', 'graficos.js', 'comparar.js', 'comum.js', 'modelo.js']) copyFileSync(caminho('src/assets/' + a), caminho('public/assets/' + a));
 mkdirSync(caminho('public/vendor'), { recursive: true });
 copyFileSync(caminho('node_modules/chart.js/dist/chart.umd.min.js'), caminho('public/vendor/chart.umd.min.js'));
 gravarTexto('public/favicon.svg', '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#2a78d6"/><rect x="7" y="17" width="4.5" height="8" rx="1.5" fill="#fff"/><rect x="13.75" y="8" width="4.5" height="17" rx="1.5" fill="#fff"/><rect x="20.5" y="13" width="4.5" height="12" rx="1.5" fill="#fff"/></svg>\n');

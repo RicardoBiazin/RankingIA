@@ -153,6 +153,13 @@ main { padding: 24px 0 48px; }
 .filtros label.caixa { display: flex; align-items: center; gap: 6px; color: var(--texto-2); font-size: .9rem; cursor: pointer; }
 .filtros .contagem { margin-left: auto; color: var(--texto-3); font-size: .85rem; }
 
+/* Botões de categoria */
+.chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding: 10px 16px; border-bottom: 1px solid var(--borda); }
+.rotulo-chips { font-size: .75rem; text-transform: uppercase; letter-spacing: .05em; color: var(--texto-3); font-weight: 600; margin-right: 4px; }
+.chip { font: inherit; font-size: .88rem; color: var(--texto-2); background: var(--superficie); border: 1px solid var(--borda); border-radius: 99px; padding: 4px 12px; cursor: pointer; }
+.chip:hover { background: var(--superficie-2); }
+.chip[aria-pressed="true"] { background: var(--destaque); border-color: var(--destaque); color: #fff; font-weight: 600; }
+
 /* Tabela */
 .rolagem { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 table { border-collapse: collapse; width: 100%; }
@@ -170,8 +177,6 @@ table { border-collapse: collapse; width: 100%; }
 .tabela .pos { color: var(--texto-3); font-weight: 600; width: 2.5em; }
 .tabela tr.top1 .pos { color: var(--ouro); }
 .tabela .vazio { color: var(--texto-3); }
-.tabela .cat { display: none; }
-.tabela.com-cat .cat { display: table-cell; }
 .tabela td.nota { font-weight: 700; }
 .selo { display: inline-block; font-size: .7rem; font-weight: 600; border-radius: 99px; padding: 0 6px; margin-left: 6px; border: 1px solid var(--borda); color: var(--texto-2); vertical-align: 1px; }
 .selo.aberto { color: var(--bom); border-color: currentColor; }

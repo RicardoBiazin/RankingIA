@@ -82,7 +82,9 @@ conferir(!titulo.length, `title e description em todas ${titulo.slice(0, 3).join
 conferir(!quebrados.length, `${links.size} links internos existem ${quebrados.slice(0, 5).join(' ')}`);
 
 const index = readFileSync(pub('index.html'), 'utf8');
-const linhasRanking = index.split('<table class="tabela" id="ranking">')[1].split('</table>')[0].match(/<tr data-busca/g)?.length;
+const linhasRanking = index.split('<table class="tabela" id="ranking"')[1].split('</table>')[0].match(/<tr[^>]* data-busca/g)?.length;
+conferir((d.categorias ?? []).length >= 5 && d.categorias.every((c) => index.includes(`data-cat="${c.id}"`)), `botões de ${d.categorias?.length} categorias`);
+conferir(ranking.every((m) => Object.values(m.categorias ?? {}).every((v) => v >= 0 && v <= 100)), 'notas por categoria entre 0 e 100');
 conferir(linhasRanking === ranking.length, `tabela do ranking com ${linhasRanking} linhas`);
 const externos = [...index.matchAll(/<(?:script|link)[^>]+(?:src|href)="(https?:[^"]+)"/g)].map((m) => m[1]).filter((u) => !u.startsWith('https://rankingia.biazin.com.br') && !(PERFIL.cloudflareToken && u.startsWith('https://static.cloudflareinsights.com/')));
 conferir(!externos.length, `sem script/estilo externo ${externos.join(' ')}`);

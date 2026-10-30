@@ -1,5 +1,16 @@
 # Histórico
 
+## 0.5.0 — 30/10/2026
+
+- Botões de categoria acima do ranking (como no LiveBench): Todas, Agêntico, Código, Raciocínio, Análise de dados, Pesquisa, Design, Navegador, Conversa e Visão.
+  - Ao escolher uma categoria, a tabela mostra a nota dela e as métricas que a formam, ordena por essa nota, e o "#" vira a posição na categoria.
+  - Substitui a caixa "Mostrar categorias".
+- Nota por categoria: média dos percentis das métricas da categoria, com o mesmo encolhimento da nota geral.
+- Página do modelo:
+  - tabela "Por categoria", com nota e posição;
+  - gráfico "Evolução", com a nota dia a dia e a posição na dica (aparece a partir do 2º dia de coleta).
+- Página de gráficos: "Evolução das IAs", com cada modelo na data de lançamento e a linha do recorde de nota para pesos fechados e abertos.
+
 ## 0.4.0 — 30/10/2026
 
 - As tabelas abrem com os 10 primeiros modelos. O seletor "Mostrar" escolhe entre 10, 20, 50, 100 ou todos, e vale para as duas tabelas.

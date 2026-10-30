@@ -3,7 +3,7 @@
 // Uso: node scripts/normalizar.mjs
 
 import { chave, empresaPorNome, gravarJSON, lerJSON } from './util.mjs';
-import { METRICAS, CATEGORIAS_LB, EXIGE_UMA_DE, PESO_NEUTRO } from '../src/pesos.mjs';
+import { METRICAS, CATEGORIAS_LB, CATEGORIAS, EXIGE_UMA_DE, PESO_NEUTRO } from '../src/pesos.mjs';
 
 const aliases = lerJSON('dados/aliases.json', {});
 const k = (origem) => { const c = chave(origem); return aliases[c] ?? c; };
@@ -26,7 +26,7 @@ const metricasLB = [];
 if (lb) {
   for (const cat of lb.categorias) {
     const c = CATEGORIAS_LB[cat] ?? { id: 'lb_' + cat.toLowerCase().replace(/\W+/g, '_'), nome: cat };
-    metricasLB.push({ id: c.id, nome: c.nome, curto: c.nome, fonte: 'livebench', peso: 0, unidade: '%', categoria: true, desc: `Categoria "${cat}" do LiveBench 2.0${lb.pesos[cat] ? ` (peso ${lb.pesos[cat]} na nota geral do LiveBench)` : ''}.` });
+    metricasLB.push({ id: c.id, nome: `LiveBench ${c.nome.toLowerCase()}`, curto: `LB ${c.nome.toLowerCase()}`, fonte: 'livebench', peso: 0, unidade: '%', categoria: true, desc: `Categoria "${cat}" do LiveBench 2.0${lb.pesos[cat] ? ` (peso ${lb.pesos[cat]} na nota geral do LiveBench)` : ''}.` });
   }
   for (const m of lb.modelos) {
     const r = pegar(k(m.origem));
@@ -120,6 +120,22 @@ for (const x of lista) {
   x.nota = !x.parcial && peso ? +((soma + PESO_NEUTRO * 50) / (peso + PESO_NEUTRO)).toFixed(1) : null;
   x.cobertura = pesoTotal ? +(peso / pesoTotal).toFixed(2) : 0;
 }
+// Nota por categoria (só para quem está no ranking geral) e posição dentro dela.
+const ids = new Set(disponiveis.map((m) => m.id));
+const categorias = CATEGORIAS.map((c) => ({ ...c, metricas: c.metricas.filter((id) => ids.has(id)) })).filter((c) => c.metricas.length);
+for (const x of lista) {
+  x.categorias = {};
+  if (x.parcial) continue;
+  for (const c of categorias) {
+    const ps = c.metricas.map((id) => x.percentis[id]).filter((p) => p != null);
+    if (ps.length) x.categorias[c.id] = +((ps.reduce((a, b) => a + b, 0) + PESO_NEUTRO * 50) / (ps.length + PESO_NEUTRO)).toFixed(1);
+  }
+}
+for (const c of categorias) {
+  const com = lista.filter((x) => x.categorias[c.id] != null).sort((a, b) => b.categorias[c.id] - a.categorias[c.id] || b.nota - a.nota);
+  com.forEach((x, i) => { (x.posCategorias ??= {})[c.id] = i + 1; });
+}
+
 lista.sort((a, b) => (a.parcial - b.parcial) || ((b.nota ?? -1) - (a.nota ?? -1))
   || ((b.metricas.arena_texto ?? -1) - (a.metricas.arena_texto ?? -1)) || a.nome.localeCompare(b.nome));
 let pos = 0;
@@ -143,6 +159,7 @@ gravarJSON('dados/modelos.json', {
   fontes,
   metricas: disponiveis,
   exigeUmaDe: EXIGE_UMA_DE,
+  categorias,
   cambio: cambio ? { data: cambio.data, taxas: cambio.taxas } : null,
   modelos: lista,
 });

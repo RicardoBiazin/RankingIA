@@ -91,7 +91,50 @@
       dados('nota-velocidade', ['Modelo', 'Nota', 'tok/s'], nv.map(function (m) { return [m.n, R.nf(m.nota), R.nf(m.v, 0)]; }));
     }
 
-    // 4. Evolução no LiveBench: 8 primeiros do ranking que estão no LiveBench.
+    // 4. Evolução das IAs: modelos por data de lançamento e a fronteira (melhor nota até a data).
+    var comData = ranking.filter(function (m) { return m.l; }).sort(function (a, b) { return a.l < b.l ? -1 : 1; });
+    var fronteira = function (aberto) {
+      var melhor = -1, pts = [];
+      comData.filter(function (m) { return !!m.a === aberto; }).forEach(function (m) {
+        if (m.nota > melhor) { melhor = m.nota; pts.push({ x: Date.parse(m.l), y: m.nota, nome: m.n, slug: m.s, rotulo: 'novo recorde em ' + R.dataBR(m.l) }); }
+      });
+      if (pts.length) pts.push({ x: Date.now(), y: melhor, nome: pts[pts.length - 1].nome, slug: pts[pts.length - 1].slug, rotulo: 'melhor até hoje' });
+      return pts;
+    };
+    var canvasF = document.getElementById('g-fronteira');
+    if (canvasF && comData.length) {
+      var pontoF = function (m) { return { x: Date.parse(m.l), y: m.nota, nome: m.n, slug: m.s, rotulo: 'nota ' + R.nf(m.nota) + ' · lançado em ' + R.dataBR(m.l) }; };
+      var mes = function (v) { var d = new Date(v); return String(d.getUTCMonth() + 1).padStart(2, '0') + '/' + d.getUTCFullYear(); };
+      graficos.push(new Chart(canvasF, {
+        type: 'scatter',
+        data: {
+          datasets: [
+            { type: 'line', label: 'Melhor fechado', data: fronteira(false), borderColor: R.serie(0), backgroundColor: R.serie(0), borderWidth: 2, pointRadius: 0, pointHitRadius: 8, stepped: 'before' },
+            { type: 'line', label: 'Melhor aberto', data: fronteira(true), borderColor: R.serie(1), backgroundColor: R.serie(1), borderWidth: 2, pointRadius: 0, pointHitRadius: 8, stepped: 'before' },
+            { label: 'Modelos fechados', data: comData.filter(function (m) { return !m.a; }).map(pontoF), backgroundColor: R.serie(0) + '59', borderWidth: 0, pointRadius: 3.5, pointHoverRadius: 6 },
+            { label: 'Modelos abertos', data: comData.filter(function (m) { return m.a; }).map(pontoF), backgroundColor: R.serie(1) + '59', borderWidth: 0, pointRadius: 3.5, pointHoverRadius: 6 },
+          ],
+        },
+        options: {
+          maintainAspectRatio: false,
+          animation: false,
+          scales: {
+            x: { type: 'linear', grid: { display: false }, ticks: { callback: mes, maxTicksLimit: 10 } },
+            y: { title: { display: true, text: 'Nota RankingIA' }, min: 0, max: 100 },
+          },
+          plugins: {
+            legend: { position: 'bottom' },
+            tooltip: { callbacks: { label: function (c) { return c.raw.nome + ' · ' + c.raw.rotulo; } } },
+          },
+          onClick: function (e, itens) { if (itens.length) location.href = '/modelo/' + itens[0].element.$context.raw.slug + '.html'; },
+          onHover: function (e, itens) { e.native.target.style.cursor = itens.length ? 'pointer' : 'default'; },
+        },
+      }));
+      dados('fronteira', ['Data', 'Recorde', 'Tipo', 'Nota'], fronteira(false).slice(0, -1).map(function (p) { return [mes(p.x), p.nome, 'fechado', R.nf(p.y)]; })
+        .concat(fronteira(true).slice(0, -1).map(function (p) { return [mes(p.x), p.nome, 'aberto', R.nf(p.y)]; })));
+    }
+
+    // 4b. Evolução no LiveBench: 8 primeiros do ranking que estão no LiveBench.
     var hlb = d.historicoLiveBench || [];
     var top = ranking.filter(function (m) { return m.m.lb_geral != null; }).slice(0, 8);
     linhas('evolucao', hlb.map(function (h) { return h.data; }), top.map(function (m) {

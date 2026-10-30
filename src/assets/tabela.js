@@ -1,5 +1,5 @@
-// Ranking: ordenar por coluna, filtrar (busca, empresa, tipo, preço), mostrar
-// categorias e escolher modelos para comparar.
+// Ranking: ordenar por coluna, filtrar (busca, empresa, tipo, preço), trocar de
+// categoria, limitar a quantidade e escolher modelos para comparar.
 (function () {
   'use strict';
   var tabelas = ['ranking', 'outros'].map(function (id) { return document.getElementById(id); }).filter(Boolean);
@@ -7,34 +7,56 @@
   var fEmpresa = document.getElementById('f-empresa');
   var fTipo = document.getElementById('f-tipo');
   var fPreco = document.getElementById('f-preco');
-  var fCat = document.getElementById('f-cat');
   var contagem = document.getElementById('contagem');
   var fMostrar = document.getElementById('f-mostrar');
 
   // Ordenação: clique alterna desc/asc; vazio fica sempre no fim.
+  function ordenar(tab, col, asc) {
+    var ths = tab.tHead.rows[0].cells, th = ths[col];
+    var texto = th.dataset.tipo === 'texto';
+    Array.prototype.forEach.call(ths, function (o) { o.removeAttribute('aria-sort'); });
+    th.setAttribute('aria-sort', asc ? 'ascending' : 'descending');
+    var corpo = tab.tBodies[0];
+    var linhas = Array.prototype.slice.call(corpo.rows);
+    linhas.sort(function (a, b) {
+      var va = a.cells[col].dataset.v, vb = b.cells[col].dataset.v;
+      if (va === '' || va == null) return (vb === '' || vb == null) ? 0 : 1;
+      if (vb === '' || vb == null) return -1;
+      var r = texto || isNaN(va) || isNaN(vb) ? va.localeCompare(vb, 'pt-BR') : Number(va) - Number(vb);
+      return asc ? r : -r;
+    });
+    linhas.forEach(function (l) { corpo.appendChild(l); });
+    filtrar(); // o limite vale para as primeiras na nova ordem
+  }
   tabelas.forEach(function (tab) {
-    var ths = tab.tHead.rows[0].cells;
-    Array.prototype.forEach.call(ths, function (th, col) {
+    Array.prototype.forEach.call(tab.tHead.rows[0].cells, function (th, col) {
       var botao = th.querySelector('button');
       if (!botao) return;
       botao.addEventListener('click', function () {
-        var texto = th.dataset.tipo === 'texto';
         var atual = th.getAttribute('aria-sort');
-        var asc = atual ? atual === 'descending' : texto || col === 0 && th.textContent === '#';
-        Array.prototype.forEach.call(ths, function (o) { o.removeAttribute('aria-sort'); });
-        th.setAttribute('aria-sort', asc ? 'ascending' : 'descending');
-        var corpo = tab.tBodies[0];
-        var linhas = Array.prototype.slice.call(corpo.rows);
-        linhas.sort(function (a, b) {
-          var va = a.cells[col].dataset.v, vb = b.cells[col].dataset.v;
-          if (va === '' || va == null) return (vb === '' || vb == null) ? 0 : 1;
-          if (vb === '' || vb == null) return -1;
-          var r = texto || isNaN(va) || isNaN(vb) ? va.localeCompare(vb, 'pt-BR') : Number(va) - Number(vb);
-          return asc ? r : -r;
-        });
-        linhas.forEach(function (l) { corpo.appendChild(l); });
-        filtrar(); // o limite vale para as primeiras na nova ordem
+        ordenar(tab, col, atual ? atual === 'descending' : th.dataset.tipo === 'texto' || (col === 0 && th.textContent === '#'));
       });
+    });
+  });
+
+  // Categorias: mostra as colunas da categoria, ordena pela nota dela e troca a
+  // posição (#) pela posição na categoria. "Todas" volta à nota geral.
+  var ranking = document.getElementById('ranking');
+  document.querySelectorAll('.chip').forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      var cat = chip.dataset.cat;
+      document.querySelectorAll('.chip').forEach(function (c) { c.setAttribute('aria-pressed', String(c === chip)); });
+      ranking.dataset.cat = cat;
+      Array.prototype.forEach.call(ranking.tBodies[0].rows, function (tr) {
+        var pos = cat === 'todas' ? tr.dataset.pos : tr.getAttribute('data-r-' + cat);
+        tr.cells[0].textContent = pos || '—';
+        tr.cells[0].dataset.v = pos || '';
+      });
+      var ths = ranking.tHead.rows[0].cells, alvo = 0;
+      Array.prototype.forEach.call(ths, function (th, i) {
+        if (cat === 'todas' ? th.classList.contains('nota-geral') : (th.classList.contains('nota-cat') && th.dataset.cats === cat)) alvo = i;
+      });
+      ordenar(ranking, alvo, false);
     });
   });
 
@@ -60,7 +82,6 @@
     });
   }
   [busca, fEmpresa, fTipo, fPreco, fMostrar].forEach(function (el) { el.addEventListener('input', filtrar); });
-  fCat.addEventListener('change', function () { tabelas[0].classList.toggle('com-cat', fCat.checked); });
   filtrar();
 
   // Comparar: até 4 modelos.

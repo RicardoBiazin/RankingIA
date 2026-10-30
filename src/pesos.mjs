@@ -41,6 +41,20 @@ export const FONTES = {
   cambio: { nome: 'Câmbio do BCE (Frankfurter)', url: 'https://frankfurter.dev/', licenca: 'cotação de referência do Banco Central Europeu' },
 };
 
+// Categorias do ranking (botões acima da tabela). A nota da categoria é a média dos
+// percentis das métricas dela, com o mesmo encolhimento da nota geral.
+export const CATEGORIAS = [
+  { id: 'agentico', nome: 'Agêntico', metricas: ['lb_agentico', 'aa_terminal'] },
+  { id: 'codigo', nome: 'Código', metricas: ['lb_codigo', 'arena_webdev'] },
+  { id: 'raciocinio', nome: 'Raciocínio', metricas: ['lb_raciocinio', 'aa_hle', 'aa_gpqa'] },
+  { id: 'dados', nome: 'Análise de dados', metricas: ['lb_dados'] },
+  { id: 'pesquisa', nome: 'Pesquisa', metricas: ['lb_pesquisa', 'aa_contexto'] },
+  { id: 'design', nome: 'Design', metricas: ['lb_design', 'arena_webdev'] },
+  { id: 'navegador', nome: 'Navegador', metricas: ['lb_navegador'] },
+  { id: 'conversa', nome: 'Conversa', metricas: ['arena_texto'] },
+  { id: 'visao', nome: 'Visão', metricas: ['arena_visao'] },
+];
+
 // Encolhimento: a nota soma este peso extra com percentil 50. Quem tem só uma
 // métrica fica perto do meio; quem tem várias quase não muda.
 export const PESO_NEUTRO = 1;

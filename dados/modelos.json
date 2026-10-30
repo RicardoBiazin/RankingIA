@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-30T15:31:19.850Z",
+ "geradoEm": "2026-10-30T15:40:24.256Z",
  "fontes": {
   "openrouter": {
    "ok": true,
@@ -117,8 +117,8 @@
   },
   {
    "id": "lb_agentico",
-   "nome": "Agêntico longo",
-   "curto": "Agêntico longo",
+   "nome": "LiveBench agêntico longo",
+   "curto": "LB agêntico longo",
    "fonte": "livebench",
    "peso": 0,
    "unidade": "%",
@@ -127,8 +127,8 @@
   },
   {
    "id": "lb_raciocinio",
-   "nome": "Raciocínio",
-   "curto": "Raciocínio",
+   "nome": "LiveBench raciocínio",
+   "curto": "LB raciocínio",
    "fonte": "livebench",
    "peso": 0,
    "unidade": "%",
@@ -137,8 +137,8 @@
   },
   {
    "id": "lb_codigo",
-   "nome": "Código",
-   "curto": "Código",
+   "nome": "LiveBench código",
+   "curto": "LB código",
    "fonte": "livebench",
    "peso": 0,
    "unidade": "%",
@@ -147,8 +147,8 @@
   },
   {
    "id": "lb_navegador",
-   "nome": "Navegador",
-   "curto": "Navegador",
+   "nome": "LiveBench navegador",
+   "curto": "LB navegador",
    "fonte": "livebench",
    "peso": 0,
    "unidade": "%",
@@ -157,8 +157,8 @@
   },
   {
    "id": "lb_dados",
-   "nome": "Análise de dados",
-   "curto": "Análise de dados",
+   "nome": "LiveBench análise de dados",
+   "curto": "LB análise de dados",
    "fonte": "livebench",
    "peso": 0,
    "unidade": "%",
@@ -167,8 +167,8 @@
   },
   {
    "id": "lb_pesquisa",
-   "nome": "Pesquisa",
-   "curto": "Pesquisa",
+   "nome": "LiveBench pesquisa",
+   "curto": "LB pesquisa",
    "fonte": "livebench",
    "peso": 0,
    "unidade": "%",
@@ -177,8 +177,8 @@
   },
   {
    "id": "lb_design",
-   "nome": "Design",
-   "curto": "Design",
+   "nome": "LiveBench design",
+   "curto": "LB design",
    "fonte": "livebench",
    "peso": 0,
    "unidade": "%",
@@ -190,6 +190,77 @@
   "lb_geral",
   "aa_inteligencia",
   "aa_hle"
+ ],
+ "categorias": [
+  {
+   "id": "agentico",
+   "nome": "Agêntico",
+   "metricas": [
+    "lb_agentico",
+    "aa_terminal"
+   ]
+  },
+  {
+   "id": "codigo",
+   "nome": "Código",
+   "metricas": [
+    "lb_codigo",
+    "arena_webdev"
+   ]
+  },
+  {
+   "id": "raciocinio",
+   "nome": "Raciocínio",
+   "metricas": [
+    "lb_raciocinio",
+    "aa_hle",
+    "aa_gpqa"
+   ]
+  },
+  {
+   "id": "dados",
+   "nome": "Análise de dados",
+   "metricas": [
+    "lb_dados"
+   ]
+  },
+  {
+   "id": "pesquisa",
+   "nome": "Pesquisa",
+   "metricas": [
+    "lb_pesquisa",
+    "aa_contexto"
+   ]
+  },
+  {
+   "id": "design",
+   "nome": "Design",
+   "metricas": [
+    "lb_design",
+    "arena_webdev"
+   ]
+  },
+  {
+   "id": "navegador",
+   "nome": "Navegador",
+   "metricas": [
+    "lb_navegador"
+   ]
+  },
+  {
+   "id": "conversa",
+   "nome": "Conversa",
+   "metricas": [
+    "arena_texto"
+   ]
+  },
+  {
+   "id": "visao",
+   "nome": "Visão",
+   "metricas": [
+    "arena_visao"
+   ]
+  }
  ],
  "cambio": {
   "data": "2026-10-29",
@@ -262,6 +333,28 @@
    },
    "nota": 93.5,
    "cobertura": 1,
+   "categorias": {
+    "agentico": 80.5,
+    "codigo": 82.3,
+    "raciocinio": 80.1,
+    "dados": 66.2,
+    "pesquisa": 79.8,
+    "design": 83.3,
+    "navegador": 67,
+    "conversa": 74.5,
+    "visao": 74.5
+   },
+   "posCategorias": {
+    "agentico": 3,
+    "codigo": 1,
+    "raciocinio": 13,
+    "dados": 6,
+    "pesquisa": 1,
+    "design": 1,
+    "navegador": 6,
+    "conversa": 3,
+    "visao": 2
+   },
    "posicao": 1
   },
   {
@@ -298,6 +391,20 @@
    },
    "nota": 93.3,
    "cobertura": 0.61,
+   "categorias": {
+    "agentico": 74.7,
+    "codigo": 73.7,
+    "pesquisa": 67,
+    "design": 73.7,
+    "conversa": 75
+   },
+   "posCategorias": {
+    "agentico": 7,
+    "codigo": 7,
+    "pesquisa": 45,
+    "design": 7,
+    "conversa": 1
+   },
    "posicao": 2
   },
   {
@@ -358,6 +465,28 @@
    },
    "nota": 90.6,
    "cobertura": 1,
+   "categorias": {
+    "agentico": 81.2,
+    "codigo": 81.9,
+    "raciocinio": 83.6,
+    "dados": 66.2,
+    "pesquisa": 73.3,
+    "design": 79.2,
+    "navegador": 70.2,
+    "conversa": 74.2,
+    "visao": 73.5
+   },
+   "posCategorias": {
+    "agentico": 2,
+    "codigo": 2,
+    "raciocinio": 2,
+    "dados": 7,
+    "pesquisa": 16,
+    "design": 3,
+    "navegador": 4,
+    "conversa": 4,
+    "visao": 4
+   },
    "posicao": 3
   },
   {
@@ -399,6 +528,24 @@
    },
    "nota": 89.1,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 71.2,
+    "codigo": 71.5,
+    "raciocinio": 82.1,
+    "pesquisa": 67,
+    "design": 71.5,
+    "conversa": 74,
+    "visao": 74
+   },
+   "posCategorias": {
+    "agentico": 12,
+    "codigo": 10,
+    "raciocinio": 5,
+    "pesquisa": 46,
+    "design": 10,
+    "conversa": 5,
+    "visao": 3
+   },
    "posicao": 4
   },
   {
@@ -459,6 +606,28 @@
    },
    "nota": 87.9,
    "cobertura": 1,
+   "categorias": {
+    "agentico": 81.3,
+    "codigo": 75.5,
+    "raciocinio": 86.3,
+    "dados": 73.4,
+    "pesquisa": 77.6,
+    "design": 74.4,
+    "navegador": 71.8,
+    "conversa": 60.3,
+    "visao": 61.4
+   },
+   "posCategorias": {
+    "agentico": 1,
+    "codigo": 6,
+    "raciocinio": 1,
+    "dados": 2,
+    "pesquisa": 3,
+    "design": 6,
+    "navegador": 3,
+    "conversa": 57,
+    "visao": 29
+   },
    "posicao": 5
   },
   {
@@ -517,6 +686,28 @@
    },
    "nota": 87.4,
    "cobertura": 1,
+   "categorias": {
+    "agentico": 78.6,
+    "codigo": 77.4,
+    "raciocinio": 77.6,
+    "dados": 29.9,
+    "pesquisa": 76,
+    "design": 81.7,
+    "navegador": 68.5,
+    "conversa": 68.5,
+    "visao": 64.1
+   },
+   "posCategorias": {
+    "agentico": 4,
+    "codigo": 4,
+    "raciocinio": 27,
+    "dados": 29,
+    "pesquisa": 4,
+    "design": 2,
+    "navegador": 5,
+    "conversa": 25,
+    "visao": 23
+   },
    "posicao": 6
   },
   {
@@ -573,6 +764,26 @@
    },
    "nota": 87.2,
    "cobertura": 0.96,
+   "categorias": {
+    "agentico": 76.7,
+    "codigo": 69.9,
+    "raciocinio": 83.2,
+    "dados": 75,
+    "pesquisa": 71,
+    "design": 55.9,
+    "navegador": 65.3,
+    "conversa": 74.8
+   },
+   "posCategorias": {
+    "agentico": 6,
+    "codigo": 12,
+    "raciocinio": 3,
+    "dados": 1,
+    "pesquisa": 24,
+    "design": 39,
+    "navegador": 7,
+    "conversa": 2
+   },
    "posicao": 7
   },
   {
@@ -614,6 +825,24 @@
    },
    "nota": 86.6,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 70.5,
+    "codigo": 65.7,
+    "raciocinio": 81.7,
+    "pesquisa": 71.5,
+    "design": 65.7,
+    "conversa": 72.9,
+    "visao": 75
+   },
+   "posCategorias": {
+    "agentico": 14,
+    "codigo": 18,
+    "raciocinio": 7,
+    "pesquisa": 21,
+    "design": 19,
+    "conversa": 9,
+    "visao": 1
+   },
    "posicao": 8
   },
   {
@@ -672,6 +901,28 @@
    },
    "nota": 86.4,
    "cobertura": 1,
+   "categorias": {
+    "agentico": 78.5,
+    "codigo": 79.5,
+    "raciocinio": 80.5,
+    "dados": 71.8,
+    "pesquisa": 75.4,
+    "design": 74.6,
+    "navegador": 75,
+    "conversa": 62.8,
+    "visao": 64.8
+   },
+   "posCategorias": {
+    "agentico": 5,
+    "codigo": 3,
+    "raciocinio": 11,
+    "dados": 3,
+    "pesquisa": 6,
+    "design": 5,
+    "navegador": 1,
+    "conversa": 47,
+    "visao": 22
+   },
    "posicao": 9
   },
   {
@@ -708,6 +959,20 @@
    },
    "nota": 83.9,
    "cobertura": 0.52,
+   "categorias": {
+    "agentico": 73.1,
+    "codigo": 72.3,
+    "raciocinio": 74.2,
+    "pesquisa": 74,
+    "design": 72.3
+   },
+   "posCategorias": {
+    "agentico": 10,
+    "codigo": 9,
+    "raciocinio": 51,
+    "pesquisa": 10,
+    "design": 9
+   },
    "posicao": 10
   },
   {
@@ -762,6 +1027,24 @@
    },
    "nota": 83.6,
    "cobertura": 0.78,
+   "categorias": {
+    "agentico": 73.9,
+    "codigo": 73.3,
+    "raciocinio": 66.6,
+    "dados": 70.2,
+    "pesquisa": 63.1,
+    "design": 73.3,
+    "navegador": 73.4
+   },
+   "posCategorias": {
+    "agentico": 9,
+    "codigo": 8,
+    "raciocinio": 96,
+    "dados": 4,
+    "pesquisa": 76,
+    "design": 8,
+    "navegador": 2
+   },
    "posicao": 11
   },
   {
@@ -818,6 +1101,26 @@
    },
    "nota": 81.9,
    "cobertura": 0.96,
+   "categorias": {
+    "agentico": 74.5,
+    "codigo": 64.1,
+    "raciocinio": 72.3,
+    "dados": 68.5,
+    "pesquisa": 79.7,
+    "design": 57.1,
+    "navegador": 50.8,
+    "conversa": 73.4
+   },
+   "posCategorias": {
+    "agentico": 8,
+    "codigo": 22,
+    "raciocinio": 62,
+    "dados": 5,
+    "pesquisa": 2,
+    "design": 34,
+    "navegador": 16,
+    "conversa": 7
+   },
    "posicao": 12
   },
   {
@@ -859,6 +1162,24 @@
    },
    "nota": 81.6,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 62.4,
+    "codigo": 62.9,
+    "raciocinio": 81.9,
+    "pesquisa": 70.5,
+    "design": 62.9,
+    "conversa": 71.8,
+    "visao": 71.6
+   },
+   "posCategorias": {
+    "agentico": 30,
+    "codigo": 24,
+    "raciocinio": 6,
+    "pesquisa": 28,
+    "design": 26,
+    "conversa": 13,
+    "visao": 8
+   },
    "posicao": 13
   },
   {
@@ -898,6 +1219,22 @@
    },
    "nota": 81.2,
    "cobertura": 0.39,
+   "categorias": {
+    "codigo": 57.8,
+    "raciocinio": 75.7,
+    "pesquisa": 64.5,
+    "design": 57.8,
+    "conversa": 73.7,
+    "visao": 72.5
+   },
+   "posCategorias": {
+    "codigo": 33,
+    "raciocinio": 39,
+    "pesquisa": 64,
+    "design": 33,
+    "conversa": 6,
+    "visao": 6
+   },
    "posicao": 14
   },
   {
@@ -937,6 +1274,22 @@
    },
    "nota": 81,
    "cobertura": 0.39,
+   "categorias": {
+    "codigo": 59,
+    "raciocinio": 78.1,
+    "pesquisa": 66,
+    "design": 59,
+    "conversa": 72.1,
+    "visao": 73
+   },
+   "posCategorias": {
+    "codigo": 30,
+    "raciocinio": 24,
+    "pesquisa": 56,
+    "design": 30,
+    "conversa": 12,
+    "visao": 5
+   },
    "posicao": 15
   },
   {
@@ -973,6 +1326,18 @@
    },
    "nota": 80.1,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 75.1,
+    "pesquisa": 64.5,
+    "conversa": 69.1,
+    "visao": 69.7
+   },
+   "posCategorias": {
+    "raciocinio": 44,
+    "pesquisa": 65,
+    "conversa": 23,
+    "visao": 12
+   },
    "posicao": 16
   },
   {
@@ -1014,6 +1379,24 @@
    },
    "nota": 79.3,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 69.8,
+    "codigo": 64.6,
+    "raciocinio": 82.2,
+    "pesquisa": 74.3,
+    "design": 64.6,
+    "conversa": 65.5,
+    "visao": 61.9
+   },
+   "posCategorias": {
+    "agentico": 16,
+    "codigo": 20,
+    "raciocinio": 4,
+    "pesquisa": 8,
+    "design": 23,
+    "conversa": 37,
+    "visao": 28
+   },
    "posicao": 17
   },
   {
@@ -1068,6 +1451,24 @@
    },
    "nota": 79.2,
    "cobertura": 0.78,
+   "categorias": {
+    "agentico": 71.5,
+    "codigo": 59.8,
+    "raciocinio": 75.1,
+    "dados": 58.9,
+    "pesquisa": 67.1,
+    "design": 67.3,
+    "navegador": 60.5
+   },
+   "posCategorias": {
+    "agentico": 11,
+    "codigo": 29,
+    "raciocinio": 45,
+    "dados": 11,
+    "pesquisa": 44,
+    "design": 15,
+    "navegador": 10
+   },
    "posicao": 18
   },
   {
@@ -1109,6 +1510,24 @@
    },
    "nota": 77.4,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 59.1,
+    "codigo": 55.5,
+    "raciocinio": 78.4,
+    "pesquisa": 66.2,
+    "design": 55.5,
+    "conversa": 71.5,
+    "visao": 68.7
+   },
+   "posCategorias": {
+    "agentico": 38,
+    "codigo": 39,
+    "raciocinio": 20,
+    "pesquisa": 51,
+    "design": 41,
+    "conversa": 14,
+    "visao": 14
+   },
    "posicao": 19
   },
   {
@@ -1150,6 +1569,24 @@
    },
    "nota": 76.8,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 64.5,
+    "codigo": 58.6,
+    "raciocinio": 80.5,
+    "pesquisa": 64,
+    "design": 58.6,
+    "conversa": 66.3,
+    "visao": 66
+   },
+   "posCategorias": {
+    "agentico": 25,
+    "codigo": 31,
+    "raciocinio": 12,
+    "pesquisa": 69,
+    "design": 31,
+    "conversa": 34,
+    "visao": 19
+   },
    "posicao": 20
   },
   {
@@ -1191,6 +1628,24 @@
    },
    "nota": 76.2,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 58.2,
+    "codigo": 56.9,
+    "raciocinio": 78.1,
+    "pesquisa": 64,
+    "design": 56.9,
+    "conversa": 70,
+    "visao": 65.3
+   },
+   "posCategorias": {
+    "agentico": 41,
+    "codigo": 34,
+    "raciocinio": 25,
+    "pesquisa": 70,
+    "design": 35,
+    "conversa": 20,
+    "visao": 21
+   },
    "posicao": 21
   },
   {
@@ -1232,6 +1687,24 @@
    },
    "nota": 76.1,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 59.1,
+    "codigo": 56,
+    "raciocinio": 78.7,
+    "pesquisa": 68.7,
+    "design": 56,
+    "conversa": 70.7,
+    "visao": 67.7
+   },
+   "posCategorias": {
+    "agentico": 39,
+    "codigo": 37,
+    "raciocinio": 19,
+    "pesquisa": 35,
+    "design": 38,
+    "conversa": 17,
+    "visao": 16
+   },
    "posicao": 22
   },
   {
@@ -1273,6 +1746,24 @@
    },
    "nota": 75.7,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 63.5,
+    "codigo": 52.9,
+    "raciocinio": 81,
+    "pesquisa": 74.5,
+    "design": 52.9,
+    "conversa": 68.2,
+    "visao": 67.3
+   },
+   "posCategorias": {
+    "agentico": 26,
+    "codigo": 47,
+    "raciocinio": 9,
+    "pesquisa": 7,
+    "design": 46,
+    "conversa": 27,
+    "visao": 17
+   },
    "posicao": 23
   },
   {
@@ -1314,6 +1805,24 @@
    },
    "nota": 75.5,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 58.5,
+    "codigo": 51.1,
+    "raciocinio": 78.9,
+    "pesquisa": 59.8,
+    "design": 51.1,
+    "conversa": 71,
+    "visao": 70.4
+   },
+   "posCategorias": {
+    "agentico": 40,
+    "codigo": 52,
+    "raciocinio": 17,
+    "pesquisa": 99,
+    "design": 50,
+    "conversa": 16,
+    "visao": 10
+   },
    "posicao": 24
   },
   {
@@ -1350,6 +1859,20 @@
    },
    "nota": 75.4,
    "cobertura": 0.26,
+   "categorias": {
+    "agentico": 65.9,
+    "codigo": 66.6,
+    "raciocinio": 77.3,
+    "pesquisa": 67.8,
+    "design": 66.6
+   },
+   "posCategorias": {
+    "agentico": 22,
+    "codigo": 16,
+    "raciocinio": 30,
+    "pesquisa": 40,
+    "design": 18
+   },
    "posicao": 25
   },
   {
@@ -1408,6 +1931,28 @@
    },
    "nota": 75.2,
    "cobertura": 1,
+   "categorias": {
+    "agentico": 69.2,
+    "codigo": 76.8,
+    "raciocinio": 66.9,
+    "dados": 62.1,
+    "pesquisa": 68.5,
+    "design": 76.8,
+    "navegador": 52.4,
+    "conversa": 67.1,
+    "visao": 60.7
+   },
+   "posCategorias": {
+    "agentico": 17,
+    "codigo": 5,
+    "raciocinio": 95,
+    "dados": 9,
+    "pesquisa": 39,
+    "design": 4,
+    "navegador": 15,
+    "conversa": 31,
+    "visao": 30
+   },
    "posicao": 26
   },
   {
@@ -1449,6 +1994,22 @@
    },
    "nota": 75.1,
    "cobertura": 0.7,
+   "categorias": {
+    "agentico": 70.1,
+    "codigo": 65.3,
+    "raciocinio": 78.3,
+    "pesquisa": 67.8,
+    "design": 65.3,
+    "conversa": 69.1
+   },
+   "posCategorias": {
+    "agentico": 15,
+    "codigo": 19,
+    "raciocinio": 22,
+    "pesquisa": 41,
+    "design": 21,
+    "conversa": 24
+   },
    "posicao": 27
   },
   {
@@ -1488,6 +2049,22 @@
    },
    "nota": 74.1,
    "cobertura": 0.43,
+   "categorias": {
+    "agentico": 53,
+    "codigo": 63.5,
+    "raciocinio": 76,
+    "pesquisa": 65.5,
+    "design": 63.5,
+    "conversa": 67.9
+   },
+   "posCategorias": {
+    "agentico": 56,
+    "codigo": 23,
+    "raciocinio": 37,
+    "pesquisa": 58,
+    "design": 24,
+    "conversa": 28
+   },
    "posicao": 28
   },
   {
@@ -1526,6 +2103,22 @@
    },
    "nota": 74,
    "cobertura": 0.39,
+   "categorias": {
+    "codigo": 46.9,
+    "raciocinio": 76.6,
+    "pesquisa": 62.3,
+    "design": 46.9,
+    "conversa": 70.3,
+    "visao": 69.2
+   },
+   "posCategorias": {
+    "codigo": 62,
+    "raciocinio": 34,
+    "pesquisa": 82,
+    "design": 63,
+    "conversa": 19,
+    "visao": 13
+   },
    "posicao": 29
   },
   {
@@ -1567,6 +2160,24 @@
    },
    "nota": 73.8,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 57.5,
+    "codigo": 47.5,
+    "raciocinio": 81.5,
+    "pesquisa": 71,
+    "design": 47.5,
+    "conversa": 70.7,
+    "visao": 66.8
+   },
+   "posCategorias": {
+    "agentico": 43,
+    "codigo": 61,
+    "raciocinio": 8,
+    "pesquisa": 25,
+    "design": 62,
+    "conversa": 18,
+    "visao": 18
+   },
    "posicao": 30
   },
   {
@@ -1606,6 +2217,22 @@
    },
    "nota": 73.5,
    "cobertura": 0.39,
+   "categorias": {
+    "codigo": 48.5,
+    "raciocinio": 79.3,
+    "pesquisa": 71,
+    "design": 48.5,
+    "conversa": 67.7,
+    "visao": 68.2
+   },
+   "posCategorias": {
+    "codigo": 59,
+    "raciocinio": 16,
+    "pesquisa": 26,
+    "design": 59,
+    "conversa": 29,
+    "visao": 15
+   },
    "posicao": 31
   },
   {
@@ -1647,6 +2274,24 @@
    },
    "nota": 72.5,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 60,
+    "codigo": 58.2,
+    "raciocinio": 79.7,
+    "pesquisa": 67,
+    "design": 58.2,
+    "conversa": 63.5,
+    "visao": 64.1
+   },
+   "posCategorias": {
+    "agentico": 36,
+    "codigo": 32,
+    "raciocinio": 15,
+    "pesquisa": 47,
+    "design": 32,
+    "conversa": 44,
+    "visao": 24
+   },
    "posicao": 32
   },
   {
@@ -1686,6 +2331,22 @@
    },
    "nota": 72.2,
    "cobertura": 0.43,
+   "categorias": {
+    "agentico": 54.9,
+    "codigo": 53.3,
+    "raciocinio": 78.1,
+    "pesquisa": 66.2,
+    "design": 53.3,
+    "conversa": 69.5
+   },
+   "posCategorias": {
+    "agentico": 51,
+    "codigo": 46,
+    "raciocinio": 26,
+    "pesquisa": 52,
+    "design": 45,
+    "conversa": 22
+   },
    "posicao": 33
   },
   {
@@ -1744,6 +2405,28 @@
    },
    "nota": 71.6,
    "cobertura": 1,
+   "categorias": {
+    "agentico": 66.2,
+    "codigo": 54.9,
+    "raciocinio": 56.6,
+    "dados": 41.1,
+    "pesquisa": 66,
+    "design": 65.6,
+    "navegador": 62.1,
+    "conversa": 72.5,
+    "visao": 55.1
+   },
+   "posCategorias": {
+    "agentico": 21,
+    "codigo": 41,
+    "raciocinio": 172,
+    "dados": 22,
+    "pesquisa": 57,
+    "design": 20,
+    "navegador": 9,
+    "conversa": 10,
+    "visao": 41
+   },
    "posicao": 34
   },
   {
@@ -1804,6 +2487,28 @@
    },
    "nota": 71.6,
    "cobertura": 1,
+   "categorias": {
+    "agentico": 57.1,
+    "codigo": 69.4,
+    "raciocinio": 77.4,
+    "dados": 63.7,
+    "pesquisa": 57.1,
+    "design": 56.5,
+    "navegador": 41.1,
+    "conversa": 72.5,
+    "visao": 70.4
+   },
+   "posCategorias": {
+    "agentico": 44,
+    "codigo": 13,
+    "raciocinio": 29,
+    "dados": 8,
+    "pesquisa": 122,
+    "design": 36,
+    "navegador": 22,
+    "conversa": 11,
+    "visao": 11
+   },
    "posicao": 35
   },
   {
@@ -1838,6 +2543,16 @@
    },
    "nota": 70.6,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 60.3,
+    "raciocinio": 79.9,
+    "pesquisa": 69.2
+   },
+   "posCategorias": {
+    "agentico": 34,
+    "raciocinio": 14,
+    "pesquisa": 33
+   },
    "posicao": 36
   },
   {
@@ -1877,6 +2592,22 @@
    },
    "nota": 70.4,
    "cobertura": 0.39,
+   "categorias": {
+    "codigo": 46.9,
+    "raciocinio": 75,
+    "pesquisa": 64.5,
+    "design": 46.9,
+    "conversa": 67.3,
+    "visao": 63.4
+   },
+   "posCategorias": {
+    "codigo": 63,
+    "raciocinio": 46,
+    "pesquisa": 66,
+    "design": 64,
+    "conversa": 30,
+    "visao": 25
+   },
    "posicao": 37
   },
   {
@@ -1918,6 +2649,24 @@
    },
    "nota": 70.4,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 63,
+    "codigo": 56.4,
+    "raciocinio": 77.6,
+    "pesquisa": 71,
+    "design": 56.4,
+    "conversa": 61,
+    "visao": 59.5
+   },
+   "posCategorias": {
+    "agentico": 28,
+    "codigo": 36,
+    "raciocinio": 28,
+    "pesquisa": 27,
+    "design": 37,
+    "conversa": 52,
+    "visao": 33
+   },
    "posicao": 38
   },
   {
@@ -1959,6 +2708,24 @@
    },
    "nota": 70.3,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 56.8,
+    "codigo": 54.6,
+    "raciocinio": 72.4,
+    "pesquisa": 68.7,
+    "design": 54.6,
+    "conversa": 65.9,
+    "visao": 62.9
+   },
+   "posCategorias": {
+    "agentico": 45,
+    "codigo": 42,
+    "raciocinio": 61,
+    "pesquisa": 36,
+    "design": 43,
+    "conversa": 35,
+    "visao": 26
+   },
    "posicao": 39
   },
   {
@@ -1998,6 +2765,20 @@
    },
    "nota": 70.3,
    "cobertura": 0.39,
+   "categorias": {
+    "agentico": 53,
+    "raciocinio": 75,
+    "pesquisa": 59.1,
+    "conversa": 65,
+    "visao": 60.7
+   },
+   "posCategorias": {
+    "agentico": 57,
+    "raciocinio": 47,
+    "pesquisa": 103,
+    "conversa": 39,
+    "visao": 31
+   },
    "posicao": 40
   },
   {
@@ -2029,6 +2810,14 @@
    },
    "nota": 69.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 73.9,
+    "pesquisa": 61.5
+   },
+   "posCategorias": {
+    "raciocinio": 52,
+    "pesquisa": 87
+   },
    "posicao": 41
   },
   {
@@ -2060,6 +2849,16 @@
    },
    "nota": 68.9,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 56.8,
+    "raciocinio": 71.5,
+    "pesquisa": 65.5
+   },
+   "posCategorias": {
+    "agentico": 46,
+    "raciocinio": 68,
+    "pesquisa": 59
+   },
    "posicao": 42
   },
   {
@@ -2094,6 +2893,16 @@
    },
    "nota": 68.7,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 61.2,
+    "raciocinio": 75.7,
+    "pesquisa": 70.3
+   },
+   "posCategorias": {
+    "agentico": 31,
+    "raciocinio": 40,
+    "pesquisa": 30
+   },
    "posicao": 43
   },
   {
@@ -2133,6 +2942,22 @@
    },
    "nota": 68.6,
    "cobertura": 0.43,
+   "categorias": {
+    "agentico": 55.8,
+    "codigo": 52,
+    "raciocinio": 70.8,
+    "pesquisa": 60.4,
+    "design": 52,
+    "conversa": 66.6
+   },
+   "posCategorias": {
+    "agentico": 48,
+    "codigo": 50,
+    "raciocinio": 72,
+    "pesquisa": 95,
+    "design": 48,
+    "conversa": 33
+   },
    "posicao": 44
   },
   {
@@ -2191,6 +3016,28 @@
    },
    "nota": 68.5,
    "cobertura": 0.74,
+   "categorias": {
+    "agentico": 65.4,
+    "codigo": 55,
+    "raciocinio": 76.8,
+    "dados": 60.5,
+    "pesquisa": 53.9,
+    "design": 50.1,
+    "navegador": 56.5,
+    "conversa": 63.5,
+    "visao": 58.5
+   },
+   "posCategorias": {
+    "agentico": 23,
+    "codigo": 40,
+    "raciocinio": 31,
+    "dados": 10,
+    "pesquisa": 145,
+    "design": 54,
+    "navegador": 12,
+    "conversa": 45,
+    "visao": 35
+   },
    "posicao": 45
   },
   {
@@ -2223,6 +3070,14 @@
    },
    "nota": 68.5,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 75,
+    "pesquisa": 61.5
+   },
+   "posCategorias": {
+    "raciocinio": 48,
+    "pesquisa": 88
+   },
    "posicao": 46
   },
   {
@@ -2262,6 +3117,22 @@
    },
    "nota": 68.3,
    "cobertura": 0.43,
+   "categorias": {
+    "agentico": 61.2,
+    "codigo": 60.9,
+    "raciocinio": 76.4,
+    "pesquisa": 67.8,
+    "design": 60.9,
+    "conversa": 57.1
+   },
+   "posCategorias": {
+    "agentico": 32,
+    "codigo": 26,
+    "raciocinio": 35,
+    "pesquisa": 42,
+    "design": 27,
+    "conversa": 69
+   },
    "posicao": 47
   },
   {
@@ -2322,6 +3193,28 @@
    },
    "nota": 68.2,
    "cobertura": 1,
+   "categorias": {
+    "agentico": 63.5,
+    "codigo": 50,
+    "raciocinio": 72.6,
+    "dados": 55.6,
+    "pesquisa": 55.8,
+    "design": 69.3,
+    "navegador": 46.8,
+    "conversa": 71.5,
+    "visao": 71.1
+   },
+   "posCategorias": {
+    "agentico": 27,
+    "codigo": 55,
+    "raciocinio": 57,
+    "dados": 13,
+    "pesquisa": 134,
+    "design": 13,
+    "navegador": 18,
+    "conversa": 15,
+    "visao": 9
+   },
    "posicao": 48
   },
   {
@@ -2353,6 +3246,14 @@
    },
    "nota": 68,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 75.8,
+    "pesquisa": 72.8
+   },
+   "posCategorias": {
+    "raciocinio": 38,
+    "pesquisa": 17
+   },
    "posicao": 49
   },
   {
@@ -2390,6 +3291,20 @@
    },
    "nota": 67.7,
    "cobertura": 0.35,
+   "categorias": {
+    "codigo": 50.6,
+    "raciocinio": 70.6,
+    "pesquisa": 63.5,
+    "design": 50.6,
+    "conversa": 64.3
+   },
+   "posCategorias": {
+    "codigo": 53,
+    "raciocinio": 73,
+    "pesquisa": 73,
+    "design": 51,
+    "conversa": 40
+   },
    "posicao": 50
   },
   {
@@ -2431,6 +3346,24 @@
    },
    "nota": 67.4,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 49.3,
+    "codigo": 52.5,
+    "raciocinio": 76.2,
+    "pesquisa": 70,
+    "design": 52.5,
+    "conversa": 65.3,
+    "visao": 62.4
+   },
+   "posCategorias": {
+    "agentico": 65,
+    "codigo": 48,
+    "raciocinio": 36,
+    "pesquisa": 31,
+    "design": 47,
+    "conversa": 38,
+    "visao": 27
+   },
    "posicao": 51
   },
   {
@@ -2470,6 +3403,24 @@
    },
    "nota": 67.4,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 70.8,
+    "codigo": 70.6,
+    "raciocinio": 73,
+    "pesquisa": 74,
+    "design": 70.6,
+    "conversa": 47,
+    "visao": 46.1
+   },
+   "posCategorias": {
+    "agentico": 13,
+    "codigo": 11,
+    "raciocinio": 56,
+    "pesquisa": 11,
+    "design": 11,
+    "conversa": 107,
+    "visao": 60
+   },
    "posicao": 52
   },
   {
@@ -2526,6 +3477,26 @@
    },
    "nota": 66.9,
    "cobertura": 0.96,
+   "categorias": {
+    "agentico": 67.2,
+    "codigo": 66.2,
+    "raciocinio": 58.8,
+    "dados": 25,
+    "pesquisa": 71.7,
+    "design": 70.5,
+    "navegador": 54,
+    "conversa": 47.6
+   },
+   "posCategorias": {
+    "agentico": 19,
+    "codigo": 17,
+    "raciocinio": 156,
+    "dados": 32,
+    "pesquisa": 20,
+    "design": 12,
+    "navegador": 14,
+    "conversa": 105
+   },
    "posicao": 53
   },
   {
@@ -2557,6 +3528,14 @@
    },
    "nota": 66.8,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 75.4,
+    "pesquisa": 54.5
+   },
+   "posCategorias": {
+    "raciocinio": 42,
+    "pesquisa": 141
+   },
    "posicao": 54
   },
   {
@@ -2593,6 +3572,20 @@
    },
    "nota": 66.6,
    "cobertura": 0.35,
+   "categorias": {
+    "codigo": 49.8,
+    "raciocinio": 72.5,
+    "pesquisa": 69.6,
+    "design": 49.8,
+    "conversa": 63.1
+   },
+   "posCategorias": {
+    "codigo": 56,
+    "raciocinio": 59,
+    "pesquisa": 32,
+    "design": 55,
+    "conversa": 46
+   },
    "posicao": 55
   },
   {
@@ -2624,6 +3617,14 @@
    },
    "nota": 66.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 73.4,
+    "pesquisa": 70.5
+   },
+   "posCategorias": {
+    "raciocinio": 54,
+    "pesquisa": 29
+   },
    "posicao": 56
   },
   {
@@ -2658,6 +3659,16 @@
    },
    "nota": 66.2,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 69.3,
+    "pesquisa": 61,
+    "conversa": 59.6
+   },
+   "posCategorias": {
+    "raciocinio": 81,
+    "pesquisa": 90,
+    "conversa": 59
+   },
    "posicao": 57
   },
   {
@@ -2716,6 +3727,28 @@
    },
    "nota": 66.2,
    "cobertura": 1,
+   "categorias": {
+    "agentico": 68.3,
+    "codigo": 60.4,
+    "raciocinio": 58.7,
+    "dados": 54,
+    "pesquisa": 74.3,
+    "design": 65.3,
+    "navegador": 44.4,
+    "conversa": 47.4,
+    "visao": 44.9
+   },
+   "posCategorias": {
+    "agentico": 18,
+    "codigo": 28,
+    "raciocinio": 158,
+    "dados": 14,
+    "pesquisa": 9,
+    "design": 22,
+    "navegador": 20,
+    "conversa": 106,
+    "visao": 63
+   },
    "posicao": 58
   },
   {
@@ -2750,6 +3783,16 @@
    },
    "nota": 65.7,
    "cobertura": 0.43,
+   "categorias": {
+    "agentico": 67,
+    "raciocinio": 71.5,
+    "pesquisa": 71.5
+   },
+   "posCategorias": {
+    "agentico": 20,
+    "raciocinio": 69,
+    "pesquisa": 22
+   },
    "posicao": 59
   },
   {
@@ -2808,6 +3851,28 @@
    },
    "nota": 65.1,
    "cobertura": 0.74,
+   "categorias": {
+    "agentico": 57.6,
+    "codigo": 64.6,
+    "raciocinio": 80.7,
+    "dados": 46,
+    "pesquisa": 75.7,
+    "design": 66.7,
+    "navegador": 46.8,
+    "conversa": 55.8,
+    "visao": 55.1
+   },
+   "posCategorias": {
+    "agentico": 42,
+    "codigo": 21,
+    "raciocinio": 10,
+    "dados": 19,
+    "pesquisa": 5,
+    "design": 17,
+    "navegador": 19,
+    "conversa": 74,
+    "visao": 42
+   },
    "posicao": 60
   },
   {
@@ -2849,6 +3914,24 @@
    },
    "nota": 64.8,
    "cobertura": 0.74,
+   "categorias": {
+    "agentico": 64.8,
+    "codigo": 67.3,
+    "raciocinio": 67.3,
+    "pesquisa": 61,
+    "design": 67.3,
+    "conversa": 64.3,
+    "visao": 52.2
+   },
+   "posCategorias": {
+    "agentico": 24,
+    "codigo": 15,
+    "raciocinio": 91,
+    "pesquisa": 91,
+    "design": 16,
+    "conversa": 41,
+    "visao": 48
+   },
    "posicao": 61
   },
   {
@@ -2890,6 +3973,24 @@
    },
    "nota": 64.8,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 60.6,
+    "codigo": 53.8,
+    "raciocinio": 76.8,
+    "pesquisa": 74,
+    "design": 53.8,
+    "conversa": 56.7,
+    "visao": 52.6
+   },
+   "posCategorias": {
+    "agentico": 33,
+    "codigo": 45,
+    "raciocinio": 32,
+    "pesquisa": 12,
+    "design": 44,
+    "conversa": 70,
+    "visao": 47
+   },
    "posicao": 62
   },
   {
@@ -2950,6 +4051,28 @@
    },
    "nota": 64.5,
    "cobertura": 1,
+   "categorias": {
+    "agentico": 50.3,
+    "codigo": 54.1,
+    "raciocinio": 76.7,
+    "dados": 28.3,
+    "pesquisa": 66.2,
+    "design": 48.7,
+    "navegador": 42.8,
+    "conversa": 73.2,
+    "visao": 72.1
+   },
+   "posCategorias": {
+    "agentico": 64,
+    "codigo": 44,
+    "raciocinio": 33,
+    "dados": 30,
+    "pesquisa": 53,
+    "design": 58,
+    "navegador": 21,
+    "conversa": 8,
+    "visao": 7
+   },
    "posicao": 63
   },
   {
@@ -2987,6 +4110,20 @@
    },
    "nota": 64.2,
    "cobertura": 0.35,
+   "categorias": {
+    "codigo": 45.6,
+    "raciocinio": 66.5,
+    "pesquisa": 61.9,
+    "design": 45.6,
+    "conversa": 62.8
+   },
+   "posCategorias": {
+    "codigo": 66,
+    "raciocinio": 99,
+    "pesquisa": 85,
+    "design": 66,
+    "conversa": 48
+   },
    "posicao": 64
   },
   {
@@ -3026,6 +4163,22 @@
    },
    "nota": 64.1,
    "cobertura": 0.39,
+   "categorias": {
+    "codigo": 45.6,
+    "raciocinio": 72,
+    "pesquisa": 64.5,
+    "design": 45.6,
+    "conversa": 62.1,
+    "visao": 57.5
+   },
+   "posCategorias": {
+    "codigo": 67,
+    "raciocinio": 64,
+    "pesquisa": 67,
+    "design": 67,
+    "conversa": 49,
+    "visao": 36
+   },
    "posicao": 65
   },
   {
@@ -3057,6 +4210,14 @@
    },
    "nota": 64,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 70.5,
+    "pesquisa": 56
+   },
+   "posCategorias": {
+    "raciocinio": 76,
+    "pesquisa": 130
+   },
    "posicao": 66
   },
   {
@@ -3088,6 +4249,14 @@
    },
    "nota": 63.9,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 69.1,
+    "pesquisa": 57.6
+   },
+   "posCategorias": {
+    "raciocinio": 82,
+    "pesquisa": 114
+   },
    "posicao": 67
   },
   {
@@ -3122,6 +4291,16 @@
    },
    "nota": 63,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 58,
+    "conversa": 62.1,
+    "visao": 49.8
+   },
+   "posCategorias": {
+    "raciocinio": 163,
+    "conversa": 50,
+    "visao": 53
+   },
    "posicao": 68
   },
   {
@@ -3154,6 +4333,14 @@
    },
    "nota": 63,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 67.6,
+    "pesquisa": 57.6
+   },
+   "posCategorias": {
+    "raciocinio": 89,
+    "pesquisa": 115
+   },
    "posicao": 69
   },
   {
@@ -3185,6 +4372,14 @@
    },
    "nota": 63,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 66.6,
+    "pesquisa": 57.6
+   },
+   "posCategorias": {
+    "raciocinio": 97,
+    "pesquisa": 116
+   },
    "posicao": 70
   },
   {
@@ -3224,6 +4419,22 @@
    },
    "nota": 62.5,
    "cobertura": 0.39,
+   "categorias": {
+    "codigo": 37.9,
+    "raciocinio": 72.6,
+    "pesquisa": 53.7,
+    "design": 37.9,
+    "conversa": 64.3,
+    "visao": 53.9
+   },
+   "posCategorias": {
+    "codigo": 84,
+    "raciocinio": 58,
+    "pesquisa": 147,
+    "design": 84,
+    "conversa": 42,
+    "visao": 44
+   },
    "posicao": 71
   },
   {
@@ -3263,6 +4474,22 @@
    },
    "nota": 62.2,
    "cobertura": 0.43,
+   "categorias": {
+    "agentico": 36,
+    "codigo": 49.4,
+    "raciocinio": 72.5,
+    "pesquisa": 67.8,
+    "design": 49.4,
+    "conversa": 66.8
+   },
+   "posCategorias": {
+    "agentico": 82,
+    "codigo": 57,
+    "raciocinio": 60,
+    "pesquisa": 43,
+    "design": 56,
+    "conversa": 32
+   },
    "posicao": 72
   },
   {
@@ -3302,6 +4529,22 @@
    },
    "nota": 62,
    "cobertura": 0.43,
+   "categorias": {
+    "agentico": 49.3,
+    "codigo": 51.5,
+    "raciocinio": 73.7,
+    "pesquisa": 66.2,
+    "design": 51.5,
+    "conversa": 59.6
+   },
+   "posCategorias": {
+    "agentico": 66,
+    "codigo": 51,
+    "raciocinio": 53,
+    "pesquisa": 54,
+    "design": 49,
+    "conversa": 60
+   },
    "posicao": 73
   },
   {
@@ -3343,6 +4586,22 @@
    },
    "nota": 61.8,
    "cobertura": 0.7,
+   "categorias": {
+    "agentico": 63,
+    "codigo": 60.9,
+    "raciocinio": 78.8,
+    "pesquisa": 69.2,
+    "design": 60.9,
+    "conversa": 64.3
+   },
+   "posCategorias": {
+    "agentico": 29,
+    "codigo": 27,
+    "raciocinio": 18,
+    "pesquisa": 34,
+    "design": 28,
+    "conversa": 43
+   },
    "posicao": 74
   },
   {
@@ -3397,6 +4656,24 @@
    },
    "nota": 61.6,
    "cobertura": 0.78,
+   "categorias": {
+    "agentico": 60.3,
+    "codigo": 54.5,
+    "raciocinio": 61.7,
+    "dados": 39.5,
+    "pesquisa": 58.1,
+    "design": 50.2,
+    "navegador": 63.7
+   },
+   "posCategorias": {
+    "agentico": 35,
+    "codigo": 43,
+    "raciocinio": 134,
+    "dados": 23,
+    "pesquisa": 113,
+    "design": 52,
+    "navegador": 8
+   },
    "posicao": 75
   },
   {
@@ -3457,6 +4734,28 @@
    },
    "nota": 61.2,
    "cobertura": 1,
+   "categorias": {
+    "agentico": 53.2,
+    "codigo": 52.3,
+    "raciocinio": 62,
+    "dados": 47.6,
+    "pesquisa": 56.5,
+    "design": 60.4,
+    "navegador": 49.2,
+    "conversa": 68.5,
+    "visao": 66
+   },
+   "posCategorias": {
+    "agentico": 55,
+    "codigo": 49,
+    "raciocinio": 132,
+    "dados": 18,
+    "pesquisa": 127,
+    "design": 29,
+    "navegador": 17,
+    "conversa": 26,
+    "visao": 20
+   },
    "posicao": 76
   },
   {
@@ -3494,6 +4793,20 @@
    },
    "nota": 61,
    "cobertura": 0.35,
+   "categorias": {
+    "codigo": 48,
+    "raciocinio": 70.6,
+    "pesquisa": 65.5,
+    "design": 48,
+    "conversa": 58.3
+   },
+   "posCategorias": {
+    "codigo": 60,
+    "raciocinio": 74,
+    "pesquisa": 60,
+    "design": 60,
+    "conversa": 64
+   },
    "posicao": 77
   },
   {
@@ -3530,6 +4843,20 @@
    },
    "nota": 60.3,
    "cobertura": 0.35,
+   "categorias": {
+    "codigo": 44.3,
+    "raciocinio": 71.1,
+    "pesquisa": 54.1,
+    "design": 44.3,
+    "conversa": 58.3
+   },
+   "posCategorias": {
+    "codigo": 70,
+    "raciocinio": 71,
+    "pesquisa": 143,
+    "design": 70,
+    "conversa": 65
+   },
    "posicao": 78
   },
   {
@@ -3561,6 +4888,16 @@
    },
    "nota": 60.2,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 53,
+    "raciocinio": 62.4,
+    "pesquisa": 73.5
+   },
+   "posCategorias": {
+    "agentico": 58,
+    "raciocinio": 127,
+    "pesquisa": 13
+   },
    "posicao": 79
   },
   {
@@ -3598,6 +4935,20 @@
    },
    "nota": 59.5,
    "cobertura": 0.26,
+   "categorias": {
+    "agentico": 53,
+    "codigo": 48.9,
+    "raciocinio": 74.3,
+    "pesquisa": 67,
+    "design": 48.9
+   },
+   "posCategorias": {
+    "agentico": 59,
+    "codigo": 58,
+    "raciocinio": 50,
+    "pesquisa": 48,
+    "design": 57
+   },
    "posicao": 80
   },
   {
@@ -3630,6 +4981,14 @@
    },
    "nota": 59.5,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 62.7,
+    "pesquisa": 60.4
+   },
+   "posCategorias": {
+    "raciocinio": 125,
+    "pesquisa": 96
+   },
    "posicao": 81
   },
   {
@@ -3667,6 +5026,20 @@
    },
    "nota": 59.3,
    "cobertura": 0.35,
+   "categorias": {
+    "codigo": 44.9,
+    "raciocinio": 68.8,
+    "pesquisa": 57,
+    "design": 44.9,
+    "conversa": 57.8
+   },
+   "posCategorias": {
+    "codigo": 69,
+    "raciocinio": 83,
+    "pesquisa": 123,
+    "design": 68,
+    "conversa": 66
+   },
    "posicao": 82
   },
   {
@@ -3706,6 +5079,22 @@
    },
    "nota": 59.2,
    "cobertura": 0.39,
+   "categorias": {
+    "codigo": 39.1,
+    "raciocinio": 70.6,
+    "pesquisa": 68.7,
+    "design": 39.1,
+    "conversa": 61,
+    "visao": 50.5
+   },
+   "posCategorias": {
+    "codigo": 81,
+    "raciocinio": 75,
+    "pesquisa": 37,
+    "design": 81,
+    "conversa": 53,
+    "visao": 51
+   },
    "posicao": 83
   },
   {
@@ -3741,6 +5130,16 @@
    },
    "nota": 58.7,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 58.4,
+    "pesquisa": 47.8,
+    "conversa": 56.2
+   },
+   "posCategorias": {
+    "raciocinio": 160,
+    "pesquisa": 191,
+    "conversa": 72
+   },
    "posicao": 84
   },
   {
@@ -3776,6 +5175,16 @@
    },
    "nota": 58.6,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 61.2,
+    "pesquisa": 49,
+    "conversa": 55.3
+   },
+   "posCategorias": {
+    "raciocinio": 139,
+    "pesquisa": 183,
+    "conversa": 75
+   },
    "posicao": 85
   },
   {
@@ -3811,6 +5220,18 @@
    },
    "nota": 58.3,
    "cobertura": 0.17,
+   "categorias": {
+    "codigo": 41.8,
+    "raciocinio": 78.4,
+    "pesquisa": 73.5,
+    "design": 41.8
+   },
+   "posCategorias": {
+    "codigo": 75,
+    "raciocinio": 21,
+    "pesquisa": 14,
+    "design": 75
+   },
    "posicao": 86
   },
   {
@@ -3842,6 +5263,14 @@
    },
    "nota": 58.3,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 63.1,
+    "pesquisa": 50
+   },
+   "posCategorias": {
+    "raciocinio": 123,
+    "pesquisa": 176
+   },
    "posicao": 87
   },
   {
@@ -3873,6 +5302,14 @@
    },
    "nota": 57.8,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 61.3,
+    "pesquisa": 52.8
+   },
+   "posCategorias": {
+    "raciocinio": 138,
+    "pesquisa": 154
+   },
    "posicao": 88
   },
   {
@@ -3906,6 +5343,16 @@
    },
    "nota": 57.5,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 53,
+    "raciocinio": 57,
+    "pesquisa": 62.6
+   },
+   "posCategorias": {
+    "agentico": 60,
+    "raciocinio": 168,
+    "pesquisa": 80
+   },
    "posicao": 89
   },
   {
@@ -3939,6 +5386,16 @@
    },
    "nota": 57.3,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 53,
+    "raciocinio": 58.3,
+    "pesquisa": 55.5
+   },
+   "posCategorias": {
+    "agentico": 61,
+    "raciocinio": 161,
+    "pesquisa": 135
+   },
    "posicao": 90
   },
   {
@@ -3978,6 +5435,22 @@
    },
    "nota": 57.2,
    "cobertura": 0.39,
+   "categorias": {
+    "codigo": 41.4,
+    "raciocinio": 61.4,
+    "pesquisa": 56.4,
+    "design": 41.4,
+    "conversa": 59,
+    "visao": 56
+   },
+   "posCategorias": {
+    "codigo": 76,
+    "raciocinio": 137,
+    "pesquisa": 128,
+    "design": 76,
+    "conversa": 61,
+    "visao": 40
+   },
    "posicao": 91
   },
   {
@@ -4009,6 +5482,14 @@
    },
    "nota": 57,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 64.2,
+    "pesquisa": 59.1
+   },
+   "posCategorias": {
+    "raciocinio": 119,
+    "pesquisa": 104
+   },
    "posicao": 92
   },
   {
@@ -4045,6 +5526,18 @@
    },
    "nota": 56.9,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 66.6,
+    "pesquisa": 59.8,
+    "conversa": 54,
+    "visao": 44
+   },
+   "posCategorias": {
+    "raciocinio": 98,
+    "pesquisa": 100,
+    "conversa": 81,
+    "visao": 65
+   },
    "posicao": 93
   },
   {
@@ -4081,6 +5574,18 @@
    },
    "nota": 56.8,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 65.3,
+    "pesquisa": 53.4,
+    "conversa": 52.6,
+    "visao": 50.5
+   },
+   "posCategorias": {
+    "raciocinio": 108,
+    "pesquisa": 150,
+    "conversa": 85,
+    "visao": 52
+   },
    "posicao": 94
   },
   {
@@ -4139,6 +5644,28 @@
    },
    "nota": 56.5,
    "cobertura": 1,
+   "categorias": {
+    "agentico": 54.9,
+    "codigo": 56.9,
+    "raciocinio": 62.4,
+    "dados": 33,
+    "pesquisa": 64,
+    "design": 55.8,
+    "navegador": 36.3,
+    "conversa": 61,
+    "visao": 56.5
+   },
+   "posCategorias": {
+    "agentico": 52,
+    "codigo": 35,
+    "raciocinio": 128,
+    "dados": 27,
+    "pesquisa": 71,
+    "design": 40,
+    "navegador": 25,
+    "conversa": 54,
+    "visao": 39
+   },
    "posicao": 95
   },
   {
@@ -4170,6 +5697,14 @@
    },
    "nota": 56.5,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 57.3,
+    "pesquisa": 51.7
+   },
+   "posCategorias": {
+    "raciocinio": 165,
+    "pesquisa": 160
+   },
    "posicao": 96
   },
   {
@@ -4228,6 +5763,26 @@
    },
    "nota": 56.4,
    "cobertura": 0.96,
+   "categorias": {
+    "agentico": 54.2,
+    "codigo": 46.8,
+    "raciocinio": 68.4,
+    "dados": 57.3,
+    "pesquisa": 62.9,
+    "design": 63.5,
+    "navegador": 58.9,
+    "conversa": 69.8
+   },
+   "posCategorias": {
+    "agentico": 54,
+    "codigo": 64,
+    "raciocinio": 86,
+    "dados": 12,
+    "pesquisa": 78,
+    "design": 25,
+    "navegador": 11,
+    "conversa": 21
+   },
    "posicao": 97
   },
   {
@@ -4262,6 +5817,16 @@
    },
    "nota": 56.3,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 58.8,
+    "pesquisa": 49.1,
+    "conversa": 53.3
+   },
+   "posCategorias": {
+    "raciocinio": 157,
+    "pesquisa": 182,
+    "conversa": 83
+   },
    "posicao": 98
   },
   {
@@ -4293,6 +5858,14 @@
    },
    "nota": 56.3,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 61.5,
+    "pesquisa": 51.7
+   },
+   "posCategorias": {
+    "raciocinio": 135,
+    "pesquisa": 161
+   },
    "posicao": 99
   },
   {
@@ -4326,6 +5899,16 @@
    },
    "nota": 56.1,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 49.3,
+    "raciocinio": 66.5,
+    "pesquisa": 56
+   },
+   "posCategorias": {
+    "agentico": 67,
+    "raciocinio": 100,
+    "pesquisa": 131
+   },
    "posicao": 100
   },
   {
@@ -4357,6 +5940,14 @@
    },
    "nota": 55.9,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 57.6,
+    "pesquisa": 57.6
+   },
+   "posCategorias": {
+    "raciocinio": 164,
+    "pesquisa": 117
+   },
    "posicao": 101
   },
   {
@@ -4388,6 +5979,14 @@
    },
    "nota": 55.7,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 59,
+    "pesquisa": 50.8
+   },
+   "posCategorias": {
+    "raciocinio": 151,
+    "pesquisa": 167
+   },
    "posicao": 102
   },
   {
@@ -4419,6 +6018,14 @@
    },
    "nota": 54.8,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 59.1,
+    "pesquisa": 48.5
+   },
+   "posCategorias": {
+    "raciocinio": 150,
+    "pesquisa": 186
+   },
    "posicao": 103
   },
   {
@@ -4458,6 +6065,22 @@
    },
    "nota": 54.7,
    "cobertura": 0.39,
+   "categorias": {
+    "codigo": 43.1,
+    "raciocinio": 75.7,
+    "pesquisa": 72,
+    "design": 43.1,
+    "conversa": 51.2,
+    "visao": 48.3
+   },
+   "posCategorias": {
+    "codigo": 73,
+    "raciocinio": 41,
+    "pesquisa": 19,
+    "design": 73,
+    "conversa": 91,
+    "visao": 56
+   },
    "posicao": 104
   },
   {
@@ -4489,6 +6112,14 @@
    },
    "nota": 54.5,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 58.9,
+    "pesquisa": 55
+   },
+   "posCategorias": {
+    "raciocinio": 154,
+    "pesquisa": 137
+   },
    "posicao": 105
   },
   {
@@ -4520,6 +6151,14 @@
    },
    "nota": 54.5,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 59.4,
+    "pesquisa": 62.3
+   },
+   "posCategorias": {
+    "raciocinio": 147,
+    "pesquisa": 83
+   },
    "posicao": 106
   },
   {
@@ -4557,6 +6196,18 @@
    },
    "nota": 54.4,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 56.7,
+    "pesquisa": 51.7,
+    "conversa": 53.3,
+    "visao": 49
+   },
+   "posCategorias": {
+    "raciocinio": 171,
+    "pesquisa": 162,
+    "conversa": 84,
+    "visao": 54
+   },
    "posicao": 107
   },
   {
@@ -4588,6 +6239,14 @@
    },
    "nota": 54.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 53.3,
+    "pesquisa": 38.6
+   },
+   "posCategorias": {
+    "raciocinio": 194,
+    "pesquisa": 259
+   },
    "posicao": 108
   },
   {
@@ -4625,6 +6284,18 @@
    },
    "nota": 54.3,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 59.4,
+    "pesquisa": 57,
+    "conversa": 51.7,
+    "visao": 51.7
+   },
+   "posCategorias": {
+    "raciocinio": 148,
+    "pesquisa": 124,
+    "conversa": 89,
+    "visao": 49
+   },
    "posicao": 109
   },
   {
@@ -4662,6 +6333,20 @@
    },
    "nota": 54,
    "cobertura": 0.35,
+   "categorias": {
+    "codigo": 33.9,
+    "raciocinio": 59,
+    "pesquisa": 48.3,
+    "design": 33.9,
+    "conversa": 60
+   },
+   "posCategorias": {
+    "codigo": 93,
+    "raciocinio": 152,
+    "pesquisa": 188,
+    "design": 92,
+    "conversa": 58
+   },
    "posicao": 110
   },
   {
@@ -4697,6 +6382,16 @@
    },
    "nota": 54,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 56.5,
+    "pesquisa": 51.7,
+    "conversa": 51.7
+   },
+   "posCategorias": {
+    "raciocinio": 174,
+    "pesquisa": 163,
+    "conversa": 90
+   },
    "posicao": 111
   },
   {
@@ -4728,6 +6423,14 @@
    },
    "nota": 54,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 56.5,
+    "pesquisa": 39.4
+   },
+   "posCategorias": {
+    "raciocinio": 175,
+    "pesquisa": 253
+   },
    "posicao": 112
   },
   {
@@ -4759,6 +6462,14 @@
    },
    "nota": 54,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 55.9,
+    "pesquisa": 44.3
+   },
+   "posCategorias": {
+    "raciocinio": 179,
+    "pesquisa": 217
+   },
    "posicao": 113
   },
   {
@@ -4798,6 +6509,22 @@
    },
    "nota": 53.9,
    "cobertura": 0.39,
+   "categorias": {
+    "codigo": 35.6,
+    "raciocinio": 61.5,
+    "pesquisa": 53,
+    "design": 35.6,
+    "conversa": 57.4,
+    "visao": 53.1
+   },
+   "posCategorias": {
+    "codigo": 89,
+    "raciocinio": 136,
+    "pesquisa": 151,
+    "design": 88,
+    "conversa": 68,
+    "visao": 46
+   },
    "posicao": 114
   },
   {
@@ -4834,6 +6561,18 @@
    },
    "nota": 53.8,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 70.1,
+    "pesquisa": 53.9,
+    "conversa": 50.1,
+    "visao": 41.3
+   },
+   "posCategorias": {
+    "raciocinio": 78,
+    "pesquisa": 146,
+    "conversa": 95,
+    "visao": 70
+   },
    "posicao": 115
   },
   {
@@ -4869,6 +6608,16 @@
    },
    "nota": 53.8,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 65.1,
+    "pesquisa": 51.3,
+    "conversa": 47.9
+   },
+   "posCategorias": {
+    "raciocinio": 111,
+    "pesquisa": 164,
+    "conversa": 104
+   },
    "posicao": 116
   },
   {
@@ -4903,6 +6652,16 @@
    },
    "nota": 53.7,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 49.3,
+    "raciocinio": 60.4,
+    "pesquisa": 56
+   },
+   "posCategorias": {
+    "agentico": 68,
+    "raciocinio": 143,
+    "pesquisa": 132
+   },
    "posicao": 117
   },
   {
@@ -4961,6 +6720,28 @@
    },
    "nota": 53.6,
    "cobertura": 1,
+   "categorias": {
+    "agentico": 59.5,
+    "codigo": 55.6,
+    "raciocinio": 55.4,
+    "dados": 44.4,
+    "pesquisa": 50.1,
+    "design": 67.9,
+    "navegador": 56.5,
+    "conversa": 45.8,
+    "visao": 42.5
+   },
+   "posCategorias": {
+    "agentico": 37,
+    "codigo": 38,
+    "raciocinio": 181,
+    "dados": 20,
+    "pesquisa": 175,
+    "design": 14,
+    "navegador": 13,
+    "conversa": 111,
+    "visao": 68
+   },
    "posicao": 118
   },
   {
@@ -4992,6 +6773,14 @@
    },
    "nota": 53.5,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 58.9,
+    "pesquisa": 50.2
+   },
+   "posCategorias": {
+    "raciocinio": 155,
+    "pesquisa": 172
+   },
    "posicao": 119
   },
   {
@@ -5033,6 +6822,24 @@
    },
    "nota": 53.4,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 36,
+    "codigo": 41,
+    "raciocinio": 72,
+    "pesquisa": 63.5,
+    "design": 41,
+    "conversa": 59,
+    "visao": 53.9
+   },
+   "posCategorias": {
+    "agentico": 83,
+    "codigo": 77,
+    "raciocinio": 65,
+    "pesquisa": 74,
+    "design": 77,
+    "conversa": 62,
+    "visao": 45
+   },
    "posicao": 120
   },
   {
@@ -5062,6 +6869,12 @@
    },
    "nota": 53.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 54.4
+   },
+   "posCategorias": {
+    "raciocinio": 185
+   },
    "posicao": 121
   },
   {
@@ -5099,6 +6912,20 @@
    },
    "nota": 53,
    "cobertura": 0.35,
+   "categorias": {
+    "codigo": 36.5,
+    "raciocinio": 66.1,
+    "pesquisa": 59.8,
+    "design": 36.5,
+    "conversa": 54.6
+   },
+   "posCategorias": {
+    "codigo": 86,
+    "raciocinio": 101,
+    "pesquisa": 101,
+    "design": 86,
+    "conversa": 78
+   },
    "posicao": 122
   },
   {
@@ -5130,6 +6957,14 @@
    },
    "nota": 53,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 56.4,
+    "pesquisa": 48.5
+   },
+   "posCategorias": {
+    "raciocinio": 176,
+    "pesquisa": 187
+   },
    "posicao": 123
   },
   {
@@ -5173,6 +7008,24 @@
    },
    "nota": 52.7,
    "cobertura": 0.74,
+   "categorias": {
+    "agentico": 55.8,
+    "codigo": 50.2,
+    "raciocinio": 78.2,
+    "pesquisa": 72.8,
+    "design": 50.2,
+    "conversa": 56.7,
+    "visao": 51.2
+   },
+   "posCategorias": {
+    "agentico": 49,
+    "codigo": 54,
+    "raciocinio": 23,
+    "pesquisa": 18,
+    "design": 53,
+    "conversa": 71,
+    "visao": 50
+   },
    "posicao": 124
   },
   {
@@ -5214,6 +7067,24 @@
    },
    "nota": 52.7,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 55.8,
+    "codigo": 39.6,
+    "raciocinio": 70.5,
+    "pesquisa": 63,
+    "design": 39.6,
+    "conversa": 50.5,
+    "visao": 47.8
+   },
+   "posCategorias": {
+    "agentico": 50,
+    "codigo": 80,
+    "raciocinio": 77,
+    "pesquisa": 77,
+    "design": 80,
+    "conversa": 94,
+    "visao": 57
+   },
    "posicao": 125
   },
   {
@@ -5255,6 +7126,24 @@
    },
    "nota": 52.6,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 36,
+    "codigo": 27.6,
+    "raciocinio": 65.5,
+    "pesquisa": 54.5,
+    "design": 27.6,
+    "conversa": 65.9,
+    "visao": 55.1
+   },
+   "posCategorias": {
+    "agentico": 84,
+    "codigo": 110,
+    "raciocinio": 107,
+    "pesquisa": 142,
+    "design": 109,
+    "conversa": 36,
+    "visao": 43
+   },
    "posicao": 126
   },
   {
@@ -5286,6 +7175,14 @@
    },
    "nota": 52.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 49.8,
+    "pesquisa": 34.5
+   },
+   "posCategorias": {
+    "raciocinio": 219,
+    "pesquisa": 290
+   },
    "posicao": 127
   },
   {
@@ -5317,6 +7214,14 @@
    },
    "nota": 52.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 53.8,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 190,
+    "pesquisa": 312
+   },
    "posicao": 128
   },
   {
@@ -5348,6 +7253,14 @@
    },
    "nota": 52.3,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 52.8,
+    "pesquisa": 39.1
+   },
+   "posCategorias": {
+    "raciocinio": 197,
+    "pesquisa": 255
+   },
    "posicao": 129
   },
   {
@@ -5379,6 +7292,14 @@
    },
    "nota": 52.3,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 60.7,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 141,
+    "pesquisa": 313
+   },
    "posicao": 130
   },
   {
@@ -5416,6 +7337,18 @@
    },
    "nota": 52,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 63.5,
+    "pesquisa": 61.5,
+    "conversa": 49.8,
+    "visao": 42
+   },
+   "posCategorias": {
+    "raciocinio": 122,
+    "pesquisa": 89,
+    "conversa": 97,
+    "visao": 69
+   },
    "posicao": 131
   },
   {
@@ -5445,6 +7378,12 @@
    },
    "nota": 52,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 53
+   },
+   "posCategorias": {
+    "raciocinio": 195
+   },
    "posicao": 132
   },
   {
@@ -5476,6 +7415,14 @@
    },
    "nota": 52,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 49.8,
+    "pesquisa": 37.8
+   },
+   "posCategorias": {
+    "raciocinio": 220,
+    "pesquisa": 266
+   },
    "posicao": 133
   },
   {
@@ -5507,6 +7454,14 @@
    },
    "nota": 52,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 50.8,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 209,
+    "pesquisa": 314
+   },
    "posicao": 134
   },
   {
@@ -5540,6 +7495,16 @@
    },
    "nota": 51.8,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 71.7,
+    "pesquisa": 67
+   },
+   "posCategorias": {
+    "agentico": 85,
+    "raciocinio": 67,
+    "pesquisa": 49
+   },
    "posicao": 135
   },
   {
@@ -5571,6 +7536,14 @@
    },
    "nota": 51.7,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 55.7,
+    "pesquisa": 56.4
+   },
+   "posCategorias": {
+    "raciocinio": 180,
+    "pesquisa": 129
+   },
    "posicao": 136
   },
   {
@@ -5605,6 +7578,16 @@
    },
    "nota": 51.6,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 65.8,
+    "pesquisa": 52.5
+   },
+   "posCategorias": {
+    "agentico": 86,
+    "raciocinio": 104,
+    "pesquisa": 155
+   },
    "posicao": 137
   },
   {
@@ -5646,6 +7629,24 @@
    },
    "nota": 51.5,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 36,
+    "codigo": 46.3,
+    "raciocinio": 67.6,
+    "pesquisa": 59.1,
+    "design": 46.3,
+    "conversa": 55.3,
+    "visao": 49
+   },
+   "posCategorias": {
+    "agentico": 87,
+    "codigo": 65,
+    "raciocinio": 90,
+    "pesquisa": 105,
+    "design": 65,
+    "conversa": 76,
+    "visao": 55
+   },
    "posicao": 138
   },
   {
@@ -5677,6 +7678,14 @@
    },
    "nota": 51.5,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 50.1,
+    "pesquisa": 42.9
+   },
+   "posCategorias": {
+    "raciocinio": 216,
+    "pesquisa": 227
+   },
    "posicao": 139
   },
   {
@@ -5710,6 +7719,16 @@
    },
    "nota": 51.5,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 49.3,
+    "raciocinio": 55.1,
+    "pesquisa": 43.5
+   },
+   "posCategorias": {
+    "agentico": 69,
+    "raciocinio": 183,
+    "pesquisa": 222
+   },
    "posicao": 140
   },
   {
@@ -5741,6 +7760,14 @@
    },
    "nota": 51.3,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 48.8,
+    "pesquisa": 44.9
+   },
+   "posCategorias": {
+    "raciocinio": 231,
+    "pesquisa": 212
+   },
    "posicao": 141
   },
   {
@@ -5772,6 +7799,14 @@
    },
    "nota": 51,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 52.9,
+    "pesquisa": 48
+   },
+   "posCategorias": {
+    "raciocinio": 196,
+    "pesquisa": 189
+   },
    "posicao": 142
   },
   {
@@ -5807,6 +7842,18 @@
    },
    "nota": 50.7,
    "cobertura": 0.17,
+   "categorias": {
+    "codigo": 33.4,
+    "raciocinio": 75,
+    "pesquisa": 71.5,
+    "design": 33.4
+   },
+   "posCategorias": {
+    "codigo": 96,
+    "raciocinio": 49,
+    "pesquisa": 23,
+    "design": 93
+   },
    "posicao": 143
   },
   {
@@ -5838,6 +7885,14 @@
    },
    "nota": 50.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 50.9,
+    "pesquisa": 49.2
+   },
+   "posCategorias": {
+    "raciocinio": 206,
+    "pesquisa": 181
+   },
    "posicao": 144
   },
   {
@@ -5869,6 +7924,14 @@
    },
    "nota": 50.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 52.1,
+    "pesquisa": 48.8
+   },
+   "posCategorias": {
+    "raciocinio": 199,
+    "pesquisa": 184
+   },
    "posicao": 145
   },
   {
@@ -5902,6 +7965,16 @@
    },
    "nota": 50.3,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 69.6,
+    "pesquisa": 56
+   },
+   "posCategorias": {
+    "agentico": 88,
+    "raciocinio": 80,
+    "pesquisa": 133
+   },
    "posicao": 146
   },
   {
@@ -5933,6 +8006,14 @@
    },
    "nota": 50.3,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 54.3,
+    "pesquisa": 51.3
+   },
+   "posCategorias": {
+    "raciocinio": 187,
+    "pesquisa": 165
+   },
    "posicao": 147
   },
   {
@@ -5964,6 +8045,14 @@
    },
    "nota": 50.3,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 51.3,
+    "pesquisa": 50.8
+   },
+   "posCategorias": {
+    "raciocinio": 203,
+    "pesquisa": 168
+   },
    "posicao": 148
   },
   {
@@ -5999,6 +8088,16 @@
    },
    "nota": 50.2,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 65.7,
+    "pesquisa": 58.3,
+    "conversa": 44.5
+   },
+   "posCategorias": {
+    "raciocinio": 105,
+    "pesquisa": 110,
+    "conversa": 117
+   },
    "posicao": 149
   },
   {
@@ -6038,6 +8137,22 @@
    },
    "nota": 50,
    "cobertura": 0.39,
+   "categorias": {
+    "codigo": 43.6,
+    "raciocinio": 68.6,
+    "pesquisa": 65,
+    "design": 43.6,
+    "conversa": 48.7,
+    "visao": 40.5
+   },
+   "posCategorias": {
+    "codigo": 72,
+    "raciocinio": 84,
+    "pesquisa": 63,
+    "design": 72,
+    "conversa": 101,
+    "visao": 72
+   },
    "posicao": 150
   },
   {
@@ -6069,6 +8184,14 @@
    },
    "nota": 50,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 49,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 229,
+    "pesquisa": 315
+   },
    "posicao": 151
   },
   {
@@ -6100,6 +8223,14 @@
    },
    "nota": 49.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 54.9,
+    "pesquisa": 52
+   },
+   "posCategorias": {
+    "raciocinio": 184,
+    "pesquisa": 159
+   },
    "posicao": 152
   },
   {
@@ -6137,6 +8268,18 @@
    },
    "nota": 49.3,
    "cobertura": 0.35,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 60.4,
+    "pesquisa": 55,
+    "conversa": 52.6
+   },
+   "posCategorias": {
+    "agentico": 90,
+    "raciocinio": 144,
+    "pesquisa": 138,
+    "conversa": 87
+   },
    "posicao": 153
   },
   {
@@ -6174,6 +8317,18 @@
    },
    "nota": 49.3,
    "cobertura": 0.35,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 60,
+    "pesquisa": 58.3,
+    "conversa": 52.6
+   },
+   "posCategorias": {
+    "agentico": 89,
+    "raciocinio": 146,
+    "pesquisa": 111,
+    "conversa": 86
+   },
    "posicao": 154
   },
   {
@@ -6234,6 +8389,28 @@
    },
    "nota": 49.2,
    "cobertura": 1,
+   "categorias": {
+    "agentico": 49.3,
+    "codigo": 62.3,
+    "raciocinio": 62.5,
+    "dados": 51.6,
+    "pesquisa": 50.5,
+    "design": 54.8,
+    "navegador": 34.7,
+    "conversa": 59,
+    "visao": 57.5
+   },
+   "posCategorias": {
+    "agentico": 70,
+    "codigo": 25,
+    "raciocinio": 126,
+    "dados": 15,
+    "pesquisa": 170,
+    "design": 42,
+    "navegador": 26,
+    "conversa": 63,
+    "visao": 37
+   },
    "posicao": 155
   },
   {
@@ -6265,6 +8442,14 @@
    },
    "nota": 49.1,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 50.2,
+    "pesquisa": 35.7
+   },
+   "posCategorias": {
+    "raciocinio": 214,
+    "pesquisa": 281
+   },
    "posicao": 156
   },
   {
@@ -6296,6 +8481,14 @@
    },
    "nota": 48.9,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 49.1,
+    "pesquisa": 49.4
+   },
+   "posCategorias": {
+    "raciocinio": 228,
+    "pesquisa": 180
+   },
    "posicao": 157
   },
   {
@@ -6326,6 +8519,12 @@
    },
    "nota": 48.9,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 50
+   },
+   "posCategorias": {
+    "raciocinio": 218
+   },
    "posicao": 158
   },
   {
@@ -6357,6 +8556,16 @@
    },
    "nota": 48.6,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 62,
+    "pesquisa": 55.5
+   },
+   "posCategorias": {
+    "agentico": 91,
+    "raciocinio": 133,
+    "pesquisa": 136
+   },
    "posicao": 159
   },
   {
@@ -6388,6 +8597,14 @@
    },
    "nota": 48.5,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 49,
+    "pesquisa": 34
+   },
+   "posCategorias": {
+    "raciocinio": 230,
+    "pesquisa": 293
+   },
    "posicao": 160
   },
   {
@@ -6419,6 +8636,14 @@
    },
    "nota": 48.5,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 48.8,
+    "pesquisa": 35.7
+   },
+   "posCategorias": {
+    "raciocinio": 232,
+    "pesquisa": 282
+   },
    "posicao": 161
   },
   {
@@ -6450,6 +8675,14 @@
    },
    "nota": 48.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 51.7,
+    "pesquisa": 45.4
+   },
+   "posCategorias": {
+    "raciocinio": 200,
+    "pesquisa": 209
+   },
    "posicao": 162
   },
   {
@@ -6484,6 +8717,16 @@
    },
    "nota": 48.2,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 67.1,
+    "pesquisa": 59.1
+   },
+   "posCategorias": {
+    "agentico": 92,
+    "raciocinio": 93,
+    "pesquisa": 106
+   },
    "posicao": 163
   },
   {
@@ -6517,6 +8760,16 @@
    },
    "nota": 48.1,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 64.5,
+    "pesquisa": 57.6
+   },
+   "posCategorias": {
+    "agentico": 93,
+    "raciocinio": 117,
+    "pesquisa": 118
+   },
    "posicao": 164
   },
   {
@@ -6546,6 +8799,12 @@
    },
    "nota": 48.1,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 48
+   },
+   "posCategorias": {
+    "raciocinio": 235
+   },
    "posicao": 165
   },
   {
@@ -6577,6 +8836,14 @@
    },
    "nota": 47.9,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 46,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 243,
+    "pesquisa": 316
+   },
    "posicao": 166
   },
   {
@@ -6608,6 +8875,14 @@
    },
    "nota": 47.9,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 50.9,
+    "pesquisa": 47.5
+   },
+   "posCategorias": {
+    "raciocinio": 207,
+    "pesquisa": 193
+   },
    "posicao": 167
   },
   {
@@ -6642,6 +8917,16 @@
    },
    "nota": 47.9,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 65.7,
+    "pesquisa": 63.5
+   },
+   "posCategorias": {
+    "agentico": 94,
+    "raciocinio": 106,
+    "pesquisa": 75
+   },
    "posicao": 168
   },
   {
@@ -6681,6 +8966,22 @@
    },
    "nota": 47.8,
    "cobertura": 0.39,
+   "categorias": {
+    "codigo": 35,
+    "raciocinio": 67.9,
+    "pesquisa": 64,
+    "design": 35,
+    "conversa": 49.5,
+    "visao": 46.9
+   },
+   "posCategorias": {
+    "codigo": 90,
+    "raciocinio": 88,
+    "pesquisa": 72,
+    "design": 89,
+    "conversa": 98,
+    "visao": 59
+   },
    "posicao": 169
   },
   {
@@ -6715,6 +9016,18 @@
    },
    "nota": 47.8,
    "cobertura": 0.17,
+   "categorias": {
+    "codigo": 30.6,
+    "raciocinio": 64.5,
+    "pesquisa": 44.1,
+    "design": 30.6
+   },
+   "posCategorias": {
+    "codigo": 103,
+    "raciocinio": 118,
+    "pesquisa": 218,
+    "design": 101
+   },
    "posicao": 170
   },
   {
@@ -6746,6 +9059,16 @@
    },
    "nota": 47.7,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 60.5,
+    "pesquisa": 60.4
+   },
+   "posCategorias": {
+    "agentico": 95,
+    "raciocinio": 142,
+    "pesquisa": 97
+   },
    "posicao": 171
   },
   {
@@ -6777,6 +9100,14 @@
    },
    "nota": 47.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 49.5,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 224,
+    "pesquisa": 317
+   },
    "posicao": 172
   },
   {
@@ -6808,6 +9139,14 @@
    },
    "nota": 47.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 45.7,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 244,
+    "pesquisa": 318
+   },
    "posicao": 173
   },
   {
@@ -6842,6 +9181,16 @@
    },
    "nota": 47.5,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 65.1,
+    "pesquisa": 57.6
+   },
+   "posCategorias": {
+    "agentico": 96,
+    "raciocinio": 112,
+    "pesquisa": 119
+   },
    "posicao": 174
   },
   {
@@ -6878,6 +9227,20 @@
    },
    "nota": 47.4,
    "cobertura": 0.35,
+   "categorias": {
+    "codigo": 32.5,
+    "raciocinio": 65.9,
+    "pesquisa": 56.6,
+    "design": 32.5,
+    "conversa": 50.1
+   },
+   "posCategorias": {
+    "codigo": 98,
+    "raciocinio": 102,
+    "pesquisa": 125,
+    "design": 95,
+    "conversa": 96
+   },
    "posicao": 175
   },
   {
@@ -6912,6 +9275,16 @@
    },
    "nota": 47.4,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 67.2,
+    "pesquisa": 65.5
+   },
+   "posCategorias": {
+    "agentico": 97,
+    "raciocinio": 92,
+    "pesquisa": 61
+   },
    "posicao": 176
   },
   {
@@ -6943,6 +9316,14 @@
    },
    "nota": 47.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 47.6,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 237,
+    "pesquisa": 319
+   },
    "posicao": 177
   },
   {
@@ -6982,6 +9363,20 @@
    },
    "nota": 47.3,
    "cobertura": 0.39,
+   "categorias": {
+    "agentico": 49.3,
+    "raciocinio": 65.9,
+    "pesquisa": 62.8,
+    "conversa": 42.9,
+    "visao": 38.1
+   },
+   "posCategorias": {
+    "agentico": 71,
+    "raciocinio": 103,
+    "pesquisa": 79,
+    "conversa": 123,
+    "visao": 77
+   },
    "posicao": 178
   },
   {
@@ -7013,6 +9408,14 @@
    },
    "nota": 47,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 48.6,
+    "pesquisa": 43.3
+   },
+   "posCategorias": {
+    "raciocinio": 233,
+    "pesquisa": 224
+   },
    "posicao": 179
   },
   {
@@ -7042,6 +9445,12 @@
    },
    "nota": 47,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 50.6
+   },
+   "posCategorias": {
+    "raciocinio": 211
+   },
    "posicao": 180
   },
   {
@@ -7075,6 +9484,16 @@
    },
    "nota": 46.9,
    "cobertura": 0.43,
+   "categorias": {
+    "agentico": 56.8,
+    "raciocinio": 67,
+    "pesquisa": 64.5
+   },
+   "posCategorias": {
+    "agentico": 47,
+    "raciocinio": 94,
+    "pesquisa": 68
+   },
    "posicao": 181
   },
   {
@@ -7110,6 +9529,16 @@
    },
    "nota": 46.9,
    "cobertura": 0.43,
+   "categorias": {
+    "agentico": 54.9,
+    "raciocinio": 71.8,
+    "pesquisa": 68.7
+   },
+   "posCategorias": {
+    "agentico": 53,
+    "raciocinio": 66,
+    "pesquisa": 38
+   },
    "posicao": 182
   },
   {
@@ -7145,6 +9574,18 @@
    },
    "nota": 46.8,
    "cobertura": 0.17,
+   "categorias": {
+    "codigo": 33,
+    "raciocinio": 68.5,
+    "pesquisa": 55,
+    "design": 33
+   },
+   "posCategorias": {
+    "codigo": 97,
+    "raciocinio": 85,
+    "pesquisa": 139,
+    "design": 94
+   },
    "posicao": 183
   },
   {
@@ -7182,6 +9623,20 @@
    },
    "nota": 46.7,
    "cobertura": 0.35,
+   "categorias": {
+    "codigo": 38.3,
+    "raciocinio": 65.1,
+    "pesquisa": 53.7,
+    "design": 38.3,
+    "conversa": 46.3
+   },
+   "posCategorias": {
+    "codigo": 83,
+    "raciocinio": 113,
+    "pesquisa": 148,
+    "design": 83,
+    "conversa": 110
+   },
    "posicao": 184
   },
   {
@@ -7221,6 +9676,18 @@
    },
    "nota": 46.6,
    "cobertura": 0.61,
+   "categorias": {
+    "agentico": 49.3,
+    "raciocinio": 69.9,
+    "pesquisa": 67,
+    "conversa": 62.1
+   },
+   "posCategorias": {
+    "agentico": 72,
+    "raciocinio": 79,
+    "pesquisa": 50,
+    "conversa": 51
+   },
    "posicao": 185
   },
   {
@@ -7252,6 +9719,14 @@
    },
    "nota": 46.5,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 51.1,
+    "pesquisa": 49.8
+   },
+   "posCategorias": {
+    "raciocinio": 205,
+    "pesquisa": 177
+   },
    "posicao": 186
   },
   {
@@ -7293,6 +9768,24 @@
    },
    "nota": 46.3,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 49.3,
+    "codigo": 30.6,
+    "raciocinio": 62.2,
+    "pesquisa": 61,
+    "design": 30.6,
+    "conversa": 51.2,
+    "visao": 46.1
+   },
+   "posCategorias": {
+    "agentico": 73,
+    "codigo": 104,
+    "raciocinio": 129,
+    "pesquisa": 92,
+    "design": 102,
+    "conversa": 92,
+    "visao": 61
+   },
    "posicao": 187
   },
   {
@@ -7324,6 +9817,14 @@
    },
    "nota": 46.3,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 40.9,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 265,
+    "pesquisa": 320
+   },
    "posicao": 188
   },
   {
@@ -7365,6 +9866,24 @@
    },
    "nota": 46,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 36,
+    "codigo": 36,
+    "raciocinio": 68,
+    "pesquisa": 62.6,
+    "design": 36,
+    "conversa": 52.1,
+    "visao": 47.4
+   },
+   "posCategorias": {
+    "agentico": 98,
+    "codigo": 88,
+    "raciocinio": 87,
+    "pesquisa": 81,
+    "design": 87,
+    "conversa": 88,
+    "visao": 58
+   },
    "posicao": 189
   },
   {
@@ -7396,6 +9915,14 @@
    },
    "nota": 46,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 34.6,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 289,
+    "pesquisa": 321
+   },
    "posicao": 190
   },
   {
@@ -7429,6 +9956,16 @@
    },
    "nota": 45.9,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 63.1,
+    "pesquisa": 58.6
+   },
+   "posCategorias": {
+    "agentico": 99,
+    "raciocinio": 124,
+    "pesquisa": 108
+   },
    "posicao": 191
   },
   {
@@ -7459,6 +9996,12 @@
    },
    "nota": 45.9,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 42.4
+   },
+   "posCategorias": {
+    "raciocinio": 259
+   },
    "posicao": 192
   },
   {
@@ -7498,6 +10041,22 @@
    },
    "nota": 45.7,
    "cobertura": 0.43,
+   "categorias": {
+    "agentico": 36,
+    "codigo": 40,
+    "raciocinio": 71.2,
+    "pesquisa": 65.5,
+    "design": 40,
+    "conversa": 48.3
+   },
+   "posCategorias": {
+    "agentico": 100,
+    "codigo": 79,
+    "raciocinio": 70,
+    "pesquisa": 62,
+    "design": 78,
+    "conversa": 102
+   },
    "posicao": 193
   },
   {
@@ -7529,6 +10088,14 @@
    },
    "nota": 45.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 32.3,
+    "pesquisa": 32.1
+   },
+   "posCategorias": {
+    "raciocinio": 302,
+    "pesquisa": 306
+   },
    "posicao": 194
   },
   {
@@ -7562,6 +10129,16 @@
    },
    "nota": 45.5,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 56.6,
+    "pesquisa": 43.1
+   },
+   "posCategorias": {
+    "agentico": 101,
+    "raciocinio": 173,
+    "pesquisa": 225
+   },
    "posicao": 195
   },
   {
@@ -7596,6 +10173,16 @@
    },
    "nota": 45.3,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 37.3,
+    "pesquisa": 49.5,
+    "conversa": 54.6
+   },
+   "posCategorias": {
+    "raciocinio": 276,
+    "pesquisa": 179,
+    "conversa": 79
+   },
    "posicao": 196
   },
   {
@@ -7627,6 +10214,14 @@
    },
    "nota": 45.3,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 31.4,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 312,
+    "pesquisa": 322
+   },
    "posicao": 197
   },
   {
@@ -7658,6 +10253,14 @@
    },
    "nota": 45.3,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 54.4,
+    "pesquisa": 53
+   },
+   "posCategorias": {
+    "raciocinio": 186,
+    "pesquisa": 152
+   },
    "posicao": 198
   },
   {
@@ -7689,6 +10292,14 @@
    },
    "nota": 45.3,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 45.7,
+    "pesquisa": 35
+   },
+   "posCategorias": {
+    "raciocinio": 245,
+    "pesquisa": 286
+   },
    "posicao": 199
   },
   {
@@ -7720,6 +10331,14 @@
    },
    "nota": 45.3,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 44.9,
+    "pesquisa": 37.5
+   },
+   "posCategorias": {
+    "raciocinio": 247,
+    "pesquisa": 267
+   },
    "posicao": 200
   },
   {
@@ -7776,6 +10395,24 @@
    },
    "nota": 45,
    "cobertura": 0.78,
+   "categorias": {
+    "agentico": 45.6,
+    "codigo": 45.3,
+    "raciocinio": 59.2,
+    "dados": 31.4,
+    "pesquisa": 66.2,
+    "design": 40,
+    "navegador": 39.5
+   },
+   "posCategorias": {
+    "agentico": 80,
+    "codigo": 68,
+    "raciocinio": 149,
+    "dados": 28,
+    "pesquisa": 55,
+    "design": 79,
+    "navegador": 23
+   },
    "posicao": 201
   },
   {
@@ -7807,6 +10444,14 @@
    },
    "nota": 44.7,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 42.5,
+    "pesquisa": 41.5
+   },
+   "posCategorias": {
+    "raciocinio": 257,
+    "pesquisa": 238
+   },
    "posicao": 202
   },
   {
@@ -7840,6 +10485,16 @@
    },
    "nota": 44.5,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 53.4,
+    "pesquisa": 51
+   },
+   "posCategorias": {
+    "agentico": 102,
+    "raciocinio": 193,
+    "pesquisa": 166
+   },
    "posicao": 203
   },
   {
@@ -7869,6 +10524,12 @@
    },
    "nota": 44.3,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 43.2
+   },
+   "posCategorias": {
+    "raciocinio": 254
+   },
    "posicao": 204
   },
   {
@@ -7900,6 +10561,14 @@
    },
    "nota": 44.3,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 40.7,
+    "pesquisa": 31.8
+   },
+   "posCategorias": {
+    "raciocinio": 267,
+    "pesquisa": 309
+   },
    "posicao": 205
   },
   {
@@ -7931,6 +10600,14 @@
    },
    "nota": 44.3,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 44.6,
+    "pesquisa": 43.5
+   },
+   "posCategorias": {
+    "raciocinio": 248,
+    "pesquisa": 223
+   },
    "posicao": 206
   },
   {
@@ -7962,6 +10639,14 @@
    },
    "nota": 44,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 39.6,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 271,
+    "pesquisa": 323
+   },
    "posicao": 207
   },
   {
@@ -7993,6 +10678,14 @@
    },
    "nota": 44,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 39.8,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 270,
+    "pesquisa": 324
+   },
    "posicao": 208
   },
   {
@@ -8036,6 +10729,24 @@
    },
    "nota": 43.9,
    "cobertura": 0.74,
+   "categorias": {
+    "agentico": 53,
+    "codigo": 44.3,
+    "raciocinio": 63.8,
+    "pesquisa": 62.3,
+    "design": 44.3,
+    "conversa": 57.8,
+    "visao": 57.5
+   },
+   "posCategorias": {
+    "agentico": 62,
+    "codigo": 71,
+    "raciocinio": 121,
+    "pesquisa": 84,
+    "design": 71,
+    "conversa": 67,
+    "visao": 38
+   },
    "posicao": 209
   },
   {
@@ -8078,6 +10789,24 @@
    },
    "nota": 43.9,
    "cobertura": 0.26,
+   "categorias": {
+    "agentico": 46,
+    "codigo": 68.5,
+    "raciocinio": 49.2,
+    "dados": 51.6,
+    "pesquisa": 57.3,
+    "design": 47.6,
+    "navegador": 29.9
+   },
+   "posCategorias": {
+    "agentico": 79,
+    "codigo": 14,
+    "raciocinio": 227,
+    "dados": 16,
+    "pesquisa": 121,
+    "design": 61,
+    "navegador": 29
+   },
    "posicao": 210
   },
   {
@@ -8119,6 +10848,24 @@
    },
    "nota": 43.8,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 36,
+    "codigo": 35,
+    "raciocinio": 75.4,
+    "pesquisa": 59.1,
+    "design": 35,
+    "conversa": 47,
+    "visao": 44.4
+   },
+   "posCategorias": {
+    "agentico": 103,
+    "codigo": 91,
+    "raciocinio": 43,
+    "pesquisa": 107,
+    "design": 90,
+    "conversa": 108,
+    "visao": 64
+   },
    "posicao": 211
   },
   {
@@ -8153,6 +10900,16 @@
    },
    "nota": 43.7,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 57.3,
+    "pesquisa": 48.8,
+    "conversa": 42.4
+   },
+   "posCategorias": {
+    "raciocinio": 166,
+    "pesquisa": 185,
+    "conversa": 125
+   },
    "posicao": 212
   },
   {
@@ -8184,6 +10941,14 @@
    },
    "nota": 43.7,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 42.5,
+    "pesquisa": 35.9
+   },
+   "posCategorias": {
+    "raciocinio": 258,
+    "pesquisa": 280
+   },
    "posicao": 213
   },
   {
@@ -8215,6 +10980,14 @@
    },
    "nota": 43.7,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 42.1,
+    "pesquisa": 36.3
+   },
+   "posCategorias": {
+    "raciocinio": 261,
+    "pesquisa": 276
+   },
    "posicao": 214
   },
   {
@@ -8246,6 +11019,14 @@
    },
    "nota": 43.5,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 43,
+    "pesquisa": 41.3
+   },
+   "posCategorias": {
+    "raciocinio": 255,
+    "pesquisa": 240
+   },
    "posicao": 215
   },
   {
@@ -8277,6 +11058,14 @@
    },
    "nota": 43.5,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 35.2,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 287,
+    "pesquisa": 325
+   },
    "posicao": 216
   },
   {
@@ -8312,6 +11101,16 @@
    },
    "nota": 43.4,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 49.4,
+    "pesquisa": 46.5,
+    "conversa": 45.1
+   },
+   "posCategorias": {
+    "raciocinio": 225,
+    "pesquisa": 201,
+    "conversa": 114
+   },
    "posicao": 217
   },
   {
@@ -8349,6 +11148,18 @@
    },
    "nota": 43.3,
    "cobertura": 0.35,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 62.2,
+    "pesquisa": 53,
+    "conversa": 44
+   },
+   "posCategorias": {
+    "agentico": 104,
+    "raciocinio": 130,
+    "pesquisa": 153,
+    "conversa": 119
+   },
    "posicao": 218
   },
   {
@@ -8387,6 +11198,22 @@
    },
    "nota": 43.2,
    "cobertura": 0.43,
+   "categorias": {
+    "agentico": 36,
+    "codigo": 37.4,
+    "raciocinio": 72.1,
+    "pesquisa": 56.6,
+    "design": 37.4,
+    "conversa": 45.8
+   },
+   "posCategorias": {
+    "agentico": 105,
+    "codigo": 85,
+    "raciocinio": 63,
+    "pesquisa": 126,
+    "design": 85,
+    "conversa": 112
+   },
    "posicao": 219
   },
   {
@@ -8418,6 +11245,14 @@
    },
    "nota": 43.1,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 29.3,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 354,
+    "pesquisa": 326
+   },
    "posicao": 220
   },
   {
@@ -8450,6 +11285,16 @@
    },
    "nota": 43.1,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 53.6,
+    "pesquisa": 57.6
+   },
+   "posCategorias": {
+    "agentico": 106,
+    "raciocinio": 191,
+    "pesquisa": 120
+   },
    "posicao": 221
   },
   {
@@ -8481,6 +11326,14 @@
    },
    "nota": 43.1,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 29.7,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 343,
+    "pesquisa": 327
+   },
    "posicao": 222
   },
   {
@@ -8524,6 +11377,24 @@
    },
    "nota": 43,
    "cobertura": 0.74,
+   "categorias": {
+    "agentico": 53,
+    "codigo": 42.3,
+    "raciocinio": 73.3,
+    "pesquisa": 61.9,
+    "design": 42.3,
+    "conversa": 50.8,
+    "visao": 45.4
+   },
+   "posCategorias": {
+    "agentico": 63,
+    "codigo": 74,
+    "raciocinio": 55,
+    "pesquisa": 86,
+    "design": 74,
+    "conversa": 93,
+    "visao": 62
+   },
    "posicao": 223
   },
   {
@@ -8562,6 +11433,22 @@
    },
    "nota": 43,
    "cobertura": 0.39,
+   "categorias": {
+    "codigo": 29,
+    "raciocinio": 65.2,
+    "pesquisa": 60.7,
+    "design": 29,
+    "conversa": 49.2,
+    "visao": 39.1
+   },
+   "posCategorias": {
+    "codigo": 107,
+    "raciocinio": 109,
+    "pesquisa": 94,
+    "design": 106,
+    "conversa": 99,
+    "visao": 75
+   },
    "posicao": 224
   },
   {
@@ -8599,6 +11486,20 @@
    },
    "nota": 43,
    "cobertura": 0.35,
+   "categorias": {
+    "codigo": 29.9,
+    "raciocinio": 64.9,
+    "pesquisa": 58.3,
+    "design": 29.9,
+    "conversa": 46.6
+   },
+   "posCategorias": {
+    "codigo": 105,
+    "raciocinio": 114,
+    "pesquisa": 112,
+    "design": 103,
+    "conversa": 109
+   },
    "posicao": 225
   },
   {
@@ -8639,6 +11540,24 @@
    },
    "nota": 42.9,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 36,
+    "codigo": 31.2,
+    "raciocinio": 56.2,
+    "pesquisa": 55,
+    "design": 31.2,
+    "conversa": 53.7,
+    "visao": 43.5
+   },
+   "posCategorias": {
+    "agentico": 107,
+    "codigo": 102,
+    "raciocinio": 177,
+    "pesquisa": 140,
+    "design": 100,
+    "conversa": 82,
+    "visao": 66
+   },
    "posicao": 226
   },
   {
@@ -8675,6 +11594,20 @@
    },
    "nota": 42.8,
    "cobertura": 0.35,
+   "categorias": {
+    "codigo": 25.4,
+    "raciocinio": 64.7,
+    "pesquisa": 60.4,
+    "design": 25.4,
+    "conversa": 49
+   },
+   "posCategorias": {
+    "codigo": 115,
+    "raciocinio": 115,
+    "pesquisa": 98,
+    "design": 115,
+    "conversa": 100
+   },
    "posicao": 227
   },
   {
@@ -8728,6 +11661,28 @@
    },
    "nota": 42.6,
    "cobertura": 0.91,
+   "categorias": {
+    "agentico": 46.8,
+    "codigo": 40.4,
+    "raciocinio": 47.6,
+    "dados": 49.2,
+    "pesquisa": 25,
+    "design": 44.7,
+    "navegador": 26.6,
+    "conversa": 56.2,
+    "visao": 59
+   },
+   "posCategorias": {
+    "agentico": 78,
+    "codigo": 78,
+    "raciocinio": 238,
+    "dados": 17,
+    "pesquisa": 358,
+    "design": 69,
+    "navegador": 31,
+    "conversa": 73,
+    "visao": 34
+   },
    "posicao": 228
   },
   {
@@ -8759,6 +11714,14 @@
    },
    "nota": 42.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 30.1,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 334,
+    "pesquisa": 328
+   },
    "posicao": 229
   },
   {
@@ -8790,6 +11753,14 @@
    },
    "nota": 42.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 29.8,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 341,
+    "pesquisa": 329
+   },
    "posicao": 230
   },
   {
@@ -8821,6 +11792,14 @@
    },
    "nota": 42.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 41.9,
+    "pesquisa": 35.4
+   },
+   "posCategorias": {
+    "raciocinio": 262,
+    "pesquisa": 284
+   },
    "posicao": 231
   },
   {
@@ -8852,6 +11831,14 @@
    },
    "nota": 42.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 31.5,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 310,
+    "pesquisa": 330
+   },
    "posicao": 232
   },
   {
@@ -8883,6 +11870,14 @@
    },
    "nota": 42.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 28.7,
+    "pesquisa": 34.8
+   },
+   "posCategorias": {
+    "raciocinio": 361,
+    "pesquisa": 288
+   },
    "posicao": 233
   },
   {
@@ -8914,6 +11909,14 @@
    },
    "nota": 42.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 28.6,
+    "pesquisa": 32.7
+   },
+   "posCategorias": {
+    "raciocinio": 364,
+    "pesquisa": 302
+   },
    "posicao": 234
   },
   {
@@ -8945,6 +11948,14 @@
    },
    "nota": 42.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 40,
+    "pesquisa": 44.9
+   },
+   "posCategorias": {
+    "raciocinio": 269,
+    "pesquisa": 213
+   },
    "posicao": 235
   },
   {
@@ -8979,6 +11990,16 @@
    },
    "nota": 42.5,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 56.9,
+    "pesquisa": 44.5,
+    "conversa": 40
+   },
+   "posCategorias": {
+    "raciocinio": 170,
+    "pesquisa": 215,
+    "conversa": 134
+   },
    "posicao": 236
   },
   {
@@ -9008,6 +12029,12 @@
    },
    "nota": 41.9,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 31.4
+   },
+   "posCategorias": {
+    "raciocinio": 313
+   },
    "posicao": 237
   },
   {
@@ -9039,6 +12066,14 @@
    },
    "nota": 41.9,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 30.2,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 330,
+    "pesquisa": 331
+   },
    "posicao": 238
   },
   {
@@ -9076,6 +12111,20 @@
    },
    "nota": 41.8,
    "cobertura": 0.35,
+   "categorias": {
+    "codigo": 38.7,
+    "raciocinio": 65.2,
+    "pesquisa": 59.8,
+    "design": 38.7,
+    "conversa": 40.8
+   },
+   "posCategorias": {
+    "codigo": 82,
+    "raciocinio": 110,
+    "pesquisa": 102,
+    "design": 82,
+    "conversa": 131
+   },
    "posicao": 239
   },
   {
@@ -9111,6 +12160,18 @@
    },
    "nota": 41.7,
    "cobertura": 0.17,
+   "categorias": {
+    "codigo": 29.4,
+    "raciocinio": 62.2,
+    "pesquisa": 53.5,
+    "design": 29.4
+   },
+   "posCategorias": {
+    "codigo": 106,
+    "raciocinio": 131,
+    "pesquisa": 149,
+    "design": 105
+   },
    "posicao": 240
   },
   {
@@ -9150,6 +12211,20 @@
    },
    "nota": 41.6,
    "cobertura": 0.39,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 63.9,
+    "pesquisa": 58.6,
+    "conversa": 43.1,
+    "visao": 39.5
+   },
+   "posCategorias": {
+    "agentico": 108,
+    "raciocinio": 120,
+    "pesquisa": 109,
+    "conversa": 122,
+    "visao": 74
+   },
    "posicao": 241
   },
   {
@@ -9183,6 +12258,16 @@
    },
    "nota": 41.5,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 49.6,
+    "pesquisa": 61
+   },
+   "posCategorias": {
+    "agentico": 109,
+    "raciocinio": 222,
+    "pesquisa": 93
+   },
    "posicao": 242
   },
   {
@@ -9214,6 +12299,14 @@
    },
    "nota": 41.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 28.4,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 366,
+    "pesquisa": 332
+   },
    "posicao": 243
   },
   {
@@ -9243,6 +12336,12 @@
    },
    "nota": 41.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 28
+   },
+   "posCategorias": {
+    "raciocinio": 370
+   },
    "posicao": 244
   },
   {
@@ -9274,6 +12373,14 @@
    },
    "nota": 41.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 28.9,
+    "pesquisa": 37
+   },
+   "posCategorias": {
+    "raciocinio": 358,
+    "pesquisa": 271
+   },
    "posicao": 245
   },
   {
@@ -9305,6 +12412,14 @@
    },
    "nota": 41.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 28.7,
+    "pesquisa": 31.6
+   },
+   "posCategorias": {
+    "raciocinio": 362,
+    "pesquisa": 310
+   },
    "posicao": 246
   },
   {
@@ -9336,6 +12451,14 @@
    },
    "nota": 41.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 29.7,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 344,
+    "pesquisa": 333
+   },
    "posicao": 247
   },
   {
@@ -9373,6 +12496,18 @@
    },
    "nota": 41.3,
    "cobertura": 0.35,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 61,
+    "pesquisa": 47.5,
+    "conversa": 41.6
+   },
+   "posCategorias": {
+    "agentico": 110,
+    "raciocinio": 140,
+    "pesquisa": 194,
+    "conversa": 128
+   },
    "posicao": 248
   },
   {
@@ -9406,6 +12541,16 @@
    },
    "nota": 41.3,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 51.6,
+    "pesquisa": 42
+   },
+   "posCategorias": {
+    "agentico": 111,
+    "raciocinio": 201,
+    "pesquisa": 234
+   },
    "posicao": 249
   },
   {
@@ -9440,6 +12585,16 @@
    },
    "nota": 41.1,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 52.4,
+    "pesquisa": 46.6
+   },
+   "posCategorias": {
+    "agentico": 112,
+    "raciocinio": 198,
+    "pesquisa": 199
+   },
    "posicao": 250
   },
   {
@@ -9477,6 +12632,18 @@
    },
    "nota": 40.9,
    "cobertura": 0.35,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 50.9,
+    "pesquisa": 50.8,
+    "conversa": 45.1
+   },
+   "posCategorias": {
+    "agentico": 113,
+    "raciocinio": 208,
+    "pesquisa": 169,
+    "conversa": 115
+   },
    "posicao": 251
   },
   {
@@ -9514,6 +12681,18 @@
    },
    "nota": 40.8,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 48,
+    "pesquisa": 52.4,
+    "conversa": 44.2,
+    "visao": 38.6
+   },
+   "posCategorias": {
+    "raciocinio": 236,
+    "pesquisa": 157,
+    "conversa": 118,
+    "visao": 76
+   },
    "posicao": 252
   },
   {
@@ -9551,6 +12730,18 @@
    },
    "nota": 40.8,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 50.4,
+    "pesquisa": 46.8,
+    "conversa": 43.7,
+    "visao": 34.7
+   },
+   "posCategorias": {
+    "raciocinio": 213,
+    "pesquisa": 198,
+    "conversa": 120,
+    "visao": 84
+   },
    "posicao": 253
   },
   {
@@ -9587,6 +12778,18 @@
    },
    "nota": 40.8,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 60.1,
+    "pesquisa": 50.5,
+    "conversa": 39.2,
+    "visao": 37.6
+   },
+   "posCategorias": {
+    "raciocinio": 145,
+    "pesquisa": 171,
+    "conversa": 137,
+    "visao": 78
+   },
    "posicao": 254
   },
   {
@@ -9616,6 +12819,12 @@
    },
    "nota": 40.8,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 31.3
+   },
+   "posCategorias": {
+    "raciocinio": 316
+   },
    "posicao": 255
   },
   {
@@ -9647,6 +12856,14 @@
    },
    "nota": 40.8,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 33.7,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 293,
+    "pesquisa": 334
+   },
    "posicao": 256
   },
   {
@@ -9678,6 +12895,14 @@
    },
    "nota": 40.8,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 30.2,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 331,
+    "pesquisa": 335
+   },
    "posicao": 257
   },
   {
@@ -9717,6 +12942,20 @@
    },
    "nota": 40.7,
    "cobertura": 0.39,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 36.8,
+    "pesquisa": 45.5,
+    "conversa": 54.2,
+    "visao": 36.6
+   },
+   "posCategorias": {
+    "agentico": 114,
+    "raciocinio": 280,
+    "pesquisa": 208,
+    "conversa": 80,
+    "visao": 80
+   },
    "posicao": 258
   },
   {
@@ -9750,6 +12989,16 @@
    },
    "nota": 40.2,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 51.4,
+    "pesquisa": 50.2
+   },
+   "posCategorias": {
+    "agentico": 115,
+    "raciocinio": 202,
+    "pesquisa": 173
+   },
    "posicao": 259
   },
   {
@@ -9781,6 +13030,14 @@
    },
    "nota": 40.1,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 33.2,
+    "pesquisa": 34.2
+   },
+   "posCategorias": {
+    "raciocinio": 297,
+    "pesquisa": 292
+   },
    "posicao": 260
   },
   {
@@ -9812,6 +13069,14 @@
    },
    "nota": 40.1,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 29.1,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 356,
+    "pesquisa": 336
+   },
    "posicao": 261
   },
   {
@@ -9841,6 +13106,12 @@
    },
    "nota": 40.1,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 38.1
+   },
+   "posCategorias": {
+    "raciocinio": 273
+   },
    "posicao": 262
   },
   {
@@ -9872,6 +13143,14 @@
    },
    "nota": 40.1,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 29.5,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 350,
+    "pesquisa": 337
+   },
    "posicao": 263
   },
   {
@@ -9903,6 +13182,14 @@
    },
    "nota": 40.1,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 29.8,
+    "pesquisa": 33
+   },
+   "posCategorias": {
+    "raciocinio": 342,
+    "pesquisa": 299
+   },
    "posicao": 264
   },
   {
@@ -9934,6 +13221,14 @@
    },
    "nota": 40.1,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 27.5,
+    "pesquisa": 33.5
+   },
+   "posCategorias": {
+    "raciocinio": 379,
+    "pesquisa": 297
+   },
    "posicao": 265
   },
   {
@@ -9967,6 +13262,16 @@
    },
    "nota": 39.9,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 49.4,
+    "pesquisa": 49.6
+   },
+   "posCategorias": {
+    "agentico": 116,
+    "raciocinio": 226,
+    "pesquisa": 178
+   },
    "posicao": 266
   },
   {
@@ -9998,6 +13303,14 @@
    },
    "nota": 39.2,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 27.3,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 381,
+    "pesquisa": 338
+   },
    "posicao": 267
   },
   {
@@ -10029,6 +13342,14 @@
    },
    "nota": 39.2,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 27.7,
+    "pesquisa": 33
+   },
+   "posCategorias": {
+    "raciocinio": 375,
+    "pesquisa": 300
+   },
    "posicao": 268
   },
   {
@@ -10060,6 +13381,14 @@
    },
    "nota": 39.2,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 30.9,
+    "pesquisa": 33
+   },
+   "posCategorias": {
+    "raciocinio": 322,
+    "pesquisa": 301
+   },
    "posicao": 269
   },
   {
@@ -10089,6 +13418,12 @@
    },
    "nota": 39.2,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 29.6
+   },
+   "posCategorias": {
+    "raciocinio": 346
+   },
    "posicao": 270
   },
   {
@@ -10118,6 +13453,12 @@
    },
    "nota": 39.2,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 29.4
+   },
+   "posCategorias": {
+    "raciocinio": 351
+   },
    "posicao": 271
   },
   {
@@ -10149,6 +13490,14 @@
    },
    "nota": 39.2,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 34.2,
+    "pesquisa": 35.5
+   },
+   "posCategorias": {
+    "raciocinio": 290,
+    "pesquisa": 283
+   },
    "posicao": 272
   },
   {
@@ -10185,6 +13534,18 @@
    },
    "nota": 38.6,
    "cobertura": 0.35,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 49.7,
+    "pesquisa": 47,
+    "conversa": 41.2
+   },
+   "posCategorias": {
+    "agentico": 117,
+    "raciocinio": 221,
+    "pesquisa": 197,
+    "conversa": 129
+   },
    "posicao": 273
   },
   {
@@ -10219,6 +13580,16 @@
    },
    "nota": 38.4,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 44.1,
+    "pesquisa": 36.9,
+    "conversa": 41.2
+   },
+   "posCategorias": {
+    "raciocinio": 250,
+    "pesquisa": 272,
+    "conversa": 130
+   },
    "posicao": 274
   },
   {
@@ -10248,6 +13619,12 @@
    },
    "nota": 38.3,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 29.6
+   },
+   "posCategorias": {
+    "raciocinio": 347
+   },
    "posicao": 275
   },
   {
@@ -10277,6 +13654,12 @@
    },
    "nota": 38.3,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 30.5
+   },
+   "posCategorias": {
+    "raciocinio": 326
+   },
    "posicao": 276
   },
   {
@@ -10308,6 +13691,14 @@
    },
    "nota": 38.3,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 37,
+    "pesquisa": 39.4
+   },
+   "posCategorias": {
+    "raciocinio": 278,
+    "pesquisa": 254
+   },
    "posicao": 277
   },
   {
@@ -10337,6 +13728,12 @@
    },
    "nota": 38.3,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 30.4
+   },
+   "posCategorias": {
+    "raciocinio": 329
+   },
    "posicao": 278
   },
   {
@@ -10367,6 +13764,12 @@
    },
    "nota": 38.3,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 34.2
+   },
+   "posCategorias": {
+    "raciocinio": 291
+   },
    "posicao": 279
   },
   {
@@ -10400,6 +13803,16 @@
    },
    "nota": 38.1,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 44.6,
+    "pesquisa": 43.9
+   },
+   "posCategorias": {
+    "agentico": 118,
+    "raciocinio": 249,
+    "pesquisa": 219
+   },
    "posicao": 280
   },
   {
@@ -10436,6 +13849,18 @@
    },
    "nota": 38,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 50.2,
+    "pesquisa": 52.5,
+    "conversa": 41.9,
+    "visao": 35.7
+   },
+   "posCategorias": {
+    "raciocinio": 215,
+    "pesquisa": 156,
+    "conversa": 127,
+    "visao": 82
+   },
    "posicao": 281
   },
   {
@@ -10471,6 +13896,16 @@
    },
    "nota": 37.9,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 44,
+    "pesquisa": 45.4,
+    "conversa": 39
+   },
+   "posCategorias": {
+    "raciocinio": 251,
+    "pesquisa": 210,
+    "conversa": 138
+   },
    "posicao": 282
   },
   {
@@ -10529,6 +13964,26 @@
    },
    "nota": 37.6,
    "cobertura": 0.96,
+   "categorias": {
+    "agentico": 37.5,
+    "codigo": 33.8,
+    "raciocinio": 58.5,
+    "dados": 42.8,
+    "pesquisa": 46.6,
+    "design": 29.5,
+    "navegador": 28.3,
+    "conversa": 61
+   },
+   "posCategorias": {
+    "agentico": 81,
+    "codigo": 94,
+    "raciocinio": 159,
+    "dados": 21,
+    "pesquisa": 200,
+    "design": 104,
+    "navegador": 30,
+    "conversa": 55
+   },
    "posicao": 283
   },
   {
@@ -10560,6 +14015,14 @@
    },
    "nota": 37.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 32.7,
+    "pesquisa": 36.6
+   },
+   "posCategorias": {
+    "raciocinio": 300,
+    "pesquisa": 274
+   },
    "posicao": 284
   },
   {
@@ -10591,6 +14054,14 @@
    },
    "nota": 37.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 36,
+    "pesquisa": 39.8
+   },
+   "posCategorias": {
+    "raciocinio": 284,
+    "pesquisa": 251
+   },
    "posicao": 285
   },
   {
@@ -10622,6 +14093,14 @@
    },
    "nota": 37.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 27,
+    "pesquisa": 32.1
+   },
+   "posCategorias": {
+    "raciocinio": 384,
+    "pesquisa": 307
+   },
    "posicao": 286
   },
   {
@@ -10651,6 +14130,12 @@
    },
    "nota": 37.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 28.6
+   },
+   "posCategorias": {
+    "raciocinio": 365
+   },
    "posicao": 287
   },
   {
@@ -10682,6 +14167,14 @@
    },
    "nota": 37.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 33.5,
+    "pesquisa": 44.5
+   },
+   "posCategorias": {
+    "raciocinio": 294,
+    "pesquisa": 216
+   },
    "posicao": 288
   },
   {
@@ -10720,6 +14213,22 @@
    },
    "nota": 36.9,
    "cobertura": 0.43,
+   "categorias": {
+    "agentico": 49.3,
+    "codigo": 28.6,
+    "raciocinio": 57.2,
+    "pesquisa": 43.9,
+    "design": 28.6,
+    "conversa": 38
+   },
+   "posCategorias": {
+    "agentico": 74,
+    "codigo": 108,
+    "raciocinio": 167,
+    "pesquisa": 220,
+    "design": 107,
+    "conversa": 140
+   },
    "posicao": 289
   },
   {
@@ -10757,6 +14266,18 @@
    },
    "nota": 36.7,
    "cobertura": 0.35,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 55.4,
+    "pesquisa": 43.9,
+    "conversa": 38.7
+   },
+   "posCategorias": {
+    "agentico": 119,
+    "raciocinio": 182,
+    "pesquisa": 221,
+    "conversa": 139
+   },
    "posicao": 290
   },
   {
@@ -10786,6 +14307,12 @@
    },
    "nota": 36.7,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 27
+   },
+   "posCategorias": {
+    "raciocinio": 385
+   },
    "posicao": 291
   },
   {
@@ -10844,6 +14371,28 @@
    },
    "nota": 36.6,
    "cobertura": 0.74,
+   "categorias": {
+    "agentico": 28.3,
+    "codigo": 24.6,
+    "raciocinio": 50.5,
+    "dados": 26.6,
+    "pesquisa": 39.1,
+    "design": 26.8,
+    "navegador": 25,
+    "conversa": 61,
+    "visao": 60
+   },
+   "posCategorias": {
+    "agentico": 145,
+    "codigo": 117,
+    "raciocinio": 212,
+    "dados": 31,
+    "pesquisa": 256,
+    "design": 111,
+    "navegador": 32,
+    "conversa": 56,
+    "visao": 32
+   },
    "posicao": 292
   },
   {
@@ -10878,6 +14427,16 @@
    },
    "nota": 36.5,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 50.7,
+    "pesquisa": 38.3,
+    "conversa": 36.7
+   },
+   "posCategorias": {
+    "raciocinio": 210,
+    "pesquisa": 262,
+    "conversa": 146
+   },
    "posicao": 293
   },
   {
@@ -10909,6 +14468,14 @@
    },
    "nota": 36.1,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 37.5,
+    "pesquisa": 33.9
+   },
+   "posCategorias": {
+    "raciocinio": 274,
+    "pesquisa": 294
+   },
    "posicao": 294
   },
   {
@@ -10940,6 +14507,14 @@
    },
    "nota": 36.1,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 29.4,
+    "pesquisa": 35
+   },
+   "posCategorias": {
+    "raciocinio": 352,
+    "pesquisa": 287
+   },
    "posicao": 295
   },
   {
@@ -10971,6 +14546,14 @@
    },
    "nota": 36.1,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 33.5,
+    "pesquisa": 38.6
+   },
+   "posCategorias": {
+    "raciocinio": 295,
+    "pesquisa": 260
+   },
    "posicao": 296
   },
   {
@@ -11011,6 +14594,24 @@
    },
    "nota": 35.7,
    "cobertura": 0.48,
+   "categorias": {
+    "agentico": 36,
+    "codigo": 28.1,
+    "raciocinio": 37.4,
+    "pesquisa": 43,
+    "design": 28.1,
+    "conversa": 55.3,
+    "visao": 43
+   },
+   "posCategorias": {
+    "agentico": 120,
+    "codigo": 109,
+    "raciocinio": 275,
+    "pesquisa": 226,
+    "design": 108,
+    "conversa": 77,
+    "visao": 67
+   },
    "posicao": 297
   },
   {
@@ -11047,6 +14648,18 @@
    },
    "nota": 35.7,
    "cobertura": 0.35,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 57,
+    "pesquisa": 45.7,
+    "conversa": 37.1
+   },
+   "posCategorias": {
+    "agentico": 121,
+    "raciocinio": 169,
+    "pesquisa": 207,
+    "conversa": 145
+   },
    "posicao": 298
   },
   {
@@ -11084,6 +14697,18 @@
    },
    "nota": 35.6,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 36.6,
+    "pesquisa": 54.1,
+    "conversa": 44.8,
+    "visao": 41.3
+   },
+   "posCategorias": {
+    "raciocinio": 282,
+    "pesquisa": 144,
+    "conversa": 116,
+    "visao": 71
+   },
    "posicao": 299
   },
   {
@@ -11121,6 +14746,20 @@
    },
    "nota": 35.4,
    "cobertura": 0.35,
+   "categorias": {
+    "codigo": 32.1,
+    "raciocinio": 58.1,
+    "pesquisa": 52.2,
+    "design": 32.1,
+    "conversa": 38
+   },
+   "posCategorias": {
+    "codigo": 99,
+    "raciocinio": 162,
+    "pesquisa": 158,
+    "design": 97,
+    "conversa": 141
+   },
    "posicao": 300
   },
   {
@@ -11152,6 +14791,14 @@
    },
    "nota": 35.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 31.6,
+    "pesquisa": 45.1
+   },
+   "posCategorias": {
+    "raciocinio": 309,
+    "pesquisa": 211
+   },
    "posicao": 301
   },
   {
@@ -11183,6 +14830,14 @@
    },
    "nota": 35.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 29.3,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 355,
+    "pesquisa": 339
+   },
    "posicao": 302
   },
   {
@@ -11212,6 +14867,12 @@
    },
    "nota": 35.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 30.2
+   },
+   "posCategorias": {
+    "raciocinio": 332
+   },
    "posicao": 303
   },
   {
@@ -11241,6 +14902,12 @@
    },
    "nota": 35.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 31.2
+   },
+   "posCategorias": {
+    "raciocinio": 317
+   },
    "posicao": 304
   },
   {
@@ -11274,6 +14941,16 @@
    },
    "nota": 35.3,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 30.5,
+    "pesquisa": 32.5
+   },
+   "posCategorias": {
+    "agentico": 122,
+    "raciocinio": 327,
+    "pesquisa": 304
+   },
    "posicao": 305
   },
   {
@@ -11307,6 +14984,16 @@
    },
    "nota": 35.3,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 33.3,
+    "pesquisa": 36.8
+   },
+   "posCategorias": {
+    "agentico": 123,
+    "raciocinio": 296,
+    "pesquisa": 273
+   },
    "posicao": 306
   },
   {
@@ -11341,6 +15028,16 @@
    },
    "nota": 34.8,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 46.9,
+    "conversa": 39.5,
+    "visao": 33.3
+   },
+   "posCategorias": {
+    "raciocinio": 240,
+    "conversa": 136,
+    "visao": 87
+   },
    "posicao": 307
   },
   {
@@ -11371,6 +15068,12 @@
    },
    "nota": 34.5,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 31.7
+   },
+   "posCategorias": {
+    "raciocinio": 306
+   },
    "posicao": 308
   },
   {
@@ -11402,6 +15105,14 @@
    },
    "nota": 34.5,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 26.7,
+    "pesquisa": 36.5
+   },
+   "posCategorias": {
+    "raciocinio": 391,
+    "pesquisa": 275
+   },
    "posicao": 309
   },
   {
@@ -11433,6 +15144,14 @@
    },
    "nota": 34.5,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 27.5,
+    "pesquisa": 36
+   },
+   "posCategorias": {
+    "raciocinio": 380,
+    "pesquisa": 279
+   },
    "posicao": 310
   },
   {
@@ -11465,6 +15184,14 @@
    },
    "nota": 34.5,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 33.8,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 292,
+    "pesquisa": 340
+   },
    "posicao": 311
   },
   {
@@ -11499,6 +15226,16 @@
    },
    "nota": 34,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 44,
+    "pesquisa": 40.5,
+    "conversa": 35.5
+   },
+   "posCategorias": {
+    "raciocinio": 252,
+    "pesquisa": 246,
+    "conversa": 151
+   },
    "posicao": 312
   },
   {
@@ -11539,6 +15276,22 @@
    },
    "nota": 33.9,
    "cobertura": 0.7,
+   "categorias": {
+    "agentico": 49.3,
+    "codigo": 34.3,
+    "raciocinio": 64.6,
+    "pesquisa": 73.5,
+    "design": 34.3,
+    "conversa": 45.8
+   },
+   "posCategorias": {
+    "agentico": 75,
+    "codigo": 92,
+    "raciocinio": 116,
+    "pesquisa": 15,
+    "design": 91,
+    "conversa": 113
+   },
    "posicao": 313
   },
   {
@@ -11575,6 +15328,18 @@
    },
    "nota": 33.8,
    "cobertura": 0.35,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 38.9,
+    "pesquisa": 44.7,
+    "conversa": 43.4
+   },
+   "posCategorias": {
+    "agentico": 124,
+    "raciocinio": 272,
+    "pesquisa": 214,
+    "conversa": 121
+   },
    "posicao": 314
   },
   {
@@ -11612,6 +15377,18 @@
    },
    "nota": 33.8,
    "cobertura": 0.35,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 46.7,
+    "pesquisa": 28.2,
+    "conversa": 38
+   },
+   "posCategorias": {
+    "agentico": 125,
+    "raciocinio": 241,
+    "pesquisa": 341,
+    "conversa": 142
+   },
    "posicao": 315
   },
   {
@@ -11644,6 +15421,14 @@
    },
    "nota": 33.8,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 49.6,
+    "conversa": 35.1
+   },
+   "posCategorias": {
+    "raciocinio": 223,
+    "conversa": 152
+   },
    "posicao": 316
   },
   {
@@ -11673,6 +15458,12 @@
    },
    "nota": 33.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 24
+   },
+   "posCategorias": {
+    "raciocinio": 413
+   },
    "posicao": 317
   },
   {
@@ -11702,6 +15493,12 @@
    },
    "nota": 33.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 25.2
+   },
+   "posCategorias": {
+    "raciocinio": 403
+   },
    "posicao": 318
   },
   {
@@ -11732,6 +15529,12 @@
    },
    "nota": 33.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 28.3
+   },
+   "posCategorias": {
+    "raciocinio": 368
+   },
    "posicao": 319
   },
   {
@@ -11763,6 +15566,14 @@
    },
    "nota": 33.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 29.7,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 345,
+    "pesquisa": 342
+   },
    "posicao": 320
   },
   {
@@ -11794,6 +15605,14 @@
    },
    "nota": 33.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 30.2,
+    "pesquisa": 37.3
+   },
+   "posCategorias": {
+    "raciocinio": 333,
+    "pesquisa": 269
+   },
    "posicao": 321
   },
   {
@@ -11824,6 +15643,12 @@
    },
    "nota": 33.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 29.6
+   },
+   "posCategorias": {
+    "raciocinio": 348
+   },
    "posicao": 322
   },
   {
@@ -11863,6 +15688,22 @@
    },
    "nota": 33.1,
    "cobertura": 0.43,
+   "categorias": {
+    "agentico": 36,
+    "codigo": 26.4,
+    "raciocinio": 59,
+    "pesquisa": 45.8,
+    "design": 26.4,
+    "conversa": 39.8
+   },
+   "posCategorias": {
+    "agentico": 126,
+    "codigo": 113,
+    "raciocinio": 153,
+    "pesquisa": 206,
+    "design": 113,
+    "conversa": 135
+   },
    "posicao": 323
   },
   {
@@ -11900,6 +15741,18 @@
    },
    "nota": 32.9,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 48.5,
+    "pesquisa": 46.2,
+    "conversa": 35.1,
+    "visao": 33.8
+   },
+   "posCategorias": {
+    "raciocinio": 234,
+    "pesquisa": 203,
+    "conversa": 153,
+    "visao": 86
+   },
    "posicao": 324
   },
   {
@@ -11934,6 +15787,16 @@
    },
    "nota": 32.9,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 40.8,
+    "pesquisa": 47.3
+   },
+   "posCategorias": {
+    "agentico": 127,
+    "raciocinio": 266,
+    "pesquisa": 195
+   },
    "posicao": 325
   },
   {
@@ -11968,6 +15831,18 @@
    },
    "nota": 32.8,
    "cobertura": 0.17,
+   "categorias": {
+    "codigo": 25.9,
+    "raciocinio": 50.1,
+    "pesquisa": 48,
+    "design": 25.9
+   },
+   "posCategorias": {
+    "codigo": 114,
+    "raciocinio": 217,
+    "pesquisa": 190,
+    "design": 114
+   },
    "posicao": 326
   },
   {
@@ -12002,6 +15877,16 @@
    },
    "nota": 32.6,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 54.2,
+    "conversa": 34,
+    "visao": 36.1
+   },
+   "posCategorias": {
+    "raciocinio": 188,
+    "conversa": 157,
+    "visao": 81
+   },
    "posicao": 327
   },
   {
@@ -12031,6 +15916,12 @@
    },
    "nota": 32.5,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 23.5
+   },
+   "posCategorias": {
+    "raciocinio": 415
+   },
    "posicao": 328
   },
   {
@@ -12062,6 +15953,14 @@
    },
    "nota": 32.5,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 22.3,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 421,
+    "pesquisa": 343
+   },
    "posicao": 329
   },
   {
@@ -12091,6 +15990,12 @@
    },
    "nota": 32.5,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 26.5
+   },
+   "posCategorias": {
+    "raciocinio": 396
+   },
    "posicao": 330
   },
   {
@@ -12122,6 +16027,14 @@
    },
    "nota": 32.5,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 30.6,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 324,
+    "pesquisa": 344
+   },
    "posicao": 331
   },
   {
@@ -12153,6 +16066,14 @@
    },
    "nota": 32.5,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 30.1,
+    "pesquisa": 33.7
+   },
+   "posCategorias": {
+    "raciocinio": 335,
+    "pesquisa": 295
+   },
    "posicao": 332
   },
   {
@@ -12184,6 +16105,14 @@
    },
    "nota": 32.5,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 33.1,
+    "pesquisa": 42.5
+   },
+   "posCategorias": {
+    "raciocinio": 298,
+    "pesquisa": 231
+   },
    "posicao": 333
   },
   {
@@ -12218,6 +16147,16 @@
    },
    "nota": 32.3,
    "cobertura": 0.13,
+   "categorias": {
+    "raciocinio": 27.8,
+    "pesquisa": 28.2,
+    "visao": 25.5
+   },
+   "posCategorias": {
+    "raciocinio": 374,
+    "pesquisa": 345,
+    "visao": 103
+   },
    "posicao": 334
   },
   {
@@ -12276,6 +16215,28 @@
    },
    "nota": 32,
    "cobertura": 1,
+   "categorias": {
+    "agentico": 29.9,
+    "codigo": 33.5,
+    "raciocinio": 46.7,
+    "dados": 34.7,
+    "pesquisa": 42.8,
+    "design": 32.4,
+    "navegador": 33,
+    "conversa": 48.3,
+    "visao": 40
+   },
+   "posCategorias": {
+    "agentico": 144,
+    "codigo": 95,
+    "raciocinio": 242,
+    "dados": 26,
+    "pesquisa": 228,
+    "design": 96,
+    "navegador": 27,
+    "conversa": 103,
+    "visao": 73
+   },
    "posicao": 335
   },
   {
@@ -12313,6 +16274,18 @@
    },
    "nota": 32,
    "cobertura": 0.35,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 47.1,
+    "pesquisa": 46.2,
+    "conversa": 34.6
+   },
+   "posCategorias": {
+    "agentico": 128,
+    "raciocinio": 239,
+    "pesquisa": 204,
+    "conversa": 154
+   },
    "posicao": 336
   },
   {
@@ -12345,6 +16318,14 @@
    },
    "nota": 31.7,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 31.7,
+    "conversa": 42.1
+   },
+   "posCategorias": {
+    "raciocinio": 307,
+    "conversa": 126
+   },
    "posicao": 337
   },
   {
@@ -12382,6 +16363,18 @@
    },
    "nota": 31.7,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 41,
+    "pesquisa": 46,
+    "conversa": 38,
+    "visao": 37.1
+   },
+   "posCategorias": {
+    "raciocinio": 264,
+    "pesquisa": 205,
+    "conversa": 143,
+    "visao": 79
+   },
    "posicao": 338
   },
   {
@@ -12419,6 +16412,18 @@
    },
    "nota": 31.5,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 45.7,
+    "pesquisa": 28.2,
+    "conversa": 36.3,
+    "visao": 32.3
+   },
+   "posCategorias": {
+    "raciocinio": 246,
+    "pesquisa": 346,
+    "conversa": 148,
+    "visao": 89
+   },
    "posicao": 339
   },
   {
@@ -12456,6 +16461,18 @@
    },
    "nota": 31.4,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 32.8,
+    "pesquisa": 41.5,
+    "conversa": 42.6,
+    "visao": 32.8
+   },
+   "posCategorias": {
+    "raciocinio": 299,
+    "pesquisa": 239,
+    "conversa": 124,
+    "visao": 88
+   },
    "posicao": 340
   },
   {
@@ -12487,6 +16504,14 @@
    },
    "nota": 31.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 30,
+    "pesquisa": 34.4
+   },
+   "posCategorias": {
+    "raciocinio": 336,
+    "pesquisa": 291
+   },
    "posicao": 341
   },
   {
@@ -12518,6 +16543,14 @@
    },
    "nota": 31.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 29.9,
+    "pesquisa": 39.6
+   },
+   "posCategorias": {
+    "raciocinio": 339,
+    "pesquisa": 252
+   },
    "posicao": 342
   },
   {
@@ -12551,6 +16584,16 @@
    },
    "nota": 31.4,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 35.7,
+    "pesquisa": 40.3
+   },
+   "posCategorias": {
+    "agentico": 129,
+    "raciocinio": 285,
+    "pesquisa": 247
+   },
    "posicao": 343
   },
   {
@@ -12580,6 +16623,12 @@
    },
    "nota": 31.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 27.7
+   },
+   "posCategorias": {
+    "raciocinio": 376
+   },
    "posicao": 344
   },
   {
@@ -12614,6 +16663,16 @@
    },
    "nota": 30.9,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 36.7,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "agentico": 130,
+    "raciocinio": 281,
+    "pesquisa": 347
+   },
    "posicao": 345
   },
   {
@@ -12649,6 +16708,16 @@
    },
    "nota": 30.8,
    "cobertura": 0.43,
+   "categorias": {
+    "agentico": 49.3,
+    "raciocinio": 56.2,
+    "pesquisa": 47.8
+   },
+   "posCategorias": {
+    "agentico": 76,
+    "raciocinio": 178,
+    "pesquisa": 192
+   },
    "posicao": 346
   },
   {
@@ -12680,6 +16749,14 @@
    },
    "nota": 30.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 28.3,
+    "pesquisa": 41.8
+   },
+   "posCategorias": {
+    "raciocinio": 369,
+    "pesquisa": 236
+   },
    "posicao": 347
   },
   {
@@ -12710,6 +16787,12 @@
    },
    "nota": 30.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 26.7
+   },
+   "posCategorias": {
+    "raciocinio": 392
+   },
    "posicao": 348
   },
   {
@@ -12741,6 +16824,14 @@
    },
    "nota": 30.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 30.7,
+    "pesquisa": 40
+   },
+   "posCategorias": {
+    "raciocinio": 323,
+    "pesquisa": 249
+   },
    "posicao": 349
   },
   {
@@ -12771,6 +16862,12 @@
    },
    "nota": 30.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 25
+   },
+   "posCategorias": {
+    "raciocinio": 404
+   },
    "posicao": 350
   },
   {
@@ -12800,6 +16897,12 @@
    },
    "nota": 30.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 28.8
+   },
+   "posCategorias": {
+    "raciocinio": 359
+   },
    "posicao": 351
   },
   {
@@ -12837,6 +16940,18 @@
    },
    "nota": 30.2,
    "cobertura": 0.35,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 51.2,
+    "pesquisa": 42.7,
+    "conversa": 30.9
+   },
+   "posCategorias": {
+    "agentico": 131,
+    "raciocinio": 204,
+    "pesquisa": 230,
+    "conversa": 168
+   },
    "posicao": 352
   },
   {
@@ -12866,6 +16981,12 @@
    },
    "nota": 30.1,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 23.5
+   },
+   "posCategorias": {
+    "raciocinio": 416
+   },
    "posicao": 353
   },
   {
@@ -12900,6 +17021,16 @@
    },
    "nota": 30,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 42.9,
+    "pesquisa": 37.2,
+    "conversa": 33.4
+   },
+   "posCategorias": {
+    "raciocinio": 256,
+    "pesquisa": 270,
+    "conversa": 159
+   },
    "posicao": 354
   },
   {
@@ -12934,6 +17065,16 @@
    },
    "nota": 30,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 43.4,
+    "pesquisa": 28.2,
+    "conversa": 32.4
+   },
+   "posCategorias": {
+    "raciocinio": 253,
+    "pesquisa": 348,
+    "conversa": 163
+   },
    "posicao": 355
   },
   {
@@ -12967,6 +17108,16 @@
    },
    "nota": 29.8,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 31.1,
+    "pesquisa": 40.1
+   },
+   "posCategorias": {
+    "agentico": 132,
+    "raciocinio": 320,
+    "pesquisa": 248
+   },
    "posicao": 356
   },
   {
@@ -13000,6 +17151,16 @@
    },
    "nota": 29.8,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 30.6,
+    "pesquisa": 39.1
+   },
+   "posCategorias": {
+    "agentico": 133,
+    "raciocinio": 325,
+    "pesquisa": 257
+   },
    "posicao": 357
   },
   {
@@ -13039,6 +17200,20 @@
    },
    "nota": 29.7,
    "cobertura": 0.39,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 30.5,
+    "pesquisa": 33.4,
+    "conversa": 40.5,
+    "visao": 35.2
+   },
+   "posCategorias": {
+    "agentico": 134,
+    "raciocinio": 328,
+    "pesquisa": 298,
+    "conversa": 132,
+    "visao": 83
+   },
    "posicao": 358
   },
   {
@@ -13068,6 +17243,12 @@
    },
    "nota": 29.2,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 25.4
+   },
+   "posCategorias": {
+    "raciocinio": 402
+   },
    "posicao": 359
   },
   {
@@ -13099,6 +17280,14 @@
    },
    "nota": 29.2,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 24.1,
+    "pesquisa": 32.5
+   },
+   "posCategorias": {
+    "raciocinio": 411,
+    "pesquisa": 305
+   },
    "posicao": 360
   },
   {
@@ -13130,6 +17319,14 @@
    },
    "nota": 29.2,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 27.7,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 377,
+    "pesquisa": 349
+   },
    "posicao": 361
   },
   {
@@ -13162,6 +17359,14 @@
    },
    "nota": 29.2,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 29.9,
+    "pesquisa": 42.3
+   },
+   "posCategorias": {
+    "raciocinio": 340,
+    "pesquisa": 233
+   },
    "posicao": 362
   },
   {
@@ -13194,6 +17399,14 @@
    },
    "nota": 29.2,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 31.4,
+    "pesquisa": 42.4
+   },
+   "posCategorias": {
+    "raciocinio": 314,
+    "pesquisa": 232
+   },
    "posicao": 363
   },
   {
@@ -13230,6 +17443,20 @@
    },
    "nota": 29,
    "cobertura": 0.35,
+   "categorias": {
+    "codigo": 31.6,
+    "raciocinio": 37.2,
+    "pesquisa": 46.4,
+    "design": 31.6,
+    "conversa": 40.3
+   },
+   "posCategorias": {
+    "codigo": 100,
+    "raciocinio": 277,
+    "pesquisa": 202,
+    "design": 98,
+    "conversa": 133
+   },
    "posicao": 364
   },
   {
@@ -13266,6 +17493,16 @@
    },
    "nota": 28.8,
    "cobertura": 0.43,
+   "categorias": {
+    "agentico": 49.3,
+    "raciocinio": 53.5,
+    "pesquisa": 50.2
+   },
+   "posCategorias": {
+    "agentico": 77,
+    "raciocinio": 192,
+    "pesquisa": 174
+   },
    "posicao": 365
   },
   {
@@ -13297,6 +17534,14 @@
    },
    "nota": 28.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 25,
+    "pesquisa": 37.5
+   },
+   "posCategorias": {
+    "raciocinio": 405,
+    "pesquisa": 268
+   },
    "posicao": 366
   },
   {
@@ -13326,6 +17571,12 @@
    },
    "nota": 28.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 24.5
+   },
+   "posCategorias": {
+    "raciocinio": 409
+   },
    "posicao": 367
   },
   {
@@ -13360,6 +17611,16 @@
    },
    "nota": 28.3,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 37,
+    "pesquisa": 28.2,
+    "conversa": 33.7
+   },
+   "posCategorias": {
+    "raciocinio": 279,
+    "pesquisa": 350,
+    "conversa": 158
+   },
    "posicao": 368
   },
   {
@@ -13391,6 +17652,14 @@
    },
    "nota": 27.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 18.7,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 425,
+    "pesquisa": 351
+   },
    "posicao": 369
   },
   {
@@ -13420,6 +17689,12 @@
    },
    "nota": 27.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 24.4
+   },
+   "posCategorias": {
+    "raciocinio": 410
+   },
    "posicao": 370
   },
   {
@@ -13451,6 +17726,14 @@
    },
    "nota": 27.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 27.9,
+    "pesquisa": 36.3
+   },
+   "posCategorias": {
+    "raciocinio": 371,
+    "pesquisa": 277
+   },
    "posicao": 371
   },
   {
@@ -13480,6 +17763,12 @@
    },
    "nota": 27.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 27.7
+   },
+   "posCategorias": {
+    "raciocinio": 378
+   },
    "posicao": 372
   },
   {
@@ -13513,6 +17802,16 @@
    },
    "nota": 27.4,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 32.5,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "agentico": 135,
+    "raciocinio": 301,
+    "pesquisa": 352
+   },
    "posicao": 373
   },
   {
@@ -13548,6 +17847,16 @@
    },
    "nota": 27.1,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 30,
+    "pesquisa": 32.7,
+    "conversa": 31.4
+   },
+   "posCategorias": {
+    "raciocinio": 337,
+    "pesquisa": 303,
+    "conversa": 166
+   },
    "posicao": 374
   },
   {
@@ -13582,6 +17891,16 @@
    },
    "nota": 27.1,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 42.4,
+    "pesquisa": 28.2,
+    "conversa": 29.8
+   },
+   "posCategorias": {
+    "raciocinio": 260,
+    "pesquisa": 353,
+    "conversa": 173
+   },
    "posicao": 375
   },
   {
@@ -13614,6 +17933,14 @@
    },
    "nota": 26.9,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 26.8,
+    "conversa": 33.1
+   },
+   "posCategorias": {
+    "raciocinio": 389,
+    "conversa": 160
+   },
    "posicao": 376
   },
   {
@@ -13651,6 +17978,18 @@
    },
    "nota": 26.8,
    "cobertura": 0.35,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 26.8,
+    "pesquisa": 33.7,
+    "conversa": 36.7
+   },
+   "posCategorias": {
+    "agentico": 136,
+    "raciocinio": 390,
+    "pesquisa": 296,
+    "conversa": 147
+   },
    "posicao": 377
   },
   {
@@ -13680,6 +18019,12 @@
    },
    "nota": 26.8,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 22.2
+   },
+   "posCategorias": {
+    "raciocinio": 422
+   },
    "posicao": 378
   },
   {
@@ -13714,6 +18059,16 @@
    },
    "nota": 26.8,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 31.7,
+    "pesquisa": 40.8
+   },
+   "posCategorias": {
+    "agentico": 137,
+    "raciocinio": 308,
+    "pesquisa": 243
+   },
    "posicao": 379
   },
   {
@@ -13743,6 +18098,12 @@
    },
    "nota": 26.8,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 25
+   },
+   "posCategorias": {
+    "raciocinio": 406
+   },
    "posicao": 380
   },
   {
@@ -13777,6 +18138,16 @@
    },
    "nota": 26.6,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 36.5,
+    "conversa": 34.6,
+    "visao": 34.2
+   },
+   "posCategorias": {
+    "raciocinio": 283,
+    "conversa": 155,
+    "visao": 85
+   },
    "posicao": 381
   },
   {
@@ -13815,6 +18186,20 @@
    },
    "nota": 26.5,
    "cobertura": 0.39,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 32.2,
+    "pesquisa": 38,
+    "conversa": 37.4,
+    "visao": 31.8
+   },
+   "posCategorias": {
+    "agentico": 138,
+    "raciocinio": 303,
+    "pesquisa": 264,
+    "conversa": 144,
+    "visao": 90
+   },
    "posicao": 382
   },
   {
@@ -13850,6 +18235,16 @@
    },
    "nota": 26.4,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 31,
+    "pesquisa": 38.6,
+    "conversa": 36
+   },
+   "posCategorias": {
+    "raciocinio": 321,
+    "pesquisa": 261,
+    "conversa": 149
+   },
    "posicao": 383
   },
   {
@@ -13881,6 +18276,14 @@
    },
    "nota": 26.4,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 20.8,
+    "pesquisa": 32.1
+   },
+   "posCategorias": {
+    "raciocinio": 424,
+    "pesquisa": 308
+   },
    "posicao": 384
   },
   {
@@ -13910,6 +18313,12 @@
    },
    "nota": 26.2,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 40.7
+   },
+   "posCategorias": {
+    "raciocinio": 268
+   },
    "posicao": 385
   },
   {
@@ -13939,6 +18348,12 @@
    },
    "nota": 26.2,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 27.9
+   },
+   "posCategorias": {
+    "raciocinio": 372
+   },
    "posicao": 386
   },
   {
@@ -13970,6 +18385,14 @@
    },
    "nota": 25.9,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 26.9,
+    "pesquisa": 38.3
+   },
+   "posCategorias": {
+    "raciocinio": 387,
+    "pesquisa": 263
+   },
    "posicao": 387
   },
   {
@@ -14001,6 +18424,14 @@
    },
    "nota": 25.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 17.1,
+    "pesquisa": 31.5
+   },
+   "posCategorias": {
+    "raciocinio": 426,
+    "pesquisa": 311
+   },
    "posicao": 388
   },
   {
@@ -14032,6 +18463,14 @@
    },
    "nota": 25.6,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 24.1,
+    "pesquisa": 28.2
+   },
+   "posCategorias": {
+    "raciocinio": 412,
+    "pesquisa": 354
+   },
    "posicao": 389
   },
   {
@@ -14065,6 +18504,16 @@
    },
    "nota": 25.2,
    "cobertura": 0.17,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 28.7,
+    "pesquisa": 41.1
+   },
+   "posCategorias": {
+    "agentico": 139,
+    "raciocinio": 363,
+    "pesquisa": 241
+   },
    "posicao": 390
   },
   {
@@ -14096,6 +18545,14 @@
    },
    "nota": 25,
    "cobertura": 0.09,
+   "categorias": {
+    "raciocinio": 23.5,
+    "pesquisa": 41.1
+   },
+   "posCategorias": {
+    "raciocinio": 417,
+    "pesquisa": 242
+   },
    "posicao": 391
   },
   {
@@ -14130,6 +18587,16 @@
    },
    "nota": 24.7,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 31.9,
+    "conversa": 35.8,
+    "visao": 29.9
+   },
+   "posCategorias": {
+    "raciocinio": 304,
+    "conversa": 150,
+    "visao": 94
+   },
    "posicao": 392
   },
   {
@@ -14171,6 +18638,24 @@
    },
    "nota": 24.6,
    "cobertura": 0.26,
+   "categorias": {
+    "agentico": 26.6,
+    "codigo": 36.3,
+    "raciocinio": 31.4,
+    "dados": 36.3,
+    "pesquisa": 36.3,
+    "design": 31.4,
+    "navegador": 37.9
+   },
+   "posCategorias": {
+    "agentico": 146,
+    "codigo": 87,
+    "raciocinio": 315,
+    "dados": 25,
+    "pesquisa": 278,
+    "design": 99,
+    "navegador": 24
+   },
    "posicao": 393
   },
   {
@@ -14203,6 +18688,14 @@
    },
    "nota": 23,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 31.5,
+    "conversa": 34.2
+   },
+   "posCategorias": {
+    "raciocinio": 311,
+    "conversa": 156
+   },
    "posicao": 394
   },
   {
@@ -14237,6 +18730,16 @@
    },
    "nota": 22,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 26.9,
+    "conversa": 30.9,
+    "visao": 31.3
+   },
+   "posCategorias": {
+    "raciocinio": 388,
+    "conversa": 169,
+    "visao": 91
+   },
    "posicao": 395
   },
   {
@@ -14272,6 +18775,16 @@
    },
    "nota": 21.7,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 34.8,
+    "conversa": 32.6,
+    "visao": 30.9
+   },
+   "posCategorias": {
+    "raciocinio": 288,
+    "conversa": 162,
+    "visao": 92
+   },
    "posicao": 396
   },
   {
@@ -14307,6 +18820,16 @@
    },
    "nota": 21.6,
    "cobertura": 0.43,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 54.1,
+    "pesquisa": 47.1
+   },
+   "posCategorias": {
+    "agentico": 140,
+    "raciocinio": 189,
+    "pesquisa": 196
+   },
    "posicao": 397
   },
   {
@@ -14339,6 +18862,14 @@
    },
    "nota": 21.5,
    "cobertura": 0.13,
+   "categorias": {
+    "raciocinio": 26.5,
+    "visao": 28.4
+   },
+   "posCategorias": {
+    "raciocinio": 397,
+    "visao": 97
+   },
    "posicao": 398
   },
   {
@@ -14371,6 +18902,14 @@
    },
    "nota": 21.3,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 29.6,
+    "conversa": 26.2
+   },
+   "posCategorias": {
+    "raciocinio": 349,
+    "conversa": 186
+   },
    "posicao": 399
   },
   {
@@ -14403,6 +18942,14 @@
    },
    "nota": 20.9,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 27.9,
+    "conversa": 27.9
+   },
+   "posCategorias": {
+    "raciocinio": 373,
+    "conversa": 180
+   },
    "posicao": 400
   },
   {
@@ -14435,6 +18982,14 @@
    },
    "nota": 20.7,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 27,
+    "conversa": 32.9
+   },
+   "posCategorias": {
+    "raciocinio": 386,
+    "conversa": 161
+   },
    "posicao": 401
   },
   {
@@ -14471,6 +19026,20 @@
    },
    "nota": 20.4,
    "cobertura": 0.26,
+   "categorias": {
+    "agentico": 36,
+    "codigo": 27.2,
+    "raciocinio": 31.2,
+    "pesquisa": 42,
+    "design": 27.2
+   },
+   "posCategorias": {
+    "agentico": 141,
+    "codigo": 111,
+    "raciocinio": 318,
+    "pesquisa": 235,
+    "design": 110
+   },
    "posicao": 402
   },
   {
@@ -14505,6 +19074,16 @@
    },
    "nota": 20.1,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 31.8,
+    "conversa": 32.1,
+    "visao": 30.4
+   },
+   "posCategorias": {
+    "raciocinio": 305,
+    "conversa": 164,
+    "visao": 93
+   },
    "posicao": 403
   },
   {
@@ -14540,6 +19119,16 @@
    },
    "nota": 20,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 29,
+    "conversa": 30.6,
+    "visao": 27.9
+   },
+   "posCategorias": {
+    "raciocinio": 357,
+    "conversa": 170,
+    "visao": 98
+   },
    "posicao": 404
   },
   {
@@ -14572,6 +19161,14 @@
    },
    "nota": 19.9,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 27.1,
+    "conversa": 26.2
+   },
+   "posCategorias": {
+    "raciocinio": 383,
+    "conversa": 187
+   },
    "posicao": 405
   },
   {
@@ -14607,6 +19204,18 @@
    },
    "nota": 19.5,
    "cobertura": 0.17,
+   "categorias": {
+    "codigo": 25,
+    "raciocinio": 28.8,
+    "pesquisa": 41.8,
+    "design": 25
+   },
+   "posCategorias": {
+    "codigo": 116,
+    "raciocinio": 360,
+    "pesquisa": 237,
+    "design": 116
+   },
    "posicao": 406
   },
   {
@@ -14645,6 +19254,18 @@
    },
    "nota": 19.4,
    "cobertura": 0.61,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 41.8,
+    "pesquisa": 39.9,
+    "conversa": 31.9
+   },
+   "posCategorias": {
+    "agentico": 142,
+    "raciocinio": 263,
+    "pesquisa": 250,
+    "conversa": 165
+   },
    "posicao": 407
   },
   {
@@ -14679,6 +19300,16 @@
    },
    "nota": 19.1,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 30,
+    "conversa": 27.6,
+    "visao": 26.9
+   },
+   "posCategorias": {
+    "raciocinio": 338,
+    "conversa": 181,
+    "visao": 100
+   },
    "posicao": 408
   },
   {
@@ -14711,6 +19342,14 @@
    },
    "nota": 18.9,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 28.4,
+    "conversa": 28.1
+   },
+   "posCategorias": {
+    "raciocinio": 367,
+    "conversa": 179
+   },
    "posicao": 409
   },
   {
@@ -14743,6 +19382,14 @@
    },
    "nota": 18.9,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 25.6,
+    "conversa": 25.3
+   },
+   "posCategorias": {
+    "raciocinio": 400,
+    "conversa": 190
+   },
    "posicao": 410
   },
   {
@@ -14780,6 +19427,18 @@
    },
    "nota": 18.2,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 29.4,
+    "pesquisa": 38,
+    "conversa": 30.3,
+    "visao": 27.4
+   },
+   "posCategorias": {
+    "raciocinio": 353,
+    "pesquisa": 265,
+    "conversa": 171,
+    "visao": 99
+   },
    "posicao": 411
   },
   {
@@ -14814,6 +19473,16 @@
    },
    "nota": 18,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 26.4,
+    "pesquisa": 34.6,
+    "conversa": 28.4
+   },
+   "posCategorias": {
+    "raciocinio": 398,
+    "pesquisa": 289,
+    "conversa": 178
+   },
    "posicao": 412
   },
   {
@@ -14848,6 +19517,16 @@
    },
    "nota": 17.7,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 23.7,
+    "pesquisa": 28.2,
+    "conversa": 25
+   },
+   "posCategorias": {
+    "raciocinio": 414,
+    "pesquisa": 355,
+    "conversa": 191
+   },
    "posicao": 413
   },
   {
@@ -14880,6 +19559,14 @@
    },
    "nota": 17.6,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 26.6,
+    "conversa": 29.4
+   },
+   "posCategorias": {
+    "raciocinio": 393,
+    "conversa": 174
+   },
    "posicao": 414
   },
   {
@@ -14913,6 +19600,14 @@
    },
    "nota": 17.6,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 23.1,
+    "conversa": 29.2
+   },
+   "posCategorias": {
+    "raciocinio": 418,
+    "conversa": 175
+   },
    "posicao": 415
   },
   {
@@ -14949,6 +19644,20 @@
    },
    "nota": 17.5,
    "cobertura": 0.35,
+   "categorias": {
+    "codigo": 26.8,
+    "raciocinio": 27.2,
+    "pesquisa": 35.2,
+    "design": 26.8,
+    "conversa": 31.4
+   },
+   "posCategorias": {
+    "codigo": 112,
+    "raciocinio": 382,
+    "pesquisa": 285,
+    "design": 112,
+    "conversa": 167
+   },
    "posicao": 416
   },
   {
@@ -14990,6 +19699,24 @@
    },
    "nota": 17.4,
    "cobertura": 0.26,
+   "categorias": {
+    "agentico": 25,
+    "codigo": 31.4,
+    "raciocinio": 26.6,
+    "dados": 37.9,
+    "pesquisa": 42.8,
+    "design": 25,
+    "navegador": 31.4
+   },
+   "posCategorias": {
+    "agentico": 147,
+    "codigo": 101,
+    "raciocinio": 394,
+    "dados": 24,
+    "pesquisa": 229,
+    "design": 117,
+    "navegador": 28
+   },
    "posicao": 417
   },
   {
@@ -15022,6 +19749,16 @@
    },
    "nota": 16.7,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 25.6,
+    "conversa": 30,
+    "visao": 28.9
+   },
+   "posCategorias": {
+    "raciocinio": 401,
+    "conversa": 172,
+    "visao": 96
+   },
    "posicao": 418
   },
   {
@@ -15058,6 +19795,18 @@
    },
    "nota": 16.5,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 24.9,
+    "pesquisa": 40.6,
+    "conversa": 28.7,
+    "visao": 29.4
+   },
+   "posCategorias": {
+    "raciocinio": 407,
+    "pesquisa": 245,
+    "conversa": 177,
+    "visao": 95
+   },
    "posicao": 419
   },
   {
@@ -15093,6 +19842,16 @@
    },
    "nota": 16.4,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 31.2,
+    "pesquisa": 28.2,
+    "conversa": 26.9
+   },
+   "posCategorias": {
+    "raciocinio": 319,
+    "pesquisa": 356,
+    "conversa": 184
+   },
    "posicao": 420
   },
   {
@@ -15128,6 +19887,16 @@
    },
    "nota": 16.4,
    "cobertura": 0.43,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 35.6,
+    "pesquisa": 38.9
+   },
+   "posCategorias": {
+    "agentico": 143,
+    "raciocinio": 286,
+    "pesquisa": 258
+   },
    "posicao": 421
   },
   {
@@ -15162,6 +19931,16 @@
    },
    "nota": 16.1,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 22.6,
+    "pesquisa": 28.2,
+    "conversa": 27.3
+   },
+   "posCategorias": {
+    "raciocinio": 420,
+    "pesquisa": 357,
+    "conversa": 182
+   },
    "posicao": 422
   },
   {
@@ -15198,6 +19977,18 @@
    },
    "nota": 15.4,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 26.6,
+    "pesquisa": 40.8,
+    "conversa": 26.6,
+    "visao": 25
+   },
+   "posCategorias": {
+    "raciocinio": 395,
+    "pesquisa": 244,
+    "conversa": 185,
+    "visao": 104
+   },
    "posicao": 423
   },
   {
@@ -15232,6 +20023,16 @@
    },
    "nota": 15,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 26,
+    "conversa": 28.9,
+    "visao": 26.4
+   },
+   "posCategorias": {
+    "raciocinio": 399,
+    "conversa": 176,
+    "visao": 101
+   },
    "posicao": 424
   },
   {
@@ -15266,6 +20067,16 @@
    },
    "nota": 14.5,
    "cobertura": 0.3,
+   "categorias": {
+    "raciocinio": 24.6,
+    "conversa": 27.3,
+    "visao": 25.9
+   },
+   "posCategorias": {
+    "raciocinio": 408,
+    "conversa": 183,
+    "visao": 102
+   },
    "posicao": 425
   },
   {
@@ -15298,6 +20109,14 @@
    },
    "nota": 14.2,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 23,
+    "conversa": 25.8
+   },
+   "posCategorias": {
+    "raciocinio": 419,
+    "conversa": 188
+   },
    "posicao": 426
   },
   {
@@ -15330,6 +20149,14 @@
    },
    "nota": 13.2,
    "cobertura": 0.26,
+   "categorias": {
+    "raciocinio": 21.3,
+    "conversa": 25.6
+   },
+   "posCategorias": {
+    "raciocinio": 423,
+    "conversa": 189
+   },
    "posicao": 427
   },
   {
@@ -15357,6 +20184,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -15384,6 +20212,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -15414,6 +20243,7 @@
    },
    "nota": null,
    "cobertura": 0.22,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -15441,6 +20271,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -15470,6 +20301,7 @@
    },
    "nota": null,
    "cobertura": 0.22,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -15497,6 +20329,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -15527,6 +20360,7 @@
    },
    "nota": null,
    "cobertura": 0.26,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -15557,6 +20391,7 @@
    },
    "nota": null,
    "cobertura": 0.22,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -15586,6 +20421,7 @@
    },
    "nota": null,
    "cobertura": 0.26,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -15615,6 +20451,7 @@
    },
    "nota": null,
    "cobertura": 0.22,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -15642,6 +20479,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -15672,6 +20510,7 @@
    },
    "nota": null,
    "cobertura": 0.26,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -15702,6 +20541,7 @@
    },
    "nota": null,
    "cobertura": 0.26,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -15732,6 +20572,7 @@
    },
    "nota": null,
    "cobertura": 0.22,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -15761,6 +20602,7 @@
    },
    "nota": null,
    "cobertura": 0.26,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -15790,6 +20632,7 @@
    },
    "nota": null,
    "cobertura": 0.22,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -15819,6 +20662,7 @@
    },
    "nota": null,
    "cobertura": 0.22,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -15846,6 +20690,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -15876,6 +20721,7 @@
    },
    "nota": null,
    "cobertura": 0.26,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -15905,6 +20751,7 @@
    },
    "nota": null,
    "cobertura": 0.26,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -15932,6 +20779,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -15961,6 +20809,7 @@
    },
    "nota": null,
    "cobertura": 0.22,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -15988,6 +20837,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16015,6 +20865,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16044,6 +20895,7 @@
    },
    "nota": null,
    "cobertura": 0.22,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16073,6 +20925,7 @@
    },
    "nota": null,
    "cobertura": 0.22,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16101,6 +20954,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16128,6 +20982,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16157,6 +21012,7 @@
    },
    "nota": null,
    "cobertura": 0.22,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16184,6 +21040,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16211,6 +21068,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16239,6 +21097,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16266,6 +21125,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16293,6 +21153,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16320,6 +21181,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16347,6 +21209,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16375,6 +21238,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16402,6 +21266,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16429,6 +21294,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16458,6 +21324,7 @@
    },
    "nota": null,
    "cobertura": 0.22,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16487,6 +21354,7 @@
    },
    "nota": null,
    "cobertura": 0.22,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16514,6 +21382,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16541,6 +21410,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16568,6 +21438,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16595,6 +21466,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16622,6 +21494,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16649,6 +21522,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16678,6 +21552,7 @@
    },
    "nota": null,
    "cobertura": 0.22,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16708,6 +21583,7 @@
    },
    "nota": null,
    "cobertura": 0.22,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16735,6 +21611,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16763,6 +21640,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16790,6 +21668,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16817,6 +21696,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16846,6 +21726,7 @@
    },
    "nota": null,
    "cobertura": 0.22,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16874,6 +21755,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16903,6 +21785,7 @@
    },
    "nota": null,
    "cobertura": 0.22,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16930,6 +21813,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16957,6 +21841,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -16984,6 +21869,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17012,6 +21898,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17040,6 +21927,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17067,6 +21955,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17096,6 +21985,7 @@
    },
    "nota": null,
    "cobertura": 0.22,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17123,6 +22013,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17150,6 +22041,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17177,6 +22069,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17204,6 +22097,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17231,6 +22125,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17258,6 +22153,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17286,6 +22182,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17313,6 +22210,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17340,6 +22238,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17371,6 +22270,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17398,6 +22298,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17425,6 +22326,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17452,6 +22354,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17480,6 +22383,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17508,6 +22412,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17536,6 +22441,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17563,6 +22469,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17590,6 +22497,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17617,6 +22525,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17644,6 +22553,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17671,6 +22581,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17698,6 +22609,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17725,6 +22637,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17752,6 +22665,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17779,6 +22693,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17806,6 +22721,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17834,6 +22750,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17861,6 +22778,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17888,6 +22806,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17915,6 +22834,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17942,6 +22862,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17969,6 +22890,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -17996,6 +22918,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18023,6 +22946,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18050,6 +22974,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18081,6 +23006,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18108,6 +23034,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18135,6 +23062,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18162,6 +23090,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18189,6 +23118,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18217,6 +23147,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18244,6 +23175,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18271,6 +23203,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18299,6 +23232,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18326,6 +23260,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18353,6 +23288,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18380,6 +23316,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18407,6 +23344,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18434,6 +23372,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18461,6 +23400,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18488,6 +23428,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18515,6 +23456,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18542,6 +23484,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18569,6 +23512,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18596,6 +23540,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18623,6 +23568,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18650,6 +23596,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18677,6 +23624,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18704,6 +23652,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18731,6 +23680,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18758,6 +23708,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18785,6 +23736,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18812,6 +23764,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18839,6 +23792,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18866,6 +23820,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18894,6 +23849,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18921,6 +23877,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18948,6 +23905,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -18975,6 +23933,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19002,6 +23961,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19029,6 +23989,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19056,6 +24017,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19083,6 +24045,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19110,6 +24073,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19137,6 +24101,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19165,6 +24130,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19192,6 +24158,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19219,6 +24186,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19246,6 +24214,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19273,6 +24242,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19300,6 +24270,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19327,6 +24298,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19354,6 +24326,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19381,6 +24354,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19408,6 +24382,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19435,6 +24410,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19462,6 +24438,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19489,6 +24466,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19516,6 +24494,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19543,6 +24522,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19570,6 +24550,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19597,6 +24578,7 @@
    },
    "nota": null,
    "cobertura": 0.17,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19624,6 +24606,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19651,6 +24634,7 @@
    },
    "nota": null,
    "cobertura": 0,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19678,6 +24662,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19707,6 +24692,7 @@
    },
    "nota": null,
    "cobertura": 0,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19734,6 +24720,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19762,6 +24749,7 @@
    },
    "nota": null,
    "cobertura": 0.09,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19789,6 +24777,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19816,6 +24805,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19843,6 +24833,7 @@
    },
    "nota": null,
    "cobertura": 0.09,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19870,6 +24861,7 @@
    },
    "nota": null,
    "cobertura": 0.09,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19897,6 +24889,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19924,6 +24917,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19951,6 +24945,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -19978,6 +24973,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -20005,6 +25001,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -20032,6 +25029,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -20059,6 +25057,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -20087,6 +25086,7 @@
    },
    "nota": null,
    "cobertura": 0,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -20114,6 +25114,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -20141,6 +25142,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -20168,6 +25170,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -20195,6 +25198,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -20222,6 +25226,7 @@
    },
    "nota": null,
    "cobertura": 0,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -20249,6 +25254,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -20276,6 +25282,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -20304,6 +25311,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -20331,6 +25339,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -20358,6 +25367,7 @@
    },
    "nota": null,
    "cobertura": 0.09,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -20385,6 +25395,7 @@
    },
    "nota": null,
    "cobertura": 0.09,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -20412,6 +25423,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -20439,6 +25451,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   },
   {
@@ -20466,6 +25479,7 @@
    },
    "nota": null,
    "cobertura": 0.04,
+   "categorias": {},
    "posicao": null
   }
  ]
