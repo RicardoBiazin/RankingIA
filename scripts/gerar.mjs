@@ -104,6 +104,8 @@ const filtros = `<div class="filtros" role="search">
 <label class="oculto" for="f-preco">Preço de entrada</label>
 <select id="f-preco"><option value="">Qualquer preço</option>${[0.5, 2, 5].map((v) => `<option value="${v}" data-usd-rotulo="${v}">até ${preco(v)} / 1M</option>`).join('')}</select>
 <label class="caixa"><input type="checkbox" id="f-cat"> Mostrar categorias</label>
+<label class="caixa" for="f-mostrar">Mostrar</label>
+<select id="f-mostrar" title="Quantos modelos mostrar em cada tabela"><option value="10" selected>10</option><option value="20">20</option><option value="50">50</option><option value="100">100</option><option value="">Todos</option></select>
 <span class="contagem" id="contagem" aria-live="polite"></span>
 </div>`;
 
@@ -158,7 +160,7 @@ ${ranking.map(linhaRanking).join('\n')}
 </div>
 </section>
 <h2 id="t-outros">Outros modelos (só preferência humana)</h2>
-<p class="fraco">Estes ${outros.length} modelos ainda não têm benchmark objetivo (LiveBench${dados.fontes.artificialanalysis?.coletadoEm ? ' ou Artificial Analysis' : ''}), por isso ficam fora da nota. Estão ordenados pelo Elo da LMArena; os mesmos filtros valem aqui.</p>
+<p class="fraco">Estes ${outros.length} modelos ainda não têm benchmark objetivo (LiveBench${dados.fontes.artificialanalysis?.coletadoEm ? ' ou Artificial Analysis' : ''}), por isso ficam fora da nota. Estão ordenados pelo Elo da LMArena; os mesmos filtros e a quantidade escolhida valem aqui. <span id="contagem-outros"></span></p>
 <section class="cartao" aria-labelledby="t-outros">
 <div class="rolagem">
 <table class="tabela" id="outros">

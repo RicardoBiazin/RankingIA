@@ -1,6 +1,6 @@
 {
   "name": "rankingia",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "private": true,
   "description": "Ranking de modelos de IA que agrega benchmarks públicos (LiveBench, LMArena, OpenRouter e Artificial Analysis)",
   "license": "MIT",

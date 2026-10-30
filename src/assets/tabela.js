@@ -9,6 +9,7 @@
   var fPreco = document.getElementById('f-preco');
   var fCat = document.getElementById('f-cat');
   var contagem = document.getElementById('contagem');
+  var fMostrar = document.getElementById('f-mostrar');
 
   // Ordenação: clique alterna desc/asc; vazio fica sempre no fim.
   tabelas.forEach(function (tab) {
@@ -32,6 +33,7 @@
           return asc ? r : -r;
         });
         linhas.forEach(function (l) { corpo.appendChild(l); });
+        filtrar(); // o limite vale para as primeiras na nova ordem
       });
     });
   });
@@ -39,19 +41,25 @@
   function filtrar() {
     var q = (busca.value || '').trim().toLowerCase();
     var emp = fEmpresa.value, tipo = fTipo.value, pmax = fPreco.value ? Number(fPreco.value) : null;
-    var vis = 0, total = 0;
+    var limite = fMostrar.value ? Number(fMostrar.value) : Infinity;
     tabelas.forEach(function (tab, i) {
+      // Filtro primeiro; depois só as `limite` primeiras na ordem atual ficam visíveis.
+      var achados = 0, total = 0;
       Array.prototype.forEach.call(tab.tBodies[0].rows, function (tr) {
         var d = tr.dataset;
         var ok = (!q || d.busca.indexOf(q) >= 0) && (!emp || d.empresa === emp) && (!tipo || d.aberto === tipo)
           && (pmax == null || (d.preco !== '' && Number(d.preco) <= pmax));
-        tr.hidden = !ok;
-        if (i === 0) { total++; if (ok) vis++; }
+        total++;
+        if (ok) achados++;
+        tr.hidden = !ok || achados > limite;
       });
+      var mostrados = Math.min(achados, limite);
+      var txt = (mostrados < achados ? mostrados + ' de ' : '') + achados + (achados === 1 ? ' modelo' : ' modelos') + (achados < total ? ' (de ' + total + ')' : '');
+      var alvo = i === 0 ? contagem : document.getElementById('contagem-outros');
+      if (alvo) alvo.textContent = txt;
     });
-    contagem.textContent = vis === total ? total + ' modelos' : vis + ' de ' + total + ' modelos';
   }
-  [busca, fEmpresa, fTipo, fPreco].forEach(function (el) { el.addEventListener('input', filtrar); });
+  [busca, fEmpresa, fTipo, fPreco, fMostrar].forEach(function (el) { el.addEventListener('input', filtrar); });
   fCat.addEventListener('change', function () { tabelas[0].classList.toggle('com-cat', fCat.checked); });
   filtrar();
 

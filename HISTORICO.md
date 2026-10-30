@@ -1,5 +1,12 @@
 # Histórico
 
+## 0.4.0 — 30/10/2026
+
+- As tabelas abrem com os 10 primeiros modelos. O seletor "Mostrar" escolhe entre 10, 20, 50, 100 ou todos, e vale para as duas tabelas.
+- O limite respeita a busca, os filtros e a ordenação: são sempre os primeiros da ordem atual.
+- O contador mostra quantos aparecem, quantos o filtro achou e o total.
+- Sem JavaScript, todas as linhas continuam na página.
+
 ## 0.3.2 — 30/10/2026
 
 - Preços sempre com 2 casas decimais. Valores abaixo de 0,005 aparecem como "< 0,01".
