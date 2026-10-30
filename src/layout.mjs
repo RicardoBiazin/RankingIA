@@ -26,7 +26,7 @@ export function formatos(idioma) {
   };
 }
 
-export function pagina({ idioma, t, rel, titulo, descricao, conteudo, scripts = [], versao, dados, noindex = false }) {
+export function pagina({ idioma, t, rel, titulo, descricao, conteudo, scripts = [], versao, dados, noindex = false, jsonLd = null }) {
   const pre = prefixo(idioma);
   const { data, dataHora } = formatos(idioma);
   const url = (i, r = rel) => SITE + prefixo(i) + r;
@@ -66,7 +66,12 @@ ${noindex ? '<meta name="robots" content="noindex">\n' : ''}<meta property="og:t
 <meta property="og:description" content="${esc(descricao)}">
 <meta property="og:url" content="${url(idioma)}">
 <meta property="og:locale" content="${idioma.og}">
-<meta name="theme-color" content="#2a78d6">
+${IDIOMAS.filter((i) => i !== idioma).map((i) => `<meta property="og:locale:alternate" content="${i.og}">`).join('\n')}
+<meta property="og:site_name" content="RankingIA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="${esc(titulo)}">
+<meta name="twitter:description" content="${esc(descricao)}">
+${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, '\\u003c')}</script>\n` : ''}<meta name="theme-color" content="#2a78d6">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/estilo.css?v=${versao}">
 <script src="/assets/t-${arq}.js?v=${versao}"></script>

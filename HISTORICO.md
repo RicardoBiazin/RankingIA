@@ -1,5 +1,16 @@
 # Histórico
 
+## 0.6.2 — 30/10/2026
+
+Acabamento para buscadores (SEO).
+
+- Title da página inicial com o termo de busca primeiro, por exemplo "Ranking de modelos de IA (LLMs) · RankingIA".
+- Description da página inicial encurtada para 150 a 156 caracteres. Antes tinha cerca de 200 e o Google cortava.
+- Todas as páginas: `og:site_name`, `og:locale:alternate` dos outros idiomas e cartão do Twitter (`summary`).
+- Página inicial: JSON-LD `WebSite` em cada idioma.
+- Já existiam e foram conferidos: canonical por idioma, `hreflang` com `x-default`, `robots.txt` com o Sitemap e `sitemap.xml` com as 4 páginas e todos os modelos nos 5 idiomas.
+- `testar` confere o SEO da página inicial nos 5 idiomas e o Sitemap no `robots.txt`.
+
 ## 0.6.1 — 30/10/2026
 
 - LMArena agora aponta para arena.ai (o lmarena.ai redireciona para lá). Os dados continuam vindo do dataset oficial no Hugging Face.

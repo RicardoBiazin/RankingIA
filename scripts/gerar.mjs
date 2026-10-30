@@ -10,6 +10,7 @@ import { FONTES, PESO_NEUTRO } from '../src/pesos.mjs';
 import { formatar } from '../src/moedas.mjs';
 import { IDIOMAS, tradutor, textosCliente } from '../src/i18n.mjs';
 import { METODOLOGIA, METODOLOGIA_TITULO, STATUS_CAB } from '../src/metodologia.mjs';
+import { PERFIL } from '../src/perfil.mjs';
 
 const versao = JSON.parse(readFileSync(caminho('package.json'), 'utf8')).version;
 const dados = lerJSON('dados/modelos.json');
@@ -169,6 +170,15 @@ ${cats.map((c) => `<button type="button" class="chip" data-cat="${c.id}" aria-pr
     ...base, rel: '/',
     titulo: t('idx.titulo'),
     descricao: t('idx.desc', { n: ranking.length }),
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'RankingIA',
+      url: `${SITE}${pre}/`,
+      inLanguage: idioma.codigo,
+      description: t('idx.desc', { n: ranking.length }),
+      author: { '@type': 'Person', name: PERFIL.nome, url: 'https://biazin.com.br/' },
+    },
     scripts: ['/assets/tabela.js'],
     conteudo: `<div class="intro">
 <div><h1>${t('idx.h1')}</h1>

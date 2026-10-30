@@ -1,11 +1,13 @@
 {
   "name": "rankingia",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "private": true,
   "description": "Ranking de modelos de IA que agrega benchmarks públicos (LiveBench, LMArena, OpenRouter e Artificial Analysis)",
   "license": "MIT",
   "type": "module",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "coletar": "node scripts/coletar.mjs",
     "normalizar": "node scripts/normalizar.mjs",

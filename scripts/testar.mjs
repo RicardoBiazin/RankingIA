@@ -89,7 +89,8 @@ let semVersao = [], inline = [], h1 = [], links = new Set(), quebrados = [], tit
 for (const p of paginas) {
   const html = readFileSync(pub(p), 'utf8');
   if (!new RegExp(`<span class="versao" title="[^"]+">v${versao.replace(/\./g, '\.')}</span>`).test(html)) semVersao.push(p);
-  if (/\sstyle=/.test(html) || /<script(?![^>]*\bsrc=)[^>]*>/.test(html) || /\son[a-z]+=/.test(html)) inline.push(p);
+  // JSON-LD (type="application/ld+json") é dado, não roda: a CSP não o bloqueia.
+  if (/\sstyle=/.test(html) || /<script(?![^>]*\b(?:src=|type="application\/ld\+json"))[^>]*>/.test(html) || /\son[a-z]+=/.test(html)) inline.push(p);
   if ((html.match(/<h1[\s>]/g) ?? []).length !== 1) h1.push(p);
   if (!/<title>[^<]{6,90}<\/title>/.test(html) || !/<meta name="description" content="[^"]{20,}">/.test(html)) titulo.push(p);
   for (const m of html.matchAll(/(?:href|src)="(\/[^"#]*)"/g)) links.add(m[1].split('?')[0]);
@@ -106,6 +107,23 @@ conferir(!quebrados.length, `${links.size} links internos existem ${quebrados.sl
 
 const index = readFileSync(pub('index.html'), 'utf8');
 conferir(/class="autonomo"/.test(index), 'rodapé avisa que coleta e resultados são autônomos');
+// SEO da página inicial em cada idioma: title até 60, description 140–160 (o chinês é mais curto em caracteres),
+// canonical próprio, Open Graph, x-default e JSON-LD WebSite.
+const seoRuim = [];
+for (const i of IDIOMAS) {
+  const h = readFileSync(pub((i.pasta ? i.pasta + '/' : '') + 'index.html'), 'utf8');
+  const tit = h.match(/<title>([^<]*)<\/title>/)?.[1] ?? '';
+  const desc = [...(h.match(/<meta name="description" content="([^"]*)">/)?.[1] ?? '').replace(/&[a-z#0-9]+;/g, '_')].length;
+  const url = `https://rankingia.biazin.com.br${i.pasta ? '/' + i.pasta : ''}/`;
+  const ld = h.match(/<script type="application\/ld\+json">([^<]*)<\/script>/)?.[1];
+  const ok = [...tit].length <= 60 && (i.pasta === 'zh' || (desc >= 140 && desc <= 160))
+    && h.includes(`<link rel="canonical" href="${url}">`) && h.includes(`<meta property="og:url" content="${url}">`)
+    && h.includes('<meta property="og:site_name" content="RankingIA">') && h.includes('hreflang="x-default" href="https://rankingia.biazin.com.br/"')
+    && ld && JSON.parse(ld)['@type'] === 'WebSite' && JSON.parse(ld).url === url;
+  if (!ok) seoRuim.push(`${i.codigo} (title ${[...tit].length}, description ${desc})`);
+}
+conferir(!seoRuim.length, `SEO da página inicial nos ${IDIOMAS.length} idiomas ${seoRuim.join(' ')}`);
+conferir(/^Sitemap: https:\/\/rankingia\.biazin\.com\.br\/sitemap\.xml$/m.test(readFileSync(pub('robots.txt'), 'utf8')), 'robots.txt aponta para o sitemap');
 const linhasRanking = index.split('<table class="tabela" id="ranking"')[1].split('</table>')[0].match(/<tr[^>]* data-busca/g)?.length;
 conferir((d.categorias ?? []).length >= 5 && d.categorias.every((c) => index.includes(`data-cat="${c.id}"`)), `botões de ${d.categorias?.length} categorias`);
 conferir(ranking.every((m) => Object.values(m.categorias ?? {}).every((v) => v >= 0 && v <= 100)), 'notas por categoria entre 0 e 100');

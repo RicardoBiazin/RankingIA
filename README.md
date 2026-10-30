@@ -81,7 +81,11 @@ O workflow precisa destes secrets:
 - `NETLIFY_SITE_ID`;
 - `AA_API_KEY`, que é opcional.
 
-Para publicar à mão: `npm run publicar`.
+Para publicar à mão: `npm run publicar`, ou rodar o workflow pelo GitHub (`gh workflow run atualizar.yml`), que coleta, commita e publica do jeito do dia a dia.
+
+## Buscadores
+
+Cada idioma tem URL própria (`/`, `/en/`, `/es/`, `/fr/`, `/zh/`), então toda página leva `canonical` próprio, `hreflang` dos cinco idiomas e `x-default` apontando para o português. Também leva Open Graph (com `og:locale:alternate`) e cartão do Twitter. A página inicial tem JSON-LD `WebSite`; a CSP não bloqueia porque o JSON-LD é dado e não roda. O `gerar` escreve `robots.txt` e `sitemap.xml` com todas as páginas nos cinco idiomas. O `testar` confere, na página inicial de cada idioma, title de até 60 caracteres e description entre 140 e 160 (o chinês fica de fora da faixa).
 
 ## Licença
 
