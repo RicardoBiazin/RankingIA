@@ -1,6 +1,6 @@
 {
  "fonte": "lmarena",
- "coletadoEm": "2026-10-30T14:45:01.941Z",
+ "coletadoEm": "2026-10-30T19:36:24.305Z",
  "arenas": {
   "texto": {
    "data": "2026-10-28",
@@ -1519,7 +1519,7 @@
     },
     {
      "origem": "Claude 3.7 Sonnet (Thinking 32K, 20250219)",
-     "chave": "claude-3.7-sonnet",
+     "chave": "claude-sonnet-3.7",
      "elo": 1314,
      "votos": 38156,
      "empresa": "Anthropic",
@@ -1599,7 +1599,7 @@
     },
     {
      "origem": "Claude 3.5 Sonnet (20241022)",
-     "chave": "claude-3.5-sonnet",
+     "chave": "claude-sonnet-3.5",
      "elo": 1298,
      "votos": 87771,
      "empresa": "Anthropic",
@@ -1839,7 +1839,7 @@
     },
     {
      "origem": "Claude 3 Opus (20240229)",
-     "chave": "claude-3-opus",
+     "chave": "claude-opus-3",
      "elo": 1262,
      "votos": 194909,
      "empresa": "Anthropic",
@@ -1871,7 +1871,7 @@
     },
     {
      "origem": "Claude 3.5 Haiku (20241022)",
-     "chave": "claude-3.5-haiku",
+     "chave": "claude-haiku-3.5",
      "elo": 1255,
      "votos": 69056,
      "empresa": "Anthropic",
@@ -2007,7 +2007,7 @@
     },
     {
      "origem": "Claude 3 Sonnet (20240229)",
-     "chave": "claude-3-sonnet",
+     "chave": "claude-sonnet-3",
      "elo": 1218,
      "votos": 109284,
      "empresa": "Anthropic",
@@ -2079,7 +2079,7 @@
     },
     {
      "origem": "Claude 3 Haiku (20240307)",
-     "chave": "claude-3-haiku",
+     "chave": "claude-haiku-3",
      "elo": 1195,
      "votos": 117701,
      "empresa": "Anthropic",
@@ -4537,7 +4537,7 @@
     },
     {
      "origem": "Claude 3.7 Sonnet (Thinking 32K, 20250219)",
-     "chave": "claude-3.7-sonnet",
+     "chave": "claude-sonnet-3.7",
      "elo": 1169,
      "votos": 1436,
      "empresa": "Anthropic",
@@ -4657,7 +4657,7 @@
     },
     {
      "origem": "Claude 3.5 Sonnet (20241022)",
-     "chave": "claude-3.5-sonnet",
+     "chave": "claude-sonnet-3.5",
      "elo": 1126,
      "votos": 10374,
      "empresa": "Anthropic",
@@ -4697,7 +4697,7 @@
     },
     {
      "origem": "Claude 3.5 Haiku (20241022)",
-     "chave": "claude-3.5-haiku",
+     "chave": "claude-haiku-3.5",
      "elo": 1093,
      "votos": 1398,
      "empresa": "Anthropic",
@@ -4769,7 +4769,7 @@
     },
     {
      "origem": "Claude 3 Opus (20240229)",
-     "chave": "claude-3-opus",
+     "chave": "claude-opus-3",
      "elo": 1023,
      "votos": 15565,
      "empresa": "Anthropic",
@@ -4841,7 +4841,7 @@
     },
     {
      "origem": "Claude 3 Sonnet (20240229)",
-     "chave": "claude-3-sonnet",
+     "chave": "claude-sonnet-3",
      "elo": 984,
      "votos": 12314,
      "empresa": "Anthropic",
@@ -4881,7 +4881,7 @@
     },
     {
      "origem": "Claude 3 Haiku (20240307)",
-     "chave": "claude-3-haiku",
+     "chave": "claude-haiku-3",
      "elo": 950,
      "votos": 13380,
      "empresa": "Anthropic",

@@ -1,27 +1,28 @@
 {
  "openrouter": {
   "ok": true,
-  "coletadoEm": "2026-10-30T14:45:00.245Z",
-  "tentativa": "2026-10-30T14:45:00.245Z"
+  "coletadoEm": "2026-10-30T19:36:21.448Z",
+  "tentativa": "2026-10-30T19:36:21.448Z"
  },
  "livebench": {
   "ok": true,
-  "coletadoEm": "2026-10-30T14:45:00.401Z",
-  "tentativa": "2026-10-30T14:45:00.401Z"
+  "coletadoEm": "2026-10-30T19:36:21.527Z",
+  "tentativa": "2026-10-30T19:36:21.527Z"
  },
  "lmarena": {
   "ok": true,
-  "coletadoEm": "2026-10-30T14:45:01.941Z",
-  "tentativa": "2026-10-30T14:45:01.941Z"
+  "coletadoEm": "2026-10-30T19:36:24.305Z",
+  "tentativa": "2026-10-30T19:36:24.305Z"
  },
  "artificialanalysis": {
   "ok": true,
-  "coletadoEm": "2026-10-30T14:45:02.288Z",
-  "tentativa": "2026-10-30T14:45:02.288Z"
+  "coletadoEm": "2026-10-30T19:36:24.388Z",
+  "tentativa": "2026-10-30T19:36:24.388Z"
  },
  "cambio": {
-  "ok": true,
+  "ok": false,
   "coletadoEm": "2026-10-30T14:54:57.980Z",
-  "tentativa": "2026-10-30T14:54:57.980Z"
+  "tentativa": "2026-10-30T19:36:24.390Z",
+  "erro": "https://api.frankfurter.dev/v1/latest?base=USD&symbols=BRL,EUR,JPY,GBP,CNY,AUD,CAD,CHF,HKD -> HTTP 522"
  }
 }
