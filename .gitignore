@@ -1,0 +1,8 @@
+node_modules/
+public/
+.netlify/
+.env
+*.log
+*.tmp
+# Termos da Artificial Analysis: dado bruto não é redistribuído no repositório.
+dados/brutos/artificialanalysis.json

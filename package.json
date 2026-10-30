@@ -1,0 +1,22 @@
+{
+  "name": "rankingia",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Ranking de modelos de IA que agrega benchmarks públicos (LiveBench, LMArena, OpenRouter e Artificial Analysis)",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "coletar": "node scripts/coletar.mjs",
+    "normalizar": "node scripts/normalizar.mjs",
+    "gerar": "node scripts/gerar.mjs",
+    "testar": "node scripts/testar.mjs",
+    "atualizar": "node scripts/coletar.mjs && node scripts/normalizar.mjs && node scripts/gerar.mjs && node scripts/testar.mjs",
+    "preview": "npx --yes serve@14.2.4 public -l 4191",
+    "publicar": "npm run atualizar && netlify deploy --prod --dir public"
+  },
+  "dependencies": {
+    "chart.js": "4.5.1",
+    "hyparquet": "1.31.4"
+  }
+}

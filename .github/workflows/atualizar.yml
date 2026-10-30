@@ -1,0 +1,55 @@
+# Coleta diária: busca as fontes, recalcula a nota, gera e testa o site,
+# commita os dados do dia (histórico) e publica no Netlify.
+name: Atualizar dados
+
+on:
+  schedule:
+    - cron: '0 9 * * *' # 06:00 em Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atualizar
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      AA_API_KEY: ${{ secrets.AA_API_KEY }}
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+
+      # O bruto da Artificial Analysis não vai para o git (termos de uso);
+      # o cache guarda o último para quando a API falhar.
+      - uses: actions/cache@v4
+        with:
+          path: dados/brutos/artificialanalysis.json
+          key: aa-${{ github.run_id }}
+          restore-keys: aa-
+
+      - name: Coletar, normalizar, gerar e testar
+        run: npm run atualizar
+
+      - name: Commitar os dados do dia
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dados
+          if git diff --cached --quiet; then echo "sem mudança nos dados"; exit 0; fi
+          git commit -m "dados: coleta de $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Publicar no Netlify
+        if: env.NETLIFY_AUTH_TOKEN != '' && env.NETLIFY_SITE_ID != ''
+        run: npx --yes netlify-cli@27.13.0 deploy --prod --dir public --site "$NETLIFY_SITE_ID" --message "coleta $(date -u +%Y-%m-%d)"

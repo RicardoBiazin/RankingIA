@@ -1,0 +1,22 @@
+{
+ "openrouter": {
+  "ok": true,
+  "coletadoEm": "2026-10-30T14:11:20.084Z",
+  "tentativa": "2026-10-30T14:11:20.084Z"
+ },
+ "livebench": {
+  "ok": true,
+  "coletadoEm": "2026-10-30T14:01:18.303Z",
+  "tentativa": "2026-10-30T14:01:18.303Z"
+ },
+ "lmarena": {
+  "ok": true,
+  "coletadoEm": "2026-10-30T14:01:22.636Z",
+  "tentativa": "2026-10-30T14:01:22.636Z"
+ },
+ "artificialanalysis": {
+  "ok": false,
+  "erro": "sem AA_API_KEY",
+  "tentativa": "2026-10-30T14:01:22.638Z"
+ }
+}

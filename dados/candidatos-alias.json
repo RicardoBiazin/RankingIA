@@ -1,0 +1,313 @@
+[
+ {
+  "chave": "mistral-large-4",
+  "parecidas": [
+   "mistral-large-4-0",
+   "mistral-large"
+  ]
+ },
+ {
+  "chave": "gemini-3-pro",
+  "parecidas": [
+   "gemini-3-pro-image"
+  ]
+ },
+ {
+  "chave": "muse-spark",
+  "parecidas": [
+   "muse-spark-open",
+   "muse-spark-1.3-contributor",
+   "muse-spark-1.3",
+   "muse-spark-1.2-contributor",
+   "muse-spark-1.2",
+   "muse-spark-1.1"
+  ]
+ },
+ {
+  "chave": "qwen3.5",
+  "parecidas": [
+   "qwen3.5-plus",
+   "qwen3.5-9b",
+   "qwen3.5-35b-a3b",
+   "qwen3.5-27b",
+   "qwen3.5-122b-a10b",
+   "qwen3.5-flash-02-23",
+   "qwen3.5-plus-02-15",
+   "qwen3.5-397b-a17b"
+  ]
+ },
+ {
+  "chave": "qwen3.6",
+  "parecidas": [
+   "qwen3.6-flash",
+   "qwen3.6-35b-a3b",
+   "qwen3.6-27b",
+   "qwen3.6-plus"
+  ]
+ },
+ {
+  "chave": "grok-4.20-beta-1",
+  "parecidas": [
+   "grok",
+   "grok-4.20"
+  ]
+ },
+ {
+  "chave": "qwen3",
+  "parecidas": [
+   "qwen3-coder-next",
+   "qwen3-vl-8b",
+   "qwen3-vl-30b-a3b",
+   "qwen3-vl-235b-a22b",
+   "qwen3-coder-flash",
+   "qwen3-next-80b-a3b",
+   "qwen3-coder-30b-a3b",
+   "qwen3-30b-a3b",
+   "qwen3-235b-a22b",
+   "qwen3-coder",
+   "qwen3-14b",
+   "qwen3-32b"
+  ]
+ },
+ {
+  "chave": "grok-4.1",
+  "parecidas": [
+   "grok"
+  ]
+ },
+ {
+  "chave": "mistral-large-3",
+  "parecidas": [
+   "mistral-large"
+  ]
+ },
+ {
+  "chave": "grok-3",
+  "parecidas": [
+   "grok"
+  ]
+ },
+ {
+  "chave": "deepseek-v3.1",
+  "parecidas": [
+   "deepseek-v3.1-terminus"
+  ]
+ },
+ {
+  "chave": "gpt-5.5-instant",
+  "parecidas": [
+   "gpt-5.5"
+  ]
+ },
+ {
+  "chave": "kimi-k2-turbo",
+  "parecidas": [
+   "kimi",
+   "kimi-k2"
+  ]
+ },
+ {
+  "chave": "grok-4",
+  "parecidas": [
+   "grok"
+  ]
+ },
+ {
+  "chave": "grok-4.1-fast",
+  "parecidas": [
+   "grok"
+  ]
+ },
+ {
+  "chave": "grok-4-fast",
+  "parecidas": [
+   "grok"
+  ]
+ },
+ {
+  "chave": "gpt-5-chat",
+  "parecidas": [
+   "gpt-5"
+  ]
+ },
+ {
+  "chave": "qwen3.5-flash",
+  "parecidas": [
+   "qwen3.5-flash-02-23"
+  ]
+ },
+ {
+  "chave": "muse-glimmer",
+  "parecidas": [
+   "muse-glimmer-30b"
+  ]
+ },
+ {
+  "chave": "claude-opus-4",
+  "parecidas": [
+   "claude-opus"
+  ]
+ },
+ {
+  "chave": "grok-3-mini",
+  "parecidas": [
+   "grok"
+  ]
+ },
+ {
+  "chave": "qwen2.5",
+  "parecidas": [
+   "qwen2.5-vl-72b"
+  ]
+ },
+ {
+  "chave": "qwen3-coder-480b-a35b",
+  "parecidas": [
+   "qwen3-coder"
+  ]
+ },
+ {
+  "chave": "claude-sonnet-4",
+  "parecidas": [
+   "claude-sonnet"
+  ]
+ },
+ {
+  "chave": "mistral-small-3.2",
+  "parecidas": [
+   "mistral-small",
+   "mistral-small-3.2-24b"
+  ]
+ },
+ {
+  "chave": "o3-mini",
+  "parecidas": [
+   "o3"
+  ]
+ },
+ {
+  "chave": "glm-4-plus",
+  "parecidas": [
+   "glm"
+  ]
+ },
+ {
+  "chave": "grok-2",
+  "parecidas": [
+   "grok"
+  ]
+ },
+ {
+  "chave": "llama-4-maverick-17b-128e",
+  "parecidas": [
+   "llama-4-maverick"
+  ]
+ },
+ {
+  "chave": "mercury",
+  "parecidas": [
+   "mercury-3",
+   "mercury-2.5",
+   "mercury-2"
+  ]
+ },
+ {
+  "chave": "qwen",
+  "parecidas": [
+   "qwen-plus",
+   "qwen-2.5-coder-32b",
+   "qwen-2.5-7b",
+   "qwen-2.5-72b"
+  ]
+ },
+ {
+  "chave": "grok-2-mini",
+  "parecidas": [
+   "grok"
+  ]
+ },
+ {
+  "chave": "llama-4-scout-17b-16e",
+  "parecidas": [
+   "llama-4-scout"
+  ]
+ },
+ {
+  "chave": "gpt-4-turbo",
+  "parecidas": [
+   "gpt-4"
+  ]
+ },
+ {
+  "chave": "mistral-large-2",
+  "parecidas": [
+   "mistral-large"
+  ]
+ },
+ {
+  "chave": "glm-4",
+  "parecidas": [
+   "glm"
+  ]
+ },
+ {
+  "chave": "reka-flash",
+  "parecidas": [
+   "reka-flash-3"
+  ]
+ },
+ {
+  "chave": "command-r",
+  "parecidas": [
+   "command-r-08",
+   "command-r-plus-08"
+  ]
+ },
+ {
+  "chave": "mistral",
+  "parecidas": [
+   "mistral-large-4-0",
+   "mistral-3-5",
+   "mistral-small",
+   "mistral-large",
+   "mistral-3.1",
+   "mistral-small-3.2-24b",
+   "mistral-3",
+   "mistral-small-3.1-24b",
+   "mistral-saba",
+   "mistral-small-24b",
+   "mistral-nemo"
+  ]
+ },
+ {
+  "chave": "mixtral-8x22b-instruct-v0.1",
+  "parecidas": [
+   "mixtral-8x22b"
+  ]
+ },
+ {
+  "chave": "devstral-2",
+  "parecidas": [
+   "devstral"
+  ]
+ },
+ {
+  "chave": "grok-code-fast-1",
+  "parecidas": [
+   "grok"
+  ]
+ },
+ {
+  "chave": "muse-wonder-full",
+  "parecidas": [
+   "muse-wonder"
+  ]
+ },
+ {
+  "chave": "qwen3.8-flash-next",
+  "parecidas": [
+   "qwen3.8",
+   "qwen3.8-flash"
+  ]
+ }
+]

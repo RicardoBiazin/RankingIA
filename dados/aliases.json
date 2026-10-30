@@ -1,0 +1,9 @@
+{
+ "_leia": "Chave da fonte -> chave canônica, para nomes que a regra automática (scripts/util.mjs, chave()) não junta. O testar lista candidatos.",
+ "nvidia-nemotron-3-ultra-550b-a55b": "nemotron-3-ultra-550b-a55b",
+ "nvidia-nemotron-3-super-120b-a12b": "nemotron-3-super-120b-a12b",
+ "nvidia-nemotron-3-nano-30b-a3b": "nemotron-3-nano-30b-a3b",
+ "nvidia-nemotron-3.5-super-vl-120b-a12b": "nemotron-3.5-super-vl",
+ "nemotron-super-vl-3.5": "nemotron-3.5-super-vl",
+ "muse-wonder-1.0": "muse-wonder"
+}
