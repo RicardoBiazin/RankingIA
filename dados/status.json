@@ -15,8 +15,8 @@
   "tentativa": "2026-10-30T14:14:02.191Z"
  },
  "artificialanalysis": {
-  "ok": false,
-  "erro": "sem AA_API_KEY",
-  "tentativa": "2026-10-30T14:14:02.192Z"
+  "ok": true,
+  "coletadoEm": "2026-10-30T14:34:56.431Z",
+  "tentativa": "2026-10-30T14:34:56.431Z"
  }
 }

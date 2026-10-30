@@ -3,7 +3,7 @@
 // Uso: node scripts/normalizar.mjs
 
 import { chave, empresaPorNome, gravarJSON, lerJSON } from './util.mjs';
-import { METRICAS, CATEGORIAS_LB, EXIGE_UMA_DE } from '../src/pesos.mjs';
+import { METRICAS, CATEGORIAS_LB, EXIGE_UMA_DE, PESO_NEUTRO } from '../src/pesos.mjs';
 
 const aliases = lerJSON('dados/aliases.json', {});
 const k = (origem) => { const c = chave(origem); return aliases[c] ?? c; };
@@ -53,11 +53,11 @@ if (arena) {
 }
 if (aa) {
   for (const m of aa.modelos) {
-    const r = pegar(k(m.origem));
+    const r = pegar(k(m.nome ?? m.origem)); // o slug da AA troca ponto por hífen; o nome não
     if (r.origens.artificialanalysis) continue;
     r.origens.artificialanalysis = m.origem;
     r.aa = m;
-    for (const [id, campo] of [['aa_inteligencia', 'inteligencia'], ['aa_codigo', 'codigo'], ['aa_matematica', 'matematica']]) {
+    for (const [id, campo] of [['aa_inteligencia', 'inteligencia'], ['aa_hle', 'hle'], ['aa_terminal', 'terminal'], ['aa_gpqa', 'gpqa'], ['aa_contexto', 'contextoLongo']]) {
       if (m[campo] != null) r.metricas[id] = m[campo];
     }
   }
@@ -80,7 +80,7 @@ const lista = [...modelos.values()].map((r) => {
     empresa: o?.empresa ?? r.aa?.empresa ?? r.empresaArena ?? empresaPorNome(r.chave),
     aberto: o ? (o.aberto || r.abertoArena === true) : (r.abertoArena ?? null),
     hf: o?.hf ?? null,
-    lancamento: o?.lancamento ?? null,
+    lancamento: o?.lancamento ?? r.aa?.lancamento ?? null,
     contexto: o?.contexto ?? null,
     precoEntrada: o?.precoEntrada ?? r.aa?.precoEntrada ?? null,
     precoSaida: o?.precoSaida ?? r.aa?.precoSaida ?? null,
@@ -115,7 +115,8 @@ for (const x of lista) {
   x.percentis ??= {};
   let soma = 0, peso = 0;
   for (const m of disponiveis) if (m.peso > 0 && x.percentis[m.id] != null) { soma += m.peso * x.percentis[m.id]; peso += m.peso; }
-  x.nota = !x.parcial && peso ? +(soma / peso).toFixed(1) : null;
+  // Encolhe para 50 quem tem pouca evidência: PESO_NEUTRO de peso extra com percentil 50.
+  x.nota = !x.parcial && peso ? +((soma + PESO_NEUTRO * 50) / (peso + PESO_NEUTRO)).toFixed(1) : null;
   x.cobertura = pesoTotal ? +(peso / pesoTotal).toFixed(2) : 0;
 }
 lista.sort((a, b) => (a.parcial - b.parcial) || ((b.nota ?? -1) - (a.nota ?? -1))

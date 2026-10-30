@@ -57,7 +57,7 @@ const EMPRESAS = {
   'zhipu ai': 'Z.ai', minimax: 'MiniMax', xiaomi: 'Xiaomi', nvidia: 'NVIDIA', amazon: 'Amazon',
   microsoft: 'Microsoft', cohere: 'Cohere', baidu: 'Baidu', bytedance: 'ByteDance',
   'bytedance-seed': 'ByteDance', tencent: 'Tencent', ibm: 'IBM', 'ibm-granite': 'IBM', ai21: 'AI21',
-  perplexity: 'Perplexity', inception: 'Inception', liquid: 'Liquid AI', stepfun: 'StepFun', 'stepfun-ai': 'StepFun',
+  kimi: 'Moonshot AI', perplexity: 'Perplexity', inception: 'Inception', liquid: 'Liquid AI', stepfun: 'StepFun', 'stepfun-ai': 'StepFun',
   thinkingmachines: 'Thinking Machines', 'thinking-machines': 'Thinking Machines', 'arcee-ai': 'Arcee AI', 'nous': 'Nous Research', nousresearch: 'Nous Research',
 };
 

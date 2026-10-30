@@ -1,5 +1,15 @@
 # Histórico
 
+## 0.2.0 — 30/10/2026
+
+- Artificial Analysis ativa.
+  - Métricas: Intelligence Index (peso 3), Humanity's Last Exam (peso 1) e Terminal-Bench v4 (peso 1); GPQA e contexto longo aparecem só nas tabelas.
+  - A API lista cada modo de esforço como um modelo: fica o melhor. A chave sai do nome, porque o slug da AA troca ponto por hífen.
+  - Na falta do OpenRouter, preço e lançamento vêm da AA.
+- Ranking geral: entra quem tem LiveBench, Intelligence Index ou HLE. Passou de 32 para ~430 modelos.
+- Nota com encolhimento: 1 de peso extra com percentil 50, para que um modelo com uma métrica só não vá ao topo.
+- Gráfico nota × velocidade.
+
 ## 0.1.0 — 30/10/2026
 
 Primeira versão.
@@ -20,6 +30,6 @@ Primeira versão.
 
 ## Pendências
 
-- Chave da Artificial Analysis (`AA_API_KEY`) no `.env` e nos secrets do GitHub. Com ela, o ranking geral passa de ~30 para centenas de modelos.
+- Secret `AA_API_KEY` no GitHub (o `.env` local já tem a chave).
 - Revisar `dados/candidatos-alias.json` e completar `dados/aliases.json`.
 - Token do Cloudflare Web Analytics em `src/perfil.mjs`, se quiser medir visitas.

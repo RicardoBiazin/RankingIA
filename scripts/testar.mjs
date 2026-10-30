@@ -18,6 +18,7 @@ for (const [nome, esperado] of [
   ['anthropic/claude-opus-5.5', 'claude-opus-5.5'],
   ['Claude Opus 5.5 (High)', 'claude-opus-5.5'],
   ['DeepSeek-V4-Pro Preview (High)', 'deepseek-v4-pro'],
+  ['Claude Opus 5.5 (Max, Default Fallback)', 'claude-opus-5.5'],
   ['DeepSeek-V4.1-Flash-20261017 (Max)', 'deepseek-v4.1-flash'],
   ['deepseek-v4.1-flash-1017', 'deepseek-v4.1-flash'],
   ['claude-opus-4-5-20251101-thinking-64k-high-effort', 'claude-opus-4-5-64k'],
@@ -30,8 +31,12 @@ const lbTeste = notas([{ model: 'a', x: '80', y: '60', z: '' }, { model: 'b', x:
 conferir(lbTeste[0].geral === null && lbTeste[0].categorias.A === 80, 'LiveBench: modelo sem todas as categorias fica sem nota geral');
 conferir(lbTeste[1].geral === 40, `LiveBench: média ponderada (2·50 + 50 + 10) / 4 = ${lbTeste[1].geral}`);
 
-const aaTeste = converter({ data: [{ id: 'x', name: 'Modelo X', slug: 'modelo-x', model_creator: { name: 'OpenAI' }, evaluations: { artificial_analysis_intelligence_index: 70.2 }, pricing: { price_1m_input_tokens: 1, price_1m_output_tokens: 4 }, median_output_tokens_per_second: 120 }] });
-conferir(aaTeste[0].inteligencia === 70.2 && aaTeste[0].precoSaida === 4 && aaTeste[0].velocidade === 120 && aaTeste[0].codigo === null, 'Artificial Analysis: conversão dos campos da API');
+const aaTeste = converter({ data: [
+  { id: 'x', name: 'Modelo X (Xhigh)', slug: 'modelo-x-xhigh', model_creator: { name: 'OpenAI' }, evaluations: { artificial_analysis_intelligence_index: 68, hle: 0.4 }, pricing: { price_1m_input_tokens: 1, price_1m_output_tokens: 4 }, median_output_tokens_per_second: 120 },
+  { id: 'y', name: 'Modelo X (Max)', slug: 'modelo-x', model_creator: { name: 'OpenAI' }, evaluations: { artificial_analysis_intelligence_index: 70.2, hle: 0.456, gpqa: null }, pricing: { price_1m_input_tokens: 1, price_1m_output_tokens: 4 }, median_output_tokens_per_second: 100 },
+] });
+conferir(aaTeste.length === 1 && aaTeste[0].chave === 'modelo-x' && aaTeste[0].nome === 'Modelo X', 'Artificial Analysis: modos do mesmo modelo viram uma chave');
+conferir(aaTeste[0].inteligencia === 70.2 && aaTeste[0].hle === 45.6 && aaTeste[0].gpqa === null && aaTeste[0].velocidade === 100, 'Artificial Analysis: fica o melhor modo; benchmarks em %');
 
 // ---------- dados ----------
 const d = lerJSON('dados/modelos.json');

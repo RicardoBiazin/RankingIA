@@ -16,15 +16,15 @@ O site junta placares públicos numa nota de 0 a 100 e mostra preço, contexto e
 | [LiveBench](https://livebench.ai/) | nota geral e categorias do LiveBench 2.0, além do histórico de releases | público |
 | [LMArena](https://lmarena.ai/leaderboard) | Elo de texto, WebDev e visão | dataset público `lmarena-ai/leaderboard-dataset` |
 | [OpenRouter](https://openrouter.ai/models) | preço, contexto, data de lançamento e pesos abertos | API pública |
-| [Artificial Analysis](https://artificialanalysis.ai/) | índices de inteligência, código e matemática, preço e velocidade | API grátis com chave (`AA_API_KEY`); citação obrigatória |
+| [Artificial Analysis](https://artificialanalysis.ai/) | Intelligence Index, HLE, Terminal-Bench, GPQA, contexto longo, preço e velocidade | API grátis com chave (`AA_API_KEY`); citação obrigatória |
 
 Se uma fonte falhar, o site continua com o último dado bom dela e avisa no rodapé.
 
 ## Como a nota é calculada
 
-1. Entra no ranking geral quem tem ao menos um benchmark objetivo (LiveBench ou Índice de Inteligência AA).
+1. Entra no ranking geral quem tem ao menos um benchmark objetivo (LiveBench, Intelligence Index ou HLE da Artificial Analysis).
 2. Cada métrica vira um percentil contra os modelos do ranking geral.
-3. A nota é a média ponderada desses percentis. Os pesos ficam em [`src/pesos.mjs`](src/pesos.mjs).
+3. A nota é a média ponderada desses percentis, com 1 de peso extra em 50 para quem tem pouca evidência não pular para o topo. Os pesos ficam em [`src/pesos.mjs`](src/pesos.mjs).
 
 Detalhes e limites: [metodologia](https://rankingia.biazin.com.br/metodologia.html).
 

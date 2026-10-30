@@ -5,7 +5,7 @@
 import { readFileSync, readdirSync, rmSync, copyFileSync, mkdirSync } from 'node:fs';
 import { caminho, chave, esc, gravarJSON, gravarTexto, lerJSON } from './util.mjs';
 import { pagina, SITE, dataBR, dataHora } from '../src/layout.mjs';
-import { FONTES } from '../src/pesos.mjs';
+import { FONTES, PESO_NEUTRO } from '../src/pesos.mjs';
 
 const versao = JSON.parse(readFileSync(caminho('package.json'), 'utf8')).version;
 const dados = lerJSON('dados/modelos.json');
@@ -301,13 +301,14 @@ gravarTexto('public/metodologia.html', pagina({
 <li><a href="https://livebench.ai/" rel="noopener">LiveBench</a>: benchmark objetivo, com questões novas a cada release para evitar contaminação. Usamos a nota geral do LiveBench 2.0 (com os pesos do próprio LiveBench) e cada categoria.</li>
 <li><a href="https://lmarena.ai/leaderboard" rel="noopener">LMArena</a>: pessoas comparam duas respostas às cegas e votam. Vira um Elo. Usamos as arenas de texto, WebDev e visão, do dataset público <code>lmarena-ai/leaderboard-dataset</code>. Quando um modelo tem vários modos (por exemplo "High" e "Max"), fica o melhor Elo.</li>
 <li><a href="https://openrouter.ai/models" rel="noopener">OpenRouter</a>: preço por milhão de tokens, janela de contexto, data de lançamento e se os pesos são abertos.</li>
-<li><a href="https://artificialanalysis.ai/" rel="noopener">Artificial Analysis</a>: índices de inteligência, código e matemática, preço e velocidade. ${dados.fontes.artificialanalysis?.coletadoEm ? 'Em uso.' : 'Ainda não está em uso neste site; entra quando a chave da API for configurada.'}</li>
+<li><a href="https://artificialanalysis.ai/" rel="noopener">Artificial Analysis</a>: Intelligence Index, Humanity's Last Exam, Terminal-Bench, GPQA e contexto longo, além de preço e velocidade. A API lista cada modo de esforço como um modelo; fica o melhor modo. ${dados.fontes.artificialanalysis?.coletadoEm ? 'Em uso.' : 'Ainda não está em uso neste site; entra quando a chave da API for configurada.'}</li>
 </ul>
 <h2>Nota RankingIA</h2>
 <ol>
 <li>Entram no ranking geral os modelos com ao menos um benchmark objetivo (${dados.exigeUmaDe.map((id) => esc(met[id]?.nome ?? id)).join(' ou ')}). Os demais aparecem em "outros modelos", sem nota.</li>
 <li>Para cada métrica, calculamos o <strong>percentil</strong>: a porcentagem dos modelos do ranking geral que este modelo supera (empate conta meio). Assim, Elo e porcentagem de acerto ficam na mesma escala de 0 a 100.</li>
 <li>A nota é a média ponderada dos percentis que o modelo tem. Métrica que falta não conta, nem contra nem a favor; a <strong>cobertura</strong> mostra quanto do peso total o modelo tem.</li>
+<li>Para quem tem pouca evidência não pular para o topo com uma métrica só, a média recebe ${nf(PESO_NEUTRO, 0)} de peso extra com percentil 50. Quem tem várias métricas quase não muda.</li>
 </ol>
 <table><thead><tr><th>Métrica</th><th>Peso</th><th>Fonte</th></tr></thead><tbody>
 ${ponderadas.map((x) => `<tr><td>${esc(x.nome)}</td><td>${nf(x.peso, x.peso % 1 ? 1 : 0)}</td><td>${esc(FONTES[x.fonte].nome)}</td></tr>`).join('')}
