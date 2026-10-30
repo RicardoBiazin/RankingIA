@@ -156,7 +156,7 @@ main { padding: 24px 0 48px; }
 /* Tabela */
 .rolagem { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 table { border-collapse: collapse; width: 100%; }
-.tabela th, .tabela td { padding: 8px 6px; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--borda); }
+.tabela th, .tabela td { padding: 8px 5px; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--borda); }
 .tabela th { font-size: .78rem; text-transform: uppercase; letter-spacing: .03em; color: var(--texto-3); font-weight: 600; background: var(--superficie); position: sticky; top: 0; }
 .tabela th.esq, .tabela td.esq { text-align: left; }
 .tabela th button { all: unset; cursor: pointer; display: inline-flex; gap: 4px; align-items: center; }
@@ -164,7 +164,7 @@ table { border-collapse: collapse; width: 100%; }
 .tabela th[aria-sort="ascending"] button::after { content: "↑"; opacity: 1; }
 .tabela th[aria-sort="descending"] button::after { content: "↓"; opacity: 1; }
 .tabela tbody tr:hover { background: var(--superficie-2); }
-.tabela td.modelo { min-width: 180px; }
+.tabela td.modelo { min-width: 168px; }
 .tabela td.modelo a { color: var(--texto); font-weight: 600; }
 .tabela td.modelo small { display: block; font-size: .8rem; }
 .tabela .pos { color: var(--texto-3); font-weight: 600; width: 2.5em; }

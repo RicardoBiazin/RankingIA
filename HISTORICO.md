@@ -1,5 +1,9 @@
 # Histórico
 
+## 0.3.2 — 30/10/2026
+
+- Preços sempre com 2 casas decimais. Valores abaixo de 0,005 aparecem como "< 0,01".
+
 ## 0.3.1 — 30/10/2026
 
 - Dez moedas no seletor: dólar americano, real, euro, iene, libra, yuan, dólar australiano, dólar canadense, franco suíço e dólar de Hong Kong. Fechado, o seletor mostra só o símbolo; aberto, mostra o nome da moeda.

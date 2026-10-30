@@ -10,14 +10,13 @@
   var atual = 'USD';
   try { var salva = localStorage.getItem('moeda'); if (taxas[salva]) atual = salva; } catch (e) { /* sem storage */ }
 
-  // Mesmas casas do gerar.mjs (src/moedas.mjs): coluna estreita.
-  function casas(v) { return v >= 100 ? 0 : v >= 0.1 ? 2 : 3; }
+  // Mesma regra do gerar.mjs (src/moedas.mjs): sempre 2 casas.
+  function fmt(v) { return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: atual, minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(v); }
   function converter(usd) { return usd == null ? null : usd * taxas[atual]; }
   function formatar(v) {
     if (v == null) return '—';
     if (v === 0) return 'grátis';
-    var n = casas(v);
-    return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: atual, minimumFractionDigits: n, maximumFractionDigits: n }).format(v);
+    return v < 0.005 ? '< ' + fmt(0.01) : fmt(v);
   }
   function sigla() {
     var p = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: atual }).formatToParts(1).filter(function (x) { return x.type === 'currency'; })[0];

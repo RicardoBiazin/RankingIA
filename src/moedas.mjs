@@ -13,12 +13,11 @@ export const MOEDAS = [
   { codigo: 'HKD', simbolo: 'HK$', nome: 'Dólar de Hong Kong' },
 ];
 
-// Casas decimais por tamanho do valor, para a coluna não alargar: 107 em vez de 107,03.
-export const casas = (v) => (v >= 100 ? 0 : v >= 0.1 ? 2 : 3);
+// Sempre 2 casas. Valor positivo que arredondaria para zero vira "< 0,01".
+const fmt = (v, moeda) => new Intl.NumberFormat('pt-BR', { style: 'currency', currency: moeda, minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(v);
 
 export function formatar(v, moeda = 'USD') {
   if (v == null) return '—';
   if (v === 0) return 'grátis';
-  const c = casas(v);
-  return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: moeda, minimumFractionDigits: c, maximumFractionDigits: c }).format(v);
+  return v < 0.005 ? '< ' + fmt(0.01, moeda) : fmt(v, moeda);
 }
