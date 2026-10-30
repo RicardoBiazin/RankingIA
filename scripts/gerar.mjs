@@ -6,6 +6,7 @@ import { readFileSync, readdirSync, rmSync, copyFileSync, mkdirSync } from 'node
 import { caminho, chave, esc, gravarJSON, gravarTexto, lerJSON } from './util.mjs';
 import { pagina, SITE, dataBR, dataHora } from '../src/layout.mjs';
 import { FONTES, PESO_NEUTRO } from '../src/pesos.mjs';
+import { formatar } from '../src/moedas.mjs';
 
 const versao = JSON.parse(readFileSync(caminho('package.json'), 'utf8')).version;
 const dados = lerJSON('dados/modelos.json');
@@ -24,7 +25,7 @@ mkdirSync(caminho('public/modelo'), { recursive: true });
 // ---------- formatação ----------
 const nf = (v, casas = 1) => v == null ? '—' : Number(v).toLocaleString('pt-BR', { minimumFractionDigits: casas, maximumFractionDigits: casas });
 // Preço em US$ (texto puro, para metas) e em HTML com data-usd, que o moeda.js converte.
-const preco = (v) => v == null ? '—' : v === 0 ? 'grátis' : '$' + nf(v, v < 0.1 ? 3 : 2);
+const preco = (v) => formatar(v, 'USD');
 const precoH = (v) => `<span data-usd="${nv(v)}">${preco(v)}</span>`;
 const SIGLA = '<span class="sigla-moeda">US$</span>';
 const contexto = (n) => n == null ? '—' : n >= 1e6 ? `${nf(n / 1e6, n % 1e6 ? 1 : 0)} M` : `${Math.round(n / 1000)} mil`;
@@ -66,7 +67,7 @@ function linhaRanking(m) {
 <td class="pos" data-v="${m.posicao}">${m.posicao}</td>
 <td class="esq modelo" data-v="${esc(m.nome.toLowerCase())}"><a href="/modelo/${esc(m.slug)}.html">${esc(m.nome)}</a>${selo(m)}<small>${esc(m.empresa ?? '—')}</small></td>
 <td class="nota" data-v="${m.nota}">${nf(m.nota)}${barra(m.nota)}</td>
-${ponderadas.map((x) => cel(x.id)).join('')}
+${ponderadas.map((x) => cel(x.id, x.peso < 1 ? 'cat' : '')).join('')}
 ${categorias.map((x) => cel(x.id, 'cat')).join('')}
 ${extras.map((x) => cel(x.id, 'cat')).join('')}
 <td data-v="${nv(m.precoEntrada)}">${precoH(m.precoEntrada)}</td>
@@ -101,7 +102,7 @@ const filtros = `<div class="filtros" role="search">
 <label class="oculto" for="f-tipo">Tipo</label>
 <select id="f-tipo"><option value="">Abertos e fechados</option><option value="1">Só pesos abertos</option><option value="0">Só fechados</option></select>
 <label class="oculto" for="f-preco">Preço de entrada</label>
-<select id="f-preco"><option value="">Qualquer preço</option><option value="0.5" data-usd-rotulo="0.5">até $0,50 / 1M</option><option value="2" data-usd-rotulo="2">até $2 / 1M</option><option value="5" data-usd-rotulo="5">até $5 / 1M</option></select>
+<select id="f-preco"><option value="">Qualquer preço</option>${[0.5, 2, 5].map((v) => `<option value="${v}" data-usd-rotulo="${v}">até ${preco(v)} / 1M</option>`).join('')}</select>
 <label class="caixa"><input type="checkbox" id="f-cat"> Mostrar categorias</label>
 <span class="contagem" id="contagem" aria-live="polite"></span>
 </div>`;
@@ -141,7 +142,7 @@ ${filtros}
 ${th('#', { titulo: 'Posição' })}
 ${th('Modelo', { esq: true, tipo: 'texto' })}
 ${th('Nota', { titulo: 'Nota RankingIA (0 a 100)' })}
-${ponderadas.map((x) => th(esc(x.curto), { titulo: x.desc })).join('')}
+${ponderadas.map((x) => th(esc(x.curto), { cls: x.peso < 1 ? 'cat' : '', titulo: x.desc })).join('')}
 ${categorias.map((x) => th(esc(x.curto), { cls: 'cat', titulo: x.desc })).join('')}
 ${extras.map((x) => th(esc(x.curto), { cls: 'cat', titulo: x.desc })).join('')}
 ${th('Entrada', { titulo: 'Preço por 1 milhão de tokens de entrada' })}

@@ -3,6 +3,7 @@
 import { esc } from '../scripts/util.mjs';
 import { FONTES } from './pesos.mjs';
 import { PERFIL } from './perfil.mjs';
+import { MOEDAS } from './moedas.mjs';
 
 export const SITE = 'https://rankingia.biazin.com.br';
 
@@ -39,7 +40,7 @@ export function pagina({ titulo, descricao, caminho, conteudo, scripts = [], ver
   const url = SITE + caminho;
   const nav = MENU.map(([href, nome]) => `<a href="${href}"${href === caminho || (href === '/' && caminho === '/index.html') ? ' aria-current="page"' : ''}>${nome}</a>`).join('');
   return `<!doctype html>
-<html lang="pt-BR"${dados.cambio ? ` data-cambio-brl="${dados.cambio.BRL}" data-cambio-eur="${dados.cambio.EUR}"` : ''}>
+<html lang="pt-BR"${dados.cambio ? ` data-cambio="${esc(JSON.stringify(dados.cambio.taxas))}"` : ''}>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -64,7 +65,7 @@ ${noindex ? '<meta name="robots" content="noindex">\n' : ''}<meta property="og:t
 <span class="versao" title="Versão do site">v${esc(versao)}</span>
 <nav class="menu" aria-label="Principal">${nav}</nav>
 <label class="oculto" for="moeda">Moeda dos preços</label>
-<select id="moeda" class="moeda" title="Moeda dos preços"><option value="USD">US$</option><option value="BRL">R$</option><option value="EUR">€</option></select>
+<select id="moeda" class="moeda" title="Moeda dos preços">${MOEDAS.map((m) => `<option value="${m.codigo}" data-curto="${esc(m.simbolo)}" data-longo="${esc(`${m.simbolo} · ${m.nome}`)}">${esc(m.simbolo)}</option>`).join('')}</select>
 <button class="tema" type="button" id="tema" title="Alternar tema claro/escuro" aria-label="Alternar tema claro/escuro">${SOL_LUA}</button>
 </div>
 </header>
@@ -74,7 +75,7 @@ ${conteudo}
 <footer class="rodape">
 <div class="conteudo">
 <p>Dados: ${partes.join(' · ')}. Atualizado em ${dataHora(dados.geradoEm)}.${usaAA ? ' Índices, preços e velocidade da <a href="https://artificialanalysis.ai/" rel="noopener">Artificial Analysis</a>.' : ''}</p>
-${dados.cambio ? `<p>Câmbio de referência do BCE (<a href="https://frankfurter.dev/" rel="noopener">Frankfurter</a>) em ${dataBR(dados.cambio.data)}: US$ 1 = R$ ${dados.cambio.BRL.toLocaleString('pt-BR', { maximumFractionDigits: 4 })} = € ${dados.cambio.EUR.toLocaleString('pt-BR', { maximumFractionDigits: 4 })}. Os preços originais são em dólar.</p>\n` : ''}${falhas.length ? `<p class="fontes-falha">${falhas.map(esc).join('. ')}.</p>\n` : ''}<p>RankingIA v${esc(versao)} · feito por <a href="https://biazin.com.br/">${esc(PERFIL.nome)}</a> · <a href="https://github.com/RicardoBiazin/RankingIA" rel="noopener">código aberto (MIT)</a> · <a href="/metodologia.html">como a nota é calculada</a></p>
+${dados.cambio ? `<p>Câmbio de referência do BCE (<a href="https://frankfurter.dev/" rel="noopener">Frankfurter</a>) em ${dataBR(dados.cambio.data)}: US$ 1 = ${MOEDAS.filter((m) => dados.cambio.taxas[m.codigo]).map((m) => `${m.simbolo} ${dados.cambio.taxas[m.codigo].toLocaleString('pt-BR', { maximumFractionDigits: 4 })}`).join(' · ')}. Os preços originais são em dólar.</p>\n` : ''}${falhas.length ? `<p class="fontes-falha">${falhas.map(esc).join('. ')}.</p>\n` : ''}<p>RankingIA v${esc(versao)} · feito por <a href="https://biazin.com.br/">${esc(PERFIL.nome)}</a> · <a href="https://github.com/RicardoBiazin/RankingIA" rel="noopener">código aberto (MIT)</a> · <a href="/metodologia.html">como a nota é calculada</a></p>
 </div>
 </footer>
 ${scripts.map((s) => `<script src="${s}?v=${versao}"></script>`).join('\n')}

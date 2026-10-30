@@ -106,7 +106,7 @@ p { margin: 0 0 1em; }
 small, .fraco { color: var(--texto-3); }
 .oculto { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
-.conteudo { max-width: 1240px; margin: 0 auto; padding: 0 16px; }
+.conteudo { max-width: 1440px; margin: 0 auto; padding: 0 16px; }
 
 /* Cabeçalho */
 .topo { background: var(--superficie); border-bottom: 1px solid var(--borda); position: sticky; top: 0; z-index: 10; }
@@ -121,7 +121,7 @@ small, .fraco { color: var(--texto-3); }
 .menu a[aria-current="page"] { color: var(--destaque-texto); background: var(--destaque-fundo); }
 .tema { background: none; border: 1px solid var(--borda); color: var(--texto-2); border-radius: 8px; width: 34px; height: 34px; cursor: pointer; display: grid; place-items: center; }
 .tema svg { width: 18px; height: 18px; }
-.moeda { font: inherit; font-size: .9rem; color: var(--texto-2); background: var(--superficie); border: 1px solid var(--borda); border-radius: 8px; height: 34px; padding: 0 6px; cursor: pointer; }
+.moeda { width: 5.4em; font: inherit; font-size: .9rem; color: var(--texto-2); background: var(--superficie); border: 1px solid var(--borda); border-radius: 8px; height: 34px; padding: 0 6px; cursor: pointer; }
 .moeda[hidden] { display: none; }
 @media (max-width: 720px) {
   .topo { position: static; }
@@ -156,7 +156,7 @@ main { padding: 24px 0 48px; }
 /* Tabela */
 .rolagem { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 table { border-collapse: collapse; width: 100%; }
-.tabela th, .tabela td { padding: 8px 10px; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--borda); }
+.tabela th, .tabela td { padding: 8px 6px; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--borda); }
 .tabela th { font-size: .78rem; text-transform: uppercase; letter-spacing: .03em; color: var(--texto-3); font-weight: 600; background: var(--superficie); position: sticky; top: 0; }
 .tabela th.esq, .tabela td.esq { text-align: left; }
 .tabela th button { all: unset; cursor: pointer; display: inline-flex; gap: 4px; align-items: center; }
@@ -164,7 +164,7 @@ table { border-collapse: collapse; width: 100%; }
 .tabela th[aria-sort="ascending"] button::after { content: "↑"; opacity: 1; }
 .tabela th[aria-sort="descending"] button::after { content: "↓"; opacity: 1; }
 .tabela tbody tr:hover { background: var(--superficie-2); }
-.tabela td.modelo { min-width: 200px; }
+.tabela td.modelo { min-width: 180px; }
 .tabela td.modelo a { color: var(--texto); font-weight: 600; }
 .tabela td.modelo small { display: block; font-size: .8rem; }
 .tabela .pos { color: var(--texto-3); font-weight: 600; width: 2.5em; }
@@ -178,7 +178,7 @@ table { border-collapse: collapse; width: 100%; }
 tr[hidden] { display: none; }
 
 /* Barra de nota/percentil: largura por classe (a CSP não deixa style inline). */
-.barra { display: inline-block; width: 64px; height: 6px; background: var(--barra-fundo); border-radius: 3px; vertical-align: middle; margin-left: 8px; overflow: hidden; }
+.barra { display: inline-block; width: 44px; height: 6px; background: var(--barra-fundo); border-radius: 3px; vertical-align: middle; margin-left: 8px; overflow: hidden; }
 .barra i { display: block; height: 100%; background: var(--barra); border-radius: 3px; }
 
 /* Barra de comparar */

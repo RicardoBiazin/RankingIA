@@ -18,7 +18,7 @@ O site junta placares públicos numa nota de 0 a 100 e mostra preço, contexto e
 | [OpenRouter](https://openrouter.ai/models) | preço, contexto, data de lançamento e pesos abertos | API pública |
 | [Artificial Analysis](https://artificialanalysis.ai/) | Intelligence Index, HLE, Terminal-Bench, GPQA, contexto longo, preço e velocidade | API grátis com chave (`AA_API_KEY`); citação obrigatória |
 
-Os preços são em dólar nas fontes. O site converte para real ou euro pelo câmbio de referência do BCE ([Frankfurter](https://frankfurter.dev/)), coletado junto com as fontes.
+Os preços são em dólar nas fontes. O site converte para outras 9 moedas (real, euro, iene, libra etc.) pelo câmbio de referência do BCE ([Frankfurter](https://frankfurter.dev/)), coletado junto com as fontes.
 
 Se uma fonte falhar, o site continua com o último dado bom dela e avisa no rodapé.
 

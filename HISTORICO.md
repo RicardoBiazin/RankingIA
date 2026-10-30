@@ -1,5 +1,14 @@
 # Histórico
 
+## 0.3.1 — 30/10/2026
+
+- Dez moedas no seletor: dólar americano, real, euro, iene, libra, yuan, dólar australiano, dólar canadense, franco suíço e dólar de Hong Kong. Fechado, o seletor mostra só o símbolo; aberto, mostra o nome da moeda.
+- Formato das moedas pelo `Intl` (por exemplo "US$ 4,00", "R$ 21,41", "JP¥ 632").
+- A tabela cabe na tela sem rolar para o lado em 1366 px ou mais:
+  - valores a partir de 100 saem sem centavos;
+  - a Arena visão (peso 0,5) foi para "Mostrar categorias";
+  - a barra da nota ficou menor e a página, mais larga (1440 px).
+
 ## 0.3.0 — 30/10/2026
 
 - Escolha da moeda dos preços no cabeçalho: US$ (original), R$ ou €. A escolha vale para a tabela, o filtro de preço, a página do modelo, a comparação e os gráficos, e fica guardada no navegador.

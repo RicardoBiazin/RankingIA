@@ -143,7 +143,7 @@ gravarJSON('dados/modelos.json', {
   fontes,
   metricas: disponiveis,
   exigeUmaDe: EXIGE_UMA_DE,
-  cambio: cambio ? { data: cambio.data, ...cambio.taxas } : null,
+  cambio: cambio ? { data: cambio.data, taxas: cambio.taxas } : null,
   modelos: lista,
 });
 gravarJSON('dados/candidatos-alias.json', candidatos);
