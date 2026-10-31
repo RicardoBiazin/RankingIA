@@ -1,6 +1,6 @@
 {
  "fonte": "livebench",
- "coletadoEm": "2026-10-30T19:36:21.527Z",
+ "coletadoEm": "2026-10-31T14:54:54.205Z",
  "release": "2026-10-25",
  "categorias": [
   "Long Agentic",
@@ -76,9 +76,9 @@
   {
    "origem": "deepseek-v4.1-flash-1017",
    "chave": "deepseek-v4.1-flash",
-   "geral": 74.02,
+   "geral": 72.87,
    "categorias": {
-    "Long Agentic": 40.9,
+    "Long Agentic": 35.7,
     "Reasoning": 89.1,
     "Coding": 96,
     "Browser": 67.2,
@@ -533,7 +533,7 @@
     "claude-haiku-5.5": 69.85,
     "claude-opus-5.5": 85.14,
     "claude-sonnet-5.5": 80.04,
-    "deepseek-v4.1-flash": 74.02,
+    "deepseek-v4.1-flash": 72.87,
     "gemini-3.8-flash": 59.21,
     "gemini-4-argon": 79.3,
     "gemma-4-31b": 38.72,
