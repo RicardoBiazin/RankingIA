@@ -141,6 +141,13 @@
   ]
  },
  {
+  "chave": "mistral-large-4",
+  "parecidas": [
+   "mistral-large-4-0",
+   "mistral-large"
+  ]
+ },
+ {
   "chave": "grok-4.1-fast",
   "parecidas": [
    "grok"
@@ -150,13 +157,6 @@
   "chave": "grok-4-fast",
   "parecidas": [
    "grok"
-  ]
- },
- {
-  "chave": "mistral-large-4",
-  "parecidas": [
-   "mistral-large-4-0",
-   "mistral-large"
   ]
  },
  {
@@ -202,15 +202,15 @@
   ]
  },
  {
-  "chave": "phi-4-mini",
-  "parecidas": [
-   "phi-4"
-  ]
- },
- {
   "chave": "muse-glimmer",
   "parecidas": [
    "muse-glimmer-30b"
+  ]
+ },
+ {
+  "chave": "phi-4-mini",
+  "parecidas": [
+   "phi-4"
   ]
  },
  {
