@@ -1,20 +1,20 @@
 {
- "geradoEm": "2026-11-02T18:59:19.789Z",
+ "geradoEm": "2026-11-03T16:44:26.718Z",
  "fontes": {
   "openrouter": {
    "ok": true,
-   "coletadoEm": "2026-11-02T18:59:16.623Z",
+   "coletadoEm": "2026-11-03T16:44:23.433Z",
    "erro": null
   },
   "livebench": {
    "ok": true,
-   "coletadoEm": "2026-11-02T18:59:17.077Z",
+   "coletadoEm": "2026-11-03T16:44:23.719Z",
    "erro": null,
    "release": "2026-10-25"
   },
   "lmarena": {
    "ok": true,
-   "coletadoEm": "2026-11-02T18:59:18.998Z",
+   "coletadoEm": "2026-11-03T16:44:25.778Z",
    "erro": null,
    "datas": {
     "texto": "2026-10-28",
@@ -24,12 +24,12 @@
   },
   "artificialanalysis": {
    "ok": true,
-   "coletadoEm": "2026-11-02T18:59:19.164Z",
+   "coletadoEm": "2026-11-03T16:44:26.153Z",
    "erro": null
   },
   "cambio": {
    "ok": true,
-   "coletadoEm": "2026-11-02T18:59:19.676Z",
+   "coletadoEm": "2026-11-03T16:44:26.574Z",
    "erro": null
   }
  },
@@ -263,17 +263,17 @@
   }
  ],
  "cambio": {
-  "data": "2026-11-02",
+  "data": "2026-11-03",
   "taxas": {
-   "BRL": 5.4378,
-   "EUR": 0.89158,
-   "JPY": 157.9,
-   "GBP": 0.74519,
-   "CNY": 6.6483,
-   "AUD": 1.4269,
-   "CAD": 1.3974,
-   "CHF": 0.81963,
-   "HKD": 7.8461
+   "BRL": 5.4934,
+   "EUR": 0.89453,
+   "JPY": 158.29,
+   "GBP": 0.74567,
+   "CNY": 6.6723,
+   "AUD": 1.4319,
+   "CAD": 1.3975,
+   "CHF": 0.81993,
+   "HKD": 7.846
   }
  },
  "modelos": [
@@ -290,8 +290,8 @@
    "contexto": 1000000,
    "precoEntrada": 4,
    "precoSaida": 20,
-   "velocidade": 96.371,
-   "ttft": 550.799,
+   "velocidade": 96.521,
+   "ttft": 535.837,
    "metricas": {
     "lb_geral": 85.14,
     "lb_agentico": 72.8,
@@ -373,7 +373,7 @@
    "precoEntrada": 4,
    "precoSaida": 20,
    "velocidade": 90.587,
-   "ttft": 63.061,
+   "ttft": 71.22,
    "metricas": {
     "arena_texto": 1540,
     "arena_webdev": 1768,
@@ -424,7 +424,7 @@
    "contexto": 1000000,
    "precoEntrada": 10,
    "precoSaida": 50,
-   "velocidade": 55.765,
+   "velocidade": 55.007,
    "ttft": 36.104,
    "metricas": {
     "lb_geral": 85.69,
@@ -569,8 +569,8 @@
    "contexto": 1050000,
    "precoEntrada": 10,
    "precoSaida": 50,
-   "velocidade": 65.963,
-   "ttft": 202.142,
+   "velocidade": 57.774,
+   "ttft": 210.96,
    "metricas": {
     "lb_geral": 85.64,
     "lb_agentico": 77.5,
@@ -653,8 +653,8 @@
    "contexto": 1000000,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 133.957,
-   "ttft": 293.852,
+   "velocidade": 133.144,
+   "ttft": 309.417,
    "metricas": {
     "lb_geral": 80.04,
     "lb_agentico": 63.4,
@@ -735,8 +735,8 @@
    "contexto": 1048576,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 81.956,
-   "ttft": 30.996,
+   "velocidade": 82.234,
+   "ttft": 34.368,
    "metricas": {
     "lb_geral": 79.3,
     "lb_agentico": 61.2,
@@ -874,8 +874,8 @@
    "contexto": 1050000,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 79.751,
-   "ttft": 154.703,
+   "velocidade": 68.042,
+   "ttft": 158.245,
    "metricas": {
     "lb_geral": 84.07,
     "lb_agentico": 68.7,
@@ -1008,8 +1008,8 @@
    "contexto": 1050000,
    "precoEntrada": 1,
    "precoSaida": 5,
-   "velocidade": 105.601,
-   "ttft": 223.396,
+   "velocidade": 116.867,
+   "ttft": 196.842,
    "metricas": {
     "lb_geral": 77.79,
     "lb_agentico": 48.6,
@@ -1082,8 +1082,8 @@
    "contexto": 1048576,
    "precoEntrada": 4,
    "precoSaida": 20,
-   "velocidade": 160.106,
-   "ttft": 19.808,
+   "velocidade": 138.767,
+   "ttft": 22.728,
    "metricas": {
     "lb_geral": 74.15,
     "lb_agentico": 52.6,
@@ -1298,7 +1298,7 @@
     "arena_texto": 94.4,
     "arena_webdev": 69,
     "arena_visao": 96.2,
-    "aa_hle": 90.7,
+    "aa_hle": 90.6,
     "aa_gpqa": 93.7,
     "aa_contexto": 81.9
    },
@@ -1446,8 +1446,8 @@
    "contexto": 1048576,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 27.962,
-   "ttft": 2.65,
+   "velocidade": 28.369,
+   "ttft": 2.465,
    "metricas": {
     "lb_geral": 71.29,
     "lb_agentico": 39.1,
@@ -1825,8 +1825,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.08,
    "precoSaida": 3.6,
-   "velocidade": 80.417,
-   "ttft": 1.347,
+   "velocidade": 77.235,
+   "ttft": 1.25,
    "metricas": {
     "arena_texto": 1474,
     "arena_webdev": 1623,
@@ -1846,7 +1846,7 @@
     "aa_inteligencia": 64.4,
     "arena_texto": 88.5,
     "arena_webdev": 81,
-    "aa_hle": 90.7,
+    "aa_hle": 90.6,
     "aa_terminal": 90.3,
     "aa_gpqa": 94.2,
     "aa_contexto": 85.7
@@ -1905,7 +1905,7 @@
     "arena_texto": 92.3,
     "arena_webdev": 53.4,
     "arena_visao": 91,
-    "aa_hle": 91.8,
+    "aa_hle": 91.6,
     "aa_terminal": 66.7,
     "aa_gpqa": 94.9,
     "aa_contexto": 69.5
@@ -1915,7 +1915,7 @@
    "categorias": {
     "agentico": 58.4,
     "codigo": 51.7,
-    "raciocinio": 78.9,
+    "raciocinio": 78.8,
     "pesquisa": 59.8,
     "design": 51.7,
     "conversa": 71.2,
@@ -1945,8 +1945,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.15,
    "precoSaida": 0.6,
-   "velocidade": 157.204,
-   "ttft": 0.834,
+   "velocidade": 156.909,
+   "ttft": 0.929,
    "metricas": {
     "lb_geral": 72.87,
     "lb_agentico": 35.7,
@@ -2028,7 +2028,7 @@
    "precoEntrada": 0.15,
    "precoSaida": 0.47,
    "velocidade": 50.114,
-   "ttft": 1.411,
+   "ttft": 1.401,
    "metricas": {
     "arena_webdev": 1628,
     "aa_hle": 38,
@@ -2044,21 +2044,21 @@
    "percentis": {
     "arena_webdev": 83.6,
     "aa_hle": 86.7,
-    "aa_terminal": 81.3,
+    "aa_terminal": 80.6,
     "aa_gpqa": 95.3,
     "aa_contexto": 85.7
    },
-   "nota": 75.4,
+   "nota": 75.2,
    "cobertura": 0.26,
    "categorias": {
-    "agentico": 65.7,
+    "agentico": 65.3,
     "codigo": 66.8,
     "raciocinio": 77.3,
     "pesquisa": 67.8,
     "design": 66.8
    },
    "posCategorias": {
-    "agentico": 23,
+    "agentico": 24,
     "codigo": 16,
     "raciocinio": 30,
     "pesquisa": 41,
@@ -2331,7 +2331,7 @@
     "arena_texto": 77.7,
     "arena_webdev": 67.2,
     "arena_visao": 78.6,
-    "aa_hle": 91.8,
+    "aa_hle": 91.6,
     "aa_terminal": 69.4,
     "aa_gpqa": 97.2,
     "aa_contexto": 83.9
@@ -2341,7 +2341,7 @@
    "categorias": {
     "agentico": 59.7,
     "codigo": 58.6,
-    "raciocinio": 79.7,
+    "raciocinio": 79.6,
     "pesquisa": 67,
     "design": 58.6,
     "conversa": 63.9,
@@ -2428,8 +2428,8 @@
    "contexto": 1050000,
    "precoEntrada": 0.435,
    "precoSaida": 0.87,
-   "velocidade": 39.226,
-   "ttft": 2.25,
+   "velocidade": 39.46,
+   "ttft": 2.37,
    "metricas": {
     "lb_geral": 68.48,
     "lb_agentico": 35.2,
@@ -2773,8 +2773,8 @@
    "contexto": 1000000,
    "precoEntrada": 0.32,
    "precoSaida": 1.28,
-   "velocidade": 55.742,
-   "ttft": 1.798,
+   "velocidade": 57.415,
+   "ttft": 1.698,
    "metricas": {
     "arena_texto": 1455,
     "arena_visao": 1278,
@@ -2828,8 +2828,8 @@
    "contexto": 1048576,
    "precoEntrada": 2,
    "precoSaida": 6,
-   "velocidade": 39.489,
-   "ttft": 1.944,
+   "velocidade": 39.244,
+   "ttft": 1.852,
    "metricas": {
     "aa_hle": 42.4,
     "aa_terminal": 11.1,
@@ -2842,7 +2842,7 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_hle": 91.2,
+    "aa_hle": 91,
     "aa_terminal": 70.1,
     "aa_gpqa": 98.4,
     "aa_contexto": 88.4
@@ -2851,11 +2851,11 @@
    "cobertura": 0.17,
    "categorias": {
     "agentico": 60,
-    "raciocinio": 79.9,
+    "raciocinio": 79.8,
     "pesquisa": 69.2
    },
    "posCategorias": {
-    "agentico": 36,
+    "agentico": 35,
     "raciocinio": 14,
     "pesquisa": 33
    },
@@ -2960,6 +2960,49 @@
    "posicao": 42
   },
   {
+   "chave": "jt-4.1-flash-236b-a21b",
+   "slug": "jt-4.1-flash-236b-a21b",
+   "familia": "jt-flash-236b-a21b",
+   "versao": 4.1,
+   "nome": "JT-4.1 Flash 236B A21B",
+   "empresa": "China Mobile",
+   "aberto": null,
+   "hf": null,
+   "lancamento": "2026-07-09",
+   "contexto": null,
+   "precoEntrada": 0,
+   "precoSaida": 0,
+   "velocidade": 0,
+   "ttft": 0,
+   "metricas": {
+    "aa_hle": 43.6,
+    "aa_terminal": 3,
+    "aa_contexto": 78.3
+   },
+   "origens": {
+    "artificialanalysis": "jt-4-1-flash-236b-a21b"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_hle": 93.1,
+    "aa_terminal": 63.2,
+    "aa_contexto": 80.9
+   },
+   "nota": 68.8,
+   "cobertura": 0.17,
+   "categorias": {
+    "agentico": 56.6,
+    "raciocinio": 71.5,
+    "pesquisa": 65.5
+   },
+   "posCategorias": {
+    "agentico": 47,
+    "raciocinio": 68,
+    "pesquisa": 59
+   },
+   "posicao": 43
+  },
+  {
    "chave": "gpt-5.6-terra",
    "slug": "gpt-5.6-terra",
    "familia": "gpt-terra",
@@ -3003,7 +3046,7 @@
     "arena_texto": 77.7,
     "arena_webdev": 59.5,
     "arena_visao": 67.6,
-    "aa_hle": 92.2,
+    "aa_hle": 91.9,
     "aa_terminal": 88.2,
     "aa_gpqa": 95.7,
     "aa_contexto": 95.6,
@@ -3015,7 +3058,7 @@
     "lb_pesquisa": 16.1,
     "lb_design": 41.9
    },
-   "nota": 68.8,
+   "nota": 68.7,
    "cobertura": 0.74,
    "categorias": {
     "agentico": 65.4,
@@ -3029,7 +3072,7 @@
     "visao": 58.8
    },
    "posCategorias": {
-    "agentico": 24,
+    "agentico": 23,
     "codigo": 40,
     "raciocinio": 31,
     "dados": 10,
@@ -3038,49 +3081,6 @@
     "navegador": 12,
     "conversa": 45,
     "visao": 35
-   },
-   "posicao": 43
-  },
-  {
-   "chave": "jt-4.1-flash-236b-a21b",
-   "slug": "jt-4.1-flash-236b-a21b",
-   "familia": "jt-flash-236b-a21b",
-   "versao": 4.1,
-   "nome": "JT-4.1 Flash 236B A21B",
-   "empresa": "China Mobile",
-   "aberto": null,
-   "hf": null,
-   "lancamento": "2026-07-09",
-   "contexto": null,
-   "precoEntrada": 0,
-   "precoSaida": 0,
-   "velocidade": 0,
-   "ttft": 0,
-   "metricas": {
-    "aa_hle": 43.6,
-    "aa_terminal": 3,
-    "aa_contexto": 78.3
-   },
-   "origens": {
-    "artificialanalysis": "jt-4-1-flash-236b-a21b"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_hle": 93.1,
-    "aa_terminal": 63.2,
-    "aa_contexto": 80.9
-   },
-   "nota": 68.8,
-   "cobertura": 0.17,
-   "categorias": {
-    "agentico": 56.6,
-    "raciocinio": 71.5,
-    "pesquisa": 65.5
-   },
-   "posCategorias": {
-    "agentico": 47,
-    "raciocinio": 68,
-    "pesquisa": 59
    },
    "posicao": 44
   },
@@ -3097,8 +3097,8 @@
    "contexto": 1000000,
    "precoEntrada": 2,
    "precoSaida": 6,
-   "velocidade": 38.268,
-   "ttft": 1.945,
+   "velocidade": 38.526,
+   "ttft": 1.966,
    "metricas": {
     "lb_geral": 61.56,
     "lb_agentico": 29.9,
@@ -3130,7 +3130,7 @@
     "arena_texto": 93.1,
     "arena_webdev": 90.5,
     "arena_visao": 92.4,
-    "aa_hle": 92.4,
+    "aa_hle": 92.3,
     "aa_terminal": 88.9,
     "aa_gpqa": 96.5,
     "aa_contexto": 88.4,
@@ -3179,7 +3179,7 @@
    "hf": null,
    "lancamento": "2026-08-01",
    "contexto": 1048576,
-   "precoEntrada": 0.0514,
+   "precoEntrada": 0.059,
    "precoSaida": 0.3,
    "velocidade": 0,
    "ttft": 0,
@@ -3238,8 +3238,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.2156,
    "precoSaida": 0.6468,
-   "velocidade": 145.04,
-   "ttft": 1.444,
+   "velocidade": 144.407,
+   "ttft": 1.514,
    "metricas": {
     "aa_hle": 34.5,
     "aa_terminal": 12.1,
@@ -3540,8 +3540,8 @@
    "contexto": 1000000,
    "precoEntrada": 0.1,
    "precoSaida": 0.5,
-   "velocidade": 231.752,
-   "ttft": 232.262,
+   "velocidade": 233.826,
+   "ttft": 231.209,
    "metricas": {
     "lb_geral": 69.85,
     "lb_agentico": 40,
@@ -3594,9 +3594,9 @@
     "conversa": 47.8
    },
    "posCategorias": {
-    "agentico": 17,
+    "agentico": 18,
     "codigo": 17,
-    "raciocinio": 156,
+    "raciocinio": 157,
     "dados": 32,
     "pesquisa": 20,
     "design": 12,
@@ -3658,6 +3658,88 @@
    "posicao": 54
   },
   {
+   "chave": "grok-4.7",
+   "slug": "grok-4.7",
+   "familia": "grok",
+   "versao": 4.7,
+   "nome": "Grok 4.7",
+   "empresa": "xAI",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-09-21",
+   "contexto": 500000,
+   "precoEntrada": 2,
+   "precoSaida": 6,
+   "velocidade": 64.442,
+   "ttft": 13.948,
+   "metricas": {
+    "lb_geral": 70.14,
+    "lb_agentico": 46.1,
+    "lb_raciocinio": 82.7,
+    "lb_codigo": 84.5,
+    "lb_navegador": 49.3,
+    "lb_dados": 76.9,
+    "lb_pesquisa": 86.4,
+    "lb_design": 78,
+    "arena_texto": 1398,
+    "arena_webdev": 1637,
+    "arena_visao": 1231,
+    "aa_inteligencia": 35.3,
+    "aa_hle": 43.1,
+    "aa_terminal": 25.8,
+    "aa_contexto": 76.7
+   },
+   "origens": {
+    "livebench": "grok-4.7",
+    "lmarena": "Grok 4.7 (xHigh)",
+    "artificialanalysis": "grok-4-7",
+    "openrouter": "x-ai/grok-4.7"
+   },
+   "parcial": false,
+   "percentis": {
+    "lb_geral": 67.7,
+    "aa_inteligencia": 71.1,
+    "arena_texto": 45.1,
+    "arena_webdev": 84.9,
+    "arena_visao": 41,
+    "aa_hle": 92.3,
+    "aa_terminal": 81.6,
+    "aa_contexto": 75.8,
+    "lb_agentico": 74.2,
+    "lb_raciocinio": 35.5,
+    "lb_codigo": 46.8,
+    "lb_navegador": 38.7,
+    "lb_dados": 58.1,
+    "lb_pesquisa": 96.8,
+    "lb_design": 61.3
+   },
+   "nota": 66.9,
+   "cobertura": 1,
+   "categorias": {
+    "agentico": 68.6,
+    "codigo": 60.6,
+    "raciocinio": 59.3,
+    "dados": 54,
+    "pesquisa": 74.2,
+    "design": 65.4,
+    "navegador": 44.4,
+    "conversa": 47.5,
+    "visao": 45.5
+   },
+   "posCategorias": {
+    "agentico": 17,
+    "codigo": 28,
+    "raciocinio": 149,
+    "dados": 14,
+    "pesquisa": 9,
+    "design": 22,
+    "navegador": 20,
+    "conversa": 108,
+    "visao": 63
+   },
+   "posicao": 55
+  },
+  {
    "chave": "grok-4.20-v2",
    "slug": "grok-4.20-v2",
    "familia": "grok",
@@ -3696,7 +3778,7 @@
     "raciocinio": 42,
     "pesquisa": 141
    },
-   "posicao": 55
+   "posicao": 56
   },
   {
    "chave": "ling-3.1-flash",
@@ -3741,88 +3823,6 @@
     "agentico": 20,
     "raciocinio": 69,
     "pesquisa": 22
-   },
-   "posicao": 56
-  },
-  {
-   "chave": "grok-4.7",
-   "slug": "grok-4.7",
-   "familia": "grok",
-   "versao": 4.7,
-   "nome": "Grok 4.7",
-   "empresa": "xAI",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-09-21",
-   "contexto": 500000,
-   "precoEntrada": 2,
-   "precoSaida": 6,
-   "velocidade": 71.803,
-   "ttft": 15.388,
-   "metricas": {
-    "lb_geral": 70.14,
-    "lb_agentico": 46.1,
-    "lb_raciocinio": 82.7,
-    "lb_codigo": 84.5,
-    "lb_navegador": 49.3,
-    "lb_dados": 76.9,
-    "lb_pesquisa": 86.4,
-    "lb_design": 78,
-    "arena_texto": 1398,
-    "arena_webdev": 1637,
-    "arena_visao": 1231,
-    "aa_inteligencia": 35,
-    "aa_hle": 42.3,
-    "aa_terminal": 24.7,
-    "aa_contexto": 77
-   },
-   "origens": {
-    "livebench": "grok-4.7",
-    "lmarena": "Grok 4.7 (xHigh)",
-    "artificialanalysis": "grok-4-7-high",
-    "openrouter": "x-ai/grok-4.7"
-   },
-   "parcial": false,
-   "percentis": {
-    "lb_geral": 67.7,
-    "aa_inteligencia": 71.1,
-    "arena_texto": 45.1,
-    "arena_webdev": 84.9,
-    "arena_visao": 41,
-    "aa_hle": 90.7,
-    "aa_terminal": 80.2,
-    "aa_contexto": 76.1,
-    "lb_agentico": 74.2,
-    "lb_raciocinio": 35.5,
-    "lb_codigo": 46.8,
-    "lb_navegador": 38.7,
-    "lb_dados": 58.1,
-    "lb_pesquisa": 96.8,
-    "lb_design": 61.3
-   },
-   "nota": 66.6,
-   "cobertura": 1,
-   "categorias": {
-    "agentico": 68.1,
-    "codigo": 60.6,
-    "raciocinio": 58.7,
-    "dados": 54,
-    "pesquisa": 74.3,
-    "design": 65.4,
-    "navegador": 44.4,
-    "conversa": 47.5,
-    "visao": 45.5
-   },
-   "posCategorias": {
-    "agentico": 18,
-    "codigo": 28,
-    "raciocinio": 158,
-    "dados": 14,
-    "pesquisa": 9,
-    "design": 22,
-    "navegador": 20,
-    "conversa": 108,
-    "visao": 63
    },
    "posicao": 57
   },
@@ -3926,7 +3926,7 @@
    "contexto": 1050000,
    "precoEntrada": 0.14,
    "precoSaida": 0.28,
-   "velocidade": 33.754,
+   "velocidade": 31.106,
    "ttft": 2.478,
    "metricas": {
     "arena_texto": 1451,
@@ -4130,8 +4130,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.825,
    "precoSaida": 4.125,
-   "velocidade": 130.739,
-   "ttft": 14.102,
+   "velocidade": 133.606,
+   "ttft": 14.307,
    "metricas": {
     "lb_geral": 59.21,
     "lb_agentico": 16.5,
@@ -4535,8 +4535,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.115,
    "precoSaida": 4,
-   "velocidade": 84.354,
-   "ttft": 1.13,
+   "velocidade": 82.927,
+   "ttft": 1.102,
    "metricas": {
     "arena_texto": 1451,
     "arena_webdev": 1582,
@@ -4708,8 +4708,8 @@
    "contexto": 262144,
    "precoEntrada": 0.0825,
    "precoSaida": 0.33,
-   "velocidade": 94.806,
-   "ttft": 1.812,
+   "velocidade": 92.529,
+   "ttft": 1.902,
    "metricas": {
     "arena_texto": 1439,
     "arena_webdev": 1505,
@@ -4765,7 +4765,7 @@
    "contexto": 1048576,
    "precoEntrada": 0.075,
    "precoSaida": 0.3,
-   "velocidade": 118.469,
+   "velocidade": 116.232,
    "ttft": 0.737,
    "metricas": {
     "lb_geral": 66.89,
@@ -4794,7 +4794,7 @@
     "aa_inteligencia": 55.6,
     "arena_webdev": 72.4,
     "aa_hle": 96.4,
-    "aa_terminal": 81.9,
+    "aa_terminal": 81.6,
     "aa_contexto": 85.7,
     "lb_agentico": 48.4,
     "lb_raciocinio": 38.7,
@@ -4807,7 +4807,7 @@
    "nota": 62.2,
    "cobertura": 0.78,
    "categorias": {
-    "agentico": 60.1,
+    "agentico": 60,
     "codigo": 54.8,
     "raciocinio": 61.7,
     "dados": 39.5,
@@ -4816,7 +4816,7 @@
     "navegador": 63.7
    },
    "posCategorias": {
-    "agentico": 35,
+    "agentico": 36,
     "codigo": 43,
     "raciocinio": 134,
     "dados": 23,
@@ -4837,10 +4837,10 @@
    "hf": "zai-org/GLM-5.3-Flash",
    "lancamento": "2026-08-26",
    "contexto": 1048576,
-   "precoEntrada": 0.0285,
-   "precoSaida": 0.0923,
-   "velocidade": 66.468,
-   "ttft": 1.14,
+   "precoEntrada": 0.0313,
+   "precoSaida": 0.0846,
+   "velocidade": 64.421,
+   "ttft": 1.101,
    "metricas": {
     "lb_geral": 62.07,
     "lb_agentico": 19,
@@ -5028,8 +5028,8 @@
    "contexto": null,
    "precoEntrada": 0.1,
    "precoSaida": 0.4,
-   "velocidade": 111.541,
-   "ttft": 1.061,
+   "velocidade": 110.493,
+   "ttft": 1.066,
    "metricas": {
     "aa_hle": 25.8,
     "aa_terminal": 1,
@@ -5128,8 +5128,8 @@
    "contexto": 262144,
    "precoEntrada": 0.6,
    "precoSaida": 3.5,
-   "velocidade": 46.075,
-   "ttft": 1.098,
+   "velocidade": 45.745,
+   "ttft": 1.07,
    "metricas": {
     "arena_webdev": 1474,
     "aa_hle": 35,
@@ -5311,55 +5311,6 @@
    "posicao": 84
   },
   {
-   "chave": "gpt-5.3-codex",
-   "slug": "gpt-5.3-codex",
-   "familia": "gpt-codex",
-   "versao": 5.3,
-   "nome": "GPT-5.3-Codex",
-   "empresa": "OpenAI",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-02-24",
-   "contexto": 400000,
-   "precoEntrada": 1.75,
-   "precoSaida": 14,
-   "velocidade": 102.784,
-   "ttft": 36.206,
-   "metricas": {
-    "arena_webdev": 1407,
-    "aa_hle": 42.5,
-    "aa_gpqa": 91.5,
-    "aa_contexto": 83.3
-   },
-   "origens": {
-    "lmarena": "GPT-5.3-Codex (Codex Harness)",
-    "artificialanalysis": "gpt-5-3-codex",
-    "openrouter": "openai/gpt-5.3-codex"
-   },
-   "parcial": false,
-   "percentis": {
-    "arena_webdev": 35.3,
-    "aa_hle": 91.4,
-    "aa_gpqa": 93.9,
-    "aa_contexto": 97
-   },
-   "nota": 58.9,
-   "cobertura": 0.17,
-   "categorias": {
-    "codigo": 42.6,
-    "raciocinio": 78.4,
-    "pesquisa": 73.5,
-    "design": 42.6
-   },
-   "posCategorias": {
-    "codigo": 75,
-    "raciocinio": 21,
-    "pesquisa": 14,
-    "design": 75
-   },
-   "posicao": 85
-  },
-  {
    "chave": "deepseek-r1",
    "slug": "deepseek-r1",
    "familia": "deepseek-r",
@@ -5404,6 +5355,55 @@
     "pesquisa": 183,
     "conversa": 76
    },
+   "posicao": 85
+  },
+  {
+   "chave": "gpt-5.3-codex",
+   "slug": "gpt-5.3-codex",
+   "familia": "gpt-codex",
+   "versao": 5.3,
+   "nome": "GPT-5.3-Codex",
+   "empresa": "OpenAI",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-02-24",
+   "contexto": 400000,
+   "precoEntrada": 1.75,
+   "precoSaida": 14,
+   "velocidade": 90.196,
+   "ttft": 36.082,
+   "metricas": {
+    "arena_webdev": 1407,
+    "aa_hle": 42.5,
+    "aa_gpqa": 91.5,
+    "aa_contexto": 83.3
+   },
+   "origens": {
+    "lmarena": "GPT-5.3-Codex (Codex Harness)",
+    "artificialanalysis": "gpt-5-3-codex",
+    "openrouter": "openai/gpt-5.3-codex"
+   },
+   "parcial": false,
+   "percentis": {
+    "arena_webdev": 35.3,
+    "aa_hle": 91.2,
+    "aa_gpqa": 93.9,
+    "aa_contexto": 97
+   },
+   "nota": 58.8,
+   "cobertura": 0.17,
+   "categorias": {
+    "codigo": 42.6,
+    "raciocinio": 78.4,
+    "pesquisa": 73.5,
+    "design": 42.6
+   },
+   "posCategorias": {
+    "codigo": 75,
+    "raciocinio": 21,
+    "pesquisa": 14,
+    "design": 75
+   },
    "posicao": 86
   },
   {
@@ -5411,7 +5411,7 @@
    "slug": "k-exaone-2.0",
    "familia": "k-exaone",
    "versao": 2,
-   "nome": "K-EXAONE 2.0 0803",
+   "nome": "K-EXAONE 2.0",
    "empresa": "LG AI Research",
    "aberto": null,
    "hf": null,
@@ -5559,7 +5559,7 @@
    "precoEntrada": 0.11,
    "precoSaida": 0.33,
    "velocidade": 141.201,
-   "ttft": 0.559,
+   "ttft": 0.552,
    "metricas": {
     "aa_hle": 18.7,
     "aa_terminal": 1,
@@ -5603,8 +5603,8 @@
    "contexto": 1048576,
    "precoEntrada": 1,
    "precoSaida": 2.7,
-   "velocidade": 136.883,
-   "ttft": 0.723,
+   "velocidade": 133.822,
+   "ttft": 0.754,
    "metricas": {
     "lb_geral": 58.61,
     "lb_agentico": 19.4,
@@ -5869,8 +5869,8 @@
    "hf": "moonshotai/Kimi-K3",
    "lancamento": "2026-07-16",
    "contexto": 1048576,
-   "precoEntrada": 0.192,
-   "precoSaida": 15,
+   "precoEntrada": 0.276,
+   "precoSaida": 9.6,
    "velocidade": 0,
    "ttft": 0,
    "metricas": {
@@ -5978,7 +5978,7 @@
     "conversa": 53.6
    },
    "posCategorias": {
-    "raciocinio": 157,
+    "raciocinio": 158,
     "pesquisa": 182,
     "conversa": 84
    },
@@ -5997,8 +5997,8 @@
    "contexto": null,
    "precoEntrada": 0.1,
    "precoSaida": 0.3,
-   "velocidade": 139.239,
-   "ttft": 1.21,
+   "velocidade": 139.713,
+   "ttft": 1.168,
    "metricas": {
     "aa_hle": 15.7,
     "aa_gpqa": 75.3,
@@ -6038,8 +6038,8 @@
    "contexto": null,
    "precoEntrada": 0.4,
    "precoSaida": 4.8,
-   "velocidade": 116.895,
-   "ttft": 1.11,
+   "velocidade": 119.696,
+   "ttft": 1.101,
    "metricas": {
     "aa_hle": 14.9,
     "aa_gpqa": 82.6,
@@ -6080,7 +6080,7 @@
    "precoEntrada": 0.3,
    "precoSaida": 2.5,
    "velocidade": 124.873,
-   "ttft": 1.949,
+   "ttft": 2.005,
    "metricas": {
     "aa_hle": 21.6,
     "aa_terminal": 0.5,
@@ -6188,7 +6188,7 @@
     "pesquisa": 50.8
    },
    "posCategorias": {
-    "raciocinio": 151,
+    "raciocinio": 152,
     "pesquisa": 167
    },
    "posicao": 102
@@ -6337,7 +6337,7 @@
     "pesquisa": 48.5
    },
    "posCategorias": {
-    "raciocinio": 150,
+    "raciocinio": 151,
     "pesquisa": 186
    },
    "posicao": 105
@@ -6439,7 +6439,7 @@
    },
    "posCategorias": {
     "codigo": 97,
-    "raciocinio": 152,
+    "raciocinio": 153,
     "pesquisa": 188,
     "design": 94,
     "conversa": 58
@@ -6498,9 +6498,9 @@
    "hf": "google/gemma-4-26B-A4B-it",
    "lancamento": "2026-04-03",
    "contexto": 262144,
-   "precoEntrada": 0.09,
-   "precoSaida": 0.3,
-   "velocidade": 104.867,
+   "precoEntrada": 0.072,
+   "precoSaida": 0.216,
+   "velocidade": 97.6,
    "ttft": 0.534,
    "metricas": {
     "arena_texto": 1434,
@@ -6557,8 +6557,8 @@
    "contexto": 1050000,
    "precoEntrada": 0.1,
    "precoSaida": 0.5,
-   "velocidade": 134.086,
-   "ttft": 103.036,
+   "velocidade": 122.93,
+   "ttft": 89.612,
    "metricas": {
     "lb_geral": 64.59,
     "lb_agentico": 30.9,
@@ -6637,7 +6637,7 @@
    "hf": "Qwen/Qwen3-Next-80B-A3B-Instruct",
    "lancamento": "2025-09-11",
    "contexto": 262144,
-   "precoEntrada": 0.09,
+   "precoEntrada": 0.1,
    "precoSaida": 1.1,
    "velocidade": 0,
    "ttft": 0,
@@ -6926,8 +6926,8 @@
    "contexto": 262144,
    "precoEntrada": 0.17,
    "precoSaida": 0.25,
-   "velocidade": 68.919,
-   "ttft": 0.878,
+   "velocidade": 70.473,
+   "ttft": 0.796,
    "metricas": {
     "aa_hle": 14.9,
     "aa_terminal": 0.5,
@@ -6972,8 +6972,8 @@
    "contexto": null,
    "precoEntrada": 0.3,
    "precoSaida": 2.5,
-   "velocidade": 206.379,
-   "ttft": 12.364,
+   "velocidade": 192.015,
+   "ttft": 9.097,
    "metricas": {
     "aa_hle": 11.6,
     "aa_gpqa": 81.1,
@@ -6995,7 +6995,7 @@
     "pesquisa": 50.2
    },
    "posCategorias": {
-    "raciocinio": 154,
+    "raciocinio": 155,
     "pesquisa": 172
    },
    "posicao": 118
@@ -7103,8 +7103,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.3,
    "precoSaida": 1.2,
-   "velocidade": 112.9,
-   "ttft": 0.743,
+   "velocidade": 107.955,
+   "ttft": 0.793,
    "metricas": {
     "arena_texto": 1431,
     "arena_webdev": 1483,
@@ -7190,7 +7190,7 @@
     "aa_hle": 76.7,
     "aa_terminal": 61.1,
     "aa_gpqa": 84.9,
-    "aa_contexto": 76.1
+    "aa_contexto": 76.2
    },
    "nota": 53,
    "cobertura": 0.48,
@@ -7198,7 +7198,7 @@
     "agentico": 55.5,
     "codigo": 40.5,
     "raciocinio": 70.5,
-    "pesquisa": 63,
+    "pesquisa": 63.1,
     "design": 40.5,
     "conversa": 50.6,
     "visao": 48.4
@@ -7370,7 +7370,7 @@
    "contexto": null,
    "precoEntrada": 0.042,
    "precoSaida": 0.17,
-   "velocidade": 128.747,
+   "velocidade": 128.555,
    "ttft": 1.038,
    "metricas": {
     "aa_hle": 11,
@@ -7411,7 +7411,7 @@
    "contexto": 200000,
    "precoEntrada": 2,
    "precoSaida": 8,
-   "velocidade": 149.865,
+   "velocidade": 146.363,
    "ttft": 3.39,
    "metricas": {
     "arena_texto": 1410,
@@ -7462,8 +7462,8 @@
    "contexto": null,
    "precoEntrada": 1,
    "precoSaida": 3,
-   "velocidade": 42.243,
-   "ttft": 0.686,
+   "velocidade": 41.801,
+   "ttft": 0.697,
    "metricas": {
     "aa_hle": 10.9,
     "aa_gpqa": 72.7,
@@ -7769,8 +7769,8 @@
    "contexto": 1048756,
    "precoEntrada": 0.3,
    "precoSaida": 1.2,
-   "velocidade": 75.516,
-   "ttft": 1.828,
+   "velocidade": 72.078,
+   "ttft": 1.816,
    "metricas": {
     "aa_hle": 33.7,
     "aa_terminal": 0,
@@ -7856,7 +7856,7 @@
    "contexto": null,
    "precoEntrada": 0,
    "precoSaida": 0,
-   "velocidade": 88.196,
+   "velocidade": 80.65,
    "ttft": 0.229,
    "metricas": {
     "aa_hle": 11.1,
@@ -8273,8 +8273,8 @@
    "contexto": null,
    "precoEntrada": 0.03,
    "precoSaida": 0.15,
-   "velocidade": 25.544,
-   "ttft": 0.543,
+   "velocidade": 41.594,
+   "ttft": 0.418,
    "metricas": {
     "aa_hle": 9.9,
     "aa_gpqa": 77.1,
@@ -8496,8 +8496,8 @@
    "contexto": 1024000,
    "precoEntrada": 0.15,
    "precoSaida": 1.875,
-   "velocidade": 40.294,
-   "ttft": 1.36,
+   "velocidade": 38.351,
+   "ttft": 1.364,
    "metricas": {
     "lb_geral": 58.38,
     "lb_agentico": 20.6,
@@ -8682,8 +8682,8 @@
    "contexto": null,
    "precoEntrada": 1.25,
    "precoSaida": 10,
-   "velocidade": 123.791,
-   "ttft": 12.454,
+   "velocidade": 123.052,
+   "ttft": 11.173,
    "metricas": {
     "aa_hle": 9.4,
     "aa_gpqa": 78.5,
@@ -9273,7 +9273,7 @@
    "precoEntrada": 0.1,
    "precoSaida": 0.8,
    "velocidade": 222.005,
-   "ttft": 1.004,
+   "ttft": 0.993,
    "metricas": {
     "aa_hle": 7.6,
     "aa_gpqa": 74.2,
@@ -9502,8 +9502,8 @@
    "contexto": null,
    "precoEntrada": 0.25,
    "precoSaida": 0.97,
-   "velocidade": 110.822,
-   "ttft": 1.034,
+   "velocidade": 111.152,
+   "ttft": 0.96,
    "metricas": {
     "aa_hle": 7.5,
     "aa_gpqa": 72.6,
@@ -9584,8 +9584,8 @@
    "contexto": 262144,
    "precoEntrada": 0.1,
    "precoSaida": 0.9,
-   "velocidade": 130.565,
-   "ttft": 1.124,
+   "velocidade": 130.279,
+   "ttft": 1.096,
    "metricas": {
     "aa_hle": 22.2,
     "aa_terminal": 0,
@@ -9717,8 +9717,8 @@
    "contexto": 262144,
    "precoEntrada": 0.6,
    "precoSaida": 2.4,
-   "velocidade": 172.168,
-   "ttft": 0.787,
+   "velocidade": 168.367,
+   "ttft": 0.855,
    "metricas": {
     "arena_texto": 1445,
     "aa_inteligencia": 11.8,
@@ -9792,14 +9792,14 @@
     "aa_hle": 77,
     "aa_terminal": 48.3,
     "aa_gpqa": 70.6,
-    "aa_contexto": 75.6
+    "aa_contexto": 75.8
    },
    "nota": 47.3,
    "cobertura": 0.39,
    "categorias": {
     "agentico": 49.1,
     "raciocinio": 65.9,
-    "pesquisa": 62.8,
+    "pesquisa": 62.9,
     "conversa": 42.7,
     "visao": 38.8
    },
@@ -9825,8 +9825,8 @@
    "contexto": null,
    "precoEntrada": 0.4,
    "precoSaida": 1.2,
-   "velocidade": 342.077,
-   "ttft": 0.512,
+   "velocidade": 339.332,
+   "ttft": 0.537,
    "metricas": {
     "aa_inteligencia": 17.7,
     "aa_hle": 34.7,
@@ -9871,7 +9871,7 @@
    "precoEntrada": 0,
    "precoSaida": 0,
    "velocidade": 762.913,
-   "ttft": 2.019,
+   "ttft": 1.866,
    "metricas": {
     "aa_inteligencia": 17.8,
     "aa_hle": 32,
@@ -10240,8 +10240,8 @@
    "contexto": 262144,
    "precoEntrada": 0.26,
    "precoSaida": 2.08,
-   "velocidade": 135.307,
-   "ttft": 1.015,
+   "velocidade": 133.073,
+   "ttft": 0.979,
    "metricas": {
     "arena_texto": 1418,
     "arena_webdev": 1360,
@@ -10437,8 +10437,8 @@
    "contexto": 1048576,
    "precoEntrada": 1.25,
    "precoSaida": 4.25,
-   "velocidade": 191.179,
-   "ttft": 0.532,
+   "velocidade": 184.474,
+   "ttft": 0.515,
    "metricas": {
     "lb_geral": 51.63,
     "lb_agentico": 11.7,
@@ -10492,7 +10492,7 @@
    "posCategorias": {
     "agentico": 81,
     "codigo": 69,
-    "raciocinio": 149,
+    "raciocinio": 150,
     "dados": 28,
     "pesquisa": 55,
     "design": 80,
@@ -10768,8 +10768,8 @@
    "contexto": null,
    "precoEntrada": 0.5,
    "precoSaida": 1.5,
-   "velocidade": 90.422,
-   "ttft": 0.71,
+   "velocidade": 79.29,
+   "ttft": 0.722,
    "metricas": {
     "aa_hle": 6.4,
     "aa_gpqa": 66.3,
@@ -10850,8 +10850,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.3,
    "precoSaida": 2.5,
-   "velocidade": 404.712,
-   "ttft": 4.766,
+   "velocidade": 401.625,
+   "ttft": 5.071,
    "metricas": {
     "arena_texto": 1435,
     "arena_webdev": 1434,
@@ -11312,7 +11312,7 @@
     "visao": 37.9
    },
    "posCategorias": {
-    "raciocinio": 155,
+    "raciocinio": 156,
     "pesquisa": 139,
     "conversa": 122,
     "visao": 79
@@ -11414,8 +11414,8 @@
    "contexto": 524288,
    "precoEntrada": 0.45,
    "precoSaida": 1.2,
-   "velocidade": 211.058,
-   "ttft": 1.509,
+   "velocidade": 212.997,
+   "ttft": 1.583,
    "metricas": {
     "arena_texto": 1414,
     "arena_webdev": 1409,
@@ -11681,7 +11681,7 @@
     "arena_texto": 62.8,
     "arena_webdev": 65.5,
     "arena_visao": 68.6,
-    "aa_terminal": 80.2,
+    "aa_terminal": 79.9,
     "lb_agentico": 9.7,
     "lb_raciocinio": 45.2,
     "lb_codigo": 6.5,
@@ -11693,7 +11693,7 @@
    "nota": 43.3,
    "cobertura": 0.91,
    "categorias": {
-    "agentico": 46.6,
+    "agentico": 46.5,
     "codigo": 40.7,
     "raciocinio": 47.6,
     "dados": 49.2,
@@ -11785,8 +11785,8 @@
    "contexto": null,
    "precoEntrada": 0.3,
    "precoSaida": 1.2,
-   "velocidade": 96.207,
-   "ttft": 0.978,
+   "velocidade": 94.821,
+   "ttft": 0.973,
    "metricas": {
     "arena_texto": 1389,
     "arena_webdev": 1370,
@@ -11974,8 +11974,8 @@
    "contexto": null,
    "precoEntrada": 1.5,
    "precoSaida": 7.5,
-   "velocidade": 169.668,
-   "ttft": 0.606,
+   "velocidade": 170.435,
+   "ttft": 0.777,
    "metricas": {
     "arena_texto": 1421,
     "arena_webdev": 1264,
@@ -12347,7 +12347,7 @@
    "contexto": null,
    "precoEntrada": 0.345,
    "precoSaida": 0.345,
-   "velocidade": 30.446,
+   "velocidade": 29.733,
    "ttft": 0.515,
    "metricas": {
     "aa_hle": 5.5,
@@ -12995,10 +12995,10 @@
    "hf": "openai/gpt-oss-120b",
    "lancamento": "2025-08-05",
    "contexto": 131072,
-   "precoEntrada": 0.026,
-   "precoSaida": 0.094,
-   "velocidade": 211.157,
-   "ttft": 0.487,
+   "precoEntrada": 0.15,
+   "precoSaida": 0.6,
+   "velocidade": 210.844,
+   "ttft": 0.49,
    "metricas": {
     "arena_texto": 1365,
     "aa_hle": 19.6,
@@ -13048,7 +13048,7 @@
    "contexto": 262144,
    "precoEntrada": 0.12,
    "precoSaida": 0.8,
-   "velocidade": 80.752,
+   "velocidade": 80.206,
    "ttft": 0.681,
    "metricas": {
     "aa_hle": 10.1,
@@ -13379,8 +13379,8 @@
    "contexto": null,
    "precoEntrada": 0,
    "precoSaida": 0,
-   "velocidade": 131.86,
-   "ttft": 0.185,
+   "velocidade": 131.322,
+   "ttft": 0.186,
    "metricas": {
     "aa_hle": 5.2,
     "aa_gpqa": 30.5,
@@ -13553,8 +13553,8 @@
    "contexto": null,
    "precoEntrada": 0,
    "precoSaida": 0,
-   "velocidade": 53.82,
-   "ttft": 1.571,
+   "velocidade": 58.04,
+   "ttft": 1.501,
    "metricas": {
     "aa_hle": 9.3,
     "aa_terminal": 0,
@@ -13801,10 +13801,10 @@
    "hf": null,
    "lancamento": "2025-09-02",
    "contexto": null,
-   "precoEntrada": 0.1,
-   "precoSaida": 0.2,
-   "velocidade": 165.95,
-   "ttft": 2.099,
+   "precoEntrada": 0,
+   "precoSaida": 0,
+   "velocidade": 0,
+   "ttft": 0,
    "metricas": {
     "aa_hle": 5,
     "aa_gpqa": 25.6,
@@ -13963,8 +13963,8 @@
    "contexto": null,
    "precoEntrada": 0.08,
    "precoSaida": 0.32,
-   "velocidade": 17.261,
-   "ttft": 0.397,
+   "velocidade": 17.149,
+   "ttft": 0.399,
    "metricas": {
     "aa_hle": 5,
     "aa_gpqa": 31.5
@@ -14165,7 +14165,7 @@
    "contexto": null,
    "precoEntrada": 0.04,
    "precoSaida": 0.16,
-   "velocidade": 222.713,
+   "velocidade": 216.744,
    "ttft": 0.312,
    "metricas": {
     "aa_hle": 4.9,
@@ -14282,7 +14282,7 @@
    "precoEntrada": 1,
    "precoSaida": 4.05,
    "velocidade": 195.9,
-   "ttft": 1.846,
+   "ttft": 2.378,
    "metricas": {
     "lb_geral": 47.05,
     "lb_agentico": 8.5,
@@ -14407,8 +14407,8 @@
    "contexto": null,
    "precoEntrada": 0.2,
    "precoSaida": 0.7,
-   "velocidade": 1590.295,
-   "ttft": 0.399,
+   "velocidade": 1517.899,
+   "ttft": 0.402,
    "metricas": {
     "aa_hle": 6.8,
     "aa_terminal": 0,
@@ -14697,8 +14697,8 @@
    "contexto": null,
    "precoEntrada": 0.02,
    "precoSaida": 0.1,
-   "velocidade": 46.438,
-   "ttft": 0.373,
+   "velocidade": 45.513,
+   "ttft": 0.394,
    "metricas": {
     "aa_hle": 4.8,
     "aa_gpqa": 54.9,
@@ -14817,7 +14817,7 @@
    "precoEntrada": 0.5,
    "precoSaida": 0.9,
    "velocidade": 231.637,
-   "ttft": 0.497,
+   "ttft": 0.488,
    "metricas": {
     "aa_hle": 4.8,
     "aa_gpqa": 46.9,
@@ -14857,8 +14857,8 @@
    "contexto": 262144,
    "precoEntrada": 0.2,
    "precoSaida": 0.4,
-   "velocidade": 35.119,
-   "ttft": 0.885,
+   "velocidade": 35.284,
+   "ttft": 0.853,
    "metricas": {
     "lb_geral": 38.72,
     "lb_agentico": 10.7,
@@ -15032,8 +15032,8 @@
    "contexto": 262144,
    "precoEntrada": 0.06,
    "precoSaida": 0.24,
-   "velocidade": 232.285,
-   "ttft": 0.493,
+   "velocidade": 246.741,
+   "ttft": 0.496,
    "metricas": {
     "arena_texto": 1348,
     "aa_hle": 11.4,
@@ -15170,8 +15170,8 @@
    "contexto": null,
    "precoEntrada": 0.035,
    "precoSaida": 0.14,
-   "velocidade": 230.119,
-   "ttft": 0.486,
+   "velocidade": 232.739,
+   "ttft": 0.473,
    "metricas": {
     "aa_hle": 4.6,
     "aa_gpqa": 35.8,
@@ -15614,8 +15614,8 @@
    "contexto": null,
    "precoEntrada": 0.1,
    "precoSaida": 0.1,
-   "velocidade": 181.515,
-   "ttft": 0.462,
+   "velocidade": 180.649,
+   "ttft": 0.501,
    "metricas": {
     "aa_hle": 5.4,
     "aa_terminal": 0,
@@ -15759,7 +15759,7 @@
    "precoEntrada": 0.3,
    "precoSaida": 1.2,
    "velocidade": 121.852,
-   "ttft": 0.375,
+   "ttft": 0.388,
    "metricas": {
     "arena_texto": 1389,
     "arena_webdev": 1355,
@@ -15895,8 +15895,8 @@
    "contexto": null,
    "precoEntrada": 0.075,
    "precoSaida": 0.3,
-   "velocidade": 46.486,
-   "ttft": 0.357,
+   "velocidade": 46.682,
+   "ttft": 0.355,
    "metricas": {
     "aa_hle": 4.4,
     "aa_gpqa": 33.1,
@@ -15936,8 +15936,8 @@
    "contexto": 65536,
    "precoEntrada": 0.1,
    "precoSaida": 0.2,
-   "velocidade": 91.389,
-   "ttft": 0.831,
+   "velocidade": 90.263,
+   "ttft": 0.839,
    "metricas": {
     "aa_hle": 4.4,
     "aa_gpqa": 52.9,
@@ -16436,7 +16436,7 @@
    "posCategorias": {
     "agentico": 127,
     "codigo": 116,
-    "raciocinio": 153,
+    "raciocinio": 154,
     "pesquisa": 206,
     "design": 116,
     "conversa": 139
@@ -16504,8 +16504,8 @@
    "contexto": 524288,
    "precoEntrada": 0.1875,
    "precoSaida": 0.6525,
-   "velocidade": 62.944,
-   "ttft": 0.584,
+   "velocidade": 62.052,
+   "ttft": 0.59,
    "metricas": {
     "aa_hle": 4.9,
     "aa_terminal": 0,
@@ -16601,8 +16601,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.15,
    "precoSaida": 0.5,
-   "velocidade": 458.648,
-   "ttft": 0.525,
+   "velocidade": 447.969,
+   "ttft": 0.54,
    "metricas": {
     "lb_geral": 50.23,
     "lb_agentico": 11.7,
@@ -17235,8 +17235,8 @@
    "contexto": null,
    "precoEntrada": 0.2,
    "precoSaida": 0.2,
-   "velocidade": 74.837,
-   "ttft": 0.629,
+   "velocidade": 74.536,
+   "ttft": 0.591,
    "metricas": {
     "aa_hle": 4.6,
     "aa_terminal": 0,
@@ -17696,7 +17696,7 @@
    "contexto": 131072,
    "precoEntrada": 0.03,
    "precoSaida": 0.13,
-   "velocidade": 169.467,
+   "velocidade": 168.169,
    "ttft": 0.447,
    "metricas": {
     "arena_texto": 1287,
@@ -17839,8 +17839,8 @@
    "contexto": null,
    "precoEntrada": 0.15,
    "precoSaida": 0.15,
-   "velocidade": 74.442,
-   "ttft": 0.531,
+   "velocidade": 81.092,
+   "ttft": 0.518,
    "metricas": {
     "aa_hle": 4.3,
     "aa_terminal": 0,
@@ -17929,8 +17929,8 @@
    "contexto": 262144,
    "precoEntrada": 0.07,
    "precoSaida": 0.2,
-   "velocidade": 281.22,
-   "ttft": 0.393,
+   "velocidade": 275.915,
+   "ttft": 0.383,
    "metricas": {
     "aa_inteligencia": 5.5,
     "aa_hle": 10.6,
@@ -18149,8 +18149,8 @@
    "hf": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
    "lancamento": "2025-07-31",
    "contexto": 262144,
-   "precoEntrada": 0.07,
-   "precoSaida": 0.28,
+   "precoEntrada": 0.15,
+   "precoSaida": 0.6,
    "velocidade": 0,
    "ttft": 0,
    "metricas": {
@@ -18489,7 +18489,7 @@
    "contexto": null,
    "precoEntrada": 0.6,
    "precoSaida": 0.71,
-   "velocidade": 96.207,
+   "velocidade": 95.975,
    "ttft": 0.646,
    "metricas": {
     "aa_hle": 3.6,
@@ -18742,8 +18742,8 @@
    "contexto": 1310720,
    "precoEntrada": 0.1,
    "precoSaida": 0.3,
-   "velocidade": 99.9,
-   "ttft": 0.603,
+   "velocidade": 90.177,
+   "ttft": 0.699,
    "metricas": {
     "aa_hle": 3.8,
     "aa_terminal": 0,
@@ -19133,7 +19133,7 @@
    "contexto": 256000,
    "precoEntrada": 2.5,
    "precoSaida": 10,
-   "velocidade": 24.925,
+   "velocidade": 17.633,
    "ttft": 0.685,
    "metricas": {
     "arena_texto": 1331,
@@ -19538,8 +19538,8 @@
    "contexto": 131072,
    "precoEntrada": 0.06,
    "precoSaida": 0.15,
-   "velocidade": 72.274,
-   "ttft": 0.406,
+   "velocidade": 57.115,
+   "ttft": 0.497,
    "metricas": {
     "arena_texto": 1319,
     "aa_inteligencia": 5.1,
@@ -19684,8 +19684,8 @@
    "contexto": null,
    "precoEntrada": 0.15,
    "precoSaida": 0.6,
-   "velocidade": 178.085,
-   "ttft": 0.589,
+   "velocidade": 166.527,
+   "ttft": 0.621,
    "metricas": {
     "aa_inteligencia": 4.3,
     "aa_hle": 9.9,
@@ -20753,7 +20753,7 @@
    "precoEntrada": 0.07,
    "precoSaida": 0.14,
    "velocidade": 43.207,
-   "ttft": 0.904,
+   "ttft": 0.91,
    "metricas": {
     "arena_texto": 1217,
     "aa_hle": 3.8,
@@ -22508,8 +22508,8 @@
    "hf": "meta-llama/Llama-3.3-70B-Instruct",
    "lancamento": "2024-12-06",
    "contexto": 131072,
-   "precoEntrada": 0.1,
-   "precoSaida": 0.32,
+   "precoEntrada": 0.2,
+   "precoSaida": 0.52,
    "velocidade": null,
    "ttft": null,
    "metricas": {
@@ -22631,8 +22631,8 @@
    "hf": "meta-llama/Meta-Llama-3.1-70B-Instruct",
    "lancamento": "2024-07-23",
    "contexto": 131072,
-   "precoEntrada": 0.4,
-   "precoSaida": 0.4,
+   "precoEntrada": 0.72,
+   "precoSaida": 0.72,
    "velocidade": null,
    "ttft": null,
    "metricas": {
