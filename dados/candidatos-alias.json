@@ -105,15 +105,15 @@
   ]
  },
  {
-  "chave": "ling-3.0-flash-fin",
-  "parecidas": [
-   "ling-3.0-flash"
-  ]
- },
- {
   "chave": "beam-1.0",
   "parecidas": [
    "beam-1.0-501b-a23b"
+  ]
+ },
+ {
+  "chave": "ling-3.0-flash-fin",
+  "parecidas": [
+   "ling-3.0-flash"
   ]
  },
  {

@@ -1,20 +1,20 @@
 {
- "geradoEm": "2026-11-03T16:44:26.718Z",
+ "geradoEm": "2026-11-04T16:41:44.116Z",
  "fontes": {
   "openrouter": {
    "ok": true,
-   "coletadoEm": "2026-11-03T16:44:23.433Z",
+   "coletadoEm": "2026-11-04T16:41:40.706Z",
    "erro": null
   },
   "livebench": {
    "ok": true,
-   "coletadoEm": "2026-11-03T16:44:23.719Z",
+   "coletadoEm": "2026-11-04T16:41:41.108Z",
    "erro": null,
    "release": "2026-10-25"
   },
   "lmarena": {
    "ok": true,
-   "coletadoEm": "2026-11-03T16:44:25.778Z",
+   "coletadoEm": "2026-11-04T16:41:42.219Z",
    "erro": null,
    "datas": {
     "texto": "2026-10-28",
@@ -24,12 +24,12 @@
   },
   "artificialanalysis": {
    "ok": true,
-   "coletadoEm": "2026-11-03T16:44:26.153Z",
+   "coletadoEm": "2026-11-04T16:41:42.435Z",
    "erro": null
   },
   "cambio": {
    "ok": true,
-   "coletadoEm": "2026-11-03T16:44:26.574Z",
+   "coletadoEm": "2026-11-04T16:41:44.010Z",
    "erro": null
   }
  },
@@ -263,17 +263,17 @@
   }
  ],
  "cambio": {
-  "data": "2026-11-03",
+  "data": "2026-11-04",
   "taxas": {
-   "BRL": 5.4934,
-   "EUR": 0.89453,
-   "JPY": 158.29,
-   "GBP": 0.74567,
+   "BRL": 5.4654,
+   "EUR": 0.88755,
+   "JPY": 158.25,
+   "GBP": 0.74075,
    "CNY": 6.6723,
-   "AUD": 1.4319,
-   "CAD": 1.3975,
-   "CHF": 0.81993,
-   "HKD": 7.846
+   "AUD": 1.4255,
+   "CAD": 1.3935,
+   "CHF": 0.81548,
+   "HKD": 7.8458
   }
  },
  "modelos": [
@@ -290,8 +290,8 @@
    "contexto": 1000000,
    "precoEntrada": 4,
    "precoSaida": 20,
-   "velocidade": 96.521,
-   "ttft": 535.837,
+   "velocidade": 96.162,
+   "ttft": 528.953,
    "metricas": {
     "lb_geral": 85.14,
     "lb_agentico": 72.8,
@@ -304,7 +304,7 @@
     "arena_texto": 1516,
     "arena_webdev": 1810,
     "arena_visao": 1321,
-    "aa_inteligencia": 58.4,
+    "aa_inteligencia": 59.1,
     "aa_hle": 61.4,
     "aa_terminal": 59.6,
     "aa_contexto": 84.7
@@ -318,7 +318,7 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 93.5,
-    "aa_inteligencia": 97.8,
+    "aa_inteligencia": 98,
     "arena_texto": 99,
     "arena_webdev": 100,
     "arena_visao": 99,
@@ -333,7 +333,7 @@
     "lb_pesquisa": 90.3,
     "lb_design": 100
    },
-   "nota": 93.5,
+   "nota": 93.6,
    "cobertura": 1,
    "categorias": {
     "agentico": 80.5,
@@ -372,12 +372,12 @@
    "contexto": null,
    "precoEntrada": 4,
    "precoSaida": 20,
-   "velocidade": 90.587,
-   "ttft": 71.22,
+   "velocidade": 89.839,
+   "ttft": 72.994,
    "metricas": {
     "arena_texto": 1540,
     "arena_webdev": 1768,
-    "aa_inteligencia": 59.4,
+    "aa_inteligencia": 60,
     "aa_terminal": 65.2,
     "aa_contexto": 79.3
    },
@@ -424,8 +424,8 @@
    "contexto": 1000000,
    "precoEntrada": 10,
    "precoSaida": 50,
-   "velocidade": 55.007,
-   "ttft": 36.104,
+   "velocidade": 51.752,
+   "ttft": 30.756,
    "metricas": {
     "lb_geral": 85.69,
     "lb_agentico": 77.9,
@@ -438,7 +438,7 @@
     "arena_texto": 1514,
     "arena_webdev": 1746,
     "arena_visao": 1319,
-    "aa_inteligencia": 49.7,
+    "aa_inteligencia": 50,
     "aa_hle": 58.7,
     "aa_terminal": 55.1,
     "aa_gpqa": 93.4,
@@ -453,7 +453,7 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 100,
-    "aa_inteligencia": 83.3,
+    "aa_inteligencia": 84,
     "arena_texto": 98.5,
     "arena_webdev": 95.7,
     "arena_visao": 97.1,
@@ -469,7 +469,7 @@
     "lb_pesquisa": 74.2,
     "lb_design": 91.9
    },
-   "nota": 90.8,
+   "nota": 90.9,
    "cobertura": 1,
    "categorias": {
     "agentico": 81.3,
@@ -569,8 +569,8 @@
    "contexto": 1050000,
    "precoEntrada": 10,
    "precoSaida": 50,
-   "velocidade": 57.774,
-   "ttft": 210.96,
+   "velocidade": 51.293,
+   "ttft": 222.054,
    "metricas": {
     "lb_geral": 85.64,
     "lb_agentico": 77.5,
@@ -598,7 +598,7 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 96.8,
-    "aa_inteligencia": 95.6,
+    "aa_inteligencia": 96,
     "arena_texto": 71.3,
     "arena_webdev": 99.1,
     "arena_visao": 73.3,
@@ -614,7 +614,7 @@
     "lb_pesquisa": 93.5,
     "lb_design": 74.2
    },
-   "nota": 88.1,
+   "nota": 88.2,
    "cobertura": 1,
    "categorias": {
     "agentico": 81.3,
@@ -653,8 +653,8 @@
    "contexto": 1000000,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 133.144,
-   "ttft": 309.417,
+   "velocidade": 133.778,
+   "ttft": 332.955,
    "metricas": {
     "lb_geral": 80.04,
     "lb_agentico": 63.4,
@@ -667,7 +667,7 @@
     "arena_texto": 1473,
     "arena_webdev": 1770,
     "arena_visao": 1287,
-    "aa_inteligencia": 54.2,
+    "aa_inteligencia": 54.5,
     "aa_hle": 55,
     "aa_terminal": 63.6,
     "aa_contexto": 82.7
@@ -681,7 +681,7 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 87.1,
-    "aa_inteligencia": 91.1,
+    "aa_inteligencia": 92,
     "arena_texto": 87.4,
     "arena_webdev": 98.3,
     "arena_visao": 78.6,
@@ -696,7 +696,7 @@
     "lb_pesquisa": 83.9,
     "lb_design": 96.8
    },
-   "nota": 87.6,
+   "nota": 87.8,
    "cobertura": 1,
    "categorias": {
     "agentico": 78.6,
@@ -735,8 +735,8 @@
    "contexto": 1048576,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 82.234,
-   "ttft": 34.368,
+   "velocidade": 81.045,
+   "ttft": 36.311,
    "metricas": {
     "lb_geral": 79.3,
     "lb_agentico": 61.2,
@@ -762,7 +762,7 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 83.9,
-    "aa_inteligencia": 86.7,
+    "aa_inteligencia": 88,
     "arena_texto": 99.5,
     "arena_webdev": 92.2,
     "aa_hle": 99.5,
@@ -776,7 +776,7 @@
     "lb_pesquisa": 77.4,
     "lb_design": 25.8
    },
-   "nota": 87.4,
+   "nota": 87.7,
    "cobertura": 0.96,
    "categorias": {
     "agentico": 76.7,
@@ -874,8 +874,8 @@
    "contexto": 1050000,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 68.042,
-   "ttft": 158.245,
+   "velocidade": 61.842,
+   "ttft": 163.138,
    "metricas": {
     "lb_geral": 84.07,
     "lb_agentico": 68.7,
@@ -888,7 +888,7 @@
     "arena_texto": 1446,
     "arena_webdev": 1751,
     "arena_visao": 1288,
-    "aa_inteligencia": 54.5,
+    "aa_inteligencia": 54.6,
     "aa_hle": 52.9,
     "aa_terminal": 56.1,
     "aa_contexto": 83
@@ -902,7 +902,7 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 90.3,
-    "aa_inteligencia": 93.3,
+    "aa_inteligencia": 94,
     "arena_texto": 76.2,
     "arena_webdev": 96.6,
     "arena_visao": 80,
@@ -917,7 +917,7 @@
     "lb_pesquisa": 80.6,
     "lb_design": 77.4
    },
-   "nota": 86.6,
+   "nota": 86.8,
    "cobertura": 1,
    "categorias": {
     "agentico": 78.5,
@@ -960,7 +960,7 @@
    "ttft": 0,
    "metricas": {
     "arena_webdev": 1725,
-    "aa_inteligencia": 49.7,
+    "aa_inteligencia": 50.1,
     "aa_hle": 53.6,
     "aa_terminal": 57.1,
     "aa_contexto": 83.7
@@ -971,13 +971,13 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 83.3,
+    "aa_inteligencia": 86,
     "arena_webdev": 94.8,
     "aa_hle": 98.3,
     "aa_terminal": 96.2,
     "aa_contexto": 98
    },
-   "nota": 84.2,
+   "nota": 85.3,
    "cobertura": 0.52,
    "categorias": {
     "agentico": 73.1,
@@ -1008,8 +1008,8 @@
    "contexto": 1050000,
    "precoEntrada": 1,
    "precoSaida": 5,
-   "velocidade": 116.867,
-   "ttft": 196.842,
+   "velocidade": 108.106,
+   "ttft": 230.256,
    "metricas": {
     "lb_geral": 77.79,
     "lb_agentico": 48.6,
@@ -1020,7 +1020,7 @@
     "lb_pesquisa": 73.9,
     "lb_design": 82.3,
     "arena_webdev": 1673,
-    "aa_inteligencia": 51,
+    "aa_inteligencia": 51.3,
     "aa_hle": 46.2,
     "aa_terminal": 55.6,
     "aa_contexto": 82.7
@@ -1034,7 +1034,7 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 80.6,
-    "aa_inteligencia": 88.9,
+    "aa_inteligencia": 90,
     "arena_webdev": 89.7,
     "aa_hle": 94.9,
     "aa_terminal": 94.4,
@@ -1047,7 +1047,7 @@
     "lb_pesquisa": 45.2,
     "lb_design": 80.6
    },
-   "nota": 83.8,
+   "nota": 84.1,
    "cobertura": 0.78,
    "categorias": {
     "agentico": 73.9,
@@ -1082,8 +1082,8 @@
    "contexto": 1048576,
    "precoEntrada": 4,
    "precoSaida": 20,
-   "velocidade": 138.767,
-   "ttft": 22.728,
+   "velocidade": 125.124,
+   "ttft": 25.149,
    "metricas": {
     "lb_geral": 74.15,
     "lb_agentico": 52.6,
@@ -1095,7 +1095,7 @@
     "lb_design": 75.1,
     "arena_texto": 1499,
     "arena_webdev": 1652,
-    "aa_inteligencia": 43.3,
+    "aa_inteligencia": 43.6,
     "aa_hle": 50.1,
     "aa_terminal": 52,
     "aa_contexto": 80.7
@@ -1109,7 +1109,7 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 77.4,
-    "aa_inteligencia": 77.8,
+    "aa_inteligencia": 78,
     "arena_texto": 96.9,
     "arena_webdev": 86.2,
     "aa_hle": 97.6,
@@ -1373,6 +1373,80 @@
    "posicao": 16
   },
   {
+   "chave": "kimi-k3.1-pro",
+   "slug": "kimi-k3.1-pro",
+   "familia": "kimi-k-pro",
+   "versao": 3.1,
+   "nome": "Kimi K3.1 Pro",
+   "empresa": "Moonshot AI",
+   "aberto": true,
+   "hf": "moonshotai/Kimi-K3.1-Pro",
+   "lancamento": "2026-10-23",
+   "contexto": 1048576,
+   "precoEntrada": 2,
+   "precoSaida": 10,
+   "velocidade": 28.48,
+   "ttft": 2.349,
+   "metricas": {
+    "lb_geral": 71.29,
+    "lb_agentico": 39.1,
+    "lb_raciocinio": 91.1,
+    "lb_codigo": 81.8,
+    "lb_navegador": 75.9,
+    "lb_dados": 79.1,
+    "lb_pesquisa": 77.9,
+    "lb_design": 77.8,
+    "arena_webdev": 1695,
+    "aa_inteligencia": 46.5,
+    "aa_hle": 52.5,
+    "aa_terminal": 67.2,
+    "aa_contexto": 86.3
+   },
+   "origens": {
+    "livebench": "kimi-k3.1-pro",
+    "lmarena": "Kimi K3.1 Pro (Max)",
+    "artificialanalysis": "kimi-k3-1-pro",
+    "openrouter": "moonshotai/kimi-k3.1-pro"
+   },
+   "parcial": false,
+   "percentis": {
+    "lb_geral": 71,
+    "aa_inteligencia": 82,
+    "arena_webdev": 94,
+    "aa_hle": 97.9,
+    "aa_terminal": 100,
+    "aa_contexto": 99.6,
+    "lb_agentico": 67.7,
+    "lb_raciocinio": 77.4,
+    "lb_codigo": 35.5,
+    "lb_navegador": 71,
+    "lb_dados": 67.7,
+    "lb_pesquisa": 51.6,
+    "lb_design": 58.1
+   },
+   "nota": 80.1,
+   "cobertura": 0.78,
+   "categorias": {
+    "agentico": 72.6,
+    "codigo": 59.8,
+    "raciocinio": 75.1,
+    "dados": 58.9,
+    "pesquisa": 67.1,
+    "design": 67.4,
+    "navegador": 60.5
+   },
+   "posCategorias": {
+    "agentico": 11,
+    "codigo": 29,
+    "raciocinio": 45,
+    "dados": 11,
+    "pesquisa": 44,
+    "design": 16,
+    "navegador": 10
+   },
+   "posicao": 17
+  },
+  {
    "chave": "gpt-5.6-sol",
    "slug": "gpt-5.6-sol",
    "familia": "gpt-sol",
@@ -1430,80 +1504,6 @@
     "design": 23,
     "conversa": 37,
     "visao": 28
-   },
-   "posicao": 17
-  },
-  {
-   "chave": "kimi-k3.1-pro",
-   "slug": "kimi-k3.1-pro",
-   "familia": "kimi-k-pro",
-   "versao": 3.1,
-   "nome": "Kimi K3.1 Pro",
-   "empresa": "Moonshot AI",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-10-23",
-   "contexto": 1048576,
-   "precoEntrada": 2,
-   "precoSaida": 10,
-   "velocidade": 28.369,
-   "ttft": 2.465,
-   "metricas": {
-    "lb_geral": 71.29,
-    "lb_agentico": 39.1,
-    "lb_raciocinio": 91.1,
-    "lb_codigo": 81.8,
-    "lb_navegador": 75.9,
-    "lb_dados": 79.1,
-    "lb_pesquisa": 77.9,
-    "lb_design": 77.8,
-    "arena_webdev": 1695,
-    "aa_inteligencia": 46,
-    "aa_hle": 52.5,
-    "aa_terminal": 67.2,
-    "aa_contexto": 86.3
-   },
-   "origens": {
-    "livebench": "kimi-k3.1-pro",
-    "lmarena": "Kimi K3.1 Pro (Max)",
-    "artificialanalysis": "kimi-k3-1-pro",
-    "openrouter": "moonshotai/kimi-k3.1-pro"
-   },
-   "parcial": false,
-   "percentis": {
-    "lb_geral": 71,
-    "aa_inteligencia": 80,
-    "arena_webdev": 94,
-    "aa_hle": 97.9,
-    "aa_terminal": 100,
-    "aa_contexto": 99.6,
-    "lb_agentico": 67.7,
-    "lb_raciocinio": 77.4,
-    "lb_codigo": 35.5,
-    "lb_navegador": 71,
-    "lb_dados": 67.7,
-    "lb_pesquisa": 51.6,
-    "lb_design": 58.1
-   },
-   "nota": 79.5,
-   "cobertura": 0.78,
-   "categorias": {
-    "agentico": 72.6,
-    "codigo": 59.8,
-    "raciocinio": 75.1,
-    "dados": 58.9,
-    "pesquisa": 67.1,
-    "design": 67.4,
-    "navegador": 60.5
-   },
-   "posCategorias": {
-    "agentico": 11,
-    "codigo": 29,
-    "raciocinio": 45,
-    "dados": 11,
-    "pesquisa": 44,
-    "design": 16,
-    "navegador": 10
    },
    "posicao": 18
   },
@@ -1752,6 +1752,88 @@
    "posicao": 22
   },
   {
+   "chave": "deepseek-v4.1-flash",
+   "slug": "deepseek-v4.1-flash",
+   "familia": "deepseek-flash",
+   "versao": 4.1,
+   "nome": "DeepSeek V4.1 Flash 1017",
+   "empresa": "DeepSeek",
+   "aberto": true,
+   "hf": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+   "lancamento": "2026-10-17",
+   "contexto": 1048576,
+   "precoEntrada": 0.15,
+   "precoSaida": 0.6,
+   "velocidade": 155.383,
+   "ttft": 0.924,
+   "metricas": {
+    "lb_geral": 72.87,
+    "lb_agentico": 35.7,
+    "lb_raciocinio": 89.1,
+    "lb_codigo": 96,
+    "lb_navegador": 67.2,
+    "lb_dados": 79.5,
+    "lb_pesquisa": 79.5,
+    "lb_design": 83.4,
+    "arena_texto": 1465,
+    "arena_webdev": 1665,
+    "arena_visao": 1278,
+    "aa_inteligencia": 32.6,
+    "aa_hle": 43.3,
+    "aa_terminal": 33.8,
+    "aa_contexto": 82.7
+   },
+   "origens": {
+    "livebench": "deepseek-v4.1-flash-1017",
+    "lmarena": "DeepSeek-V4.1-Flash-20260910 (Max)",
+    "artificialanalysis": "deepseek-v4-1-flash-1017",
+    "openrouter": "deepseek/deepseek-v4.1-flash-1017"
+   },
+   "parcial": false,
+   "percentis": {
+    "lb_geral": 74.2,
+    "aa_inteligencia": 68,
+    "arena_texto": 84.6,
+    "arena_webdev": 88.8,
+    "arena_visao": 71.9,
+    "aa_hle": 92.6,
+    "aa_terminal": 86.8,
+    "aa_contexto": 94.1,
+    "lb_agentico": 64.5,
+    "lb_raciocinio": 58.1,
+    "lb_codigo": 91.9,
+    "lb_navegador": 54.8,
+    "lb_dados": 74.2,
+    "lb_pesquisa": 61.3,
+    "lb_design": 91.9
+   },
+   "nota": 76,
+   "cobertura": 1,
+   "categorias": {
+    "agentico": 67.1,
+    "codigo": 76.9,
+    "raciocinio": 66.9,
+    "dados": 62.1,
+    "pesquisa": 68.5,
+    "design": 76.9,
+    "navegador": 52.4,
+    "conversa": 67.3,
+    "visao": 61
+   },
+   "posCategorias": {
+    "agentico": 19,
+    "codigo": 5,
+    "raciocinio": 95,
+    "dados": 9,
+    "pesquisa": 39,
+    "design": 4,
+    "navegador": 15,
+    "conversa": 31,
+    "visao": 30
+   },
+   "posicao": 23
+  },
+  {
    "chave": "gpt-5.5",
    "slug": "gpt-5.5",
    "familia": "gpt",
@@ -1809,65 +1891,6 @@
     "design": 46,
     "conversa": 27,
     "visao": 17
-   },
-   "posicao": 23
-  },
-  {
-   "chave": "glm-5.3",
-   "slug": "glm-5.3",
-   "familia": "glm",
-   "versao": 5.3,
-   "nome": "GLM 5.3",
-   "empresa": "Z.ai",
-   "aberto": true,
-   "hf": "zai-org/GLM-5.3",
-   "lancamento": "2026-08-18",
-   "contexto": 1048576,
-   "precoEntrada": 0.08,
-   "precoSaida": 3.6,
-   "velocidade": 77.235,
-   "ttft": 1.25,
-   "metricas": {
-    "arena_texto": 1474,
-    "arena_webdev": 1623,
-    "aa_inteligencia": 31.7,
-    "aa_hle": 42.3,
-    "aa_terminal": 41.9,
-    "aa_gpqa": 91.7,
-    "aa_contexto": 79.7
-   },
-   "origens": {
-    "lmarena": "GLM-5.3 (Max)",
-    "artificialanalysis": "glm-5-3",
-    "openrouter": "z-ai/glm-5.3"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 64.4,
-    "arena_texto": 88.5,
-    "arena_webdev": 81,
-    "aa_hle": 90.6,
-    "aa_terminal": 90.3,
-    "aa_gpqa": 94.2,
-    "aa_contexto": 85.7
-   },
-   "nota": 75.8,
-   "cobertura": 0.7,
-   "categorias": {
-    "agentico": 70.2,
-    "codigo": 65.5,
-    "raciocinio": 78.3,
-    "pesquisa": 67.8,
-    "design": 65.5,
-    "conversa": 69.3
-   },
-   "posCategorias": {
-    "agentico": 15,
-    "codigo": 19,
-    "raciocinio": 22,
-    "pesquisa": 40,
-    "design": 21,
-    "conversa": 24
    },
    "posicao": 24
   },
@@ -1933,84 +1956,61 @@
    "posicao": 25
   },
   {
-   "chave": "deepseek-v4.1-flash",
-   "slug": "deepseek-v4.1-flash",
-   "familia": "deepseek-flash",
-   "versao": 4.1,
-   "nome": "DeepSeek V4.1 Flash 1017",
-   "empresa": "DeepSeek",
+   "chave": "glm-5.3",
+   "slug": "glm-5.3",
+   "familia": "glm",
+   "versao": 5.3,
+   "nome": "GLM 5.3",
+   "empresa": "Z.ai",
    "aberto": true,
-   "hf": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
-   "lancamento": "2026-10-17",
+   "hf": "zai-org/GLM-5.3",
+   "lancamento": "2026-08-18",
    "contexto": 1048576,
-   "precoEntrada": 0.15,
-   "precoSaida": 0.6,
-   "velocidade": 156.909,
-   "ttft": 0.929,
+   "precoEntrada": 0.08,
+   "precoSaida": 3.6,
+   "velocidade": 65.257,
+   "ttft": 1.629,
    "metricas": {
-    "lb_geral": 72.87,
-    "lb_agentico": 35.7,
-    "lb_raciocinio": 89.1,
-    "lb_codigo": 96,
-    "lb_navegador": 67.2,
-    "lb_dados": 79.5,
-    "lb_pesquisa": 79.5,
-    "lb_design": 83.4,
-    "arena_texto": 1465,
-    "arena_webdev": 1665,
-    "arena_visao": 1278,
-    "aa_inteligencia": 32.5,
-    "aa_hle": 43.3,
-    "aa_terminal": 33.8,
-    "aa_contexto": 82.7
+    "arena_texto": 1474,
+    "arena_webdev": 1623,
+    "aa_inteligencia": 31.7,
+    "aa_hle": 42.3,
+    "aa_terminal": 41.9,
+    "aa_gpqa": 91.7,
+    "aa_contexto": 79.7
    },
    "origens": {
-    "livebench": "deepseek-v4.1-flash-1017",
-    "lmarena": "DeepSeek-V4.1-Flash-20260910 (Max)",
-    "artificialanalysis": "deepseek-v4-1-flash-1017",
-    "openrouter": "deepseek/deepseek-v4.1-flash-1017"
+    "lmarena": "GLM-5.3 (Max)",
+    "artificialanalysis": "glm-5-3",
+    "openrouter": "z-ai/glm-5.3"
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 74.2,
-    "aa_inteligencia": 66.7,
-    "arena_texto": 84.6,
-    "arena_webdev": 88.8,
-    "arena_visao": 71.9,
-    "aa_hle": 92.6,
-    "aa_terminal": 86.8,
-    "aa_contexto": 94.1,
-    "lb_agentico": 64.5,
-    "lb_raciocinio": 58.1,
-    "lb_codigo": 91.9,
-    "lb_navegador": 54.8,
-    "lb_dados": 74.2,
-    "lb_pesquisa": 61.3,
-    "lb_design": 91.9
+    "aa_inteligencia": 64,
+    "arena_texto": 88.5,
+    "arena_webdev": 81,
+    "aa_hle": 90.6,
+    "aa_terminal": 90.3,
+    "aa_gpqa": 94.2,
+    "aa_contexto": 85.7
    },
    "nota": 75.7,
-   "cobertura": 1,
+   "cobertura": 0.7,
    "categorias": {
-    "agentico": 67.1,
-    "codigo": 76.9,
-    "raciocinio": 66.9,
-    "dados": 62.1,
-    "pesquisa": 68.5,
-    "design": 76.9,
-    "navegador": 52.4,
-    "conversa": 67.3,
-    "visao": 61
+    "agentico": 70.2,
+    "codigo": 65.5,
+    "raciocinio": 78.3,
+    "pesquisa": 67.8,
+    "design": 65.5,
+    "conversa": 69.3
    },
    "posCategorias": {
-    "agentico": 19,
-    "codigo": 5,
-    "raciocinio": 95,
-    "dados": 9,
-    "pesquisa": 39,
-    "design": 4,
-    "navegador": 15,
-    "conversa": 31,
-    "visao": 30
+    "agentico": 15,
+    "codigo": 19,
+    "raciocinio": 22,
+    "pesquisa": 40,
+    "design": 21,
+    "conversa": 24
    },
    "posicao": 26
   },
@@ -2027,8 +2027,8 @@
    "contexto": null,
    "precoEntrada": 0.15,
    "precoSaida": 0.47,
-   "velocidade": 50.114,
-   "ttft": 1.401,
+   "velocidade": 50.132,
+   "ttft": 1.569,
    "metricas": {
     "arena_webdev": 1628,
     "aa_hle": 38,
@@ -2192,8 +2192,8 @@
    "contexto": 1048576,
    "precoEntrada": 2,
    "precoSaida": 12,
-   "velocidade": 135.554,
-   "ttft": 12.307,
+   "velocidade": 133.357,
+   "ttft": 17.098,
    "metricas": {
     "arena_texto": 1480,
     "arena_webdev": 1447,
@@ -2416,88 +2416,6 @@
    "posicao": 33
   },
   {
-   "chave": "mimo-v2.6-pro",
-   "slug": "mimo-v2.6-pro",
-   "familia": "mimo-pro",
-   "versao": 2.6,
-   "nome": "MiMo-V2.6-Pro",
-   "empresa": "Xiaomi",
-   "aberto": true,
-   "hf": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
-   "lancamento": "2026-09-21",
-   "contexto": 1050000,
-   "precoEntrada": 0.435,
-   "precoSaida": 0.87,
-   "velocidade": 39.46,
-   "ttft": 2.37,
-   "metricas": {
-    "lb_geral": 68.48,
-    "lb_agentico": 35.2,
-    "lb_raciocinio": 79.6,
-    "lb_codigo": 81.5,
-    "lb_navegador": 77.3,
-    "lb_dados": 72.3,
-    "lb_pesquisa": 76.7,
-    "lb_design": 78.5,
-    "arena_texto": 1491,
-    "arena_webdev": 1625,
-    "arena_visao": 1263,
-    "aa_inteligencia": 29.9,
-    "aa_hle": 49.4,
-    "aa_terminal": 34.8,
-    "aa_contexto": 86.3
-   },
-   "origens": {
-    "livebench": "mimo-v2.6-pro",
-    "lmarena": "MiMo-V2.6-Pro",
-    "artificialanalysis": "mimo-v2-6-pro",
-    "openrouter": "xiaomi/mimo-v2.6-pro"
-   },
-   "parcial": false,
-   "percentis": {
-    "lb_geral": 61.3,
-    "aa_inteligencia": 60,
-    "arena_texto": 95.1,
-    "arena_webdev": 82.8,
-    "arena_visao": 61,
-    "aa_hle": 97.1,
-    "aa_terminal": 87.5,
-    "aa_contexto": 99.6,
-    "lb_agentico": 61.3,
-    "lb_raciocinio": 22.6,
-    "lb_codigo": 32.3,
-    "lb_navegador": 74.2,
-    "lb_dados": 32.3,
-    "lb_pesquisa": 48.4,
-    "lb_design": 64.5
-   },
-   "nota": 72.2,
-   "cobertura": 1,
-   "categorias": {
-    "agentico": 66.3,
-    "codigo": 55,
-    "raciocinio": 56.6,
-    "dados": 41.1,
-    "pesquisa": 66,
-    "design": 65.8,
-    "navegador": 62.1,
-    "conversa": 72.5,
-    "visao": 55.5
-   },
-   "posCategorias": {
-    "agentico": 21,
-    "codigo": 42,
-    "raciocinio": 172,
-    "dados": 22,
-    "pesquisa": 57,
-    "design": 20,
-    "navegador": 9,
-    "conversa": 10,
-    "visao": 41
-   },
-   "posicao": 34
-  },
-  {
    "chave": "muse-spark-1.3",
    "slug": "muse-spark-1.3",
    "familia": "muse-spark",
@@ -2524,7 +2442,7 @@
     "arena_texto": 1491,
     "arena_webdev": 1656,
     "arena_visao": 1308,
-    "aa_inteligencia": 36.4,
+    "aa_inteligencia": 36.6,
     "aa_hle": 48.7,
     "aa_terminal": 33.3,
     "aa_gpqa": 93.5,
@@ -2539,7 +2457,7 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 38.7,
-    "aa_inteligencia": 75.6,
+    "aa_inteligencia": 76,
     "arena_texto": 95.1,
     "arena_webdev": 87.5,
     "arena_visao": 91,
@@ -2555,7 +2473,7 @@
     "lb_pesquisa": 25.8,
     "lb_design": 32.3
    },
-   "nota": 71.9,
+   "nota": 72,
    "cobertura": 1,
    "categorias": {
     "agentico": 57.1,
@@ -2576,10 +2494,153 @@
     "pesquisa": 122,
     "design": 37,
     "navegador": 22,
-    "conversa": 11,
+    "conversa": 10,
     "visao": 11
    },
+   "posicao": 34
+  },
+  {
+   "chave": "mimo-v2.6-pro",
+   "slug": "mimo-v2.6-pro",
+   "familia": "mimo-pro",
+   "versao": 2.6,
+   "nome": "MiMo-V2.6-Pro",
+   "empresa": "Xiaomi",
+   "aberto": true,
+   "hf": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+   "lancamento": "2026-09-21",
+   "contexto": 1050000,
+   "precoEntrada": 0.435,
+   "precoSaida": 0.87,
+   "velocidade": 39.286,
+   "ttft": 2.299,
+   "metricas": {
+    "lb_geral": 68.48,
+    "lb_agentico": 35.2,
+    "lb_raciocinio": 79.6,
+    "lb_codigo": 81.5,
+    "lb_navegador": 77.3,
+    "lb_dados": 72.3,
+    "lb_pesquisa": 76.7,
+    "lb_design": 78.5,
+    "arena_texto": 1491,
+    "arena_webdev": 1625,
+    "arena_visao": 1263,
+    "aa_inteligencia": 29.9,
+    "aa_hle": 49.4,
+    "aa_terminal": 34.8,
+    "aa_contexto": 86.3
+   },
+   "origens": {
+    "livebench": "mimo-v2.6-pro",
+    "lmarena": "MiMo-V2.6-Pro",
+    "artificialanalysis": "mimo-v2-6-pro",
+    "openrouter": "xiaomi/mimo-v2.6-pro"
+   },
+   "parcial": false,
+   "percentis": {
+    "lb_geral": 61.3,
+    "aa_inteligencia": 58,
+    "arena_texto": 95.1,
+    "arena_webdev": 82.8,
+    "arena_visao": 61,
+    "aa_hle": 97.1,
+    "aa_terminal": 87.5,
+    "aa_contexto": 99.6,
+    "lb_agentico": 61.3,
+    "lb_raciocinio": 22.6,
+    "lb_codigo": 32.3,
+    "lb_navegador": 74.2,
+    "lb_dados": 32.3,
+    "lb_pesquisa": 48.4,
+    "lb_design": 64.5
+   },
+   "nota": 71.7,
+   "cobertura": 1,
+   "categorias": {
+    "agentico": 66.3,
+    "codigo": 55,
+    "raciocinio": 56.6,
+    "dados": 41.1,
+    "pesquisa": 66,
+    "design": 65.8,
+    "navegador": 62.1,
+    "conversa": 72.5,
+    "visao": 55.5
+   },
+   "posCategorias": {
+    "agentico": 21,
+    "codigo": 42,
+    "raciocinio": 172,
+    "dados": 22,
+    "pesquisa": 57,
+    "design": 20,
+    "navegador": 9,
+    "conversa": 11,
+    "visao": 41
+   },
    "posicao": 35
+  },
+  {
+   "chave": "gpt-6-sol",
+   "slug": "gpt-6-sol",
+   "familia": "gpt-sol",
+   "versao": 6,
+   "nome": "GPT-6 Sol",
+   "empresa": "OpenAI",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-09-22",
+   "contexto": 1050000,
+   "precoEntrada": 2,
+   "precoSaida": 10,
+   "velocidade": 0,
+   "ttft": 0,
+   "metricas": {
+    "arena_texto": 1397,
+    "arena_webdev": 1678,
+    "arena_visao": 1240,
+    "aa_inteligencia": 44.2,
+    "aa_hle": 47.9,
+    "aa_terminal": 43.9,
+    "aa_contexto": 83.7
+   },
+   "origens": {
+    "lmarena": "GPT-6 Sol (Max)",
+    "artificialanalysis": "gpt-6-sol",
+    "openrouter": "openai/gpt-6-sol"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 80,
+    "arena_texto": 44.1,
+    "arena_webdev": 91.4,
+    "arena_visao": 43.3,
+    "aa_hle": 96.1,
+    "aa_terminal": 91.7,
+    "aa_contexto": 98
+   },
+   "nota": 71.5,
+   "cobertura": 0.74,
+   "categorias": {
+    "agentico": 70.8,
+    "codigo": 70.7,
+    "raciocinio": 73,
+    "pesquisa": 74,
+    "design": 70.7,
+    "conversa": 47,
+    "visao": 46.6
+   },
+   "posCategorias": {
+    "agentico": 13,
+    "codigo": 11,
+    "raciocinio": 56,
+    "pesquisa": 11,
+    "design": 11,
+    "conversa": 109,
+    "visao": 60
+   },
+   "posicao": 36
   },
   {
    "chave": "gemini-3-flash",
@@ -2636,7 +2697,7 @@
     "conversa": 30,
     "visao": 25
    },
-   "posicao": 36
+   "posicao": 37
   },
   {
    "chave": "claude-sonnet-5",
@@ -2697,7 +2758,7 @@
     "conversa": 52,
     "visao": 33
    },
-   "posicao": 37
+   "posicao": 38
   },
   {
    "chave": "claude-sonnet-4.6",
@@ -2758,7 +2819,7 @@
     "conversa": 35,
     "visao": 26
    },
-   "posicao": 38
+   "posicao": 39
   },
   {
    "chave": "qwen3.7-plus",
@@ -2773,8 +2834,8 @@
    "contexto": 1000000,
    "precoEntrada": 0.32,
    "precoSaida": 1.28,
-   "velocidade": 57.415,
-   "ttft": 1.698,
+   "velocidade": 57.774,
+   "ttft": 1.733,
    "metricas": {
     "arena_texto": 1455,
     "arena_visao": 1278,
@@ -2813,7 +2874,7 @@
     "conversa": 39,
     "visao": 31
    },
-   "posicao": 39
+   "posicao": 40
   },
   {
    "chave": "qwen3.8-2.4t-a95b",
@@ -2828,8 +2889,8 @@
    "contexto": 1048576,
    "precoEntrada": 2,
    "precoSaida": 6,
-   "velocidade": 39.244,
-   "ttft": 1.852,
+   "velocidade": 37.607,
+   "ttft": 1.995,
    "metricas": {
     "aa_hle": 42.4,
     "aa_terminal": 11.1,
@@ -2859,7 +2920,7 @@
     "raciocinio": 14,
     "pesquisa": 33
    },
-   "posicao": 40
+   "posicao": 41
   },
   {
    "chave": "motif-3",
@@ -2900,7 +2961,91 @@
     "raciocinio": 52,
     "pesquisa": 87
    },
-   "posicao": 41
+   "posicao": 42
+  },
+  {
+   "chave": "qwen3.8",
+   "slug": "qwen3.8",
+   "familia": "qwen",
+   "versao": 3.8,
+   "nome": "Qwen3.8 Max (0902)",
+   "empresa": "Alibaba",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-09-03",
+   "contexto": 1000000,
+   "precoEntrada": 2,
+   "precoSaida": 6,
+   "velocidade": 37.028,
+   "ttft": 1.99,
+   "metricas": {
+    "lb_geral": 61.56,
+    "lb_agentico": 29.9,
+    "lb_raciocinio": 88.2,
+    "lb_codigo": 60.3,
+    "lb_navegador": 49.4,
+    "lb_dados": 78.4,
+    "lb_pesquisa": 69.9,
+    "lb_design": 78.6,
+    "arena_texto": 1483,
+    "arena_webdev": 1676,
+    "arena_visao": 1313,
+    "aa_inteligencia": 33.7,
+    "aa_hle": 43.1,
+    "aa_terminal": 38.9,
+    "aa_gpqa": 92.8,
+    "aa_contexto": 80.3
+   },
+   "origens": {
+    "livebench": "qwen3.8-max",
+    "lmarena": "Qwen3.8-Max",
+    "artificialanalysis": "qwen3-8-max",
+    "openrouter": "qwen/qwen3.8-max-0902"
+   },
+   "parcial": false,
+   "percentis": {
+    "lb_geral": 32.3,
+    "aa_inteligencia": 70,
+    "arena_texto": 93.1,
+    "arena_webdev": 90.5,
+    "arena_visao": 92.4,
+    "aa_hle": 92.3,
+    "aa_terminal": 88.9,
+    "aa_gpqa": 96.5,
+    "aa_contexto": 88.4,
+    "lb_agentico": 51.6,
+    "lb_raciocinio": 51.6,
+    "lb_codigo": 9.7,
+    "lb_navegador": 43.5,
+    "lb_dados": 61.3,
+    "lb_pesquisa": 29,
+    "lb_design": 67.7
+   },
+   "nota": 68.9,
+   "cobertura": 1,
+   "categorias": {
+    "agentico": 63.5,
+    "codigo": 50.1,
+    "raciocinio": 72.6,
+    "dados": 55.6,
+    "pesquisa": 55.8,
+    "design": 69.4,
+    "navegador": 46.8,
+    "conversa": 71.5,
+    "visao": 71.2
+   },
+   "posCategorias": {
+    "agentico": 27,
+    "codigo": 56,
+    "raciocinio": 57,
+    "dados": 13,
+    "pesquisa": 134,
+    "design": 13,
+    "navegador": 18,
+    "conversa": 15,
+    "visao": 9
+   },
+   "posicao": 43
   },
   {
    "chave": "glm-5.1",
@@ -2957,7 +3102,7 @@
     "design": 48,
     "conversa": 33
    },
-   "posicao": 42
+   "posicao": 44
   },
   {
    "chave": "jt-4.1-flash-236b-a21b",
@@ -3000,172 +3145,6 @@
     "raciocinio": 68,
     "pesquisa": 59
    },
-   "posicao": 43
-  },
-  {
-   "chave": "gpt-5.6-terra",
-   "slug": "gpt-5.6-terra",
-   "familia": "gpt-terra",
-   "versao": 5.6,
-   "nome": "GPT-5.6 Terra",
-   "empresa": "OpenAI",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-07-09",
-   "contexto": 1050000,
-   "precoEntrada": 2,
-   "precoSaida": 12,
-   "velocidade": 0,
-   "ttft": 0,
-   "metricas": {
-    "lb_geral": 67.79,
-    "lb_agentico": 33.1,
-    "lb_raciocinio": 90.6,
-    "lb_codigo": 86.2,
-    "lb_navegador": 70.3,
-    "lb_dados": 79.3,
-    "lb_pesquisa": 60.4,
-    "lb_design": 76,
-    "arena_texto": 1448,
-    "arena_webdev": 1520,
-    "arena_visao": 1271,
-    "aa_hle": 42.9,
-    "aa_terminal": 35.4,
-    "aa_gpqa": 92.5,
-    "aa_contexto": 83
-   },
-   "origens": {
-    "livebench": "gpt-5.6-terra",
-    "lmarena": "GPT-5.6 Terra (xHigh)",
-    "artificialanalysis": "gpt-5-6-terra",
-    "openrouter": "openai/gpt-5.6-terra"
-   },
-   "parcial": false,
-   "percentis": {
-    "lb_geral": 58.1,
-    "arena_texto": 77.7,
-    "arena_webdev": 59.5,
-    "arena_visao": 67.6,
-    "aa_hle": 91.9,
-    "aa_terminal": 88.2,
-    "aa_gpqa": 95.7,
-    "aa_contexto": 95.6,
-    "lb_agentico": 58.1,
-    "lb_raciocinio": 69.4,
-    "lb_codigo": 56.5,
-    "lb_navegador": 62.9,
-    "lb_dados": 71,
-    "lb_pesquisa": 16.1,
-    "lb_design": 41.9
-   },
-   "nota": 68.7,
-   "cobertura": 0.74,
-   "categorias": {
-    "agentico": 65.4,
-    "codigo": 55.3,
-    "raciocinio": 76.8,
-    "dados": 60.5,
-    "pesquisa": 53.9,
-    "design": 50.5,
-    "navegador": 56.5,
-    "conversa": 63.9,
-    "visao": 58.8
-   },
-   "posCategorias": {
-    "agentico": 23,
-    "codigo": 40,
-    "raciocinio": 31,
-    "dados": 10,
-    "pesquisa": 145,
-    "design": 53,
-    "navegador": 12,
-    "conversa": 45,
-    "visao": 35
-   },
-   "posicao": 44
-  },
-  {
-   "chave": "qwen3.8",
-   "slug": "qwen3.8",
-   "familia": "qwen",
-   "versao": 3.8,
-   "nome": "Qwen3.8 Max (0902)",
-   "empresa": "Alibaba",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-09-03",
-   "contexto": 1000000,
-   "precoEntrada": 2,
-   "precoSaida": 6,
-   "velocidade": 38.526,
-   "ttft": 1.966,
-   "metricas": {
-    "lb_geral": 61.56,
-    "lb_agentico": 29.9,
-    "lb_raciocinio": 88.2,
-    "lb_codigo": 60.3,
-    "lb_navegador": 49.4,
-    "lb_dados": 78.4,
-    "lb_pesquisa": 69.9,
-    "lb_design": 78.6,
-    "arena_texto": 1483,
-    "arena_webdev": 1676,
-    "arena_visao": 1313,
-    "aa_inteligencia": 33.6,
-    "aa_hle": 43.1,
-    "aa_terminal": 38.9,
-    "aa_gpqa": 92.8,
-    "aa_contexto": 80.3
-   },
-   "origens": {
-    "livebench": "qwen3.8-max",
-    "lmarena": "Qwen3.8-Max",
-    "artificialanalysis": "qwen3-8-max",
-    "openrouter": "qwen/qwen3.8-max-0902"
-   },
-   "parcial": false,
-   "percentis": {
-    "lb_geral": 32.3,
-    "aa_inteligencia": 68.9,
-    "arena_texto": 93.1,
-    "arena_webdev": 90.5,
-    "arena_visao": 92.4,
-    "aa_hle": 92.3,
-    "aa_terminal": 88.9,
-    "aa_gpqa": 96.5,
-    "aa_contexto": 88.4,
-    "lb_agentico": 51.6,
-    "lb_raciocinio": 51.6,
-    "lb_codigo": 9.7,
-    "lb_navegador": 43.5,
-    "lb_dados": 61.3,
-    "lb_pesquisa": 29,
-    "lb_design": 67.7
-   },
-   "nota": 68.6,
-   "cobertura": 1,
-   "categorias": {
-    "agentico": 63.5,
-    "codigo": 50.1,
-    "raciocinio": 72.6,
-    "dados": 55.6,
-    "pesquisa": 55.8,
-    "design": 69.4,
-    "navegador": 46.8,
-    "conversa": 71.5,
-    "visao": 71.2
-   },
-   "posCategorias": {
-    "agentico": 27,
-    "codigo": 56,
-    "raciocinio": 57,
-    "dados": 13,
-    "pesquisa": 134,
-    "design": 13,
-    "navegador": 18,
-    "conversa": 15,
-    "visao": 9
-   },
    "posicao": 45
   },
   {
@@ -3179,7 +3158,7 @@
    "hf": null,
    "lancamento": "2026-08-01",
    "contexto": 1048576,
-   "precoEntrada": 0.059,
+   "precoEntrada": 0.0553,
    "precoSaida": 0.3,
    "velocidade": 0,
    "ttft": 0,
@@ -3238,8 +3217,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.2156,
    "precoSaida": 0.6468,
-   "velocidade": 144.407,
-   "ttft": 1.514,
+   "velocidade": 145.51,
+   "ttft": 1.577,
    "metricas": {
     "aa_hle": 34.5,
     "aa_terminal": 12.1,
@@ -3367,6 +3346,90 @@
    "posicao": 49
   },
   {
+   "chave": "gpt-5.6-terra",
+   "slug": "gpt-5.6-terra",
+   "familia": "gpt-terra",
+   "versao": 5.6,
+   "nome": "GPT-5.6 Terra",
+   "empresa": "OpenAI",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-07-09",
+   "contexto": 1050000,
+   "precoEntrada": 2,
+   "precoSaida": 12,
+   "velocidade": 0,
+   "ttft": 0,
+   "metricas": {
+    "lb_geral": 67.79,
+    "lb_agentico": 33.1,
+    "lb_raciocinio": 90.6,
+    "lb_codigo": 86.2,
+    "lb_navegador": 70.3,
+    "lb_dados": 79.3,
+    "lb_pesquisa": 60.4,
+    "lb_design": 76,
+    "arena_texto": 1448,
+    "arena_webdev": 1520,
+    "arena_visao": 1271,
+    "aa_inteligencia": 32.3,
+    "aa_hle": 42.9,
+    "aa_terminal": 35.4,
+    "aa_gpqa": 92.5,
+    "aa_contexto": 83
+   },
+   "origens": {
+    "livebench": "gpt-5.6-terra",
+    "lmarena": "GPT-5.6 Terra (xHigh)",
+    "artificialanalysis": "gpt-5-6-terra",
+    "openrouter": "openai/gpt-5.6-terra"
+   },
+   "parcial": false,
+   "percentis": {
+    "lb_geral": 58.1,
+    "aa_inteligencia": 66,
+    "arena_texto": 77.7,
+    "arena_webdev": 59.5,
+    "arena_visao": 67.6,
+    "aa_hle": 91.9,
+    "aa_terminal": 88.2,
+    "aa_gpqa": 95.7,
+    "aa_contexto": 95.6,
+    "lb_agentico": 58.1,
+    "lb_raciocinio": 69.4,
+    "lb_codigo": 56.5,
+    "lb_navegador": 62.9,
+    "lb_dados": 71,
+    "lb_pesquisa": 16.1,
+    "lb_design": 41.9
+   },
+   "nota": 68.1,
+   "cobertura": 1,
+   "categorias": {
+    "agentico": 65.4,
+    "codigo": 55.3,
+    "raciocinio": 76.8,
+    "dados": 60.5,
+    "pesquisa": 53.9,
+    "design": 50.5,
+    "navegador": 56.5,
+    "conversa": 63.9,
+    "visao": 58.8
+   },
+   "posCategorias": {
+    "agentico": 23,
+    "codigo": 40,
+    "raciocinio": 31,
+    "dados": 10,
+    "pesquisa": 145,
+    "design": 53,
+    "navegador": 12,
+    "conversa": 45,
+    "visao": 35
+   },
+   "posicao": 50
+  },
+  {
    "chave": "agnes-2.5-pro",
    "slug": "agnes-2.5-pro",
    "familia": "agnes-pro",
@@ -3405,7 +3468,7 @@
     "raciocinio": 38,
     "pesquisa": 17
    },
-   "posicao": 50
+   "posicao": 51
   },
   {
    "chave": "kimi-k2.6",
@@ -3466,65 +3529,6 @@
     "conversa": 38,
     "visao": 27
    },
-   "posicao": 51
-  },
-  {
-   "chave": "gpt-6-sol",
-   "slug": "gpt-6-sol",
-   "familia": "gpt-sol",
-   "versao": 6,
-   "nome": "GPT-6 Sol",
-   "empresa": "OpenAI",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-09-22",
-   "contexto": 1050000,
-   "precoEntrada": 2,
-   "precoSaida": 10,
-   "velocidade": 0,
-   "ttft": 0,
-   "metricas": {
-    "arena_texto": 1397,
-    "arena_webdev": 1678,
-    "arena_visao": 1240,
-    "aa_hle": 47.9,
-    "aa_terminal": 43.9,
-    "aa_contexto": 83.7
-   },
-   "origens": {
-    "lmarena": "GPT-6 Sol (Max)",
-    "artificialanalysis": "gpt-6-sol",
-    "openrouter": "openai/gpt-6-sol"
-   },
-   "parcial": false,
-   "percentis": {
-    "arena_texto": 44.1,
-    "arena_webdev": 91.4,
-    "arena_visao": 43.3,
-    "aa_hle": 96.1,
-    "aa_terminal": 91.7,
-    "aa_contexto": 98
-   },
-   "nota": 67.5,
-   "cobertura": 0.48,
-   "categorias": {
-    "agentico": 70.8,
-    "codigo": 70.7,
-    "raciocinio": 73,
-    "pesquisa": 74,
-    "design": 70.7,
-    "conversa": 47,
-    "visao": 46.6
-   },
-   "posCategorias": {
-    "agentico": 13,
-    "codigo": 11,
-    "raciocinio": 56,
-    "pesquisa": 11,
-    "design": 11,
-    "conversa": 109,
-    "visao": 60
-   },
    "posicao": 52
   },
   {
@@ -3540,8 +3544,8 @@
    "contexto": 1000000,
    "precoEntrada": 0.1,
    "precoSaida": 0.5,
-   "velocidade": 233.826,
-   "ttft": 231.209,
+   "velocidade": 236.322,
+   "ttft": 235.936,
    "metricas": {
     "lb_geral": 69.85,
     "lb_agentico": 40,
@@ -3553,7 +3557,7 @@
     "lb_design": 83.1,
     "arena_texto": 1401,
     "arena_webdev": 1589,
-    "aa_inteligencia": 36.2,
+    "aa_inteligencia": 36.5,
     "aa_hle": 44.4,
     "aa_terminal": 32.8,
     "aa_contexto": 82.7
@@ -3567,7 +3571,7 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 64.5,
-    "aa_inteligencia": 73.3,
+    "aa_inteligencia": 74,
     "arena_texto": 45.6,
     "arena_webdev": 75,
     "aa_hle": 94.1,
@@ -3581,7 +3585,7 @@
     "lb_pesquisa": 71,
     "lb_design": 87.1
    },
-   "nota": 67.3,
+   "nota": 67.5,
    "cobertura": 0.96,
    "categorias": {
     "agentico": 68.3,
@@ -3670,8 +3674,8 @@
    "contexto": 500000,
    "precoEntrada": 2,
    "precoSaida": 6,
-   "velocidade": 64.442,
-   "ttft": 13.948,
+   "velocidade": 61.593,
+   "ttft": 16.627,
    "metricas": {
     "lb_geral": 70.14,
     "lb_agentico": 46.1,
@@ -3684,7 +3688,7 @@
     "arena_texto": 1398,
     "arena_webdev": 1637,
     "arena_visao": 1231,
-    "aa_inteligencia": 35.3,
+    "aa_inteligencia": 35.5,
     "aa_hle": 43.1,
     "aa_terminal": 25.8,
     "aa_contexto": 76.7
@@ -3698,7 +3702,7 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 67.7,
-    "aa_inteligencia": 71.1,
+    "aa_inteligencia": 72,
     "arena_texto": 45.1,
     "arena_webdev": 84.9,
     "arena_visao": 41,
@@ -3713,7 +3717,7 @@
     "lb_pesquisa": 96.8,
     "lb_design": 61.3
    },
-   "nota": 66.9,
+   "nota": 67.1,
    "cobertura": 1,
    "categorias": {
     "agentico": 68.6,
@@ -3781,52 +3785,6 @@
    "posicao": 56
   },
   {
-   "chave": "ling-3.1-flash",
-   "slug": "ling-3.1-flash",
-   "familia": "ling-flash",
-   "versao": 3.1,
-   "nome": "Ling 3.1 Flash",
-   "empresa": "Inclusionai",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-10-02",
-   "contexto": 1000000,
-   "precoEntrada": 0.075,
-   "precoSaida": 0.225,
-   "velocidade": 0,
-   "ttft": 0,
-   "metricas": {
-    "aa_inteligencia": 29.5,
-    "aa_hle": 43.5,
-    "aa_terminal": 32.8,
-    "aa_contexto": 82.3
-   },
-   "origens": {
-    "artificialanalysis": "ling-3-1-flash-1019",
-    "openrouter": "inclusionai/ling-3.1-flash"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 57.8,
-    "aa_hle": 92.9,
-    "aa_terminal": 84,
-    "aa_contexto": 92.9
-   },
-   "nota": 66.7,
-   "cobertura": 0.43,
-   "categorias": {
-    "agentico": 67,
-    "raciocinio": 71.5,
-    "pesquisa": 71.5
-   },
-   "posCategorias": {
-    "agentico": 20,
-    "raciocinio": 69,
-    "pesquisa": 22
-   },
-   "posicao": 57
-  },
-  {
    "chave": "qwen3",
    "slug": "qwen3",
    "familia": "qwen",
@@ -3870,7 +3828,7 @@
     "pesquisa": 90,
     "conversa": 59
    },
-   "posicao": 58
+   "posicao": 57
   },
   {
    "chave": "nex-n2-pro",
@@ -3911,6 +3869,52 @@
     "raciocinio": 54,
     "pesquisa": 29
    },
+   "posicao": 58
+  },
+  {
+   "chave": "ling-3.1-flash",
+   "slug": "ling-3.1-flash",
+   "familia": "ling-flash",
+   "versao": 3.1,
+   "nome": "Ling 3.1 Flash",
+   "empresa": "Inclusionai",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-10-02",
+   "contexto": 1000000,
+   "precoEntrada": 0.075,
+   "precoSaida": 0.225,
+   "velocidade": 0,
+   "ttft": 0,
+   "metricas": {
+    "aa_inteligencia": 29.6,
+    "aa_hle": 43.5,
+    "aa_terminal": 32.8,
+    "aa_contexto": 82.3
+   },
+   "origens": {
+    "artificialanalysis": "ling-3-1-flash-1019",
+    "openrouter": "inclusionai/ling-3.1-flash"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 56,
+    "aa_hle": 92.9,
+    "aa_terminal": 84,
+    "aa_contexto": 92.9
+   },
+   "nota": 65.8,
+   "cobertura": 0.43,
+   "categorias": {
+    "agentico": 67,
+    "raciocinio": 71.5,
+    "pesquisa": 71.5
+   },
+   "posCategorias": {
+    "agentico": 20,
+    "raciocinio": 69,
+    "pesquisa": 22
+   },
    "posicao": 59
   },
   {
@@ -3926,8 +3930,8 @@
    "contexto": 1050000,
    "precoEntrada": 0.14,
    "precoSaida": 0.28,
-   "velocidade": 31.106,
-   "ttft": 2.478,
+   "velocidade": 29.658,
+   "ttft": 2.386,
    "metricas": {
     "arena_texto": 1451,
     "arena_webdev": 1637,
@@ -3944,7 +3948,7 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 46.7,
+    "aa_inteligencia": 46,
     "arena_texto": 79.2,
     "arena_webdev": 84.9,
     "arena_visao": 55.2,
@@ -3952,7 +3956,7 @@
     "aa_terminal": 79.2,
     "aa_contexto": 72.1
    },
-   "nota": 65.8,
+   "nota": 65.5,
    "cobertura": 0.74,
    "categorias": {
     "agentico": 64.6,
@@ -3973,88 +3977,6 @@
     "visao": 48
    },
    "posicao": 60
-  },
-  {
-   "chave": "grok-4.6",
-   "slug": "grok-4.6",
-   "familia": "grok",
-   "versao": 4.6,
-   "nome": "Grok 4.6",
-   "empresa": "xAI",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-08-12",
-   "contexto": 500000,
-   "precoEntrada": 2,
-   "precoSaida": 6,
-   "velocidade": 0,
-   "ttft": 0,
-   "metricas": {
-    "lb_geral": 67.75,
-    "lb_agentico": 28,
-    "lb_raciocinio": 91.2,
-    "lb_codigo": 89.1,
-    "lb_navegador": 49.4,
-    "lb_dados": 75.3,
-    "lb_pesquisa": 84.5,
-    "lb_design": 79.8,
-    "arena_texto": 1429,
-    "arena_webdev": 1616,
-    "arena_visao": 1263,
-    "aa_hle": 44.1,
-    "aa_terminal": 17.2,
-    "aa_gpqa": 93.5,
-    "aa_contexto": 81
-   },
-   "origens": {
-    "livebench": "grok-4.6",
-    "lmarena": "Grok 4.6 (High)",
-    "artificialanalysis": "grok-4-6-xhigh",
-    "openrouter": "x-ai/grok-4.6"
-   },
-   "parcial": false,
-   "percentis": {
-    "lb_geral": 54.8,
-    "arena_texto": 62.1,
-    "arena_webdev": 79.7,
-    "arena_visao": 61,
-    "aa_hle": 93.8,
-    "aa_terminal": 77.1,
-    "aa_gpqa": 98.4,
-    "aa_contexto": 89.9,
-    "lb_agentico": 45.2,
-    "lb_raciocinio": 80.6,
-    "lb_codigo": 64.5,
-    "lb_navegador": 43.5,
-    "lb_dados": 41.9,
-    "lb_pesquisa": 87.1,
-    "lb_design": 71
-   },
-   "nota": 65.2,
-   "cobertura": 0.74,
-   "categorias": {
-    "agentico": 57.4,
-    "codigo": 64.7,
-    "raciocinio": 80.7,
-    "dados": 46,
-    "pesquisa": 75.7,
-    "design": 66.9,
-    "navegador": 46.8,
-    "conversa": 56,
-    "visao": 55.5
-   },
-   "posCategorias": {
-    "agentico": 43,
-    "codigo": 21,
-    "raciocinio": 10,
-    "dados": 19,
-    "pesquisa": 5,
-    "design": 17,
-    "navegador": 19,
-    "conversa": 75,
-    "visao": 42
-   },
-   "posicao": 61
   },
   {
    "chave": "gpt-5.6-luna",
@@ -4115,91 +4037,7 @@
     "conversa": 71,
     "visao": 47
    },
-   "posicao": 62
-  },
-  {
-   "chave": "gemini-3.8-flash",
-   "slug": "gemini-3.8-flash",
-   "familia": "gemini-flash",
-   "versao": 3.8,
-   "nome": "Gemini 3.8 Flash",
-   "empresa": "Google",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-09-02",
-   "contexto": 1048576,
-   "precoEntrada": 0.825,
-   "precoSaida": 4.125,
-   "velocidade": 133.606,
-   "ttft": 14.307,
-   "metricas": {
-    "lb_geral": 59.21,
-    "lb_agentico": 16.5,
-    "lb_raciocinio": 89.3,
-    "lb_codigo": 82.2,
-    "lb_navegador": 45.1,
-    "lb_dados": 54,
-    "lb_pesquisa": 79.1,
-    "lb_design": 72.7,
-    "arena_texto": 1498,
-    "arena_webdev": 1583,
-    "arena_visao": 1315,
-    "aa_inteligencia": 30.5,
-    "aa_hle": 47.8,
-    "aa_terminal": 19.7,
-    "aa_gpqa": 95.3,
-    "aa_contexto": 81.3
-   },
-   "origens": {
-    "livebench": "gemini-3.8-flash",
-    "lmarena": "Gemini 3.8 Flash (High)",
-    "artificialanalysis": "gemini-3-8-flash",
-    "openrouter": "google/gemini-3.8-flash"
-   },
-   "parcial": false,
-   "percentis": {
-    "lb_geral": 29,
-    "aa_inteligencia": 62.2,
-    "arena_texto": 96.4,
-    "arena_webdev": 74.1,
-    "arena_visao": 94.3,
-    "aa_hle": 95.7,
-    "aa_terminal": 77.8,
-    "aa_gpqa": 99.7,
-    "aa_contexto": 90.5,
-    "lb_agentico": 22.6,
-    "lb_raciocinio": 61.3,
-    "lb_codigo": 38.7,
-    "lb_navegador": 35.5,
-    "lb_dados": 6.5,
-    "lb_pesquisa": 58.1,
-    "lb_design": 22.6
-   },
-   "nota": 64.9,
-   "cobertura": 1,
-   "categorias": {
-    "agentico": 50.1,
-    "codigo": 54.3,
-    "raciocinio": 76.7,
-    "dados": 28.3,
-    "pesquisa": 66.2,
-    "design": 48.9,
-    "navegador": 42.8,
-    "conversa": 73.2,
-    "visao": 72.2
-   },
-   "posCategorias": {
-    "agentico": 65,
-    "codigo": 45,
-    "raciocinio": 33,
-    "dados": 30,
-    "pesquisa": 53,
-    "design": 59,
-    "navegador": 21,
-    "conversa": 8,
-    "visao": 7
-   },
-   "posicao": 63
+   "posicao": 61
   },
   {
    "chave": "glm-5",
@@ -4252,7 +4090,7 @@
     "design": 66,
     "conversa": 48
    },
-   "posicao": 64
+   "posicao": 62
   },
   {
    "chave": "kimi-k2.5",
@@ -4308,6 +4146,174 @@
     "design": 67,
     "conversa": 49,
     "visao": 36
+   },
+   "posicao": 63
+  },
+  {
+   "chave": "grok-4.6",
+   "slug": "grok-4.6",
+   "familia": "grok",
+   "versao": 4.6,
+   "nome": "Grok 4.6",
+   "empresa": "xAI",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-08-12",
+   "contexto": 500000,
+   "precoEntrada": 2,
+   "precoSaida": 6,
+   "velocidade": 0,
+   "ttft": 0,
+   "metricas": {
+    "lb_geral": 67.75,
+    "lb_agentico": 28,
+    "lb_raciocinio": 91.2,
+    "lb_codigo": 89.1,
+    "lb_navegador": 49.4,
+    "lb_dados": 75.3,
+    "lb_pesquisa": 84.5,
+    "lb_design": 79.8,
+    "arena_texto": 1429,
+    "arena_webdev": 1616,
+    "arena_visao": 1263,
+    "aa_inteligencia": 31,
+    "aa_hle": 44.1,
+    "aa_terminal": 17.2,
+    "aa_gpqa": 93.5,
+    "aa_contexto": 81
+   },
+   "origens": {
+    "livebench": "grok-4.6",
+    "lmarena": "Grok 4.6 (High)",
+    "artificialanalysis": "grok-4-6-xhigh",
+    "openrouter": "x-ai/grok-4.6"
+   },
+   "parcial": false,
+   "percentis": {
+    "lb_geral": 54.8,
+    "aa_inteligencia": 62,
+    "arena_texto": 62.1,
+    "arena_webdev": 79.7,
+    "arena_visao": 61,
+    "aa_hle": 93.8,
+    "aa_terminal": 77.1,
+    "aa_gpqa": 98.4,
+    "aa_contexto": 89.9,
+    "lb_agentico": 45.2,
+    "lb_raciocinio": 80.6,
+    "lb_codigo": 64.5,
+    "lb_navegador": 43.5,
+    "lb_dados": 41.9,
+    "lb_pesquisa": 87.1,
+    "lb_design": 71
+   },
+   "nota": 64.5,
+   "cobertura": 1,
+   "categorias": {
+    "agentico": 57.4,
+    "codigo": 64.7,
+    "raciocinio": 80.7,
+    "dados": 46,
+    "pesquisa": 75.7,
+    "design": 66.9,
+    "navegador": 46.8,
+    "conversa": 56,
+    "visao": 55.5
+   },
+   "posCategorias": {
+    "agentico": 43,
+    "codigo": 21,
+    "raciocinio": 10,
+    "dados": 19,
+    "pesquisa": 5,
+    "design": 17,
+    "navegador": 19,
+    "conversa": 75,
+    "visao": 42
+   },
+   "posicao": 64
+  },
+  {
+   "chave": "gemini-3.8-flash",
+   "slug": "gemini-3.8-flash",
+   "familia": "gemini-flash",
+   "versao": 3.8,
+   "nome": "Gemini 3.8 Flash",
+   "empresa": "Google",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-09-02",
+   "contexto": 1048576,
+   "precoEntrada": 0.825,
+   "precoSaida": 4.125,
+   "velocidade": 118.282,
+   "ttft": 17.463,
+   "metricas": {
+    "lb_geral": 59.21,
+    "lb_agentico": 16.5,
+    "lb_raciocinio": 89.3,
+    "lb_codigo": 82.2,
+    "lb_navegador": 45.1,
+    "lb_dados": 54,
+    "lb_pesquisa": 79.1,
+    "lb_design": 72.7,
+    "arena_texto": 1498,
+    "arena_webdev": 1583,
+    "arena_visao": 1315,
+    "aa_inteligencia": 30.8,
+    "aa_hle": 47.8,
+    "aa_terminal": 19.7,
+    "aa_gpqa": 95.3,
+    "aa_contexto": 81.3
+   },
+   "origens": {
+    "livebench": "gemini-3.8-flash",
+    "lmarena": "Gemini 3.8 Flash (High)",
+    "artificialanalysis": "gemini-3-8-flash",
+    "openrouter": "google/gemini-3.8-flash"
+   },
+   "parcial": false,
+   "percentis": {
+    "lb_geral": 29,
+    "aa_inteligencia": 60,
+    "arena_texto": 96.4,
+    "arena_webdev": 74.1,
+    "arena_visao": 94.3,
+    "aa_hle": 95.7,
+    "aa_terminal": 77.8,
+    "aa_gpqa": 99.7,
+    "aa_contexto": 90.5,
+    "lb_agentico": 22.6,
+    "lb_raciocinio": 61.3,
+    "lb_codigo": 38.7,
+    "lb_navegador": 35.5,
+    "lb_dados": 6.5,
+    "lb_pesquisa": 58.1,
+    "lb_design": 22.6
+   },
+   "nota": 64.4,
+   "cobertura": 1,
+   "categorias": {
+    "agentico": 50.1,
+    "codigo": 54.3,
+    "raciocinio": 76.7,
+    "dados": 28.3,
+    "pesquisa": 66.2,
+    "design": 48.9,
+    "navegador": 42.8,
+    "conversa": 73.2,
+    "visao": 72.2
+   },
+   "posCategorias": {
+    "agentico": 65,
+    "codigo": 45,
+    "raciocinio": 33,
+    "dados": 30,
+    "pesquisa": 53,
+    "design": 59,
+    "navegador": 21,
+    "conversa": 8,
+    "visao": 7
    },
    "posicao": 65
   },
@@ -4534,9 +4540,9 @@
    "lancamento": "2026-08-12",
    "contexto": 1048576,
    "precoEntrada": 0.115,
-   "precoSaida": 4,
-   "velocidade": 82.927,
-   "ttft": 1.102,
+   "precoSaida": 4.6,
+   "velocidade": 73.464,
+   "ttft": 1.068,
    "metricas": {
     "arena_texto": 1451,
     "arena_webdev": 1582,
@@ -4708,8 +4714,8 @@
    "contexto": 262144,
    "precoEntrada": 0.0825,
    "precoSaida": 0.33,
-   "velocidade": 92.529,
-   "ttft": 1.902,
+   "velocidade": 92.9,
+   "ttft": 1.921,
    "metricas": {
     "arena_texto": 1439,
     "arena_webdev": 1505,
@@ -4765,7 +4771,7 @@
    "contexto": 1048576,
    "precoEntrada": 0.075,
    "precoSaida": 0.3,
-   "velocidade": 116.232,
+   "velocidade": 105.556,
    "ttft": 0.737,
    "metricas": {
     "lb_geral": 66.89,
@@ -4777,7 +4783,7 @@
     "lb_pesquisa": 72.7,
     "lb_design": 74,
     "arena_webdev": 1582,
-    "aa_inteligencia": 28.9,
+    "aa_inteligencia": 29.1,
     "aa_hle": 48,
     "aa_terminal": 25.8,
     "aa_contexto": 79.7
@@ -4791,7 +4797,7 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 51.6,
-    "aa_inteligencia": 55.6,
+    "aa_inteligencia": 54,
     "arena_webdev": 72.4,
     "aa_hle": 96.4,
     "aa_terminal": 81.6,
@@ -4804,7 +4810,7 @@
     "lb_pesquisa": 38.7,
     "lb_design": 29
    },
-   "nota": 62.2,
+   "nota": 61.7,
    "cobertura": 0.78,
    "categorias": {
     "agentico": 60,
@@ -4837,10 +4843,10 @@
    "hf": "zai-org/GLM-5.3-Flash",
    "lancamento": "2026-08-26",
    "contexto": 1048576,
-   "precoEntrada": 0.0313,
-   "precoSaida": 0.0846,
-   "velocidade": 64.421,
-   "ttft": 1.101,
+   "precoEntrada": 0.0269,
+   "precoSaida": 0.0996,
+   "velocidade": 62.382,
+   "ttft": 1.043,
    "metricas": {
     "lb_geral": 62.07,
     "lb_agentico": 19,
@@ -4868,7 +4874,7 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 35.5,
-    "aa_inteligencia": 50,
+    "aa_inteligencia": 48,
     "arena_texto": 87.4,
     "arena_webdev": 78.4,
     "arena_visao": 82.4,
@@ -4884,7 +4890,7 @@
     "lb_pesquisa": 32.3,
     "lb_design": 53.2
    },
-   "nota": 61.9,
+   "nota": 61.4,
    "cobertura": 1,
    "categorias": {
     "agentico": 53.3,
@@ -5028,8 +5034,8 @@
    "contexto": null,
    "precoEntrada": 0.1,
    "precoSaida": 0.4,
-   "velocidade": 110.493,
-   "ttft": 1.066,
+   "velocidade": 105.418,
+   "ttft": 1.06,
    "metricas": {
     "aa_hle": 25.8,
     "aa_terminal": 1,
@@ -5128,8 +5134,8 @@
    "contexto": 262144,
    "precoEntrada": 0.6,
    "precoSaida": 3.5,
-   "velocidade": 45.745,
-   "ttft": 1.07,
+   "velocidade": 44.194,
+   "ttft": 1.138,
    "metricas": {
     "arena_webdev": 1474,
     "aa_hle": 35,
@@ -5370,8 +5376,8 @@
    "contexto": 400000,
    "precoEntrada": 1.75,
    "precoSaida": 14,
-   "velocidade": 90.196,
-   "ttft": 36.082,
+   "velocidade": 80.506,
+   "ttft": 40.728,
    "metricas": {
     "arena_webdev": 1407,
     "aa_hle": 42.5,
@@ -5558,8 +5564,8 @@
    "contexto": null,
    "precoEntrada": 0.11,
    "precoSaida": 0.33,
-   "velocidade": 141.201,
-   "ttft": 0.552,
+   "velocidade": 140.921,
+   "ttft": 0.557,
    "metricas": {
     "aa_hle": 18.7,
     "aa_terminal": 1,
@@ -5589,88 +5595,6 @@
     "pesquisa": 80
    },
    "posicao": 90
-  },
-  {
-   "chave": "step-5",
-   "slug": "step-5",
-   "familia": "step",
-   "versao": 5,
-   "nome": "Step 5 Preview",
-   "empresa": "StepFun",
-   "aberto": true,
-   "hf": "stepfun-ai/Step-5-Preview",
-   "lancamento": "2026-10-08",
-   "contexto": 1048576,
-   "precoEntrada": 1,
-   "precoSaida": 2.7,
-   "velocidade": 133.822,
-   "ttft": 0.754,
-   "metricas": {
-    "lb_geral": 58.61,
-    "lb_agentico": 19.4,
-    "lb_raciocinio": 83.8,
-    "lb_codigo": 85.6,
-    "lb_navegador": 24.8,
-    "lb_dados": 63.5,
-    "lb_pesquisa": 72.8,
-    "lb_design": 76.9,
-    "arena_texto": 1443,
-    "arena_webdev": 1571,
-    "arena_visao": 1265,
-    "aa_inteligencia": 28.5,
-    "aa_hle": 46.5,
-    "aa_terminal": 33.3,
-    "aa_contexto": 88.3
-   },
-   "origens": {
-    "livebench": "step-5-preview",
-    "lmarena": "Step 5 Preview",
-    "artificialanalysis": "step-5",
-    "openrouter": "stepfun/step-5-preview"
-   },
-   "parcial": false,
-   "percentis": {
-    "lb_geral": 25.8,
-    "aa_inteligencia": 53.3,
-    "arena_texto": 72.8,
-    "arena_webdev": 69.8,
-    "arena_visao": 63.8,
-    "aa_hle": 95.2,
-    "aa_terminal": 85.8,
-    "aa_contexto": 100,
-    "lb_agentico": 29,
-    "lb_raciocinio": 41.9,
-    "lb_codigo": 51.6,
-    "lb_navegador": 22.6,
-    "lb_dados": 16.1,
-    "lb_pesquisa": 41.9,
-    "lb_design": 48.4
-   },
-   "nota": 57.2,
-   "cobertura": 1,
-   "categorias": {
-    "agentico": 54.9,
-    "codigo": 57.1,
-    "raciocinio": 62.4,
-    "dados": 33,
-    "pesquisa": 64,
-    "design": 56.1,
-    "navegador": 36.3,
-    "conversa": 61.4,
-    "visao": 56.9
-   },
-   "posCategorias": {
-    "agentico": 52,
-    "codigo": 35,
-    "raciocinio": 128,
-    "dados": 27,
-    "pesquisa": 71,
-    "design": 39,
-    "navegador": 25,
-    "conversa": 54,
-    "visao": 39
-   },
-   "posicao": 91
   },
   {
    "chave": "mimo-v2-omni",
@@ -5720,7 +5644,7 @@
     "conversa": 82,
     "visao": 65
    },
-   "posicao": 92
+   "posicao": 91
   },
   {
    "chave": "k2-horizon-7b",
@@ -5765,7 +5689,7 @@
     "raciocinio": 161,
     "pesquisa": 135
    },
-   "posicao": 93
+   "posicao": 92
   },
   {
    "chave": "gpt-5.5-instant",
@@ -5815,6 +5739,86 @@
     "conversa": 86,
     "visao": 52
    },
+   "posicao": 93
+  },
+  {
+   "chave": "kimi-k3",
+   "slug": "kimi-k3",
+   "familia": "kimi-k",
+   "versao": 3,
+   "nome": "Kimi K3",
+   "empresa": "Moonshot AI",
+   "aberto": true,
+   "hf": "moonshotai/Kimi-K3",
+   "lancamento": "2026-07-16",
+   "contexto": 1048576,
+   "precoEntrada": 0.192,
+   "precoSaida": 16,
+   "velocidade": 0,
+   "ttft": 0,
+   "metricas": {
+    "lb_geral": 64.57,
+    "lb_agentico": 26.4,
+    "lb_raciocinio": 90.7,
+    "lb_codigo": 59.3,
+    "lb_navegador": 75.2,
+    "lb_dados": 78.7,
+    "lb_pesquisa": 79,
+    "lb_design": 77.2,
+    "arena_texto": 1476,
+    "arena_webdev": 1656,
+    "aa_inteligencia": 17.4,
+    "aa_hle": 25,
+    "aa_terminal": 12.6,
+    "aa_gpqa": 84.2,
+    "aa_contexto": 79.3
+   },
+   "origens": {
+    "livebench": "kimi-k3",
+    "lmarena": "Kimi K3 (Max)",
+    "artificialanalysis": "kimi-k3-low",
+    "openrouter": "moonshotai/kimi-k3"
+   },
+   "parcial": false,
+   "percentis": {
+    "lb_geral": 45.2,
+    "aa_inteligencia": 28,
+    "arena_texto": 89.7,
+    "arena_webdev": 87.5,
+    "aa_hle": 74.1,
+    "aa_terminal": 73.3,
+    "aa_gpqa": 75.3,
+    "aa_contexto": 83.9,
+    "lb_agentico": 38.7,
+    "lb_raciocinio": 74.2,
+    "lb_codigo": 3.2,
+    "lb_navegador": 67.7,
+    "lb_dados": 64.5,
+    "lb_pesquisa": 54.8,
+    "lb_design": 53.2
+   },
+   "nota": 57,
+   "cobertura": 0.96,
+   "categorias": {
+    "agentico": 54,
+    "codigo": 46.9,
+    "raciocinio": 68.4,
+    "dados": 57.3,
+    "pesquisa": 62.9,
+    "design": 63.6,
+    "navegador": 58.9,
+    "conversa": 69.8
+   },
+   "posCategorias": {
+    "agentico": 55,
+    "codigo": 65,
+    "raciocinio": 86,
+    "dados": 12,
+    "pesquisa": 78,
+    "design": 25,
+    "navegador": 11,
+    "conversa": 21
+   },
    "posicao": 94
   },
   {
@@ -5859,82 +5863,84 @@
    "posicao": 95
   },
   {
-   "chave": "kimi-k3",
-   "slug": "kimi-k3",
-   "familia": "kimi-k",
-   "versao": 3,
-   "nome": "Kimi K3",
-   "empresa": "Moonshot AI",
+   "chave": "step-5",
+   "slug": "step-5",
+   "familia": "step",
+   "versao": 5,
+   "nome": "Step 5 Preview",
+   "empresa": "StepFun",
    "aberto": true,
-   "hf": "moonshotai/Kimi-K3",
-   "lancamento": "2026-07-16",
+   "hf": "stepfun-ai/Step-5-Preview",
+   "lancamento": "2026-10-08",
    "contexto": 1048576,
-   "precoEntrada": 0.276,
-   "precoSaida": 9.6,
-   "velocidade": 0,
-   "ttft": 0,
+   "precoEntrada": 1,
+   "precoSaida": 2.7,
+   "velocidade": 133.822,
+   "ttft": 0.797,
    "metricas": {
-    "lb_geral": 64.57,
-    "lb_agentico": 26.4,
-    "lb_raciocinio": 90.7,
-    "lb_codigo": 59.3,
-    "lb_navegador": 75.2,
-    "lb_dados": 78.7,
-    "lb_pesquisa": 79,
-    "lb_design": 77.2,
-    "arena_texto": 1476,
-    "arena_webdev": 1656,
-    "aa_inteligencia": 17.4,
-    "aa_hle": 25,
-    "aa_terminal": 12.6,
-    "aa_gpqa": 84.2,
-    "aa_contexto": 79.3
+    "lb_geral": 58.61,
+    "lb_agentico": 19.4,
+    "lb_raciocinio": 83.8,
+    "lb_codigo": 85.6,
+    "lb_navegador": 24.8,
+    "lb_dados": 63.5,
+    "lb_pesquisa": 72.8,
+    "lb_design": 76.9,
+    "arena_texto": 1443,
+    "arena_webdev": 1571,
+    "arena_visao": 1265,
+    "aa_inteligencia": 28.5,
+    "aa_hle": 46.5,
+    "aa_terminal": 33.3,
+    "aa_contexto": 88.3
    },
    "origens": {
-    "livebench": "kimi-k3",
-    "lmarena": "Kimi K3 (Max)",
-    "artificialanalysis": "kimi-k3-low",
-    "openrouter": "moonshotai/kimi-k3"
+    "livebench": "step-5-preview",
+    "lmarena": "Step 5 Preview",
+    "artificialanalysis": "step-5",
+    "openrouter": "stepfun/step-5-preview"
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 45.2,
-    "aa_inteligencia": 26.7,
-    "arena_texto": 89.7,
-    "arena_webdev": 87.5,
-    "aa_hle": 74.1,
-    "aa_terminal": 73.3,
-    "aa_gpqa": 75.3,
-    "aa_contexto": 83.9,
-    "lb_agentico": 38.7,
-    "lb_raciocinio": 74.2,
-    "lb_codigo": 3.2,
-    "lb_navegador": 67.7,
-    "lb_dados": 64.5,
-    "lb_pesquisa": 54.8,
-    "lb_design": 53.2
+    "lb_geral": 25.8,
+    "aa_inteligencia": 52,
+    "arena_texto": 72.8,
+    "arena_webdev": 69.8,
+    "arena_visao": 63.8,
+    "aa_hle": 95.2,
+    "aa_terminal": 85.8,
+    "aa_contexto": 100,
+    "lb_agentico": 29,
+    "lb_raciocinio": 41.9,
+    "lb_codigo": 51.6,
+    "lb_navegador": 22.6,
+    "lb_dados": 16.1,
+    "lb_pesquisa": 41.9,
+    "lb_design": 48.4
    },
-   "nota": 56.7,
-   "cobertura": 0.96,
+   "nota": 56.9,
+   "cobertura": 1,
    "categorias": {
-    "agentico": 54,
-    "codigo": 46.9,
-    "raciocinio": 68.4,
-    "dados": 57.3,
-    "pesquisa": 62.9,
-    "design": 63.6,
-    "navegador": 58.9,
-    "conversa": 69.8
+    "agentico": 54.9,
+    "codigo": 57.1,
+    "raciocinio": 62.4,
+    "dados": 33,
+    "pesquisa": 64,
+    "design": 56.1,
+    "navegador": 36.3,
+    "conversa": 61.4,
+    "visao": 56.9
    },
    "posCategorias": {
-    "agentico": 55,
-    "codigo": 65,
-    "raciocinio": 86,
-    "dados": 12,
-    "pesquisa": 78,
-    "design": 25,
-    "navegador": 11,
-    "conversa": 21
+    "agentico": 52,
+    "codigo": 35,
+    "raciocinio": 128,
+    "dados": 27,
+    "pesquisa": 71,
+    "design": 39,
+    "navegador": 25,
+    "conversa": 54,
+    "visao": 39
    },
    "posicao": 96
   },
@@ -5997,8 +6003,8 @@
    "contexto": null,
    "precoEntrada": 0.1,
    "precoSaida": 0.3,
-   "velocidade": 139.713,
-   "ttft": 1.168,
+   "velocidade": 138.645,
+   "ttft": 1.169,
    "metricas": {
     "aa_hle": 15.7,
     "aa_gpqa": 75.3,
@@ -6038,8 +6044,8 @@
    "contexto": null,
    "precoEntrada": 0.4,
    "precoSaida": 4.8,
-   "velocidade": 119.696,
-   "ttft": 1.101,
+   "velocidade": 112.622,
+   "ttft": 1.123,
    "metricas": {
     "aa_hle": 14.9,
     "aa_gpqa": 82.6,
@@ -6079,8 +6085,8 @@
    "contexto": null,
    "precoEntrada": 0.3,
    "precoSaida": 2.5,
-   "velocidade": 124.873,
-   "ttft": 2.005,
+   "velocidade": 116.341,
+   "ttft": 1.949,
    "metricas": {
     "aa_hle": 21.6,
     "aa_terminal": 0.5,
@@ -6498,10 +6504,10 @@
    "hf": "google/gemma-4-26B-A4B-it",
    "lancamento": "2026-04-03",
    "contexto": 262144,
-   "precoEntrada": 0.072,
-   "precoSaida": 0.216,
-   "velocidade": 97.6,
-   "ttft": 0.534,
+   "precoEntrada": 0.1,
+   "precoSaida": 0.3,
+   "velocidade": 97.564,
+   "ttft": 0.543,
    "metricas": {
     "arena_texto": 1434,
     "arena_webdev": 1359,
@@ -6557,8 +6563,8 @@
    "contexto": 1050000,
    "precoEntrada": 0.1,
    "precoSaida": 0.5,
-   "velocidade": 122.93,
-   "ttft": 89.612,
+   "velocidade": 125.752,
+   "ttft": 85.682,
    "metricas": {
     "lb_geral": 64.59,
     "lb_agentico": 30.9,
@@ -6571,7 +6577,7 @@
     "arena_texto": 1389,
     "arena_webdev": 1579,
     "arena_visao": 1216,
-    "aa_inteligencia": 27.8,
+    "aa_inteligencia": 27.9,
     "aa_hle": 38.5,
     "aa_terminal": 12.6,
     "aa_contexto": 83.3
@@ -6865,8 +6871,8 @@
    "contexto": 262144,
    "precoEntrada": 0.5,
    "precoSaida": 3.6,
-   "velocidade": 58.957,
-   "ttft": 1.589,
+   "velocidade": 58.752,
+   "ttft": 1.553,
    "metricas": {
     "arena_texto": 1438,
     "arena_webdev": 1400,
@@ -6926,8 +6932,8 @@
    "contexto": 262144,
    "precoEntrada": 0.17,
    "precoSaida": 0.25,
-   "velocidade": 70.473,
-   "ttft": 0.796,
+   "velocidade": 78.13,
+   "ttft": 0.911,
    "metricas": {
     "aa_hle": 14.9,
     "aa_terminal": 0.5,
@@ -6972,8 +6978,8 @@
    "contexto": null,
    "precoEntrada": 0.3,
    "precoSaida": 2.5,
-   "velocidade": 192.015,
-   "ttft": 9.097,
+   "velocidade": 190.059,
+   "ttft": 12.649,
    "metricas": {
     "aa_hle": 11.6,
     "aa_gpqa": 81.1,
@@ -7038,6 +7044,69 @@
    "posicao": 119
   },
   {
+   "chave": "minimax-m3",
+   "slug": "minimax-m3",
+   "familia": "minimax-m",
+   "versao": 3,
+   "nome": "MiniMax M3",
+   "empresa": "MiniMax",
+   "aberto": true,
+   "hf": "MiniMaxAI/Minimax-M3",
+   "lancamento": "2026-05-31",
+   "contexto": 1048576,
+   "precoEntrada": 0.3,
+   "precoSaida": 1.2,
+   "velocidade": 106.023,
+   "ttft": 0.697,
+   "metricas": {
+    "arena_texto": 1431,
+    "arena_webdev": 1483,
+    "arena_visao": 1251,
+    "aa_inteligencia": 18.9,
+    "aa_hle": 39,
+    "aa_terminal": 2,
+    "aa_gpqa": 92.9,
+    "aa_contexto": 83
+   },
+   "origens": {
+    "lmarena": "MiniMax-M3",
+    "artificialanalysis": "minimax-m3",
+    "openrouter": "minimax/minimax-m3"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 34,
+    "arena_texto": 63.8,
+    "arena_webdev": 51.7,
+    "arena_visao": 53.3,
+    "aa_hle": 87.6,
+    "aa_terminal": 61.1,
+    "aa_gpqa": 97,
+    "aa_contexto": 95.6
+   },
+   "nota": 53.3,
+   "cobertura": 0.74,
+   "categorias": {
+    "agentico": 55.5,
+    "codigo": 50.9,
+    "raciocinio": 78.2,
+    "pesquisa": 72.8,
+    "design": 50.9,
+    "conversa": 56.9,
+    "visao": 51.6
+   },
+   "posCategorias": {
+    "agentico": 50,
+    "codigo": 54,
+    "raciocinio": 23,
+    "pesquisa": 18,
+    "design": 52,
+    "conversa": 72,
+    "visao": 50
+   },
+   "posicao": 120
+  },
+  {
    "chave": "deepseek-v3.2",
    "slug": "deepseek-v3.2",
    "familia": "deepseek",
@@ -7087,69 +7156,6 @@
     "pesquisa": 101,
     "design": 88,
     "conversa": 79
-   },
-   "posicao": 120
-  },
-  {
-   "chave": "minimax-m3",
-   "slug": "minimax-m3",
-   "familia": "minimax-m",
-   "versao": 3,
-   "nome": "MiniMax M3",
-   "empresa": "MiniMax",
-   "aberto": true,
-   "hf": "MiniMaxAI/Minimax-M3",
-   "lancamento": "2026-05-31",
-   "contexto": 1048576,
-   "precoEntrada": 0.3,
-   "precoSaida": 1.2,
-   "velocidade": 107.955,
-   "ttft": 0.793,
-   "metricas": {
-    "arena_texto": 1431,
-    "arena_webdev": 1483,
-    "arena_visao": 1251,
-    "aa_inteligencia": 18.7,
-    "aa_hle": 39,
-    "aa_terminal": 2,
-    "aa_gpqa": 92.9,
-    "aa_contexto": 83
-   },
-   "origens": {
-    "lmarena": "MiniMax-M3",
-    "artificialanalysis": "minimax-m3",
-    "openrouter": "minimax/minimax-m3"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 33.3,
-    "arena_texto": 63.8,
-    "arena_webdev": 51.7,
-    "arena_visao": 53.3,
-    "aa_hle": 87.6,
-    "aa_terminal": 61.1,
-    "aa_gpqa": 97,
-    "aa_contexto": 95.6
-   },
-   "nota": 53.1,
-   "cobertura": 0.74,
-   "categorias": {
-    "agentico": 55.5,
-    "codigo": 50.9,
-    "raciocinio": 78.2,
-    "pesquisa": 72.8,
-    "design": 50.9,
-    "conversa": 56.9,
-    "visao": 51.6
-   },
-   "posCategorias": {
-    "agentico": 50,
-    "codigo": 54,
-    "raciocinio": 23,
-    "pesquisa": 18,
-    "design": 52,
-    "conversa": 72,
-    "visao": 50
    },
    "posicao": 121
   },
@@ -7370,8 +7376,8 @@
    "contexto": null,
    "precoEntrada": 0.042,
    "precoSaida": 0.17,
-   "velocidade": 128.555,
-   "ttft": 1.038,
+   "velocidade": 132.145,
+   "ttft": 0.975,
    "metricas": {
     "aa_hle": 11,
     "aa_gpqa": 73.8,
@@ -7411,8 +7417,8 @@
    "contexto": 200000,
    "precoEntrada": 2,
    "precoSaida": 8,
-   "velocidade": 146.363,
-   "ttft": 3.39,
+   "velocidade": 129.696,
+   "ttft": 4.467,
    "metricas": {
     "arena_texto": 1410,
     "arena_visao": 1214,
@@ -7462,8 +7468,8 @@
    "contexto": null,
    "precoEntrada": 1,
    "precoSaida": 3,
-   "velocidade": 41.801,
-   "ttft": 0.697,
+   "velocidade": 40.696,
+   "ttft": 0.701,
    "metricas": {
     "aa_hle": 10.9,
     "aa_gpqa": 72.7,
@@ -7541,7 +7547,7 @@
    "aberto": true,
    "hf": "XiaomiMiMo/MiMo-V2.5",
    "lancamento": "2026-04-22",
-   "contexto": 1050000,
+   "contexto": 1000000,
    "precoEntrada": 0.4,
    "precoSaida": 2,
    "velocidade": 0,
@@ -7769,8 +7775,8 @@
    "contexto": 1048756,
    "precoEntrada": 0.3,
    "precoSaida": 1.2,
-   "velocidade": 72.078,
-   "ttft": 1.816,
+   "velocidade": 63.014,
+   "ttft": 1.769,
    "metricas": {
     "aa_hle": 33.7,
     "aa_terminal": 0,
@@ -7856,8 +7862,8 @@
    "contexto": null,
    "precoEntrada": 0,
    "precoSaida": 0,
-   "velocidade": 80.65,
-   "ttft": 0.229,
+   "velocidade": 78.459,
+   "ttft": 0.23,
    "metricas": {
     "aa_hle": 11.1,
     "aa_terminal": 0.5,
@@ -8273,8 +8279,8 @@
    "contexto": null,
    "precoEntrada": 0.03,
    "precoSaida": 0.15,
-   "velocidade": 41.594,
-   "ttft": 0.418,
+   "velocidade": 47.93,
+   "ttft": 0.378,
    "metricas": {
     "aa_hle": 9.9,
     "aa_gpqa": 77.1,
@@ -8496,8 +8502,8 @@
    "contexto": 1024000,
    "precoEntrada": 0.15,
    "precoSaida": 1.875,
-   "velocidade": 38.351,
-   "ttft": 1.364,
+   "velocidade": 38.39,
+   "ttft": 1.404,
    "metricas": {
     "lb_geral": 58.38,
     "lb_agentico": 20.6,
@@ -8525,7 +8531,7 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 22.6,
-    "aa_inteligencia": 35.6,
+    "aa_inteligencia": 36,
     "arena_texto": 68.2,
     "arena_webdev": 76.3,
     "arena_visao": 65.7,
@@ -8541,7 +8547,7 @@
     "lb_pesquisa": 9.7,
     "lb_design": 38.7
    },
-   "nota": 49.5,
+   "nota": 49.6,
    "cobertura": 1,
    "categorias": {
     "agentico": 49.2,
@@ -8682,8 +8688,8 @@
    "contexto": null,
    "precoEntrada": 1.25,
    "precoSaida": 10,
-   "velocidade": 123.052,
-   "ttft": 11.173,
+   "velocidade": 120.59,
+   "ttft": 10.728,
    "metricas": {
     "aa_hle": 9.4,
     "aa_gpqa": 78.5,
@@ -8734,10 +8740,10 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 37.8,
+    "aa_inteligencia": 38,
     "aa_terminal": 82.6
    },
-   "nota": 49.2,
+   "nota": 49.3,
    "cobertura": 0.35,
    "categorias": {
     "agentico": 66.3
@@ -9034,6 +9040,59 @@
    "posicao": 162
   },
   {
+   "chave": "nemotron-3-ultra-550b-a55b",
+   "slug": "nemotron-3-ultra-550b-a55b",
+   "familia": "nemotron-ultra-550b-a55b",
+   "versao": 3,
+   "nome": "Nemotron 3 Ultra",
+   "empresa": "NVIDIA",
+   "aberto": true,
+   "hf": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+   "lancamento": "2026-06-04",
+   "contexto": 262144,
+   "precoEntrada": 0.6,
+   "precoSaida": 2.4,
+   "velocidade": 161.102,
+   "ttft": 0.889,
+   "metricas": {
+    "arena_texto": 1445,
+    "aa_inteligencia": 11.8,
+    "aa_hle": 28.4,
+    "aa_terminal": 0.5,
+    "aa_gpqa": 86.7,
+    "aa_contexto": 79.3
+   },
+   "origens": {
+    "lmarena": "NVIDIA-Nemotron-3-Ultra-550B-A55B (NVFP4)",
+    "artificialanalysis": "nvidia-nemotron-3-ultra-550b-a55b",
+    "openrouter": "nvidia/nemotron-3-ultra-550b-a55b"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 20,
+    "arena_texto": 74.9,
+    "aa_hle": 77.2,
+    "aa_terminal": 48.3,
+    "aa_gpqa": 82.5,
+    "aa_contexto": 83.9
+   },
+   "nota": 48.2,
+   "cobertura": 0.61,
+   "categorias": {
+    "agentico": 49.1,
+    "raciocinio": 69.9,
+    "pesquisa": 67,
+    "conversa": 62.5
+   },
+   "posCategorias": {
+    "agentico": 72,
+    "raciocinio": 79,
+    "pesquisa": 50,
+    "conversa": 51
+   },
+   "posicao": 163
+  },
+  {
    "chave": "ling-3.0-flash",
    "slug": "ling-3.0-flash",
    "familia": "ling-flash",
@@ -9077,7 +9136,7 @@
     "raciocinio": 93,
     "pesquisa": 106
    },
-   "posicao": 163
+   "posicao": 164
   },
   {
    "chave": "qwen3.5-27b",
@@ -9134,7 +9193,7 @@
     "conversa": 100,
     "visao": 59
    },
-   "posicao": 164
+   "posicao": 165
   },
   {
    "chave": "minimax-m1-40k",
@@ -9171,7 +9230,7 @@
    "posCategorias": {
     "raciocinio": 235
    },
-   "posicao": 165
+   "posicao": 166
   },
   {
    "chave": "k2-horizon-mova-36b-a4b",
@@ -9216,7 +9275,52 @@
     "raciocinio": 117,
     "pesquisa": 118
    },
-   "posicao": 166
+   "posicao": 167
+  },
+  {
+   "chave": "beam-1.0",
+   "slug": "beam-1.0",
+   "familia": "beam",
+   "versao": 1,
+   "nome": "Beam 1.0",
+   "empresa": "Reflection",
+   "aberto": null,
+   "hf": null,
+   "lancamento": "2026-10-16",
+   "contexto": null,
+   "precoEntrada": 0.4,
+   "precoSaida": 1.2,
+   "velocidade": 318.103,
+   "ttft": 0.579,
+   "metricas": {
+    "aa_inteligencia": 17.7,
+    "aa_hle": 34.7,
+    "aa_terminal": 3,
+    "aa_contexto": 78
+   },
+   "origens": {
+    "artificialanalysis": "reflection-beam"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 30,
+    "aa_hle": 84.1,
+    "aa_terminal": 63.2,
+    "aa_contexto": 79
+   },
+   "nota": 47.9,
+   "cobertura": 0.43,
+   "categorias": {
+    "agentico": 56.6,
+    "raciocinio": 67,
+    "pesquisa": 64.5
+   },
+   "posCategorias": {
+    "agentico": 48,
+    "raciocinio": 94,
+    "pesquisa": 68
+   },
+   "posicao": 168
   },
   {
    "chave": "magistral-small-1",
@@ -9257,7 +9361,7 @@
     "raciocinio": 243,
     "pesquisa": 316
    },
-   "posicao": 167
+   "posicao": 169
   },
   {
    "chave": "qwen3.5-omni-flash",
@@ -9272,8 +9376,8 @@
    "contexto": null,
    "precoEntrada": 0.1,
    "precoSaida": 0.8,
-   "velocidade": 222.005,
-   "ttft": 0.993,
+   "velocidade": 224.729,
+   "ttft": 0.937,
    "metricas": {
     "aa_hle": 7.6,
     "aa_gpqa": 74.2,
@@ -9298,7 +9402,7 @@
     "raciocinio": 207,
     "pesquisa": 193
    },
-   "posicao": 168
+   "posicao": 170
   },
   {
    "chave": "qwen3.6-27b",
@@ -9344,7 +9448,54 @@
     "raciocinio": 106,
     "pesquisa": 75
    },
-   "posicao": 169
+   "posicao": 171
+  },
+  {
+   "chave": "k2-horizon-375b-a23b",
+   "slug": "k2-horizon-375b-a23b",
+   "familia": "k-horizon-375b-a23b",
+   "versao": 2,
+   "nome": "K2 Horizon 375B A23B",
+   "empresa": "Institute Of Foundation Models",
+   "aberto": null,
+   "hf": null,
+   "lancamento": "2026-09-03",
+   "contexto": null,
+   "precoEntrada": 0,
+   "precoSaida": 0,
+   "velocidade": 116.75,
+   "ttft": 2.05,
+   "metricas": {
+    "aa_inteligencia": 17.8,
+    "aa_hle": 32,
+    "aa_terminal": 1.5,
+    "aa_gpqa": 87.3,
+    "aa_contexto": 80
+   },
+   "origens": {
+    "artificialanalysis": "k2-horizon-375b-a23b"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 32,
+    "aa_hle": 81.2,
+    "aa_terminal": 59.4,
+    "aa_gpqa": 84.2,
+    "aa_contexto": 87.3
+   },
+   "nota": 47.8,
+   "cobertura": 0.43,
+   "categorias": {
+    "agentico": 54.7,
+    "raciocinio": 71.8,
+    "pesquisa": 68.7
+   },
+   "posCategorias": {
+    "agentico": 54,
+    "raciocinio": 66,
+    "pesquisa": 38
+   },
+   "posicao": 172
   },
   {
    "chave": "kat-coder-pro-v1",
@@ -9392,7 +9543,7 @@
     "pesquisa": 218,
     "design": 104
    },
-   "posicao": 170
+   "posicao": 173
   },
   {
    "chave": "ling-3.0-flash-fin",
@@ -9435,7 +9586,7 @@
     "raciocinio": 142,
     "pesquisa": 97
    },
-   "posicao": 171
+   "posicao": 174
   },
   {
    "chave": "mimo-v2-flash",
@@ -9487,7 +9638,7 @@
     "design": 98,
     "conversa": 98
    },
-   "posicao": 172
+   "posicao": 175
   },
   {
    "chave": "qwen3-omni-30b-a3b",
@@ -9502,8 +9653,8 @@
    "contexto": null,
    "precoEntrada": 0.25,
    "precoSaida": 0.97,
-   "velocidade": 111.152,
-   "ttft": 0.96,
+   "velocidade": 110.601,
+   "ttft": 1.071,
    "metricas": {
     "aa_hle": 7.5,
     "aa_gpqa": 72.6,
@@ -9528,7 +9679,7 @@
     "raciocinio": 224,
     "pesquisa": 317
    },
-   "posicao": 173
+   "posicao": 176
   },
   {
    "chave": "sarvam-30b",
@@ -9569,7 +9720,7 @@
     "raciocinio": 244,
     "pesquisa": 318
    },
-   "posicao": 174
+   "posicao": 177
   },
   {
    "chave": "qwen3.6-35b-a3b",
@@ -9584,8 +9735,8 @@
    "contexto": 262144,
    "precoEntrada": 0.1,
    "precoSaida": 0.9,
-   "velocidade": 130.279,
-   "ttft": 1.096,
+   "velocidade": 128.693,
+   "ttft": 1.125,
    "metricas": {
     "aa_hle": 22.2,
     "aa_terminal": 0,
@@ -9615,7 +9766,7 @@
     "raciocinio": 112,
     "pesquisa": 119
    },
-   "posicao": 175
+   "posicao": 178
   },
   {
    "chave": "ling-3.0-flash-vl",
@@ -9661,7 +9812,7 @@
     "raciocinio": 92,
     "pesquisa": 61
    },
-   "posicao": 176
+   "posicao": 179
   },
   {
    "chave": "solar-pro-2",
@@ -9702,60 +9853,7 @@
     "raciocinio": 237,
     "pesquisa": 319
    },
-   "posicao": 177
-  },
-  {
-   "chave": "nemotron-3-ultra-550b-a55b",
-   "slug": "nemotron-3-ultra-550b-a55b",
-   "familia": "nemotron-ultra-550b-a55b",
-   "versao": 3,
-   "nome": "Nemotron 3 Ultra",
-   "empresa": "NVIDIA",
-   "aberto": true,
-   "hf": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
-   "lancamento": "2026-06-04",
-   "contexto": 262144,
-   "precoEntrada": 0.6,
-   "precoSaida": 2.4,
-   "velocidade": 168.367,
-   "ttft": 0.855,
-   "metricas": {
-    "arena_texto": 1445,
-    "aa_inteligencia": 11.8,
-    "aa_hle": 28.4,
-    "aa_terminal": 0.5,
-    "aa_gpqa": 86.7,
-    "aa_contexto": 79.3
-   },
-   "origens": {
-    "lmarena": "NVIDIA-Nemotron-3-Ultra-550B-A55B (NVFP4)",
-    "artificialanalysis": "nvidia-nemotron-3-ultra-550b-a55b",
-    "openrouter": "nvidia/nemotron-3-ultra-550b-a55b"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 17.8,
-    "arena_texto": 74.9,
-    "aa_hle": 77.2,
-    "aa_terminal": 48.3,
-    "aa_gpqa": 82.5,
-    "aa_contexto": 83.9
-   },
-   "nota": 47.3,
-   "cobertura": 0.61,
-   "categorias": {
-    "agentico": 49.1,
-    "raciocinio": 69.9,
-    "pesquisa": 67,
-    "conversa": 62.5
-   },
-   "posCategorias": {
-    "agentico": 72,
-    "raciocinio": 79,
-    "pesquisa": 50,
-    "conversa": 51
-   },
-   "posicao": 178
+   "posicao": 180
   },
   {
    "chave": "gpt-5.4-nano",
@@ -9809,98 +9907,6 @@
     "pesquisa": 79,
     "conversa": 127,
     "visao": 77
-   },
-   "posicao": 179
-  },
-  {
-   "chave": "beam-1.0",
-   "slug": "beam-1.0",
-   "familia": "beam",
-   "versao": 1,
-   "nome": "Beam 1.0",
-   "empresa": "Reflection",
-   "aberto": null,
-   "hf": null,
-   "lancamento": "2026-10-16",
-   "contexto": null,
-   "precoEntrada": 0.4,
-   "precoSaida": 1.2,
-   "velocidade": 339.332,
-   "ttft": 0.537,
-   "metricas": {
-    "aa_inteligencia": 17.7,
-    "aa_hle": 34.7,
-    "aa_terminal": 3,
-    "aa_contexto": 78
-   },
-   "origens": {
-    "artificialanalysis": "reflection-beam"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 28.9,
-    "aa_hle": 84.1,
-    "aa_terminal": 63.2,
-    "aa_contexto": 79
-   },
-   "nota": 47.3,
-   "cobertura": 0.43,
-   "categorias": {
-    "agentico": 56.6,
-    "raciocinio": 67,
-    "pesquisa": 64.5
-   },
-   "posCategorias": {
-    "agentico": 48,
-    "raciocinio": 94,
-    "pesquisa": 68
-   },
-   "posicao": 180
-  },
-  {
-   "chave": "k2-horizon-375b-a23b",
-   "slug": "k2-horizon-375b-a23b",
-   "familia": "k-horizon-375b-a23b",
-   "versao": 2,
-   "nome": "K2 Horizon 375B A23B",
-   "empresa": "Institute Of Foundation Models",
-   "aberto": null,
-   "hf": null,
-   "lancamento": "2026-09-03",
-   "contexto": null,
-   "precoEntrada": 0,
-   "precoSaida": 0,
-   "velocidade": 762.913,
-   "ttft": 1.866,
-   "metricas": {
-    "aa_inteligencia": 17.8,
-    "aa_hle": 32,
-    "aa_terminal": 1.5,
-    "aa_gpqa": 87.3,
-    "aa_contexto": 80
-   },
-   "origens": {
-    "artificialanalysis": "k2-horizon-375b-a23b"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 31.1,
-    "aa_hle": 81.2,
-    "aa_terminal": 59.4,
-    "aa_gpqa": 84.2,
-    "aa_contexto": 87.3
-   },
-   "nota": 47.3,
-   "cobertura": 0.43,
-   "categorias": {
-    "agentico": 54.7,
-    "raciocinio": 71.8,
-    "pesquisa": 68.7
-   },
-   "posCategorias": {
-    "agentico": 54,
-    "raciocinio": 66,
-    "pesquisa": 38
    },
    "posicao": 181
   },
@@ -10126,67 +10132,6 @@
    "posicao": 186
   },
   {
-   "chave": "gemini-3.1-flash-lite",
-   "slug": "gemini-3.1-flash-lite",
-   "familia": "gemini-flash-lite",
-   "versao": 3.1,
-   "nome": "Gemini 3.1 Flash Lite",
-   "empresa": "Google",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-05-07",
-   "contexto": 1048576,
-   "precoEntrada": 0.25,
-   "precoSaida": 1.5,
-   "velocidade": 0,
-   "ttft": 0,
-   "metricas": {
-    "arena_texto": 1416,
-    "arena_webdev": 1256,
-    "arena_visao": 1240,
-    "aa_hle": 17.2,
-    "aa_terminal": 0.5,
-    "aa_gpqa": 82.2,
-    "aa_contexto": 74.3
-   },
-   "origens": {
-    "lmarena": "Gemini 3.1 Flash-Lite Preview",
-    "artificialanalysis": "gemini-3-1-flash-lite-preview",
-    "openrouter": "google/gemini-3.1-flash-lite"
-   },
-   "parcial": false,
-   "percentis": {
-    "arena_texto": 52.6,
-    "arena_webdev": 10.8,
-    "arena_visao": 43.3,
-    "aa_hle": 65.3,
-    "aa_terminal": 48.3,
-    "aa_gpqa": 71.3,
-    "aa_contexto": 72.1
-   },
-   "nota": 46.3,
-   "cobertura": 0.48,
-   "categorias": {
-    "agentico": 49.1,
-    "codigo": 30.4,
-    "raciocinio": 62.2,
-    "pesquisa": 61,
-    "design": 30.4,
-    "conversa": 51.3,
-    "visao": 46.6
-   },
-   "posCategorias": {
-    "agentico": 74,
-    "codigo": 107,
-    "raciocinio": 129,
-    "pesquisa": 92,
-    "design": 105,
-    "conversa": 94,
-    "visao": 61
-   },
-   "posicao": 187
-  },
-  {
    "chave": "lfm2.5-8b-a1b",
    "slug": "lfm2.5-8b-a1b",
    "familia": "lfm-8b-a1b",
@@ -10225,7 +10170,7 @@
     "raciocinio": 265,
     "pesquisa": 320
    },
-   "posicao": 188
+   "posicao": 187
   },
   {
    "chave": "qwen3.5-122b-a10b",
@@ -10240,8 +10185,8 @@
    "contexto": 262144,
    "precoEntrada": 0.26,
    "precoSaida": 2.08,
-   "velocidade": 133.073,
-   "ttft": 0.979,
+   "velocidade": 134.083,
+   "ttft": 0.975,
    "metricas": {
     "arena_texto": 1418,
     "arena_webdev": 1360,
@@ -10286,7 +10231,7 @@
     "conversa": 90,
     "visao": 58
    },
-   "posicao": 189
+   "posicao": 188
   },
   {
    "chave": "minimax-m2.7",
@@ -10343,7 +10288,7 @@
     "design": 78,
     "conversa": 104
    },
-   "posicao": 190
+   "posicao": 189
   },
   {
    "chave": "lfm2.5-1.2b",
@@ -10384,7 +10329,7 @@
     "raciocinio": 289,
     "pesquisa": 321
    },
-   "posicao": 191
+   "posicao": 190
   },
   {
    "chave": "sonar-pro",
@@ -10422,7 +10367,7 @@
    "posCategorias": {
     "raciocinio": 259
    },
-   "posicao": 192
+   "posicao": 191
   },
   {
    "chave": "muse-spark-open",
@@ -10437,8 +10382,8 @@
    "contexto": 1048576,
    "precoEntrada": 1.25,
    "precoSaida": 4.25,
-   "velocidade": 184.474,
-   "ttft": 0.515,
+   "velocidade": 191.477,
+   "ttft": 0.508,
    "metricas": {
     "lb_geral": 51.63,
     "lb_agentico": 11.7,
@@ -10449,7 +10394,7 @@
     "lb_pesquisa": 80.3,
     "lb_design": 60.3,
     "arena_webdev": 1526,
-    "aa_inteligencia": 24.7,
+    "aa_inteligencia": 24.9,
     "aa_hle": 43.9,
     "aa_terminal": 8.1,
     "aa_gpqa": 89,
@@ -10464,7 +10409,7 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 19.4,
-    "aa_inteligencia": 42.2,
+    "aa_inteligencia": 42,
     "arena_webdev": 61.2,
     "aa_hle": 93.6,
     "aa_terminal": 68.8,
@@ -10498,7 +10443,7 @@
     "design": 80,
     "navegador": 23
    },
-   "posicao": 193
+   "posicao": 192
   },
   {
    "chave": "grok-3",
@@ -10544,7 +10489,7 @@
     "pesquisa": 179,
     "conversa": 80
    },
-   "posicao": 194
+   "posicao": 193
   },
   {
    "chave": "minicpm5-1b",
@@ -10585,7 +10530,7 @@
     "raciocinio": 302,
     "pesquisa": 306
    },
-   "posicao": 195
+   "posicao": 194
   },
   {
    "chave": "hypernova-60b",
@@ -10629,6 +10574,69 @@
     "agentico": 102,
     "raciocinio": 173,
     "pesquisa": 225
+   },
+   "posicao": 195
+  },
+  {
+   "chave": "gemini-3.5-flash-lite",
+   "slug": "gemini-3.5-flash-lite",
+   "familia": "gemini-flash-lite",
+   "versao": 3.5,
+   "nome": "Gemini 3.5 Flash Lite",
+   "empresa": "Google",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-07-21",
+   "contexto": 1048576,
+   "precoEntrada": 0.3,
+   "precoSaida": 2.5,
+   "velocidade": 362.508,
+   "ttft": 5.54,
+   "metricas": {
+    "arena_texto": 1435,
+    "arena_webdev": 1434,
+    "arena_visao": 1269,
+    "aa_inteligencia": 11.7,
+    "aa_hle": 18.8,
+    "aa_terminal": 1,
+    "aa_gpqa": 83.8,
+    "aa_contexto": 76
+   },
+   "origens": {
+    "lmarena": "Gemini 3.5 Flash-Lite",
+    "artificialanalysis": "gemini-3-5-flash-lite",
+    "openrouter": "google/gemini-3.5-flash-lite"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 18,
+    "arena_texto": 65.9,
+    "arena_webdev": 40.1,
+    "arena_visao": 65.7,
+    "aa_hle": 67,
+    "aa_terminal": 55.6,
+    "aa_gpqa": 74.3,
+    "aa_contexto": 74.5
+   },
+   "nota": 45.4,
+   "cobertura": 0.74,
+   "categorias": {
+    "agentico": 52.8,
+    "codigo": 45,
+    "raciocinio": 63.8,
+    "pesquisa": 62.3,
+    "design": 45,
+    "conversa": 58,
+    "visao": 57.9
+   },
+   "posCategorias": {
+    "agentico": 63,
+    "codigo": 71,
+    "raciocinio": 121,
+    "pesquisa": 84,
+    "design": 70,
+    "conversa": 68,
+    "visao": 38
    },
    "posicao": 196
   },
@@ -10768,8 +10776,8 @@
    "contexto": null,
    "precoEntrada": 0.5,
    "precoSaida": 1.5,
-   "velocidade": 79.29,
-   "ttft": 0.722,
+   "velocidade": 99.102,
+   "ttft": 0.702,
    "metricas": {
     "aa_hle": 6.4,
     "aa_gpqa": 66.3,
@@ -10838,69 +10846,6 @@
    "posicao": 201
   },
   {
-   "chave": "gemini-3.5-flash-lite",
-   "slug": "gemini-3.5-flash-lite",
-   "familia": "gemini-flash-lite",
-   "versao": 3.5,
-   "nome": "Gemini 3.5 Flash Lite",
-   "empresa": "Google",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-07-21",
-   "contexto": 1048576,
-   "precoEntrada": 0.3,
-   "precoSaida": 2.5,
-   "velocidade": 401.625,
-   "ttft": 5.071,
-   "metricas": {
-    "arena_texto": 1435,
-    "arena_webdev": 1434,
-    "arena_visao": 1269,
-    "aa_inteligencia": 11.7,
-    "aa_hle": 18.8,
-    "aa_terminal": 1,
-    "aa_gpqa": 83.8,
-    "aa_contexto": 76
-   },
-   "origens": {
-    "lmarena": "Gemini 3.5 Flash-Lite",
-    "artificialanalysis": "gemini-3-5-flash-lite",
-    "openrouter": "google/gemini-3.5-flash-lite"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 15.6,
-    "arena_texto": 65.9,
-    "arena_webdev": 40.1,
-    "arena_visao": 65.7,
-    "aa_hle": 67,
-    "aa_terminal": 55.6,
-    "aa_gpqa": 74.3,
-    "aa_contexto": 74.5
-   },
-   "nota": 44.6,
-   "cobertura": 0.74,
-   "categorias": {
-    "agentico": 52.8,
-    "codigo": 45,
-    "raciocinio": 63.8,
-    "pesquisa": 62.3,
-    "design": 45,
-    "conversa": 58,
-    "visao": 57.9
-   },
-   "posCategorias": {
-    "agentico": 63,
-    "codigo": 71,
-    "raciocinio": 121,
-    "pesquisa": 84,
-    "design": 70,
-    "conversa": 68,
-    "visao": 38
-   },
-   "posicao": 202
-  },
-  {
    "chave": "k2-horizon-3.7b",
    "slug": "k2-horizon-3.7b",
    "familia": "k-horizon-3.7b",
@@ -10943,7 +10888,7 @@
     "raciocinio": 193,
     "pesquisa": 166
    },
-   "posicao": 203
+   "posicao": 202
   },
   {
    "chave": "gemini-2.0-pro",
@@ -10980,7 +10925,7 @@
    "posCategorias": {
     "raciocinio": 254
    },
-   "posicao": 204
+   "posicao": 203
   },
   {
    "chave": "lfm2.5-2.6b",
@@ -11021,7 +10966,7 @@
     "raciocinio": 267,
     "pesquisa": 309
    },
-   "posicao": 205
+   "posicao": 204
   },
   {
    "chave": "qwen3-4b",
@@ -11061,6 +11006,69 @@
    "posCategorias": {
     "raciocinio": 248,
     "pesquisa": 223
+   },
+   "posicao": 205
+  },
+  {
+   "chave": "inkling-small",
+   "slug": "inkling-small",
+   "familia": "inkling-small",
+   "versao": 0,
+   "nome": "Inkling Small",
+   "empresa": "Thinking Machines",
+   "aberto": true,
+   "hf": "thinkingmachines/Inkling-Small",
+   "lancamento": "2026-07-30",
+   "contexto": 524288,
+   "precoEntrada": 0.45,
+   "precoSaida": 1.2,
+   "velocidade": 207.071,
+   "ttft": 1.861,
+   "metricas": {
+    "arena_texto": 1414,
+    "arena_webdev": 1409,
+    "arena_visao": 1237,
+    "aa_inteligencia": 12.9,
+    "aa_hle": 33.3,
+    "aa_terminal": 1,
+    "aa_gpqa": 89.5,
+    "aa_contexto": 75.7
+   },
+   "origens": {
+    "lmarena": "Inkling-Small",
+    "artificialanalysis": "inkling-small",
+    "openrouter": "thinkingmachines/inkling-small"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 24,
+    "arena_texto": 51.8,
+    "arena_webdev": 36.2,
+    "arena_visao": 41.9,
+    "aa_hle": 81.7,
+    "aa_terminal": 55.6,
+    "aa_gpqa": 88.1,
+    "aa_contexto": 73.8
+   },
+   "nota": 44.2,
+   "cobertura": 0.74,
+   "categorias": {
+    "agentico": 52.8,
+    "codigo": 43.1,
+    "raciocinio": 73.3,
+    "pesquisa": 61.9,
+    "design": 43.1,
+    "conversa": 50.9,
+    "visao": 46
+   },
+   "posCategorias": {
+    "agentico": 64,
+    "codigo": 74,
+    "raciocinio": 55,
+    "pesquisa": 86,
+    "design": 74,
+    "conversa": 95,
+    "visao": 62
    },
    "posicao": 206
   },
@@ -11402,69 +11410,6 @@
    "posicao": 213
   },
   {
-   "chave": "inkling-small",
-   "slug": "inkling-small",
-   "familia": "inkling-small",
-   "versao": 0,
-   "nome": "Inkling Small",
-   "empresa": "Thinking Machines",
-   "aberto": true,
-   "hf": "thinkingmachines/Inkling-Small",
-   "lancamento": "2026-07-30",
-   "contexto": 524288,
-   "precoEntrada": 0.45,
-   "precoSaida": 1.2,
-   "velocidade": 212.997,
-   "ttft": 1.583,
-   "metricas": {
-    "arena_texto": 1414,
-    "arena_webdev": 1409,
-    "arena_visao": 1237,
-    "aa_inteligencia": 12.9,
-    "aa_hle": 33.3,
-    "aa_terminal": 1,
-    "aa_gpqa": 89.5,
-    "aa_contexto": 75.7
-   },
-   "origens": {
-    "lmarena": "Inkling-Small",
-    "artificialanalysis": "inkling-small",
-    "openrouter": "thinkingmachines/inkling-small"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 22.2,
-    "arena_texto": 51.8,
-    "arena_webdev": 36.2,
-    "arena_visao": 41.9,
-    "aa_hle": 81.7,
-    "aa_terminal": 55.6,
-    "aa_gpqa": 88.1,
-    "aa_contexto": 73.8
-   },
-   "nota": 43.6,
-   "cobertura": 0.74,
-   "categorias": {
-    "agentico": 52.8,
-    "codigo": 43.1,
-    "raciocinio": 73.3,
-    "pesquisa": 61.9,
-    "design": 43.1,
-    "conversa": 50.9,
-    "visao": 46
-   },
-   "posCategorias": {
-    "agentico": 64,
-    "codigo": 74,
-    "raciocinio": 55,
-    "pesquisa": 86,
-    "design": 74,
-    "conversa": 95,
-    "visao": 62
-   },
-   "posicao": 214
-  },
-  {
    "chave": "grok-3-mini",
    "slug": "grok-3-mini",
    "familia": "grok-mini",
@@ -11508,7 +11453,7 @@
     "pesquisa": 185,
     "conversa": 129
    },
-   "posicao": 215
+   "posicao": 214
   },
   {
    "chave": "longcat-flash-lite",
@@ -11549,7 +11494,7 @@
     "raciocinio": 255,
     "pesquisa": 240
    },
-   "posicao": 216
+   "posicao": 215
   },
   {
    "chave": "olmo-3-7b",
@@ -11590,7 +11535,7 @@
     "raciocinio": 287,
     "pesquisa": 325
    },
-   "posicao": 217
+   "posicao": 216
   },
   {
    "chave": "glm-4.5-air",
@@ -11637,7 +11582,7 @@
     "pesquisa": 201,
     "conversa": 117
    },
-   "posicao": 218
+   "posicao": 217
   },
   {
    "chave": "mistral-large-4",
@@ -11666,7 +11611,7 @@
     "arena_texto": 1430,
     "arena_webdev": 1544,
     "arena_visao": 1272,
-    "aa_inteligencia": 26,
+    "aa_inteligencia": 26.1,
     "aa_terminal": 24.7
    },
    "origens": {
@@ -11677,7 +11622,7 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 3.2,
-    "aa_inteligencia": 44.4,
+    "aa_inteligencia": 44,
     "arena_texto": 62.8,
     "arena_webdev": 65.5,
     "arena_visao": 68.6,
@@ -11690,7 +11635,7 @@
     "lb_pesquisa": 0,
     "lb_design": 19.4
    },
-   "nota": 43.3,
+   "nota": 43.2,
    "cobertura": 0.91,
    "categorias": {
     "agentico": 46.5,
@@ -11714,7 +11659,7 @@
     "conversa": 74,
     "visao": 34
    },
-   "posicao": 219
+   "posicao": 218
   },
   {
    "chave": "grok-4.1-fast",
@@ -11770,7 +11715,7 @@
     "conversa": 101,
     "visao": 75
    },
-   "posicao": 220
+   "posicao": 219
   },
   {
    "chave": "solar-pro-4",
@@ -11785,8 +11730,8 @@
    "contexto": null,
    "precoEntrada": 0.3,
    "precoSaida": 1.2,
-   "velocidade": 94.821,
-   "ttft": 0.973,
+   "velocidade": 87.325,
+   "ttft": 0.983,
    "metricas": {
     "arena_texto": 1389,
     "arena_webdev": 1370,
@@ -11826,7 +11771,7 @@
     "design": 87,
     "conversa": 115
    },
-   "posicao": 221
+   "posicao": 220
   },
   {
    "chave": "nemotron-3-super-120b-a12b",
@@ -11873,11 +11818,11 @@
    },
    "posCategorias": {
     "agentico": 106,
-    "raciocinio": 130,
+    "raciocinio": 129,
     "pesquisa": 153,
     "conversa": 123
    },
-   "posicao": 222
+   "posicao": 221
   },
   {
    "chave": "lfm2-1.2b",
@@ -11918,7 +11863,7 @@
     "raciocinio": 354,
     "pesquisa": 326
    },
-   "posicao": 223
+   "posicao": 222
   },
   {
    "chave": "qwen3-0.6b",
@@ -11959,7 +11904,7 @@
     "raciocinio": 343,
     "pesquisa": 327
    },
-   "posicao": 224
+   "posicao": 223
   },
   {
    "chave": "mistral-3.5",
@@ -11974,8 +11919,8 @@
    "contexto": null,
    "precoEntrada": 1.5,
    "precoSaida": 7.5,
-   "velocidade": 170.435,
-   "ttft": 0.777,
+   "velocidade": 168.511,
+   "ttft": 0.797,
    "metricas": {
     "arena_texto": 1421,
     "arena_webdev": 1264,
@@ -12019,7 +11964,7 @@
     "conversa": 83,
     "visao": 66
    },
-   "posicao": 225
+   "posicao": 224
   },
   {
    "chave": "mercury-2.5",
@@ -12034,8 +11979,8 @@
    "contexto": 260000,
    "precoEntrada": 0.04,
    "precoSaida": 0.15,
-   "velocidade": 0,
-   "ttft": 0,
+   "velocidade": 845.81,
+   "ttft": 2.848,
    "metricas": {
     "aa_hle": 11.8,
     "aa_terminal": 0,
@@ -12063,7 +12008,7 @@
     "raciocinio": 191,
     "pesquisa": 120
    },
-   "posicao": 226
+   "posicao": 225
   },
   {
    "chave": "grok-4-fast",
@@ -12115,7 +12060,7 @@
     "design": 118,
     "conversa": 102
    },
-   "posicao": 227
+   "posicao": 226
   },
   {
    "chave": "qwen3.5-35b-a3b",
@@ -12168,7 +12113,7 @@
     "design": 107,
     "conversa": 112
    },
-   "posicao": 228
+   "posicao": 227
   },
   {
    "chave": "apertus-70b",
@@ -12209,7 +12154,7 @@
     "raciocinio": 334,
     "pesquisa": 328
    },
-   "posicao": 229
+   "posicao": 228
   },
   {
    "chave": "granite-4.0-350m",
@@ -12250,7 +12195,7 @@
     "raciocinio": 341,
     "pesquisa": 329
    },
-   "posicao": 230
+   "posicao": 229
   },
   {
    "chave": "hyperclova-x-seed-think",
@@ -12291,7 +12236,7 @@
     "raciocinio": 262,
     "pesquisa": 284
    },
-   "posicao": 231
+   "posicao": 230
   },
   {
    "chave": "lfm2-2.6b",
@@ -12332,7 +12277,7 @@
     "raciocinio": 310,
     "pesquisa": 330
    },
-   "posicao": 232
+   "posicao": 231
   },
   {
    "chave": "llama-3.2-instruct-11b",
@@ -12347,8 +12292,8 @@
    "contexto": null,
    "precoEntrada": 0.345,
    "precoSaida": 0.345,
-   "velocidade": 29.733,
-   "ttft": 0.515,
+   "velocidade": 26.769,
+   "ttft": 0.613,
    "metricas": {
     "aa_hle": 5.5,
     "aa_gpqa": 22.1,
@@ -12373,7 +12318,7 @@
     "raciocinio": 361,
     "pesquisa": 288
    },
-   "posicao": 233
+   "posicao": 232
   },
   {
    "chave": "llama-3.2-instruct-1b",
@@ -12414,7 +12359,7 @@
     "raciocinio": 364,
     "pesquisa": 302
    },
-   "posicao": 234
+   "posicao": 233
   },
   {
    "chave": "nvidia-nemotron-nano-12b-v2-vl",
@@ -12455,7 +12400,7 @@
     "raciocinio": 269,
     "pesquisa": 213
    },
-   "posicao": 235
+   "posicao": 234
   },
   {
    "chave": "intellect-3",
@@ -12501,7 +12446,7 @@
     "pesquisa": 215,
     "conversa": 138
    },
-   "posicao": 236
+   "posicao": 235
   },
   {
    "chave": "deepseek-coder-v2-lite",
@@ -12538,7 +12483,7 @@
    "posCategorias": {
     "raciocinio": 313
    },
-   "posicao": 237
+   "posicao": 236
   },
   {
    "chave": "olmo-2-7b",
@@ -12579,7 +12524,7 @@
     "raciocinio": 330,
     "pesquisa": 331
    },
-   "posicao": 238
+   "posicao": 237
   },
   {
    "chave": "minimax-m2.5",
@@ -12632,7 +12577,7 @@
     "design": 84,
     "conversa": 135
    },
-   "posicao": 239
+   "posicao": 238
   },
   {
    "chave": "gpt-5.1-codex-mini",
@@ -12677,11 +12622,11 @@
    },
    "posCategorias": {
     "codigo": 109,
-    "raciocinio": 131,
+    "raciocinio": 130,
     "pesquisa": 149,
     "design": 108
    },
-   "posicao": 240
+   "posicao": 239
   },
   {
    "chave": "gpt-5-mini",
@@ -12736,7 +12681,7 @@
     "conversa": 126,
     "visao": 74
    },
-   "posicao": 241
+   "posicao": 240
   },
   {
    "chave": "gemma-3-1b",
@@ -12777,7 +12722,7 @@
     "raciocinio": 366,
     "pesquisa": 332
    },
-   "posicao": 242
+   "posicao": 241
   },
   {
    "chave": "llama-2-chat-7b",
@@ -12814,7 +12759,7 @@
    "posCategorias": {
     "raciocinio": 370
    },
-   "posicao": 243
+   "posicao": 242
   },
   {
    "chave": "llama-3.1-instruct-8b",
@@ -12855,7 +12800,7 @@
     "raciocinio": 358,
     "pesquisa": 271
    },
-   "posicao": 244
+   "posicao": 243
   },
   {
    "chave": "llama-3.2-instruct-3b",
@@ -12896,7 +12841,7 @@
     "raciocinio": 362,
     "pesquisa": 310
    },
-   "posicao": 245
+   "posicao": 244
   },
   {
    "chave": "qwen3-1.7b",
@@ -12937,7 +12882,7 @@
     "raciocinio": 344,
     "pesquisa": 333
    },
-   "posicao": 246
+   "posicao": 245
   },
   {
    "chave": "solar-pro-3",
@@ -12982,7 +12927,7 @@
     "raciocinio": 201,
     "pesquisa": 234
    },
-   "posicao": 247
+   "posicao": 246
   },
   {
    "chave": "gpt-oss-120b",
@@ -12995,10 +12940,10 @@
    "hf": "openai/gpt-oss-120b",
    "lancamento": "2025-08-05",
    "contexto": 131072,
-   "precoEntrada": 0.15,
-   "precoSaida": 0.6,
-   "velocidade": 210.844,
-   "ttft": 0.49,
+   "precoEntrada": 0.028,
+   "precoSaida": 0.105,
+   "velocidade": 207.36,
+   "ttft": 0.514,
    "metricas": {
     "arena_texto": 1365,
     "aa_hle": 19.6,
@@ -13033,7 +12978,7 @@
     "pesquisa": 194,
     "conversa": 132
    },
-   "posicao": 248
+   "posicao": 247
   },
   {
    "chave": "qwen3-coder-next",
@@ -13048,8 +12993,8 @@
    "contexto": 262144,
    "precoEntrada": 0.12,
    "precoSaida": 0.8,
-   "velocidade": 80.206,
-   "ttft": 0.681,
+   "velocidade": 79.651,
+   "ttft": 0.672,
    "metricas": {
     "aa_hle": 10.1,
     "aa_terminal": 0,
@@ -13079,7 +13024,7 @@
     "raciocinio": 198,
     "pesquisa": 199
    },
-   "posicao": 249
+   "posicao": 248
   },
   {
    "chave": "gemini-2.5-flash-lite",
@@ -13130,7 +13075,7 @@
     "conversa": 121,
     "visao": 76
    },
-   "posicao": 250
+   "posicao": 249
   },
   {
    "chave": "mistral-3.1",
@@ -13185,7 +13130,7 @@
     "conversa": 81,
     "visao": 82
    },
-   "posicao": 251
+   "posicao": 250
   },
   {
    "chave": "qwen3-30b-a3b",
@@ -13236,7 +13181,7 @@
     "pesquisa": 169,
     "conversa": 118
    },
-   "posicao": 252
+   "posicao": 251
   },
   {
    "chave": "o4-mini",
@@ -13286,7 +13231,7 @@
     "conversa": 141,
     "visao": 78
    },
-   "posicao": 253
+   "posicao": 252
   },
   {
    "chave": "llama-2-chat-70b",
@@ -13323,7 +13268,7 @@
    "posCategorias": {
     "raciocinio": 316
    },
-   "posicao": 254
+   "posicao": 253
   },
   {
    "chave": "llama-3.1-nemotron-nano-4b-v1.1",
@@ -13364,7 +13309,7 @@
     "raciocinio": 293,
     "pesquisa": 334
    },
-   "posicao": 255
+   "posicao": 254
   },
   {
    "chave": "tiny-aya-global",
@@ -13380,7 +13325,7 @@
    "precoEntrada": 0,
    "precoSaida": 0,
    "velocidade": 131.322,
-   "ttft": 0.186,
+   "ttft": 0.184,
    "metricas": {
     "aa_hle": 5.2,
     "aa_gpqa": 30.5,
@@ -13405,7 +13350,7 @@
     "raciocinio": 331,
     "pesquisa": 335
    },
-   "posicao": 256
+   "posicao": 255
   },
   {
    "chave": "glm-4.6v",
@@ -13456,7 +13401,7 @@
     "conversa": 124,
     "visao": 86
    },
-   "posicao": 257
+   "posicao": 256
   },
   {
    "chave": "deepseek-r1-distill-llama-70b",
@@ -13497,7 +13442,7 @@
     "raciocinio": 297,
     "pesquisa": 292
    },
-   "posicao": 258
+   "posicao": 257
   },
   {
    "chave": "lfm2.5-vl-1.6b",
@@ -13538,7 +13483,7 @@
     "raciocinio": 356,
     "pesquisa": 336
    },
-   "posicao": 259
+   "posicao": 258
   },
   {
    "chave": "ling-3.0-tiny",
@@ -13553,8 +13498,8 @@
    "contexto": null,
    "precoEntrada": 0,
    "precoSaida": 0,
-   "velocidade": 58.04,
-   "ttft": 1.501,
+   "velocidade": 58.328,
+   "ttft": 1.149,
    "metricas": {
     "aa_hle": 9.3,
     "aa_terminal": 0,
@@ -13583,7 +13528,7 @@
     "raciocinio": 202,
     "pesquisa": 173
    },
-   "posicao": 260
+   "posicao": 259
   },
   {
    "chave": "ling-mini-2.0",
@@ -13620,7 +13565,7 @@
    "posCategorias": {
     "raciocinio": 273
    },
-   "posicao": 261
+   "posicao": 260
   },
   {
    "chave": "llama-3-instruct-8b",
@@ -13661,7 +13606,7 @@
     "raciocinio": 350,
     "pesquisa": 337
    },
-   "posicao": 262
+   "posicao": 261
   },
   {
    "chave": "minicpm-v-4.6-1.3b",
@@ -13702,7 +13647,7 @@
     "raciocinio": 342,
     "pesquisa": 299
    },
-   "posicao": 263
+   "posicao": 262
   },
   {
    "chave": "qwen3.5-0.8b",
@@ -13743,7 +13688,7 @@
     "raciocinio": 379,
     "pesquisa": 297
    },
-   "posicao": 264
+   "posicao": 263
   },
   {
    "chave": "minicpm5-2b",
@@ -13788,7 +13733,7 @@
     "raciocinio": 226,
     "pesquisa": 178
    },
-   "posicao": 265
+   "posicao": 264
   },
   {
    "chave": "apertus-8b",
@@ -13829,7 +13774,7 @@
     "raciocinio": 381,
     "pesquisa": 338
    },
-   "posicao": 266
+   "posicao": 265
   },
   {
    "chave": "granite-4.0-h-1b",
@@ -13870,7 +13815,7 @@
     "raciocinio": 375,
     "pesquisa": 300
    },
-   "posicao": 267
+   "posicao": 266
   },
   {
    "chave": "granite-4.0-micro",
@@ -13911,7 +13856,7 @@
     "raciocinio": 322,
     "pesquisa": 301
    },
-   "posicao": 268
+   "posicao": 267
   },
   {
    "chave": "phi-3-mini-instruct-3.8b",
@@ -13948,7 +13893,7 @@
    "posCategorias": {
     "raciocinio": 346
    },
-   "posicao": 269
+   "posicao": 268
   },
   {
    "chave": "phi-4-multimodal",
@@ -13963,8 +13908,8 @@
    "contexto": null,
    "precoEntrada": 0.08,
    "precoSaida": 0.32,
-   "velocidade": 17.149,
-   "ttft": 0.399,
+   "velocidade": 17.242,
+   "ttft": 0.398,
    "metricas": {
     "aa_hle": 5,
     "aa_gpqa": 31.5
@@ -13985,7 +13930,7 @@
    "posCategorias": {
     "raciocinio": 351
    },
-   "posicao": 270
+   "posicao": 269
   },
   {
    "chave": "qwen3.5-2b",
@@ -14025,6 +13970,86 @@
    "posCategorias": {
     "raciocinio": 290,
     "pesquisa": 283
+   },
+   "posicao": 270
+  },
+  {
+   "chave": "inkling",
+   "slug": "inkling",
+   "familia": "inkling",
+   "versao": 0,
+   "nome": "Inkling",
+   "empresa": "Thinking Machines",
+   "aberto": true,
+   "hf": "thinkingmachines/Inkling",
+   "lancamento": "2026-07-17",
+   "contexto": 524288,
+   "precoEntrada": 1,
+   "precoSaida": 4.05,
+   "velocidade": 184.668,
+   "ttft": 2.086,
+   "metricas": {
+    "lb_geral": 47.05,
+    "lb_agentico": 8.5,
+    "lb_raciocinio": 78.3,
+    "lb_codigo": 64,
+    "lb_navegador": 12,
+    "lb_dados": 72.8,
+    "lb_pesquisa": 59.9,
+    "lb_design": 58.3,
+    "arena_texto": 1443,
+    "arena_webdev": 1415,
+    "aa_inteligencia": 12.5,
+    "aa_hle": 31.9,
+    "aa_terminal": 1,
+    "aa_gpqa": 87.2,
+    "aa_contexto": 77.3
+   },
+   "origens": {
+    "livebench": "inkling",
+    "lmarena": "Inkling",
+    "artificialanalysis": "inkling",
+    "openrouter": "thinkingmachines/inkling"
+   },
+   "parcial": false,
+   "percentis": {
+    "lb_geral": 9.7,
+    "aa_inteligencia": 22,
+    "arena_texto": 72.8,
+    "arena_webdev": 37.1,
+    "aa_hle": 81,
+    "aa_terminal": 55.6,
+    "aa_gpqa": 83.8,
+    "aa_contexto": 76.9,
+    "lb_agentico": 6.5,
+    "lb_raciocinio": 19.4,
+    "lb_codigo": 16.1,
+    "lb_navegador": 6.5,
+    "lb_dados": 35.5,
+    "lb_pesquisa": 12.9,
+    "lb_design": 3.2
+   },
+   "nota": 38.7,
+   "cobertura": 0.96,
+   "categorias": {
+    "agentico": 37.4,
+    "codigo": 34.4,
+    "raciocinio": 58.5,
+    "dados": 42.8,
+    "pesquisa": 46.6,
+    "design": 30.1,
+    "navegador": 28.3,
+    "conversa": 61.4
+   },
+   "posCategorias": {
+    "agentico": 82,
+    "codigo": 95,
+    "raciocinio": 159,
+    "dados": 21,
+    "pesquisa": 200,
+    "design": 106,
+    "navegador": 30,
+    "conversa": 55
    },
    "posicao": 271
   },
@@ -14165,8 +14190,8 @@
    "contexto": null,
    "precoEntrada": 0.04,
    "precoSaida": 0.16,
-   "velocidade": 216.744,
-   "ttft": 0.312,
+   "velocidade": 180.14,
+   "ttft": 0.35,
    "metricas": {
     "aa_hle": 4.9,
     "aa_gpqa": 57,
@@ -14269,86 +14294,6 @@
    "posicao": 277
   },
   {
-   "chave": "inkling",
-   "slug": "inkling",
-   "familia": "inkling",
-   "versao": 0,
-   "nome": "Inkling",
-   "empresa": "Thinking Machines",
-   "aberto": true,
-   "hf": "thinkingmachines/Inkling",
-   "lancamento": "2026-07-17",
-   "contexto": 524288,
-   "precoEntrada": 1,
-   "precoSaida": 4.05,
-   "velocidade": 195.9,
-   "ttft": 2.378,
-   "metricas": {
-    "lb_geral": 47.05,
-    "lb_agentico": 8.5,
-    "lb_raciocinio": 78.3,
-    "lb_codigo": 64,
-    "lb_navegador": 12,
-    "lb_dados": 72.8,
-    "lb_pesquisa": 59.9,
-    "lb_design": 58.3,
-    "arena_texto": 1443,
-    "arena_webdev": 1415,
-    "aa_inteligencia": 12.5,
-    "aa_hle": 31.9,
-    "aa_terminal": 1,
-    "aa_gpqa": 87.2,
-    "aa_contexto": 77.3
-   },
-   "origens": {
-    "livebench": "inkling",
-    "lmarena": "Inkling",
-    "artificialanalysis": "inkling",
-    "openrouter": "thinkingmachines/inkling"
-   },
-   "parcial": false,
-   "percentis": {
-    "lb_geral": 9.7,
-    "aa_inteligencia": 20,
-    "arena_texto": 72.8,
-    "arena_webdev": 37.1,
-    "aa_hle": 81,
-    "aa_terminal": 55.6,
-    "aa_gpqa": 83.8,
-    "aa_contexto": 76.9,
-    "lb_agentico": 6.5,
-    "lb_raciocinio": 19.4,
-    "lb_codigo": 16.1,
-    "lb_navegador": 6.5,
-    "lb_dados": 35.5,
-    "lb_pesquisa": 12.9,
-    "lb_design": 3.2
-   },
-   "nota": 38.2,
-   "cobertura": 0.96,
-   "categorias": {
-    "agentico": 37.4,
-    "codigo": 34.4,
-    "raciocinio": 58.5,
-    "dados": 42.8,
-    "pesquisa": 46.6,
-    "design": 30.1,
-    "navegador": 28.3,
-    "conversa": 61.4
-   },
-   "posCategorias": {
-    "agentico": 82,
-    "codigo": 95,
-    "raciocinio": 159,
-    "dados": 21,
-    "pesquisa": 200,
-    "design": 106,
-    "navegador": 30,
-    "conversa": 55
-   },
-   "posicao": 278
-  },
-  {
    "chave": "ling-flash-2.0",
    "slug": "ling-flash-2.0",
    "familia": "ling-flash",
@@ -14392,7 +14337,7 @@
     "pesquisa": 272,
     "conversa": 134
    },
-   "posicao": 279
+   "posicao": 278
   },
   {
    "chave": "celeris-1",
@@ -14407,8 +14352,8 @@
    "contexto": null,
    "precoEntrada": 0.2,
    "precoSaida": 0.7,
-   "velocidade": 1517.899,
-   "ttft": 0.402,
+   "velocidade": 1635.227,
+   "ttft": 0.417,
    "metricas": {
     "aa_hle": 6.8,
     "aa_terminal": 0,
@@ -14437,64 +14382,7 @@
     "raciocinio": 249,
     "pesquisa": 219
    },
-   "posicao": 280
-  },
-  {
-   "chave": "claude-haiku-4.5",
-   "slug": "claude-haiku-4.5",
-   "familia": "claude-haiku",
-   "versao": 4.5,
-   "nome": "Claude Haiku 4.5",
-   "empresa": "Anthropic",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2025-10-15",
-   "contexto": 200000,
-   "precoEntrada": 1,
-   "precoSaida": 5,
-   "velocidade": 0,
-   "ttft": 0,
-   "metricas": {
-    "arena_texto": 1397,
-    "arena_webdev": 1330,
-    "aa_hle": 10.4,
-    "aa_terminal": 0,
-    "aa_gpqa": 67.2,
-    "aa_contexto": 74.3
-   },
-   "origens": {
-    "lmarena": "Claude Haiku 4.5 (20251001)",
-    "artificialanalysis": "claude-4-5-haiku-reasoning",
-    "openrouter": "anthropic/claude-haiku-4.5"
-   },
-   "parcial": false,
-   "percentis": {
-    "arena_texto": 44.1,
-    "arena_webdev": 14.7,
-    "aa_hle": 52.6,
-    "aa_terminal": 21.9,
-    "aa_gpqa": 46.1,
-    "aa_contexto": 72.1
-   },
-   "nota": 37.9,
-   "cobertura": 0.43,
-   "categorias": {
-    "agentico": 36,
-    "codigo": 32.4,
-    "raciocinio": 49.6,
-    "pesquisa": 61,
-    "design": 32.4,
-    "conversa": 47
-   },
-   "posCategorias": {
-    "agentico": 119,
-    "codigo": 101,
-    "raciocinio": 222,
-    "pesquisa": 93,
-    "design": 99,
-    "conversa": 111
-   },
-   "posicao": 281
+   "posicao": 279
   },
   {
    "chave": "claude-sonnet-4",
@@ -14544,7 +14432,7 @@
     "conversa": 142,
     "visao": 80
    },
-   "posicao": 282
+   "posicao": 280
   },
   {
    "chave": "o1",
@@ -14594,7 +14482,7 @@
     "conversa": 131,
     "visao": 84
    },
-   "posicao": 283
+   "posicao": 281
   },
   {
    "chave": "glm-4.7-flash",
@@ -14641,7 +14529,7 @@
     "pesquisa": 210,
     "conversa": 143
    },
-   "posicao": 284
+   "posicao": 282
   },
   {
    "chave": "gemma-4-e2b",
@@ -14682,7 +14570,7 @@
     "raciocinio": 300,
     "pesquisa": 274
    },
-   "posicao": 285
+   "posicao": 283
   },
   {
    "chave": "gemma-4-e4b",
@@ -14698,7 +14586,7 @@
    "precoEntrada": 0.02,
    "precoSaida": 0.1,
    "velocidade": 45.513,
-   "ttft": 0.394,
+   "ttft": 0.363,
    "metricas": {
     "aa_hle": 4.8,
     "aa_gpqa": 54.9,
@@ -14723,7 +14611,7 @@
     "raciocinio": 284,
     "pesquisa": 251
    },
-   "posicao": 286
+   "posicao": 284
   },
   {
    "chave": "granite-4.0-1b",
@@ -14764,7 +14652,7 @@
     "raciocinio": 384,
     "pesquisa": 307
    },
-   "posicao": 287
+   "posicao": 285
   },
   {
    "chave": "llama-2-chat-13b",
@@ -14801,7 +14689,7 @@
    "posCategorias": {
     "raciocinio": 365
    },
-   "posicao": 288
+   "posicao": 286
   },
   {
    "chave": "nemotron-3-nano-omni-30b-a3b",
@@ -14816,8 +14704,8 @@
    "contexto": null,
    "precoEntrada": 0.5,
    "precoSaida": 0.9,
-   "velocidade": 231.637,
-   "ttft": 0.488,
+   "velocidade": 233.372,
+   "ttft": 0.494,
    "metricas": {
     "aa_hle": 4.8,
     "aa_gpqa": 46.9,
@@ -14842,7 +14730,7 @@
     "raciocinio": 294,
     "pesquisa": 216
    },
-   "posicao": 289
+   "posicao": 287
   },
   {
    "chave": "gemma-4-31b",
@@ -14857,7 +14745,7 @@
    "contexto": 262144,
    "precoEntrada": 0.2,
    "precoSaida": 0.4,
-   "velocidade": 35.284,
+   "velocidade": 35.078,
    "ttft": 0.853,
    "metricas": {
     "lb_geral": 38.72,
@@ -14924,7 +14812,7 @@
     "conversa": 56,
     "visao": 32
    },
-   "posicao": 290
+   "posicao": 288
   },
   {
    "chave": "mixtral-8x7b",
@@ -14961,7 +14849,7 @@
    "posCategorias": {
     "raciocinio": 385
    },
-   "posicao": 291
+   "posicao": 289
   },
   {
    "chave": "trinity-large",
@@ -15010,14 +14898,14 @@
     "conversa": 37.7
    },
    "posCategorias": {
-    "agentico": 75,
+    "agentico": 74,
     "codigo": 111,
     "raciocinio": 167,
     "pesquisa": 220,
     "design": 110,
     "conversa": 145
    },
-   "posicao": 292
+   "posicao": 290
   },
   {
    "chave": "nemotron-3-nano-30b-a3b",
@@ -15032,8 +14920,8 @@
    "contexto": 262144,
    "precoEntrada": 0.06,
    "precoSaida": 0.24,
-   "velocidade": 246.741,
-   "ttft": 0.496,
+   "velocidade": 245.369,
+   "ttft": 0.516,
    "metricas": {
     "arena_texto": 1348,
     "aa_hle": 11.4,
@@ -15063,12 +14951,12 @@
     "conversa": 38.4
    },
    "posCategorias": {
-    "agentico": 120,
+    "agentico": 119,
     "raciocinio": 182,
     "pesquisa": 221,
     "conversa": 144
    },
-   "posicao": 293
+   "posicao": 291
   },
   {
    "chave": "ring-flash-2.0",
@@ -15114,7 +15002,7 @@
     "pesquisa": 262,
     "conversa": 151
    },
-   "posicao": 294
+   "posicao": 292
   },
   {
    "chave": "deepseek-r1-distill-qwen-32b",
@@ -15155,7 +15043,7 @@
     "raciocinio": 274,
     "pesquisa": 294
    },
-   "posicao": 295
+   "posicao": 293
   },
   {
    "chave": "nova-micro",
@@ -15170,8 +15058,8 @@
    "contexto": null,
    "precoEntrada": 0.035,
    "precoSaida": 0.14,
-   "velocidade": 232.739,
-   "ttft": 0.473,
+   "velocidade": 236.194,
+   "ttft": 0.509,
    "metricas": {
     "aa_hle": 4.6,
     "aa_gpqa": 35.8,
@@ -15196,7 +15084,7 @@
     "raciocinio": 352,
     "pesquisa": 287
    },
-   "posicao": 296
+   "posicao": 294
   },
   {
    "chave": "qwen3-vl-4b",
@@ -15237,7 +15125,7 @@
     "raciocinio": 295,
     "pesquisa": 260
    },
-   "posicao": 297
+   "posicao": 295
   },
   {
    "chave": "mistral-large-3",
@@ -15289,7 +15177,7 @@
     "visao": 43.5
    },
    "posCategorias": {
-    "agentico": 121,
+    "agentico": 120,
     "codigo": 112,
     "raciocinio": 275,
     "pesquisa": 226,
@@ -15297,7 +15185,7 @@
     "conversa": 78,
     "visao": 67
    },
-   "posicao": 298
+   "posicao": 296
   },
   {
    "chave": "gpt-4.1",
@@ -15348,7 +15236,7 @@
     "conversa": 119,
     "visao": 71
    },
-   "posicao": 299
+   "posicao": 297
   },
   {
    "chave": "o3-mini",
@@ -15393,12 +15281,12 @@
     "conversa": 36.8
    },
    "posCategorias": {
-    "agentico": 122,
+    "agentico": 121,
     "raciocinio": 169,
     "pesquisa": 207,
     "conversa": 150
    },
-   "posicao": 300
+   "posicao": 298
   },
   {
    "chave": "g9v3-3b",
@@ -15439,7 +15327,7 @@
     "raciocinio": 309,
     "pesquisa": 211
    },
-   "posicao": 301
+   "posicao": 299
   },
   {
    "chave": "llama-3-instruct-70b",
@@ -15480,7 +15368,7 @@
     "raciocinio": 355,
     "pesquisa": 339
    },
-   "posicao": 302
+   "posicao": 300
   },
   {
    "chave": "llama-3.1-instruct-70b",
@@ -15517,7 +15405,7 @@
    "posCategorias": {
     "raciocinio": 332
    },
-   "posicao": 303
+   "posicao": 301
   },
   {
    "chave": "llama-3.2-instruct-90b",
@@ -15554,7 +15442,70 @@
    "posCategorias": {
     "raciocinio": 317
    },
-   "posicao": 304
+   "posicao": 302
+  },
+  {
+   "chave": "gemini-3.1-flash-lite",
+   "slug": "gemini-3.1-flash-lite",
+   "familia": "gemini-flash-lite",
+   "versao": 3.1,
+   "nome": "Gemini 3.1 Flash Lite",
+   "empresa": "Google",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-05-07",
+   "contexto": 1048576,
+   "precoEntrada": 0.25,
+   "precoSaida": 1.5,
+   "velocidade": 0,
+   "ttft": 0,
+   "metricas": {
+    "arena_texto": 1416,
+    "arena_webdev": 1256,
+    "arena_visao": 1240,
+    "aa_inteligencia": 6.2,
+    "aa_hle": 17.2,
+    "aa_terminal": 0.5,
+    "aa_gpqa": 82.2,
+    "aa_contexto": 74.3
+   },
+   "origens": {
+    "lmarena": "Gemini 3.1 Flash-Lite Preview",
+    "artificialanalysis": "gemini-3-1-flash-lite-preview",
+    "openrouter": "google/gemini-3.1-flash-lite"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 11,
+    "arena_texto": 52.6,
+    "arena_webdev": 10.8,
+    "arena_visao": 43.3,
+    "aa_hle": 65.3,
+    "aa_terminal": 48.3,
+    "aa_gpqa": 71.3,
+    "aa_contexto": 72.1
+   },
+   "nota": 35.2,
+   "cobertura": 0.74,
+   "categorias": {
+    "agentico": 49.1,
+    "codigo": 30.4,
+    "raciocinio": 62.2,
+    "pesquisa": 61,
+    "design": 30.4,
+    "conversa": 51.3,
+    "visao": 46.6
+   },
+   "posCategorias": {
+    "agentico": 75,
+    "codigo": 107,
+    "raciocinio": 131,
+    "pesquisa": 92,
+    "design": 105,
+    "conversa": 94,
+    "visao": 61
+   },
+   "posicao": 303
   },
   {
    "chave": "k2-horizon-0.9b",
@@ -15595,11 +15546,11 @@
     "pesquisa": 32.5
    },
    "posCategorias": {
-    "agentico": 123,
+    "agentico": 122,
     "raciocinio": 327,
     "pesquisa": 304
    },
-   "posicao": 305
+   "posicao": 304
   },
   {
    "chave": "ministral-3-3b",
@@ -15614,8 +15565,8 @@
    "contexto": null,
    "precoEntrada": 0.1,
    "precoSaida": 0.1,
-   "velocidade": 180.649,
-   "ttft": 0.501,
+   "velocidade": 169.782,
+   "ttft": 0.521,
    "metricas": {
     "aa_hle": 5.4,
     "aa_terminal": 0,
@@ -15640,11 +15591,11 @@
     "pesquisa": 36.8
    },
    "posCategorias": {
-    "agentico": 124,
+    "agentico": 123,
     "raciocinio": 296,
     "pesquisa": 273
    },
-   "posicao": 306
+   "posicao": 305
   },
   {
    "chave": "minimax-m2",
@@ -15697,6 +15648,64 @@
     "design": 100,
     "conversa": 146
    },
+   "posicao": 306
+  },
+  {
+   "chave": "muse-glimmer",
+   "slug": "muse-glimmer",
+   "familia": "muse-glimmer",
+   "versao": 0,
+   "nome": "Muse Glimmer",
+   "empresa": "Meta",
+   "aberto": true,
+   "hf": null,
+   "lancamento": "2026-08-10",
+   "contexto": null,
+   "precoEntrada": 0.3,
+   "precoSaida": 1.2,
+   "velocidade": 115.157,
+   "ttft": 0.418,
+   "metricas": {
+    "arena_texto": 1389,
+    "arena_webdev": 1355,
+    "aa_inteligencia": 6.3,
+    "aa_hle": 22,
+    "aa_terminal": 0.5,
+    "aa_gpqa": 83.5,
+    "aa_contexto": 83.3
+   },
+   "origens": {
+    "lmarena": "Muse Glimmer",
+    "artificialanalysis": "muse-glimmer"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 14,
+    "arena_texto": 41.5,
+    "arena_webdev": 19,
+    "aa_hle": 70.2,
+    "aa_terminal": 48.3,
+    "aa_gpqa": 73.7,
+    "aa_contexto": 97
+   },
+   "nota": 34.7,
+   "cobertura": 0.7,
+   "categorias": {
+    "agentico": 49.1,
+    "codigo": 34.5,
+    "raciocinio": 64.6,
+    "pesquisa": 73.5,
+    "design": 34.5,
+    "conversa": 45.8
+   },
+   "posCategorias": {
+    "agentico": 76,
+    "codigo": 94,
+    "raciocinio": 116,
+    "pesquisa": 15,
+    "design": 93,
+    "conversa": 116
+   },
    "posicao": 307
   },
   {
@@ -15746,64 +15755,6 @@
    "posicao": 308
   },
   {
-   "chave": "muse-glimmer",
-   "slug": "muse-glimmer",
-   "familia": "muse-glimmer",
-   "versao": 0,
-   "nome": "Muse Glimmer",
-   "empresa": "Meta",
-   "aberto": true,
-   "hf": null,
-   "lancamento": "2026-08-10",
-   "contexto": null,
-   "precoEntrada": 0.3,
-   "precoSaida": 1.2,
-   "velocidade": 121.852,
-   "ttft": 0.388,
-   "metricas": {
-    "arena_texto": 1389,
-    "arena_webdev": 1355,
-    "aa_inteligencia": 6.3,
-    "aa_hle": 22,
-    "aa_terminal": 0.5,
-    "aa_gpqa": 83.5,
-    "aa_contexto": 83.3
-   },
-   "origens": {
-    "lmarena": "Muse Glimmer",
-    "artificialanalysis": "muse-glimmer"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 13.3,
-    "arena_texto": 41.5,
-    "arena_webdev": 19,
-    "aa_hle": 70.2,
-    "aa_terminal": 48.3,
-    "aa_gpqa": 73.7,
-    "aa_contexto": 97
-   },
-   "nota": 34.5,
-   "cobertura": 0.7,
-   "categorias": {
-    "agentico": 49.1,
-    "codigo": 34.5,
-    "raciocinio": 64.6,
-    "pesquisa": 73.5,
-    "design": 34.5,
-    "conversa": 45.8
-   },
-   "posCategorias": {
-    "agentico": 76,
-    "codigo": 94,
-    "raciocinio": 116,
-    "pesquisa": 15,
-    "design": 93,
-    "conversa": 116
-   },
-   "posicao": 309
-  },
-  {
    "chave": "grok",
    "slug": "grok",
    "familia": "grok",
@@ -15839,7 +15790,7 @@
    "posCategorias": {
     "raciocinio": 306
    },
-   "posicao": 310
+   "posicao": 309
   },
   {
    "chave": "jamba-1.7-mini",
@@ -15880,7 +15831,7 @@
     "raciocinio": 391,
     "pesquisa": 275
    },
-   "posicao": 311
+   "posicao": 310
   },
   {
    "chave": "phi-4-mini",
@@ -15895,8 +15846,8 @@
    "contexto": null,
    "precoEntrada": 0.075,
    "precoSaida": 0.3,
-   "velocidade": 46.682,
-   "ttft": 0.355,
+   "velocidade": 46.401,
+   "ttft": 0.373,
    "metricas": {
     "aa_hle": 4.4,
     "aa_gpqa": 33.1,
@@ -15921,7 +15872,7 @@
     "raciocinio": 380,
     "pesquisa": 279
    },
-   "posicao": 312
+   "posicao": 311
   },
   {
    "chave": "reka-flash-3",
@@ -15936,8 +15887,8 @@
    "contexto": 65536,
    "precoEntrada": 0.1,
    "precoSaida": 0.2,
-   "velocidade": 90.263,
-   "ttft": 0.839,
+   "velocidade": 89.945,
+   "ttft": 0.851,
    "metricas": {
     "aa_hle": 4.4,
     "aa_gpqa": 52.9,
@@ -15963,7 +15914,7 @@
     "raciocinio": 292,
     "pesquisa": 340
    },
-   "posicao": 313
+   "posicao": 312
   },
   {
    "chave": "qwq-32b",
@@ -16009,7 +15960,7 @@
     "pesquisa": 246,
     "conversa": 156
    },
-   "posicao": 314
+   "posicao": 313
   },
   {
    "chave": "deepseek-v3",
@@ -16054,12 +16005,12 @@
     "conversa": 43.2
    },
    "posCategorias": {
-    "agentico": 125,
+    "agentico": 124,
     "raciocinio": 272,
     "pesquisa": 214,
     "conversa": 125
    },
-   "posicao": 315
+   "posicao": 314
   },
   {
    "chave": "deephermes-3-llama-3.1-8b",
@@ -16096,7 +16047,7 @@
    "posCategorias": {
     "raciocinio": 413
    },
-   "posicao": 316
+   "posicao": 315
   },
   {
    "chave": "jamba-1.6-mini",
@@ -16133,7 +16084,7 @@
    "posCategorias": {
     "raciocinio": 403
    },
-   "posicao": 317
+   "posicao": 316
   },
   {
    "chave": "mistral-small",
@@ -16171,7 +16122,7 @@
    "posCategorias": {
     "raciocinio": 368
    },
-   "posicao": 318
+   "posicao": 317
   },
   {
    "chave": "molmo2-8b",
@@ -16212,7 +16163,7 @@
     "raciocinio": 345,
     "pesquisa": 341
    },
-   "posicao": 319
+   "posicao": 318
   },
   {
    "chave": "nova-lite",
@@ -16253,7 +16204,7 @@
     "raciocinio": 333,
     "pesquisa": 269
    },
-   "posicao": 320
+   "posicao": 319
   },
   {
    "chave": "mistral-saba",
@@ -16291,7 +16242,7 @@
    "posCategorias": {
     "raciocinio": 348
    },
-   "posicao": 321
+   "posicao": 320
   },
   {
    "chave": "qwen3-32b",
@@ -16337,12 +16288,12 @@
     "conversa": 37.7
    },
    "posCategorias": {
-    "agentico": 126,
+    "agentico": 125,
     "raciocinio": 241,
     "pesquisa": 342,
     "conversa": 147
    },
-   "posicao": 322
+   "posicao": 321
   },
   {
    "chave": "llama-3.1-nemotron-ultra-253b-v1",
@@ -16381,10 +16332,10 @@
     "conversa": 34.9
    },
    "posCategorias": {
-    "raciocinio": 223,
+    "raciocinio": 222,
     "conversa": 157
    },
-   "posicao": 323
+   "posicao": 322
   },
   {
    "chave": "mercury-2",
@@ -16434,12 +16385,94 @@
     "conversa": 39.6
    },
    "posCategorias": {
-    "agentico": 127,
+    "agentico": 126,
     "codigo": 116,
     "raciocinio": 154,
     "pesquisa": 206,
     "design": 116,
     "conversa": 139
+   },
+   "posicao": 323
+  },
+  {
+   "chave": "nemotron-3.5-super-vl",
+   "slug": "nemotron-3.5-super-vl",
+   "familia": "nemotron-super-vl",
+   "versao": 3.5,
+   "nome": "Nemotron 3.5 Super VL",
+   "empresa": "NVIDIA",
+   "aberto": true,
+   "hf": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+   "lancamento": "2026-10-15",
+   "contexto": 1048576,
+   "precoEntrada": 0.15,
+   "precoSaida": 0.5,
+   "velocidade": 428.369,
+   "ttft": 0.527,
+   "metricas": {
+    "lb_geral": 50.23,
+    "lb_agentico": 11.7,
+    "lb_raciocinio": 74.6,
+    "lb_codigo": 71.3,
+    "lb_navegador": 21.6,
+    "lb_dados": 64.6,
+    "lb_pesquisa": 66.7,
+    "lb_design": 62.8,
+    "arena_texto": 1405,
+    "arena_webdev": 1399,
+    "arena_visao": 1205,
+    "aa_inteligencia": 13.6,
+    "aa_hle": 30.7,
+    "aa_terminal": 0,
+    "aa_contexto": 69
+   },
+   "origens": {
+    "livebench": "nemotron-super-vl-3.5",
+    "lmarena": "NVIDIA-Nemotron-3.5-Super-VL-120B-A12B (NVFP4)",
+    "artificialanalysis": "nemotron-3-5-super-vl",
+    "openrouter": "nvidia/nemotron-3.5-super-vl"
+   },
+   "parcial": false,
+   "percentis": {
+    "lb_geral": 12.9,
+    "aa_inteligencia": 26,
+    "arena_texto": 46.9,
+    "arena_webdev": 32.8,
+    "arena_visao": 31.4,
+    "aa_hle": 80.4,
+    "aa_terminal": 21.9,
+    "aa_contexto": 58.9,
+    "lb_agentico": 17.7,
+    "lb_raciocinio": 9.7,
+    "lb_codigo": 19.4,
+    "lb_navegador": 16.1,
+    "lb_dados": 19.4,
+    "lb_pesquisa": 19.4,
+    "lb_design": 16.1
+   },
+   "nota": 32.9,
+   "cobertura": 1,
+   "categorias": {
+    "agentico": 29.9,
+    "codigo": 34.1,
+    "raciocinio": 46.7,
+    "dados": 34.7,
+    "pesquisa": 42.8,
+    "design": 33,
+    "navegador": 33,
+    "conversa": 48.5,
+    "visao": 40.7
+   },
+   "posCategorias": {
+    "agentico": 145,
+    "codigo": 96,
+    "raciocinio": 242,
+    "dados": 26,
+    "pesquisa": 228,
+    "design": 97,
+    "navegador": 27,
+    "conversa": 105,
+    "visao": 73
    },
    "posicao": 324
   },
@@ -16504,8 +16537,8 @@
    "contexto": 524288,
    "precoEntrada": 0.1875,
    "precoSaida": 0.6525,
-   "velocidade": 62.052,
-   "ttft": 0.59,
+   "velocidade": 60.289,
+   "ttft": 0.577,
    "metricas": {
     "aa_hle": 4.9,
     "aa_terminal": 0,
@@ -16531,7 +16564,7 @@
     "pesquisa": 47.3
    },
    "posCategorias": {
-    "agentico": 128,
+    "agentico": 127,
     "raciocinio": 266,
     "pesquisa": 195
    },
@@ -16589,88 +16622,6 @@
    "posicao": 327
   },
   {
-   "chave": "nemotron-3.5-super-vl",
-   "slug": "nemotron-3.5-super-vl",
-   "familia": "nemotron-super-vl",
-   "versao": 3.5,
-   "nome": "Nemotron 3.5 Super VL",
-   "empresa": "NVIDIA",
-   "aberto": true,
-   "hf": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
-   "lancamento": "2026-10-15",
-   "contexto": 1048576,
-   "precoEntrada": 0.15,
-   "precoSaida": 0.5,
-   "velocidade": 447.969,
-   "ttft": 0.54,
-   "metricas": {
-    "lb_geral": 50.23,
-    "lb_agentico": 11.7,
-    "lb_raciocinio": 74.6,
-    "lb_codigo": 71.3,
-    "lb_navegador": 21.6,
-    "lb_dados": 64.6,
-    "lb_pesquisa": 66.7,
-    "lb_design": 62.8,
-    "arena_texto": 1405,
-    "arena_webdev": 1399,
-    "arena_visao": 1205,
-    "aa_inteligencia": 13.6,
-    "aa_hle": 30.7,
-    "aa_terminal": 0,
-    "aa_contexto": 69
-   },
-   "origens": {
-    "livebench": "nemotron-super-vl-3.5",
-    "lmarena": "NVIDIA-Nemotron-3.5-Super-VL-120B-A12B (NVFP4)",
-    "artificialanalysis": "nemotron-3-5-super-vl",
-    "openrouter": "nvidia/nemotron-3.5-super-vl"
-   },
-   "parcial": false,
-   "percentis": {
-    "lb_geral": 12.9,
-    "aa_inteligencia": 24.4,
-    "arena_texto": 46.9,
-    "arena_webdev": 32.8,
-    "arena_visao": 31.4,
-    "aa_hle": 80.4,
-    "aa_terminal": 21.9,
-    "aa_contexto": 58.9,
-    "lb_agentico": 17.7,
-    "lb_raciocinio": 9.7,
-    "lb_codigo": 19.4,
-    "lb_navegador": 16.1,
-    "lb_dados": 19.4,
-    "lb_pesquisa": 19.4,
-    "lb_design": 16.1
-   },
-   "nota": 32.5,
-   "cobertura": 1,
-   "categorias": {
-    "agentico": 29.9,
-    "codigo": 34.1,
-    "raciocinio": 46.7,
-    "dados": 34.7,
-    "pesquisa": 42.8,
-    "design": 33,
-    "navegador": 33,
-    "conversa": 48.5,
-    "visao": 40.7
-   },
-   "posCategorias": {
-    "agentico": 145,
-    "codigo": 96,
-    "raciocinio": 242,
-    "dados": 26,
-    "pesquisa": 228,
-    "design": 97,
-    "navegador": 27,
-    "conversa": 105,
-    "visao": 73
-   },
-   "posicao": 328
-  },
-  {
    "chave": "gemini-1.0-pro",
    "slug": "gemini-1.0-pro",
    "familia": "gemini-pro",
@@ -16705,7 +16656,7 @@
    "posCategorias": {
     "raciocinio": 415
    },
-   "posicao": 329
+   "posicao": 328
   },
   {
    "chave": "gemma-3n-e2b",
@@ -16746,7 +16697,7 @@
     "raciocinio": 421,
     "pesquisa": 343
    },
-   "posicao": 330
+   "posicao": 329
   },
   {
    "chave": "granite-3.3-8b",
@@ -16783,7 +16734,7 @@
    "posCategorias": {
     "raciocinio": 396
    },
-   "posicao": 331
+   "posicao": 330
   },
   {
    "chave": "lfm2-24b-a2b",
@@ -16824,7 +16775,7 @@
     "raciocinio": 324,
     "pesquisa": 344
    },
-   "posicao": 332
+   "posicao": 331
   },
   {
    "chave": "llama-3.1-nemotron-instruct-70b",
@@ -16865,7 +16816,7 @@
     "raciocinio": 335,
     "pesquisa": 295
    },
-   "posicao": 333
+   "posicao": 332
   },
   {
    "chave": "nova-premier",
@@ -16906,7 +16857,7 @@
     "raciocinio": 298,
     "pesquisa": 231
    },
-   "posicao": 334
+   "posicao": 333
   },
   {
    "chave": "claude-sonnet-3.7",
@@ -16952,7 +16903,7 @@
     "conversa": 162,
     "visao": 83
    },
-   "posicao": 335
+   "posicao": 334
   },
   {
    "chave": "molmo-7b-d",
@@ -16998,7 +16949,7 @@
     "pesquisa": 345,
     "visao": 105
    },
-   "posicao": 336
+   "posicao": 335
   },
   {
    "chave": "command-a+",
@@ -17013,8 +16964,8 @@
    "contexto": null,
    "precoEntrada": 0,
    "precoSaida": 0,
-   "velocidade": 141.478,
-   "ttft": 0.203,
+   "velocidade": 177.253,
+   "ttft": 0.2,
    "metricas": {
     "aa_inteligencia": 6.2,
     "aa_hle": 12,
@@ -17027,7 +16978,7 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 11.1,
+    "aa_inteligencia": 11,
     "aa_hle": 58.1,
     "aa_terminal": 48.3,
     "aa_gpqa": 60.6,
@@ -17045,7 +16996,7 @@
     "raciocinio": 178,
     "pesquisa": 192
    },
-   "posicao": 337
+   "posicao": 336
   },
   {
    "chave": "qwen2.5",
@@ -17087,7 +17038,7 @@
     "raciocinio": 307,
     "conversa": 130
    },
-   "posicao": 338
+   "posicao": 337
   },
   {
    "chave": "gpt-4.1-mini",
@@ -17138,7 +17089,7 @@
     "conversa": 148,
     "visao": 81
    },
-   "posicao": 339
+   "posicao": 338
   },
   {
    "chave": "deepseek-r1-distill-qwen-14b",
@@ -17179,7 +17130,7 @@
     "raciocinio": 336,
     "pesquisa": 291
    },
-   "posicao": 340
+   "posicao": 339
   },
   {
    "chave": "granite-4.1-30b",
@@ -17220,7 +17171,7 @@
     "raciocinio": 339,
     "pesquisa": 252
    },
-   "posicao": 341
+   "posicao": 340
   },
   {
    "chave": "ministral-3-14b",
@@ -17235,8 +17186,8 @@
    "contexto": null,
    "precoEntrada": 0.2,
    "precoSaida": 0.2,
-   "velocidade": 74.536,
-   "ttft": 0.591,
+   "velocidade": 59.898,
+   "ttft": 0.937,
    "metricas": {
     "aa_hle": 4.6,
     "aa_terminal": 0,
@@ -17261,11 +17212,11 @@
     "pesquisa": 40.3
    },
    "posCategorias": {
-    "agentico": 129,
+    "agentico": 128,
     "raciocinio": 285,
     "pesquisa": 247
    },
-   "posicao": 342
+   "posicao": 341
   },
   {
    "chave": "qwen2.5-turbo",
@@ -17302,7 +17253,7 @@
    "posCategorias": {
     "raciocinio": 376
    },
-   "posicao": 343
+   "posicao": 342
   },
   {
    "chave": "glm-4.5v",
@@ -17353,7 +17304,7 @@
     "conversa": 153,
     "visao": 91
    },
-   "posicao": 344
+   "posicao": 343
   },
   {
    "chave": "mistral-3",
@@ -17404,7 +17355,7 @@
     "conversa": 128,
     "visao": 90
    },
-   "posicao": 345
+   "posicao": 344
   },
   {
    "chave": "qwen3-14b",
@@ -17446,9 +17397,68 @@
     "pesquisa": 28.2
    },
    "posCategorias": {
-    "agentico": 130,
+    "agentico": 129,
     "raciocinio": 281,
     "pesquisa": 347
+   },
+   "posicao": 345
+  },
+  {
+   "chave": "claude-haiku-4.5",
+   "slug": "claude-haiku-4.5",
+   "familia": "claude-haiku",
+   "versao": 4.5,
+   "nome": "Claude Haiku 4.5",
+   "empresa": "Anthropic",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2025-10-15",
+   "contexto": 200000,
+   "precoEntrada": 1,
+   "precoSaida": 5,
+   "velocidade": 0,
+   "ttft": 0,
+   "metricas": {
+    "arena_texto": 1397,
+    "arena_webdev": 1330,
+    "aa_inteligencia": 7.4,
+    "aa_hle": 10.4,
+    "aa_terminal": 0,
+    "aa_gpqa": 67.2,
+    "aa_contexto": 74.3
+   },
+   "origens": {
+    "lmarena": "Claude Haiku 4.5 (20251001)",
+    "artificialanalysis": "claude-4-5-haiku-reasoning",
+    "openrouter": "anthropic/claude-haiku-4.5"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 16,
+    "arena_texto": 44.1,
+    "arena_webdev": 14.7,
+    "aa_hle": 52.6,
+    "aa_terminal": 21.9,
+    "aa_gpqa": 46.1,
+    "aa_contexto": 72.1
+   },
+   "nota": 30.6,
+   "cobertura": 0.7,
+   "categorias": {
+    "agentico": 36,
+    "codigo": 32.4,
+    "raciocinio": 49.6,
+    "pesquisa": 61,
+    "design": 32.4,
+    "conversa": 47
+   },
+   "posCategorias": {
+    "agentico": 130,
+    "codigo": 101,
+    "raciocinio": 223,
+    "pesquisa": 93,
+    "design": 99,
+    "conversa": 111
    },
    "posicao": 346
   },
@@ -17696,8 +17706,8 @@
    "contexto": 131072,
    "precoEntrada": 0.03,
    "precoSaida": 0.13,
-   "velocidade": 168.169,
-   "ttft": 0.447,
+   "velocidade": 140.194,
+   "ttft": 0.426,
    "metricas": {
     "arena_texto": 1287,
     "aa_hle": 11,
@@ -17839,8 +17849,8 @@
    "contexto": null,
    "precoEntrada": 0.15,
    "precoSaida": 0.15,
-   "velocidade": 81.092,
-   "ttft": 0.518,
+   "velocidade": 73.388,
+   "ttft": 0.586,
    "metricas": {
     "aa_hle": 4.3,
     "aa_terminal": 0,
@@ -17917,54 +17927,6 @@
    "posicao": 357
   },
   {
-   "chave": "nemotron-3.5-lightning",
-   "slug": "nemotron-3.5-lightning",
-   "familia": "nemotron-lightning",
-   "versao": 3.5,
-   "nome": "Nemotron 3.5 Lightning",
-   "empresa": "NVIDIA",
-   "aberto": true,
-   "hf": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
-   "lancamento": "2026-08-11",
-   "contexto": 262144,
-   "precoEntrada": 0.07,
-   "precoSaida": 0.2,
-   "velocidade": 275.915,
-   "ttft": 0.383,
-   "metricas": {
-    "aa_inteligencia": 5.5,
-    "aa_hle": 10.6,
-    "aa_terminal": 0.5,
-    "aa_gpqa": 74.3,
-    "aa_contexto": 60.3
-   },
-   "origens": {
-    "artificialanalysis": "nemotron-3-5-lightning",
-    "openrouter": "nvidia/nemotron-3.5-lightning"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 8.9,
-    "aa_hle": 53.2,
-    "aa_terminal": 48.3,
-    "aa_gpqa": 57.2,
-    "aa_contexto": 50.4
-   },
-   "nota": 29.7,
-   "cobertura": 0.43,
-   "categorias": {
-    "agentico": 49.1,
-    "raciocinio": 53.5,
-    "pesquisa": 50.2
-   },
-   "posCategorias": {
-    "agentico": 78,
-    "raciocinio": 192,
-    "pesquisa": 174
-   },
-   "posicao": 358
-  },
-  {
    "chave": "gemma-3-27b",
    "slug": "gemma-3-27b",
    "familia": "gemma-27b",
@@ -18016,6 +17978,54 @@
     "pesquisa": 298,
     "conversa": 136,
     "visao": 85
+   },
+   "posicao": 358
+  },
+  {
+   "chave": "nemotron-3.5-lightning",
+   "slug": "nemotron-3.5-lightning",
+   "familia": "nemotron-lightning",
+   "versao": 3.5,
+   "nome": "Nemotron 3.5 Lightning",
+   "empresa": "NVIDIA",
+   "aberto": true,
+   "hf": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+   "lancamento": "2026-08-11",
+   "contexto": 262144,
+   "precoEntrada": 0.07,
+   "precoSaida": 0.2,
+   "velocidade": 270.642,
+   "ttft": 0.389,
+   "metricas": {
+    "aa_inteligencia": 5.5,
+    "aa_hle": 10.6,
+    "aa_terminal": 0.5,
+    "aa_gpqa": 74.3,
+    "aa_contexto": 60.3
+   },
+   "origens": {
+    "artificialanalysis": "nemotron-3-5-lightning",
+    "openrouter": "nvidia/nemotron-3.5-lightning"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 8,
+    "aa_hle": 53.2,
+    "aa_terminal": 48.3,
+    "aa_gpqa": 57.2,
+    "aa_contexto": 50.4
+   },
+   "nota": 29.3,
+   "cobertura": 0.43,
+   "categorias": {
+    "agentico": 49.1,
+    "raciocinio": 53.5,
+    "pesquisa": 50.2
+   },
+   "posCategorias": {
+    "agentico": 78,
+    "raciocinio": 192,
+    "pesquisa": 174
    },
    "posicao": 359
   },
@@ -18489,8 +18499,8 @@
    "contexto": null,
    "precoEntrada": 0.6,
    "precoSaida": 0.71,
-   "velocidade": 95.975,
-   "ttft": 0.646,
+   "velocidade": 96.047,
+   "ttft": 0.647,
    "metricas": {
     "aa_hle": 3.6,
     "aa_gpqa": 49.8,
@@ -18742,8 +18752,8 @@
    "contexto": 1310720,
    "precoEntrada": 0.1,
    "precoSaida": 0.3,
-   "velocidade": 90.177,
-   "ttft": 0.699,
+   "velocidade": 93.856,
+   "ttft": 0.674,
    "metricas": {
     "aa_hle": 3.8,
     "aa_terminal": 0,
@@ -19133,7 +19143,7 @@
    "contexto": 256000,
    "precoEntrada": 2.5,
    "precoSaida": 10,
-   "velocidade": 17.633,
+   "velocidade": 19.238,
    "ttft": 0.685,
    "metricas": {
     "arena_texto": 1331,
@@ -19537,9 +19547,9 @@
    "lancamento": "2026-08-31",
    "contexto": 131072,
    "precoEntrada": 0.06,
-   "precoSaida": 0.15,
-   "velocidade": 57.115,
-   "ttft": 0.497,
+   "precoSaida": 0.25,
+   "velocidade": 73.678,
+   "ttft": 0.403,
    "metricas": {
     "arena_texto": 1319,
     "aa_inteligencia": 5.1,
@@ -19555,14 +19565,14 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 6.7,
+    "aa_inteligencia": 6,
     "arena_texto": 18.7,
     "aa_hle": 49.8,
     "aa_terminal": 21.9,
     "aa_gpqa": 41.4,
     "aa_contexto": 42.4
    },
-   "nota": 22.4,
+   "nota": 22.1,
    "cobertura": 0.61,
    "categorias": {
     "agentico": 36,
@@ -19672,53 +19682,6 @@
    "posicao": 397
   },
   {
-   "chave": "mistral-small-4",
-   "slug": "mistral-small-4",
-   "familia": "mistral-small",
-   "versao": 4,
-   "nome": "Mistral Small 4",
-   "empresa": "Mistral",
-   "aberto": null,
-   "hf": null,
-   "lancamento": "2026-03-16",
-   "contexto": null,
-   "precoEntrada": 0.15,
-   "precoSaida": 0.6,
-   "velocidade": 166.527,
-   "ttft": 0.621,
-   "metricas": {
-    "aa_inteligencia": 4.3,
-    "aa_hle": 9.9,
-    "aa_terminal": 0,
-    "aa_gpqa": 76.9,
-    "aa_contexto": 49.7
-   },
-   "origens": {
-    "artificialanalysis": "mistral-small-4"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 2.2,
-    "aa_hle": 50.6,
-    "aa_terminal": 21.9,
-    "aa_gpqa": 61.8,
-    "aa_contexto": 44.2
-   },
-   "nota": 21.5,
-   "cobertura": 0.43,
-   "categorias": {
-    "agentico": 36,
-    "raciocinio": 54.1,
-    "pesquisa": 47.1
-   },
-   "posCategorias": {
-    "agentico": 141,
-    "raciocinio": 189,
-    "pesquisa": 196
-   },
-   "posicao": 398
-  },
-  {
    "chave": "pixtral-large",
    "slug": "pixtral-large",
    "familia": "pixtral-large",
@@ -19757,6 +19720,53 @@
    "posCategorias": {
     "raciocinio": 397,
     "visao": 99
+   },
+   "posicao": 398
+  },
+  {
+   "chave": "mistral-small-4",
+   "slug": "mistral-small-4",
+   "familia": "mistral-small",
+   "versao": 4,
+   "nome": "Mistral Small 4",
+   "empresa": "Mistral",
+   "aberto": null,
+   "hf": null,
+   "lancamento": "2026-03-16",
+   "contexto": null,
+   "precoEntrada": 0.15,
+   "precoSaida": 0.6,
+   "velocidade": 162.866,
+   "ttft": 0.846,
+   "metricas": {
+    "aa_inteligencia": 4.3,
+    "aa_hle": 9.9,
+    "aa_terminal": 0,
+    "aa_gpqa": 76.9,
+    "aa_contexto": 49.7
+   },
+   "origens": {
+    "artificialanalysis": "mistral-small-4"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 2,
+    "aa_hle": 50.6,
+    "aa_terminal": 21.9,
+    "aa_gpqa": 61.8,
+    "aa_contexto": 44.2
+   },
+   "nota": 21.4,
+   "cobertura": 0.43,
+   "categorias": {
+    "agentico": 36,
+    "raciocinio": 54.1,
+    "pesquisa": 47.1
+   },
+   "posCategorias": {
+    "agentico": 141,
+    "raciocinio": 189,
+    "pesquisa": 196
    },
    "posicao": 399
   },
@@ -20151,14 +20161,14 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 4.4,
+    "aa_inteligencia": 4,
     "arena_texto": 13.3,
     "aa_hle": 41.7,
     "aa_terminal": 21.9,
     "aa_gpqa": 33.7,
     "aa_contexto": 29.7
    },
-   "nota": 19.2,
+   "nota": 19,
    "cobertura": 0.61,
    "categorias": {
     "agentico": 36,
@@ -20752,8 +20762,8 @@
    "contexto": 16384,
    "precoEntrada": 0.07,
    "precoSaida": 0.14,
-   "velocidade": 43.207,
-   "ttft": 0.91,
+   "velocidade": 44.045,
+   "ttft": 0.896,
    "metricas": {
     "arena_texto": 1217,
     "aa_hle": 3.8,
@@ -22508,8 +22518,8 @@
    "hf": "meta-llama/Llama-3.3-70B-Instruct",
    "lancamento": "2024-12-06",
    "contexto": 131072,
-   "precoEntrada": 0.2,
-   "precoSaida": 0.52,
+   "precoEntrada": 0.1,
+   "precoSaida": 0.32,
    "velocidade": null,
    "ttft": null,
    "metricas": {
@@ -25831,14 +25841,14 @@
    "slug": "hy4",
    "familia": "hy",
    "versao": 4,
-   "nome": "Hy4 preview",
+   "nome": "Hy4",
    "empresa": "Tencent",
    "aberto": true,
-   "hf": "tencent/Hy4-preview",
-   "lancamento": "2026-08-28",
+   "hf": "tencent/Hy4",
+   "lancamento": "2026-11-04",
    "contexto": 1048576,
-   "precoEntrada": 0.7506,
-   "precoSaida": 2.2509,
+   "precoEntrada": 0.417,
+   "precoSaida": 1.2505,
    "velocidade": null,
    "ttft": null,
    "metricas": {
@@ -25846,7 +25856,7 @@
    },
    "origens": {
     "lmarena": "Hy4 preview",
-    "openrouter": "tencent/hy4-preview"
+    "openrouter": "tencent/hy4"
    },
    "parcial": true,
    "percentis": {
