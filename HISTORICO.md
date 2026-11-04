@@ -1,5 +1,11 @@
 # Histórico
 
+## 0.7.0 — 04/11/2026
+
+- Artificial Analysis migrada para o endpoint grátis da API V2 (`/api/v2/language/models/free`, paginado). O legado `/api/v2/data/llms/models` sai do ar em 04/11/2026 às 23:59 UTC (410 Gone).
+- O endpoint grátis não traz HLE, Terminal-Bench, GPQA nem contexto longo. Essas métricas saíram da nota, das tabelas e das categorias (Agêntico, Raciocínio e Pesquisa ficam só com o LiveBench).
+- Entra no ranking geral quem tem LiveBench ou Intelligence Index.
+
 ## 0.6.2 — 30/10/2026
 
 Acabamento para buscadores (SEO).

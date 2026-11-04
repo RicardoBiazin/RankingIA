@@ -6,6 +6,37 @@
   ]
  },
  {
+  "chave": "beam-1.0",
+  "parecidas": [
+   "beam-1.0-501b-a23b"
+  ]
+ },
+ {
+  "chave": "mistral-large-4",
+  "parecidas": [
+   "mistral-large-4-0",
+   "mistral-large"
+  ]
+ },
+ {
+  "chave": "muse-glimmer",
+  "parecidas": [
+   "muse-glimmer-30b"
+  ]
+ },
+ {
+  "chave": "mistral-small-4",
+  "parecidas": [
+   "mistral-small"
+  ]
+ },
+ {
+  "chave": "gemini-3-pro",
+  "parecidas": [
+   "gemini-3-pro-image"
+  ]
+ },
+ {
   "chave": "muse-spark",
   "parecidas": [
    "muse-spark-open",
@@ -17,16 +48,16 @@
   ]
  },
  {
-  "chave": "qwen3.8-flash-next",
+  "chave": "qwen3.5",
   "parecidas": [
-   "qwen3.8",
-   "qwen3.8-flash"
-  ]
- },
- {
-  "chave": "gemini-3-pro",
-  "parecidas": [
-   "gemini-3-pro-image"
+   "qwen3.5-plus",
+   "qwen3.5-9b",
+   "qwen3.5-35b-a3b",
+   "qwen3.5-27b",
+   "qwen3.5-122b-a10b",
+   "qwen3.5-flash-02-23",
+   "qwen3.5-plus-02-15",
+   "qwen3.5-397b-a17b"
   ]
  },
  {
@@ -39,7 +70,7 @@
   ]
  },
  {
-  "chave": "grok-4.20-v2",
+  "chave": "grok-4.20-beta-1",
   "parecidas": [
    "grok",
    "grok-4.20"
@@ -63,57 +94,15 @@
   ]
  },
  {
-  "chave": "deepseek-v3.2-speciale",
-  "parecidas": [
-   "deepseek-v3.2"
-  ]
- },
- {
-  "chave": "gpt-5-codex",
-  "parecidas": [
-   "gpt-5"
-  ]
- },
- {
-  "chave": "gpt-5.5-instant",
-  "parecidas": [
-   "gpt-5.5"
-  ]
- },
- {
-  "chave": "deepseek-v3.1",
-  "parecidas": [
-   "deepseek-v3.1-terminus"
-  ]
- },
- {
-  "chave": "grok-4",
+  "chave": "grok-4.1",
   "parecidas": [
    "grok"
   ]
  },
  {
-  "chave": "minimax-m1-80k",
+  "chave": "mistral-large-3",
   "parecidas": [
-   "minimax-m1"
-  ]
- },
- {
-  "chave": "minimax-m1-40k",
-  "parecidas": [
-   "minimax-m1"
-  ]
- },
- {
-  "chave": "beam-1.0",
-  "parecidas": [
-   "beam-1.0-501b-a23b"
-  ]
- },
- {
-  "chave": "ling-3.0-flash-fin",
-  "parecidas": [
-   "ling-3.0-flash"
+   "mistral-large"
   ]
  },
  {
@@ -123,28 +112,28 @@
   ]
  },
  {
-  "chave": "claude-opus-4",
+  "chave": "deepseek-v3.1",
   "parecidas": [
-   "claude-opus"
+   "deepseek-v3.1-terminus"
   ]
  },
  {
-  "chave": "deepseek-r1-qwen3-8b",
+  "chave": "gpt-5.5-instant",
   "parecidas": [
-   "deepseek-r1"
+   "gpt-5.5"
   ]
  },
  {
-  "chave": "grok-3-mini",
+  "chave": "kimi-k2-turbo",
+  "parecidas": [
+   "kimi",
+   "kimi-k2"
+  ]
+ },
+ {
+  "chave": "grok-4",
   "parecidas": [
    "grok"
-  ]
- },
- {
-  "chave": "mistral-large-4",
-  "parecidas": [
-   "mistral-large-4-0",
-   "mistral-large"
   ]
  },
  {
@@ -160,268 +149,6 @@
   ]
  },
  {
-  "chave": "deepseek-r1-distill-llama-70b",
-  "parecidas": [
-   "deepseek-r1"
-  ]
- },
- {
-  "chave": "phi-4-multimodal",
-  "parecidas": [
-   "phi-4"
-  ]
- },
- {
-  "chave": "claude-sonnet-4",
-  "parecidas": [
-   "claude-sonnet"
-  ]
- },
- {
-  "chave": "deepseek-r1-distill-qwen-32b",
-  "parecidas": [
-   "deepseek-r1"
-  ]
- },
- {
-  "chave": "nova-micro",
-  "parecidas": [
-   "nova-micro-v1"
-  ]
- },
- {
-  "chave": "mistral-large-3",
-  "parecidas": [
-   "mistral-large"
-  ]
- },
- {
-  "chave": "o3-mini",
-  "parecidas": [
-   "o3"
-  ]
- },
- {
-  "chave": "muse-glimmer",
-  "parecidas": [
-   "muse-glimmer-30b"
-  ]
- },
- {
-  "chave": "phi-4-mini",
-  "parecidas": [
-   "phi-4"
-  ]
- },
- {
-  "chave": "nova-lite",
-  "parecidas": [
-   "nova-lite-v1"
-  ]
- },
- {
-  "chave": "grok-code-fast-1",
-  "parecidas": [
-   "grok"
-  ]
- },
- {
-  "chave": "nova-premier",
-  "parecidas": [
-   "nova-premier-v1"
-  ]
- },
- {
-  "chave": "claude-sonnet-3.7",
-  "parecidas": [
-   "claude-sonnet"
-  ]
- },
- {
-  "chave": "qwen2.5",
-  "parecidas": [
-   "qwen2.5-vl-72b"
-  ]
- },
- {
-  "chave": "deepseek-r1-distill-qwen-14b",
-  "parecidas": [
-   "deepseek-r1"
-  ]
- },
- {
-  "chave": "devstral-small",
-  "parecidas": [
-   "devstral"
-  ]
- },
- {
-  "chave": "mistral-small-3.1",
-  "parecidas": [
-   "mistral-small",
-   "mistral-small-3.1-24b"
-  ]
- },
- {
-  "chave": "mistral-small-3",
-  "parecidas": [
-   "mistral-small"
-  ]
- },
- {
-  "chave": "qwen3-coder-480b-a35b",
-  "parecidas": [
-   "qwen3-coder"
-  ]
- },
- {
-  "chave": "mistral-small-3.2",
-  "parecidas": [
-   "mistral-small",
-   "mistral-small-3.2-24b"
-  ]
- },
- {
-  "chave": "nova-pro",
-  "parecidas": [
-   "nova-pro-v1"
-  ]
- },
- {
-  "chave": "deepseek-r1-distill-qwen-1.5b",
-  "parecidas": [
-   "deepseek-r1"
-  ]
- },
- {
-  "chave": "devstral-small-2",
-  "parecidas": [
-   "devstral"
-  ]
- },
- {
-  "chave": "kimi-linear-48b-a3b",
-  "parecidas": [
-   "kimi"
-  ]
- },
- {
-  "chave": "mistral-small-4",
-  "parecidas": [
-   "mistral-small"
-  ]
- },
- {
-  "chave": "grok-2",
-  "parecidas": [
-   "grok"
-  ]
- },
- {
-  "chave": "devstral-2",
-  "parecidas": [
-   "devstral"
-  ]
- },
- {
-  "chave": "claude-sonnet-3.5",
-  "parecidas": [
-   "claude-sonnet"
-  ]
- },
- {
-  "chave": "command-r",
-  "parecidas": [
-   "command-r-08",
-   "command-r-plus-08"
-  ]
- },
- {
-  "chave": "mistral-large-2",
-  "parecidas": [
-   "mistral-large"
-  ]
- },
- {
-  "chave": "gpt-4-turbo",
-  "parecidas": [
-   "gpt-4"
-  ]
- },
- {
-  "chave": "claude-haiku-3.5",
-  "parecidas": [
-   "claude-haiku"
-  ]
- },
- {
-  "chave": "claude-haiku-3",
-  "parecidas": [
-   "claude-haiku"
-  ]
- },
- {
-  "chave": "claude-opus-3",
-  "parecidas": [
-   "claude-opus"
-  ]
- },
- {
-  "chave": "claude-sonnet-3",
-  "parecidas": [
-   "claude-sonnet"
-  ]
- },
- {
-  "chave": "mistral",
-  "parecidas": [
-   "mistral-large-4-0",
-   "mistral-3-5",
-   "mistral-small",
-   "mistral-large",
-   "mistral-3.1",
-   "mistral-small-3.2-24b",
-   "mistral-3",
-   "mistral-small-3.1-24b",
-   "mistral-saba",
-   "mistral-small-24b",
-   "mistral-nemo"
-  ]
- },
- {
-  "chave": "qwen3.5",
-  "parecidas": [
-   "qwen3.5-plus",
-   "qwen3.5-9b",
-   "qwen3.5-35b-a3b",
-   "qwen3.5-27b",
-   "qwen3.5-122b-a10b",
-   "qwen3.5-flash-02-23",
-   "qwen3.5-plus-02-15",
-   "qwen3.5-397b-a17b"
-  ]
- },
- {
-  "chave": "grok-4.20-beta-1",
-  "parecidas": [
-   "grok",
-   "grok-4.20"
-  ]
- },
- {
-  "chave": "grok-4.1",
-  "parecidas": [
-   "grok"
-  ]
- },
- {
-  "chave": "kimi-k2-turbo",
-  "parecidas": [
-   "kimi",
-   "kimi-k2"
-  ]
- },
- {
   "chave": "gpt-5-chat",
   "parecidas": [
    "gpt-5"
@@ -434,9 +161,70 @@
   ]
  },
  {
+  "chave": "claude-opus-4",
+  "parecidas": [
+   "claude-opus"
+  ]
+ },
+ {
+  "chave": "grok-3-mini",
+  "parecidas": [
+   "grok"
+  ]
+ },
+ {
+  "chave": "qwen2.5",
+  "parecidas": [
+   "qwen2.5-vl-72b"
+  ]
+ },
+ {
+  "chave": "qwen3-coder-480b-a35b",
+  "parecidas": [
+   "qwen3-coder"
+  ]
+ },
+ {
+  "chave": "claude-sonnet-4",
+  "parecidas": [
+   "claude-sonnet"
+  ]
+ },
+ {
+  "chave": "mistral-small-3.2",
+  "parecidas": [
+   "mistral-small",
+   "mistral-small-3.2-24b"
+  ]
+ },
+ {
+  "chave": "o3-mini",
+  "parecidas": [
+   "o3"
+  ]
+ },
+ {
   "chave": "glm-4-plus",
   "parecidas": [
    "glm"
+  ]
+ },
+ {
+  "chave": "claude-sonnet-3.7",
+  "parecidas": [
+   "claude-sonnet"
+  ]
+ },
+ {
+  "chave": "grok-2",
+  "parecidas": [
+   "grok"
+  ]
+ },
+ {
+  "chave": "claude-sonnet-3.5",
+  "parecidas": [
+   "claude-sonnet"
   ]
  },
  {
@@ -475,9 +263,39 @@
   ]
  },
  {
+  "chave": "gpt-4-turbo",
+  "parecidas": [
+   "gpt-4"
+  ]
+ },
+ {
+  "chave": "mistral-large-2",
+  "parecidas": [
+   "mistral-large"
+  ]
+ },
+ {
+  "chave": "claude-opus-3",
+  "parecidas": [
+   "claude-opus"
+  ]
+ },
+ {
+  "chave": "claude-haiku-3.5",
+  "parecidas": [
+   "claude-haiku"
+  ]
+ },
+ {
   "chave": "glm-4",
   "parecidas": [
    "glm"
+  ]
+ },
+ {
+  "chave": "claude-sonnet-3",
+  "parecidas": [
+   "claude-sonnet"
   ]
  },
  {
@@ -487,15 +305,57 @@
   ]
  },
  {
+  "chave": "claude-haiku-3",
+  "parecidas": [
+   "claude-haiku"
+  ]
+ },
+ {
+  "chave": "command-r",
+  "parecidas": [
+   "command-r-08",
+   "command-r-plus-08"
+  ]
+ },
+ {
+  "chave": "mistral",
+  "parecidas": [
+   "mistral-large-4-0",
+   "mistral-3-5",
+   "mistral-small",
+   "mistral-large",
+   "mistral-3.1",
+   "mistral-small-3.2-24b",
+   "mistral-3",
+   "mistral-small-3.1-24b",
+   "mistral-saba",
+   "mistral-small-24b",
+   "mistral-nemo"
+  ]
+ },
+ {
   "chave": "mixtral-8x22b-instruct-v0.1",
   "parecidas": [
    "mixtral-8x22b"
   ]
  },
  {
-  "chave": "deepseek-r1-distill-llama-8b",
+  "chave": "devstral-2",
   "parecidas": [
-   "deepseek-r1"
+   "devstral"
+  ]
+ },
+ {
+  "chave": "grok-code-fast-1",
+  "parecidas": [
+   "grok"
+  ]
+ },
+ {
+  "chave": "qwen3.8-flash-next",
+  "parecidas": [
+   "qwen3.8",
+   "qwen3.8-flash"
   ]
  }
 ]

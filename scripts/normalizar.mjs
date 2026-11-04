@@ -58,7 +58,7 @@ if (aa) {
     if (r.origens.artificialanalysis) continue;
     r.origens.artificialanalysis = m.origem;
     r.aa = m;
-    for (const [id, campo] of [['aa_inteligencia', 'inteligencia'], ['aa_hle', 'hle'], ['aa_terminal', 'terminal'], ['aa_gpqa', 'gpqa'], ['aa_contexto', 'contextoLongo']]) {
+    for (const [id, campo] of [['aa_inteligencia', 'inteligencia']]) {
       if (m[campo] != null) r.metricas[id] = m[campo];
     }
   }

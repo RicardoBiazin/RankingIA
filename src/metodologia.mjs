@@ -19,7 +19,7 @@ export const METODOLOGIA = {
 <li>${LB}: benchmark objetivo, com questões novas a cada release para evitar contaminação. Usamos a nota geral do LiveBench 2.0 e cada categoria.</li>
 <li>${LA}: pessoas comparam duas respostas às cegas e votam; isso vira um Elo. Usamos as arenas de texto, WebDev e visão. Quando um modelo tem vários modos ("High", "Max"), fica o melhor Elo.</li>
 <li>${OR}: preço por milhão de tokens, janela de contexto, data de lançamento e se os pesos são abertos.</li>
-<li>${AA}: Intelligence Index, Humanity's Last Exam, Terminal-Bench, GPQA e contexto longo, além de preço e velocidade. ${c.aa ? 'Em uso.' : 'Ainda não está em uso.'}</li>
+<li>${AA}: Intelligence Index, além de preço e velocidade (endpoint grátis da API V2). ${c.aa ? 'Em uso.' : 'Ainda não está em uso.'}</li>
 <li>${FR}: câmbio de referência do Banco Central Europeu, para mostrar os preços em outras moedas.</li>
 </ul>
 <h2>Nota RankingIA</h2>
@@ -61,7 +61,7 @@ ${c.status}
 <li>${LB}: objective benchmark with new questions every release to avoid contamination. We use the LiveBench 2.0 overall score and each category.</li>
 <li>${LA}: people compare two anonymous answers and vote; this becomes an Elo rating. We use the text, WebDev and vision arenas. When a model has several modes ("High", "Max"), the best Elo is kept.</li>
 <li>${OR}: price per million tokens, context window, release date and whether the weights are open.</li>
-<li>${AA}: Intelligence Index, Humanity's Last Exam, Terminal-Bench, GPQA and long context, plus price and speed. ${c.aa ? 'In use.' : 'Not in use yet.'}</li>
+<li>${AA}: Intelligence Index, plus price and speed (free API V2 endpoint). ${c.aa ? 'In use.' : 'Not in use yet.'}</li>
 <li>${FR}: European Central Bank reference rates, to show prices in other currencies.</li>
 </ul>
 <h2>RankingIA score</h2>
@@ -103,7 +103,7 @@ ${c.status}
 <li>${LB}: benchmark objetivo, con preguntas nuevas en cada versión para evitar contaminación. Usamos la nota general de LiveBench 2.0 y cada categoría.</li>
 <li>${LA}: las personas comparan dos respuestas a ciegas y votan; eso se convierte en un Elo. Usamos las arenas de texto, WebDev y visión. Cuando un modelo tiene varios modos ("High", "Max"), queda el mejor Elo.</li>
 <li>${OR}: precio por millón de tokens, ventana de contexto, fecha de lanzamiento y si los pesos son abiertos.</li>
-<li>${AA}: Intelligence Index, Humanity's Last Exam, Terminal-Bench, GPQA y contexto largo, además de precio y velocidad. ${c.aa ? 'En uso.' : 'Aún no se usa.'}</li>
+<li>${AA}: Intelligence Index, además de precio y velocidad (endpoint gratuito de la API V2). ${c.aa ? 'En uso.' : 'Aún no se usa.'}</li>
 <li>${FR}: tipo de cambio de referencia del Banco Central Europeo, para mostrar precios en otras monedas.</li>
 </ul>
 <h2>Nota RankingIA</h2>
@@ -145,7 +145,7 @@ ${c.status}
 <li>${LB} : benchmark objectif, avec de nouvelles questions à chaque version pour éviter la contamination. Nous utilisons le score global de LiveBench 2.0 et chaque catégorie.</li>
 <li>${LA} : des personnes comparent deux réponses anonymes et votent ; cela donne un Elo. Nous utilisons les arènes texte, WebDev et vision. Quand un modèle a plusieurs modes (« High », « Max »), le meilleur Elo est retenu.</li>
 <li>${OR} : prix par million de tokens, fenêtre de contexte, date de sortie et poids ouverts ou non.</li>
-<li>${AA} : Intelligence Index, Humanity's Last Exam, Terminal-Bench, GPQA et contexte long, ainsi que prix et vitesse. ${c.aa ? 'Utilisé.' : 'Pas encore utilisé.'}</li>
+<li>${AA} : Intelligence Index, ainsi que prix et vitesse (endpoint gratuit de l’API V2). ${c.aa ? 'Utilisé.' : 'Pas encore utilisé.'}</li>
 <li>${FR} : taux de référence de la Banque centrale européenne, pour afficher les prix dans d’autres devises.</li>
 </ul>
 <h2>Score RankingIA</h2>
@@ -187,7 +187,7 @@ ${c.status}
 <li>${LB}：客观基准，每个版本都有新题以避免数据污染。我们使用 LiveBench 2.0 总分及各类别分数。</li>
 <li>${LA}：用户匿名比较两个回答并投票，形成 Elo 分数。我们使用文本、WebDev 和视觉竞技场。同一模型有多个模式（"High"、"Max"）时取最佳 Elo。</li>
 <li>${OR}：每百万 token 价格、上下文窗口、发布日期以及是否开放权重。</li>
-<li>${AA}：智能指数、Humanity's Last Exam、Terminal-Bench、GPQA 和长上下文，以及价格和速度。${c.aa ? '已启用。' : '尚未启用。'}</li>
+<li>${AA}：智能指数，以及价格和速度（API V2 免费端点）。${c.aa ? '已启用。' : '尚未启用。'}</li>
 <li>${FR}：欧洲央行参考汇率，用于以其他货币显示价格。</li>
 </ul>
 <h2>RankingIA 评分</h2>

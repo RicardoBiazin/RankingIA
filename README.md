@@ -24,7 +24,7 @@ O site existe em português (raiz), inglês (`/en`), espanhol (`/es`), francês 
 | [LiveBench](https://livebench.ai/) | nota geral e categorias do LiveBench 2.0, além do histórico de releases | público |
 | [LMArena](https://lmarena.ai/leaderboard) | Elo de texto, WebDev e visão | dataset público `lmarena-ai/leaderboard-dataset` |
 | [OpenRouter](https://openrouter.ai/models) | preço, contexto, data de lançamento e pesos abertos | API pública |
-| [Artificial Analysis](https://artificialanalysis.ai/) | Intelligence Index, HLE, Terminal-Bench, GPQA, contexto longo, preço e velocidade | API grátis com chave (`AA_API_KEY`); citação obrigatória |
+| [Artificial Analysis](https://artificialanalysis.ai/) | Intelligence Index, preço e velocidade (endpoint grátis `/api/v2/language/models/free`) | API grátis com chave (`AA_API_KEY`); citação obrigatória |
 
 Os preços são em dólar nas fontes. O site converte para outras 9 moedas (real, euro, iene, libra etc.) pelo câmbio de referência do BCE ([Frankfurter](https://frankfurter.dev/)), coletado junto com as fontes.
 
@@ -32,7 +32,7 @@ Se uma fonte falhar, o site continua com o último dado bom dela e avisa no roda
 
 ## Como a nota é calculada
 
-1. Entra no ranking geral quem tem ao menos um benchmark objetivo (LiveBench, Intelligence Index ou HLE da Artificial Analysis).
+1. Entra no ranking geral quem tem ao menos um benchmark objetivo (LiveBench ou Intelligence Index da Artificial Analysis).
 2. Cada métrica vira um percentil contra os modelos do ranking geral.
 3. A nota é a média ponderada desses percentis, com 1 de peso extra em 50 para quem tem pouca evidência não pular para o topo. Os pesos ficam em [`src/pesos.mjs`](src/pesos.mjs).
 
