@@ -6,6 +6,12 @@
   ]
  },
  {
+  "chave": "tencent-hy4",
+  "parecidas": [
+   "hy4"
+  ]
+ },
+ {
   "chave": "beam-1.0",
   "parecidas": [
    "beam-1.0-501b-a23b"
