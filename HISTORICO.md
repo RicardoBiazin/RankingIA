@@ -1,5 +1,10 @@
 # Histórico
 
+## 0.7.1 — 05/11/2026
+
+- Rodapé de todas as páginas: link "This site is powered by Netlify" e link para o código de conduta (exigidos pelo programa de código aberto da Netlify).
+- Novo `CODE_OF_CONDUCT.md` na raiz do repositório (Contributor Covenant 2.1).
+
 ## 0.7.0 — 04/11/2026
 
 - Artificial Analysis migrada para o endpoint grátis da API V2 (`/api/v2/language/models/free`, paginado). O legado `/api/v2/data/llms/models` sai do ar em 04/11/2026 às 23:59 UTC (410 Gone).

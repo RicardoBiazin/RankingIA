@@ -145,6 +145,8 @@ const sitemap = readFileSync(pub('sitemap.xml'), 'utf8');
 conferir((sitemap.match(/<loc>/g) ?? []).length === (d.modelos.length + 4) * IDIOMAS.length, `sitemap com as 4 páginas e todos os modelos nos ${IDIOMAS.length} idiomas`);
 const toml = readFileSync(caminho('netlify.toml'), 'utf8');
 conferir(/script-src 'self'/.test(toml) && !/unsafe-inline/.test(toml), "CSP do netlify.toml sem 'unsafe-inline'");
+conferir(existsSync(caminho('CODE_OF_CONDUCT.md')), 'CODE_OF_CONDUCT.md na raiz (exigido pelo programa de código aberto da Netlify)');
+conferir(readdirSync(caminho('public'), { recursive: true }).filter((n) => String(n).endsWith('.html')).every((n) => /href="https:\/\/www\.netlify\.com"[^>]*>This site is powered by Netlify</.test(readFileSync(caminho('public/' + n), 'utf8'))), 'todas as páginas têm o link "This site is powered by Netlify"');
 const gi = readFileSync(caminho('.gitignore'), 'utf8');
 conferir(/^\.env$/m.test(gi), '.env no .gitignore');
 

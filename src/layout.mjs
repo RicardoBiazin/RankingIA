@@ -97,7 +97,8 @@ ${conteudo}
 <div class="conteudo">
 <p>${t('rodape.dados')}: ${partes.join(' · ')}. ${t('rodape.atualizado', { d: dataHora(dados.geradoEm) })}${usaAA ? ' ' + t('rodape.aa', { l: '<a href="https://artificialanalysis.ai/" rel="noopener">Artificial Analysis</a>' }) : ''}</p>
 <p class="autonomo">${t('rodape.autonomo')}</p>
-${cambio ? `<p>${cambio}</p>\n` : ''}${falhas.length ? `<p class="fontes-falha">${falhas.map(esc).join('. ')}.</p>\n` : ''}<p>RankingIA v${esc(versao)} · ${t('rodape.feito')} <a href="https://biazin.com.br/">${esc(PERFIL.nome)}</a> · <a href="https://github.com/RicardoBiazin/RankingIA" rel="noopener">${t('rodape.codigo')}</a> · <a href="${pre}/metodologia.html">${t('rodape.como')}</a></p>
+${cambio ? `<p>${cambio}</p>\n` : ''}${falhas.length ? `<p class="fontes-falha">${falhas.map(esc).join('. ')}.</p>\n` : ''}<p>RankingIA v${esc(versao)} · ${t('rodape.feito')} <a href="https://biazin.com.br/">${esc(PERFIL.nome)}</a> · <a href="https://github.com/RicardoBiazin/RankingIA" rel="noopener">${t('rodape.codigo')}</a> · <a href="${pre}/metodologia.html">${t('rodape.como')}</a> · <a href="https://github.com/RicardoBiazin/RankingIA/blob/main/CODE_OF_CONDUCT.md" rel="noopener">${t('rodape.conduta')}</a></p>
+<p><a href="https://www.netlify.com" rel="noopener">This site is powered by Netlify</a></p>
 </div>
 </footer>
 ${scripts.map((s) => `<script src="${s}?v=${versao}"></script>`).join('\n')}

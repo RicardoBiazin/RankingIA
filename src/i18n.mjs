@@ -29,6 +29,7 @@ const T = {
   'rodape.falha': ['{f} não respondeu na última coleta; valem os dados de {d}', '{f} did not respond in the last collection; showing data from {d}', '{f} no respondió en la última recolección; se usan los datos del {d}', '{f} n’a pas répondu lors de la dernière collecte ; données du {d}', '{f} 在最近一次采集中无响应；沿用 {d} 的数据'],
   'rodape.feito': ['feito por', 'made by', 'hecho por', 'réalisé par', '作者'],
   'rodape.codigo': ['código aberto (MIT)', 'open source (MIT)', 'código abierto (MIT)', 'code source ouvert (MIT)', '开源（MIT）'],
+  'rodape.conduta': ['código de conduta', 'code of conduct', 'código de conducta', 'code de conduite', '行为准则'],
   'rodape.como': ['como a nota é calculada', 'how the score is calculated', 'cómo se calcula la nota', 'comment le score est calculé', '评分如何计算'],
 
   'rodape.autonomo': ['A coleta das informações e os resultados deste site são gerados de forma autônoma, todos os dias, por programa, sem edição manual das notas.', 'Data collection and results on this site are produced autonomously every day by software, with no manual editing of scores.', 'La recolección de información y los resultados de este sitio se generan de forma autónoma, todos los días, por software, sin edición manual de las notas.', 'La collecte des informations et les résultats de ce site sont produits de façon autonome, chaque jour, par un programme, sans retouche manuelle des scores.', '本站的信息采集与结果每天由程序自动生成，评分不经人工修改。'],
