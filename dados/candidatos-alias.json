@@ -246,14 +246,6 @@
   ]
  },
  {
-  "chave": "mercury",
-  "parecidas": [
-   "mercury-3",
-   "mercury-2.5",
-   "mercury-2"
-  ]
- },
- {
   "chave": "qwen",
   "parecidas": [
    "qwen-plus",

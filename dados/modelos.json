@@ -1,20 +1,20 @@
 {
- "geradoEm": "2026-11-08T01:36:49.257Z",
+ "geradoEm": "2026-11-08T15:40:26.290Z",
  "fontes": {
   "openrouter": {
    "ok": true,
-   "coletadoEm": "2026-11-08T01:36:47.114Z",
+   "coletadoEm": "2026-11-08T15:40:23.917Z",
    "erro": null
   },
   "livebench": {
    "ok": true,
-   "coletadoEm": "2026-11-08T01:36:47.469Z",
+   "coletadoEm": "2026-11-08T15:40:24.243Z",
    "erro": null,
    "release": "2026-10-25"
   },
   "lmarena": {
    "ok": true,
-   "coletadoEm": "2026-11-08T01:36:48.043Z",
+   "coletadoEm": "2026-11-08T15:40:24.852Z",
    "erro": null,
    "datas": {
     "texto": "2026-11-06",
@@ -24,12 +24,12 @@
   },
   "artificialanalysis": {
    "ok": true,
-   "coletadoEm": "2026-11-08T01:36:48.854Z",
+   "coletadoEm": "2026-11-08T15:40:25.901Z",
    "erro": null
   },
   "cambio": {
    "ok": true,
-   "coletadoEm": "2026-11-08T01:36:49.171Z",
+   "coletadoEm": "2026-11-08T15:40:26.202Z",
    "erro": null
   }
  },
@@ -249,8 +249,8 @@
    "contexto": null,
    "precoEntrada": 4,
    "precoSaida": 20,
-   "velocidade": 91.91,
-   "ttft": 113.79,
+   "velocidade": 97.92,
+   "ttft": 103.95,
    "metricas": {
     "arena_texto": 1539,
     "arena_webdev": 1767,
@@ -293,8 +293,8 @@
    "contexto": 1000000,
    "precoEntrada": 4,
    "precoSaida": 20,
-   "velocidade": 95.33,
-   "ttft": 645.36,
+   "velocidade": 95.23,
+   "ttft": 643.44,
    "metricas": {
     "lb_geral": 85.14,
     "lb_agentico": 72.8,
@@ -369,8 +369,8 @@
    "contexto": 1000000,
    "precoEntrada": 10,
    "precoSaida": 50,
-   "velocidade": 62.42,
-   "ttft": 105.44,
+   "velocidade": 61.41,
+   "ttft": 112.35,
    "metricas": {
     "lb_geral": 85.69,
     "lb_agentico": 77.9,
@@ -445,8 +445,8 @@
    "contexto": 1048576,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 89.65,
-   "ttft": 50.88,
+   "velocidade": 91.72,
+   "ttft": 50.69,
    "metricas": {
     "lb_geral": 79.3,
     "lb_agentico": 61.2,
@@ -517,8 +517,8 @@
    "contexto": 1000000,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 135.56,
-   "ttft": 415.87,
+   "velocidade": 136.36,
+   "ttft": 496.4,
    "metricas": {
     "lb_geral": 80.04,
     "lb_agentico": 63.4,
@@ -593,8 +593,8 @@
    "contexto": 1000000,
    "precoEntrada": 5,
    "precoSaida": 25,
-   "velocidade": 50.08,
-   "ttft": 60.36,
+   "velocidade": 50.94,
+   "ttft": 54.93,
    "metricas": {
     "arena_texto": 1507,
     "arena_webdev": 1691,
@@ -643,7 +643,7 @@
    "precoEntrada": 10,
    "precoSaida": 50,
    "velocidade": 50.29,
-   "ttft": 403.5,
+   "ttft": 308.01,
    "metricas": {
     "lb_geral": 85.64,
     "lb_agentico": 77.5,
@@ -718,8 +718,8 @@
    "contexto": 1050000,
    "precoEntrada": 1,
    "precoSaida": 5,
-   "velocidade": 114.98,
-   "ttft": 339.14,
+   "velocidade": 112.6,
+   "ttft": 327.2,
    "metricas": {
     "lb_geral": 77.79,
     "lb_agentico": 48.6,
@@ -786,8 +786,8 @@
    "contexto": 1050000,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 64.97,
-   "ttft": 290.19,
+   "velocidade": 76.81,
+   "ttft": 292.93,
    "metricas": {
     "lb_geral": 84.07,
     "lb_agentico": 68.7,
@@ -902,8 +902,8 @@
    "contexto": 1048576,
    "precoEntrada": 4,
    "precoSaida": 20,
-   "velocidade": 140.23,
-   "ttft": 25.65,
+   "velocidade": 144.16,
+   "ttft": 27.7,
    "metricas": {
     "lb_geral": 74.15,
     "lb_agentico": 52.6,
@@ -974,7 +974,7 @@
    "contexto": 1048576,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 28.02,
+   "velocidade": 28.72,
    "ttft": 2.75,
    "metricas": {
     "lb_geral": 71.29,
@@ -1040,10 +1040,10 @@
    "hf": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
    "lancamento": "2026-10-17",
    "contexto": 1048576,
-   "precoEntrada": 0.15,
-   "precoSaida": 0.6,
-   "velocidade": 155.4,
-   "ttft": 1.17,
+   "precoEntrada": 0.006,
+   "precoSaida": 0.5,
+   "velocidade": 149.36,
+   "ttft": 1.11,
    "metricas": {
     "lb_geral": 72.87,
     "lb_agentico": 35.7,
@@ -1148,7 +1148,7 @@
    "contexto": 1048576,
    "precoEntrada": 0.0699,
    "precoSaida": 1.4,
-   "velocidade": 76.64,
+   "velocidade": 82.17,
    "ttft": 1.67,
    "metricas": {
     "arena_texto": 1476,
@@ -1193,8 +1193,8 @@
    "contexto": 1048576,
    "precoEntrada": 1.25,
    "precoSaida": 4.25,
-   "velocidade": 155.93,
-   "ttft": 32.18,
+   "velocidade": 160.43,
+   "ttft": 28.73,
    "metricas": {
     "lb_geral": 63.03,
     "lb_agentico": 25.5,
@@ -1269,8 +1269,8 @@
    "contexto": 1050000,
    "precoEntrada": 0.435,
    "precoSaida": 0.87,
-   "velocidade": 41.93,
-   "ttft": 3.59,
+   "velocidade": 42.23,
+   "ttft": 3.16,
    "metricas": {
     "lb_geral": 68.48,
     "lb_agentico": 35.2,
@@ -1345,7 +1345,7 @@
    "contexto": 1000000,
    "precoEntrada": 2,
    "precoSaida": 6,
-   "velocidade": 39.4,
+   "velocidade": 40,
    "ttft": 3.18,
    "metricas": {
     "lb_geral": 61.56,
@@ -1421,7 +1421,7 @@
    "contexto": null,
    "precoEntrada": 0.3,
    "precoSaida": 1,
-   "velocidade": 127.03,
+   "velocidade": 128.27,
    "ttft": 2.23,
    "metricas": {
     "arena_webdev": 1648,
@@ -1461,8 +1461,8 @@
    "contexto": 1050000,
    "precoEntrada": 2,
    "precoSaida": 12,
-   "velocidade": 119.22,
-   "ttft": 128.67,
+   "velocidade": 126.68,
+   "ttft": 135.91,
    "metricas": {
     "lb_geral": 67.79,
     "lb_agentico": 33.1,
@@ -1537,8 +1537,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.825,
    "precoSaida": 4.125,
-   "velocidade": 122.93,
-   "ttft": 27.82,
+   "velocidade": 124.01,
+   "ttft": 27.84,
    "metricas": {
     "lb_geral": 59.21,
     "lb_agentico": 16.5,
@@ -1644,8 +1644,8 @@
    "contexto": 1000000,
    "precoEntrada": 0.1,
    "precoSaida": 0.5,
-   "velocidade": 233.13,
-   "ttft": 286.95,
+   "velocidade": 233.45,
+   "ttft": 336.62,
    "metricas": {
     "lb_geral": 69.85,
     "lb_agentico": 40,
@@ -1716,8 +1716,8 @@
    "contexto": 500000,
    "precoEntrada": 2,
    "precoSaida": 6,
-   "velocidade": 75.18,
-   "ttft": 45.56,
+   "velocidade": 70.17,
+   "ttft": 44.34,
    "metricas": {
     "lb_geral": 70.14,
     "lb_agentico": 46.1,
@@ -1792,8 +1792,8 @@
    "contexto": 1050000,
    "precoEntrada": 0.14,
    "precoSaida": 0.28,
-   "velocidade": 39.32,
-   "ttft": 3.79,
+   "velocidade": 48.15,
+   "ttft": 2.67,
    "metricas": {
     "arena_texto": 1452,
     "arena_webdev": 1636,
@@ -1841,8 +1841,8 @@
    "contexto": 1050000,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 131.83,
-   "ttft": 76.18,
+   "velocidade": 149.53,
+   "ttft": 92.7,
    "metricas": {
     "arena_texto": 1396,
     "arena_webdev": 1674,
@@ -1890,8 +1890,8 @@
    "contexto": 500000,
    "precoEntrada": 2,
    "precoSaida": 6,
-   "velocidade": 66.41,
-   "ttft": 40.94,
+   "velocidade": 77.15,
+   "ttft": 39.36,
    "metricas": {
     "lb_geral": 67.75,
     "lb_agentico": 28,
@@ -1964,9 +1964,9 @@
    "hf": "MiniMaxAI/MiniMax-M3.1-Flash",
    "lancamento": "2026-10-19",
    "contexto": 1048576,
-   "precoEntrada": 0.15,
-   "precoSaida": 0.6,
-   "velocidade": 159.05,
+   "precoEntrada": 0.075,
+   "precoSaida": 0.3,
+   "velocidade": 168.97,
    "ttft": 1.02,
    "metricas": {
     "lb_geral": 66.89,
@@ -2034,8 +2034,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.0335,
    "precoSaida": 0.083,
-   "velocidade": 51.59,
-   "ttft": 1.95,
+   "velocidade": 52.51,
+   "ttft": 2.14,
    "metricas": {
     "lb_geral": 62.07,
     "lb_agentico": 19,
@@ -2110,7 +2110,7 @@
    "contexto": 1048576,
    "precoEntrada": 0.192,
    "precoSaida": 16,
-   "velocidade": 49.9,
+   "velocidade": 49.48,
    "ttft": 3.38,
    "metricas": {
     "lb_geral": 64.57,
@@ -2182,8 +2182,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.111,
    "precoSaida": 4.44,
-   "velocidade": 78.61,
-   "ttft": 1.68,
+   "velocidade": 79.1,
+   "ttft": 1.78,
    "metricas": {
     "arena_texto": 1451,
     "arena_webdev": 1582,
@@ -2319,8 +2319,8 @@
    "contexto": 1048576,
    "precoEntrada": 1,
    "precoSaida": 2.7,
-   "velocidade": 150.43,
-   "ttft": 0.91,
+   "velocidade": 158.35,
+   "ttft": 0.92,
    "metricas": {
     "lb_geral": 58.61,
     "lb_agentico": 19.4,
@@ -2395,8 +2395,8 @@
    "contexto": 1050000,
    "precoEntrada": 0.2,
    "precoSaida": 1.2,
-   "velocidade": 125.34,
-   "ttft": 102.55,
+   "velocidade": 125.83,
+   "ttft": 113.18,
    "metricas": {
     "arena_texto": 1431,
     "arena_webdev": 1519,
@@ -2444,8 +2444,8 @@
    "contexto": null,
    "precoEntrada": 0,
    "precoSaida": 0,
-   "velocidade": 737.23,
-   "ttft": 10.44,
+   "velocidade": 876.98,
+   "ttft": 6.27,
    "metricas": {
     "aa_inteligencia": 17.8
    },
@@ -2474,8 +2474,8 @@
    "contexto": 262144,
    "precoEntrada": 0.6,
    "precoSaida": 2.4,
-   "velocidade": 249.09,
-   "ttft": 1.21,
+   "velocidade": 258.18,
+   "ttft": 1.12,
    "metricas": {
     "arena_texto": 1445,
     "aa_inteligencia": 11.8
@@ -2514,7 +2514,7 @@
    "precoEntrada": 0.1,
    "precoSaida": 0.5,
    "velocidade": 123.87,
-   "ttft": 115.88,
+   "ttft": 113.62,
    "metricas": {
     "lb_geral": 64.59,
     "lb_agentico": 30.9,
@@ -2589,7 +2589,7 @@
    "contexto": null,
    "precoEntrada": 0.4,
    "precoSaida": 1.2,
-   "velocidade": 364.93,
+   "velocidade": 380.45,
    "ttft": 0.7,
    "metricas": {
     "aa_inteligencia": 17.7
@@ -2619,7 +2619,7 @@
    "contexto": 1024000,
    "precoEntrada": 0.15,
    "precoSaida": 1.875,
-   "velocidade": 34.28,
+   "velocidade": 38.18,
    "ttft": 4.02,
    "metricas": {
     "lb_geral": 58.38,
@@ -2695,8 +2695,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.3,
    "precoSaida": 1.2,
-   "velocidade": 120.59,
-   "ttft": 0.8,
+   "velocidade": 138.03,
+   "ttft": 0.82,
    "metricas": {
     "arena_texto": 1428,
     "arena_webdev": 1484,
@@ -2744,8 +2744,8 @@
    "contexto": 1048576,
    "precoEntrada": 1.25,
    "precoSaida": 4.25,
-   "velocidade": 215.04,
-   "ttft": 0.84,
+   "velocidade": 226.21,
+   "ttft": 0.82,
    "metricas": {
     "lb_geral": 51.63,
     "lb_agentico": 11.7,
@@ -2812,8 +2812,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.3,
    "precoSaida": 2.5,
-   "velocidade": 410.01,
-   "ttft": 6.53,
+   "velocidade": 420.9,
+   "ttft": 6.28,
    "metricas": {
     "arena_texto": 1435,
     "arena_webdev": 1434,
@@ -2891,8 +2891,8 @@
    "contexto": 524288,
    "precoEntrada": 0.45,
    "precoSaida": 1.2,
-   "velocidade": 71.17,
-   "ttft": 2.11,
+   "velocidade": 78.81,
+   "ttft": 2.07,
    "metricas": {
     "arena_texto": 1414,
     "arena_webdev": 1408,
@@ -2940,8 +2940,8 @@
    "contexto": null,
    "precoEntrada": 0.7,
    "precoSaida": 2.1,
-   "velocidade": 117.24,
-   "ttft": 1.74,
+   "velocidade": 133.74,
+   "ttft": 1.68,
    "metricas": {
     "lb_geral": 43.9,
     "lb_agentico": 8.8,
@@ -3015,8 +3015,8 @@
    "contexto": 524288,
    "precoEntrada": 1,
    "precoSaida": 4.05,
-   "velocidade": 142.93,
-   "ttft": 2.17,
+   "velocidade": 175.59,
+   "ttft": 2.2,
    "metricas": {
     "lb_geral": 47.05,
     "lb_agentico": 8.5,
@@ -3148,7 +3148,7 @@
    "contexto": null,
    "precoEntrada": 0,
    "precoSaida": 0,
-   "velocidade": 258.46,
+   "velocidade": 268.19,
    "ttft": 0.46,
    "metricas": {
     "aa_inteligencia": 6.2
@@ -3178,8 +3178,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.15,
    "precoSaida": 0.5,
-   "velocidade": 269.85,
-   "ttft": 0.88,
+   "velocidade": 280.75,
+   "ttft": 0.91,
    "metricas": {
     "lb_geral": 50.23,
     "lb_agentico": 11.7,
@@ -3254,8 +3254,8 @@
    "contexto": 262144,
    "precoEntrada": 0.07,
    "precoSaida": 0.2,
-   "velocidade": 290.42,
-   "ttft": 0.54,
+   "velocidade": 287.38,
+   "ttft": 0.52,
    "metricas": {
     "aa_inteligencia": 5.5
    },
@@ -3285,8 +3285,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.25,
    "precoSaida": 1.5,
-   "velocidade": 341.84,
-   "ttft": 4.61,
+   "velocidade": 378.59,
+   "ttft": 4.57,
    "metricas": {
     "arena_texto": 1416,
     "arena_webdev": 1256,
@@ -3334,8 +3334,8 @@
    "contexto": 262144,
    "precoEntrada": 0.2,
    "precoSaida": 0.4,
-   "velocidade": 35.18,
-   "ttft": 1,
+   "velocidade": 34.91,
+   "ttft": 1.01,
    "metricas": {
     "lb_geral": 38.72,
     "lb_agentico": 10.7,
@@ -3410,8 +3410,8 @@
    "contexto": 200000,
    "precoEntrada": 1,
    "precoSaida": 5,
-   "velocidade": 88.37,
-   "ttft": 25.7,
+   "velocidade": 98.03,
+   "ttft": 23.56,
    "metricas": {
     "arena_texto": 1397,
     "arena_webdev": 1330,
@@ -3455,8 +3455,8 @@
    "contexto": null,
    "precoEntrada": 1.5,
    "precoSaida": 7.5,
-   "velocidade": 171.55,
-   "ttft": 2.39,
+   "velocidade": 172.27,
+   "ttft": 2.42,
    "metricas": {
     "arena_texto": 1421,
     "arena_webdev": 1264,
@@ -3564,7 +3564,7 @@
    "contexto": null,
    "precoEntrada": 0.3,
    "precoSaida": 1.2,
-   "velocidade": 107.55,
+   "velocidade": 108.94,
    "ttft": 1.34,
    "metricas": {
     "arena_texto": 1388,
@@ -3638,8 +3638,8 @@
    "contexto": 131072,
    "precoEntrada": 0.06,
    "precoSaida": 0.25,
-   "velocidade": 131.45,
-   "ttft": 0.83,
+   "velocidade": 139.97,
+   "ttft": 0.85,
    "metricas": {
     "arena_texto": 1319,
     "aa_inteligencia": 5.1
@@ -3677,8 +3677,8 @@
    "contexto": null,
    "precoEntrada": 0,
    "precoSaida": 0,
-   "velocidade": 133.54,
-   "ttft": 0.35,
+   "velocidade": 178.19,
+   "ttft": 0.33,
    "metricas": {
     "aa_inteligencia": 3.4
    },
@@ -3775,8 +3775,8 @@
    "contexto": 1000000,
    "precoEntrada": 5,
    "precoSaida": 25,
-   "velocidade": 39.62,
-   "ttft": 1.89,
+   "velocidade": 41.31,
+   "ttft": 1.87,
    "metricas": {
     "arena_texto": 1502,
     "arena_webdev": 1546,
@@ -3812,7 +3812,7 @@
    "precoEntrada": 10,
    "precoSaida": 50,
    "velocidade": 66.17,
-   "ttft": 101.18,
+   "ttft": 106.64,
    "metricas": {
     "arena_texto": 1492,
     "arena_webdev": 1625,
@@ -3847,8 +3847,8 @@
    "contexto": 1000000,
    "precoEntrada": 5,
    "precoSaida": 25,
-   "velocidade": 42.69,
-   "ttft": 0.96,
+   "velocidade": 45.61,
+   "ttft": 1.05,
    "metricas": {
     "arena_texto": 1490,
     "arena_webdev": 1557,
@@ -3919,8 +3919,8 @@
    "contexto": 1048576,
    "precoEntrada": 1.25,
    "precoSaida": 4.25,
-   "velocidade": 235.96,
-   "ttft": 11.28,
+   "velocidade": 249.75,
+   "ttft": 10.6,
    "metricas": {
     "arena_texto": 1484,
     "arena_webdev": 1534,
@@ -3955,8 +3955,8 @@
    "contexto": 1048576,
    "precoEntrada": 1.5,
    "precoSaida": 9,
-   "velocidade": 192.14,
-   "ttft": 14.12,
+   "velocidade": 212.69,
+   "ttft": 15.21,
    "metricas": {
     "arena_texto": 1482,
     "arena_webdev": 1499,
@@ -4026,7 +4026,7 @@
    "contexto": 1048576,
    "precoEntrada": 2,
    "precoSaida": 12,
-   "velocidade": 129.93,
+   "velocidade": 131.27,
    "ttft": 20.61,
    "metricas": {
     "arena_texto": 1480,
@@ -4062,8 +4062,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.75,
    "precoSaida": 3.75,
-   "velocidade": 198.92,
-   "ttft": 15.29,
+   "velocidade": 211.98,
+   "ttft": 14.15,
    "metricas": {
     "arena_texto": 1479,
     "arena_webdev": 1537,
@@ -4098,8 +4098,8 @@
    "contexto": 1048576,
    "precoEntrada": 1.25,
    "precoSaida": 4.25,
-   "velocidade": 228.22,
-   "ttft": 12.93,
+   "velocidade": 232.67,
+   "ttft": 14.01,
    "metricas": {
     "arena_texto": 1478,
     "arena_webdev": 1542,
@@ -4134,8 +4134,8 @@
    "contexto": 1000000,
    "precoEntrada": 1.475,
    "precoSaida": 4.425,
-   "velocidade": 200.1,
-   "ttft": 2.22,
+   "velocidade": 201.29,
+   "ttft": 2.21,
    "metricas": {
     "arena_texto": 1475,
     "arena_webdev": 1516
@@ -4201,7 +4201,7 @@
    "contexto": 1050000,
    "precoEntrada": 5,
    "precoSaida": 30,
-   "velocidade": 77.94,
+   "velocidade": 83.81,
    "ttft": 58.31,
    "metricas": {
     "arena_texto": 1471,
@@ -4267,8 +4267,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.006,
    "precoSaida": 6.8,
-   "velocidade": 192.61,
-   "ttft": 1.16,
+   "velocidade": 192.52,
+   "ttft": 1.18,
    "metricas": {
     "arena_texto": 1469,
     "arena_webdev": 1606
@@ -4301,8 +4301,8 @@
    "contexto": 1050000,
    "precoEntrada": 2.5,
    "precoSaida": 15,
-   "velocidade": 67.86,
-   "ttft": 1.04,
+   "velocidade": 68.31,
+   "ttft": 1.46,
    "metricas": {
     "arena_texto": 1469,
     "arena_webdev": 1463,
@@ -4367,7 +4367,7 @@
    "contexto": 1048576,
    "precoEntrada": 0.5,
    "precoSaida": 3,
-   "velocidade": 195.91,
+   "velocidade": 216.01,
    "ttft": 0.79,
    "metricas": {
     "arena_texto": 1466,
@@ -4437,8 +4437,8 @@
    "contexto": 204800,
    "precoEntrada": 1.4,
    "precoSaida": 4.4,
-   "velocidade": 77.17,
-   "ttft": 1.27,
+   "velocidade": 80.29,
+   "ttft": 1.24,
    "metricas": {
     "arena_texto": 1463,
     "arena_webdev": 1508
@@ -4472,7 +4472,7 @@
    "precoEntrada": 5,
    "precoSaida": 25,
    "velocidade": 57.91,
-   "ttft": 27.36,
+   "ttft": 31.63,
    "metricas": {
     "arena_texto": 1461,
     "arena_webdev": 1556,
@@ -4508,7 +4508,7 @@
    "precoEntrada": 3,
    "precoSaida": 15,
    "velocidade": 44.1,
-   "ttft": 1.06,
+   "ttft": 1.08,
    "metricas": {
     "arena_texto": 1458,
     "arena_webdev": 1522,
@@ -4579,8 +4579,8 @@
    "contexto": 1050000,
    "precoEntrada": 4,
    "precoSaida": 20,
-   "velocidade": 118.87,
-   "ttft": 2.46,
+   "velocidade": 124.45,
+   "ttft": 2.63,
    "metricas": {
     "arena_texto": 1458,
     "arena_webdev": 1615,
@@ -4615,8 +4615,8 @@
    "contexto": 262144,
    "precoEntrada": 0.65,
    "precoSaida": 3.41,
-   "velocidade": 42.27,
-   "ttft": 2.9,
+   "velocidade": 42.51,
+   "ttft": 2.88,
    "metricas": {
     "arena_texto": 1456,
     "arena_webdev": 1509,
@@ -4651,8 +4651,8 @@
    "contexto": 1000000,
    "precoEntrada": 0.32,
    "precoSaida": 1.28,
-   "velocidade": 56.54,
-   "ttft": 2.23,
+   "velocidade": 55.98,
+   "ttft": 2.15,
    "metricas": {
     "arena_texto": 1454,
     "arena_visao": 1277
@@ -4685,8 +4685,8 @@
    "contexto": 200000,
    "precoEntrada": 5,
    "precoSaida": 25,
-   "velocidade": 51.91,
-   "ttft": 16.55,
+   "velocidade": 54.64,
+   "ttft": 16.4,
    "metricas": {
     "arena_texto": 1451,
     "arena_webdev": 1494
@@ -4850,8 +4850,8 @@
    "contexto": 500000,
    "precoEntrada": 2,
    "precoSaida": 6,
-   "velocidade": 56.93,
-   "ttft": 11.73,
+   "velocidade": 59.65,
+   "ttft": 10.66,
    "metricas": {
     "arena_texto": 1448,
     "arena_webdev": 1553,
@@ -4919,8 +4919,8 @@
    "contexto": 204800,
    "precoEntrada": 1,
    "precoSaida": 3.2,
-   "velocidade": 60.71,
-   "ttft": 1.77,
+   "velocidade": 62.54,
+   "ttft": 1.91,
    "metricas": {
     "arena_texto": 1446,
     "arena_webdev": 1435
@@ -4983,7 +4983,7 @@
    "contexto": 262144,
    "precoEntrada": 0.532,
    "precoSaida": 3.325,
-   "velocidade": 52.87,
+   "velocidade": 51.82,
    "ttft": 1.91,
    "metricas": {
     "arena_texto": 1445,
@@ -5052,8 +5052,8 @@
    "contexto": 1000000,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 58.84,
-   "ttft": 0.98,
+   "velocidade": 61.58,
+   "ttft": 1.13,
    "metricas": {
     "arena_texto": 1443,
     "arena_webdev": 1539,
@@ -5088,8 +5088,8 @@
    "contexto": 400000,
    "precoEntrada": 1.25,
    "precoSaida": 10,
-   "velocidade": 92.97,
-   "ttft": 41.08,
+   "velocidade": 107.01,
+   "ttft": 36.38,
    "metricas": {
     "arena_texto": 1443,
     "arena_webdev": 1396,
@@ -5124,8 +5124,8 @@
    "contexto": 204800,
    "precoEntrada": 0.5,
    "precoSaida": 2,
-   "velocidade": 37.75,
-   "ttft": 3.49,
+   "velocidade": 38.26,
+   "ttft": 2.98,
    "metricas": {
     "arena_texto": 1440,
     "arena_webdev": 1341
@@ -5158,7 +5158,7 @@
    "contexto": 1000000,
    "precoEntrada": 3,
    "precoSaida": 15,
-   "velocidade": 43.4,
+   "velocidade": 50.42,
    "ttft": 17.73,
    "metricas": {
     "arena_texto": 1439,
@@ -5326,8 +5326,8 @@
    "contexto": 262144,
    "precoEntrada": 0.5,
    "precoSaida": 3.6,
-   "velocidade": 58.86,
-   "ttft": 2.19,
+   "velocidade": 58.59,
+   "ttft": 2.2,
    "metricas": {
     "arena_texto": 1438,
     "arena_webdev": 1400,
@@ -5394,8 +5394,8 @@
    "contexto": 204800,
    "precoEntrada": 0.6,
    "precoSaida": 2.2,
-   "velocidade": 38.16,
-   "ttft": 1.63,
+   "velocidade": 40.7,
+   "ttft": 1.45,
    "metricas": {
     "arena_texto": 1436,
     "arena_webdev": 1435
@@ -5461,8 +5461,8 @@
    "contexto": 1000000,
    "precoEntrada": 0.325,
    "precoSaida": 1.95,
-   "velocidade": 55.84,
-   "ttft": 2.09,
+   "velocidade": 55.6,
+   "ttft": 2.08,
    "metricas": {
     "arena_texto": 1436,
     "arena_webdev": 1461
@@ -5495,8 +5495,8 @@
    "contexto": 262144,
    "precoEntrada": 0.0675,
    "precoSaida": 0.225,
-   "velocidade": 95.11,
-   "ttft": 0.88,
+   "velocidade": 97.77,
+   "ttft": 0.87,
    "metricas": {
     "arena_texto": 1434,
     "arena_webdev": 1359,
@@ -5665,8 +5665,8 @@
    "contexto": null,
    "precoEntrada": 0.5,
    "precoSaida": 1.5,
-   "velocidade": 99.07,
-   "ttft": 1.03,
+   "velocidade": 100.76,
+   "ttft": 1.05,
    "metricas": {
     "arena_texto": 1428,
     "arena_webdev": 1230,
@@ -5700,7 +5700,7 @@
    "contexto": 163840,
    "precoEntrada": 0.5,
    "precoSaida": 2.15,
-   "velocidade": 166.29,
+   "velocidade": 170.79,
    "ttft": 1.01,
    "metricas": {
     "arena_texto": 1428
@@ -5829,8 +5829,8 @@
    "contexto": null,
    "precoEntrada": 3,
    "precoSaida": 15,
-   "velocidade": 74.07,
-   "ttft": 1.55,
+   "velocidade": 78.83,
+   "ttft": 1.44,
    "metricas": {
     "arena_texto": 1425
    },
@@ -5927,7 +5927,7 @@
    "contexto": null,
    "precoEntrada": 0.425,
    "precoSaida": 1.34,
-   "velocidade": 158.35,
+   "velocidade": 158.43,
    "ttft": 1.3,
    "metricas": {
     "arena_texto": 1420
@@ -6058,8 +6058,8 @@
    "contexto": null,
    "precoEntrada": 5,
    "precoSaida": 30,
-   "velocidade": 157.77,
-   "ttft": 0.88,
+   "velocidade": 157.79,
+   "ttft": 1.34,
    "metricas": {
     "arena_texto": 1419,
     "arena_visao": 1250
@@ -6123,8 +6123,8 @@
    "contexto": 262144,
    "precoEntrada": 0.26,
    "precoSaida": 2.08,
-   "velocidade": 144.61,
-   "ttft": 2.3,
+   "velocidade": 144.86,
+   "ttft": 2.31,
    "metricas": {
     "arena_texto": 1418,
     "arena_webdev": 1360,
@@ -6159,8 +6159,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.3,
    "precoSaida": 2.5,
-   "velocidade": 201.09,
-   "ttft": 16.46,
+   "velocidade": 207.36,
+   "ttft": 14.86,
    "metricas": {
     "arena_texto": 1417,
     "arena_visao": 1253
@@ -6226,8 +6226,8 @@
    "contexto": 262144,
    "precoEntrada": 0.09,
    "precoSaida": 1.1,
-   "velocidade": 171.4,
-   "ttft": 0.79,
+   "velocidade": 166.82,
+   "ttft": 0.77,
    "metricas": {
     "arena_texto": 1417
    },
@@ -6259,7 +6259,7 @@
    "precoEntrada": 1.75,
    "precoSaida": 14,
    "velocidade": 74.62,
-   "ttft": 167.34,
+   "ttft": 151.87,
    "metricas": {
     "arena_texto": 1416,
     "arena_webdev": 1417,
@@ -6326,7 +6326,7 @@
    "contexto": 400000,
    "precoEntrada": 0.75,
    "precoSaida": 4.5,
-   "velocidade": 197.33,
+   "velocidade": 211.31,
    "ttft": 4.41,
    "metricas": {
     "arena_texto": 1412,
@@ -6362,7 +6362,7 @@
    "contexto": null,
    "precoEntrada": 3,
    "precoSaida": 15,
-   "velocidade": 71.83,
+   "velocidade": 73.32,
    "ttft": 9.04,
    "metricas": {
     "arena_texto": 1412,
@@ -6428,8 +6428,8 @@
    "contexto": 200000,
    "precoEntrada": 2,
    "precoSaida": 8,
-   "velocidade": 136.29,
-   "ttft": 6.16,
+   "velocidade": 137.23,
+   "ttft": 6.41,
    "metricas": {
     "arena_texto": 1410,
     "arena_visao": 1214
@@ -6462,8 +6462,8 @@
    "contexto": 262144,
    "precoEntrada": 0.26,
    "precoSaida": 2.6,
-   "velocidade": 75.84,
-   "ttft": 5.67,
+   "velocidade": 76.09,
+   "ttft": 5.6,
    "metricas": {
     "arena_texto": 1409,
     "arena_webdev": 1358,
@@ -6566,8 +6566,8 @@
    "contexto": 400000,
    "precoEntrada": 1.25,
    "precoSaida": 10,
-   "velocidade": 105.36,
-   "ttft": 65.23,
+   "velocidade": 111.11,
+   "ttft": 68.5,
    "metricas": {
     "arena_texto": 1406,
     "arena_webdev": 1417,
@@ -6634,8 +6634,8 @@
    "contexto": 204800,
    "precoEntrada": 0.21,
    "precoSaida": 0.84,
-   "velocidade": 49.11,
-   "ttft": 1.73,
+   "velocidade": 53.66,
+   "ttft": 1.76,
    "metricas": {
     "arena_texto": 1405,
     "arena_webdev": 1398
@@ -6700,8 +6700,8 @@
    "contexto": 262144,
    "precoEntrada": 0.1,
    "precoSaida": 0.3,
-   "velocidade": 131.9,
-   "ttft": 3.41,
+   "velocidade": 156.63,
+   "ttft": 3.42,
    "metricas": {
     "arena_texto": 1403
    },
@@ -6762,8 +6762,8 @@
    "contexto": 1000000,
    "precoEntrada": 1.25,
    "precoSaida": 2.5,
-   "velocidade": 75.55,
-   "ttft": 11.87,
+   "velocidade": 87.63,
+   "ttft": 10.53,
    "metricas": {
     "arena_texto": 1397,
     "arena_webdev": 1357,
@@ -6830,7 +6830,7 @@
    "contexto": 262144,
    "precoEntrada": 0.14,
    "precoSaida": 1,
-   "velocidade": 150.21,
+   "velocidade": 151,
    "ttft": 2.06,
    "metricas": {
     "arena_texto": 1395,
@@ -6864,8 +6864,8 @@
    "contexto": null,
    "precoEntrada": 0.3,
    "precoSaida": 1.2,
-   "velocidade": 47.82,
-   "ttft": 1.81,
+   "velocidade": 51.87,
+   "ttft": 1.82,
    "metricas": {
     "arena_texto": 1392,
     "arena_webdev": 1384
@@ -6927,7 +6927,7 @@
    "contexto": null,
    "precoEntrada": 0.3,
    "precoSaida": 1.2,
-   "velocidade": 69.26,
+   "velocidade": 79,
    "ttft": 1.93,
    "metricas": {
     "arena_texto": 1389,
@@ -6960,8 +6960,8 @@
    "contexto": 131072,
    "precoEntrada": 0.13,
    "precoSaida": 0.85,
-   "velocidade": 86.92,
-   "ttft": 2.47,
+   "velocidade": 84.83,
+   "ttft": 2.46,
    "metricas": {
     "arena_texto": 1384
    },
@@ -6992,7 +6992,7 @@
    "contexto": 262144,
    "precoEntrada": 0.1,
    "precoSaida": 0.3,
-   "velocidade": 112.12,
+   "velocidade": 106.83,
    "ttft": 0.59,
    "metricas": {
     "arena_texto": 1384
@@ -7024,8 +7024,8 @@
    "contexto": 1047576,
    "precoEntrada": 2,
    "precoSaida": 8,
-   "velocidade": 172.57,
-   "ttft": 1.14,
+   "velocidade": 183.69,
+   "ttft": 1.5,
    "metricas": {
     "arena_texto": 1383,
     "arena_visao": 1211
@@ -7058,8 +7058,8 @@
    "contexto": 262144,
    "precoEntrada": 0.6,
    "precoSaida": 2.5,
-   "velocidade": 47.3,
-   "ttft": 1.93,
+   "velocidade": 48.08,
+   "ttft": 1.91,
    "metricas": {
     "arena_texto": 1380
    },
@@ -7090,7 +7090,7 @@
    "contexto": 1048576,
    "precoEntrada": 0.1,
    "precoSaida": 0.4,
-   "velocidade": 289.18,
+   "velocidade": 284.93,
    "ttft": 0.3,
    "metricas": {
     "arena_texto": 1379,
@@ -7157,7 +7157,7 @@
    "contexto": 131072,
    "precoEntrada": 0.3,
    "precoSaida": 0.9,
-   "velocidade": 78.59,
+   "velocidade": 72.81,
    "ttft": 3.88,
    "metricas": {
     "arena_texto": 1377,
@@ -7221,8 +7221,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.075,
    "precoSaida": 0.4,
-   "velocidade": 153.71,
-   "ttft": 1.21,
+   "velocidade": 152.97,
+   "ttft": 1.29,
    "metricas": {
     "arena_texto": 1377
    },
@@ -7253,8 +7253,8 @@
    "contexto": null,
    "precoEntrada": 0.32,
    "precoSaida": 0.89,
-   "velocidade": 46.49,
-   "ttft": 1.02,
+   "velocidade": 34.03,
+   "ttft": 1.01,
    "metricas": {
     "arena_texto": 1375
    },
@@ -7284,8 +7284,8 @@
    "contexto": 400000,
    "precoEntrada": 0.25,
    "precoSaida": 2,
-   "velocidade": 97.84,
-   "ttft": 71.8,
+   "velocidade": 101.78,
+   "ttft": 88.98,
    "metricas": {
     "arena_texto": 1373,
     "arena_visao": 1202
@@ -7318,8 +7318,8 @@
    "contexto": 400000,
    "precoEntrada": 0.2,
    "precoSaida": 1.25,
-   "velocidade": 174.94,
-   "ttft": 3.79,
+   "velocidade": 176.74,
+   "ttft": 3.88,
    "metricas": {
     "arena_texto": 1372,
     "arena_visao": 1195
@@ -7352,8 +7352,8 @@
    "contexto": 131072,
    "precoEntrada": 0.4,
    "precoSaida": 2,
-   "velocidade": 45.92,
-   "ttft": 2.39,
+   "velocidade": 45.38,
+   "ttft": 2.35,
    "metricas": {
     "arena_texto": 1370,
     "arena_visao": 1157
@@ -7386,8 +7386,8 @@
    "contexto": null,
    "precoEntrada": 0.3,
    "precoSaida": 0.5,
-   "velocidade": 44.75,
-   "ttft": 1.62,
+   "velocidade": 44.68,
+   "ttft": 1.55,
    "metricas": {
     "arena_texto": 1369
    },
@@ -7479,9 +7479,9 @@
    "hf": "openai/gpt-oss-120b",
    "lancamento": "2025-08-05",
    "contexto": 131072,
-   "precoEntrada": 0.024,
-   "precoSaida": 0.088,
-   "velocidade": 224.63,
+   "precoEntrada": 0.022,
+   "precoSaida": 0.082,
+   "velocidade": 234.77,
    "ttft": 0.77,
    "metricas": {
     "arena_texto": 1365
@@ -7574,8 +7574,8 @@
    "contexto": null,
    "precoEntrada": 0.14,
    "precoSaida": 0.57,
-   "velocidade": 3.99,
-   "ttft": 2.47,
+   "velocidade": 4.17,
+   "ttft": 2.48,
    "metricas": {
     "arena_texto": 1361
    },
@@ -7605,7 +7605,7 @@
    "contexto": 204800,
    "precoEntrada": 0.3,
    "precoSaida": 1.2,
-   "velocidade": 50.6,
+   "velocidade": 54.47,
    "ttft": 1.74,
    "metricas": {
     "arena_texto": 1359,
@@ -7673,8 +7673,8 @@
    "contexto": null,
    "precoEntrada": 0.375,
    "precoSaida": 1.4,
-   "velocidade": 99.95,
-   "ttft": 1.17,
+   "velocidade": 110.74,
+   "ttft": 1.14,
    "metricas": {
     "arena_texto": 1357,
     "arena_webdev": 1274
@@ -7733,20 +7733,19 @@
    "empresa": "Inception",
    "aberto": false,
    "hf": null,
-   "lancamento": "2026-03-04",
-   "contexto": 128000,
+   "lancamento": "2026-02-20",
+   "contexto": null,
    "precoEntrada": 0.25,
    "precoSaida": 0.75,
-   "velocidade": 511.62,
-   "ttft": 6.49,
+   "velocidade": 547.81,
+   "ttft": 7.67,
    "metricas": {
     "arena_texto": 1355,
     "arena_webdev": 1170
    },
    "origens": {
     "lmarena": "Mercury 2",
-    "artificialanalysis": "mercury-2",
-    "openrouter": "inception/mercury-2"
+    "artificialanalysis": "mercury-2"
    },
    "parcial": true,
    "percentis": {
@@ -7804,8 +7803,8 @@
    "contexto": null,
    "precoEntrada": 1.1,
    "precoSaida": 4.4,
-   "velocidade": 146.47,
-   "ttft": 20.49,
+   "velocidade": 149.32,
+   "ttft": 20.53,
    "metricas": {
     "arena_texto": 1353,
     "arena_visao": 1194
@@ -7870,7 +7869,7 @@
    "contexto": 200000,
    "precoEntrada": 0.0605,
    "precoSaida": 0.4,
-   "velocidade": 104.92,
+   "velocidade": 113.32,
    "ttft": 1.07,
    "metricas": {
     "arena_texto": 1351
@@ -7934,8 +7933,8 @@
    "contexto": 262144,
    "precoEntrada": 0.06,
    "precoSaida": 0.24,
-   "velocidade": 294.03,
-   "ttft": 0.56,
+   "velocidade": 284.22,
+   "ttft": 0.55,
    "metricas": {
     "arena_texto": 1348
    },
@@ -7997,8 +7996,8 @@
    "contexto": 1047576,
    "precoEntrada": 0.4,
    "precoSaida": 1.6,
-   "velocidade": 156.55,
-   "ttft": 1.38,
+   "velocidade": 163.51,
+   "ttft": 1.48,
    "metricas": {
     "arena_texto": 1341,
     "arena_visao": 1182
@@ -8031,8 +8030,8 @@
    "contexto": null,
    "precoEntrada": 0.3,
    "precoSaida": 1.2,
-   "velocidade": 50.52,
-   "ttft": 1.89,
+   "velocidade": 56.46,
+   "ttft": 1.78,
    "metricas": {
     "arena_texto": 1340,
     "arena_webdev": 1297
@@ -8064,8 +8063,8 @@
    "contexto": 131072,
    "precoEntrada": 0.08,
    "precoSaida": 0.28,
-   "velocidade": 26.96,
-   "ttft": 1.48,
+   "velocidade": 26.85,
+   "ttft": 1.53,
    "metricas": {
     "arena_texto": 1340
    },
@@ -8159,7 +8158,7 @@
    "contexto": null,
    "precoEntrada": 0.075,
    "precoSaida": 0.2,
-   "velocidade": 65.65,
+   "velocidade": 68.95,
    "ttft": 1.03,
    "metricas": {
     "arena_texto": 1338,
@@ -8192,7 +8191,7 @@
    "contexto": null,
    "precoEntrada": 1.1,
    "precoSaida": 4.4,
-   "velocidade": 226.45,
+   "velocidade": 235,
    "ttft": 19.68,
    "metricas": {
     "arena_texto": 1337
@@ -8318,7 +8317,7 @@
    "contexto": 65536,
    "precoEntrada": 0.6,
    "precoSaida": 1.8,
-   "velocidade": 69.2,
+   "velocidade": 69.61,
    "ttft": 3.36,
    "metricas": {
     "arena_texto": 1333,
@@ -8352,8 +8351,8 @@
    "contexto": 256000,
    "precoEntrada": 2.5,
    "precoSaida": 10,
-   "velocidade": 15.11,
-   "ttft": 3.27,
+   "velocidade": 9.46,
+   "ttft": 6.56,
    "metricas": {
     "arena_texto": 1331
    },
@@ -8569,8 +8568,8 @@
    "contexto": 400000,
    "precoEntrada": 0.05,
    "precoSaida": 0.4,
-   "velocidade": 182,
-   "ttft": 1.04,
+   "velocidade": 203.96,
+   "ttft": 1.33,
    "metricas": {
     "arena_texto": 1320,
     "arena_visao": 1159
@@ -9264,8 +9263,8 @@
    "contexto": 131072,
    "precoEntrada": 0.03,
    "precoSaida": 0.13,
-   "velocidade": 234.86,
-   "ttft": 0.8,
+   "velocidade": 263.83,
+   "ttft": 0.75,
    "metricas": {
     "arena_texto": 1287
    },
@@ -9328,8 +9327,8 @@
    "contexto": 128000,
    "precoEntrada": 0.15,
    "precoSaida": 0.6,
-   "velocidade": 68.1,
-   "ttft": 1.59,
+   "velocidade": 63.52,
+   "ttft": 1.67,
    "metricas": {
     "arena_texto": 1286,
     "arena_visao": 1066
@@ -9362,8 +9361,8 @@
    "contexto": 1047576,
    "precoEntrada": 0.1,
    "precoSaida": 0.4,
-   "velocidade": 303.8,
-   "ttft": 1.31,
+   "velocidade": 289.3,
+   "ttft": 1.24,
    "metricas": {
     "arena_texto": 1285,
     "arena_visao": 1063
@@ -9702,7 +9701,7 @@
    "contexto": null,
    "precoEntrada": 10,
    "precoSaida": 30,
-   "velocidade": 121.57,
+   "velocidade": 126.06,
    "ttft": 1.47,
    "metricas": {
     "arena_texto": 1272,
@@ -10666,7 +10665,7 @@
    "precoEntrada": 0.07,
    "precoSaida": 0.14,
    "velocidade": 34.52,
-   "ttft": 2.67,
+   "ttft": 2.64,
    "metricas": {
     "arena_texto": 1217
    },
@@ -11034,8 +11033,8 @@
    "hf": "meta-llama/Meta-Llama-3.1-8B-Instruct",
    "lancamento": "2024-07-23",
    "contexto": 131072,
-   "precoEntrada": 0.05,
-   "precoSaida": 0.08,
+   "precoEntrada": 0.02,
+   "precoSaida": 0.04,
    "velocidade": null,
    "ttft": null,
    "metricas": {
@@ -13602,7 +13601,7 @@
    "precoEntrada": 1.25,
    "precoSaida": 10,
    "velocidade": 124.81,
-   "ttft": 10.86,
+   "ttft": 11.67,
    "metricas": {
     "arena_webdev": 1337
    },
@@ -13633,7 +13632,7 @@
    "contexto": 400000,
    "precoEntrada": 0.25,
    "precoSaida": 2,
-   "velocidade": 175.96,
+   "velocidade": 177.33,
    "ttft": 13.92,
    "metricas": {
     "arena_webdev": 1243
@@ -13665,8 +13664,8 @@
    "contexto": 400000,
    "precoEntrada": 1.75,
    "precoSaida": 14,
-   "velocidade": 96.66,
-   "ttft": 158.68,
+   "velocidade": 104.2,
+   "ttft": 151.6,
    "metricas": {
     "arena_webdev": 1339
    },
@@ -13697,8 +13696,8 @@
    "contexto": 400000,
    "precoEntrada": 1.75,
    "precoSaida": 14,
-   "velocidade": 88.14,
-   "ttft": 81.68,
+   "velocidade": 90.77,
+   "ttft": 83.7,
    "metricas": {
     "arena_webdev": 1407
    },
@@ -13912,8 +13911,8 @@
    "contexto": 262144,
    "precoEntrada": 0.6,
    "precoSaida": 3.5,
-   "velocidade": 59.37,
-   "ttft": 2.72,
+   "velocidade": 67.68,
+   "ttft": 2.76,
    "metricas": {
     "arena_webdev": 1473
    },
@@ -14517,7 +14516,7 @@
    "contexto": null,
    "precoEntrada": 0.15,
    "precoSaida": 0.47,
-   "velocidade": 97.27,
+   "velocidade": 101.41,
    "ttft": 1.97,
    "metricas": {
     "arena_webdev": 1625
