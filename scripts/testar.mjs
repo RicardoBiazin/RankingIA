@@ -147,6 +147,18 @@ const toml = readFileSync(caminho('netlify.toml'), 'utf8');
 conferir(/script-src 'self'/.test(toml) && !/unsafe-inline/.test(toml), "CSP do netlify.toml sem 'unsafe-inline'");
 conferir(existsSync(caminho('CODE_OF_CONDUCT.md')), 'CODE_OF_CONDUCT.md na raiz (exigido pelo programa de código aberto da Netlify)');
 conferir(readdirSync(caminho('public'), { recursive: true }).filter((n) => String(n).endsWith('.html')).every((n) => /href="https:\/\/www\.netlify\.com"[^>]*>This site is powered by Netlify</.test(readFileSync(caminho('public/' + n), 'utf8'))), 'todas as páginas têm o link "This site is powered by Netlify"');
+// Agentes de IA (GEO): robots liberado, llms.txt com as páginas principais, llms-full.txt sem "undefined".
+const { RASTREADORES_IA } = await import('../src/ia.mjs');
+const robots = readFileSync(caminho('public/robots.txt'), 'utf8');
+const llms = readFileSync(caminho('public/llms.txt'), 'utf8');
+const llmsFull = readFileSync(caminho('public/llms-full.txt'), 'utf8');
+conferir(RASTREADORES_IA.every((bot) => robots.includes(`User-agent: ${bot}
+Allow: /`)), `robots.txt libera ${RASTREADORES_IA.length} rastreadores de IA`);
+conferir(llms.startsWith('# RankingIA') && /^> /m.test(llms), 'llms.txt com título e resumo');
+conferir(['/', '/graficos.html', '/comparar.html', '/metodologia.html'].every((r) => llms.includes(`https://rankingia.biazin.com.br${r}`)), 'llms.txt aponta para as páginas principais');
+conferir(d.modelos.filter((m) => !m.parcial).sort((a, b) => b.nota - a.nota).slice(0, 25).every((m) => llms.includes(`/modelo/${m.slug}.html`)), 'llms.txt lista os 25 modelos de maior nota');
+conferir(!/undefined|null|NaN/.test(llms + llmsFull), 'llms.txt e llms-full.txt sem undefined/null/NaN');
+conferir(d.modelos.filter((m) => !m.parcial).every((m) => llmsFull.includes(`### ${m.nome}`)), 'llms-full.txt tem todos os modelos do ranking');
 const gi = readFileSync(caminho('.gitignore'), 'utf8');
 conferir(/^\.env$/m.test(gi), '.env no .gitignore');
 

@@ -90,3 +90,8 @@ Cada idioma tem URL própria (`/`, `/en/`, `/es/`, `/fr/`, `/zh/`), então toda 
 ## Licença
 
 Código sob [MIT](LICENSE). Os dados pertencem às fontes e seguem os termos de cada uma.
+
+## Visibilidade para agentes de IA (GEO)
+
+- `public/robots.txt` vem de `src/ia.mjs` e libera os rastreadores de IA conhecidos. Para liberar só a busca, tire os de treinamento (GPTBot, ClaudeBot, Google-Extended, CCBot, Applebot-Extended) da lista `RASTREADORES_IA`.
+- `public/llms.txt` é o índice em Markdown; `public/llms-full.txt` traz o ranking completo. Os dois saem de `dados/modelos.json` a cada `npm run gerar`.

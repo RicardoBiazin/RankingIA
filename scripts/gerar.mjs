@@ -11,6 +11,7 @@ import { formatar } from '../src/moedas.mjs';
 import { IDIOMAS, tradutor, textosCliente } from '../src/i18n.mjs';
 import { METODOLOGIA, METODOLOGIA_TITULO, STATUS_CAB } from '../src/metodologia.mjs';
 import { PERFIL } from '../src/perfil.mjs';
+import { robotsTxt, llmsTxt, llmsFullTxt } from '../src/ia.mjs';
 
 const versao = JSON.parse(readFileSync(caminho('package.json'), 'utf8')).version;
 const dados = lerJSON('dados/modelos.json');
@@ -410,7 +411,10 @@ for (const a of ['tema.js', 'moeda.js', 'tabela.js', 'graficos.js', 'comparar.js
 mkdirSync(caminho('public/vendor'), { recursive: true });
 copyFileSync(caminho('node_modules/chart.js/dist/chart.umd.min.js'), caminho('public/vendor/chart.umd.min.js'));
 gravarTexto('public/favicon.svg', '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#2a78d6"/><rect x="7" y="17" width="4.5" height="8" rx="1.5" fill="#fff"/><rect x="13.75" y="8" width="4.5" height="17" rx="1.5" fill="#fff"/><rect x="20.5" y="13" width="4.5" height="12" rx="1.5" fill="#fff"/></svg>\n');
-gravarTexto('public/robots.txt', `User-agent: *\nAllow: /\nSitemap: ${SITE}/sitemap.xml\n`);
+// Agentes de IA: robots.txt liberado para os rastreadores conhecidos, e os índices em texto (llms.txt).
+gravarTexto('public/robots.txt', robotsTxt());
+gravarTexto('public/llms.txt', llmsTxt(dados));
+gravarTexto('public/llms-full.txt', llmsFullTxt(dados));
 const hoje = dados.geradoEm.slice(0, 10);
 gravarTexto('public/sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlsSitemap.map((u) => `<url><loc>${SITE}${u}</loc><lastmod>${hoje}</lastmod></url>`).join('\n')}\n</urlset>\n`);
 

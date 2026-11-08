@@ -1,5 +1,11 @@
 # Histórico
 
+## 0.7.2 — 07/11/2026
+
+- Visibilidade para agentes de IA (GEO): `public/llms.txt` (índice com as páginas principais e os 25 modelos de maior nota) e `public/llms-full.txt` (ranking completo em texto).
+- `robots.txt` gerado pelo script, com regra explícita `Allow: /` para os rastreadores de IA conhecidos (lista em `src/ia.mjs`).
+- Testes conferem robots, llms.txt e ausência de `undefined`/`null`/`NaN`.
+
 ## 0.7.1 — 05/11/2026
 
 - Rodapé de todas as páginas: link "This site is powered by Netlify" e link para o código de conduta (exigidos pelo programa de código aberto da Netlify).
