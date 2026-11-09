@@ -1,7 +1,7 @@
 {
  "fonte": "livebench",
- "coletadoEm": "2026-11-08T15:40:24.243Z",
- "release": "2026-10-25",
+ "coletadoEm": "2026-11-09T19:21:43.203Z",
+ "release": "2026-11-06",
  "categorias": [
   "Long Agentic",
   "Reasoning",
@@ -20,449 +20,463 @@
   {
    "origem": "claude-fable-5.1",
    "chave": "claude-fable-5.1",
-   "geral": 85.69,
+   "geral": 83.96,
    "categorias": {
-    "Long Agentic": 77.9,
+    "Long Agentic": 74.2,
     "Reasoning": 91.7,
-    "Coding": 97.7,
+    "Coding": 89.7,
     "Browser": 89.8,
     "Data Analysis": 80.3,
-    "Research": 82,
-    "Design": 83.4
+    "Research": 88.5,
+    "Design": 81.6
+   }
+  },
+  {
+   "origem": "claude-fable-5.2",
+   "chave": "claude-fable-5.2",
+   "geral": 85.22,
+   "categorias": {
+    "Long Agentic": 84.4,
+    "Reasoning": 88.8,
+    "Coding": 79.2,
+    "Browser": 86.9,
+    "Data Analysis": 81.5,
+    "Research": 94.5,
+    "Design": 85.1
    }
   },
   {
    "origem": "claude-haiku-5.5",
    "chave": "claude-haiku-5.5",
-   "geral": 69.85,
+   "geral": 68.98,
    "categorias": {
-    "Long Agentic": 40,
+    "Long Agentic": 48.1,
     "Reasoning": 82.4,
-    "Coding": 91.4,
+    "Coding": 77.6,
     "Browser": 69.5,
     "Data Analysis": 53.1,
-    "Research": 81.9,
-    "Design": 83.1
+    "Research": 84.3,
+    "Design": 79.3
    }
   },
   {
    "origem": "claude-opus-5.5",
    "chave": "claude-opus-5.5",
-   "geral": 85.14,
+   "geral": 83.44,
    "categorias": {
     "Long Agentic": 72.8,
     "Reasoning": 92.2,
-    "Coding": 96.3,
+    "Coding": 87.1,
     "Browser": 88.4,
     "Data Analysis": 80.3,
-    "Research": 85,
-    "Design": 86.9
+    "Research": 88.9,
+    "Design": 83.3
    }
   },
   {
    "origem": "claude-sonnet-5.5",
    "chave": "claude-sonnet-5.5",
-   "geral": 80.04,
+   "geral": 76.99,
    "categorias": {
     "Long Agentic": 63.4,
     "Reasoning": 91.6,
-    "Coding": 94.7,
+    "Coding": 77.2,
     "Browser": 89.3,
     "Data Analysis": 59.5,
-    "Research": 83.6,
-    "Design": 85
+    "Research": 88,
+    "Design": 81.3
    }
   },
   {
    "origem": "deepseek-v4.1-flash-1017",
    "chave": "deepseek-v4.1-flash",
-   "geral": 72.87,
+   "geral": 70.26,
    "categorias": {
-    "Long Agentic": 35.7,
+    "Long Agentic": 38.8,
     "Reasoning": 89.1,
-    "Coding": 96,
+    "Coding": 80.4,
     "Browser": 67.2,
     "Data Analysis": 79.5,
-    "Research": 79.5,
-    "Design": 83.4
+    "Research": 78.6,
+    "Design": 79.8
    }
   },
   {
    "origem": "gemini-3.8-flash",
    "chave": "gemini-3.8-flash",
-   "geral": 59.21,
+   "geral": 55.99,
    "categorias": {
     "Long Agentic": 16.5,
     "Reasoning": 89.3,
-    "Coding": 82.2,
+    "Coding": 65.7,
     "Browser": 45.1,
     "Data Analysis": 54,
-    "Research": 79.1,
-    "Design": 72.7
+    "Research": 79.4,
+    "Design": 69.7
    }
   },
   {
    "origem": "gemini-4-argon",
    "chave": "gemini-4-argon",
-   "geral": 79.3,
+   "geral": 77.69,
    "categorias": {
-    "Long Agentic": 61.2,
+    "Long Agentic": 58.5,
     "Reasoning": 95.1,
-    "Coding": 89.7,
+    "Coding": 85.7,
     "Browser": 82.8,
     "Data Analysis": 85.2,
-    "Research": 83.1,
-    "Design": 73.7
+    "Research": 86.8,
+    "Design": 69.2
    }
   },
   {
    "origem": "gemma-4-31b",
    "chave": "gemma-4-31b",
-   "geral": 38.72,
+   "geral": 32.43,
    "categorias": {
-    "Long Agentic": 10.7,
+    "Long Agentic": 8.5,
     "Reasoning": 68.3,
-    "Coding": 49,
+    "Coding": 20.3,
     "Browser": 0,
     "Data Analysis": 53.3,
-    "Research": 44.4,
-    "Design": 58.4
+    "Research": 38.1,
+    "Design": 56.5
    }
   },
   {
    "origem": "glm-5.3-flash",
    "chave": "glm-5.3-flash",
-   "geral": 62.07,
+   "geral": 60.67,
    "categorias": {
-    "Long Agentic": 19,
+    "Long Agentic": 20.7,
     "Reasoning": 77.6,
-    "Coding": 80.6,
+    "Coding": 70.9,
     "Browser": 59.8,
     "Data Analysis": 76.4,
-    "Research": 70.1,
-    "Design": 77.2
+    "Research": 73.9,
+    "Design": 73.7
    }
   },
   {
    "origem": "gpt-5.6-terra",
    "chave": "gpt-5.6-terra",
-   "geral": 67.79,
+   "geral": 67.15,
    "categorias": {
-    "Long Agentic": 33.1,
+    "Long Agentic": 25.9,
     "Reasoning": 90.6,
-    "Coding": 86.2,
+    "Coding": 84.2,
     "Browser": 70.3,
     "Data Analysis": 79.3,
-    "Research": 60.4,
-    "Design": 76
+    "Research": 79.7,
+    "Design": 70.9
    }
   },
   {
    "origem": "gpt-6-astra",
    "chave": "gpt-6-astra",
-   "geral": 85.64,
+   "geral": 84.45,
    "categorias": {
-    "Long Agentic": 77.5,
+    "Long Agentic": 75.6,
     "Reasoning": 92.7,
-    "Coding": 93.7,
+    "Coding": 87.5,
     "Browser": 91.3,
     "Data Analysis": 83,
-    "Research": 85.2,
-    "Design": 82
+    "Research": 90.6,
+    "Design": 80
    }
   },
   {
    "origem": "gpt-6-luna",
    "chave": "gpt-6-luna",
-   "geral": 64.59,
+   "geral": 60.42,
    "categorias": {
-    "Long Agentic": 30.9,
+    "Long Agentic": 24.7,
     "Reasoning": 81.8,
-    "Coding": 84.5,
+    "Coding": 70.8,
     "Browser": 70.3,
     "Data Analysis": 73.4,
-    "Research": 43.5,
-    "Design": 82.5
+    "Research": 48.5,
+    "Design": 76.1
    }
   },
   {
    "origem": "gpt-6.1-sol",
    "chave": "gpt-6.1-sol",
-   "geral": 84.07,
+   "geral": 81.37,
    "categorias": {
-    "Long Agentic": 68.7,
+    "Long Agentic": 65.6,
     "Reasoning": 92.6,
-    "Coding": 96,
+    "Coding": 82.1,
     "Browser": 93.3,
     "Data Analysis": 82.7,
-    "Research": 83.5,
-    "Design": 82.1
+    "Research": 90,
+    "Design": 79.6
    }
   },
   {
    "origem": "gpt-6.1-terra",
    "chave": "gpt-6.1-terra",
-   "geral": 77.79,
+   "geral": 78.77,
    "categorias": {
-    "Long Agentic": 48.6,
+    "Long Agentic": 56.2,
     "Reasoning": 88.7,
-    "Coding": 94.3,
+    "Coding": 89.2,
     "Browser": 93.1,
     "Data Analysis": 82.3,
-    "Research": 73.9,
-    "Design": 82.3
+    "Research": 79.1,
+    "Design": 79.7
    }
   },
   {
    "origem": "grok-4.6",
    "chave": "grok-4.6",
-   "geral": 67.75,
+   "geral": 63.51,
    "categorias": {
-    "Long Agentic": 28,
+    "Long Agentic": 18.7,
     "Reasoning": 91.2,
-    "Coding": 89.1,
+    "Coding": 76.7,
     "Browser": 49.4,
     "Data Analysis": 75.3,
-    "Research": 84.5,
-    "Design": 79.8
+    "Research": 88.8,
+    "Design": 76.3
    }
   },
   {
    "origem": "grok-4.7",
    "chave": "grok-4.7",
-   "geral": 70.14,
+   "geral": 67.91,
    "categorias": {
-    "Long Agentic": 46.1,
+    "Long Agentic": 45.3,
     "Reasoning": 82.7,
-    "Coding": 84.5,
+    "Coding": 73.1,
     "Browser": 49.3,
     "Data Analysis": 76.9,
-    "Research": 86.4,
-    "Design": 78
+    "Research": 89.5,
+    "Design": 75
    }
   },
   {
    "origem": "inkling",
    "chave": "inkling",
-   "geral": 47.05,
+   "geral": 44.32,
    "categorias": {
-    "Long Agentic": 8.5,
+    "Long Agentic": 9.8,
     "Reasoning": 78.3,
-    "Coding": 64,
+    "Coding": 48.7,
     "Browser": 12,
     "Data Analysis": 72.8,
-    "Research": 59.9,
-    "Design": 58.3
+    "Research": 60.3,
+    "Design": 55.2
    }
   },
   {
    "origem": "kimi-k3.1-pro",
    "chave": "kimi-k3.1-pro",
-   "geral": 71.29,
+   "geral": 68.65,
    "categorias": {
-    "Long Agentic": 39.1,
+    "Long Agentic": 38.7,
     "Reasoning": 91.1,
-    "Coding": 81.8,
+    "Coding": 67.8,
     "Browser": 75.9,
     "Data Analysis": 79.1,
-    "Research": 77.9,
-    "Design": 77.8
+    "Research": 82.1,
+    "Design": 73.7
    }
   },
   {
    "origem": "kimi-k3",
    "chave": "kimi-k3",
-   "geral": 64.57,
+   "geral": 64.98,
    "categorias": {
-    "Long Agentic": 26.4,
+    "Long Agentic": 36,
     "Reasoning": 90.7,
-    "Coding": 59.3,
+    "Coding": 53.1,
     "Browser": 75.2,
     "Data Analysis": 78.7,
-    "Research": 79,
-    "Design": 77.2
+    "Research": 79.8,
+    "Design": 72.5
    }
   },
   {
    "origem": "mimo-v2.6-pro",
    "chave": "mimo-v2.6-pro",
-   "geral": 68.48,
+   "geral": 66.11,
    "categorias": {
-    "Long Agentic": 35.2,
+    "Long Agentic": 36.4,
     "Reasoning": 79.6,
-    "Coding": 81.5,
+    "Coding": 64.5,
     "Browser": 77.3,
     "Data Analysis": 72.3,
-    "Research": 76.7,
-    "Design": 78.5
+    "Research": 84.8,
+    "Design": 74.3
    }
   },
   {
    "origem": "minimax-m3.1-flash",
    "chave": "minimax-m3.1-flash",
-   "geral": 66.89,
+   "geral": 63.67,
    "categorias": {
-    "Long Agentic": 28.8,
+    "Long Agentic": 25.7,
     "Reasoning": 82.9,
-    "Coding": 83.9,
+    "Coding": 68.8,
     "Browser": 80.6,
     "Data Analysis": 71.4,
-    "Research": 72.7,
-    "Design": 74
+    "Research": 76.7,
+    "Design": 71.2
    }
   },
   {
    "origem": "mistral-large-4-0",
    "chave": "mistral-large-4-0",
-   "geral": 63.49,
+   "geral": 60.27,
    "categorias": {
-    "Long Agentic": 27.5,
+    "Long Agentic": 24.7,
     "Reasoning": 85.2,
-    "Coding": 95.4,
+    "Coding": 79.4,
     "Browser": 17.4,
     "Data Analysis": 76.6,
-    "Research": 79.7,
+    "Research": 80.3,
     "Design": 76.3
    }
   },
   {
    "origem": "mistral-large-4",
    "chave": "mistral-large-4",
-   "geral": 43.9,
+   "geral": 40.87,
    "categorias": {
-    "Long Agentic": 8.8,
+    "Long Agentic": 9.2,
     "Reasoning": 83.9,
-    "Coding": 60,
+    "Coding": 44.4,
     "Browser": 0.6,
     "Data Analysis": 76.5,
-    "Research": 28.1,
-    "Design": 65.6
+    "Research": 30.8,
+    "Design": 60.7
    }
   },
   {
    "origem": "muse-spark-1.3",
    "chave": "muse-spark-1.3",
-   "geral": 63.03,
+   "geral": 68.37,
    "categorias": {
-    "Long Agentic": 25.5,
+    "Long Agentic": 47.9,
     "Reasoning": 89.7,
-    "Coding": 90.2,
+    "Coding": 83.1,
     "Browser": 30.9,
     "Data Analysis": 79.6,
-    "Research": 68.6,
+    "Research": 82.5,
     "Design": 74.8
    }
   },
   {
    "origem": "muse-spark-open",
    "chave": "muse-spark-open",
-   "geral": 51.63,
+   "geral": 48.53,
    "categorias": {
-    "Long Agentic": 11.7,
+    "Long Agentic": 12.1,
     "Reasoning": 73.7,
-    "Coding": 73.6,
+    "Coding": 55.1,
     "Browser": 26.2,
     "Data Analysis": 60.2,
-    "Research": 80.3,
-    "Design": 60.3
+    "Research": 82.7,
+    "Design": 58.1
    }
   },
   {
    "origem": "muse-wonder-1.0",
    "chave": "muse-wonder-1.0",
-   "geral": 74.15,
+   "geral": 70.7,
    "categorias": {
-    "Long Agentic": 52.6,
+    "Long Agentic": 46.2,
     "Reasoning": 90.6,
-    "Coding": 86.2,
+    "Coding": 74.9,
     "Browser": 60,
     "Data Analysis": 81.6,
-    "Research": 88,
-    "Design": 75.1
+    "Research": 93,
+    "Design": 70.9
    }
   },
   {
    "origem": "nemotron-super-vl-3.5-nvfp4",
    "chave": "nemotron-super-vl-3.5-nvfp4",
-   "geral": 46.5,
+   "geral": 42.27,
    "categorias": {
-    "Long Agentic": 7.3,
+    "Long Agentic": 11,
     "Reasoning": 71.7,
-    "Coding": 61.3,
+    "Coding": 34.8,
     "Browser": 18,
     "Data Analysis": 65.7,
-    "Research": 70.9,
-    "Design": 57.1
+    "Research": 67.4,
+    "Design": 55.6
    }
   },
   {
    "origem": "nemotron-super-vl-3.5",
    "chave": "nemotron-super-vl-3.5",
-   "geral": 50.23,
+   "geral": 47.01,
    "categorias": {
-    "Long Agentic": 11.7,
+    "Long Agentic": 12,
     "Reasoning": 74.6,
-    "Coding": 71.3,
+    "Coding": 54.1,
     "Browser": 21.6,
     "Data Analysis": 64.6,
-    "Research": 66.7,
-    "Design": 62.8
+    "Research": 67.1,
+    "Design": 60
    }
   },
   {
    "origem": "qwen3.8-27b",
    "chave": "qwen3.8-27b",
-   "geral": 58.38,
+   "geral": 54.05,
    "categorias": {
-    "Long Agentic": 20.6,
+    "Long Agentic": 15.9,
     "Reasoning": 80,
-    "Coding": 86.8,
+    "Coding": 69.3,
     "Browser": 24.2,
     "Data Analysis": 76.6,
-    "Research": 59.4,
-    "Design": 75.9
+    "Research": 61.3,
+    "Design": 72.4
    }
   },
   {
    "origem": "qwen3.8-max",
    "chave": "qwen3.8",
-   "geral": 61.56,
+   "geral": 60.92,
    "categorias": {
-    "Long Agentic": 29.9,
+    "Long Agentic": 26.6,
     "Reasoning": 88.2,
-    "Coding": 60.3,
+    "Coding": 60.9,
     "Browser": 49.4,
     "Data Analysis": 78.4,
-    "Research": 69.9,
-    "Design": 78.6
+    "Research": 72.8,
+    "Design": 76.6
    }
   },
   {
    "origem": "smaug-nemotron-3.5-nvfp4",
    "chave": "smaug-nemotron-3.5-nvfp4",
-   "geral": 50.31,
+   "geral": 47.11,
    "categorias": {
-    "Long Agentic": 8.4,
+    "Long Agentic": 11.3,
     "Reasoning": 75.1,
-    "Coding": 72.2,
+    "Coding": 51.5,
     "Browser": 25.6,
     "Data Analysis": 65.1,
-    "Research": 67.8,
-    "Design": 62.7
+    "Research": 67.4,
+    "Design": 60.6
    }
   },
   {
    "origem": "step-5-preview",
    "chave": "step-5",
-   "geral": 58.61,
+   "geral": 55.19,
    "categorias": {
     "Long Agentic": 19.4,
     "Reasoning": 83.8,
-    "Coding": 85.6,
+    "Coding": 69.4,
     "Browser": 24.8,
     "Data Analysis": 63.5,
-    "Research": 72.8,
-    "Design": 76.9
+    "Research": 75.5,
+    "Design": 70.8
    }
   }
  ],
@@ -561,6 +575,44 @@
     "qwen3.8": 61.56,
     "smaug-nemotron-3.5-nvfp4": 50.31,
     "step-5": 58.61
+   }
+  },
+  {
+   "data": "2026-11-06",
+   "modelos": {
+    "claude-fable-5.1": 83.96,
+    "claude-fable-5.2": 85.22,
+    "claude-haiku-5.5": 68.98,
+    "claude-opus-5.5": 83.44,
+    "claude-sonnet-5.5": 76.99,
+    "deepseek-v4.1-flash": 70.26,
+    "gemini-3.8-flash": 55.99,
+    "gemini-4-argon": 77.69,
+    "gemma-4-31b": 32.43,
+    "glm-5.3-flash": 60.67,
+    "gpt-5.6-terra": 67.15,
+    "gpt-6-astra": 84.45,
+    "gpt-6-luna": 60.42,
+    "gpt-6.1-sol": 81.37,
+    "gpt-6.1-terra": 78.77,
+    "grok-4.6": 63.51,
+    "grok-4.7": 67.91,
+    "inkling": 44.32,
+    "kimi-k3.1-pro": 68.65,
+    "kimi-k3": 64.98,
+    "mimo-v2.6-pro": 66.11,
+    "minimax-m3.1-flash": 63.67,
+    "mistral-large-4-0": 60.27,
+    "mistral-large-4": 40.87,
+    "muse-spark-1.3": 68.37,
+    "muse-spark-open": 48.53,
+    "muse-wonder-1.0": 70.7,
+    "nemotron-super-vl-3.5-nvfp4": 42.27,
+    "nemotron-super-vl-3.5": 47.01,
+    "qwen3.8-27b": 54.05,
+    "qwen3.8": 60.92,
+    "smaug-nemotron-3.5-nvfp4": 47.11,
+    "step-5": 55.19
    }
   }
  ]
