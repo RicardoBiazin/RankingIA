@@ -1,6 +1,6 @@
 {
  "fonte": "livebench",
- "coletadoEm": "2026-11-09T19:21:43.203Z",
+ "coletadoEm": "2026-11-10T16:41:05.287Z",
  "release": "2026-11-06",
  "categorias": [
   "Long Agentic",
@@ -34,9 +34,9 @@
   {
    "origem": "claude-fable-5.2",
    "chave": "claude-fable-5.2",
-   "geral": 85.22,
+   "geral": 84.88,
    "categorias": {
-    "Long Agentic": 84.4,
+    "Long Agentic": 82.9,
     "Reasoning": 88.8,
     "Coding": 79.2,
     "Browser": 86.9,
@@ -48,9 +48,9 @@
   {
    "origem": "claude-haiku-5.5",
    "chave": "claude-haiku-5.5",
-   "geral": 68.98,
+   "geral": 68.94,
    "categorias": {
-    "Long Agentic": 48.1,
+    "Long Agentic": 47.9,
     "Reasoning": 82.4,
     "Coding": 77.6,
     "Browser": 69.5,
@@ -454,14 +454,14 @@
   {
    "origem": "smaug-nemotron-3.5-nvfp4",
    "chave": "smaug-nemotron-3.5-nvfp4",
-   "geral": 47.11,
+   "geral": 47.04,
    "categorias": {
     "Long Agentic": 11.3,
     "Reasoning": 75.1,
     "Coding": 51.5,
     "Browser": 25.6,
     "Data Analysis": 65.1,
-    "Research": 67.4,
+    "Research": 66.8,
     "Design": 60.6
    }
   },
@@ -581,8 +581,8 @@
    "data": "2026-11-06",
    "modelos": {
     "claude-fable-5.1": 83.96,
-    "claude-fable-5.2": 85.22,
-    "claude-haiku-5.5": 68.98,
+    "claude-fable-5.2": 84.88,
+    "claude-haiku-5.5": 68.94,
     "claude-opus-5.5": 83.44,
     "claude-sonnet-5.5": 76.99,
     "deepseek-v4.1-flash": 70.26,
@@ -611,7 +611,7 @@
     "nemotron-super-vl-3.5": 47.01,
     "qwen3.8-27b": 54.05,
     "qwen3.8": 60.92,
-    "smaug-nemotron-3.5-nvfp4": 47.11,
+    "smaug-nemotron-3.5-nvfp4": 47.04,
     "step-5": 55.19
    }
   }
