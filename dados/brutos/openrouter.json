@@ -1,7 +1,19 @@
 {
  "fonte": "openrouter",
- "coletadoEm": "2026-11-10T16:41:04.731Z",
+ "coletadoEm": "2026-11-11T16:47:12.953Z",
  "modelos": [
+  {
+   "origem": "baidu/ernie-light-dt-1.0-intl",
+   "chave": "ernie-light-dt-1.0-intl",
+   "nome": "ERNIE-Light-DT-1.0",
+   "empresa": "Baidu",
+   "precoEntrada": 1.13,
+   "precoSaida": 3.94,
+   "contexto": 1024000,
+   "lancamento": "2026-11-10",
+   "aberto": false,
+   "hf": null
+  },
   {
    "origem": "google/gemini-4-carbon",
    "chave": "gemini-4-carbon",
@@ -75,6 +87,18 @@
    "hf": null
   },
   {
+   "origem": "kt/midm-k-3.0-pro",
+   "chave": "midm-k-3.0-pro",
+   "nome": "Mi:dm K 3.0 Pro",
+   "empresa": "Kt",
+   "precoEntrada": 0.2,
+   "precoSaida": 0.8,
+   "contexto": 261795,
+   "lancamento": "2026-11-05",
+   "aberto": false,
+   "hf": null
+  },
+  {
    "origem": "google/gemini-omni-1.1-flash",
    "chave": "gemini-omni-1.1-flash",
    "nome": "Gemini Omni 1.1 Flash",
@@ -109,6 +133,18 @@
    "lancamento": "2026-11-04",
    "aberto": true,
    "hf": "tencent/Hy4"
+  },
+  {
+   "origem": "motif-technologies/motif-3",
+   "chave": "motif-3",
+   "nome": "Motif 3",
+   "empresa": "Motif Technologies",
+   "precoEntrada": 0.3,
+   "precoSaida": 1.2,
+   "contexto": 262144,
+   "lancamento": "2026-11-02",
+   "aberto": true,
+   "hf": "Motif-Technologies/Motif-3"
   },
   {
    "origem": "z-ai/glm-5.3-flashx-legal",
@@ -276,7 +312,7 @@
    "contexto": 1048576,
    "lancamento": "2026-10-15",
    "aberto": true,
-   "hf": "nvidia/NVIDIA-Nemotron-3.5-Super-VL"
+   "hf": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16"
   },
   {
    "origem": "unbiased/pareto-26.10",
@@ -431,8 +467,8 @@
    "precoSaida": 0.135,
    "contexto": 1000000,
    "lancamento": "2026-10-02",
-   "aberto": false,
-   "hf": null
+   "aberto": true,
+   "hf": "inclusionAI/Ling-3.1-flash"
   },
   {
    "origem": "openai/gpt-6.1-sol-pro",
@@ -563,8 +599,8 @@
    "precoSaida": 1.5,
    "contexto": 192000,
    "lancamento": "2026-09-22",
-   "aberto": false,
-   "hf": null
+   "aberto": true,
+   "hf": "CohereLabs/command-a-plus-05-2026-bf16"
   },
   {
    "origem": "openai/gpt-6-luna-pro",
@@ -847,8 +883,8 @@
    "chave": "deepseek-v4.1-flash",
    "nome": "DeepSeek V4.1 Flash",
    "empresa": "DeepSeek",
-   "precoEntrada": 0.3,
-   "precoSaida": 1.2,
+   "precoEntrada": 0.051,
+   "precoSaida": 0.567,
    "contexto": 1048576,
    "lancamento": "2026-09-10",
    "aberto": true,
@@ -1153,18 +1189,6 @@
    "lancamento": "2026-08-12",
    "aberto": true,
    "hf": "Qwen/Qwen3.8-2.4T-A95B"
-  },
-  {
-   "origem": "bytedance-seed/seed-2.0-code",
-   "chave": "seed-2.0-code",
-   "nome": "Seed-2.0-Code",
-   "empresa": "ByteDance",
-   "precoEntrada": 0.5,
-   "precoSaida": 3,
-   "contexto": 262144,
-   "lancamento": "2026-08-12",
-   "aberto": false,
-   "hf": null
   },
   {
    "origem": "deepseek/deepseek-v4-pro-0813",
@@ -1823,8 +1847,8 @@
    "precoSaida": 7.5,
    "contexto": 262144,
    "lancamento": "2026-04-30",
-   "aberto": false,
-   "hf": null
+   "aberto": true,
+   "hf": "mistralai/Mistral-Medium-3.5-128B"
   },
   {
    "origem": "~anthropic/claude-haiku-latest",
@@ -1868,7 +1892,7 @@
    "nome": "Kimi Latest",
    "empresa": "~moonshotai",
    "precoEntrada": 0.1824,
-   "precoSaida": 9.3388,
+   "precoSaida": 11.0055,
    "contexto": 1048576,
    "lancamento": "2026-04-27",
    "aberto": false,
@@ -1975,8 +1999,8 @@
    "chave": "deepseek-v4-pro",
    "nome": "DeepSeek V4 Pro 0423",
    "empresa": "DeepSeek",
-   "precoEntrada": 0.9553,
-   "precoSaida": 1.9105,
+   "precoEntrada": 0.8872,
+   "precoSaida": 1.7745,
    "contexto": 1048576,
    "lancamento": "2026-04-24",
    "aberto": true,
@@ -1987,8 +2011,8 @@
    "chave": "deepseek-v4-flash",
    "nome": "DeepSeek V4 Flash 0423",
    "empresa": "DeepSeek",
-   "precoEntrada": 0.091,
-   "precoSaida": 0.182,
+   "precoEntrada": 0.09,
+   "precoSaida": 0.18,
    "contexto": 1048576,
    "lancamento": "2026-04-24",
    "aberto": true,
@@ -2083,8 +2107,8 @@
    "chave": "glm-5.1",
    "nome": "GLM 5.1",
    "empresa": "Z.ai",
-   "precoEntrada": 1.4,
-   "precoSaida": 4.4,
+   "precoEntrada": 1.33,
+   "precoSaida": 4.18,
    "contexto": 204800,
    "lancamento": "2026-04-07",
    "aberto": true,
@@ -2265,7 +2289,7 @@
    "empresa": "NVIDIA",
    "precoEntrada": 0.075,
    "precoSaida": 0.4,
-   "contexto": 1048576,
+   "contexto": 262144,
    "lancamento": "2026-03-11",
    "aberto": true,
    "hf": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8"
@@ -2491,8 +2515,8 @@
    "chave": "minimax-m2.5",
    "nome": "MiniMax M2.5",
    "empresa": "MiniMax",
-   "precoEntrada": 0.3,
-   "precoSaida": 1.2,
+   "precoEntrada": 0.27,
+   "precoSaida": 1.08,
    "contexto": 200000,
    "lancamento": "2026-02-12",
    "aberto": true,
@@ -2615,30 +2639,6 @@
    "precoSaida": 14,
    "contexto": 400000,
    "lancamento": "2026-01-14",
-   "aberto": false,
-   "hf": null
-  },
-  {
-   "origem": "bytedance-seed/seed-1.6-flash",
-   "chave": "seed-1.6-flash",
-   "nome": "Seed 1.6 Flash",
-   "empresa": "ByteDance",
-   "precoEntrada": 0.075,
-   "precoSaida": 0.3,
-   "contexto": 262144,
-   "lancamento": "2025-12-23",
-   "aberto": false,
-   "hf": null
-  },
-  {
-   "origem": "bytedance-seed/seed-1.6",
-   "chave": "seed-1.6",
-   "nome": "Seed 1.6",
-   "empresa": "ByteDance",
-   "precoEntrada": 0.25,
-   "precoSaida": 2,
-   "contexto": 262144,
-   "lancamento": "2025-12-23",
    "aberto": false,
    "hf": null
   },
@@ -2819,8 +2819,8 @@
    "precoSaida": 1.5,
    "contexto": 262144,
    "lancamento": "2025-12-01",
-   "aberto": false,
-   "hf": null
+   "aberto": true,
+   "hf": "mistralai/Mistral-Large-3-675B-Instruct-2512"
   },
   {
    "origem": "deepseek/deepseek-v3.2",
@@ -3752,7 +3752,7 @@
    "nome": "Gemma 3 27B",
    "empresa": "Google",
    "precoEntrada": 0.08,
-   "precoSaida": 0.45,
+   "precoSaida": 0.35,
    "contexto": 131072,
    "lancamento": "2025-03-12",
    "aberto": true,
@@ -3827,8 +3827,8 @@
    "precoSaida": 1.6,
    "contexto": 32768,
    "lancamento": "2025-02-04",
-   "aberto": false,
-   "hf": null
+   "aberto": true,
+   "hf": "aion-labs/Aion-RP-Llama-3.1-8B"
   },
   {
    "origem": "qwen/qwen2.5-vl-72b-instruct",
@@ -3911,8 +3911,8 @@
    "precoSaida": 0.15,
    "contexto": 128000,
    "lancamento": "2024-12-14",
-   "aberto": false,
-   "hf": null
+   "aberto": true,
+   "hf": "CohereLabs/c4ai-command-r7b-12-2024"
   },
   {
    "origem": "meta-llama/llama-3.3-70b-instruct",
@@ -3983,8 +3983,8 @@
    "precoSaida": 6,
    "contexto": 131072,
    "lancamento": "2024-11-19",
-   "aberto": false,
-   "hf": null
+   "aberto": true,
+   "hf": "mistralai/Mistral-Large-Instruct-2407"
   },
   {
    "origem": "qwen/qwen-2.5-coder-32b-instruct",
@@ -4021,18 +4021,6 @@
    "lancamento": "2024-10-22",
    "aberto": true,
    "hf": "anthracite-org/magnum-v4-72b"
-  },
-  {
-   "origem": "qwen/qwen-2.5-7b-instruct",
-   "chave": "qwen-2.5-7b",
-   "nome": "Qwen2.5 7B Instruct",
-   "empresa": "Alibaba",
-   "precoEntrada": 0.1,
-   "precoSaida": 0.2,
-   "contexto": 32768,
-   "lancamento": "2024-10-16",
-   "aberto": true,
-   "hf": "Qwen/Qwen2.5-7B-Instruct"
   },
   {
    "origem": "meta-llama/llama-3.2-1b-instruct",
@@ -4079,8 +4067,8 @@
    "precoSaida": 0.6,
    "contexto": 128000,
    "lancamento": "2024-08-30",
-   "aberto": false,
-   "hf": null
+   "aberto": true,
+   "hf": "CohereLabs/c4ai-command-r-08-2024"
   },
   {
    "origem": "cohere/command-r-plus-08-2024",
@@ -4091,8 +4079,8 @@
    "precoSaida": 10,
    "contexto": 128000,
    "lancamento": "2024-08-30",
-   "aberto": false,
-   "hf": null
+   "aberto": true,
+   "hf": "CohereLabs/c4ai-command-r-plus-08-2024"
   },
   {
    "origem": "sao10k/l3.1-euryale-70b",
@@ -4279,8 +4267,8 @@
    "chave": "weaver",
    "nome": "Weaver (alpha)",
    "empresa": "Mancer",
-   "precoEntrada": 0.4,
-   "precoSaida": 0.75,
+   "precoEntrada": 0.3,
+   "precoSaida": 0.5,
    "contexto": 8000,
    "lancamento": "2023-08-02",
    "aberto": false,
@@ -4291,8 +4279,8 @@
    "chave": "remm-slerp-l2-13b",
    "nome": "ReMM SLERP 13B",
    "empresa": "Undi95",
-   "precoEntrada": 0.35,
-   "precoSaida": 0.65,
+   "precoEntrada": 0.3,
+   "precoSaida": 0.5,
    "contexto": 6144,
    "lancamento": "2023-07-22",
    "aberto": true,

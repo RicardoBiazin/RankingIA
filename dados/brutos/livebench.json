@@ -1,6 +1,6 @@
 {
  "fonte": "livebench",
- "coletadoEm": "2026-11-10T16:41:05.287Z",
+ "coletadoEm": "2026-11-11T16:47:13.262Z",
  "release": "2026-11-06",
  "categorias": [
   "Long Agentic",
@@ -127,6 +127,20 @@
     "Data Analysis": 85.2,
     "Research": 86.8,
     "Design": 69.2
+   }
+  },
+  {
+   "origem": "gemini-4-carbon",
+   "chave": "gemini-4-carbon",
+   "geral": 83.53,
+   "categorias": {
+    "Long Agentic": 72.7,
+    "Reasoning": 90.6,
+    "Coding": 91,
+    "Browser": 80,
+    "Data Analysis": 86.5,
+    "Research": 92.5,
+    "Design": 80.2
    }
   },
   {
@@ -588,6 +602,7 @@
     "deepseek-v4.1-flash": 70.26,
     "gemini-3.8-flash": 55.99,
     "gemini-4-argon": 77.69,
+    "gemini-4-carbon": 83.53,
     "gemma-4-31b": 32.43,
     "glm-5.3-flash": 60.67,
     "gpt-5.6-terra": 67.15,
