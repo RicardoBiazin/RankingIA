@@ -12,6 +12,13 @@
   ]
  },
  {
+  "chave": "qwen3.8-flash-next",
+  "parecidas": [
+   "qwen3.8",
+   "qwen3.8-flash"
+  ]
+ },
+ {
   "chave": "inkling-2-small",
   "parecidas": [
    "inkling"
@@ -352,13 +359,6 @@
   "chave": "grok-code-fast-1",
   "parecidas": [
    "grok"
-  ]
- },
- {
-  "chave": "qwen3.8-flash-next",
-  "parecidas": [
-   "qwen3.8",
-   "qwen3.8-flash"
   ]
  }
 ]
