@@ -19,12 +19,6 @@
   ]
  },
  {
-  "chave": "inkling-2-small",
-  "parecidas": [
-   "inkling"
-  ]
- },
- {
   "chave": "beam-1.0",
   "parecidas": [
    "beam-1.0-501b-a23b"

@@ -1,6 +1,6 @@
 {
  "fonte": "livebench",
- "coletadoEm": "2026-11-12T17:15:34.820Z",
+ "coletadoEm": "2026-11-13T16:52:19.454Z",
  "release": "2026-11-06",
  "categorias": [
   "Long Agentic",
@@ -141,6 +141,20 @@
     "Data Analysis": 86.5,
     "Research": 92.5,
     "Design": 80.2
+   }
+  },
+  {
+   "origem": "gemini-4-hydrogen",
+   "chave": "gemini-4-hydrogen",
+   "geral": 77,
+   "categorias": {
+    "Long Agentic": 61.8,
+    "Reasoning": 88.6,
+    "Coding": 78.5,
+    "Browser": 77.1,
+    "Data Analysis": 83.2,
+    "Research": 86.8,
+    "Design": 77.3
    }
   },
   {
@@ -603,6 +617,7 @@
     "gemini-3.8-flash": 57.26,
     "gemini-4-argon": 77.69,
     "gemini-4-carbon": 83.53,
+    "gemini-4-hydrogen": 77,
     "gemma-4-31b": 32.43,
     "glm-5.3-flash": 60.67,
     "gpt-5.6-terra": 67.15,
