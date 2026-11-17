@@ -1,20 +1,20 @@
 {
- "geradoEm": "2026-11-16T19:04:11.880Z",
+ "geradoEm": "2026-11-17T17:59:42.763Z",
  "fontes": {
   "openrouter": {
    "ok": true,
-   "coletadoEm": "2026-11-16T19:04:07.579Z",
+   "coletadoEm": "2026-11-17T17:59:38.208Z",
    "erro": null
   },
   "livebench": {
    "ok": true,
-   "coletadoEm": "2026-11-16T19:04:08.263Z",
+   "coletadoEm": "2026-11-17T17:59:38.764Z",
    "erro": null,
    "release": "2026-11-06"
   },
   "lmarena": {
    "ok": true,
-   "coletadoEm": "2026-11-16T19:04:10.305Z",
+   "coletadoEm": "2026-11-17T17:59:40.752Z",
    "erro": null,
    "datas": {
     "texto": "2026-11-11",
@@ -24,12 +24,12 @@
   },
   "artificialanalysis": {
    "ok": true,
-   "coletadoEm": "2026-11-16T19:04:11.483Z",
+   "coletadoEm": "2026-11-17T17:59:42.278Z",
    "erro": null
   },
   "cambio": {
    "ok": true,
-   "coletadoEm": "2026-11-16T19:04:11.818Z",
+   "coletadoEm": "2026-11-17T17:59:42.691Z",
    "erro": null
   }
  },
@@ -222,17 +222,17 @@
   }
  ],
  "cambio": {
-  "data": "2026-11-16",
+  "data": "2026-11-17",
   "taxas": {
-   "BRL": 5.7053,
-   "EUR": 0.90794,
-   "JPY": 159.6,
-   "GBP": 0.75767,
-   "CNY": 6.6665,
-   "AUD": 1.48,
-   "CAD": 1.4285,
-   "CHF": 0.8393,
-   "HKD": 7.847
+   "BRL": 5.7821,
+   "EUR": 0.91,
+   "JPY": 159.3,
+   "GBP": 0.75808,
+   "CNY": 6.6661,
+   "AUD": 1.4848,
+   "CAD": 1.4291,
+   "CHF": 0.8402,
+   "HKD": 7.8461
   }
  },
  "modelos": [
@@ -249,8 +249,8 @@
    "contexto": 1000000,
    "precoEntrada": 8,
    "precoSaida": 40,
-   "velocidade": 93.32,
-   "ttft": 142.5,
+   "velocidade": 92.72,
+   "ttft": 138.06,
    "metricas": {
     "lb_geral": 84.88,
     "lb_agentico": 82.9,
@@ -275,10 +275,10 @@
     "aa_inteligencia": 100,
     "arena_webdev": 100,
     "lb_agentico": 100,
-    "lb_raciocinio": 55.9,
-    "lb_codigo": 67.6,
-    "lb_navegador": 82.4,
-    "lb_dados": 79.4,
+    "lb_raciocinio": 54.3,
+    "lb_codigo": 68.6,
+    "lb_navegador": 82.9,
+    "lb_dados": 77.1,
     "lb_pesquisa": 100,
     "lb_design": 100
    },
@@ -286,18 +286,18 @@
    "cobertura": 0.74,
    "categorias": {
     "agentico": 75,
-    "codigo": 72.5,
-    "raciocinio": 53,
-    "dados": 64.7,
+    "codigo": 72.9,
+    "raciocinio": 52.1,
+    "dados": 63.5,
     "pesquisa": 75,
     "design": 83.3,
-    "navegador": 66.2
+    "navegador": 66.5
    },
    "posCategorias": {
     "agentico": 1,
     "codigo": 6,
-    "raciocinio": 16,
-    "dados": 8,
+    "raciocinio": 17,
+    "dados": 9,
     "pesquisa": 1,
     "design": 1,
     "navegador": 7
@@ -317,8 +317,8 @@
    "contexto": 1048576,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 83.2,
-   "ttft": 117.21,
+   "velocidade": 82.87,
+   "ttft": 111.37,
    "metricas": {
     "lb_geral": 83.53,
     "lb_agentico": 72.7,
@@ -340,38 +340,38 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 91.2,
-    "aa_inteligencia": 98.5,
+    "lb_geral": 91.4,
+    "aa_inteligencia": 97.2,
     "arena_texto": 100,
     "arena_webdev": 94,
-    "lb_agentico": 88.2,
-    "lb_raciocinio": 70.6,
+    "lb_agentico": 88.6,
+    "lb_raciocinio": 68.6,
     "lb_codigo": 100,
-    "lb_navegador": 73.5,
+    "lb_navegador": 71.4,
     "lb_dados": 100,
-    "lb_pesquisa": 94.1,
-    "lb_design": 88.2
+    "lb_pesquisa": 94.3,
+    "lb_design": 88.6
    },
-   "nota": 91.3,
+   "nota": 91,
    "cobertura": 0.95,
    "categorias": {
-    "agentico": 69.1,
+    "agentico": 69.3,
     "codigo": 81.3,
-    "raciocinio": 60.3,
+    "raciocinio": 59.3,
     "dados": 75,
-    "pesquisa": 72,
-    "design": 77.4,
-    "navegador": 61.8,
+    "pesquisa": 72.2,
+    "design": 77.5,
+    "navegador": 60.7,
     "conversa": 75
    },
    "posCategorias": {
     "agentico": 5,
     "codigo": 1,
-    "raciocinio": 10,
+    "raciocinio": 11,
     "dados": 1,
     "pesquisa": 3,
     "design": 4,
-    "navegador": 10,
+    "navegador": 11,
     "conversa": 1
    },
    "posicao": 2
@@ -389,8 +389,8 @@
    "contexto": 1000000,
    "precoEntrada": 4,
    "precoSaida": 20,
-   "velocidade": 95.28,
-   "ttft": 633.99,
+   "velocidade": 94.43,
+   "ttft": 745.04,
    "metricas": {
     "lb_geral": 83.44,
     "lb_agentico": 72.8,
@@ -413,29 +413,29 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 88.2,
-    "aa_inteligencia": 97.1,
+    "lb_geral": 88.6,
+    "aa_inteligencia": 95.8,
     "arena_texto": 95.7,
     "arena_webdev": 98,
     "arena_visao": 100,
-    "lb_agentico": 91.2,
-    "lb_raciocinio": 91.2,
-    "lb_codigo": 88.2,
-    "lb_navegador": 85.3,
-    "lb_dados": 75,
-    "lb_pesquisa": 82.4,
+    "lb_agentico": 91.4,
+    "lb_raciocinio": 90,
+    "lb_codigo": 88.6,
+    "lb_navegador": 85.7,
+    "lb_dados": 72.9,
+    "lb_pesquisa": 82.9,
     "lb_design": 97.1
    },
-   "nota": 90,
+   "nota": 89.8,
    "cobertura": 1,
    "categorias": {
-    "agentico": 70.6,
-    "codigo": 78.7,
-    "raciocinio": 70.6,
-    "dados": 62.5,
-    "pesquisa": 66.2,
+    "agentico": 70.7,
+    "codigo": 78.9,
+    "raciocinio": 70,
+    "dados": 61.5,
+    "pesquisa": 66.5,
     "design": 81.7,
-    "navegador": 67.7,
+    "navegador": 67.8,
     "conversa": 72.8,
     "visao": 75
    },
@@ -443,7 +443,7 @@
     "agentico": 4,
     "codigo": 2,
     "raciocinio": 4,
-    "dados": 9,
+    "dados": 10,
     "pesquisa": 7,
     "design": 2,
     "navegador": 6,
@@ -451,6 +451,37 @@
     "visao": 1
    },
    "posicao": 3
+  },
+  {
+   "chave": "gpt-6.2-astra",
+   "slug": "gpt-6.2-astra",
+   "familia": "gpt-astra",
+   "versao": 6.2,
+   "nome": "GPT-6.2 Astra",
+   "empresa": "OpenAI",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-11-17",
+   "contexto": 1050000,
+   "precoEntrada": 8,
+   "precoSaida": 40,
+   "velocidade": null,
+   "ttft": null,
+   "metricas": {
+    "aa_inteligencia": 60.1
+   },
+   "origens": {
+    "artificialanalysis": "gpt-6-2-astra-high",
+    "openrouter": "openai/gpt-6.2-astra"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 98.6
+   },
+   "nota": 86.4,
+   "cobertura": 0.32,
+   "categorias": {},
+   "posicao": 4
   },
   {
    "chave": "claude-fable-5.1",
@@ -465,8 +496,8 @@
    "contexto": 1000000,
    "precoEntrada": 10,
    "precoSaida": 50,
-   "velocidade": 59.79,
-   "ttft": 92.3,
+   "velocidade": 57.97,
+   "ttft": 78.2,
    "metricas": {
     "lb_geral": 83.96,
     "lb_agentico": 74.2,
@@ -489,44 +520,74 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 94.1,
-    "aa_inteligencia": 85.3,
+    "lb_geral": 94.3,
+    "aa_inteligencia": 83.3,
     "arena_texto": 93.5,
     "arena_webdev": 88,
     "arena_visao": 96.4,
-    "lb_agentico": 94.1,
-    "lb_raciocinio": 88.2,
+    "lb_agentico": 94.3,
+    "lb_raciocinio": 85.7,
     "lb_codigo": 97.1,
-    "lb_navegador": 91.2,
-    "lb_dados": 75,
-    "lb_pesquisa": 76.5,
-    "lb_design": 94.1
+    "lb_navegador": 91.4,
+    "lb_dados": 72.9,
+    "lb_pesquisa": 77.1,
+    "lb_design": 94.3
    },
-   "nota": 86.8,
+   "nota": 86.3,
    "cobertura": 1,
    "categorias": {
-    "agentico": 72,
+    "agentico": 72.2,
     "codigo": 78.4,
-    "raciocinio": 69.1,
-    "dados": 62.5,
-    "pesquisa": 63.3,
+    "raciocinio": 67.8,
+    "dados": 61.5,
+    "pesquisa": 63.5,
     "design": 77.4,
-    "navegador": 70.6,
+    "navegador": 70.7,
     "conversa": 71.8,
     "visao": 73.2
    },
    "posCategorias": {
     "agentico": 3,
     "codigo": 3,
-    "raciocinio": 5,
-    "dados": 10,
+    "raciocinio": 6,
+    "dados": 11,
     "pesquisa": 9,
     "design": 5,
     "navegador": 4,
     "conversa": 4,
     "visao": 2
    },
-   "posicao": 4
+   "posicao": 5
+  },
+  {
+   "chave": "gpt-6.2-sol",
+   "slug": "gpt-6.2-sol",
+   "familia": "gpt-sol",
+   "versao": 6.2,
+   "nome": "GPT-6.2 Sol",
+   "empresa": "OpenAI",
+   "aberto": null,
+   "hf": null,
+   "lancamento": "2026-11-17",
+   "contexto": null,
+   "precoEntrada": null,
+   "precoSaida": null,
+   "velocidade": null,
+   "ttft": null,
+   "metricas": {
+    "aa_inteligencia": 55.7
+   },
+   "origens": {
+    "artificialanalysis": "gpt-6-2-sol-xhigh"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 93.1
+   },
+   "nota": 82.3,
+   "cobertura": 0.32,
+   "categorias": {},
+   "posicao": 6
   },
   {
    "chave": "gemini-4-argon",
@@ -541,8 +602,8 @@
    "contexto": 1048576,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 88.86,
-   "ttft": 53.75,
+   "velocidade": 90.42,
+   "ttft": 54.66,
    "metricas": {
     "lb_geral": 77.69,
     "lb_agentico": 58.5,
@@ -564,33 +625,33 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 79.4,
-    "aa_inteligencia": 88.2,
+    "lb_geral": 80,
+    "aa_inteligencia": 86.1,
     "arena_texto": 97.8,
     "arena_webdev": 74,
-    "lb_agentico": 76.5,
+    "lb_agentico": 77.1,
     "lb_raciocinio": 100,
-    "lb_codigo": 85.3,
-    "lb_navegador": 79.4,
+    "lb_codigo": 85.7,
+    "lb_navegador": 80,
     "lb_dados": 97.1,
-    "lb_pesquisa": 69.1,
-    "lb_design": 20.6
+    "lb_pesquisa": 70,
+    "lb_design": 20
    },
-   "nota": 82.2,
+   "nota": 81.8,
    "cobertura": 0.95,
    "categorias": {
-    "agentico": 63.3,
-    "codigo": 69.8,
+    "agentico": 63.5,
+    "codigo": 69.9,
     "raciocinio": 75,
     "dados": 73.5,
-    "pesquisa": 59.5,
-    "design": 48.2,
-    "navegador": 64.7,
+    "pesquisa": 60,
+    "design": 48,
+    "navegador": 65,
     "conversa": 73.9
    },
    "posCategorias": {
     "agentico": 9,
-    "codigo": 9,
+    "codigo": 8,
     "raciocinio": 1,
     "dados": 2,
     "pesquisa": 11,
@@ -598,7 +659,7 @@
     "navegador": 8,
     "conversa": 2
    },
-   "posicao": 5
+   "posicao": 7
   },
   {
    "chave": "gemini-4-hydrogen",
@@ -613,7 +674,7 @@
    "contexto": 1048576,
    "precoEntrada": 1.5,
    "precoSaida": 7.5,
-   "velocidade": 239.34,
+   "velocidade": 201.17,
    "ttft": 62.31,
    "metricas": {
     "lb_geral": 77,
@@ -636,90 +697,41 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 76.5,
-    "aa_inteligencia": 91.2,
+    "lb_geral": 77.1,
+    "aa_inteligencia": 88.9,
     "arena_texto": 87,
     "arena_webdev": 82,
-    "lb_agentico": 79.4,
-    "lb_raciocinio": 50,
-    "lb_codigo": 64.7,
-    "lb_navegador": 67.6,
-    "lb_dados": 94.1,
-    "lb_pesquisa": 69.1,
-    "lb_design": 70.6
+    "lb_agentico": 80,
+    "lb_raciocinio": 48.6,
+    "lb_codigo": 65.7,
+    "lb_navegador": 65.7,
+    "lb_dados": 91.4,
+    "lb_pesquisa": 70,
+    "lb_design": 68.6
    },
-   "nota": 80.9,
+   "nota": 80.4,
    "cobertura": 0.95,
    "categorias": {
-    "agentico": 64.7,
-    "codigo": 65.6,
-    "raciocinio": 50,
-    "dados": 72,
-    "pesquisa": 59.5,
-    "design": 67.5,
-    "navegador": 58.8,
+    "agentico": 65,
+    "codigo": 65.9,
+    "raciocinio": 49.3,
+    "dados": 70.7,
+    "pesquisa": 60,
+    "design": 66.9,
+    "navegador": 57.9,
     "conversa": 68.5
    },
    "posCategorias": {
     "agentico": 8,
-    "codigo": 12,
-    "raciocinio": 18,
-    "dados": 3,
+    "codigo": 11,
+    "raciocinio": 19,
+    "dados": 4,
     "pesquisa": 12,
-    "design": 10,
-    "navegador": 12,
+    "design": 12,
+    "navegador": 13,
     "conversa": 7
    },
-   "posicao": 6
-  },
-  {
-   "chave": "claude-opus-5",
-   "slug": "claude-opus-5",
-   "familia": "claude-opus",
-   "versao": 5,
-   "nome": "Claude Opus 5",
-   "empresa": "Anthropic",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-07-24",
-   "contexto": 1000000,
-   "precoEntrada": 5,
-   "precoSaida": 25,
-   "velocidade": 52.69,
-   "ttft": 38.29,
-   "metricas": {
-    "arena_texto": 1507,
-    "arena_webdev": 1691,
-    "arena_visao": 1317,
-    "aa_inteligencia": 44.2
-   },
-   "origens": {
-    "lmarena": "Claude Opus 5 (Max)",
-    "artificialanalysis": "claude-opus-5",
-    "openrouter": "anthropic/claude-opus-5"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 81.6,
-    "arena_texto": 91.3,
-    "arena_webdev": 80,
-    "arena_visao": 91.1
-   },
-   "nota": 80.4,
-   "cobertura": 0.68,
-   "categorias": {
-    "codigo": 65,
-    "design": 65,
-    "conversa": 70.7,
-    "visao": 70.5
-   },
-   "posCategorias": {
-    "codigo": 14,
-    "design": 13,
-    "conversa": 5,
-    "visao": 3
-   },
-   "posicao": 7
+   "posicao": 8
   },
   {
    "chave": "gpt-6-astra",
@@ -734,8 +746,8 @@
    "contexto": 1050000,
    "precoEntrada": 10,
    "precoSaida": 50,
-   "velocidade": 62.99,
-   "ttft": 361.07,
+   "velocidade": 47.93,
+   "ttft": 385.65,
    "metricas": {
     "lb_geral": 84.45,
     "lb_agentico": 75.6,
@@ -759,28 +771,28 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 97.1,
-    "aa_inteligencia": 95.6,
+    "aa_inteligencia": 94.4,
     "arena_texto": 45.7,
     "arena_webdev": 92,
     "arena_visao": 64.3,
     "lb_agentico": 97.1,
     "lb_raciocinio": 97.1,
-    "lb_codigo": 91.2,
-    "lb_navegador": 94.1,
-    "lb_dados": 91.2,
-    "lb_pesquisa": 91.2,
-    "lb_design": 85.3
+    "lb_codigo": 91.4,
+    "lb_navegador": 94.3,
+    "lb_dados": 88.6,
+    "lb_pesquisa": 91.4,
+    "lb_design": 85.7
    },
-   "nota": 80.3,
+   "nota": 80,
    "cobertura": 1,
    "categorias": {
     "agentico": 73.5,
-    "codigo": 77.7,
+    "codigo": 77.8,
     "raciocinio": 73.5,
-    "dados": 70.6,
-    "pesquisa": 70.6,
-    "design": 75.8,
-    "navegador": 72,
+    "dados": 69.3,
+    "pesquisa": 70.7,
+    "design": 75.9,
+    "navegador": 72.2,
     "conversa": 47.9,
     "visao": 57.1
    },
@@ -788,14 +800,63 @@
     "agentico": 2,
     "codigo": 4,
     "raciocinio": 2,
-    "dados": 4,
+    "dados": 5,
     "pesquisa": 4,
     "design": 6,
     "navegador": 3,
     "conversa": 26,
     "visao": 10
    },
-   "posicao": 8
+   "posicao": 9
+  },
+  {
+   "chave": "claude-opus-5",
+   "slug": "claude-opus-5",
+   "familia": "claude-opus",
+   "versao": 5,
+   "nome": "Claude Opus 5",
+   "empresa": "Anthropic",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-07-24",
+   "contexto": 1000000,
+   "precoEntrada": 5,
+   "precoSaida": 25,
+   "velocidade": 50.05,
+   "ttft": 39.88,
+   "metricas": {
+    "arena_texto": 1507,
+    "arena_webdev": 1691,
+    "arena_visao": 1317,
+    "aa_inteligencia": 44.2
+   },
+   "origens": {
+    "lmarena": "Claude Opus 5 (Max)",
+    "artificialanalysis": "claude-opus-5",
+    "openrouter": "anthropic/claude-opus-5"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 79.9,
+    "arena_texto": 91.3,
+    "arena_webdev": 80,
+    "arena_visao": 91.1
+   },
+   "nota": 79.7,
+   "cobertura": 0.68,
+   "categorias": {
+    "codigo": 65,
+    "design": 65,
+    "conversa": 70.7,
+    "visao": 70.5
+   },
+   "posCategorias": {
+    "codigo": 13,
+    "design": 13,
+    "conversa": 5,
+    "visao": 3
+   },
+   "posicao": 10
   },
   {
    "chave": "gpt-6.1-terra",
@@ -810,8 +871,8 @@
    "contexto": 1050000,
    "precoEntrada": 1,
    "precoSaida": 5,
-   "velocidade": 93.06,
-   "ttft": 332.22,
+   "velocidade": 88.53,
+   "ttft": 316.98,
    "metricas": {
     "lb_geral": 78.77,
     "lb_agentico": 56.2,
@@ -832,38 +893,190 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 82.4,
-    "aa_inteligencia": 89.7,
+    "lb_geral": 82.9,
+    "aa_inteligencia": 87.5,
     "arena_webdev": 76,
-    "lb_agentico": 73.5,
-    "lb_raciocinio": 52.9,
-    "lb_codigo": 94.1,
+    "lb_agentico": 74.3,
+    "lb_raciocinio": 51.4,
+    "lb_codigo": 94.3,
     "lb_navegador": 97.1,
-    "lb_dados": 85.3,
-    "lb_pesquisa": 38.2,
-    "lb_design": 79.4
+    "lb_dados": 82.9,
+    "lb_pesquisa": 37.1,
+    "lb_design": 80
    },
-   "nota": 80.3,
+   "nota": 79.7,
    "cobertura": 0.74,
    "categorias": {
-    "agentico": 61.8,
+    "agentico": 62.1,
     "codigo": 73.4,
-    "raciocinio": 51.5,
-    "dados": 67.7,
-    "pesquisa": 44.1,
-    "design": 68.5,
+    "raciocinio": 50.7,
+    "dados": 66.5,
+    "pesquisa": 43.5,
+    "design": 68.7,
     "navegador": 73.5
    },
    "posCategorias": {
     "agentico": 10,
     "codigo": 5,
-    "raciocinio": 17,
-    "dados": 6,
-    "pesquisa": 22,
+    "raciocinio": 18,
+    "dados": 7,
+    "pesquisa": 23,
     "design": 9,
     "navegador": 2
    },
-   "posicao": 9
+   "posicao": 11
+  },
+  {
+   "chave": "gpt-6.1-sol",
+   "slug": "gpt-6.1-sol",
+   "familia": "gpt-sol",
+   "versao": 6.1,
+   "nome": "GPT-6.1 Sol",
+   "empresa": "OpenAI",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-09-29",
+   "contexto": 1050000,
+   "precoEntrada": 2,
+   "precoSaida": 10,
+   "velocidade": 63.22,
+   "ttft": 266.95,
+   "metricas": {
+    "lb_geral": 81.37,
+    "lb_agentico": 65.6,
+    "lb_raciocinio": 92.6,
+    "lb_codigo": 82.1,
+    "lb_navegador": 93.3,
+    "lb_dados": 82.7,
+    "lb_pesquisa": 90,
+    "lb_design": 79.6,
+    "arena_texto": 1445,
+    "arena_webdev": 1742,
+    "arena_visao": 1286,
+    "aa_inteligencia": 54.6
+   },
+   "origens": {
+    "livebench": "gpt-6.1-sol",
+    "lmarena": "GPT-6.1 Sol (Max)",
+    "artificialanalysis": "gpt-6-1-sol",
+    "openrouter": "openai/gpt-6.1-sol"
+   },
+   "parcial": false,
+   "percentis": {
+    "lb_geral": 85.7,
+    "aa_inteligencia": 91.7,
+    "arena_texto": 55.4,
+    "arena_webdev": 86,
+    "arena_visao": 75,
+    "lb_agentico": 85.7,
+    "lb_raciocinio": 94.3,
+    "lb_codigo": 77.1,
+    "lb_navegador": 100,
+    "lb_dados": 85.7,
+    "lb_pesquisa": 88.6,
+    "lb_design": 77.1
+   },
+   "nota": 77.8,
+   "cobertura": 1,
+   "categorias": {
+    "agentico": 67.8,
+    "codigo": 71,
+    "raciocinio": 72.2,
+    "dados": 67.8,
+    "pesquisa": 69.3,
+    "design": 71,
+    "navegador": 75,
+    "conversa": 52.7,
+    "visao": 62.5
+   },
+   "posCategorias": {
+    "agentico": 6,
+    "codigo": 7,
+    "raciocinio": 3,
+    "dados": 6,
+    "pesquisa": 5,
+    "design": 7,
+    "navegador": 1,
+    "conversa": 21,
+    "visao": 8
+   },
+   "posicao": 12
+  },
+  {
+   "chave": "claude-sonnet-5.5",
+   "slug": "claude-sonnet-5.5",
+   "familia": "claude-sonnet",
+   "versao": 5.5,
+   "nome": "Claude Sonnet 5.5",
+   "empresa": "Anthropic",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-09-28",
+   "contexto": 1000000,
+   "precoEntrada": 2,
+   "precoSaida": 10,
+   "velocidade": 130.7,
+   "ttft": 483.51,
+   "metricas": {
+    "lb_geral": 76.99,
+    "lb_agentico": 63.4,
+    "lb_raciocinio": 91.6,
+    "lb_codigo": 77.2,
+    "lb_navegador": 89.3,
+    "lb_dados": 59.5,
+    "lb_pesquisa": 88,
+    "lb_design": 81.3,
+    "arena_texto": 1469,
+    "arena_webdev": 1772,
+    "arena_visao": 1284,
+    "aa_inteligencia": 54.5
+   },
+   "origens": {
+    "livebench": "claude-sonnet-5.5",
+    "lmarena": "Claude Sonnet 5.5 (xHigh)",
+    "artificialanalysis": "claude-sonnet-5-5",
+    "openrouter": "anthropic/claude-sonnet-5.5"
+   },
+   "parcial": false,
+   "percentis": {
+    "lb_geral": 74.3,
+    "aa_inteligencia": 90.3,
+    "arena_texto": 69.6,
+    "arena_webdev": 96,
+    "arena_visao": 71.4,
+    "lb_agentico": 82.9,
+    "lb_raciocinio": 82.9,
+    "lb_codigo": 60,
+    "lb_navegador": 88.6,
+    "lb_dados": 8.6,
+    "lb_pesquisa": 74.3,
+    "lb_design": 91.4
+   },
+   "nota": 77.6,
+   "cobertura": 1,
+   "categorias": {
+    "agentico": 66.5,
+    "codigo": 68.7,
+    "raciocinio": 66.5,
+    "dados": 29.3,
+    "pesquisa": 62.1,
+    "design": 79.1,
+    "navegador": 69.3,
+    "conversa": 59.8,
+    "visao": 60.7
+   },
+   "posCategorias": {
+    "agentico": 7,
+    "codigo": 9,
+    "raciocinio": 7,
+    "dados": 33,
+    "pesquisa": 10,
+    "design": 3,
+    "navegador": 5,
+    "conversa": 15,
+    "visao": 9
+   },
+   "posicao": 13
   },
   {
    "chave": "muse-wonder-full",
@@ -890,213 +1103,20 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 86.8,
+    "aa_inteligencia": 84.7,
     "arena_webdev": 84
    },
-   "nota": 78.9,
+   "nota": 77.6,
    "cobertura": 0.42,
    "categorias": {
     "codigo": 67,
     "design": 67
    },
    "posCategorias": {
-    "codigo": 11,
-    "design": 11
-   },
-   "posicao": 10
-  },
-  {
-   "chave": "gpt-6.1-sol",
-   "slug": "gpt-6.1-sol",
-   "familia": "gpt-sol",
-   "versao": 6.1,
-   "nome": "GPT-6.1 Sol",
-   "empresa": "OpenAI",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-09-29",
-   "contexto": 1050000,
-   "precoEntrada": 2,
-   "precoSaida": 10,
-   "velocidade": 66.36,
-   "ttft": 288.71,
-   "metricas": {
-    "lb_geral": 81.37,
-    "lb_agentico": 65.6,
-    "lb_raciocinio": 92.6,
-    "lb_codigo": 82.1,
-    "lb_navegador": 93.3,
-    "lb_dados": 82.7,
-    "lb_pesquisa": 90,
-    "lb_design": 79.6,
-    "arena_texto": 1445,
-    "arena_webdev": 1742,
-    "arena_visao": 1286,
-    "aa_inteligencia": 54.6
-   },
-   "origens": {
-    "livebench": "gpt-6.1-sol",
-    "lmarena": "GPT-6.1 Sol (Max)",
-    "artificialanalysis": "gpt-6-1-sol",
-    "openrouter": "openai/gpt-6.1-sol"
-   },
-   "parcial": false,
-   "percentis": {
-    "lb_geral": 85.3,
-    "aa_inteligencia": 94.1,
-    "arena_texto": 55.4,
-    "arena_webdev": 86,
-    "arena_visao": 75,
-    "lb_agentico": 85.3,
-    "lb_raciocinio": 94.1,
-    "lb_codigo": 76.5,
-    "lb_navegador": 100,
-    "lb_dados": 88.2,
-    "lb_pesquisa": 88.2,
-    "lb_design": 76.5
-   },
-   "nota": 78.3,
-   "cobertura": 1,
-   "categorias": {
-    "agentico": 67.7,
-    "codigo": 70.8,
-    "raciocinio": 72,
-    "dados": 69.1,
-    "pesquisa": 69.1,
-    "design": 70.8,
-    "navegador": 75,
-    "conversa": 52.7,
-    "visao": 62.5
-   },
-   "posCategorias": {
-    "agentico": 6,
-    "codigo": 7,
-    "raciocinio": 3,
-    "dados": 5,
-    "pesquisa": 5,
-    "design": 7,
-    "navegador": 1,
-    "conversa": 21,
-    "visao": 8
-   },
-   "posicao": 11
-  },
-  {
-   "chave": "claude-sonnet-5.5",
-   "slug": "claude-sonnet-5.5",
-   "familia": "claude-sonnet",
-   "versao": 5.5,
-   "nome": "Claude Sonnet 5.5",
-   "empresa": "Anthropic",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-09-28",
-   "contexto": 1000000,
-   "precoEntrada": 2,
-   "precoSaida": 10,
-   "velocidade": 132.85,
-   "ttft": 445.55,
-   "metricas": {
-    "lb_geral": 76.99,
-    "lb_agentico": 63.4,
-    "lb_raciocinio": 91.6,
-    "lb_codigo": 77.2,
-    "lb_navegador": 89.3,
-    "lb_dados": 59.5,
-    "lb_pesquisa": 88,
-    "lb_design": 81.3,
-    "arena_texto": 1469,
-    "arena_webdev": 1772,
-    "arena_visao": 1284,
-    "aa_inteligencia": 54.5
-   },
-   "origens": {
-    "livebench": "claude-sonnet-5.5",
-    "lmarena": "Claude Sonnet 5.5 (xHigh)",
-    "artificialanalysis": "claude-sonnet-5-5",
-    "openrouter": "anthropic/claude-sonnet-5.5"
-   },
-   "parcial": false,
-   "percentis": {
-    "lb_geral": 73.5,
-    "aa_inteligencia": 92.6,
-    "arena_texto": 69.6,
-    "arena_webdev": 96,
-    "arena_visao": 71.4,
-    "lb_agentico": 82.4,
-    "lb_raciocinio": 85.3,
-    "lb_codigo": 58.8,
-    "lb_navegador": 88.2,
-    "lb_dados": 8.8,
-    "lb_pesquisa": 73.5,
-    "lb_design": 91.2
-   },
-   "nota": 78,
-   "cobertura": 1,
-   "categorias": {
-    "agentico": 66.2,
-    "codigo": 68.3,
-    "raciocinio": 67.7,
-    "dados": 29.4,
-    "pesquisa": 61.8,
-    "design": 79.1,
-    "navegador": 69.1,
-    "conversa": 59.8,
-    "visao": 60.7
-   },
-   "posCategorias": {
-    "agentico": 7,
     "codigo": 10,
-    "raciocinio": 6,
-    "dados": 32,
-    "pesquisa": 10,
-    "design": 3,
-    "navegador": 5,
-    "conversa": 15,
-    "visao": 9
+    "design": 10
    },
-   "posicao": 12
-  },
-  {
-   "chave": "qwen4",
-   "slug": "qwen4",
-   "familia": "qwen",
-   "versao": 4,
-   "nome": "Qwen4 Max",
-   "empresa": "Alibaba",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-11-16",
-   "contexto": 1000000,
-   "precoEntrada": 1.425,
-   "precoSaida": 4.275,
-   "velocidade": null,
-   "ttft": null,
-   "metricas": {
-    "arena_webdev": 1750,
-    "aa_inteligencia": 42.9
-   },
-   "origens": {
-    "lmarena": "Qwen4-Max (xHigh)",
-    "artificialanalysis": "qwen4-max",
-    "openrouter": "qwen/qwen4-max"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 77.9,
-    "arena_webdev": 90
-   },
-   "nota": 74.7,
-   "cobertura": 0.42,
-   "categorias": {
-    "codigo": 70,
-    "design": 70
-   },
-   "posCategorias": {
-    "codigo": 8,
-    "design": 8
-   },
-   "posicao": 13
+   "posicao": 14
   },
   {
    "chave": "muse-wonder",
@@ -1111,8 +1131,8 @@
    "contexto": 1048576,
    "precoEntrada": 4,
    "precoSaida": 20,
-   "velocidade": 140.78,
-   "ttft": 35.83,
+   "velocidade": 118.95,
+   "ttft": 28.37,
    "metricas": {
     "lb_geral": 70.7,
     "lb_agentico": 46.2,
@@ -1134,41 +1154,109 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 70.6,
-    "aa_inteligencia": 79.4,
+    "lb_geral": 68.6,
+    "aa_inteligencia": 77.8,
     "arena_texto": 89.1,
     "arena_webdev": 62,
-    "lb_agentico": 64.7,
-    "lb_raciocinio": 70.6,
-    "lb_codigo": 52.9,
-    "lb_navegador": 47.1,
-    "lb_dados": 82.4,
+    "lb_agentico": 62.9,
+    "lb_raciocinio": 68.6,
+    "lb_codigo": 54.3,
+    "lb_navegador": 45.7,
+    "lb_dados": 80,
     "lb_pesquisa": 97.1,
-    "lb_design": 30.9
+    "lb_design": 30
    },
-   "nota": 74,
+   "nota": 72.9,
    "cobertura": 0.95,
    "categorias": {
-    "agentico": 57.4,
-    "codigo": 55,
-    "raciocinio": 60.3,
-    "dados": 66.2,
+    "agentico": 56.5,
+    "codigo": 55.4,
+    "raciocinio": 59.3,
+    "dados": 65,
     "pesquisa": 73.5,
-    "design": 47.6,
-    "navegador": 48.5,
+    "design": 47.3,
+    "navegador": 47.9,
     "conversa": 69.5
    },
    "posCategorias": {
-    "agentico": 13,
+    "agentico": 14,
     "codigo": 18,
-    "raciocinio": 11,
-    "dados": 7,
+    "raciocinio": 12,
+    "dados": 8,
     "pesquisa": 2,
     "design": 29,
-    "navegador": 19,
+    "navegador": 20,
     "conversa": 6
    },
-   "posicao": 14
+   "posicao": 15
+  },
+  {
+   "chave": "qwen4",
+   "slug": "qwen4",
+   "familia": "qwen",
+   "versao": 4,
+   "nome": "Qwen4 Max",
+   "empresa": "Alibaba",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-11-16",
+   "contexto": 1000000,
+   "precoEntrada": 1.425,
+   "precoSaida": 4.275,
+   "velocidade": 50.37,
+   "ttft": 3.61,
+   "metricas": {
+    "lb_geral": 73.26,
+    "lb_agentico": 47.5,
+    "lb_raciocinio": 92.2,
+    "lb_codigo": 69.8,
+    "lb_navegador": 80.7,
+    "lb_dados": 83.4,
+    "lb_pesquisa": 84.7,
+    "lb_design": 79.1,
+    "arena_webdev": 1750,
+    "aa_inteligencia": 42.9
+   },
+   "origens": {
+    "livebench": "qwen4-max",
+    "lmarena": "Qwen4-Max (xHigh)",
+    "artificialanalysis": "qwen4-max",
+    "openrouter": "qwen/qwen4-max"
+   },
+   "parcial": false,
+   "percentis": {
+    "lb_geral": 71.4,
+    "aa_inteligencia": 76.4,
+    "arena_webdev": 90,
+    "lb_agentico": 65.7,
+    "lb_raciocinio": 90,
+    "lb_codigo": 40,
+    "lb_navegador": 77.1,
+    "lb_dados": 94.3,
+    "lb_pesquisa": 62.9,
+    "lb_design": 71.4
+   },
+   "nota": 72.9,
+   "cobertura": 0.74,
+   "categorias": {
+    "agentico": 57.9,
+    "codigo": 60,
+    "raciocinio": 70,
+    "dados": 72.2,
+    "pesquisa": 56.5,
+    "design": 70.5,
+    "navegador": 63.5
+   },
+   "posCategorias": {
+    "agentico": 13,
+    "codigo": 16,
+    "raciocinio": 5,
+    "dados": 3,
+    "pesquisa": 14,
+    "design": 8,
+    "navegador": 9
+   },
+   "posicao": 16
   },
   {
    "chave": "kimi-k3.1-pro",
@@ -1183,8 +1271,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.2403,
    "precoSaida": 8.4023,
-   "velocidade": 28.96,
-   "ttft": 2.17,
+   "velocidade": 28.28,
+   "ttft": 2.15,
    "metricas": {
     "lb_geral": 68.65,
     "lb_agentico": 38.7,
@@ -1206,41 +1294,41 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 61.8,
-    "aa_inteligencia": 83.8,
+    "lb_geral": 60,
+    "aa_inteligencia": 81.9,
     "arena_texto": 65.2,
     "arena_webdev": 78,
-    "lb_agentico": 55.9,
-    "lb_raciocinio": 79.4,
-    "lb_codigo": 32.4,
-    "lb_navegador": 64.7,
-    "lb_dados": 61.8,
-    "lb_pesquisa": 52.9,
-    "lb_design": 45.6
+    "lb_agentico": 54.3,
+    "lb_raciocinio": 77.1,
+    "lb_codigo": 31.4,
+    "lb_navegador": 62.9,
+    "lb_dados": 60,
+    "lb_pesquisa": 51.4,
+    "lb_design": 44.3
    },
-   "nota": 69.5,
+   "nota": 68.4,
    "cobertura": 0.95,
    "categorias": {
-    "agentico": 53,
-    "codigo": 53.5,
-    "raciocinio": 64.7,
-    "dados": 55.9,
-    "pesquisa": 51.5,
-    "design": 57.9,
-    "navegador": 57.4,
+    "agentico": 52.1,
+    "codigo": 53.1,
+    "raciocinio": 63.5,
+    "dados": 55,
+    "pesquisa": 50.7,
+    "design": 57.4,
+    "navegador": 56.5,
     "conversa": 57.6
    },
    "posCategorias": {
-    "agentico": 16,
+    "agentico": 17,
     "codigo": 20,
-    "raciocinio": 8,
-    "dados": 14,
-    "pesquisa": 17,
+    "raciocinio": 9,
+    "dados": 15,
+    "pesquisa": 18,
     "design": 16,
-    "navegador": 13,
+    "navegador": 14,
     "conversa": 17
    },
-   "posicao": 15
+   "posicao": 17
   },
   {
    "chave": "muse-spark-1.3",
@@ -1255,8 +1343,8 @@
    "contexto": 1048576,
    "precoEntrada": 1.25,
    "precoSaida": 4.25,
-   "velocidade": 138.2,
-   "ttft": 44.42,
+   "velocidade": 128.91,
+   "ttft": 45.88,
    "metricas": {
     "lb_geral": 68.59,
     "lb_agentico": 47.9,
@@ -1279,44 +1367,44 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 58.8,
-    "aa_inteligencia": 76.5,
+    "lb_geral": 57.1,
+    "aa_inteligencia": 75,
     "arena_texto": 81.5,
     "arena_webdev": 64,
     "arena_visao": 82.1,
-    "lb_agentico": 69.1,
-    "lb_raciocinio": 64.7,
-    "lb_codigo": 82.4,
-    "lb_navegador": 29.4,
-    "lb_dados": 70.6,
-    "lb_pesquisa": 55.9,
-    "lb_design": 52.9
+    "lb_agentico": 70,
+    "lb_raciocinio": 62.9,
+    "lb_codigo": 82.9,
+    "lb_navegador": 28.6,
+    "lb_dados": 68.6,
+    "lb_pesquisa": 54.3,
+    "lb_design": 51.4
    },
-   "nota": 68.9,
+   "nota": 68,
    "cobertura": 1,
    "categorias": {
-    "agentico": 59.5,
-    "codigo": 65.5,
-    "raciocinio": 57.4,
-    "dados": 60.3,
-    "pesquisa": 53,
-    "design": 55.6,
-    "navegador": 39.7,
+    "agentico": 60,
+    "codigo": 65.6,
+    "raciocinio": 56.5,
+    "dados": 59.3,
+    "pesquisa": 52.1,
+    "design": 55.1,
+    "navegador": 39.3,
     "conversa": 65.8,
     "visao": 66
    },
    "posCategorias": {
     "agentico": 11,
-    "codigo": 13,
-    "raciocinio": 13,
-    "dados": 11,
-    "pesquisa": 16,
-    "design": 18,
-    "navegador": 25,
+    "codigo": 12,
+    "raciocinio": 14,
+    "dados": 12,
+    "pesquisa": 17,
+    "design": 19,
+    "navegador": 26,
     "conversa": 9,
     "visao": 6
    },
-   "posicao": 16
+   "posicao": 18
   },
   {
    "chave": "deepseek-v4.1-flash",
@@ -1329,10 +1417,10 @@
    "hf": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
    "lancamento": "2026-10-17",
    "contexto": 1048576,
-   "precoEntrada": 0.15,
-   "precoSaida": 0.6,
-   "velocidade": 172.47,
-   "ttft": 1.08,
+   "precoEntrada": 0.036,
+   "precoSaida": 0.5,
+   "velocidade": 170.91,
+   "ttft": 1,
    "metricas": {
     "lb_geral": 70.26,
     "lb_agentico": 38.8,
@@ -1355,44 +1443,44 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 67.6,
-    "aa_inteligencia": 67.6,
+    "lb_geral": 65.7,
+    "aa_inteligencia": 66.7,
     "arena_texto": 67.4,
     "arena_webdev": 68,
     "arena_visao": 64.3,
-    "lb_agentico": 58.8,
-    "lb_raciocinio": 58.8,
-    "lb_codigo": 73.5,
-    "lb_navegador": 50,
-    "lb_dados": 67.6,
-    "lb_pesquisa": 35.3,
-    "lb_design": 82.4
+    "lb_agentico": 57.1,
+    "lb_raciocinio": 57.1,
+    "lb_codigo": 74.3,
+    "lb_navegador": 48.6,
+    "lb_dados": 65.7,
+    "lb_pesquisa": 34.3,
+    "lb_design": 82.9
    },
-   "nota": 65.8,
+   "nota": 65,
    "cobertura": 1,
    "categorias": {
-    "agentico": 54.4,
-    "codigo": 63.8,
-    "raciocinio": 54.4,
-    "dados": 58.8,
-    "pesquisa": 42.6,
-    "design": 66.8,
-    "navegador": 50,
+    "agentico": 53.5,
+    "codigo": 64.1,
+    "raciocinio": 53.5,
+    "dados": 57.9,
+    "pesquisa": 42.1,
+    "design": 67,
+    "navegador": 49.3,
     "conversa": 58.7,
     "visao": 57.1
    },
    "posCategorias": {
-    "agentico": 15,
-    "codigo": 15,
-    "raciocinio": 15,
-    "dados": 12,
-    "pesquisa": 23,
-    "design": 12,
-    "navegador": 18,
+    "agentico": 16,
+    "codigo": 14,
+    "raciocinio": 16,
+    "dados": 13,
+    "pesquisa": 24,
+    "design": 11,
+    "navegador": 19,
     "conversa": 16,
     "visao": 11
    },
-   "posicao": 17
+   "posicao": 19
   },
   {
    "chave": "tencent-hy4",
@@ -1407,8 +1495,8 @@
    "contexto": null,
    "precoEntrada": 0.834,
    "precoSaida": 2.501,
-   "velocidade": 99.83,
-   "ttft": 2.47,
+   "velocidade": 100.1,
+   "ttft": 2.41,
    "metricas": {
     "aa_inteligencia": 34.6
    },
@@ -1417,12 +1505,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 70.6
+    "aa_inteligencia": 69.4
    },
-   "nota": 65.4,
+   "nota": 64.6,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 18
+   "posicao": 20
   },
   {
    "chave": "glm-5.3",
@@ -1437,8 +1525,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.0699,
    "precoSaida": 1.4,
-   "velocidade": 102.37,
-   "ttft": 1.52,
+   "velocidade": 103.26,
+   "ttft": 1.51,
    "metricas": {
     "arena_texto": 1475,
     "arena_webdev": 1622,
@@ -1451,11 +1539,11 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 64.7,
+    "aa_inteligencia": 63.9,
     "arena_texto": 75,
     "arena_webdev": 50
    },
-   "nota": 63.4,
+   "nota": 63.1,
    "cobertura": 0.63,
    "categorias": {
     "codigo": 50,
@@ -1467,7 +1555,7 @@
     "design": 27,
     "conversa": 12
    },
-   "posicao": 19
+   "posicao": 21
   },
   {
    "chave": "muse-ember",
@@ -1482,8 +1570,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.1,
    "precoSaida": 0.5,
-   "velocidade": 646.65,
-   "ttft": 6.75,
+   "velocidade": 604.2,
+   "ttft": 8.15,
    "metricas": {
     "arena_webdev": 1608,
     "aa_inteligencia": 36
@@ -1495,20 +1583,20 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 73.5,
+    "aa_inteligencia": 72.2,
     "arena_webdev": 44
    },
-   "nota": 62.9,
+   "nota": 62.1,
    "cobertura": 0.42,
    "categorias": {
     "codigo": 47,
     "design": 47
    },
    "posCategorias": {
-    "codigo": 29,
-    "design": 31
+    "codigo": 30,
+    "design": 30
    },
-   "posicao": 20
+   "posicao": 22
   },
   {
    "chave": "qwen3.8",
@@ -1523,8 +1611,8 @@
    "contexto": 1000000,
    "precoEntrada": 2,
    "precoSaida": 6,
-   "velocidade": 39.66,
-   "ttft": 2.94,
+   "velocidade": 41.45,
+   "ttft": 2.85,
    "metricas": {
     "lb_geral": 60.92,
     "lb_agentico": 26.6,
@@ -1547,44 +1635,44 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 38.2,
-    "aa_inteligencia": 69.1,
+    "lb_geral": 37.1,
+    "aa_inteligencia": 68.1,
     "arena_texto": 78.3,
     "arena_webdev": 72,
     "arena_visao": 85.7,
-    "lb_agentico": 47.1,
-    "lb_raciocinio": 47.1,
-    "lb_codigo": 23.5,
-    "lb_navegador": 39.7,
-    "lb_dados": 55.9,
-    "lb_pesquisa": 23.5,
-    "lb_design": 67.6
+    "lb_agentico": 45.7,
+    "lb_raciocinio": 45.7,
+    "lb_codigo": 22.9,
+    "lb_navegador": 38.6,
+    "lb_dados": 54.3,
+    "lb_pesquisa": 22.9,
+    "lb_design": 65.7
    },
-   "nota": 61.3,
+   "nota": 60.7,
    "cobertura": 1,
    "categorias": {
-    "agentico": 48.5,
-    "codigo": 48.5,
-    "raciocinio": 48.5,
-    "dados": 53,
-    "pesquisa": 36.8,
-    "design": 63.2,
-    "navegador": 44.9,
+    "agentico": 47.9,
+    "codigo": 48.3,
+    "raciocinio": 47.9,
+    "dados": 52.1,
+    "pesquisa": 36.5,
+    "design": 62.6,
+    "navegador": 44.3,
     "conversa": 64.2,
     "visao": 67.8
    },
    "posCategorias": {
-    "agentico": 19,
+    "agentico": 20,
     "codigo": 28,
-    "raciocinio": 19,
-    "dados": 16,
-    "pesquisa": 27,
+    "raciocinio": 20,
+    "dados": 17,
+    "pesquisa": 28,
     "design": 14,
-    "navegador": 21,
+    "navegador": 22,
     "conversa": 11,
     "visao": 5
    },
-   "posicao": 21
+   "posicao": 23
   },
   {
    "chave": "mimo-v2.6-pro",
@@ -1599,8 +1687,8 @@
    "contexto": 1050000,
    "precoEntrada": 0.435,
    "precoSaida": 0.87,
-   "velocidade": 51.54,
-   "ttft": 3.01,
+   "velocidade": 50.85,
+   "ttft": 3.16,
    "metricas": {
     "lb_geral": 66.11,
     "lb_agentico": 36.4,
@@ -1623,44 +1711,44 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 50,
-    "aa_inteligencia": 58.8,
+    "lb_geral": 48.6,
+    "aa_inteligencia": 58.3,
     "arena_texto": 81.5,
     "arena_webdev": 52,
     "arena_visao": 46.4,
-    "lb_agentico": 52.9,
-    "lb_raciocinio": 20.6,
-    "lb_codigo": 26.5,
-    "lb_navegador": 70.6,
-    "lb_dados": 29.4,
-    "lb_pesquisa": 64.7,
-    "lb_design": 50
+    "lb_agentico": 51.4,
+    "lb_raciocinio": 20,
+    "lb_codigo": 25.7,
+    "lb_navegador": 68.6,
+    "lb_dados": 28.6,
+    "lb_pesquisa": 65.7,
+    "lb_design": 48.6
    },
-   "nota": 58.5,
+   "nota": 58,
    "cobertura": 1,
    "categorias": {
-    "agentico": 51.5,
-    "codigo": 42.8,
-    "raciocinio": 35.3,
-    "dados": 39.7,
-    "pesquisa": 57.4,
-    "design": 50.7,
-    "navegador": 60.3,
+    "agentico": 50.7,
+    "codigo": 42.6,
+    "raciocinio": 35,
+    "dados": 39.3,
+    "pesquisa": 57.9,
+    "design": 50.2,
+    "navegador": 59.3,
     "conversa": 65.8,
     "visao": 48.2
    },
    "posCategorias": {
-    "agentico": 17,
+    "agentico": 18,
     "codigo": 33,
-    "raciocinio": 28,
-    "dados": 25,
+    "raciocinio": 29,
+    "dados": 26,
     "pesquisa": 13,
     "design": 26,
-    "navegador": 11,
+    "navegador": 12,
     "conversa": 10,
     "visao": 16
    },
-   "posicao": 22
+   "posicao": 24
   },
   {
    "chave": "ling-3.1-flash",
@@ -1686,12 +1774,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 57.4
+    "aa_inteligencia": 56.9
    },
-   "nota": 55.5,
+   "nota": 55.2,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 23
+   "posicao": 25
   },
   {
    "chave": "gpt-5.6-terra",
@@ -1706,8 +1794,8 @@
    "contexto": 1050000,
    "precoEntrada": 2,
    "precoSaida": 12,
-   "velocidade": 115.93,
-   "ttft": 147.83,
+   "velocidade": 110.95,
+   "ttft": 127.71,
    "metricas": {
     "lb_geral": 67.15,
     "lb_agentico": 25.9,
@@ -1730,116 +1818,44 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 52.9,
-    "aa_inteligencia": 66.2,
+    "lb_geral": 51.4,
+    "aa_inteligencia": 65.3,
     "arena_texto": 58.7,
     "arena_webdev": 24,
     "arena_visao": 53.6,
-    "lb_agentico": 44.1,
-    "lb_raciocinio": 70.6,
-    "lb_codigo": 79.4,
-    "lb_navegador": 57.4,
-    "lb_dados": 64.7,
-    "lb_pesquisa": 44.1,
-    "lb_design": 30.9
+    "lb_agentico": 42.9,
+    "lb_raciocinio": 68.6,
+    "lb_codigo": 80,
+    "lb_navegador": 55.7,
+    "lb_dados": 62.9,
+    "lb_pesquisa": 42.9,
+    "lb_design": 30
    },
-   "nota": 54.8,
+   "nota": 54.1,
    "cobertura": 1,
    "categorias": {
-    "agentico": 47,
-    "codigo": 51.1,
-    "raciocinio": 60.3,
-    "dados": 57.4,
-    "pesquisa": 47,
-    "design": 35,
-    "navegador": 53.7,
+    "agentico": 46.5,
+    "codigo": 51.3,
+    "raciocinio": 59.3,
+    "dados": 56.5,
+    "pesquisa": 46.5,
+    "design": 34.7,
+    "navegador": 52.9,
     "conversa": 54.4,
     "visao": 51.8
    },
    "posCategorias": {
-    "agentico": 20,
+    "agentico": 21,
     "codigo": 26,
-    "raciocinio": 12,
-    "dados": 13,
-    "pesquisa": 20,
-    "design": 39,
-    "navegador": 15,
+    "raciocinio": 13,
+    "dados": 14,
+    "pesquisa": 21,
+    "design": 40,
+    "navegador": 16,
     "conversa": 20,
     "visao": 14
    },
-   "posicao": 24
-  },
-  {
-   "chave": "claude-haiku-5.5",
-   "slug": "claude-haiku-5.5",
-   "familia": "claude-haiku",
-   "versao": 5.5,
-   "nome": "Claude Haiku 5.5",
-   "empresa": "Anthropic",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-10-07",
-   "contexto": 1000000,
-   "precoEntrada": 0.1,
-   "precoSaida": 0.5,
-   "velocidade": 234.06,
-   "ttft": 304.18,
-   "metricas": {
-    "lb_geral": 68.94,
-    "lb_agentico": 47.9,
-    "lb_raciocinio": 82.4,
-    "lb_codigo": 77.6,
-    "lb_navegador": 69.5,
-    "lb_dados": 53.1,
-    "lb_pesquisa": 84.3,
-    "lb_design": 79.3,
-    "arena_texto": 1398,
-    "arena_webdev": 1593,
-    "aa_inteligencia": 36.5
-   },
-   "origens": {
-    "livebench": "claude-haiku-5.5",
-    "lmarena": "Claude Haiku 5.5 (High)",
-    "artificialanalysis": "claude-haiku-5-5",
-    "openrouter": "anthropic/claude-haiku-5.5"
-   },
-   "parcial": false,
-   "percentis": {
-    "lb_geral": 64.7,
-    "aa_inteligencia": 75,
-    "arena_texto": 17.4,
-    "arena_webdev": 42,
-    "lb_agentico": 69.1,
-    "lb_raciocinio": 29.4,
-    "lb_codigo": 61.8,
-    "lb_navegador": 52.9,
-    "lb_dados": 0,
-    "lb_pesquisa": 61.8,
-    "lb_design": 73.5
-   },
-   "nota": 54.6,
-   "cobertura": 0.95,
-   "categorias": {
-    "agentico": 59.5,
-    "codigo": 51.3,
-    "raciocinio": 39.7,
-    "dados": 25,
-    "pesquisa": 55.9,
-    "design": 55.2,
-    "navegador": 51.5,
-    "conversa": 33.7
-   },
-   "posCategorias": {
-    "agentico": 12,
-    "codigo": 24,
-    "raciocinio": 25,
-    "dados": 35,
-    "pesquisa": 14,
-    "design": 19,
-    "navegador": 17,
-    "conversa": 39
-   },
-   "posicao": 25
+   "posicao": 26
   },
   {
    "chave": "gemini-3.8-flash",
@@ -1854,8 +1870,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.825,
    "precoSaida": 4.125,
-   "velocidade": 123.67,
-   "ttft": 24.01,
+   "velocidade": 122.71,
+   "ttft": 26.88,
    "metricas": {
     "lb_geral": 57.26,
     "lb_agentico": 16.5,
@@ -1878,93 +1894,116 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 26.5,
-    "aa_inteligencia": 61.8,
+    "lb_geral": 25.7,
+    "aa_inteligencia": 61.1,
     "arena_texto": 84.8,
     "arena_webdev": 38,
     "arena_visao": 91.1,
-    "lb_agentico": 23.5,
-    "lb_raciocinio": 61.8,
-    "lb_codigo": 50,
-    "lb_navegador": 32.4,
-    "lb_dados": 5.9,
-    "lb_pesquisa": 41.2,
-    "lb_design": 23.5
+    "lb_agentico": 22.9,
+    "lb_raciocinio": 60,
+    "lb_codigo": 51.4,
+    "lb_navegador": 31.4,
+    "lb_dados": 5.7,
+    "lb_pesquisa": 40,
+    "lb_design": 22.9
    },
-   "nota": 54.1,
+   "nota": 53.7,
    "cobertura": 1,
    "categorias": {
-    "agentico": 36.8,
-    "codigo": 46,
-    "raciocinio": 55.9,
+    "agentico": 36.5,
+    "codigo": 46.5,
+    "raciocinio": 55,
     "dados": 27.9,
-    "pesquisa": 45.6,
-    "design": 37.2,
-    "navegador": 41.2,
+    "pesquisa": 45,
+    "design": 37,
+    "navegador": 40.7,
     "conversa": 67.4,
     "visao": 70.5
    },
    "posCategorias": {
-    "agentico": 27,
+    "agentico": 28,
     "codigo": 31,
-    "raciocinio": 14,
-    "dados": 33,
-    "pesquisa": 21,
+    "raciocinio": 15,
+    "dados": 34,
+    "pesquisa": 22,
     "design": 36,
-    "navegador": 24,
+    "navegador": 25,
     "conversa": 8,
     "visao": 4
    },
-   "posicao": 26
+   "posicao": 27
   },
   {
-   "chave": "gpt-6-sol",
-   "slug": "gpt-6-sol",
-   "familia": "gpt-sol",
-   "versao": 6,
-   "nome": "GPT-6 Sol",
-   "empresa": "OpenAI",
+   "chave": "claude-haiku-5.5",
+   "slug": "claude-haiku-5.5",
+   "familia": "claude-haiku",
+   "versao": 5.5,
+   "nome": "Claude Haiku 5.5",
+   "empresa": "Anthropic",
    "aberto": false,
    "hf": null,
-   "lancamento": "2026-09-22",
-   "contexto": 1050000,
-   "precoEntrada": 2,
-   "precoSaida": 10,
-   "velocidade": 154.25,
-   "ttft": 80.34,
+   "lancamento": "2026-10-07",
+   "contexto": 1000000,
+   "precoEntrada": 0.1,
+   "precoSaida": 0.5,
+   "velocidade": 232.97,
+   "ttft": 319.71,
    "metricas": {
-    "arena_texto": 1397,
-    "arena_webdev": 1673,
-    "arena_visao": 1233,
-    "aa_inteligencia": 44.2
+    "lb_geral": 68.94,
+    "lb_agentico": 47.9,
+    "lb_raciocinio": 82.4,
+    "lb_codigo": 77.6,
+    "lb_navegador": 69.5,
+    "lb_dados": 53.1,
+    "lb_pesquisa": 84.3,
+    "lb_design": 79.3,
+    "arena_texto": 1398,
+    "arena_webdev": 1593,
+    "aa_inteligencia": 36.5
    },
    "origens": {
-    "lmarena": "GPT-6 Sol (Max)",
-    "artificialanalysis": "gpt-6-sol",
-    "openrouter": "openai/gpt-6-sol"
+    "livebench": "claude-haiku-5.5",
+    "lmarena": "Claude Haiku 5.5 (High)",
+    "artificialanalysis": "claude-haiku-5-5",
+    "openrouter": "anthropic/claude-haiku-5.5"
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 81.6,
-    "arena_texto": 15.2,
-    "arena_webdev": 70,
-    "arena_visao": 14.3
+    "lb_geral": 62.9,
+    "aa_inteligencia": 73.6,
+    "arena_texto": 17.4,
+    "arena_webdev": 42,
+    "lb_agentico": 70,
+    "lb_raciocinio": 28.6,
+    "lb_codigo": 62.9,
+    "lb_navegador": 51.4,
+    "lb_dados": 0,
+    "lb_pesquisa": 60,
+    "lb_design": 74.3
    },
    "nota": 53.6,
-   "cobertura": 0.68,
+   "cobertura": 0.95,
    "categorias": {
-    "codigo": 60,
-    "design": 60,
-    "conversa": 32.6,
-    "visao": 32.1
+    "agentico": 60,
+    "codigo": 51.6,
+    "raciocinio": 39.3,
+    "dados": 25,
+    "pesquisa": 55,
+    "design": 55.4,
+    "navegador": 50.7,
+    "conversa": 33.7
    },
    "posCategorias": {
-    "codigo": 17,
-    "design": 15,
-    "conversa": 40,
-    "visao": 25
+    "agentico": 12,
+    "codigo": 25,
+    "raciocinio": 26,
+    "dados": 36,
+    "pesquisa": 15,
+    "design": 18,
+    "navegador": 18,
+    "conversa": 39
    },
-   "posicao": 27
+   "posicao": 28
   },
   {
    "chave": "qwen3.8-flash-next",
@@ -1979,8 +2018,8 @@
    "contexto": null,
    "precoEntrada": 0.15,
    "precoSaida": 0.47,
-   "velocidade": 72.96,
-   "ttft": 1.95,
+   "velocidade": 70.56,
+   "ttft": 1.9,
    "metricas": {
     "arena_webdev": 1625,
     "aa_inteligencia": 28.6
@@ -1991,20 +2030,69 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 54.4,
+    "aa_inteligencia": 54.2,
     "arena_webdev": 54
    },
-   "nota": 53.4,
+   "nota": 53.3,
    "cobertura": 0.42,
    "categorias": {
     "codigo": 52,
     "design": 52
    },
    "posCategorias": {
-    "codigo": 22,
-    "design": 25
+    "codigo": 23,
+    "design": 24
    },
-   "posicao": 28
+   "posicao": 29
+  },
+  {
+   "chave": "gpt-6-sol",
+   "slug": "gpt-6-sol",
+   "familia": "gpt-sol",
+   "versao": 6,
+   "nome": "GPT-6 Sol",
+   "empresa": "OpenAI",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-09-22",
+   "contexto": 1050000,
+   "precoEntrada": 2,
+   "precoSaida": 10,
+   "velocidade": 135.4,
+   "ttft": 68.17,
+   "metricas": {
+    "arena_texto": 1397,
+    "arena_webdev": 1673,
+    "arena_visao": 1233,
+    "aa_inteligencia": 44.2
+   },
+   "origens": {
+    "lmarena": "GPT-6 Sol (Max)",
+    "artificialanalysis": "gpt-6-sol",
+    "openrouter": "openai/gpt-6-sol"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 79.9,
+    "arena_texto": 15.2,
+    "arena_webdev": 70,
+    "arena_visao": 14.3
+   },
+   "nota": 53,
+   "cobertura": 0.68,
+   "categorias": {
+    "codigo": 60,
+    "design": 60,
+    "conversa": 32.6,
+    "visao": 32.1
+   },
+   "posCategorias": {
+    "codigo": 17,
+    "design": 15,
+    "conversa": 40,
+    "visao": 25
+   },
+   "posicao": 30
   },
   {
    "chave": "mimo-v2.6-flash",
@@ -2019,8 +2107,8 @@
    "contexto": 1050000,
    "precoEntrada": 0.14,
    "precoSaida": 0.28,
-   "velocidade": 38.45,
-   "ttft": 3.24,
+   "velocidade": 38.16,
+   "ttft": 3.23,
    "metricas": {
     "arena_texto": 1451,
     "arena_webdev": 1639,
@@ -2034,12 +2122,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 48.5,
+    "aa_inteligencia": 48.6,
     "arena_texto": 62,
     "arena_webdev": 56,
     "arena_visao": 35.7
    },
-   "nota": 52.4,
+   "nota": 52.5,
    "cobertura": 0.68,
    "categorias": {
     "codigo": 53,
@@ -2053,83 +2141,7 @@
     "conversa": 18,
     "visao": 19
    },
-   "posicao": 29
-  },
-  {
-   "chave": "grok-4.7",
-   "slug": "grok-4.7",
-   "familia": "grok",
-   "versao": 4.7,
-   "nome": "Grok 4.7",
-   "empresa": "xAI",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-09-21",
-   "contexto": 500000,
-   "precoEntrada": 2,
-   "precoSaida": 6,
-   "velocidade": 73.36,
-   "ttft": 65,
-   "metricas": {
-    "lb_geral": 67.91,
-    "lb_agentico": 45.3,
-    "lb_raciocinio": 82.7,
-    "lb_codigo": 73.1,
-    "lb_navegador": 49.3,
-    "lb_dados": 76.9,
-    "lb_pesquisa": 89.5,
-    "lb_design": 75,
-    "arena_texto": 1400,
-    "arena_webdev": 1640,
-    "arena_visao": 1230,
-    "aa_inteligencia": 35.5
-   },
-   "origens": {
-    "livebench": "grok-4.7",
-    "lmarena": "Grok 4.7 (xHigh)",
-    "artificialanalysis": "grok-4-7",
-    "openrouter": "x-ai/grok-4.7"
-   },
-   "parcial": false,
-   "percentis": {
-    "lb_geral": 55.9,
-    "aa_inteligencia": 72.1,
-    "arena_texto": 19.6,
-    "arena_webdev": 58,
-    "arena_visao": 10.7,
-    "lb_agentico": 61.8,
-    "lb_raciocinio": 32.4,
-    "lb_codigo": 47.1,
-    "lb_navegador": 35.3,
-    "lb_dados": 52.9,
-    "lb_pesquisa": 85.3,
-    "lb_design": 55.9
-   },
-   "nota": 51.1,
-   "cobertura": 1,
-   "categorias": {
-    "agentico": 55.9,
-    "codigo": 51.7,
-    "raciocinio": 41.2,
-    "dados": 51.5,
-    "pesquisa": 67.7,
-    "design": 54.6,
-    "navegador": 42.6,
-    "conversa": 34.8,
-    "visao": 30.4
-   },
-   "posCategorias": {
-    "agentico": 14,
-    "codigo": 23,
-    "raciocinio": 24,
-    "dados": 17,
-    "pesquisa": 6,
-    "design": 21,
-    "navegador": 23,
-    "conversa": 38,
-    "visao": 26
-   },
-   "posicao": 30
+   "posicao": 31
   },
   {
    "chave": "glm-5.3-flash",
@@ -2142,10 +2154,10 @@
    "hf": "zai-org/GLM-5.3-Flash",
    "lancamento": "2026-08-26",
    "contexto": 1048576,
-   "precoEntrada": 0.0399,
-   "precoSaida": 0.0784,
-   "velocidade": 62.99,
-   "ttft": 1.83,
+   "precoEntrada": 0.15,
+   "precoSaida": 0.5,
+   "velocidade": 61.27,
+   "ttft": 1.75,
    "metricas": {
     "lb_geral": 60.67,
     "lb_agentico": 20.7,
@@ -2168,44 +2180,120 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 35.3,
+    "lb_geral": 34.3,
     "aa_inteligencia": 50,
     "arena_texto": 71.7,
     "arena_webdev": 46,
     "arena_visao": 78.6,
-    "lb_agentico": 32.4,
-    "lb_raciocinio": 14.7,
-    "lb_codigo": 44.1,
-    "lb_navegador": 44.1,
-    "lb_dados": 41.2,
-    "lb_pesquisa": 26.5,
-    "lb_design": 45.6
+    "lb_agentico": 31.4,
+    "lb_raciocinio": 14.3,
+    "lb_codigo": 45.7,
+    "lb_navegador": 42.9,
+    "lb_dados": 40,
+    "lb_pesquisa": 25.7,
+    "lb_design": 44.3
    },
-   "nota": 50.9,
+   "nota": 50.6,
    "cobertura": 1,
    "categorias": {
-    "agentico": 41.2,
-    "codigo": 46.7,
-    "raciocinio": 32.4,
-    "dados": 45.6,
-    "pesquisa": 38.3,
-    "design": 47.2,
-    "navegador": 47,
+    "agentico": 40.7,
+    "codigo": 47.2,
+    "raciocinio": 32.1,
+    "dados": 45,
+    "pesquisa": 37.9,
+    "design": 46.8,
+    "navegador": 46.5,
     "conversa": 60.9,
     "visao": 64.3
    },
    "posCategorias": {
-    "agentico": 24,
-    "codigo": 30,
-    "raciocinio": 30,
-    "dados": 21,
-    "pesquisa": 26,
-    "design": 30,
-    "navegador": 20,
+    "agentico": 25,
+    "codigo": 29,
+    "raciocinio": 31,
+    "dados": 22,
+    "pesquisa": 27,
+    "design": 31,
+    "navegador": 21,
     "conversa": 14,
     "visao": 7
    },
-   "posicao": 31
+   "posicao": 32
+  },
+  {
+   "chave": "grok-4.7",
+   "slug": "grok-4.7",
+   "familia": "grok",
+   "versao": 4.7,
+   "nome": "Grok 4.7",
+   "empresa": "xAI",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-09-21",
+   "contexto": 500000,
+   "precoEntrada": 2,
+   "precoSaida": 6,
+   "velocidade": 69.59,
+   "ttft": 33.54,
+   "metricas": {
+    "lb_geral": 67.91,
+    "lb_agentico": 45.3,
+    "lb_raciocinio": 82.7,
+    "lb_codigo": 73.1,
+    "lb_navegador": 49.3,
+    "lb_dados": 76.9,
+    "lb_pesquisa": 89.5,
+    "lb_design": 75,
+    "arena_texto": 1400,
+    "arena_webdev": 1640,
+    "arena_visao": 1230,
+    "aa_inteligencia": 35.5
+   },
+   "origens": {
+    "livebench": "grok-4.7",
+    "lmarena": "Grok 4.7 (xHigh)",
+    "artificialanalysis": "grok-4-7",
+    "openrouter": "x-ai/grok-4.7"
+   },
+   "parcial": false,
+   "percentis": {
+    "lb_geral": 54.3,
+    "aa_inteligencia": 70.8,
+    "arena_texto": 19.6,
+    "arena_webdev": 58,
+    "arena_visao": 10.7,
+    "lb_agentico": 60,
+    "lb_raciocinio": 31.4,
+    "lb_codigo": 48.6,
+    "lb_navegador": 34.3,
+    "lb_dados": 51.4,
+    "lb_pesquisa": 85.7,
+    "lb_design": 54.3
+   },
+   "nota": 50.3,
+   "cobertura": 1,
+   "categorias": {
+    "agentico": 55,
+    "codigo": 52.2,
+    "raciocinio": 40.7,
+    "dados": 50.7,
+    "pesquisa": 67.8,
+    "design": 54.1,
+    "navegador": 42.1,
+    "conversa": 34.8,
+    "visao": 30.4
+   },
+   "posCategorias": {
+    "agentico": 15,
+    "codigo": 22,
+    "raciocinio": 25,
+    "dados": 18,
+    "pesquisa": 6,
+    "design": 21,
+    "navegador": 24,
+    "conversa": 38,
+    "visao": 26
+   },
+   "posicao": 33
   },
   {
    "chave": "kimi-k3",
@@ -2220,8 +2308,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.192,
    "precoSaida": 16,
-   "velocidade": 51.57,
-   "ttft": 3.85,
+   "velocidade": 47.55,
+   "ttft": 4.22,
    "metricas": {
     "lb_geral": 64.98,
     "lb_agentico": 36,
@@ -2243,41 +2331,41 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 47.1,
-    "aa_inteligencia": 30.9,
+    "lb_geral": 45.7,
+    "aa_inteligencia": 31.9,
     "arena_texto": 75,
     "arena_webdev": 66,
-    "lb_agentico": 50,
-    "lb_raciocinio": 76.5,
-    "lb_codigo": 14.7,
-    "lb_navegador": 61.8,
-    "lb_dados": 58.8,
-    "lb_pesquisa": 47.1,
-    "lb_design": 41.2
+    "lb_agentico": 48.6,
+    "lb_raciocinio": 74.3,
+    "lb_codigo": 14.3,
+    "lb_navegador": 60,
+    "lb_dados": 57.1,
+    "lb_pesquisa": 45.7,
+    "lb_design": 40
    },
-   "nota": 50,
+   "nota": 49.9,
    "cobertura": 0.95,
    "categorias": {
-    "agentico": 50,
-    "codigo": 43.6,
-    "raciocinio": 63.3,
-    "dados": 54.4,
-    "pesquisa": 48.5,
-    "design": 52.4,
-    "navegador": 55.9,
+    "agentico": 49.3,
+    "codigo": 43.4,
+    "raciocinio": 62.1,
+    "dados": 53.5,
+    "pesquisa": 47.9,
+    "design": 52,
+    "navegador": 55,
     "conversa": 62.5
    },
    "posCategorias": {
-    "agentico": 18,
+    "agentico": 19,
     "codigo": 32,
-    "raciocinio": 9,
-    "dados": 15,
-    "pesquisa": 19,
-    "design": 24,
-    "navegador": 14,
+    "raciocinio": 10,
+    "dados": 16,
+    "pesquisa": 20,
+    "design": 25,
+    "navegador": 15,
     "conversa": 13
    },
-   "posicao": 32
+   "posicao": 34
   },
   {
    "chave": "grok-4.6",
@@ -2292,8 +2380,8 @@
    "contexto": 500000,
    "precoEntrada": 2,
    "precoSaida": 6,
-   "velocidade": 72.03,
-   "ttft": 41.91,
+   "velocidade": 68.23,
+   "ttft": 33.66,
    "metricas": {
     "lb_geral": 63.51,
     "lb_agentico": 18.7,
@@ -2316,44 +2404,44 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 41.2,
-    "aa_inteligencia": 63.2,
+    "lb_geral": 40,
+    "aa_inteligencia": 62.5,
     "arena_texto": 37,
     "arena_webdev": 48,
     "arena_visao": 42.9,
-    "lb_agentico": 26.5,
-    "lb_raciocinio": 82.4,
-    "lb_codigo": 55.9,
-    "lb_navegador": 39.7,
-    "lb_dados": 38.2,
-    "lb_pesquisa": 79.4,
-    "lb_design": 63.2
+    "lb_agentico": 25.7,
+    "lb_raciocinio": 80,
+    "lb_codigo": 57.1,
+    "lb_navegador": 38.6,
+    "lb_dados": 37.1,
+    "lb_pesquisa": 80,
+    "lb_design": 61.4
    },
-   "nota": 48.3,
+   "nota": 47.7,
    "cobertura": 1,
    "categorias": {
-    "agentico": 38.3,
-    "codigo": 51.3,
-    "raciocinio": 66.2,
-    "dados": 44.1,
-    "pesquisa": 64.7,
-    "design": 53.7,
-    "navegador": 44.9,
+    "agentico": 37.9,
+    "codigo": 51.7,
+    "raciocinio": 65,
+    "dados": 43.5,
+    "pesquisa": 65,
+    "design": 53.1,
+    "navegador": 44.3,
     "conversa": 43.5,
     "visao": 46.5
    },
    "posCategorias": {
-    "agentico": 26,
-    "codigo": 25,
-    "raciocinio": 7,
-    "dados": 22,
+    "agentico": 27,
+    "codigo": 24,
+    "raciocinio": 8,
+    "dados": 23,
     "pesquisa": 8,
     "design": 22,
-    "navegador": 22,
+    "navegador": 23,
     "conversa": 30,
     "visao": 17
    },
-   "posicao": 33
+   "posicao": 35
   },
   {
    "chave": "minimax-m3.1-flash",
@@ -2368,8 +2456,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.075,
    "precoSaida": 0.3,
-   "velocidade": 161.24,
-   "ttft": 1.05,
+   "velocidade": 119.02,
+   "ttft": 0.97,
    "metricas": {
     "lb_geral": 63.67,
     "lb_agentico": 25.7,
@@ -2390,83 +2478,38 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 44.1,
-    "aa_inteligencia": 55.9,
+    "lb_geral": 42.9,
+    "aa_inteligencia": 55.6,
     "arena_webdev": 36,
-    "lb_agentico": 41.2,
-    "lb_raciocinio": 35.3,
-    "lb_codigo": 35.3,
-    "lb_navegador": 76.5,
-    "lb_dados": 26.5,
-    "lb_pesquisa": 32.4,
-    "lb_design": 35.3
+    "lb_agentico": 40,
+    "lb_raciocinio": 34.3,
+    "lb_codigo": 34.3,
+    "lb_navegador": 74.3,
+    "lb_dados": 25.7,
+    "lb_pesquisa": 31.4,
+    "lb_design": 34.3
    },
-   "nota": 48.3,
+   "nota": 47.7,
    "cobertura": 0.74,
    "categorias": {
-    "agentico": 45.6,
-    "codigo": 40.4,
-    "raciocinio": 42.6,
-    "dados": 38.3,
-    "pesquisa": 41.2,
-    "design": 40.4,
-    "navegador": 63.3
+    "agentico": 45,
+    "codigo": 40.1,
+    "raciocinio": 42.1,
+    "dados": 37.9,
+    "pesquisa": 40.7,
+    "design": 40.1,
+    "navegador": 62.1
    },
    "posCategorias": {
-    "agentico": 21,
+    "agentico": 22,
     "codigo": 37,
-    "raciocinio": 23,
-    "dados": 26,
-    "pesquisa": 24,
+    "raciocinio": 24,
+    "dados": 27,
+    "pesquisa": 25,
     "design": 35,
-    "navegador": 9
+    "navegador": 10
    },
-   "posicao": 34
-  },
-  {
-   "chave": "inkling-2-small",
-   "slug": "inkling-2-small",
-   "familia": "inkling-small",
-   "versao": 2,
-   "nome": "Inkling 2 Small",
-   "empresa": "Thinking Machines",
-   "aberto": true,
-   "hf": "thinkingmachines/Inkling-2-Small",
-   "lancamento": "2026-11-09",
-   "contexto": 1048576,
-   "precoEntrada": 0.3,
-   "precoSaida": 1,
-   "velocidade": 104.56,
-   "ttft": 2.33,
-   "metricas": {
-    "arena_texto": 1403,
-    "arena_webdev": 1645,
-    "aa_inteligencia": 30.6
-   },
-   "origens": {
-    "lmarena": "Inkling 2 Small",
-    "artificialanalysis": "inkling-2-small",
-    "openrouter": "thinkingmachines/inkling-2-small"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 60.3,
-    "arena_texto": 21.7,
-    "arena_webdev": 60
-   },
-   "nota": 47.8,
-   "cobertura": 0.63,
-   "categorias": {
-    "codigo": 55,
-    "design": 55,
-    "conversa": 35.9
-   },
-   "posCategorias": {
-    "codigo": 19,
-    "design": 20,
-    "conversa": 37
-   },
-   "posicao": 35
+   "posicao": 36
   },
   {
    "chave": "deepseek-v4-pro",
@@ -2481,8 +2524,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.111,
    "precoSaida": 4.44,
-   "velocidade": 94.59,
-   "ttft": 1.63,
+   "velocidade": 89.83,
+   "ttft": 1.52,
    "metricas": {
     "arena_texto": 1451,
     "arena_webdev": 1581,
@@ -2495,11 +2538,11 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 41.2,
+    "aa_inteligencia": 41.7,
     "arena_texto": 62,
     "arena_webdev": 34
    },
-   "nota": 47.4,
+   "nota": 47.6,
    "cobertura": 0.63,
    "categorias": {
     "codigo": 42,
@@ -2511,7 +2554,52 @@
     "design": 34,
     "conversa": 19
    },
-   "posicao": 36
+   "posicao": 37
+  },
+  {
+   "chave": "inkling-2-small",
+   "slug": "inkling-2-small",
+   "familia": "inkling-small",
+   "versao": 2,
+   "nome": "Inkling 2 Small",
+   "empresa": "Thinking Machines",
+   "aberto": true,
+   "hf": "thinkingmachines/Inkling-2-Small",
+   "lancamento": "2026-11-09",
+   "contexto": 1048576,
+   "precoEntrada": 0.3,
+   "precoSaida": 1,
+   "velocidade": 111.78,
+   "ttft": 2.35,
+   "metricas": {
+    "arena_texto": 1403,
+    "arena_webdev": 1645,
+    "aa_inteligencia": 30.6
+   },
+   "origens": {
+    "lmarena": "Inkling 2 Small",
+    "artificialanalysis": "inkling-2-small",
+    "openrouter": "thinkingmachines/inkling-2-small"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 59.7,
+    "arena_texto": 21.7,
+    "arena_webdev": 60
+   },
+   "nota": 47.5,
+   "cobertura": 0.63,
+   "categorias": {
+    "codigo": 55,
+    "design": 55,
+    "conversa": 35.9
+   },
+   "posCategorias": {
+    "codigo": 19,
+    "design": 20,
+    "conversa": 37
+   },
+   "posicao": 38
   },
   {
    "chave": "agnes-2.5-pro-theta",
@@ -2526,8 +2614,8 @@
    "contexto": null,
    "precoEntrada": 0.1,
    "precoSaida": 0.3,
-   "velocidade": 286.81,
-   "ttft": 1.72,
+   "velocidade": 290.98,
+   "ttft": 1.91,
    "metricas": {
     "aa_inteligencia": 24
    },
@@ -2536,12 +2624,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 44.1
+    "aa_inteligencia": 44.4
    },
-   "nota": 45.6,
+   "nota": 45.8,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 37
+   "posicao": 39
   },
   {
    "chave": "nanbeige4.3-33b",
@@ -2566,12 +2654,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 39.7
+    "aa_inteligencia": 40.3
    },
-   "nota": 42.3,
+   "nota": 42.7,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 38
+   "posicao": 40
   },
   {
    "chave": "step-5",
@@ -2586,8 +2674,8 @@
    "contexto": 1000000,
    "precoEntrada": 1,
    "precoSaida": 2.7,
-   "velocidade": 129.35,
-   "ttft": 0.77,
+   "velocidade": 148.42,
+   "ttft": 0.76,
    "metricas": {
     "lb_geral": 54.89,
     "lb_agentico": 19.4,
@@ -2610,44 +2698,44 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 23.5,
-    "aa_inteligencia": 52.9,
+    "lb_geral": 22.9,
+    "aa_inteligencia": 52.8,
     "arena_texto": 50,
     "arena_webdev": 30,
     "arena_visao": 39.3,
-    "lb_agentico": 29.4,
-    "lb_raciocinio": 38.2,
-    "lb_codigo": 29.4,
-    "lb_navegador": 20.6,
-    "lb_dados": 14.7,
-    "lb_pesquisa": 29.4,
-    "lb_design": 26.5
+    "lb_agentico": 28.6,
+    "lb_raciocinio": 37.1,
+    "lb_codigo": 28.6,
+    "lb_navegador": 20,
+    "lb_dados": 14.3,
+    "lb_pesquisa": 28.6,
+    "lb_design": 25.7
    },
-   "nota": 40.8,
+   "nota": 40.6,
    "cobertura": 1,
    "categorias": {
-    "agentico": 39.7,
-    "codigo": 36.5,
-    "raciocinio": 44.1,
-    "dados": 32.4,
-    "pesquisa": 39.7,
-    "design": 35.5,
-    "navegador": 35.3,
+    "agentico": 39.3,
+    "codigo": 36.2,
+    "raciocinio": 43.5,
+    "dados": 32.1,
+    "pesquisa": 39.3,
+    "design": 35.2,
+    "navegador": 35,
     "conversa": 50,
     "visao": 44.6
    },
    "posCategorias": {
-    "agentico": 25,
+    "agentico": 26,
     "codigo": 38,
-    "raciocinio": 22,
-    "dados": 30,
-    "pesquisa": 25,
+    "raciocinio": 23,
+    "dados": 31,
+    "pesquisa": 26,
     "design": 38,
-    "navegador": 28,
+    "navegador": 29,
     "conversa": 23,
     "visao": 18
    },
-   "posicao": 39
+   "posicao": 41
   },
   {
    "chave": "jt-4.1-flash-236b-a21b",
@@ -2672,12 +2760,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 36.8
+    "aa_inteligencia": 37.5
    },
-   "nota": 40.1,
+   "nota": 40.6,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 40
+   "posicao": 42
   },
   {
    "chave": "gpt-5.6-luna",
@@ -2692,8 +2780,8 @@
    "contexto": 1050000,
    "precoEntrada": 0.2,
    "precoSaida": 1.2,
-   "velocidade": 127.02,
-   "ttft": 106.52,
+   "velocidade": 126.69,
+   "ttft": 99.63,
    "metricas": {
     "arena_texto": 1431,
     "arena_webdev": 1519,
@@ -2707,12 +2795,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 42.6,
+    "aa_inteligencia": 43.1,
     "arena_texto": 39.1,
     "arena_webdev": 22,
     "arena_visao": 32.1
    },
-   "nota": 39.2,
+   "nota": 39.4,
    "cobertura": 0.68,
    "categorias": {
     "codigo": 36,
@@ -2726,7 +2814,7 @@
     "conversa": 29,
     "visao": 20
    },
-   "posicao": 41
+   "posicao": 43
   },
   {
    "chave": "nemotron-3-ultra-550b-a55b",
@@ -2739,10 +2827,10 @@
    "hf": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
    "lancamento": "2026-06-04",
    "contexto": 262144,
-   "precoEntrada": 0.6,
-   "precoSaida": 2.4,
-   "velocidade": 254.32,
-   "ttft": 1.11,
+   "precoEntrada": 0.5,
+   "precoSaida": 2.2,
+   "velocidade": 248.81,
+   "ttft": 1.18,
    "metricas": {
     "arena_texto": 1445,
     "aa_inteligencia": 11.8
@@ -2754,10 +2842,10 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 22.1,
+    "aa_inteligencia": 23.6,
     "arena_texto": 55.4
    },
-   "nota": 37.9,
+   "nota": 38.6,
    "cobertura": 0.53,
    "categorias": {
     "conversa": 52.7
@@ -2765,7 +2853,7 @@
    "posCategorias": {
     "conversa": 22
    },
-   "posicao": 42
+   "posicao": 44
   },
   {
    "chave": "k2-horizon-375b-a23b",
@@ -2780,8 +2868,8 @@
    "contexto": null,
    "precoEntrada": 0,
    "precoSaida": 0,
-   "velocidade": 778.7,
-   "ttft": 3,
+   "velocidade": 744.54,
+   "ttft": 2.91,
    "metricas": {
     "aa_inteligencia": 17.8
    },
@@ -2790,12 +2878,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 33.8
+    "aa_inteligencia": 34.7
    },
-   "nota": 37.8,
+   "nota": 38.5,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 43
+   "posicao": 45
   },
   {
    "chave": "beam-1.0",
@@ -2810,8 +2898,8 @@
    "contexto": null,
    "precoEntrada": 0.4,
    "precoSaida": 1.2,
-   "velocidade": 323.06,
-   "ttft": 0.6,
+   "velocidade": 283.54,
+   "ttft": 0.61,
    "metricas": {
     "aa_inteligencia": 17.7
    },
@@ -2820,12 +2908,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 32.4
+    "aa_inteligencia": 33.3
    },
-   "nota": 36.8,
+   "nota": 37.5,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 44
+   "posicao": 46
   },
   {
    "chave": "qwen3.8-27b",
@@ -2840,8 +2928,8 @@
    "contexto": 1024000,
    "precoEntrada": 0.15,
    "precoSaida": 1.875,
-   "velocidade": 43.29,
-   "ttft": 3.86,
+   "velocidade": 42.1,
+   "ttft": 3.85,
    "metricas": {
     "lb_geral": 54.05,
     "lb_agentico": 15.9,
@@ -2864,44 +2952,44 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 20.6,
-    "aa_inteligencia": 38.2,
+    "lb_geral": 20,
+    "aa_inteligencia": 38.9,
     "arena_texto": 43.5,
     "arena_webdev": 40,
     "arena_visao": 57.1,
-    "lb_agentico": 20.6,
-    "lb_raciocinio": 23.5,
-    "lb_codigo": 38.2,
-    "lb_navegador": 17.6,
-    "lb_dados": 48.5,
-    "lb_pesquisa": 11.8,
-    "lb_design": 38.2
+    "lb_agentico": 20,
+    "lb_raciocinio": 22.9,
+    "lb_codigo": 37.1,
+    "lb_navegador": 17.1,
+    "lb_dados": 47.1,
+    "lb_pesquisa": 11.4,
+    "lb_design": 37.1
    },
    "nota": 36.4,
    "cobertura": 1,
    "categorias": {
-    "agentico": 35.3,
-    "codigo": 42.7,
-    "raciocinio": 36.8,
-    "dados": 49.3,
-    "pesquisa": 30.9,
-    "design": 42.7,
-    "navegador": 33.8,
+    "agentico": 35,
+    "codigo": 42.4,
+    "raciocinio": 36.5,
+    "dados": 48.5,
+    "pesquisa": 30.7,
+    "design": 42.4,
+    "navegador": 33.5,
     "conversa": 46.8,
     "visao": 53.5
    },
    "posCategorias": {
-    "agentico": 28,
+    "agentico": 29,
     "codigo": 34,
-    "raciocinio": 27,
-    "dados": 18,
-    "pesquisa": 31,
+    "raciocinio": 28,
+    "dados": 19,
+    "pesquisa": 32,
     "design": 33,
-    "navegador": 29,
+    "navegador": 30,
     "conversa": 27,
     "visao": 13
    },
-   "posicao": 45
+   "posicao": 47
   },
   {
    "chave": "minimax-m3",
@@ -2916,8 +3004,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.3,
    "precoSaida": 1.2,
-   "velocidade": 100.9,
-   "ttft": 0.92,
+   "velocidade": 94.66,
+   "ttft": 0.88,
    "metricas": {
     "arena_texto": 1428,
     "arena_webdev": 1484,
@@ -2931,12 +3019,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 35.3,
+    "aa_inteligencia": 36.1,
     "arena_texto": 34.8,
     "arena_webdev": 20,
     "arena_visao": 28.6
    },
-   "nota": 34.6,
+   "nota": 35,
    "cobertura": 0.68,
    "categorias": {
     "codigo": 35,
@@ -2946,11 +3034,41 @@
    },
    "posCategorias": {
     "codigo": 40,
-    "design": 40,
+    "design": 39,
     "conversa": 31,
     "visao": 21
    },
-   "posicao": 46
+   "posicao": 48
+  },
+  {
+   "chave": "apodex-1.1",
+   "slug": "apodex-1.1",
+   "familia": "apodex",
+   "versao": 1.1,
+   "nome": "Apodex 1.1",
+   "empresa": "Apodex",
+   "aberto": null,
+   "hf": null,
+   "lancamento": "2026-08-30",
+   "contexto": null,
+   "precoEntrada": 0.3,
+   "precoSaida": 3,
+   "velocidade": null,
+   "ttft": null,
+   "metricas": {
+    "aa_inteligencia": 13.7
+   },
+   "origens": {
+    "artificialanalysis": "apodex-1-1"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 29.2
+   },
+   "nota": 34.4,
+   "cobertura": 0.32,
+   "categorias": {},
+   "posicao": 49
   },
   {
    "chave": "mistral-large-4-0",
@@ -2983,66 +3101,104 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 29.4,
-    "lb_agentico": 36.8,
-    "lb_raciocinio": 44.1,
-    "lb_codigo": 70.6,
-    "lb_navegador": 8.8,
-    "lb_dados": 48.5,
-    "lb_pesquisa": 50,
-    "lb_design": 63.2
+    "lb_geral": 28.6,
+    "lb_agentico": 35.7,
+    "lb_raciocinio": 42.9,
+    "lb_codigo": 71.4,
+    "lb_navegador": 8.6,
+    "lb_dados": 47.1,
+    "lb_pesquisa": 48.6,
+    "lb_design": 61.4
    },
-   "nota": 34.5,
+   "nota": 34,
    "cobertura": 0.32,
    "categorias": {
-    "agentico": 43.4,
-    "codigo": 60.3,
-    "raciocinio": 47,
-    "dados": 49.3,
-    "pesquisa": 50,
-    "design": 56.6,
-    "navegador": 29.4
+    "agentico": 42.9,
+    "codigo": 60.7,
+    "raciocinio": 46.5,
+    "dados": 48.5,
+    "pesquisa": 49.3,
+    "design": 55.7,
+    "navegador": 29.3
    },
    "posCategorias": {
-    "agentico": 22,
-    "codigo": 16,
-    "raciocinio": 20,
-    "dados": 19,
-    "pesquisa": 18,
+    "agentico": 23,
+    "codigo": 15,
+    "raciocinio": 21,
+    "dados": 20,
+    "pesquisa": 19,
     "design": 17,
-    "navegador": 32
+    "navegador": 33
    },
-   "posicao": 47
+   "posicao": 50
   },
   {
-   "chave": "apodex-1.1",
-   "slug": "apodex-1.1",
-   "familia": "apodex",
-   "versao": 1.1,
-   "nome": "Apodex 1.1",
-   "empresa": "Apodex",
-   "aberto": null,
-   "hf": null,
-   "lancamento": "2026-08-30",
-   "contexto": null,
-   "precoEntrada": 0.3,
-   "precoSaida": 3,
-   "velocidade": null,
-   "ttft": null,
+   "chave": "muse-spark-open",
+   "slug": "muse-spark-open",
+   "familia": "muse-spark-open",
+   "versao": 0,
+   "nome": "Muse Spark Open",
+   "empresa": "Meta",
+   "aberto": true,
+   "hf": "meta-models/Muse-Spark-Open-816B-A42B",
+   "lancamento": "2026-10-15",
+   "contexto": 1048576,
+   "precoEntrada": 1.25,
+   "precoSaida": 4.25,
+   "velocidade": 220.07,
+   "ttft": 0.66,
    "metricas": {
-    "aa_inteligencia": 13.7
+    "lb_geral": 48.53,
+    "lb_agentico": 12.1,
+    "lb_raciocinio": 73.7,
+    "lb_codigo": 55.1,
+    "lb_navegador": 26.2,
+    "lb_dados": 60.2,
+    "lb_pesquisa": 82.7,
+    "lb_design": 58.1,
+    "arena_webdev": 1527,
+    "aa_inteligencia": 24.9
    },
    "origens": {
-    "artificialanalysis": "apodex-1-1"
+    "livebench": "muse-spark-open",
+    "lmarena": "Muse Spark Open (Max)",
+    "artificialanalysis": "muse-spark-open",
+    "openrouter": "meta/muse-spark-open"
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 27.9
+    "lb_geral": 17.1,
+    "aa_inteligencia": 45.8,
+    "arena_webdev": 26,
+    "lb_agentico": 17.1,
+    "lb_raciocinio": 5.7,
+    "lb_codigo": 20,
+    "lb_navegador": 25.7,
+    "lb_dados": 11.4,
+    "lb_pesquisa": 57.1,
+    "lb_design": 8.6
    },
-   "nota": 33.4,
-   "cobertura": 0.32,
-   "categorias": {},
-   "posicao": 48
+   "nota": 33.1,
+   "cobertura": 0.74,
+   "categorias": {
+    "agentico": 33.5,
+    "codigo": 32,
+    "raciocinio": 27.9,
+    "dados": 30.7,
+    "pesquisa": 53.5,
+    "design": 28.2,
+    "navegador": 37.9
+   },
+   "posCategorias": {
+    "agentico": 30,
+    "codigo": 42,
+    "raciocinio": 34,
+    "dados": 32,
+    "pesquisa": 16,
+    "design": 46,
+    "navegador": 27
+   },
+   "posicao": 51
   },
   {
    "chave": "gpt-6-luna",
@@ -3057,8 +3213,8 @@
    "contexto": 1050000,
    "precoEntrada": 0.1,
    "precoSaida": 0.5,
-   "velocidade": 120.3,
-   "ttft": 103.89,
+   "velocidade": 115.75,
+   "ttft": 98.97,
    "metricas": {
     "lb_geral": 60.42,
     "lb_agentico": 24.7,
@@ -3081,112 +3237,44 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 32.4,
-    "aa_inteligencia": 51.5,
+    "lb_geral": 31.4,
+    "aa_inteligencia": 51.4,
     "arena_texto": 7.6,
     "arena_webdev": 32,
     "arena_visao": 0,
-    "lb_agentico": 36.8,
-    "lb_raciocinio": 26.5,
-    "lb_codigo": 41.2,
-    "lb_navegador": 57.4,
-    "lb_dados": 35.3,
-    "lb_pesquisa": 5.9,
-    "lb_design": 58.8
+    "lb_agentico": 35.7,
+    "lb_raciocinio": 25.7,
+    "lb_codigo": 42.9,
+    "lb_navegador": 55.7,
+    "lb_dados": 34.3,
+    "lb_pesquisa": 5.7,
+    "lb_design": 57.1
    },
-   "nota": 33.2,
+   "nota": 32.9,
    "cobertura": 1,
    "categorias": {
-    "agentico": 43.4,
-    "codigo": 41.1,
-    "raciocinio": 38.3,
-    "dados": 42.6,
+    "agentico": 42.9,
+    "codigo": 41.6,
+    "raciocinio": 37.9,
+    "dados": 42.1,
     "pesquisa": 27.9,
-    "design": 46.9,
-    "navegador": 53.7,
+    "design": 46.4,
+    "navegador": 52.9,
     "conversa": 28.8,
     "visao": 25
    },
    "posCategorias": {
-    "agentico": 23,
+    "agentico": 24,
     "codigo": 36,
-    "raciocinio": 26,
-    "dados": 23,
-    "pesquisa": 33,
+    "raciocinio": 27,
+    "dados": 24,
+    "pesquisa": 34,
     "design": 32,
-    "navegador": 16,
+    "navegador": 17,
     "conversa": 43,
     "visao": 29
    },
-   "posicao": 49
-  },
-  {
-   "chave": "muse-spark-open",
-   "slug": "muse-spark-open",
-   "familia": "muse-spark-open",
-   "versao": 0,
-   "nome": "Muse Spark Open",
-   "empresa": "Meta",
-   "aberto": true,
-   "hf": "meta-models/Muse-Spark-Open-816B-A42B",
-   "lancamento": "2026-10-15",
-   "contexto": 1048576,
-   "precoEntrada": 1.25,
-   "precoSaida": 4.25,
-   "velocidade": 220.92,
-   "ttft": 0.67,
-   "metricas": {
-    "lb_geral": 48.53,
-    "lb_agentico": 12.1,
-    "lb_raciocinio": 73.7,
-    "lb_codigo": 55.1,
-    "lb_navegador": 26.2,
-    "lb_dados": 60.2,
-    "lb_pesquisa": 82.7,
-    "lb_design": 58.1,
-    "arena_webdev": 1527,
-    "aa_inteligencia": 24.9
-   },
-   "origens": {
-    "livebench": "muse-spark-open",
-    "lmarena": "Muse Spark Open (Max)",
-    "artificialanalysis": "muse-spark-open",
-    "openrouter": "meta/muse-spark-open"
-   },
-   "parcial": false,
-   "percentis": {
-    "lb_geral": 17.6,
-    "aa_inteligencia": 45.6,
-    "arena_webdev": 26,
-    "lb_agentico": 17.6,
-    "lb_raciocinio": 5.9,
-    "lb_codigo": 20.6,
-    "lb_navegador": 26.5,
-    "lb_dados": 11.8,
-    "lb_pesquisa": 58.8,
-    "lb_design": 8.8
-   },
-   "nota": 33.2,
-   "cobertura": 0.74,
-   "categorias": {
-    "agentico": 33.8,
-    "codigo": 32.2,
-    "raciocinio": 27.9,
-    "dados": 30.9,
-    "pesquisa": 54.4,
-    "design": 28.3,
-    "navegador": 38.3
-   },
-   "posCategorias": {
-    "agentico": 29,
-    "codigo": 42,
-    "raciocinio": 33,
-    "dados": 31,
-    "pesquisa": 15,
-    "design": 46,
-    "navegador": 26
-   },
-   "posicao": 50
+   "posicao": 52
   },
   {
    "chave": "gemini-3.5-flash-lite",
@@ -3201,8 +3289,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.3,
    "precoSaida": 2.5,
-   "velocidade": 427.53,
-   "ttft": 6.19,
+   "velocidade": 411.2,
+   "ttft": 6.31,
    "metricas": {
     "arena_texto": 1435,
     "arena_webdev": 1432,
@@ -3216,12 +3304,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 20.6,
+    "aa_inteligencia": 22.2,
     "arena_texto": 41.3,
     "arena_webdev": 18,
     "arena_visao": 50
    },
-   "nota": 31.7,
+   "nota": 32.3,
    "cobertura": 0.68,
    "categorias": {
     "codigo": 34,
@@ -3235,7 +3323,37 @@
     "conversa": 28,
     "visao": 15
    },
-   "posicao": 51
+   "posicao": 53
+  },
+  {
+   "chave": "a.x-k2",
+   "slug": "a.x-k2",
+   "familia": "a.x-k",
+   "versao": 2,
+   "nome": "A.X-K2",
+   "empresa": "SK Telecom",
+   "aberto": null,
+   "hf": null,
+   "lancamento": "2026-08-12",
+   "contexto": null,
+   "precoEntrada": null,
+   "precoSaida": null,
+   "velocidade": null,
+   "ttft": null,
+   "metricas": {
+    "aa_inteligencia": 9
+   },
+   "origens": {
+    "artificialanalysis": "a-x-k2"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 20.8
+   },
+   "nota": 28.1,
+   "cobertura": 0.32,
+   "categorias": {},
+   "posicao": 54
   },
   {
    "chave": "mistral-large-4",
@@ -3250,8 +3368,8 @@
    "contexto": null,
    "precoEntrada": 0.7,
    "precoSaida": 2.1,
-   "velocidade": 89.86,
-   "ttft": 2.46,
+   "velocidade": 85,
+   "ttft": 2.3,
    "metricas": {
     "lb_geral": 40.87,
     "lb_agentico": 9.2,
@@ -3274,43 +3392,43 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 2.9,
-    "aa_inteligencia": 47.1,
+    "aa_inteligencia": 47.2,
     "arena_texto": 26.1,
     "arena_webdev": 28,
     "arena_visao": 25,
     "lb_agentico": 2.9,
-    "lb_raciocinio": 41.2,
-    "lb_codigo": 5.9,
+    "lb_raciocinio": 40,
+    "lb_codigo": 5.7,
     "lb_navegador": 2.9,
-    "lb_dados": 44.1,
+    "lb_dados": 42.9,
     "lb_pesquisa": 0,
-    "lb_design": 17.6
+    "lb_design": 17.1
    },
    "nota": 27.9,
    "cobertura": 1,
    "categorias": {
     "agentico": 26.4,
-    "codigo": 28,
-    "raciocinio": 45.6,
-    "dados": 47,
+    "codigo": 27.9,
+    "raciocinio": 45,
+    "dados": 46.5,
     "pesquisa": 25,
-    "design": 31.9,
+    "design": 31.7,
     "navegador": 26.4,
     "conversa": 38,
     "visao": 37.5
    },
    "posCategorias": {
-    "agentico": 34,
-    "codigo": 46,
-    "raciocinio": 21,
-    "dados": 20,
-    "pesquisa": 35,
+    "agentico": 35,
+    "codigo": 47,
+    "raciocinio": 22,
+    "dados": 21,
+    "pesquisa": 36,
     "design": 44,
-    "navegador": 34,
+    "navegador": 35,
     "conversa": 35,
     "visao": 22
    },
-   "posicao": 52
+   "posicao": 55
   },
   {
    "chave": "inkling-small",
@@ -3325,8 +3443,8 @@
    "contexto": 524288,
    "precoEntrada": 0.45,
    "precoSaida": 1.2,
-   "velocidade": 121,
-   "ttft": 2.09,
+   "velocidade": 68.54,
+   "ttft": 2.15,
    "metricas": {
     "arena_texto": 1414,
     "arena_webdev": 1408,
@@ -3340,12 +3458,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 25,
+    "aa_inteligencia": 26.4,
     "arena_texto": 28.3,
     "arena_webdev": 14,
     "arena_visao": 17.9
    },
-   "nota": 27.3,
+   "nota": 27.8,
    "cobertura": 0.68,
    "categorias": {
     "codigo": 32,
@@ -3359,7 +3477,7 @@
     "conversa": 34,
     "visao": 24
    },
-   "posicao": 53
+   "posicao": 56
   },
   {
    "chave": "k-exaone-2.0",
@@ -3384,12 +3502,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 19.1
+    "aa_inteligencia": 19.4
    },
-   "nota": 26.8,
+   "nota": 27,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 54
+   "posicao": 57
   },
   {
    "chave": "inkling",
@@ -3404,8 +3522,8 @@
    "contexto": 524288,
    "precoEntrada": 1,
    "precoSaida": 4.05,
-   "velocidade": 177.39,
-   "ttft": 2.06,
+   "velocidade": 191.97,
+   "ttft": 2.04,
    "metricas": {
     "lb_geral": 44.32,
     "lb_agentico": 9.8,
@@ -3427,41 +3545,115 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 8.8,
-    "aa_inteligencia": 23.5,
+    "lb_geral": 8.6,
+    "aa_inteligencia": 25,
     "arena_texto": 50,
     "arena_webdev": 16,
-    "lb_agentico": 5.9,
-    "lb_raciocinio": 17.6,
-    "lb_codigo": 8.8,
-    "lb_navegador": 5.9,
-    "lb_dados": 32.4,
-    "lb_pesquisa": 8.8,
+    "lb_agentico": 5.7,
+    "lb_raciocinio": 17.1,
+    "lb_codigo": 8.6,
+    "lb_navegador": 5.7,
+    "lb_dados": 31.4,
+    "lb_pesquisa": 8.6,
     "lb_design": 0
    },
-   "nota": 26.3,
+   "nota": 26.7,
    "cobertura": 0.95,
    "categorias": {
     "agentico": 27.9,
     "codigo": 24.9,
-    "raciocinio": 33.8,
-    "dados": 41.2,
-    "pesquisa": 29.4,
+    "raciocinio": 33.5,
+    "dados": 40.7,
+    "pesquisa": 29.3,
     "design": 22,
     "navegador": 27.9,
     "conversa": 50
    },
    "posCategorias": {
-    "agentico": 33,
+    "agentico": 34,
     "codigo": 53,
-    "raciocinio": 29,
-    "dados": 24,
-    "pesquisa": 32,
+    "raciocinio": 30,
+    "dados": 25,
+    "pesquisa": 33,
     "design": 53,
-    "navegador": 33,
+    "navegador": 34,
     "conversa": 24
    },
-   "posicao": 55
+   "posicao": 58
+  },
+  {
+   "chave": "solar-pro-4",
+   "slug": "solar-pro-4",
+   "familia": "solar-pro",
+   "versao": 4,
+   "nome": "Solar Pro 4",
+   "empresa": "Upstage",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-08-06",
+   "contexto": null,
+   "precoEntrada": 0.3,
+   "precoSaida": 1.2,
+   "velocidade": 74.37,
+   "ttft": 1.94,
+   "metricas": {
+    "arena_texto": 1388,
+    "arena_webdev": 1369,
+    "aa_inteligencia": 14.2
+   },
+   "origens": {
+    "lmarena": "Solar Pro 4",
+    "artificialanalysis": "solar-pro4"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 30.6,
+    "arena_texto": 7.6,
+    "arena_webdev": 8
+   },
+   "nota": 23.6,
+   "cobertura": 0.63,
+   "categorias": {
+    "codigo": 29,
+    "design": 29,
+    "conversa": 28.8
+   },
+   "posCategorias": {
+    "codigo": 45,
+    "design": 45,
+    "conversa": 44
+   },
+   "posicao": 59
+  },
+  {
+   "chave": "command-a+",
+   "slug": "command-a-plus",
+   "familia": "command-a+",
+   "versao": 0,
+   "nome": "Command A+",
+   "empresa": "Cohere",
+   "aberto": null,
+   "hf": null,
+   "lancamento": "2026-05-20",
+   "contexto": null,
+   "precoEntrada": 0,
+   "precoSaida": 0,
+   "velocidade": 214.37,
+   "ttft": 0.47,
+   "metricas": {
+    "aa_inteligencia": 6.2
+   },
+   "origens": {
+    "artificialanalysis": "command-a-plus"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 14.6
+   },
+   "nota": 23.4,
+   "cobertura": 0.32,
+   "categorias": {},
+   "posicao": 60
   },
   {
    "chave": "smaug-nemotron-3.5-nvfp4",
@@ -3493,110 +3685,36 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 14.7,
-    "lb_agentico": 11.8,
-    "lb_raciocinio": 11.8,
-    "lb_codigo": 11.8,
-    "lb_navegador": 23.5,
-    "lb_dados": 20.6,
-    "lb_pesquisa": 14.7,
-    "lb_design": 14.7
+    "lb_geral": 14.3,
+    "lb_agentico": 11.4,
+    "lb_raciocinio": 11.4,
+    "lb_codigo": 11.4,
+    "lb_navegador": 22.9,
+    "lb_dados": 20,
+    "lb_pesquisa": 14.3,
+    "lb_design": 14.3
    },
-   "nota": 23.5,
+   "nota": 23.2,
    "cobertura": 0.32,
    "categorias": {
-    "agentico": 30.9,
-    "codigo": 30.9,
-    "raciocinio": 30.9,
-    "dados": 35.3,
-    "pesquisa": 32.4,
-    "design": 32.4,
-    "navegador": 36.8
+    "agentico": 30.7,
+    "codigo": 30.7,
+    "raciocinio": 30.7,
+    "dados": 35,
+    "pesquisa": 32.1,
+    "design": 32.1,
+    "navegador": 36.5
    },
    "posCategorias": {
-    "agentico": 31,
+    "agentico": 32,
     "codigo": 44,
-    "raciocinio": 31,
-    "dados": 28,
-    "pesquisa": 30,
+    "raciocinio": 32,
+    "dados": 29,
+    "pesquisa": 31,
     "design": 42,
-    "navegador": 27
+    "navegador": 28
    },
-   "posicao": 56
-  },
-  {
-   "chave": "solar-pro-4",
-   "slug": "solar-pro-4",
-   "familia": "solar-pro",
-   "versao": 4,
-   "nome": "Solar Pro 4",
-   "empresa": "Upstage",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-08-06",
-   "contexto": null,
-   "precoEntrada": 0.3,
-   "precoSaida": 1.2,
-   "velocidade": 74.37,
-   "ttft": 1.93,
-   "metricas": {
-    "arena_texto": 1388,
-    "arena_webdev": 1369,
-    "aa_inteligencia": 14.2
-   },
-   "origens": {
-    "lmarena": "Solar Pro 4",
-    "artificialanalysis": "solar-pro4"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 29.4,
-    "arena_texto": 7.6,
-    "arena_webdev": 8
-   },
-   "nota": 23.1,
-   "cobertura": 0.63,
-   "categorias": {
-    "codigo": 29,
-    "design": 29,
-    "conversa": 28.8
-   },
-   "posCategorias": {
-    "codigo": 45,
-    "design": 45,
-    "conversa": 44
-   },
-   "posicao": 57
-  },
-  {
-   "chave": "command-a+",
-   "slug": "command-a-plus",
-   "familia": "command-a+",
-   "versao": 0,
-   "nome": "Command A+",
-   "empresa": "Cohere",
-   "aberto": null,
-   "hf": null,
-   "lancamento": "2026-05-20",
-   "contexto": null,
-   "precoEntrada": 0,
-   "precoSaida": 0,
-   "velocidade": 213.36,
-   "ttft": 0.45,
-   "metricas": {
-    "aa_inteligencia": 6.2
-   },
-   "origens": {
-    "artificialanalysis": "command-a-plus"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 14
-   },
-   "nota": 23,
-   "cobertura": 0.32,
-   "categorias": {},
-   "posicao": 58
+   "posicao": 61
   },
   {
    "chave": "gemini-3.1-flash-lite",
@@ -3611,8 +3729,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.25,
    "precoSaida": 1.5,
-   "velocidade": 316.07,
-   "ttft": 4.74,
+   "velocidade": 311.62,
+   "ttft": 4.41,
    "metricas": {
     "arena_texto": 1416,
     "arena_webdev": 1256,
@@ -3626,12 +3744,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 14,
+    "aa_inteligencia": 14.6,
     "arena_texto": 30.4,
     "arena_webdev": 0,
     "arena_visao": 21.4
    },
-   "nota": 21.8,
+   "nota": 22,
    "cobertura": 0.68,
    "categorias": {
     "codigo": 25,
@@ -3645,7 +3763,38 @@
     "conversa": 33,
     "visao": 23
    },
-   "posicao": 59
+   "posicao": 62
+  },
+  {
+   "chave": "nemotron-3.5-lightning",
+   "slug": "nemotron-3.5-lightning",
+   "familia": "nemotron-lightning",
+   "versao": 3.5,
+   "nome": "Nemotron 3.5 Lightning",
+   "empresa": "NVIDIA",
+   "aberto": true,
+   "hf": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+   "lancamento": "2026-08-11",
+   "contexto": 1048576,
+   "precoEntrada": 0.07,
+   "precoSaida": 0.2,
+   "velocidade": 280.76,
+   "ttft": 0.58,
+   "metricas": {
+    "aa_inteligencia": 5.5
+   },
+   "origens": {
+    "artificialanalysis": "nemotron-3-5-lightning",
+    "openrouter": "nvidia/nemotron-3.5-lightning"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 12.5
+   },
+   "nota": 21.9,
+   "cobertura": 0.32,
+   "categorias": {},
+   "posicao": 63
   },
   {
    "chave": "nemotron-3.5-super-vl",
@@ -3660,8 +3809,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.15,
    "precoSaida": 0.5,
-   "velocidade": 274.59,
-   "ttft": 0.88,
+   "velocidade": 276.59,
+   "ttft": 0.87,
    "metricas": {
     "lb_geral": 47.01,
     "lb_agentico": 12,
@@ -3684,75 +3833,44 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 11.8,
-    "aa_inteligencia": 26.5,
+    "lb_geral": 11.4,
+    "aa_inteligencia": 27.8,
     "arena_texto": 23.9,
     "arena_webdev": 12,
     "arena_visao": 3.6,
-    "lb_agentico": 14.7,
-    "lb_raciocinio": 8.8,
-    "lb_codigo": 17.6,
-    "lb_navegador": 14.7,
-    "lb_dados": 17.6,
-    "lb_pesquisa": 17.6,
-    "lb_design": 11.8
+    "lb_agentico": 14.3,
+    "lb_raciocinio": 8.6,
+    "lb_codigo": 17.1,
+    "lb_navegador": 14.3,
+    "lb_dados": 17.1,
+    "lb_pesquisa": 17.1,
+    "lb_design": 11.4
    },
-   "nota": 21.6,
+   "nota": 21.8,
    "cobertura": 1,
    "categorias": {
-    "agentico": 32.4,
-    "codigo": 26.5,
-    "raciocinio": 29.4,
-    "dados": 33.8,
-    "pesquisa": 33.8,
-    "design": 24.6,
-    "navegador": 32.4,
+    "agentico": 32.1,
+    "codigo": 26.4,
+    "raciocinio": 29.3,
+    "dados": 33.5,
+    "pesquisa": 33.5,
+    "design": 24.5,
+    "navegador": 32.1,
     "conversa": 37,
     "visao": 26.8
    },
    "posCategorias": {
-    "agentico": 30,
+    "agentico": 31,
     "codigo": 49,
-    "raciocinio": 32,
-    "dados": 29,
-    "pesquisa": 29,
+    "raciocinio": 33,
+    "dados": 30,
+    "pesquisa": 30,
     "design": 52,
-    "navegador": 30,
+    "navegador": 31,
     "conversa": 36,
     "visao": 28
    },
-   "posicao": 60
-  },
-  {
-   "chave": "nemotron-3.5-lightning",
-   "slug": "nemotron-3.5-lightning",
-   "familia": "nemotron-lightning",
-   "versao": 3.5,
-   "nome": "Nemotron 3.5 Lightning",
-   "empresa": "NVIDIA",
-   "aberto": true,
-   "hf": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
-   "lancamento": "2026-08-11",
-   "contexto": 262144,
-   "precoEntrada": 0.07,
-   "precoSaida": 0.2,
-   "velocidade": 282.39,
-   "ttft": 0.64,
-   "metricas": {
-    "aa_inteligencia": 5.5
-   },
-   "origens": {
-    "artificialanalysis": "nemotron-3-5-lightning",
-    "openrouter": "nvidia/nemotron-3.5-lightning"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 11.8
-   },
-   "nota": 21.4,
-   "cobertura": 0.32,
-   "categorias": {},
-   "posicao": 61
+   "posicao": 64
   },
   {
    "chave": "gemma-4-31b",
@@ -3767,8 +3885,8 @@
    "contexto": 262144,
    "precoEntrada": 0.2,
    "precoSaida": 0.4,
-   "velocidade": 35.59,
-   "ttft": 1.12,
+   "velocidade": 35.6,
+   "ttft": 1.08,
    "metricas": {
     "lb_geral": 32.43,
     "lb_agentico": 8.5,
@@ -3792,7 +3910,7 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 0,
-    "aa_inteligencia": 5.9,
+    "aa_inteligencia": 5.6,
     "arena_texto": 50,
     "arena_webdev": 10,
     "arena_visao": 64.3,
@@ -3802,9 +3920,9 @@
     "lb_navegador": 0,
     "lb_dados": 2.9,
     "lb_pesquisa": 2.9,
-    "lb_design": 5.9
+    "lb_design": 5.7
    },
-   "nota": 20,
+   "nota": 19.9,
    "cobertura": 1,
    "categorias": {
     "agentico": 25,
@@ -3812,71 +3930,53 @@
     "raciocinio": 25,
     "dados": 26.4,
     "pesquisa": 26.4,
-    "design": 22,
+    "design": 21.9,
     "navegador": 25,
     "conversa": 50,
     "visao": 57.1
    },
    "posCategorias": {
-    "agentico": 35,
+    "agentico": 36,
     "codigo": 54,
-    "raciocinio": 35,
-    "dados": 34,
-    "pesquisa": 34,
+    "raciocinio": 36,
+    "dados": 35,
+    "pesquisa": 35,
     "design": 54,
-    "navegador": 35,
+    "navegador": 36,
     "conversa": 25,
     "visao": 12
    },
-   "posicao": 62
+   "posicao": 65
   },
   {
-   "chave": "mistral-3.5",
-   "slug": "mistral-3.5",
-   "familia": "mistral",
-   "versao": 3.5,
-   "nome": "Mistral Medium 3.5",
-   "empresa": "Mistral",
-   "aberto": true,
+   "chave": "gemma-4-e4b",
+   "slug": "gemma-4-e4b",
+   "familia": "gemma-e4b",
+   "versao": 4,
+   "nome": "Gemma 4 E4B",
+   "empresa": "Google",
+   "aberto": null,
    "hf": null,
-   "lancamento": "2026-04-29",
+   "lancamento": "2026-04-03",
    "contexto": null,
-   "precoEntrada": 1.5,
-   "precoSaida": 7.5,
-   "velocidade": 169.1,
-   "ttft": 2.46,
+   "precoEntrada": 0.02,
+   "precoSaida": 0.1,
+   "velocidade": 69.86,
+   "ttft": 0.86,
    "metricas": {
-    "arena_texto": 1421,
-    "arena_webdev": 1263,
-    "arena_visao": 1222,
-    "aa_inteligencia": 4.6
+    "aa_inteligencia": 4.8
    },
    "origens": {
-    "lmarena": "Mistral Medium 3.5",
-    "artificialanalysis": "mistral-medium-3-5"
+    "artificialanalysis": "gemma-4-e4b"
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 7.4,
-    "arena_texto": 32.6,
-    "arena_webdev": 2,
-    "arena_visao": 7.1
+    "aa_inteligencia": 9.7
    },
-   "nota": 19.1,
-   "cobertura": 0.68,
-   "categorias": {
-    "codigo": 26,
-    "design": 26,
-    "conversa": 41.3,
-    "visao": 28.6
-   },
-   "posCategorias": {
-    "codigo": 51,
-    "design": 50,
-    "conversa": 32,
-    "visao": 27
-   },
-   "posicao": 63
+   "nota": 19.8,
+   "cobertura": 0.32,
+   "categorias": {},
+   "posicao": 66
   },
   {
    "chave": "claude-haiku-4.5",
@@ -3891,8 +3991,8 @@
    "contexto": 200000,
    "precoEntrada": 1,
    "precoSaida": 5,
-   "velocidade": 100.21,
-   "ttft": 14.32,
+   "velocidade": 101.06,
+   "ttft": 15.15,
    "metricas": {
     "arena_texto": 1396,
     "arena_webdev": 1330,
@@ -3905,11 +4005,11 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 17.6,
+    "aa_inteligencia": 18.1,
     "arena_texto": 13,
     "arena_webdev": 4
    },
-   "nota": 19,
+   "nota": 19.2,
    "cobertura": 0.63,
    "categorias": {
     "codigo": 27,
@@ -3921,7 +4021,55 @@
     "design": 48,
     "conversa": 41
    },
-   "posicao": 64
+   "posicao": 67
+  },
+  {
+   "chave": "mistral-3.5",
+   "slug": "mistral-3.5",
+   "familia": "mistral",
+   "versao": 3.5,
+   "nome": "Mistral Medium 3.5",
+   "empresa": "Mistral",
+   "aberto": true,
+   "hf": null,
+   "lancamento": "2026-04-29",
+   "contexto": null,
+   "precoEntrada": 1.5,
+   "precoSaida": 7.5,
+   "velocidade": 168.7,
+   "ttft": 2.54,
+   "metricas": {
+    "arena_texto": 1421,
+    "arena_webdev": 1263,
+    "arena_visao": 1222,
+    "aa_inteligencia": 4.6
+   },
+   "origens": {
+    "lmarena": "Mistral Medium 3.5",
+    "artificialanalysis": "mistral-medium-3-5"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 6.9,
+    "arena_texto": 32.6,
+    "arena_webdev": 2,
+    "arena_visao": 7.1
+   },
+   "nota": 18.9,
+   "cobertura": 0.68,
+   "categorias": {
+    "codigo": 26,
+    "design": 26,
+    "conversa": 41.3,
+    "visao": 28.6
+   },
+   "posCategorias": {
+    "codigo": 51,
+    "design": 50,
+    "conversa": 32,
+    "visao": 27
+   },
+   "posicao": 68
   },
   {
    "chave": "muse-glimmer",
@@ -3936,8 +4084,8 @@
    "contexto": null,
    "precoEntrada": 0.325,
    "precoSaida": 1.35,
-   "velocidade": 99.37,
-   "ttft": 0.81,
+   "velocidade": 96.93,
+   "ttft": 0.85,
    "metricas": {
     "arena_texto": 1389,
     "arena_webdev": 1354,
@@ -3949,11 +4097,11 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 16.2,
+    "aa_inteligencia": 16.7,
     "arena_texto": 10.9,
     "arena_webdev": 6
    },
-   "nota": 18.1,
+   "nota": 18.3,
    "cobertura": 0.63,
    "categorias": {
     "codigo": 28,
@@ -3961,11 +4109,11 @@
     "conversa": 30.4
    },
    "posCategorias": {
-    "codigo": 47,
+    "codigo": 46,
     "design": 47,
     "conversa": 42
    },
-   "posicao": 65
+   "posicao": 69
   },
   {
    "chave": "nemotron-super-vl-3.5-nvfp4",
@@ -3997,36 +4145,36 @@
    },
    "parcial": false,
    "percentis": {
-    "lb_geral": 5.9,
-    "lb_agentico": 8.8,
+    "lb_geral": 5.7,
+    "lb_agentico": 8.6,
     "lb_raciocinio": 2.9,
     "lb_codigo": 2.9,
-    "lb_navegador": 11.8,
-    "lb_dados": 23.5,
-    "lb_pesquisa": 20.6,
+    "lb_navegador": 11.4,
+    "lb_dados": 22.9,
+    "lb_pesquisa": 20,
     "lb_design": 2.9
    },
-   "nota": 16.9,
+   "nota": 16.8,
    "cobertura": 0.32,
    "categorias": {
-    "agentico": 29.4,
+    "agentico": 29.3,
     "codigo": 26.4,
     "raciocinio": 26.4,
-    "dados": 36.8,
-    "pesquisa": 35.3,
+    "dados": 36.5,
+    "pesquisa": 35,
     "design": 26.4,
-    "navegador": 30.9
+    "navegador": 30.7
    },
    "posCategorias": {
-    "agentico": 32,
+    "agentico": 33,
     "codigo": 50,
-    "raciocinio": 34,
-    "dados": 27,
-    "pesquisa": 28,
+    "raciocinio": 35,
+    "dados": 28,
+    "pesquisa": 29,
     "design": 49,
-    "navegador": 31
+    "navegador": 32
    },
-   "posicao": 66
+   "posicao": 70
   },
   {
    "chave": "mistral-small-4",
@@ -4041,8 +4189,8 @@
    "contexto": null,
    "precoEntrada": 0.15,
    "precoSaida": 0.6,
-   "velocidade": 171.65,
-   "ttft": 0.9,
+   "velocidade": 165.81,
+   "ttft": 0.93,
    "metricas": {
     "aa_inteligencia": 4.3
    },
@@ -4051,12 +4199,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 4.4
+    "aa_inteligencia": 4.2
    },
-   "nota": 15.8,
+   "nota": 15.7,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 67
+   "posicao": 71
   },
   {
    "chave": "granite-4.2-8b",
@@ -4071,8 +4219,8 @@
    "contexto": 131072,
    "precoEntrada": 0.06,
    "precoSaida": 0.15,
-   "velocidade": 45.1,
-   "ttft": 0.88,
+   "velocidade": 72.28,
+   "ttft": 0.82,
    "metricas": {
     "arena_texto": 1319,
     "aa_inteligencia": 5.1
@@ -4084,10 +4232,10 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 10.3,
+    "aa_inteligencia": 11.1,
     "arena_texto": 2.2
    },
-   "nota": 14.2,
+   "nota": 14.6,
    "cobertura": 0.53,
    "categorias": {
     "conversa": 26.1
@@ -4095,7 +4243,7 @@
    "posCategorias": {
     "conversa": 46
    },
-   "posicao": 68
+   "posicao": 72
   },
   {
    "chave": "north-mini-code",
@@ -4110,8 +4258,8 @@
    "contexto": null,
    "precoEntrada": 0,
    "precoSaida": 0,
-   "velocidade": 134.84,
-   "ttft": 0.34,
+   "velocidade": 123,
+   "ttft": 0.37,
    "metricas": {
     "aa_inteligencia": 3.4
    },
@@ -4120,12 +4268,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 1.5
+    "aa_inteligencia": 1.4
    },
    "nota": 13.6,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 69
+   "posicao": 73
   },
   {
    "chave": "granite-4.2-3b",
@@ -4152,10 +4300,10 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 8.8,
+    "aa_inteligencia": 8.3,
     "arena_texto": 0
    },
-   "nota": 12.7,
+   "nota": 12.5,
    "cobertura": 0.53,
    "categorias": {
     "conversa": 25
@@ -4163,7 +4311,7 @@
    "posCategorias": {
     "conversa": 47
    },
-   "posicao": 70
+   "posicao": 74
   },
   {
    "chave": "nvidia-nemotron-3-nano-4b",
@@ -4193,7 +4341,7 @@
    "nota": 12.5,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 71
+   "posicao": 75
   },
   {
    "chave": "gpt-oss-120b",
@@ -4208,8 +4356,8 @@
    "contexto": 131072,
    "precoEntrada": 0.15,
    "precoSaida": 0.6,
-   "velocidade": 235.05,
-   "ttft": 0.73,
+   "velocidade": 236.49,
+   "ttft": 0.74,
    "metricas": {
     "arena_texto": 1366,
     "aa_inteligencia": 3.8
@@ -4221,7 +4369,7 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 2.9,
+    "aa_inteligencia": 2.8,
     "arena_texto": 4.3
    },
    "nota": 11.2,
@@ -4232,7 +4380,7 @@
    "posCategorias": {
     "conversa": 45
    },
-   "posicao": 72
+   "posicao": 76
   },
   {
    "chave": "claude-opus-4.6",
@@ -4247,8 +4395,8 @@
    "contexto": 1000000,
    "precoEntrada": 5,
    "precoSaida": 25,
-   "velocidade": 38.91,
-   "ttft": 1.76,
+   "velocidade": 38.77,
+   "ttft": 1.75,
    "metricas": {
     "arena_texto": 1501,
     "arena_webdev": 1547,
@@ -4283,8 +4431,8 @@
    "contexto": 1000000,
    "precoEntrada": 10,
    "precoSaida": 50,
-   "velocidade": 61.7,
-   "ttft": 74.9,
+   "velocidade": 58.7,
+   "ttft": 58.92,
    "metricas": {
     "arena_texto": 1492,
     "arena_webdev": 1626,
@@ -4319,8 +4467,8 @@
    "contexto": 1000000,
    "precoEntrada": 5,
    "precoSaida": 25,
-   "velocidade": 44.4,
-   "ttft": 0.82,
+   "velocidade": 43.96,
+   "ttft": 0.84,
    "metricas": {
     "arena_texto": 1490,
     "arena_webdev": 1557,
@@ -4391,8 +4539,8 @@
    "contexto": 1048576,
    "precoEntrada": 1.5,
    "precoSaida": 9,
-   "velocidade": 206.96,
-   "ttft": 13.97,
+   "velocidade": 207.44,
+   "ttft": 13.87,
    "metricas": {
     "arena_texto": 1483,
     "arena_webdev": 1500,
@@ -4427,8 +4575,8 @@
    "contexto": 1048576,
    "precoEntrada": 1.25,
    "precoSaida": 4.25,
-   "velocidade": 278.83,
-   "ttft": 10.87,
+   "velocidade": 239.51,
+   "ttft": 12.51,
    "metricas": {
     "arena_texto": 1483,
     "arena_webdev": 1534,
@@ -4498,7 +4646,7 @@
    "contexto": 1048576,
    "precoEntrada": 2,
    "precoSaida": 12,
-   "velocidade": 136.92,
+   "velocidade": 139.84,
    "ttft": 18.72,
    "metricas": {
     "arena_texto": 1480,
@@ -4534,8 +4682,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.75,
    "precoSaida": 3.75,
-   "velocidade": 197.35,
-   "ttft": 14.47,
+   "velocidade": 192.83,
+   "ttft": 15.42,
    "metricas": {
     "arena_texto": 1479,
     "arena_webdev": 1538,
@@ -4570,8 +4718,8 @@
    "contexto": 1048576,
    "precoEntrada": 1.25,
    "precoSaida": 4.25,
-   "velocidade": 265.41,
-   "ttft": 11.45,
+   "velocidade": 264.75,
+   "ttft": 10.3,
    "metricas": {
     "arena_texto": 1479,
     "arena_webdev": 1542,
@@ -4606,8 +4754,8 @@
    "contexto": 1000000,
    "precoEntrada": 1.475,
    "precoSaida": 4.425,
-   "velocidade": 203.06,
-   "ttft": 2.26,
+   "velocidade": 198.32,
+   "ttft": 2.2,
    "metricas": {
     "arena_texto": 1475,
     "arena_webdev": 1515
@@ -4673,8 +4821,8 @@
    "contexto": 1050000,
    "precoEntrada": 5,
    "precoSaida": 30,
-   "velocidade": 76.15,
-   "ttft": 31.19,
+   "velocidade": 75.45,
+   "ttft": 38.88,
    "metricas": {
     "arena_texto": 1471,
     "arena_webdev": 1512,
@@ -4739,8 +4887,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.007,
    "precoSaida": 6.8,
-   "velocidade": 172.85,
-   "ttft": 1.15,
+   "velocidade": 158.73,
+   "ttft": 1.19,
    "metricas": {
     "arena_texto": 1469,
     "arena_webdev": 1608
@@ -4774,7 +4922,7 @@
    "precoEntrada": 2.5,
    "precoSaida": 15,
    "velocidade": 60.37,
-   "ttft": 1.7,
+   "ttft": 1.78,
    "metricas": {
     "arena_texto": 1469,
     "arena_webdev": 1462,
@@ -4839,8 +4987,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.5,
    "precoSaida": 3,
-   "velocidade": 208.18,
-   "ttft": 0.75,
+   "velocidade": 199.94,
+   "ttft": 0.76,
    "metricas": {
     "arena_texto": 1466,
     "arena_webdev": 1440,
@@ -4909,8 +5057,8 @@
    "contexto": 1000000,
    "precoEntrada": 5,
    "precoSaida": 25,
-   "velocidade": 57.83,
-   "ttft": 32.42,
+   "velocidade": 54.85,
+   "ttft": 31.47,
    "metricas": {
     "arena_texto": 1462,
     "arena_webdev": 1555,
@@ -4945,8 +5093,8 @@
    "contexto": 204800,
    "precoEntrada": 1.4,
    "precoSaida": 4.4,
-   "velocidade": 96.46,
-   "ttft": 1.22,
+   "velocidade": 90.95,
+   "ttft": 1.23,
    "metricas": {
     "arena_texto": 1462,
     "arena_webdev": 1508
@@ -4979,8 +5127,8 @@
    "contexto": 1000000,
    "precoEntrada": 3,
    "precoSaida": 15,
-   "velocidade": 43.3,
-   "ttft": 1.25,
+   "velocidade": 42.37,
+   "ttft": 1.28,
    "metricas": {
     "arena_texto": 1458,
     "arena_webdev": 1522,
@@ -5051,7 +5199,7 @@
    "contexto": 1050000,
    "precoEntrada": 4,
    "precoSaida": 20,
-   "velocidade": 111.47,
+   "velocidade": 113.15,
    "ttft": 2.73,
    "metricas": {
     "arena_texto": 1457,
@@ -5088,7 +5236,7 @@
    "precoEntrada": 0.65,
    "precoSaida": 3.41,
    "velocidade": 41.21,
-   "ttft": 2.88,
+   "ttft": 2.82,
    "metricas": {
     "arena_texto": 1455,
     "arena_webdev": 1510,
@@ -5123,8 +5271,8 @@
    "contexto": 1000000,
    "precoEntrada": 0.32,
    "precoSaida": 1.28,
-   "velocidade": 58.39,
-   "ttft": 2.32,
+   "velocidade": 59.32,
+   "ttft": 2.27,
    "metricas": {
     "arena_texto": 1454,
     "arena_visao": 1277
@@ -5157,8 +5305,8 @@
    "contexto": 200000,
    "precoEntrada": 5,
    "precoSaida": 25,
-   "velocidade": 48.95,
-   "ttft": 16.55,
+   "velocidade": 45.91,
+   "ttft": 15.63,
    "metricas": {
     "arena_texto": 1451,
     "arena_webdev": 1493
@@ -5322,8 +5470,8 @@
    "contexto": 500000,
    "precoEntrada": 2,
    "precoSaida": 6,
-   "velocidade": 51.79,
-   "ttft": 10.38,
+   "velocidade": 54.07,
+   "ttft": 7.34,
    "metricas": {
     "arena_texto": 1448,
     "arena_webdev": 1552,
@@ -5358,8 +5506,8 @@
    "contexto": 204800,
    "precoEntrada": 1,
    "precoSaida": 3.2,
-   "velocidade": 70.44,
-   "ttft": 2.01,
+   "velocidade": 68.53,
+   "ttft": 1.75,
    "metricas": {
     "arena_texto": 1446,
     "arena_webdev": 1435
@@ -5425,8 +5573,8 @@
    "contexto": 262144,
    "precoEntrada": 0.5,
    "precoSaida": 2.5,
-   "velocidade": 51.27,
-   "ttft": 2.03,
+   "velocidade": 51.26,
+   "ttft": 1.87,
    "metricas": {
     "arena_texto": 1445,
     "arena_webdev": 1437,
@@ -5525,7 +5673,7 @@
    "precoEntrada": 1.25,
    "precoSaida": 10,
    "velocidade": 101.85,
-   "ttft": 27.37,
+   "ttft": 32.66,
    "metricas": {
     "arena_texto": 1443,
     "arena_webdev": 1398,
@@ -5560,8 +5708,8 @@
    "contexto": 1000000,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 63.2,
-   "ttft": 1.17,
+   "velocidade": 63.25,
+   "ttft": 0.99,
    "metricas": {
     "arena_texto": 1442,
     "arena_webdev": 1539,
@@ -5596,8 +5744,8 @@
    "contexto": 204800,
    "precoEntrada": 0.5,
    "precoSaida": 2,
-   "velocidade": 37.8,
-   "ttft": 3.24,
+   "velocidade": 36.79,
+   "ttft": 2.31,
    "metricas": {
     "arena_texto": 1440,
     "arena_webdev": 1342
@@ -5630,8 +5778,8 @@
    "contexto": 1000000,
    "precoEntrada": 3,
    "precoSaida": 15,
-   "velocidade": 42.48,
-   "ttft": 14.45,
+   "velocidade": 41.6,
+   "ttft": 13.47,
    "metricas": {
     "arena_texto": 1439,
     "arena_webdev": 1394
@@ -5762,8 +5910,8 @@
    "contexto": 262144,
    "precoEntrada": 0.45,
    "precoSaida": 3,
-   "velocidade": 58.74,
-   "ttft": 2.17,
+   "velocidade": 58.98,
+   "ttft": 2.15,
    "metricas": {
     "arena_texto": 1438,
     "arena_webdev": 1400,
@@ -5863,8 +6011,8 @@
    "contexto": 1000000,
    "precoEntrada": 0.325,
    "precoSaida": 1.95,
-   "velocidade": 56,
-   "ttft": 1.97,
+   "velocidade": 56.14,
+   "ttft": 2.07,
    "metricas": {
     "arena_texto": 1436,
     "arena_webdev": 1461
@@ -5897,8 +6045,8 @@
    "contexto": 204800,
    "precoEntrada": 0.4,
    "precoSaida": 1.75,
-   "velocidade": 48.7,
-   "ttft": 1.34,
+   "velocidade": 45.58,
+   "ttft": 1.42,
    "metricas": {
     "arena_texto": 1435,
     "arena_webdev": 1436
@@ -5931,8 +6079,8 @@
    "contexto": 262144,
    "precoEntrada": 0.09,
    "precoSaida": 0.3,
-   "velocidade": 74.93,
-   "ttft": 0.93,
+   "velocidade": 73.65,
+   "ttft": 0.92,
    "metricas": {
     "arena_texto": 1434,
     "arena_webdev": 1358,
@@ -6065,8 +6213,8 @@
    "contexto": null,
    "precoEntrada": 0.5,
    "precoSaida": 1.5,
-   "velocidade": 92.66,
-   "ttft": 1.15,
+   "velocidade": 93.13,
+   "ttft": 1.12,
    "metricas": {
     "arena_texto": 1429,
     "arena_webdev": 1231,
@@ -6100,8 +6248,8 @@
    "contexto": 163840,
    "precoEntrada": 0.5,
    "precoSaida": 2.15,
-   "velocidade": 174.61,
-   "ttft": 1.01,
+   "velocidade": 174.96,
+   "ttft": 1.02,
    "metricas": {
     "arena_texto": 1428
    },
@@ -6261,8 +6409,8 @@
    "hf": null,
    "lancamento": "2025-08-13",
    "contexto": 131072,
-   "precoEntrada": 0.4,
-   "precoSaida": 2,
+   "precoEntrada": 0.44,
+   "precoSaida": 2.2,
    "velocidade": null,
    "ttft": null,
    "metricas": {
@@ -6363,8 +6511,8 @@
    "contexto": null,
    "precoEntrada": 0.425,
    "precoSaida": 1.34,
-   "velocidade": 152.85,
-   "ttft": 1.32,
+   "velocidade": 135.23,
+   "ttft": 1.36,
    "metricas": {
     "arena_texto": 1420
    },
@@ -6495,7 +6643,7 @@
    "precoEntrada": 5,
    "precoSaida": 30,
    "velocidade": 151.37,
-   "ttft": 1.82,
+   "ttft": 1.88,
    "metricas": {
     "arena_texto": 1419,
     "arena_visao": 1251
@@ -6527,8 +6675,8 @@
    "contexto": 128000,
    "precoEntrada": 0.45,
    "precoSaida": 3.5,
-   "velocidade": 45.74,
-   "ttft": 1.15,
+   "velocidade": 43.41,
+   "ttft": 1.17,
    "metricas": {
     "arena_texto": 1419
    },
@@ -6559,8 +6707,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.3,
    "precoSaida": 2.5,
-   "velocidade": 204.42,
-   "ttft": 13.3,
+   "velocidade": 219.84,
+   "ttft": 12.92,
    "metricas": {
     "arena_texto": 1417,
     "arena_visao": 1253
@@ -6626,7 +6774,7 @@
    "contexto": 262144,
    "precoEntrada": 0.09,
    "precoSaida": 1.1,
-   "velocidade": 153.86,
+   "velocidade": 151.71,
    "ttft": 0.81,
    "metricas": {
     "arena_texto": 1417
@@ -6658,8 +6806,8 @@
    "contexto": 262144,
    "precoEntrada": 0.26,
    "precoSaida": 2.08,
-   "velocidade": 140.61,
-   "ttft": 2.29,
+   "velocidade": 142.37,
+   "ttft": 2.3,
    "metricas": {
     "arena_texto": 1417,
     "arena_webdev": 1360,
@@ -6694,8 +6842,8 @@
    "contexto": 400000,
    "precoEntrada": 1.75,
    "precoSaida": 14,
-   "velocidade": 75.84,
-   "ttft": 105.44,
+   "velocidade": 72.14,
+   "ttft": 99.14,
    "metricas": {
     "arena_texto": 1416,
     "arena_webdev": 1419,
@@ -6762,8 +6910,8 @@
    "contexto": 400000,
    "precoEntrada": 0.75,
    "precoSaida": 4.5,
-   "velocidade": 211.41,
-   "ttft": 4.18,
+   "velocidade": 191.63,
+   "ttft": 4.07,
    "metricas": {
     "arena_texto": 1412,
     "arena_webdev": 1398,
@@ -6798,8 +6946,8 @@
    "contexto": null,
    "precoEntrada": 3,
    "precoSaida": 15,
-   "velocidade": 77.9,
-   "ttft": 7.91,
+   "velocidade": 73,
+   "ttft": 7.65,
    "metricas": {
     "arena_texto": 1412,
     "arena_visao": 1210
@@ -6864,7 +7012,7 @@
    "contexto": 200000,
    "precoEntrada": 2,
    "precoSaida": 8,
-   "velocidade": 163.51,
+   "velocidade": 140.46,
    "ttft": 5.54,
    "metricas": {
     "arena_texto": 1410,
@@ -6898,8 +7046,8 @@
    "contexto": 262144,
    "precoEntrada": 0.26,
    "precoSaida": 2.6,
-   "velocidade": 73.81,
-   "ttft": 5.67,
+   "velocidade": 25.68,
+   "ttft": 5.57,
    "metricas": {
     "arena_texto": 1409,
     "arena_webdev": 1357,
@@ -7002,8 +7150,8 @@
    "contexto": 400000,
    "precoEntrada": 1.25,
    "precoSaida": 10,
-   "velocidade": 101.14,
-   "ttft": 65.95,
+   "velocidade": 90.42,
+   "ttft": 59.68,
    "metricas": {
     "arena_texto": 1406,
     "arena_webdev": 1417,
@@ -7070,8 +7218,8 @@
    "contexto": 196608,
    "precoEntrada": 0.21,
    "precoSaida": 0.84,
-   "velocidade": 48.48,
-   "ttft": 2.31,
+   "velocidade": 48.05,
+   "ttft": 2.29,
    "metricas": {
     "arena_texto": 1405,
     "arena_webdev": 1398
@@ -7136,8 +7284,8 @@
    "contexto": null,
    "precoEntrada": 0.1,
    "precoSaida": 0.3,
-   "velocidade": 163.85,
-   "ttft": 3.38,
+   "velocidade": 154.25,
+   "ttft": 3.35,
    "metricas": {
     "arena_texto": 1402
    },
@@ -7197,7 +7345,7 @@
    "contexto": 1000000,
    "precoEntrada": 1.25,
    "precoSaida": 2.5,
-   "velocidade": 79.25,
+   "velocidade": 75.92,
    "ttft": 13.45,
    "metricas": {
     "arena_texto": 1397,
@@ -7265,7 +7413,7 @@
    "contexto": 262144,
    "precoEntrada": 0.14,
    "precoSaida": 1,
-   "velocidade": 156.58,
+   "velocidade": 158.83,
    "ttft": 2,
    "metricas": {
     "arena_texto": 1395,
@@ -7362,8 +7510,8 @@
    "contexto": 131072,
    "precoEntrada": 0.13,
    "precoSaida": 0.85,
-   "velocidade": 82.4,
-   "ttft": 2.42,
+   "velocidade": 81.5,
+   "ttft": 2.44,
    "metricas": {
     "arena_texto": 1384
    },
@@ -7394,8 +7542,8 @@
    "contexto": 262144,
    "precoEntrada": 0.1,
    "precoSaida": 0.3,
-   "velocidade": 83.35,
-   "ttft": 0.64,
+   "velocidade": 90,
+   "ttft": 0.58,
    "metricas": {
     "arena_texto": 1384
    },
@@ -7426,7 +7574,7 @@
    "contexto": 1047576,
    "precoEntrada": 2,
    "precoSaida": 8,
-   "velocidade": 184.22,
+   "velocidade": 184.75,
    "ttft": 1.86,
    "metricas": {
     "arena_texto": 1383,
@@ -7460,8 +7608,8 @@
    "contexto": 262144,
    "precoEntrada": 0.6,
    "precoSaida": 2.5,
-   "velocidade": 50.56,
-   "ttft": 1.95,
+   "velocidade": 49.03,
+   "ttft": 1.92,
    "metricas": {
     "arena_texto": 1380
    },
@@ -7492,8 +7640,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.1,
    "precoSaida": 0.4,
-   "velocidade": 277.73,
-   "ttft": 0.32,
+   "velocidade": 271.74,
+   "ttft": 0.33,
    "metricas": {
     "arena_texto": 1379,
     "arena_visao": 1198
@@ -7559,8 +7707,8 @@
    "contexto": 131072,
    "precoEntrada": 0.3,
    "precoSaida": 0.9,
-   "velocidade": 87.06,
-   "ttft": 4.27,
+   "velocidade": 75.86,
+   "ttft": 4.29,
    "metricas": {
     "arena_texto": 1377,
     "arena_visao": 1163
@@ -7623,8 +7771,8 @@
    "contexto": 262144,
    "precoEntrada": 0.075,
    "precoSaida": 0.4,
-   "velocidade": 180.66,
-   "ttft": 1.08,
+   "velocidade": 193.72,
+   "ttft": 1.06,
    "metricas": {
     "arena_texto": 1377
    },
@@ -7655,8 +7803,8 @@
    "contexto": null,
    "precoEntrada": 0.32,
    "precoSaida": 0.89,
-   "velocidade": 76.82,
-   "ttft": 0.84,
+   "velocidade": 73.23,
+   "ttft": 0.87,
    "metricas": {
     "arena_texto": 1375
    },
@@ -7686,8 +7834,8 @@
    "contexto": 400000,
    "precoEntrada": 0.25,
    "precoSaida": 2,
-   "velocidade": 99.97,
-   "ttft": 66.63,
+   "velocidade": 102.39,
+   "ttft": 60.09,
    "metricas": {
     "arena_texto": 1373,
     "arena_visao": 1202
@@ -7720,8 +7868,8 @@
    "contexto": 400000,
    "precoEntrada": 0.2,
    "precoSaida": 1.25,
-   "velocidade": 172.27,
-   "ttft": 4.7,
+   "velocidade": 167.5,
+   "ttft": 3.91,
    "metricas": {
     "arena_texto": 1372,
     "arena_visao": 1196
@@ -7783,10 +7931,10 @@
    "hf": null,
    "lancamento": "2025-05-07",
    "contexto": 131072,
-   "precoEntrada": 0.4,
-   "precoSaida": 2,
+   "precoEntrada": 0.44,
+   "precoSaida": 2.2,
    "velocidade": 44.84,
-   "ttft": 2.32,
+   "ttft": 2.29,
    "metricas": {
     "arena_texto": 1370,
     "arena_visao": 1157
@@ -7944,8 +8092,8 @@
    "contexto": null,
    "precoEntrada": 0.14,
    "precoSaida": 0.57,
-   "velocidade": 6.88,
-   "ttft": 2.44,
+   "velocidade": 5.46,
+   "ttft": 2.45,
    "metricas": {
     "arena_texto": 1361
    },
@@ -7975,8 +8123,8 @@
    "contexto": 198000,
    "precoEntrada": 0.295,
    "precoSaida": 1.2,
-   "velocidade": 55.15,
-   "ttft": 1.81,
+   "velocidade": 51.1,
+   "ttft": 1.8,
    "metricas": {
     "arena_texto": 1359,
     "arena_webdev": 1386
@@ -8043,8 +8191,8 @@
    "contexto": null,
    "precoEntrada": 0.375,
    "precoSaida": 1.4,
-   "velocidade": 102.7,
-   "ttft": 1.15,
+   "velocidade": 96.07,
+   "ttft": 1.18,
    "metricas": {
     "arena_texto": 1357,
     "arena_webdev": 1274
@@ -8107,8 +8255,8 @@
    "contexto": null,
    "precoEntrada": 0.25,
    "precoSaida": 0.75,
-   "velocidade": 522.81,
-   "ttft": 5.94,
+   "velocidade": 489.41,
+   "ttft": 7.58,
    "metricas": {
     "arena_texto": 1355,
     "arena_webdev": 1171
@@ -8173,8 +8321,8 @@
    "contexto": null,
    "precoEntrada": 1.1,
    "precoSaida": 4.4,
-   "velocidade": 103.47,
-   "ttft": 21.91,
+   "velocidade": 127.38,
+   "ttft": 19.58,
    "metricas": {
     "arena_texto": 1353,
     "arena_visao": 1194
@@ -8239,8 +8387,8 @@
    "contexto": 200000,
    "precoEntrada": 0.0605,
    "precoSaida": 0.4,
-   "velocidade": 80.55,
-   "ttft": 1.08,
+   "velocidade": 83.47,
+   "ttft": 1.06,
    "metricas": {
     "arena_texto": 1351
    },
@@ -8303,8 +8451,8 @@
    "contexto": 262144,
    "precoEntrada": 0.06,
    "precoSaida": 0.24,
-   "velocidade": 310.47,
-   "ttft": 0.56,
+   "velocidade": 311.98,
+   "ttft": 0.53,
    "metricas": {
     "arena_texto": 1348
    },
@@ -8365,8 +8513,8 @@
    "contexto": 1047576,
    "precoEntrada": 0.4,
    "precoSaida": 1.6,
-   "velocidade": 149.89,
-   "ttft": 1.67,
+   "velocidade": 146.57,
+   "ttft": 1.75,
    "metricas": {
     "arena_texto": 1341,
     "arena_visao": 1181
@@ -8399,7 +8547,7 @@
    "contexto": null,
    "precoEntrada": 0.3,
    "precoSaida": 1.2,
-   "velocidade": 128.28,
+   "velocidade": 128.8,
    "ttft": 1.04,
    "metricas": {
     "arena_texto": 1340,
@@ -8432,8 +8580,8 @@
    "contexto": 131072,
    "precoEntrada": 0.08,
    "precoSaida": 0.28,
-   "velocidade": 29.98,
-   "ttft": 1.43,
+   "velocidade": 33.53,
+   "ttft": 1.42,
    "metricas": {
     "arena_texto": 1340
    },
@@ -8527,8 +8675,8 @@
    "contexto": null,
    "precoEntrada": 0.075,
    "precoSaida": 0.2,
-   "velocidade": 58.03,
-   "ttft": 0.94,
+   "velocidade": 52.71,
+   "ttft": 0.97,
    "metricas": {
     "arena_texto": 1338,
     "arena_visao": 1142
@@ -8560,8 +8708,8 @@
    "contexto": null,
    "precoEntrada": 1.1,
    "precoSaida": 4.4,
-   "velocidade": 228.31,
-   "ttft": 18.79,
+   "velocidade": 229.3,
+   "ttft": 17.66,
    "metricas": {
     "arena_texto": 1337
    },
@@ -8686,7 +8834,7 @@
    "contexto": 65536,
    "precoEntrada": 0.6,
    "precoSaida": 1.8,
-   "velocidade": 45.29,
+   "velocidade": 38.88,
    "ttft": 3.43,
    "metricas": {
     "arena_texto": 1333,
@@ -8720,7 +8868,7 @@
    "contexto": 256000,
    "precoEntrada": 2.5,
    "precoSaida": 10,
-   "velocidade": 64.71,
+   "velocidade": 66.61,
    "ttft": 1.73,
    "metricas": {
     "arena_texto": 1331
@@ -8937,8 +9085,8 @@
    "contexto": 400000,
    "precoEntrada": 0.05,
    "precoSaida": 0.4,
-   "velocidade": 172.13,
-   "ttft": 1.76,
+   "velocidade": 149.31,
+   "ttft": 1.85,
    "metricas": {
     "arena_texto": 1320,
     "arena_visao": 1159
@@ -9535,10 +9683,10 @@
    "hf": "openai/gpt-oss-20b",
    "lancamento": "2025-08-05",
    "contexto": 131072,
-   "precoEntrada": 0.075,
-   "precoSaida": 0.3,
-   "velocidade": 264.45,
-   "ttft": 0.8,
+   "precoEntrada": 0.018,
+   "precoSaida": 0.09,
+   "velocidade": 259.23,
+   "ttft": 0.81,
    "metricas": {
     "arena_texto": 1288
    },
@@ -9696,8 +9844,8 @@
    "contexto": 128000,
    "precoEntrada": 0.15,
    "precoSaida": 0.6,
-   "velocidade": 78.76,
-   "ttft": 2.06,
+   "velocidade": 62.49,
+   "ttft": 2.07,
    "metricas": {
     "arena_texto": 1286,
     "arena_visao": 1066
@@ -9730,8 +9878,8 @@
    "contexto": 1047576,
    "precoEntrada": 0.1,
    "precoSaida": 0.4,
-   "velocidade": 311.26,
-   "ttft": 1.21,
+   "velocidade": 290.51,
+   "ttft": 1.15,
    "metricas": {
     "arena_texto": 1285,
     "arena_visao": 1063
@@ -10070,8 +10218,8 @@
    "contexto": null,
    "precoEntrada": 10,
    "precoSaida": 30,
-   "velocidade": 126.48,
-   "ttft": 1.49,
+   "velocidade": 128.98,
+   "ttft": 1.45,
    "metricas": {
     "arena_texto": 1272,
     "arena_visao": 1090
@@ -11033,8 +11181,8 @@
    "contexto": 16384,
    "precoEntrada": 0.07,
    "precoSaida": 0.14,
-   "velocidade": 36.6,
-   "ttft": 2.54,
+   "velocidade": 36.94,
+   "ttft": 2.51,
    "metricas": {
     "arena_texto": 1217
    },
@@ -14002,7 +14150,7 @@
    "precoEntrada": 1.25,
    "precoSaida": 10,
    "velocidade": 127.85,
-   "ttft": 9.22,
+   "ttft": 7.53,
    "metricas": {
     "arena_webdev": 1338
    },
@@ -14033,8 +14181,8 @@
    "contexto": 400000,
    "precoEntrada": 0.25,
    "precoSaida": 2,
-   "velocidade": 174.94,
-   "ttft": 6.16,
+   "velocidade": 176.11,
+   "ttft": 5.92,
    "metricas": {
     "arena_webdev": 1243
    },
@@ -14065,8 +14213,8 @@
    "contexto": 400000,
    "precoEntrada": 1.75,
    "precoSaida": 14,
-   "velocidade": 122.42,
-   "ttft": 86.45,
+   "velocidade": 110.24,
+   "ttft": 69.29,
    "metricas": {
     "arena_webdev": 1339
    },
@@ -14097,8 +14245,8 @@
    "contexto": 400000,
    "precoEntrada": 1.75,
    "precoSaida": 14,
-   "velocidade": 114.06,
-   "ttft": 48.75,
+   "velocidade": 102.16,
+   "ttft": 56.74,
    "metricas": {
     "arena_webdev": 1406
    },
@@ -14310,10 +14458,10 @@
    "hf": "moonshotai/Kimi-K2.7-Code",
    "lancamento": "2026-06-12",
    "contexto": 262144,
-   "precoEntrada": 0.6,
-   "precoSaida": 3.5,
-   "velocidade": 60.05,
-   "ttft": 2.77,
+   "precoEntrada": 0.7,
+   "precoSaida": 3.75,
+   "velocidade": 58.79,
+   "ttft": 2.79,
    "metricas": {
     "arena_webdev": 1474
    },

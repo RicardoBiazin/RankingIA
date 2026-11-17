@@ -1,6 +1,6 @@
 {
  "fonte": "livebench",
- "coletadoEm": "2026-11-16T19:04:08.263Z",
+ "coletadoEm": "2026-11-17T17:59:38.764Z",
  "release": "2026-11-06",
  "categorias": [
   "Long Agentic",
@@ -480,6 +480,20 @@
    }
   },
   {
+   "origem": "qwen4-max",
+   "chave": "qwen4",
+   "geral": 73.26,
+   "categorias": {
+    "Long Agentic": 47.5,
+    "Reasoning": 92.2,
+    "Coding": 69.8,
+    "Browser": 80.7,
+    "Data Analysis": 83.4,
+    "Research": 84.7,
+    "Design": 79.1
+   }
+  },
+  {
    "origem": "smaug-nemotron-3.5-nvfp4",
    "chave": "smaug-nemotron-3.5-nvfp4",
    "geral": 47.04,
@@ -641,6 +655,7 @@
     "nemotron-super-vl-3.5": 47.01,
     "qwen3.8-27b": 54.05,
     "qwen3.8": 60.92,
+    "qwen4": 73.26,
     "smaug-nemotron-3.5-nvfp4": 47.04,
     "step-5": 54.89
    }
