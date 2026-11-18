@@ -1,6 +1,6 @@
 {
  "fonte": "livebench",
- "coletadoEm": "2026-11-17T17:59:38.764Z",
+ "coletadoEm": "2026-11-18T17:41:12.254Z",
  "release": "2026-11-06",
  "categorias": [
   "Long Agentic",
@@ -253,6 +253,34 @@
     "Data Analysis": 82.3,
     "Research": 79.1,
     "Design": 79.7
+   }
+  },
+  {
+   "origem": "gpt-6.2-astra",
+   "chave": "gpt-6.2-astra",
+   "geral": 84.87,
+   "categorias": {
+    "Long Agentic": 70.8,
+    "Reasoning": 91.6,
+    "Coding": 91.9,
+    "Browser": 93,
+    "Data Analysis": 84.1,
+    "Research": 91.5,
+    "Design": 82.8
+   }
+  },
+  {
+   "origem": "gpt-6.2-sol",
+   "chave": "gpt-6.2-sol",
+   "geral": 80.31,
+   "categorias": {
+    "Long Agentic": 63.6,
+    "Reasoning": 90.6,
+    "Coding": 83.7,
+    "Browser": 88.2,
+    "Data Analysis": 81.1,
+    "Research": 90.1,
+    "Design": 80
    }
   },
   {
@@ -639,6 +667,8 @@
     "gpt-6-luna": 60.42,
     "gpt-6.1-sol": 81.37,
     "gpt-6.1-terra": 78.77,
+    "gpt-6.2-astra": 84.87,
+    "gpt-6.2-sol": 80.31,
     "grok-4.6": 63.51,
     "grok-4.7": 67.91,
     "inkling": 44.32,
