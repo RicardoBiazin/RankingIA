@@ -1,35 +1,35 @@
 {
- "geradoEm": "2026-11-18T17:41:14.539Z",
+ "geradoEm": "2026-11-19T17:50:51.879Z",
  "fontes": {
   "openrouter": {
    "ok": true,
-   "coletadoEm": "2026-11-18T17:41:12.014Z",
+   "coletadoEm": "2026-11-19T17:50:43.158Z",
    "erro": null
   },
   "livebench": {
    "ok": true,
-   "coletadoEm": "2026-11-18T17:41:12.254Z",
+   "coletadoEm": "2026-11-19T17:50:43.568Z",
    "erro": null,
    "release": "2026-11-06"
   },
   "lmarena": {
    "ok": true,
-   "coletadoEm": "2026-11-18T17:41:13.188Z",
+   "coletadoEm": "2026-11-19T17:50:45.618Z",
    "erro": null,
    "datas": {
-    "texto": "2026-11-11",
-    "webdev": "2026-11-15",
+    "texto": "2026-11-18",
+    "webdev": "2026-11-18",
     "visao": "2026-11-09"
    }
   },
   "artificialanalysis": {
    "ok": true,
-   "coletadoEm": "2026-11-18T17:41:14.164Z",
+   "coletadoEm": "2026-11-19T17:50:51.285Z",
    "erro": null
   },
   "cambio": {
    "ok": true,
-   "coletadoEm": "2026-11-18T17:41:14.469Z",
+   "coletadoEm": "2026-11-19T17:50:51.793Z",
    "erro": null
   }
  },
@@ -222,17 +222,17 @@
   }
  ],
  "cambio": {
-  "data": "2026-11-18",
+  "data": "2026-11-19",
   "taxas": {
-   "BRL": 5.8186,
-   "EUR": 0.91174,
-   "JPY": 159.42,
-   "GBP": 0.75939,
-   "CNY": 6.6672,
-   "AUD": 1.4856,
-   "CAD": 1.4305,
-   "CHF": 0.84272,
-   "HKD": 7.8467
+   "BRL": 5.892,
+   "EUR": 0.90975,
+   "JPY": 159.97,
+   "GBP": 0.76038,
+   "CNY": 6.6667,
+   "AUD": 1.49,
+   "CAD": 1.43,
+   "CHF": 0.84261,
+   "HKD": 7.8456
   }
  },
  "modelos": [
@@ -249,8 +249,8 @@
    "contexto": 1000000,
    "precoEntrada": 8,
    "precoSaida": 40,
-   "velocidade": 90.01,
-   "ttft": 211.6,
+   "velocidade": 87.66,
+   "ttft": 184.26,
    "metricas": {
     "lb_geral": 84.88,
     "lb_agentico": 82.9,
@@ -260,7 +260,7 @@
     "lb_dados": 81.5,
     "lb_pesquisa": 94.5,
     "lb_design": 85.1,
-    "arena_webdev": 1826,
+    "arena_webdev": 1824,
     "aa_inteligencia": 64.6
    },
    "origens": {
@@ -295,7 +295,7 @@
    },
    "posCategorias": {
     "agentico": 1,
-    "codigo": 7,
+    "codigo": 6,
     "raciocinio": 19,
     "dados": 10,
     "pesquisa": 1,
@@ -317,8 +317,8 @@
    "contexto": 1050000,
    "precoEntrada": 8,
    "precoSaida": 40,
-   "velocidade": 77.69,
-   "ttft": 497.26,
+   "velocidade": 69.5,
+   "ttft": 320.93,
    "metricas": {
     "lb_geral": 84.87,
     "lb_agentico": 70.8,
@@ -328,10 +328,12 @@
     "lb_dados": 84.1,
     "lb_pesquisa": 91.5,
     "lb_design": 82.8,
+    "arena_webdev": 1781,
     "aa_inteligencia": 62.1
    },
    "origens": {
     "livebench": "gpt-6.2-astra",
+    "lmarena": "GPT-6.2 Astra (Max)",
     "artificialanalysis": "gpt-6-2-astra",
     "openrouter": "openai/gpt-6.2-astra"
    },
@@ -339,6 +341,7 @@
    "percentis": {
     "lb_geral": 97.3,
     "aa_inteligencia": 98.8,
+    "arena_webdev": 96.2,
     "lb_agentico": 86.5,
     "lb_raciocinio": 82.4,
     "lb_codigo": 100,
@@ -347,24 +350,24 @@
     "lb_pesquisa": 91.9,
     "lb_design": 94.6
    },
-   "nota": 91.2,
-   "cobertura": 0.63,
+   "nota": 91.8,
+   "cobertura": 0.74,
    "categorias": {
     "agentico": 68.3,
-    "codigo": 75,
+    "codigo": 82.1,
     "raciocinio": 66.2,
     "dados": 72.3,
     "pesquisa": 71,
-    "design": 72.3,
+    "design": 80.3,
     "navegador": 72.3
    },
    "posCategorias": {
     "agentico": 6,
-    "codigo": 5,
+    "codigo": 1,
     "raciocinio": 7,
     "dados": 3,
     "pesquisa": 4,
-    "design": 7,
+    "design": 3,
     "navegador": 3
    },
    "posicao": 2
@@ -382,8 +385,8 @@
    "contexto": 1048576,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 81.66,
-   "ttft": 130.2,
+   "velocidade": 84.53,
+   "ttft": 131.6,
    "metricas": {
     "lb_geral": 83.53,
     "lb_agentico": 72.7,
@@ -394,7 +397,7 @@
     "lb_pesquisa": 92.5,
     "lb_design": 80.2,
     "arena_texto": 1538,
-    "arena_webdev": 1768,
+    "arena_webdev": 1769,
     "aa_inteligencia": 60
    },
    "origens": {
@@ -406,9 +409,9 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 89.2,
-    "aa_inteligencia": 97.5,
+    "aa_inteligencia": 96.3,
     "arena_texto": 100,
-    "arena_webdev": 94,
+    "arena_webdev": 92.5,
     "lb_agentico": 89.2,
     "lb_raciocinio": 66.2,
     "lb_codigo": 97.3,
@@ -417,29 +420,74 @@
     "lb_pesquisa": 94.6,
     "lb_design": 86.5
    },
-   "nota": 90.4,
+   "nota": 89.9,
    "cobertura": 0.95,
    "categorias": {
     "agentico": 69.6,
-    "codigo": 80.4,
+    "codigo": 79.9,
     "raciocinio": 58.1,
     "dados": 75,
     "pesquisa": 72.3,
-    "design": 76.8,
+    "design": 76.3,
     "navegador": 58.8,
     "conversa": 75
    },
    "posCategorias": {
     "agentico": 5,
-    "codigo": 1,
+    "codigo": 2,
     "raciocinio": 12,
     "dados": 1,
     "pesquisa": 3,
-    "design": 4,
+    "design": 5,
     "navegador": 13,
     "conversa": 1
    },
    "posicao": 3
+  },
+  {
+   "chave": "gemini-4-neon",
+   "slug": "gemini-4-neon",
+   "familia": "gemini-neon",
+   "versao": 4,
+   "nome": "Gemini 4 Neon",
+   "empresa": "Google",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-11-18",
+   "contexto": 1048576,
+   "precoEntrada": 3,
+   "precoSaida": 15,
+   "velocidade": 136.38,
+   "ttft": 124.9,
+   "metricas": {
+    "arena_texto": 1530,
+    "arena_webdev": 1764,
+    "aa_inteligencia": 61.4
+   },
+   "origens": {
+    "lmarena": "Gemini 4 Neon (High)",
+    "artificialanalysis": "gemini-4-neon",
+    "openrouter": "google/gemini-4-neon"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 97.6,
+    "arena_texto": 97.9,
+    "arena_webdev": 90.6
+   },
+   "nota": 89.9,
+   "cobertura": 0.63,
+   "categorias": {
+    "codigo": 70.3,
+    "design": 70.3,
+    "conversa": 74
+   },
+   "posCategorias": {
+    "codigo": 9,
+    "design": 9,
+    "conversa": 2
+   },
+   "posicao": 4
   },
   {
    "chave": "claude-opus-5.5",
@@ -454,8 +502,8 @@
    "contexto": 1000000,
    "precoEntrada": 4,
    "precoSaida": 20,
-   "velocidade": 97.04,
-   "ttft": 781.12,
+   "velocidade": 96.18,
+   "ttft": 753.15,
    "metricas": {
     "lb_geral": 83.44,
     "lb_agentico": 72.8,
@@ -466,7 +514,7 @@
     "lb_pesquisa": 88.9,
     "lb_design": 83.3,
     "arena_texto": 1514,
-    "arena_webdev": 1816,
+    "arena_webdev": 1818,
     "arena_visao": 1324,
     "aa_inteligencia": 59.1
    },
@@ -479,9 +527,9 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 86.5,
-    "aa_inteligencia": 96.3,
-    "arena_texto": 95.7,
-    "arena_webdev": 98,
+    "aa_inteligencia": 95.1,
+    "arena_texto": 93.8,
+    "arena_webdev": 98.1,
     "arena_visao": 100,
     "lb_agentico": 91.9,
     "lb_raciocinio": 90.5,
@@ -491,7 +539,7 @@
     "lb_pesquisa": 78.4,
     "lb_design": 97.3
    },
-   "nota": 89.3,
+   "nota": 88.6,
    "cobertura": 1,
    "categorias": {
     "agentico": 71,
@@ -501,21 +549,21 @@
     "pesquisa": 64.2,
     "design": 81.8,
     "navegador": 66.9,
-    "conversa": 72.8,
+    "conversa": 71.9,
     "visao": 75
    },
    "posCategorias": {
     "agentico": 4,
-    "codigo": 2,
+    "codigo": 3,
     "raciocinio": 4,
     "dados": 12,
     "pesquisa": 9,
     "design": 2,
     "navegador": 7,
-    "conversa": 3,
+    "conversa": 4,
     "visao": 1
    },
-   "posicao": 4
+   "posicao": 5
   },
   {
    "chave": "claude-fable-5.1",
@@ -530,8 +578,8 @@
    "contexto": 1000000,
    "precoEntrada": 10,
    "precoSaida": 50,
-   "velocidade": 58.44,
-   "ttft": 90.91,
+   "velocidade": 63.38,
+   "ttft": 83.6,
    "metricas": {
     "lb_geral": 83.96,
     "lb_agentico": 74.2,
@@ -542,7 +590,7 @@
     "lb_pesquisa": 88.5,
     "lb_design": 81.6,
     "arena_texto": 1512,
-    "arena_webdev": 1743,
+    "arena_webdev": 1741,
     "arena_visao": 1322,
     "aa_inteligencia": 50
    },
@@ -555,9 +603,9 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 91.9,
-    "aa_inteligencia": 85,
-    "arena_texto": 93.5,
-    "arena_webdev": 88,
+    "aa_inteligencia": 84.1,
+    "arena_texto": 91.7,
+    "arena_webdev": 81.1,
     "arena_visao": 96.4,
     "lb_agentico": 94.6,
     "lb_raciocinio": 86.5,
@@ -567,31 +615,31 @@
     "lb_pesquisa": 73,
     "lb_design": 91.9
    },
-   "nota": 86.1,
+   "nota": 84.8,
    "cobertura": 1,
    "categorias": {
     "agentico": 72.3,
-    "codigo": 77.5,
+    "codigo": 75.2,
     "raciocinio": 68.3,
     "dados": 59.5,
     "pesquisa": 61.5,
-    "design": 76.6,
+    "design": 74.3,
     "navegador": 69.6,
-    "conversa": 71.8,
+    "conversa": 70.8,
     "visao": 73.2
    },
    "posCategorias": {
     "agentico": 3,
-    "codigo": 3,
+    "codigo": 5,
     "raciocinio": 6,
     "dados": 13,
     "pesquisa": 11,
-    "design": 5,
+    "design": 6,
     "navegador": 5,
-    "conversa": 4,
+    "conversa": 5,
     "visao": 2
    },
-   "posicao": 5
+   "posicao": 6
   },
   {
    "chave": "gpt-6.2-sol",
@@ -607,7 +655,7 @@
    "precoEntrada": 2,
    "precoSaida": 10,
    "velocidade": 91.36,
-   "ttft": 230.65,
+   "ttft": 187.12,
    "metricas": {
     "lb_geral": 80.31,
     "lb_agentico": 63.6,
@@ -617,17 +665,20 @@
     "lb_dados": 81.1,
     "lb_pesquisa": 90.1,
     "lb_design": 80,
+    "arena_webdev": 1757,
     "aa_inteligencia": 57.3
    },
    "origens": {
     "livebench": "gpt-6.2-sol",
+    "lmarena": "GPT-6.2 Sol (Max)",
     "artificialanalysis": "gpt-6-2-sol",
     "openrouter": "openai/gpt-6.2-sol"
    },
    "parcial": false,
    "percentis": {
     "lb_geral": 81.1,
-    "aa_inteligencia": 95,
+    "aa_inteligencia": 93.9,
+    "arena_webdev": 86.8,
     "lb_agentico": 81.1,
     "lb_raciocinio": 66.2,
     "lb_codigo": 75.7,
@@ -636,27 +687,27 @@
     "lb_pesquisa": 86.5,
     "lb_design": 82.4
    },
-   "nota": 82.6,
-   "cobertura": 0.63,
+   "nota": 82.7,
+   "cobertura": 0.74,
    "categorias": {
     "agentico": 65.5,
-    "codigo": 62.9,
+    "codigo": 70.8,
     "raciocinio": 58.1,
     "dados": 61.5,
     "pesquisa": 68.3,
-    "design": 66.2,
+    "design": 73.1,
     "navegador": 65.5
    },
    "posCategorias": {
     "agentico": 8,
-    "codigo": 15,
+    "codigo": 8,
     "raciocinio": 13,
     "dados": 11,
     "pesquisa": 6,
-    "design": 12,
+    "design": 8,
     "navegador": 8
    },
-   "posicao": 6
+   "posicao": 7
   },
   {
    "chave": "gemini-4-argon",
@@ -671,8 +722,8 @@
    "contexto": 1048576,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 82.88,
-   "ttft": 53.98,
+   "velocidade": 87,
+   "ttft": 48.27,
    "metricas": {
     "lb_geral": 77.69,
     "lb_agentico": 58.5,
@@ -683,7 +734,7 @@
     "lb_pesquisa": 86.8,
     "lb_design": 69.2,
     "arena_texto": 1529,
-    "arena_webdev": 1679,
+    "arena_webdev": 1681,
     "aa_inteligencia": 50.4
    },
    "origens": {
@@ -695,9 +746,9 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 75.7,
-    "aa_inteligencia": 87.5,
-    "arena_texto": 97.8,
-    "arena_webdev": 74,
+    "aa_inteligencia": 86.6,
+    "arena_texto": 95.8,
+    "arena_webdev": 69.8,
     "lb_agentico": 73,
     "lb_raciocinio": 100,
     "lb_codigo": 83.8,
@@ -706,29 +757,29 @@
     "lb_pesquisa": 66.2,
     "lb_design": 18.9
    },
-   "nota": 80.9,
+   "nota": 79.8,
    "cobertura": 0.95,
    "categorias": {
     "agentico": 61.5,
-    "codigo": 69.3,
+    "codigo": 67.9,
     "raciocinio": 75,
     "dados": 73.7,
     "pesquisa": 58.1,
-    "design": 47.6,
+    "design": 46.2,
     "navegador": 62.9,
-    "conversa": 73.9
+    "conversa": 72.9
    },
    "posCategorias": {
     "agentico": 11,
-    "codigo": 9,
+    "codigo": 11,
     "raciocinio": 1,
     "dados": 2,
     "pesquisa": 13,
-    "design": 30,
+    "design": 31,
     "navegador": 10,
-    "conversa": 2
+    "conversa": 3
    },
-   "posicao": 7
+   "posicao": 8
   },
   {
    "chave": "claude-opus-5",
@@ -743,10 +794,10 @@
    "contexto": 1000000,
    "precoEntrada": 5,
    "precoSaida": 25,
-   "velocidade": 51.29,
-   "ttft": 64.24,
+   "velocidade": 52.36,
+   "ttft": 59.66,
    "metricas": {
-    "arena_texto": 1507,
+    "arena_texto": 1506,
     "arena_webdev": 1691,
     "arena_visao": 1317,
     "aa_inteligencia": 44.2
@@ -758,96 +809,24 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 81.9,
-    "arena_texto": 91.3,
-    "arena_webdev": 80,
+    "aa_inteligencia": 81.1,
+    "arena_texto": 89.6,
+    "arena_webdev": 75.5,
     "arena_visao": 91.1
    },
-   "nota": 80.5,
+   "nota": 79.1,
    "cobertura": 0.68,
    "categorias": {
-    "codigo": 65,
-    "design": 65,
-    "conversa": 70.7,
+    "codigo": 62.8,
+    "design": 62.8,
+    "conversa": 69.8,
     "visao": 70.5
    },
    "posCategorias": {
-    "codigo": 12,
-    "design": 15,
-    "conversa": 5,
+    "codigo": 16,
+    "design": 16,
+    "conversa": 6,
     "visao": 3
-   },
-   "posicao": 8
-  },
-  {
-   "chave": "gemini-4-hydrogen",
-   "slug": "gemini-4-hydrogen",
-   "familia": "gemini-hydrogen",
-   "versao": 4,
-   "nome": "Gemini 4 Hydrogen",
-   "empresa": "Google",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-11-12",
-   "contexto": 1048576,
-   "precoEntrada": 1.5,
-   "precoSaida": 7.5,
-   "velocidade": 208.84,
-   "ttft": 69.28,
-   "metricas": {
-    "lb_geral": 77,
-    "lb_agentico": 61.8,
-    "lb_raciocinio": 88.6,
-    "lb_codigo": 78.5,
-    "lb_navegador": 77.1,
-    "lb_dados": 83.2,
-    "lb_pesquisa": 86.8,
-    "lb_design": 77.3,
-    "arena_texto": 1502,
-    "arena_webdev": 1704,
-    "aa_inteligencia": 53.9
-   },
-   "origens": {
-    "livebench": "gemini-4-hydrogen",
-    "lmarena": "Gemini 4 Hydrogen (High)",
-    "artificialanalysis": "gemini-4-hydrogen",
-    "openrouter": "google/gemini-4-hydrogen"
-   },
-   "parcial": false,
-   "percentis": {
-    "lb_geral": 73,
-    "aa_inteligencia": 90,
-    "arena_texto": 87,
-    "arena_webdev": 82,
-    "lb_agentico": 75.7,
-    "lb_raciocinio": 45.9,
-    "lb_codigo": 62.2,
-    "lb_navegador": 62.2,
-    "lb_dados": 89.2,
-    "lb_pesquisa": 66.2,
-    "lb_design": 64.9
-   },
-   "nota": 79.5,
-   "cobertura": 0.95,
-   "categorias": {
-    "agentico": 62.9,
-    "codigo": 64.7,
-    "raciocinio": 48,
-    "dados": 69.6,
-    "pesquisa": 58.1,
-    "design": 65.6,
-    "navegador": 56.1,
-    "conversa": 68.5
-   },
-   "posCategorias": {
-    "agentico": 10,
-    "codigo": 14,
-    "raciocinio": 21,
-    "dados": 5,
-    "pesquisa": 14,
-    "design": 13,
-    "navegador": 15,
-    "conversa": 7
    },
    "posicao": 9
   },
@@ -864,8 +843,8 @@
    "contexto": 1050000,
    "precoEntrada": 10,
    "precoSaida": 50,
-   "velocidade": 42.02,
-   "ttft": 409.85,
+   "velocidade": 48.21,
+   "ttft": 313.54,
    "metricas": {
     "lb_geral": 84.45,
     "lb_agentico": 75.6,
@@ -875,7 +854,7 @@
     "lb_dados": 83,
     "lb_pesquisa": 90.6,
     "lb_design": 80,
-    "arena_texto": 1440,
+    "arena_texto": 1441,
     "arena_webdev": 1763,
     "arena_visao": 1279,
     "aa_inteligencia": 56.9
@@ -889,9 +868,9 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 94.6,
-    "aa_inteligencia": 93.8,
-    "arena_texto": 45.7,
-    "arena_webdev": 92,
+    "aa_inteligencia": 92.7,
+    "arena_texto": 45.8,
+    "arena_webdev": 88.7,
     "arena_visao": 64.3,
     "lb_agentico": 97.3,
     "lb_raciocinio": 97.3,
@@ -901,15 +880,15 @@
     "lb_pesquisa": 89.2,
     "lb_design": 82.4
    },
-   "nota": 79.1,
+   "nota": 78.5,
    "cobertura": 1,
    "categorias": {
     "agentico": 73.7,
-    "codigo": 77.1,
+    "codigo": 76,
     "raciocinio": 73.7,
     "dados": 68.3,
     "pesquisa": 69.6,
-    "design": 74.8,
+    "design": 73.7,
     "navegador": 71,
     "conversa": 47.9,
     "visao": 57.1
@@ -920,12 +899,152 @@
     "raciocinio": 2,
     "dados": 6,
     "pesquisa": 5,
-    "design": 6,
+    "design": 7,
     "navegador": 4,
-    "conversa": 26,
+    "conversa": 27,
     "visao": 10
    },
    "posicao": 10
+  },
+  {
+   "chave": "gemini-4-hydrogen",
+   "slug": "gemini-4-hydrogen",
+   "familia": "gemini-hydrogen",
+   "versao": 4,
+   "nome": "Gemini 4 Hydrogen",
+   "empresa": "Google",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-11-12",
+   "contexto": 1048576,
+   "precoEntrada": 1.5,
+   "precoSaida": 7.5,
+   "velocidade": 215.38,
+   "ttft": 74.67,
+   "metricas": {
+    "lb_geral": 77,
+    "lb_agentico": 61.8,
+    "lb_raciocinio": 88.6,
+    "lb_codigo": 78.5,
+    "lb_navegador": 77.1,
+    "lb_dados": 83.2,
+    "lb_pesquisa": 86.8,
+    "lb_design": 77.3,
+    "arena_texto": 1502,
+    "arena_webdev": 1703,
+    "aa_inteligencia": 53.9
+   },
+   "origens": {
+    "livebench": "gemini-4-hydrogen",
+    "lmarena": "Gemini 4 Hydrogen (High)",
+    "artificialanalysis": "gemini-4-hydrogen",
+    "openrouter": "google/gemini-4-hydrogen"
+   },
+   "parcial": false,
+   "percentis": {
+    "lb_geral": 73,
+    "aa_inteligencia": 89,
+    "arena_texto": 85.4,
+    "arena_webdev": 77.4,
+    "lb_agentico": 75.7,
+    "lb_raciocinio": 45.9,
+    "lb_codigo": 62.2,
+    "lb_navegador": 62.2,
+    "lb_dados": 89.2,
+    "lb_pesquisa": 66.2,
+    "lb_design": 64.9
+   },
+   "nota": 78.4,
+   "cobertura": 0.95,
+   "categorias": {
+    "agentico": 62.9,
+    "codigo": 63.2,
+    "raciocinio": 48,
+    "dados": 69.6,
+    "pesquisa": 58.1,
+    "design": 64.1,
+    "navegador": 56.1,
+    "conversa": 67.7
+   },
+   "posCategorias": {
+    "agentico": 10,
+    "codigo": 15,
+    "raciocinio": 21,
+    "dados": 5,
+    "pesquisa": 14,
+    "design": 15,
+    "navegador": 15,
+    "conversa": 8
+   },
+   "posicao": 11
+  },
+  {
+   "chave": "gpt-6.1-terra",
+   "slug": "gpt-6.1-terra",
+   "familia": "gpt-terra",
+   "versao": 6.1,
+   "nome": "GPT-6.1 Terra",
+   "empresa": "OpenAI",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-10-26",
+   "contexto": 1050000,
+   "precoEntrada": 1,
+   "precoSaida": 5,
+   "velocidade": 82.9,
+   "ttft": 366.5,
+   "metricas": {
+    "lb_geral": 78.77,
+    "lb_agentico": 56.2,
+    "lb_raciocinio": 88.7,
+    "lb_codigo": 89.2,
+    "lb_navegador": 93.1,
+    "lb_dados": 82.3,
+    "lb_pesquisa": 79.1,
+    "lb_design": 79.7,
+    "arena_webdev": 1682,
+    "aa_inteligencia": 51.3
+   },
+   "origens": {
+    "livebench": "gpt-6.1-terra",
+    "lmarena": "GPT-6.1 Terra (Max)",
+    "artificialanalysis": "gpt-6-1-terra",
+    "openrouter": "openai/gpt-6.1-terra"
+   },
+   "parcial": false,
+   "percentis": {
+    "lb_geral": 78.4,
+    "aa_inteligencia": 87.8,
+    "arena_webdev": 71.7,
+    "lb_agentico": 70.3,
+    "lb_raciocinio": 48.6,
+    "lb_codigo": 91.9,
+    "lb_navegador": 97.3,
+    "lb_dados": 81.1,
+    "lb_pesquisa": 35.1,
+    "lb_design": 75.7
+   },
+   "nota": 77.5,
+   "cobertura": 0.74,
+   "categorias": {
+    "agentico": 60.1,
+    "codigo": 71.2,
+    "raciocinio": 49.3,
+    "dados": 65.5,
+    "pesquisa": 42.5,
+    "design": 65.8,
+    "navegador": 73.7
+   },
+   "posCategorias": {
+    "agentico": 12,
+    "codigo": 7,
+    "raciocinio": 20,
+    "dados": 8,
+    "pesquisa": 25,
+    "design": 12,
+    "navegador": 2
+   },
+   "posicao": 12
   },
   {
    "chave": "muse-wonder-full",
@@ -943,7 +1062,7 @@
    "velocidade": null,
    "ttft": null,
    "metricas": {
-    "arena_webdev": 1724,
+    "arena_webdev": 1723,
     "aa_inteligencia": 50.1
    },
    "origens": {
@@ -952,88 +1071,20 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 86.3,
-    "arena_webdev": 84
+    "aa_inteligencia": 85.4,
+    "arena_webdev": 79.2
    },
-   "nota": 78.6,
+   "nota": 77.1,
    "cobertura": 0.42,
    "categorias": {
-    "codigo": 67,
-    "design": 67
+    "codigo": 64.6,
+    "design": 64.6
    },
    "posCategorias": {
-    "codigo": 11,
-    "design": 11
+    "codigo": 13,
+    "design": 13
    },
-   "posicao": 11
-  },
-  {
-   "chave": "gpt-6.1-terra",
-   "slug": "gpt-6.1-terra",
-   "familia": "gpt-terra",
-   "versao": 6.1,
-   "nome": "GPT-6.1 Terra",
-   "empresa": "OpenAI",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-10-26",
-   "contexto": 1050000,
-   "precoEntrada": 1,
-   "precoSaida": 5,
-   "velocidade": 85.56,
-   "ttft": 388.03,
-   "metricas": {
-    "lb_geral": 78.77,
-    "lb_agentico": 56.2,
-    "lb_raciocinio": 88.7,
-    "lb_codigo": 89.2,
-    "lb_navegador": 93.1,
-    "lb_dados": 82.3,
-    "lb_pesquisa": 79.1,
-    "lb_design": 79.7,
-    "arena_webdev": 1681,
-    "aa_inteligencia": 51.3
-   },
-   "origens": {
-    "livebench": "gpt-6.1-terra",
-    "lmarena": "GPT-6.1 Terra (Max)",
-    "artificialanalysis": "gpt-6-1-terra",
-    "openrouter": "openai/gpt-6.1-terra"
-   },
-   "parcial": false,
-   "percentis": {
-    "lb_geral": 78.4,
-    "aa_inteligencia": 88.8,
-    "arena_webdev": 76,
-    "lb_agentico": 70.3,
-    "lb_raciocinio": 48.6,
-    "lb_codigo": 91.9,
-    "lb_navegador": 97.3,
-    "lb_dados": 81.1,
-    "lb_pesquisa": 35.1,
-    "lb_design": 75.7
-   },
-   "nota": 78.5,
-   "cobertura": 0.74,
-   "categorias": {
-    "agentico": 60.1,
-    "codigo": 72.6,
-    "raciocinio": 49.3,
-    "dados": 65.5,
-    "pesquisa": 42.5,
-    "design": 67.2,
-    "navegador": 73.7
-   },
-   "posCategorias": {
-    "agentico": 12,
-    "codigo": 6,
-    "raciocinio": 20,
-    "dados": 8,
-    "pesquisa": 25,
-    "design": 10,
-    "navegador": 2
-   },
-   "posicao": 12
+   "posicao": 13
   },
   {
    "chave": "gpt-6.1-sol",
@@ -1048,8 +1099,8 @@
    "contexto": 1050000,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 70.13,
-   "ttft": 384.22,
+   "velocidade": 72.32,
+   "ttft": 277.62,
    "metricas": {
     "lb_geral": 81.37,
     "lb_agentico": 65.6,
@@ -1059,8 +1110,8 @@
     "lb_dados": 82.7,
     "lb_pesquisa": 90,
     "lb_design": 79.6,
-    "arena_texto": 1445,
-    "arena_webdev": 1742,
+    "arena_texto": 1447,
+    "arena_webdev": 1744,
     "arena_visao": 1286,
     "aa_inteligencia": 54.6
    },
@@ -1073,9 +1124,9 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 83.8,
-    "aa_inteligencia": 92.5,
-    "arena_texto": 55.4,
-    "arena_webdev": 86,
+    "aa_inteligencia": 91.5,
+    "arena_texto": 56.3,
+    "arena_webdev": 83,
     "arena_visao": 75,
     "lb_agentico": 83.8,
     "lb_raciocinio": 94.6,
@@ -1085,31 +1136,31 @@
     "lb_pesquisa": 83.8,
     "lb_design": 73
    },
-   "nota": 77.4,
+   "nota": 77,
    "cobertura": 1,
    "categorias": {
     "agentico": 66.9,
-    "codigo": 69.7,
+    "codigo": 68.7,
     "raciocinio": 72.3,
     "dados": 66.9,
     "pesquisa": 66.9,
-    "design": 69.7,
+    "design": 68.7,
     "navegador": 75,
-    "conversa": 52.7,
+    "conversa": 53.1,
     "visao": 62.5
    },
    "posCategorias": {
     "agentico": 7,
-    "codigo": 8,
+    "codigo": 10,
     "raciocinio": 3,
     "dados": 7,
     "pesquisa": 7,
-    "design": 8,
+    "design": 10,
     "navegador": 1,
-    "conversa": 21,
+    "conversa": 22,
     "visao": 8
    },
-   "posicao": 13
+   "posicao": 14
   },
   {
    "chave": "claude-sonnet-5.5",
@@ -1124,8 +1175,8 @@
    "contexto": 1000000,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 131.45,
-   "ttft": 534.93,
+   "velocidade": 131.06,
+   "ttft": 483.51,
    "metricas": {
     "lb_geral": 76.99,
     "lb_agentico": 63.4,
@@ -1135,8 +1186,8 @@
     "lb_dados": 59.5,
     "lb_pesquisa": 88,
     "lb_design": 81.3,
-    "arena_texto": 1469,
-    "arena_webdev": 1772,
+    "arena_texto": 1470,
+    "arena_webdev": 1773,
     "arena_visao": 1284,
     "aa_inteligencia": 54.5
    },
@@ -1149,9 +1200,9 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 70.3,
-    "aa_inteligencia": 91.3,
-    "arena_texto": 69.6,
-    "arena_webdev": 96,
+    "aa_inteligencia": 90.2,
+    "arena_texto": 68.8,
+    "arena_webdev": 94.3,
     "arena_visao": 71.4,
     "lb_agentico": 78.4,
     "lb_raciocinio": 82.4,
@@ -1161,31 +1212,31 @@
     "lb_pesquisa": 70.3,
     "lb_design": 89.2
    },
-   "nota": 76.7,
+   "nota": 76.1,
    "cobertura": 1,
    "categorias": {
     "agentico": 64.2,
-    "codigo": 67.6,
+    "codigo": 67,
     "raciocinio": 66.2,
     "dados": 29.1,
     "pesquisa": 60.1,
-    "design": 78.4,
+    "design": 77.8,
     "navegador": 68.3,
-    "conversa": 59.8,
+    "conversa": 59.4,
     "visao": 60.7
    },
    "posCategorias": {
     "agentico": 9,
-    "codigo": 10,
+    "codigo": 12,
     "raciocinio": 8,
     "dados": 35,
     "pesquisa": 12,
-    "design": 3,
+    "design": 4,
     "navegador": 6,
-    "conversa": 15,
+    "conversa": 16,
     "visao": 9
    },
-   "posicao": 14
+   "posicao": 15
   },
   {
    "chave": "muse-wonder",
@@ -1200,8 +1251,8 @@
    "contexto": 1048576,
    "precoEntrada": 4,
    "precoSaida": 20,
-   "velocidade": 130.25,
-   "ttft": 37.97,
+   "velocidade": 151.37,
+   "ttft": 36.5,
    "metricas": {
     "lb_geral": 70.7,
     "lb_agentico": 46.2,
@@ -1212,7 +1263,7 @@
     "lb_pesquisa": 93,
     "lb_design": 70.9,
     "arena_texto": 1503,
-    "arena_webdev": 1647,
+    "arena_webdev": 1648,
     "aa_inteligencia": 43.6
    },
    "origens": {
@@ -1224,9 +1275,9 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 64.9,
-    "aa_inteligencia": 80,
-    "arena_texto": 89.1,
-    "arena_webdev": 62,
+    "aa_inteligencia": 79.3,
+    "arena_texto": 87.5,
+    "arena_webdev": 58.5,
     "lb_agentico": 59.5,
     "lb_raciocinio": 66.2,
     "lb_codigo": 51.4,
@@ -1235,17 +1286,17 @@
     "lb_pesquisa": 97.3,
     "lb_design": 28.4
    },
-   "nota": 72.5,
+   "nota": 71.6,
    "cobertura": 0.95,
    "categorias": {
     "agentico": 54.8,
-    "codigo": 54.5,
+    "codigo": 53.3,
     "raciocinio": 58.1,
     "dados": 64.2,
     "pesquisa": 73.7,
-    "design": 46.8,
+    "design": 45.6,
     "navegador": 46.6,
-    "conversa": 69.5
+    "conversa": 68.8
    },
    "posCategorias": {
     "agentico": 16,
@@ -1253,11 +1304,11 @@
     "raciocinio": 14,
     "dados": 9,
     "pesquisa": 2,
-    "design": 32,
+    "design": 33,
     "navegador": 22,
-    "conversa": 6
+    "conversa": 7
    },
-   "posicao": 15
+   "posicao": 16
   },
   {
    "chave": "qwen4",
@@ -1272,7 +1323,7 @@
    "contexto": 1000000,
    "precoEntrada": 1.425,
    "precoSaida": 4.275,
-   "velocidade": 51.85,
+   "velocidade": 65.4,
    "ttft": 3.88,
    "metricas": {
     "lb_geral": 73.26,
@@ -1295,8 +1346,8 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 67.6,
-    "aa_inteligencia": 78.8,
-    "arena_webdev": 90,
+    "aa_inteligencia": 78,
+    "arena_webdev": 84.9,
     "lb_agentico": 62.2,
     "lb_raciocinio": 90.5,
     "lb_codigo": 37.8,
@@ -1305,97 +1356,25 @@
     "lb_pesquisa": 59.5,
     "lb_design": 67.6
    },
-   "nota": 72.4,
+   "nota": 71.5,
    "cobertura": 0.74,
    "categorias": {
     "agentico": 56.1,
-    "codigo": 59.3,
+    "codigo": 57.6,
     "raciocinio": 70.3,
     "dados": 71,
     "pesquisa": 54.8,
-    "design": 69.2,
+    "design": 67.5,
     "navegador": 61.5
    },
    "posCategorias": {
     "agentico": 15,
-    "codigo": 18,
+    "codigo": 20,
     "raciocinio": 5,
     "dados": 4,
     "pesquisa": 16,
-    "design": 9,
+    "design": 11,
     "navegador": 11
-   },
-   "posicao": 16
-  },
-  {
-   "chave": "kimi-k3.1-pro",
-   "slug": "kimi-k3.1-pro",
-   "familia": "kimi-k-pro",
-   "versao": 3.1,
-   "nome": "Kimi K3.1 Pro",
-   "empresa": "Moonshot AI",
-   "aberto": true,
-   "hf": "moonshotai/Kimi-K3.1-Pro",
-   "lancamento": "2026-10-23",
-   "contexto": 1048576,
-   "precoEntrada": 0.2403,
-   "precoSaida": 8.4023,
-   "velocidade": 28.28,
-   "ttft": 2.35,
-   "metricas": {
-    "lb_geral": 68.65,
-    "lb_agentico": 38.7,
-    "lb_raciocinio": 91.1,
-    "lb_codigo": 67.8,
-    "lb_navegador": 75.9,
-    "lb_dados": 79.1,
-    "lb_pesquisa": 82.1,
-    "lb_design": 73.7,
-    "arena_texto": 1459,
-    "arena_webdev": 1686,
-    "aa_inteligencia": 46.5
-   },
-   "origens": {
-    "livebench": "kimi-k3.1-pro",
-    "lmarena": "Kimi K3.1 Pro (Max)",
-    "artificialanalysis": "kimi-k3-1-pro",
-    "openrouter": "moonshotai/kimi-k3.1-pro"
-   },
-   "parcial": false,
-   "percentis": {
-    "lb_geral": 56.8,
-    "aa_inteligencia": 83.8,
-    "arena_texto": 65.2,
-    "arena_webdev": 78,
-    "lb_agentico": 51.4,
-    "lb_raciocinio": 75.7,
-    "lb_codigo": 29.7,
-    "lb_navegador": 59.5,
-    "lb_dados": 56.8,
-    "lb_pesquisa": 48.6,
-    "lb_design": 41.9
-   },
-   "nota": 68,
-   "cobertura": 0.95,
-   "categorias": {
-    "agentico": 50.7,
-    "codigo": 52.6,
-    "raciocinio": 62.9,
-    "dados": 53.4,
-    "pesquisa": 49.3,
-    "design": 56.6,
-    "navegador": 54.8,
-    "conversa": 57.6
-   },
-   "posCategorias": {
-    "agentico": 19,
-    "codigo": 23,
-    "raciocinio": 10,
-    "dados": 17,
-    "pesquisa": 20,
-    "design": 18,
-    "navegador": 16,
-    "conversa": 17
    },
    "posicao": 17
   },
@@ -1412,8 +1391,8 @@
    "contexto": 1048576,
    "precoEntrada": 1.25,
    "precoSaida": 4.25,
-   "velocidade": 112.17,
-   "ttft": 45.19,
+   "velocidade": 133.55,
+   "ttft": 49.97,
    "metricas": {
     "lb_geral": 68.59,
     "lb_agentico": 47.9,
@@ -1423,8 +1402,8 @@
     "lb_dados": 79.6,
     "lb_pesquisa": 82.5,
     "lb_design": 74.8,
-    "arena_texto": 1492,
-    "arena_webdev": 1655,
+    "arena_texto": 1493,
+    "arena_webdev": 1654,
     "arena_visao": 1310,
     "aa_inteligencia": 36.6
    },
@@ -1437,9 +1416,9 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 54.1,
-    "aa_inteligencia": 77.5,
-    "arena_texto": 81.5,
-    "arena_webdev": 64,
+    "aa_inteligencia": 76.8,
+    "arena_texto": 81.3,
+    "arena_webdev": 60.4,
     "arena_visao": 82.1,
     "lb_agentico": 66.2,
     "lb_raciocinio": 59.5,
@@ -1449,31 +1428,103 @@
     "lb_pesquisa": 51.4,
     "lb_design": 48.6
    },
-   "nota": 67.9,
+   "nota": 67.3,
    "cobertura": 1,
    "categorias": {
     "agentico": 58.1,
-    "codigo": 65,
+    "codigo": 63.8,
     "raciocinio": 54.8,
     "dados": 57.5,
     "pesquisa": 50.7,
-    "design": 54.2,
+    "design": 53,
     "navegador": 38.5,
-    "conversa": 65.8,
+    "conversa": 65.7,
     "visao": 66
    },
    "posCategorias": {
     "agentico": 13,
-    "codigo": 13,
+    "codigo": 14,
     "raciocinio": 16,
     "dados": 14,
     "pesquisa": 19,
-    "design": 20,
+    "design": 23,
     "navegador": 28,
-    "conversa": 9,
+    "conversa": 10,
     "visao": 6
    },
    "posicao": 18
+  },
+  {
+   "chave": "kimi-k3.1-pro",
+   "slug": "kimi-k3.1-pro",
+   "familia": "kimi-k-pro",
+   "versao": 3.1,
+   "nome": "Kimi K3.1 Pro",
+   "empresa": "Moonshot AI",
+   "aberto": true,
+   "hf": "moonshotai/Kimi-K3.1-Pro",
+   "lancamento": "2026-10-23",
+   "contexto": 1048576,
+   "precoEntrada": 0.253,
+   "precoSaida": 8.8,
+   "velocidade": 28.96,
+   "ttft": 2.38,
+   "metricas": {
+    "lb_geral": 68.65,
+    "lb_agentico": 38.7,
+    "lb_raciocinio": 91.1,
+    "lb_codigo": 67.8,
+    "lb_navegador": 75.9,
+    "lb_dados": 79.1,
+    "lb_pesquisa": 82.1,
+    "lb_design": 73.7,
+    "arena_texto": 1462,
+    "arena_webdev": 1684,
+    "aa_inteligencia": 46.5
+   },
+   "origens": {
+    "livebench": "kimi-k3.1-pro",
+    "lmarena": "Kimi K3.1 Pro (Max)",
+    "artificialanalysis": "kimi-k3-1-pro",
+    "openrouter": "moonshotai/kimi-k3.1-pro"
+   },
+   "parcial": false,
+   "percentis": {
+    "lb_geral": 56.8,
+    "aa_inteligencia": 82.9,
+    "arena_texto": 64.6,
+    "arena_webdev": 73.6,
+    "lb_agentico": 51.4,
+    "lb_raciocinio": 75.7,
+    "lb_codigo": 29.7,
+    "lb_navegador": 59.5,
+    "lb_dados": 56.8,
+    "lb_pesquisa": 48.6,
+    "lb_design": 41.9
+   },
+   "nota": 67.2,
+   "cobertura": 0.95,
+   "categorias": {
+    "agentico": 50.7,
+    "codigo": 51.1,
+    "raciocinio": 62.9,
+    "dados": 53.4,
+    "pesquisa": 49.3,
+    "design": 55.2,
+    "navegador": 54.8,
+    "conversa": 57.3
+   },
+   "posCategorias": {
+    "agentico": 19,
+    "codigo": 24,
+    "raciocinio": 10,
+    "dados": 17,
+    "pesquisa": 20,
+    "design": 19,
+    "navegador": 16,
+    "conversa": 18
+   },
+   "posicao": 19
   },
   {
    "chave": "tencent-hy4",
@@ -1488,8 +1539,8 @@
    "contexto": null,
    "precoEntrada": 0.834,
    "precoSaida": 2.501,
-   "velocidade": 99.83,
-   "ttft": 2.34,
+   "velocidade": 98.47,
+   "ttft": 2.37,
    "metricas": {
     "aa_inteligencia": 34.6
    },
@@ -1498,12 +1549,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 72.5
+    "aa_inteligencia": 72
    },
-   "nota": 66.9,
+   "nota": 66.5,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 19
+   "posicao": 20
   },
   {
    "chave": "deepseek-v4.1-flash",
@@ -1516,10 +1567,10 @@
    "hf": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
    "lancamento": "2026-10-17",
    "contexto": 1048576,
-   "precoEntrada": 0.036,
-   "precoSaida": 0.5,
-   "velocidade": 169.09,
-   "ttft": 1.01,
+   "precoEntrada": 0.15,
+   "precoSaida": 0.6,
+   "velocidade": 158.24,
+   "ttft": 1.06,
    "metricas": {
     "lb_geral": 70.26,
     "lb_agentico": 38.8,
@@ -1529,8 +1580,8 @@
     "lb_dados": 79.5,
     "lb_pesquisa": 78.6,
     "lb_design": 79.8,
-    "arena_texto": 1464,
-    "arena_webdev": 1661,
+    "arena_texto": 1463,
+    "arena_webdev": 1659,
     "arena_visao": 1279,
     "aa_inteligencia": 32.6
    },
@@ -1543,9 +1594,9 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 62.2,
-    "aa_inteligencia": 70,
-    "arena_texto": 67.4,
-    "arena_webdev": 68,
+    "aa_inteligencia": 69.5,
+    "arena_texto": 66.7,
+    "arena_webdev": 64.2,
     "arena_visao": 64.3,
     "lb_agentico": 54.1,
     "lb_raciocinio": 54.1,
@@ -1555,31 +1606,31 @@
     "lb_pesquisa": 32.4,
     "lb_design": 78.4
    },
-   "nota": 64.9,
+   "nota": 64.3,
    "cobertura": 1,
    "categorias": {
     "agentico": 52,
-    "codigo": 62.8,
+    "codigo": 61.5,
     "raciocinio": 52,
     "dados": 56.1,
     "pesquisa": 41.2,
-    "design": 65.5,
+    "design": 64.2,
     "navegador": 48,
-    "conversa": 58.7,
+    "conversa": 58.4,
     "visao": 57.1
    },
    "posCategorias": {
     "agentico": 18,
-    "codigo": 16,
+    "codigo": 17,
     "raciocinio": 18,
     "dados": 15,
     "pesquisa": 26,
     "design": 14,
     "navegador": 21,
-    "conversa": 16,
+    "conversa": 17,
     "visao": 11
    },
-   "posicao": 20
+   "posicao": 21
   },
   {
    "chave": "glm-5.3",
@@ -1594,10 +1645,10 @@
    "contexto": 1048576,
    "precoEntrada": 0.0699,
    "precoSaida": 1.4,
-   "velocidade": 82.02,
-   "ttft": 1.62,
+   "velocidade": 69.31,
+   "ttft": 1.67,
    "metricas": {
-    "arena_texto": 1475,
+    "arena_texto": 1476,
     "arena_webdev": 1622,
     "aa_inteligencia": 31.7
    },
@@ -1608,23 +1659,23 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 67.5,
+    "aa_inteligencia": 67.1,
     "arena_texto": 75,
-    "arena_webdev": 50
+    "arena_webdev": 47.2
    },
-   "nota": 64.6,
+   "nota": 64.1,
    "cobertura": 0.63,
    "categorias": {
-    "codigo": 50,
-    "design": 50,
+    "codigo": 48.6,
+    "design": 48.6,
     "conversa": 62.5
    },
    "posCategorias": {
-    "codigo": 29,
-    "design": 28,
-    "conversa": 12
+    "codigo": 30,
+    "design": 29,
+    "conversa": 13
    },
-   "posicao": 21
+   "posicao": 22
   },
   {
    "chave": "muse-ember",
@@ -1639,8 +1690,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.1,
    "precoSaida": 0.5,
-   "velocidade": 604.2,
-   "ttft": 8.63,
+   "velocidade": 641.06,
+   "ttft": 7,
    "metricas": {
     "arena_webdev": 1608,
     "aa_inteligencia": 36
@@ -1652,20 +1703,20 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 75,
-    "arena_webdev": 44
+    "aa_inteligencia": 74.4,
+    "arena_webdev": 41.5
    },
-   "nota": 63.8,
+   "nota": 62.9,
    "cobertura": 0.42,
    "categorias": {
-    "codigo": 47,
-    "design": 47
+    "codigo": 45.8,
+    "design": 45.8
    },
    "posCategorias": {
-    "codigo": 31,
-    "design": 31
+    "codigo": 32,
+    "design": 32
    },
-   "posicao": 22
+   "posicao": 23
   },
   {
    "chave": "qwen3.8",
@@ -1680,8 +1731,8 @@
    "contexto": 1000000,
    "precoEntrada": 2,
    "precoSaida": 6,
-   "velocidade": 41.99,
-   "ttft": 2.71,
+   "velocidade": 44,
+   "ttft": 2.93,
    "metricas": {
     "lb_geral": 60.92,
     "lb_agentico": 26.6,
@@ -1691,8 +1742,8 @@
     "lb_dados": 78.4,
     "lb_pesquisa": 72.8,
     "lb_design": 76.6,
-    "arena_texto": 1485,
-    "arena_webdev": 1676,
+    "arena_texto": 1486,
+    "arena_webdev": 1675,
     "arena_visao": 1312,
     "aa_inteligencia": 33.7
    },
@@ -1705,9 +1756,9 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 35.1,
-    "aa_inteligencia": 71.3,
-    "arena_texto": 78.3,
-    "arena_webdev": 72,
+    "aa_inteligencia": 70.7,
+    "arena_texto": 77.1,
+    "arena_webdev": 67.9,
     "arena_visao": 85.7,
     "lb_agentico": 43.2,
     "lb_raciocinio": 43.2,
@@ -1717,31 +1768,31 @@
     "lb_pesquisa": 21.6,
     "lb_design": 62.2
    },
-   "nota": 61,
+   "nota": 60.2,
    "cobertura": 1,
    "categorias": {
     "agentico": 46.6,
-    "codigo": 47.9,
+    "codigo": 46.5,
     "raciocinio": 46.6,
     "dados": 50.7,
     "pesquisa": 35.8,
-    "design": 61.4,
+    "design": 60,
     "navegador": 43.3,
-    "conversa": 64.2,
+    "conversa": 63.5,
     "visao": 67.8
    },
    "posCategorias": {
     "agentico": 22,
-    "codigo": 30,
+    "codigo": 31,
     "raciocinio": 22,
     "dados": 19,
     "pesquisa": 30,
-    "design": 16,
+    "design": 17,
     "navegador": 24,
-    "conversa": 11,
+    "conversa": 12,
     "visao": 5
    },
-   "posicao": 23
+   "posicao": 24
   },
   {
    "chave": "ling-3.1-flash",
@@ -1767,12 +1818,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 61.3
+    "aa_inteligencia": 61
    },
-   "nota": 58.5,
+   "nota": 58.3,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 24
+   "posicao": 25
   },
   {
    "chave": "mimo-v2.6-pro",
@@ -1787,8 +1838,8 @@
    "contexto": 1050000,
    "precoEntrada": 0.435,
    "precoSaida": 0.87,
-   "velocidade": 41.49,
-   "ttft": 3.55,
+   "velocidade": 60.74,
+   "ttft": 3.65,
    "metricas": {
     "lb_geral": 66.11,
     "lb_agentico": 36.4,
@@ -1799,7 +1850,7 @@
     "lb_pesquisa": 84.8,
     "lb_design": 74.3,
     "arena_texto": 1492,
-    "arena_webdev": 1624,
+    "arena_webdev": 1623,
     "arena_visao": 1266,
     "aa_inteligencia": 29.9
    },
@@ -1812,9 +1863,9 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 45.9,
-    "aa_inteligencia": 62.5,
-    "arena_texto": 81.5,
-    "arena_webdev": 52,
+    "aa_inteligencia": 62.2,
+    "arena_texto": 79.2,
+    "arena_webdev": 49.1,
     "arena_visao": 46.4,
     "lb_agentico": 48.6,
     "lb_raciocinio": 18.9,
@@ -1824,31 +1875,31 @@
     "lb_pesquisa": 62.2,
     "lb_design": 45.9
    },
-   "nota": 58.4,
+   "nota": 57.6,
    "cobertura": 1,
    "categorias": {
     "agentico": 49.3,
-    "codigo": 42.1,
+    "codigo": 41.1,
     "raciocinio": 34.5,
     "dados": 38.5,
     "pesquisa": 56.1,
-    "design": 49.3,
+    "design": 48.3,
     "navegador": 57.5,
-    "conversa": 65.8,
+    "conversa": 64.6,
     "visao": 48.2
    },
    "posCategorias": {
     "agentico": 20,
-    "codigo": 35,
+    "codigo": 36,
     "raciocinio": 31,
     "dados": 28,
     "pesquisa": 15,
-    "design": 29,
+    "design": 30,
     "navegador": 14,
-    "conversa": 10,
+    "conversa": 11,
     "visao": 16
    },
-   "posicao": 25
+   "posicao": 26
   },
   {
    "chave": "qwen3.8-flash-next",
@@ -1863,10 +1914,10 @@
    "contexto": null,
    "precoEntrada": 0.15,
    "precoSaida": 0.47,
-   "velocidade": 64.71,
-   "ttft": 2.05,
+   "velocidade": 61.23,
+   "ttft": 1.98,
    "metricas": {
-    "arena_webdev": 1625,
+    "arena_webdev": 1626,
     "aa_inteligencia": 28.6
    },
    "origens": {
@@ -1875,20 +1926,20 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 58.8,
-    "arena_webdev": 54
+    "aa_inteligencia": 58.5,
+    "arena_webdev": 50.9
    },
-   "nota": 56.1,
+   "nota": 55.3,
    "cobertura": 0.42,
    "categorias": {
-    "codigo": 52,
-    "design": 52
+    "codigo": 50.5,
+    "design": 50.5
    },
    "posCategorias": {
-    "codigo": 24,
-    "design": 25
+    "codigo": 25,
+    "design": 27
    },
-   "posicao": 26
+   "posicao": 27
   },
   {
    "chave": "joyai-vl",
@@ -1913,87 +1964,11 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 56.3
+    "aa_inteligencia": 56.1
    },
-   "nota": 54.7,
+   "nota": 54.6,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 27
-  },
-  {
-   "chave": "gemini-3.8-flash",
-   "slug": "gemini-3.8-flash",
-   "familia": "gemini-flash",
-   "versao": 3.8,
-   "nome": "Gemini 3.8 Flash",
-   "empresa": "Google",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-09-02",
-   "contexto": 1048576,
-   "precoEntrada": 0.825,
-   "precoSaida": 4.125,
-   "velocidade": 123.88,
-   "ttft": 26.88,
-   "metricas": {
-    "lb_geral": 57.26,
-    "lb_agentico": 16.5,
-    "lb_raciocinio": 89.3,
-    "lb_codigo": 73.3,
-    "lb_navegador": 45.1,
-    "lb_dados": 54,
-    "lb_pesquisa": 79.4,
-    "lb_design": 69.7,
-    "arena_texto": 1500,
-    "arena_webdev": 1583,
-    "arena_visao": 1317,
-    "aa_inteligencia": 30.8
-   },
-   "origens": {
-    "livebench": "gemini-3.8-flash",
-    "lmarena": "Gemini 3.8 Flash (High)",
-    "artificialanalysis": "gemini-3-8-flash",
-    "openrouter": "google/gemini-3.8-flash"
-   },
-   "parcial": false,
-   "percentis": {
-    "lb_geral": 24.3,
-    "aa_inteligencia": 65,
-    "arena_texto": 84.8,
-    "arena_webdev": 38,
-    "arena_visao": 91.1,
-    "lb_agentico": 21.6,
-    "lb_raciocinio": 56.8,
-    "lb_codigo": 48.6,
-    "lb_navegador": 29.7,
-    "lb_dados": 5.4,
-    "lb_pesquisa": 37.8,
-    "lb_design": 21.6
-   },
-   "nota": 54.4,
-   "cobertura": 1,
-   "categorias": {
-    "agentico": 35.8,
-    "codigo": 45.5,
-    "raciocinio": 53.4,
-    "dados": 27.7,
-    "pesquisa": 43.9,
-    "design": 36.5,
-    "navegador": 39.9,
-    "conversa": 67.4,
-    "visao": 70.5
-   },
-   "posCategorias": {
-    "agentico": 30,
-    "codigo": 33,
-    "raciocinio": 17,
-    "dados": 36,
-    "pesquisa": 24,
-    "design": 38,
-    "navegador": 27,
-    "conversa": 8,
-    "visao": 4
-   },
    "posicao": 28
   },
   {
@@ -2010,7 +1985,7 @@
    "precoEntrada": 2,
    "precoSaida": 12,
    "velocidade": 108.69,
-   "ttft": 129.08,
+   "ttft": 121.5,
    "metricas": {
     "lb_geral": 67.15,
     "lb_agentico": 25.9,
@@ -2034,9 +2009,9 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 48.6,
-    "aa_inteligencia": 68.8,
-    "arena_texto": 58.7,
-    "arena_webdev": 24,
+    "aa_inteligencia": 68.3,
+    "arena_texto": 58.3,
+    "arena_webdev": 22.6,
     "arena_visao": 53.6,
     "lb_agentico": 40.5,
     "lb_raciocinio": 66.2,
@@ -2046,17 +2021,17 @@
     "lb_pesquisa": 40.5,
     "lb_design": 28.4
    },
-   "nota": 54.3,
+   "nota": 54,
    "cobertura": 1,
    "categorias": {
     "agentico": 45.3,
-    "codigo": 50.8,
+    "codigo": 50.3,
     "raciocinio": 58.1,
     "dados": 54.8,
     "pesquisa": 45.3,
-    "design": 34.1,
+    "design": 33.7,
     "navegador": 51.4,
-    "conversa": 54.4,
+    "conversa": 54.1,
     "visao": 51.8
    },
    "posCategorias": {
@@ -2065,12 +2040,160 @@
     "raciocinio": 15,
     "dados": 16,
     "pesquisa": 23,
-    "design": 42,
+    "design": 43,
     "navegador": 18,
-    "conversa": 20,
+    "conversa": 21,
     "visao": 14
    },
    "posicao": 29
+  },
+  {
+   "chave": "gemini-3.8-flash",
+   "slug": "gemini-3.8-flash",
+   "familia": "gemini-flash",
+   "versao": 3.8,
+   "nome": "Gemini 3.8 Flash",
+   "empresa": "Google",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-09-02",
+   "contexto": 1048576,
+   "precoEntrada": 0.825,
+   "precoSaida": 4.125,
+   "velocidade": 124.95,
+   "ttft": 27.99,
+   "metricas": {
+    "lb_geral": 57.26,
+    "lb_agentico": 16.5,
+    "lb_raciocinio": 89.3,
+    "lb_codigo": 73.3,
+    "lb_navegador": 45.1,
+    "lb_dados": 54,
+    "lb_pesquisa": 79.4,
+    "lb_design": 69.7,
+    "arena_texto": 1500,
+    "arena_webdev": 1585,
+    "arena_visao": 1317,
+    "aa_inteligencia": 30.8
+   },
+   "origens": {
+    "livebench": "gemini-3.8-flash",
+    "lmarena": "Gemini 3.8 Flash (High)",
+    "artificialanalysis": "gemini-3-8-flash",
+    "openrouter": "google/gemini-3.8-flash"
+   },
+   "parcial": false,
+   "percentis": {
+    "lb_geral": 24.3,
+    "aa_inteligencia": 64.6,
+    "arena_texto": 83.3,
+    "arena_webdev": 35.8,
+    "arena_visao": 91.1,
+    "lb_agentico": 21.6,
+    "lb_raciocinio": 56.8,
+    "lb_codigo": 48.6,
+    "lb_navegador": 29.7,
+    "lb_dados": 5.4,
+    "lb_pesquisa": 37.8,
+    "lb_design": 21.6
+   },
+   "nota": 53.8,
+   "cobertura": 1,
+   "categorias": {
+    "agentico": 35.8,
+    "codigo": 44.8,
+    "raciocinio": 53.4,
+    "dados": 27.7,
+    "pesquisa": 43.9,
+    "design": 35.8,
+    "navegador": 39.9,
+    "conversa": 66.7,
+    "visao": 70.5
+   },
+   "posCategorias": {
+    "agentico": 30,
+    "codigo": 34,
+    "raciocinio": 17,
+    "dados": 36,
+    "pesquisa": 24,
+    "design": 39,
+    "navegador": 27,
+    "conversa": 9,
+    "visao": 4
+   },
+   "posicao": 30
+  },
+  {
+   "chave": "claude-haiku-5.5",
+   "slug": "claude-haiku-5.5",
+   "familia": "claude-haiku",
+   "versao": 5.5,
+   "nome": "Claude Haiku 5.5",
+   "empresa": "Anthropic",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-10-07",
+   "contexto": 1000000,
+   "precoEntrada": 0.1,
+   "precoSaida": 0.5,
+   "velocidade": 226.73,
+   "ttft": 333.64,
+   "metricas": {
+    "lb_geral": 68.94,
+    "lb_agentico": 47.9,
+    "lb_raciocinio": 82.4,
+    "lb_codigo": 77.6,
+    "lb_navegador": 69.5,
+    "lb_dados": 53.1,
+    "lb_pesquisa": 84.3,
+    "lb_design": 79.3,
+    "arena_texto": 1398,
+    "arena_webdev": 1596,
+    "aa_inteligencia": 36.5
+   },
+   "origens": {
+    "livebench": "claude-haiku-5.5",
+    "lmarena": "Claude Haiku 5.5 (High)",
+    "artificialanalysis": "claude-haiku-5-5",
+    "openrouter": "anthropic/claude-haiku-5.5"
+   },
+   "parcial": false,
+   "percentis": {
+    "lb_geral": 59.5,
+    "aa_inteligencia": 75.6,
+    "arena_texto": 18.8,
+    "arena_webdev": 39.6,
+    "lb_agentico": 66.2,
+    "lb_raciocinio": 27,
+    "lb_codigo": 59.5,
+    "lb_navegador": 48.6,
+    "lb_dados": 0,
+    "lb_pesquisa": 56.8,
+    "lb_design": 70.3
+   },
+   "nota": 53.3,
+   "cobertura": 0.95,
+   "categorias": {
+    "agentico": 58.1,
+    "codigo": 49.7,
+    "raciocinio": 38.5,
+    "dados": 25,
+    "pesquisa": 53.4,
+    "design": 53.3,
+    "navegador": 49.3,
+    "conversa": 34.4
+   },
+   "posCategorias": {
+    "agentico": 14,
+    "codigo": 29,
+    "raciocinio": 28,
+    "dados": 38,
+    "pesquisa": 17,
+    "design": 21,
+    "navegador": 20,
+    "conversa": 40
+   },
+   "posicao": 31
   },
   {
    "chave": "mimo-v2.6-flash",
@@ -2085,11 +2208,11 @@
    "contexto": 1050000,
    "precoEntrada": 0.14,
    "precoSaida": 0.28,
-   "velocidade": 36.18,
-   "ttft": 3.29,
+   "velocidade": 33.86,
+   "ttft": 3.16,
    "metricas": {
-    "arena_texto": 1451,
-    "arena_webdev": 1639,
+    "arena_texto": 1450,
+    "arena_webdev": 1636,
     "arena_visao": 1260,
     "aa_inteligencia": 26.7
    },
@@ -2100,26 +2223,26 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 52.5,
-    "arena_texto": 62,
-    "arena_webdev": 56,
+    "aa_inteligencia": 52.4,
+    "arena_texto": 60.4,
+    "arena_webdev": 52.8,
     "arena_visao": 35.7
    },
-   "nota": 54,
+   "nota": 53.2,
    "cobertura": 0.68,
    "categorias": {
-    "codigo": 53,
-    "design": 53,
-    "conversa": 56,
+    "codigo": 51.4,
+    "design": 51.4,
+    "conversa": 55.2,
     "visao": 42.9
    },
    "posCategorias": {
-    "codigo": 22,
-    "design": 24,
-    "conversa": 18,
+    "codigo": 23,
+    "design": 25,
+    "conversa": 20,
     "visao": 19
    },
-   "posicao": 30
+   "posicao": 32
   },
   {
    "chave": "gpt-6-sol",
@@ -2135,10 +2258,10 @@
    "precoEntrada": 2,
    "precoSaida": 10,
    "velocidade": 134.92,
-   "ttft": 85.11,
+   "ttft": 73.63,
    "metricas": {
     "arena_texto": 1397,
-    "arena_webdev": 1673,
+    "arena_webdev": 1674,
     "arena_visao": 1233,
     "aa_inteligencia": 44.2
    },
@@ -2149,98 +2272,26 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 81.9,
-    "arena_texto": 15.2,
-    "arena_webdev": 70,
+    "aa_inteligencia": 81.1,
+    "arena_texto": 15.6,
+    "arena_webdev": 66,
     "arena_visao": 14.3
    },
-   "nota": 53.8,
+   "nota": 53,
    "cobertura": 0.68,
    "categorias": {
-    "codigo": 60,
-    "design": 60,
-    "conversa": 32.6,
+    "codigo": 58,
+    "design": 58,
+    "conversa": 32.8,
     "visao": 32.1
    },
    "posCategorias": {
-    "codigo": 17,
-    "design": 17,
-    "conversa": 40,
+    "codigo": 19,
+    "design": 18,
+    "conversa": 41,
     "visao": 25
    },
-   "posicao": 31
-  },
-  {
-   "chave": "claude-haiku-5.5",
-   "slug": "claude-haiku-5.5",
-   "familia": "claude-haiku",
-   "versao": 5.5,
-   "nome": "Claude Haiku 5.5",
-   "empresa": "Anthropic",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-10-07",
-   "contexto": 1000000,
-   "precoEntrada": 0.1,
-   "precoSaida": 0.5,
-   "velocidade": 228.32,
-   "ttft": 378.24,
-   "metricas": {
-    "lb_geral": 68.94,
-    "lb_agentico": 47.9,
-    "lb_raciocinio": 82.4,
-    "lb_codigo": 77.6,
-    "lb_navegador": 69.5,
-    "lb_dados": 53.1,
-    "lb_pesquisa": 84.3,
-    "lb_design": 79.3,
-    "arena_texto": 1398,
-    "arena_webdev": 1593,
-    "aa_inteligencia": 36.5
-   },
-   "origens": {
-    "livebench": "claude-haiku-5.5",
-    "lmarena": "Claude Haiku 5.5 (High)",
-    "artificialanalysis": "claude-haiku-5-5",
-    "openrouter": "anthropic/claude-haiku-5.5"
-   },
-   "parcial": false,
-   "percentis": {
-    "lb_geral": 59.5,
-    "aa_inteligencia": 76.3,
-    "arena_texto": 17.4,
-    "arena_webdev": 42,
-    "lb_agentico": 66.2,
-    "lb_raciocinio": 27,
-    "lb_codigo": 59.5,
-    "lb_navegador": 48.6,
-    "lb_dados": 0,
-    "lb_pesquisa": 56.8,
-    "lb_design": 70.3
-   },
-   "nota": 53.4,
-   "cobertura": 0.95,
-   "categorias": {
-    "agentico": 58.1,
-    "codigo": 50.5,
-    "raciocinio": 38.5,
-    "dados": 25,
-    "pesquisa": 53.4,
-    "design": 54.1,
-    "navegador": 49.3,
-    "conversa": 33.7
-   },
-   "posCategorias": {
-    "agentico": 14,
-    "codigo": 28,
-    "raciocinio": 28,
-    "dados": 38,
-    "pesquisa": 17,
-    "design": 21,
-    "navegador": 20,
-    "conversa": 39
-   },
-   "posicao": 32
+   "posicao": 33
   },
   {
    "chave": "glm-5.3-flash",
@@ -2255,8 +2306,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.15,
    "precoSaida": 0.5,
-   "velocidade": 61.27,
-   "ttft": 1.86,
+   "velocidade": 61.58,
+   "ttft": 1.77,
    "metricas": {
     "lb_geral": 60.67,
     "lb_agentico": 20.7,
@@ -2266,8 +2317,8 @@
     "lb_dados": 76.4,
     "lb_pesquisa": 73.9,
     "lb_design": 73.7,
-    "arena_texto": 1472,
-    "arena_webdev": 1609,
+    "arena_texto": 1471,
+    "arena_webdev": 1610,
     "arena_visao": 1295,
     "aa_inteligencia": 27.8
    },
@@ -2280,9 +2331,9 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 32.4,
-    "aa_inteligencia": 53.8,
-    "arena_texto": 71.7,
-    "arena_webdev": 46,
+    "aa_inteligencia": 53.7,
+    "arena_texto": 70.8,
+    "arena_webdev": 43.4,
     "arena_visao": 78.6,
     "lb_agentico": 29.7,
     "lb_raciocinio": 13.5,
@@ -2292,31 +2343,31 @@
     "lb_pesquisa": 24.3,
     "lb_design": 41.9
    },
-   "nota": 51.2,
+   "nota": 50.7,
    "cobertura": 1,
    "categorias": {
     "agentico": 39.9,
-    "codigo": 46.4,
+    "codigo": 45.5,
     "raciocinio": 31.8,
     "dados": 43.9,
     "pesquisa": 37.1,
-    "design": 46,
+    "design": 45.1,
     "navegador": 45.3,
-    "conversa": 60.9,
+    "conversa": 60.4,
     "visao": 64.3
    },
    "posCategorias": {
     "agentico": 27,
-    "codigo": 32,
+    "codigo": 33,
     "raciocinio": 33,
     "dados": 24,
     "pesquisa": 29,
-    "design": 33,
+    "design": 34,
     "navegador": 23,
-    "conversa": 14,
+    "conversa": 15,
     "visao": 7
    },
-   "posicao": 33
+   "posicao": 34
   },
   {
    "chave": "kimi-k3",
@@ -2331,8 +2382,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.192,
    "precoSaida": 16,
-   "velocidade": 45.07,
-   "ttft": 4.37,
+   "velocidade": 44.45,
+   "ttft": 4.17,
    "metricas": {
     "lb_geral": 64.98,
     "lb_agentico": 36,
@@ -2342,7 +2393,7 @@
     "lb_dados": 78.7,
     "lb_pesquisa": 79.8,
     "lb_design": 72.5,
-    "arena_texto": 1475,
+    "arena_texto": 1474,
     "arena_webdev": 1658,
     "aa_inteligencia": 17.4
    },
@@ -2355,9 +2406,9 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 43.2,
-    "aa_inteligencia": 37.5,
-    "arena_texto": 75,
-    "arena_webdev": 66,
+    "aa_inteligencia": 37.8,
+    "arena_texto": 72.9,
+    "arena_webdev": 62.3,
     "lb_agentico": 45.9,
     "lb_raciocinio": 73,
     "lb_codigo": 13.5,
@@ -2366,29 +2417,29 @@
     "lb_pesquisa": 43.2,
     "lb_design": 37.8
    },
-   "nota": 50.8,
+   "nota": 50.1,
    "cobertura": 0.95,
    "categorias": {
     "agentico": 48,
-    "codigo": 43.2,
+    "codigo": 41.9,
     "raciocinio": 61.5,
     "dados": 52,
     "pesquisa": 46.6,
-    "design": 51.3,
+    "design": 50,
     "navegador": 53.4,
-    "conversa": 62.5
+    "conversa": 61.5
    },
    "posCategorias": {
     "agentico": 21,
-    "codigo": 34,
+    "codigo": 35,
     "raciocinio": 11,
     "dados": 18,
     "pesquisa": 22,
-    "design": 27,
+    "design": 28,
     "navegador": 17,
-    "conversa": 13
+    "conversa": 14
    },
-   "posicao": 34
+   "posicao": 35
   },
   {
    "chave": "grok-4.7",
@@ -2403,8 +2454,8 @@
    "contexto": 500000,
    "precoEntrada": 2,
    "precoSaida": 6,
-   "velocidade": 69.59,
-   "ttft": 73.43,
+   "velocidade": 70.66,
+   "ttft": 64.63,
    "metricas": {
     "lb_geral": 67.91,
     "lb_agentico": 45.3,
@@ -2415,7 +2466,7 @@
     "lb_pesquisa": 89.5,
     "lb_design": 75,
     "arena_texto": 1400,
-    "arena_webdev": 1640,
+    "arena_webdev": 1639,
     "arena_visao": 1230,
     "aa_inteligencia": 35.5
    },
@@ -2428,9 +2479,9 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 51.4,
-    "aa_inteligencia": 73.8,
-    "arena_texto": 19.6,
-    "arena_webdev": 58,
+    "aa_inteligencia": 73.2,
+    "arena_texto": 20.8,
+    "arena_webdev": 54.7,
     "arena_visao": 10.7,
     "lb_agentico": 56.8,
     "lb_raciocinio": 29.7,
@@ -2440,31 +2491,31 @@
     "lb_pesquisa": 81.1,
     "lb_design": 51.4
    },
-   "nota": 50.3,
+   "nota": 50,
    "cobertura": 1,
    "categorias": {
     "agentico": 53.4,
-    "codigo": 51.3,
+    "codigo": 50.2,
     "raciocinio": 39.9,
     "dados": 49.3,
     "pesquisa": 65.5,
-    "design": 53.1,
+    "design": 52,
     "navegador": 41.2,
-    "conversa": 34.8,
+    "conversa": 35.4,
     "visao": 30.4
    },
    "posCategorias": {
     "agentico": 17,
-    "codigo": 25,
+    "codigo": 27,
     "raciocinio": 27,
     "dados": 20,
     "pesquisa": 8,
-    "design": 23,
+    "design": 24,
     "navegador": 26,
-    "conversa": 38,
+    "conversa": 39,
     "visao": 26
    },
-   "posicao": 35
+   "posicao": 36
   },
   {
    "chave": "deepseek-v4-pro",
@@ -2477,10 +2528,10 @@
    "hf": "deepseek-ai/DeepSeek-V4-Pro-0813",
    "lancamento": "2026-08-12",
    "contexto": 1048576,
-   "precoEntrada": 0.111,
-   "precoSaida": 4.44,
-   "velocidade": 70.47,
-   "ttft": 1.55,
+   "precoEntrada": 0.13,
+   "precoSaida": 5.5,
+   "velocidade": 68.12,
+   "ttft": 1.64,
    "metricas": {
     "arena_texto": 1451,
     "arena_webdev": 1581,
@@ -2494,65 +2545,20 @@
    "parcial": false,
    "percentis": {
     "aa_inteligencia": 46.3,
-    "arena_texto": 62,
-    "arena_webdev": 34
+    "arena_texto": 62.5,
+    "arena_webdev": 32.1
    },
-   "nota": 49.6,
+   "nota": 49.4,
    "cobertura": 0.63,
    "categorias": {
-    "codigo": 42,
-    "design": 42,
-    "conversa": 56
+    "codigo": 41,
+    "design": 41,
+    "conversa": 56.3
    },
    "posCategorias": {
-    "codigo": 36,
-    "design": 35,
+    "codigo": 37,
+    "design": 36,
     "conversa": 19
-   },
-   "posicao": 36
-  },
-  {
-   "chave": "inkling-2-small",
-   "slug": "inkling-2-small",
-   "familia": "inkling-small",
-   "versao": 2,
-   "nome": "Inkling 2 Small",
-   "empresa": "Thinking Machines",
-   "aberto": true,
-   "hf": "thinkingmachines/Inkling-2-Small",
-   "lancamento": "2026-11-09",
-   "contexto": 1048576,
-   "precoEntrada": 0.3,
-   "precoSaida": 1,
-   "velocidade": 116.23,
-   "ttft": 2.38,
-   "metricas": {
-    "arena_texto": 1403,
-    "arena_webdev": 1645,
-    "aa_inteligencia": 30.6
-   },
-   "origens": {
-    "lmarena": "Inkling 2 Small",
-    "artificialanalysis": "inkling-2-small",
-    "openrouter": "thinkingmachines/inkling-2-small"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 63.7,
-    "arena_texto": 21.7,
-    "arena_webdev": 60
-   },
-   "nota": 49.2,
-   "cobertura": 0.63,
-   "categorias": {
-    "codigo": 55,
-    "design": 55,
-    "conversa": 35.9
-   },
-   "posCategorias": {
-    "codigo": 20,
-    "design": 19,
-    "conversa": 37
    },
    "posicao": 37
   },
@@ -2569,8 +2575,8 @@
    "contexto": null,
    "precoEntrada": 0.1,
    "precoSaida": 0.3,
-   "velocidade": 281.57,
-   "ttft": 2.1,
+   "velocidade": 285.19,
+   "ttft": 1.79,
    "metricas": {
     "aa_inteligencia": 24
    },
@@ -2587,6 +2593,51 @@
    "posicao": 38
   },
   {
+   "chave": "inkling-2-small",
+   "slug": "inkling-2-small",
+   "familia": "inkling-small",
+   "versao": 2,
+   "nome": "Inkling 2 Small",
+   "empresa": "Thinking Machines",
+   "aberto": true,
+   "hf": "thinkingmachines/Inkling-2-Small",
+   "lancamento": "2026-11-09",
+   "contexto": 1048576,
+   "precoEntrada": 0.3,
+   "precoSaida": 1,
+   "velocidade": 113.93,
+   "ttft": 2.44,
+   "metricas": {
+    "arena_texto": 1403,
+    "arena_webdev": 1644,
+    "aa_inteligencia": 30.6
+   },
+   "origens": {
+    "lmarena": "Inkling 2 Small",
+    "artificialanalysis": "inkling-2-small",
+    "openrouter": "thinkingmachines/inkling-2-small"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 63.4,
+    "arena_texto": 22.9,
+    "arena_webdev": 56.6
+   },
+   "nota": 48.9,
+   "cobertura": 0.63,
+   "categorias": {
+    "codigo": 53.3,
+    "design": 53.3,
+    "conversa": 36.5
+   },
+   "posCategorias": {
+    "codigo": 22,
+    "design": 22,
+    "conversa": 38
+   },
+   "posicao": 39
+  },
+  {
    "chave": "minimax-m3.1-flash",
    "slug": "minimax-m3.1-flash",
    "familia": "minimax-m-flash",
@@ -2599,8 +2650,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.075,
    "precoSaida": 0.3,
-   "velocidade": 114.44,
-   "ttft": 0.91,
+   "velocidade": 131.14,
+   "ttft": 1.04,
    "metricas": {
     "lb_geral": 63.67,
     "lb_agentico": 25.7,
@@ -2622,8 +2673,8 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 40.5,
-    "aa_inteligencia": 60,
-    "arena_webdev": 36,
+    "aa_inteligencia": 59.8,
+    "arena_webdev": 34,
     "lb_agentico": 37.8,
     "lb_raciocinio": 32.4,
     "lb_codigo": 32.4,
@@ -2632,27 +2683,27 @@
     "lb_pesquisa": 29.7,
     "lb_design": 32.4
    },
-   "nota": 48.4,
+   "nota": 48.1,
    "cobertura": 0.74,
    "categorias": {
     "agentico": 43.9,
-    "codigo": 39.5,
+    "codigo": 38.8,
     "raciocinio": 41.2,
     "dados": 37.1,
     "pesquisa": 39.9,
-    "design": 39.5,
+    "design": 38.8,
     "navegador": 60.1
    },
    "posCategorias": {
     "agentico": 24,
-    "codigo": 39,
+    "codigo": 40,
     "raciocinio": 26,
     "dados": 29,
     "pesquisa": 27,
-    "design": 37,
+    "design": 38,
     "navegador": 12
    },
-   "posicao": 39
+   "posicao": 40
   },
   {
    "chave": "grok-4.6",
@@ -2667,8 +2718,8 @@
    "contexto": 500000,
    "precoEntrada": 2,
    "precoSaida": 6,
-   "velocidade": 67.2,
-   "ttft": 43.16,
+   "velocidade": 68.45,
+   "ttft": 41.32,
    "metricas": {
     "lb_geral": 63.51,
     "lb_agentico": 18.7,
@@ -2692,9 +2743,9 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 37.8,
-    "aa_inteligencia": 66.3,
-    "arena_texto": 37,
-    "arena_webdev": 48,
+    "aa_inteligencia": 65.9,
+    "arena_texto": 37.5,
+    "arena_webdev": 45.3,
     "arena_visao": 42.9,
     "lb_agentico": 24.3,
     "lb_raciocinio": 78.4,
@@ -2704,31 +2755,31 @@
     "lb_pesquisa": 75.7,
     "lb_design": 58.1
    },
-   "nota": 48.2,
+   "nota": 47.9,
    "cobertura": 1,
    "categorias": {
     "agentico": 37.1,
-    "codigo": 50.7,
+    "codigo": 49.8,
     "raciocinio": 64.2,
     "dados": 42.5,
     "pesquisa": 62.9,
-    "design": 52,
+    "design": 51.1,
     "navegador": 43.3,
-    "conversa": 43.5,
+    "conversa": 43.8,
     "visao": 46.5
    },
    "posCategorias": {
     "agentico": 29,
-    "codigo": 27,
+    "codigo": 28,
     "raciocinio": 9,
     "dados": 25,
     "pesquisa": 10,
     "design": 26,
     "navegador": 25,
-    "conversa": 30,
+    "conversa": 31,
     "visao": 17
    },
-   "posicao": 40
+   "posicao": 41
   },
   {
    "chave": "nanbeige4.3-33b",
@@ -2753,12 +2804,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 45
+    "aa_inteligencia": 45.1
    },
    "nota": 46.3,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 41
+   "posicao": 42
   },
   {
    "chave": "jt-4.1-flash-236b-a21b",
@@ -2783,12 +2834,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 42.5
+    "aa_inteligencia": 42.7
    },
-   "nota": 44.4,
+   "nota": 44.5,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 42
+   "posicao": 43
   },
   {
    "chave": "k2-horizon-375b-a23b",
@@ -2803,8 +2854,8 @@
    "contexto": null,
    "precoEntrada": 0,
    "precoSaida": 0,
-   "velocidade": 856.24,
-   "ttft": 2.91,
+   "velocidade": 930.7,
+   "ttft": 2.75,
    "metricas": {
     "aa_inteligencia": 17.8
    },
@@ -2813,87 +2864,11 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 40
+    "aa_inteligencia": 40.2
    },
-   "nota": 42.5,
+   "nota": 42.7,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 43
-  },
-  {
-   "chave": "step-5",
-   "slug": "step-5",
-   "familia": "step",
-   "versao": 5,
-   "nome": "Step 5 Preview",
-   "empresa": "StepFun",
-   "aberto": true,
-   "hf": "stepfun-ai/Step-5-Preview",
-   "lancamento": "2026-10-08",
-   "contexto": 1000000,
-   "precoEntrada": 1,
-   "precoSaida": 2.7,
-   "velocidade": 166.82,
-   "ttft": 0.77,
-   "metricas": {
-    "lb_geral": 54.89,
-    "lb_agentico": 19.4,
-    "lb_raciocinio": 83.8,
-    "lb_codigo": 67.6,
-    "lb_navegador": 24.8,
-    "lb_dados": 63.5,
-    "lb_pesquisa": 75.5,
-    "lb_design": 70.8,
-    "arena_texto": 1443,
-    "arena_webdev": 1572,
-    "arena_visao": 1263,
-    "aa_inteligencia": 28.5
-   },
-   "origens": {
-    "livebench": "step-5-preview",
-    "lmarena": "Step 5 Preview",
-    "artificialanalysis": "step-5",
-    "openrouter": "stepfun/step-5-preview"
-   },
-   "parcial": false,
-   "percentis": {
-    "lb_geral": 21.6,
-    "aa_inteligencia": 57.5,
-    "arena_texto": 50,
-    "arena_webdev": 30,
-    "arena_visao": 39.3,
-    "lb_agentico": 27,
-    "lb_raciocinio": 35.1,
-    "lb_codigo": 27,
-    "lb_navegador": 18.9,
-    "lb_dados": 13.5,
-    "lb_pesquisa": 27,
-    "lb_design": 24.3
-   },
-   "nota": 41.6,
-   "cobertura": 1,
-   "categorias": {
-    "agentico": 38.5,
-    "codigo": 35.7,
-    "raciocinio": 42.5,
-    "dados": 31.8,
-    "pesquisa": 38.5,
-    "design": 34.8,
-    "navegador": 34.5,
-    "conversa": 50,
-    "visao": 44.6
-   },
-   "posCategorias": {
-    "agentico": 28,
-    "codigo": 41,
-    "raciocinio": 25,
-    "dados": 33,
-    "pesquisa": 28,
-    "design": 41,
-    "navegador": 31,
-    "conversa": 23,
-    "visao": 18
-   },
    "posicao": 44
   },
   {
@@ -2909,8 +2884,8 @@
    "contexto": null,
    "precoEntrada": 0.4,
    "precoSaida": 1.2,
-   "velocidade": 299.52,
-   "ttft": 0.58,
+   "velocidade": 314.81,
+   "ttft": 0.54,
    "metricas": {
     "aa_inteligencia": 17.7
    },
@@ -2919,12 +2894,88 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 38.8
+    "aa_inteligencia": 39
    },
-   "nota": 41.6,
+   "nota": 41.8,
    "cobertura": 0.32,
    "categorias": {},
    "posicao": 45
+  },
+  {
+   "chave": "step-5",
+   "slug": "step-5",
+   "familia": "step",
+   "versao": 5,
+   "nome": "Step 5 Preview",
+   "empresa": "StepFun",
+   "aberto": true,
+   "hf": "stepfun-ai/Step-5-Preview",
+   "lancamento": "2026-10-08",
+   "contexto": 1000000,
+   "precoEntrada": 1,
+   "precoSaida": 2.7,
+   "velocidade": 181.27,
+   "ttft": 0.86,
+   "metricas": {
+    "lb_geral": 54.89,
+    "lb_agentico": 19.4,
+    "lb_raciocinio": 83.8,
+    "lb_codigo": 67.6,
+    "lb_navegador": 24.8,
+    "lb_dados": 63.5,
+    "lb_pesquisa": 75.5,
+    "lb_design": 70.8,
+    "arena_texto": 1443,
+    "arena_webdev": 1571,
+    "arena_visao": 1263,
+    "aa_inteligencia": 28.5
+   },
+   "origens": {
+    "livebench": "step-5-preview",
+    "lmarena": "Step 5 Preview",
+    "artificialanalysis": "step-5",
+    "openrouter": "stepfun/step-5-preview"
+   },
+   "parcial": false,
+   "percentis": {
+    "lb_geral": 21.6,
+    "aa_inteligencia": 57.3,
+    "arena_texto": 50,
+    "arena_webdev": 28.3,
+    "arena_visao": 39.3,
+    "lb_agentico": 27,
+    "lb_raciocinio": 35.1,
+    "lb_codigo": 27,
+    "lb_navegador": 18.9,
+    "lb_dados": 13.5,
+    "lb_pesquisa": 27,
+    "lb_design": 24.3
+   },
+   "nota": 41.4,
+   "cobertura": 1,
+   "categorias": {
+    "agentico": 38.5,
+    "codigo": 35.1,
+    "raciocinio": 42.5,
+    "dados": 31.8,
+    "pesquisa": 38.5,
+    "design": 34.2,
+    "navegador": 34.5,
+    "conversa": 50,
+    "visao": 44.6
+   },
+   "posCategorias": {
+    "agentico": 28,
+    "codigo": 42,
+    "raciocinio": 25,
+    "dados": 33,
+    "pesquisa": 28,
+    "design": 42,
+    "navegador": 31,
+    "conversa": 24,
+    "visao": 18
+   },
+   "posicao": 46
   },
   {
    "chave": "gpt-5.6-luna",
@@ -2939,8 +2990,8 @@
    "contexto": 1050000,
    "precoEntrada": 0.2,
    "precoSaida": 1.2,
-   "velocidade": 130.61,
-   "ttft": 120.08,
+   "velocidade": 134.63,
+   "ttft": 100.12,
    "metricas": {
     "arena_texto": 1431,
     "arena_webdev": 1519,
@@ -2954,26 +3005,26 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 47.5,
-    "arena_texto": 39.1,
-    "arena_webdev": 22,
+    "aa_inteligencia": 47.6,
+    "arena_texto": 39.6,
+    "arena_webdev": 20.8,
     "arena_visao": 32.1
    },
    "nota": 41.2,
    "cobertura": 0.68,
    "categorias": {
-    "codigo": 36,
-    "design": 36,
-    "conversa": 44.5,
+    "codigo": 35.4,
+    "design": 35.4,
+    "conversa": 44.8,
     "visao": 41
    },
    "posCategorias": {
-    "codigo": 40,
-    "design": 39,
-    "conversa": 29,
+    "codigo": 41,
+    "design": 40,
+    "conversa": 30,
     "visao": 20
    },
-   "posicao": 46
+   "posicao": 47
   },
   {
    "chave": "nemotron-3-ultra-550b-a55b",
@@ -2988,8 +3039,8 @@
    "contexto": 262144,
    "precoEntrada": 0.5,
    "precoSaida": 2.2,
-   "velocidade": 233.6,
-   "ttft": 1.22,
+   "velocidade": 226.81,
+   "ttft": 1.2,
    "metricas": {
     "arena_texto": 1445,
     "aa_inteligencia": 11.8
@@ -3001,18 +3052,18 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 27.5,
-    "arena_texto": 55.4
+    "aa_inteligencia": 28,
+    "arena_texto": 54.2
    },
-   "nota": 40.6,
+   "nota": 40.4,
    "cobertura": 0.53,
    "categorias": {
-    "conversa": 52.7
+    "conversa": 52.1
    },
    "posCategorias": {
-    "conversa": 22
+    "conversa": 23
    },
-   "posicao": 47
+   "posicao": 48
   },
   {
    "chave": "k2-horizon-32b",
@@ -3037,12 +3088,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 35
+    "aa_inteligencia": 35.4
    },
-   "nota": 38.8,
+   "nota": 39,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 48
+   "posicao": 49
   },
   {
    "chave": "k2-horizon-mova-36b-a4b",
@@ -3067,12 +3118,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 33.8
+    "aa_inteligencia": 34.1
    },
-   "nota": 37.8,
+   "nota": 38.1,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 49
+   "posicao": 50
   },
   {
    "chave": "qwen3.8-27b",
@@ -3087,8 +3138,8 @@
    "contexto": 1024000,
    "precoEntrada": 0.06,
    "precoSaida": 2.2,
-   "velocidade": 40.57,
-   "ttft": 3.85,
+   "velocidade": 46.53,
+   "ttft": 3.78,
    "metricas": {
     "lb_geral": 54.05,
     "lb_agentico": 15.9,
@@ -3099,7 +3150,7 @@
     "lb_pesquisa": 61.3,
     "lb_design": 72.4,
     "arena_texto": 1437,
-    "arena_webdev": 1590,
+    "arena_webdev": 1589,
     "arena_visao": 1270,
     "aa_inteligencia": 20.1
    },
@@ -3112,9 +3163,9 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 18.9,
-    "aa_inteligencia": 43.8,
-    "arena_texto": 43.5,
-    "arena_webdev": 40,
+    "aa_inteligencia": 43.9,
+    "arena_texto": 43.8,
+    "arena_webdev": 37.7,
     "arena_visao": 57.1,
     "lb_agentico": 18.9,
     "lb_raciocinio": 21.6,
@@ -3124,78 +3175,29 @@
     "lb_pesquisa": 10.8,
     "lb_design": 35.1
    },
-   "nota": 37.5,
+   "nota": 37.4,
    "cobertura": 1,
    "categorias": {
     "agentico": 34.5,
-    "codigo": 41.7,
+    "codigo": 40.9,
     "raciocinio": 35.8,
     "dados": 47.3,
     "pesquisa": 30.4,
-    "design": 41.7,
+    "design": 40.9,
     "navegador": 33.1,
-    "conversa": 46.8,
+    "conversa": 46.9,
     "visao": 53.5
    },
    "posCategorias": {
     "agentico": 31,
-    "codigo": 37,
+    "codigo": 38,
     "raciocinio": 30,
     "dados": 21,
     "pesquisa": 34,
-    "design": 36,
+    "design": 37,
     "navegador": 32,
-    "conversa": 27,
+    "conversa": 28,
     "visao": 13
-   },
-   "posicao": 50
-  },
-  {
-   "chave": "minimax-m3",
-   "slug": "minimax-m3",
-   "familia": "minimax-m",
-   "versao": 3,
-   "nome": "MiniMax M3",
-   "empresa": "MiniMax",
-   "aberto": true,
-   "hf": "MiniMaxAI/Minimax-M3",
-   "lancamento": "2026-05-31",
-   "contexto": 1048576,
-   "precoEntrada": 0.3,
-   "precoSaida": 1.2,
-   "velocidade": 94.25,
-   "ttft": 0.81,
-   "metricas": {
-    "arena_texto": 1428,
-    "arena_webdev": 1484,
-    "arena_visao": 1249,
-    "aa_inteligencia": 18.9
-   },
-   "origens": {
-    "lmarena": "MiniMax-M3",
-    "artificialanalysis": "minimax-m3",
-    "openrouter": "minimax/minimax-m3"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 41.3,
-    "arena_texto": 34.8,
-    "arena_webdev": 20,
-    "arena_visao": 28.6
-   },
-   "nota": 37,
-   "cobertura": 0.68,
-   "categorias": {
-    "codigo": 35,
-    "design": 35,
-    "conversa": 42.4,
-    "visao": 39.3
-   },
-   "posCategorias": {
-    "codigo": 42,
-    "design": 40,
-    "conversa": 31,
-    "visao": 21
    },
    "posicao": 51
   },
@@ -3222,12 +3224,110 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 32.5
+    "aa_inteligencia": 32.9
    },
-   "nota": 36.9,
+   "nota": 37.2,
    "cobertura": 0.32,
    "categorias": {},
    "posicao": 52
+  },
+  {
+   "chave": "minimax-m3",
+   "slug": "minimax-m3",
+   "familia": "minimax-m",
+   "versao": 3,
+   "nome": "MiniMax M3",
+   "empresa": "MiniMax",
+   "aberto": true,
+   "hf": "MiniMaxAI/Minimax-M3",
+   "lancamento": "2026-05-31",
+   "contexto": 1048576,
+   "precoEntrada": 0.3,
+   "precoSaida": 1.2,
+   "velocidade": 89.79,
+   "ttft": 0.75,
+   "metricas": {
+    "arena_texto": 1427,
+    "arena_webdev": 1484,
+    "arena_visao": 1249,
+    "aa_inteligencia": 18.9
+   },
+   "origens": {
+    "lmarena": "MiniMax-M3",
+    "artificialanalysis": "minimax-m3",
+    "openrouter": "minimax/minimax-m3"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 41.5,
+    "arena_texto": 35.4,
+    "arena_webdev": 18.9,
+    "arena_visao": 28.6
+   },
+   "nota": 37.1,
+   "cobertura": 0.68,
+   "categorias": {
+    "codigo": 34.5,
+    "design": 34.5,
+    "conversa": 42.7,
+    "visao": 39.3
+   },
+   "posCategorias": {
+    "codigo": 43,
+    "design": 41,
+    "conversa": 32,
+    "visao": 21
+   },
+   "posicao": 53
+  },
+  {
+   "chave": "gemini-3.5-flash-lite",
+   "slug": "gemini-3.5-flash-lite",
+   "familia": "gemini-flash-lite",
+   "versao": 3.5,
+   "nome": "Gemini 3.5 Flash Lite",
+   "empresa": "Google",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-07-21",
+   "contexto": 1048576,
+   "precoEntrada": 0.3,
+   "precoSaida": 2.5,
+   "velocidade": 403.97,
+   "ttft": 7.41,
+   "metricas": {
+    "arena_texto": 1435,
+    "arena_webdev": 1432,
+    "arena_visao": 1268,
+    "aa_inteligencia": 11.7
+   },
+   "origens": {
+    "lmarena": "Gemini 3.5 Flash-Lite",
+    "artificialanalysis": "gemini-3-5-flash-lite",
+    "openrouter": "google/gemini-3.5-flash-lite"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 26.8,
+    "arena_texto": 41.7,
+    "arena_webdev": 17,
+    "arena_visao": 50
+   },
+   "nota": 34.1,
+   "cobertura": 0.68,
+   "categorias": {
+    "codigo": 33.5,
+    "design": 33.5,
+    "conversa": 45.9,
+    "visao": 50
+   },
+   "posCategorias": {
+    "codigo": 44,
+    "design": 44,
+    "conversa": 29,
+    "visao": 15
+   },
+   "posicao": 54
   },
   {
    "chave": "muse-spark-open",
@@ -3242,8 +3342,8 @@
    "contexto": 1048576,
    "precoEntrada": 1.25,
    "precoSaida": 4.25,
-   "velocidade": 197.56,
-   "ttft": 0.68,
+   "velocidade": 192.69,
+   "ttft": 0.64,
    "metricas": {
     "lb_geral": 48.53,
     "lb_agentico": 12.1,
@@ -3266,7 +3366,7 @@
    "percentis": {
     "lb_geral": 16.2,
     "aa_inteligencia": 50,
-    "arena_webdev": 26,
+    "arena_webdev": 24.5,
     "lb_agentico": 16.2,
     "lb_raciocinio": 5.4,
     "lb_codigo": 18.9,
@@ -3275,76 +3375,27 @@
     "lb_pesquisa": 54.1,
     "lb_design": 8.1
    },
-   "nota": 34.3,
+   "nota": 34.1,
    "cobertura": 0.74,
    "categorias": {
     "agentico": 33.1,
-    "codigo": 31.6,
+    "codigo": 31.1,
     "raciocinio": 27.7,
     "dados": 30.4,
     "pesquisa": 52,
-    "design": 28,
+    "design": 27.5,
     "navegador": 37.1
    },
    "posCategorias": {
     "agentico": 32,
-    "codigo": 45,
+    "codigo": 46,
     "raciocinio": 36,
     "dados": 34,
     "pesquisa": 18,
-    "design": 48,
+    "design": 50,
     "navegador": 29
    },
-   "posicao": 53
-  },
-  {
-   "chave": "gemini-3.5-flash-lite",
-   "slug": "gemini-3.5-flash-lite",
-   "familia": "gemini-flash-lite",
-   "versao": 3.5,
-   "nome": "Gemini 3.5 Flash Lite",
-   "empresa": "Google",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-07-21",
-   "contexto": 1048576,
-   "precoEntrada": 0.3,
-   "precoSaida": 2.5,
-   "velocidade": 408.59,
-   "ttft": 6.74,
-   "metricas": {
-    "arena_texto": 1435,
-    "arena_webdev": 1432,
-    "arena_visao": 1268,
-    "aa_inteligencia": 11.7
-   },
-   "origens": {
-    "lmarena": "Gemini 3.5 Flash-Lite",
-    "artificialanalysis": "gemini-3-5-flash-lite",
-    "openrouter": "google/gemini-3.5-flash-lite"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 26.3,
-    "arena_texto": 41.3,
-    "arena_webdev": 18,
-    "arena_visao": 50
-   },
-   "nota": 33.9,
-   "cobertura": 0.68,
-   "categorias": {
-    "codigo": 34,
-    "design": 34,
-    "conversa": 45.6,
-    "visao": 50
-   },
-   "posCategorias": {
-    "codigo": 43,
-    "design": 43,
-    "conversa": 28,
-    "visao": 15
-   },
-   "posicao": 54
+   "posicao": 55
   },
   {
    "chave": "gpt-6-luna",
@@ -3359,8 +3410,8 @@
    "contexto": 1050000,
    "precoEntrada": 0.1,
    "precoSaida": 0.5,
-   "velocidade": 117.64,
-   "ttft": 102.88,
+   "velocidade": 118.8,
+   "ttft": 100,
    "metricas": {
     "lb_geral": 60.42,
     "lb_agentico": 24.7,
@@ -3370,8 +3421,8 @@
     "lb_dados": 73.4,
     "lb_pesquisa": 48.5,
     "lb_design": 76.1,
-    "arena_texto": 1388,
-    "arena_webdev": 1577,
+    "arena_texto": 1389,
+    "arena_webdev": 1578,
     "arena_visao": 1211,
     "aa_inteligencia": 27.9
    },
@@ -3384,9 +3435,9 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 29.7,
-    "aa_inteligencia": 55,
-    "arena_texto": 7.6,
-    "arena_webdev": 32,
+    "aa_inteligencia": 54.9,
+    "arena_texto": 11.5,
+    "arena_webdev": 30.2,
     "arena_visao": 0,
     "lb_agentico": 33.8,
     "lb_raciocinio": 24.3,
@@ -3396,31 +3447,31 @@
     "lb_pesquisa": 5.4,
     "lb_design": 54.1
    },
-   "nota": 33.5,
+   "nota": 34,
    "cobertura": 1,
    "categorias": {
     "agentico": 41.9,
-    "codigo": 40.8,
+    "codigo": 40.2,
     "raciocinio": 37.1,
     "dados": 41.2,
     "pesquisa": 27.7,
-    "design": 45.4,
+    "design": 44.8,
     "navegador": 51.4,
-    "conversa": 28.8,
+    "conversa": 30.8,
     "visao": 25
    },
    "posCategorias": {
     "agentico": 25,
-    "codigo": 38,
+    "codigo": 39,
     "raciocinio": 29,
     "dados": 26,
     "pesquisa": 36,
-    "design": 34,
+    "design": 35,
     "navegador": 19,
     "conversa": 43,
     "visao": 29
    },
-   "posicao": 55
+   "posicao": 56
   },
   {
    "chave": "mistral-large-4-0",
@@ -3475,14 +3526,14 @@
    },
    "posCategorias": {
     "agentico": 26,
-    "codigo": 19,
+    "codigo": 18,
     "raciocinio": 23,
     "dados": 22,
     "pesquisa": 21,
-    "design": 22,
+    "design": 20,
     "navegador": 35
    },
-   "posicao": 56
+   "posicao": 57
   },
   {
    "chave": "k2-horizon-7b",
@@ -3507,12 +3558,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 25
+    "aa_inteligencia": 25.6
    },
-   "nota": 31.3,
+   "nota": 31.7,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 57
+   "posicao": 58
   },
   {
    "chave": "a.x-k2",
@@ -3537,12 +3588,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 23.8
+    "aa_inteligencia": 24.4
    },
-   "nota": 30.4,
+   "nota": 30.8,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 58
+   "posicao": 59
   },
   {
    "chave": "k2-horizon-3.7b",
@@ -3567,12 +3618,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 22.5
+    "aa_inteligencia": 23.2
    },
-   "nota": 29.4,
+   "nota": 29.9,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 59
+   "posicao": 60
   },
   {
    "chave": "inkling-small",
@@ -3587,8 +3638,8 @@
    "contexto": 524288,
    "precoEntrada": 0.45,
    "precoSaida": 1.2,
-   "velocidade": 59.06,
-   "ttft": 2.2,
+   "velocidade": 58.86,
+   "ttft": 2.21,
    "metricas": {
     "arena_texto": 1414,
     "arena_webdev": 1408,
@@ -3602,26 +3653,26 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 30,
-    "arena_texto": 28.3,
-    "arena_webdev": 14,
+    "aa_inteligencia": 30.5,
+    "arena_texto": 29.2,
+    "arena_webdev": 13.2,
     "arena_visao": 17.9
    },
-   "nota": 29.3,
+   "nota": 29.6,
    "cobertura": 0.68,
    "categorias": {
-    "codigo": 32,
-    "design": 32,
-    "conversa": 39.1,
+    "codigo": 31.6,
+    "design": 31.6,
+    "conversa": 39.6,
     "visao": 34
    },
    "posCategorias": {
-    "codigo": 44,
-    "design": 44,
-    "conversa": 34,
+    "codigo": 45,
+    "design": 46,
+    "conversa": 35,
     "visao": 24
    },
-   "posicao": 60
+   "posicao": 61
   },
   {
    "chave": "mistral-large-4",
@@ -3636,8 +3687,8 @@
    "contexto": null,
    "precoEntrada": 0.7,
    "precoSaida": 2.1,
-   "velocidade": 62.64,
-   "ttft": 2.3,
+   "velocidade": 59.62,
+   "ttft": 1.95,
    "metricas": {
     "lb_geral": 40.87,
     "lb_agentico": 9.2,
@@ -3647,8 +3698,8 @@
     "lb_dados": 76.5,
     "lb_pesquisa": 30.8,
     "lb_design": 60.7,
-    "arena_texto": 1411,
-    "arena_webdev": 1566,
+    "arena_texto": 1412,
+    "arena_webdev": 1568,
     "arena_visao": 1244,
     "aa_inteligencia": 26.1
    },
@@ -3661,8 +3712,8 @@
    "percentis": {
     "lb_geral": 2.7,
     "aa_inteligencia": 51.2,
-    "arena_texto": 26.1,
-    "arena_webdev": 28,
+    "arena_texto": 27.1,
+    "arena_webdev": 26.4,
     "arena_visao": 25,
     "lb_agentico": 2.7,
     "lb_raciocinio": 37.8,
@@ -3676,27 +3727,27 @@
    "cobertura": 1,
    "categorias": {
     "agentico": 26.4,
-    "codigo": 27.8,
+    "codigo": 27.3,
     "raciocinio": 43.9,
     "dados": 45.3,
     "pesquisa": 25,
-    "design": 31.4,
+    "design": 30.9,
     "navegador": 26.4,
-    "conversa": 38,
+    "conversa": 38.5,
     "visao": 37.5
    },
    "posCategorias": {
     "agentico": 37,
-    "codigo": 49,
+    "codigo": 50,
     "raciocinio": 24,
     "dados": 23,
     "pesquisa": 38,
-    "design": 46,
+    "design": 47,
     "navegador": 37,
-    "conversa": 35,
+    "conversa": 36,
     "visao": 22
    },
-   "posicao": 61
+   "posicao": 62
   },
   {
    "chave": "k-exaone-2.0",
@@ -3721,12 +3772,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 21.3
+    "aa_inteligencia": 22
    },
-   "nota": 28.5,
+   "nota": 29,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 62
+   "posicao": 63
   },
   {
    "chave": "inkling",
@@ -3741,8 +3792,8 @@
    "contexto": 524288,
    "precoEntrada": 1,
    "precoSaida": 4.05,
-   "velocidade": 158.4,
-   "ttft": 2.23,
+   "velocidade": 184.47,
+   "ttft": 2.29,
    "metricas": {
     "lb_geral": 44.32,
     "lb_agentico": 9.8,
@@ -3765,9 +3816,9 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 8.1,
-    "aa_inteligencia": 28.7,
+    "aa_inteligencia": 29.3,
     "arena_texto": 50,
-    "arena_webdev": 16,
+    "arena_webdev": 15.1,
     "lb_agentico": 5.4,
     "lb_raciocinio": 16.2,
     "lb_codigo": 8.1,
@@ -3776,29 +3827,29 @@
     "lb_pesquisa": 8.1,
     "lb_design": 0
    },
-   "nota": 27.6,
+   "nota": 27.7,
    "cobertura": 0.95,
    "categorias": {
     "agentico": 27.7,
-    "codigo": 24.7,
+    "codigo": 24.4,
     "raciocinio": 33.1,
     "dados": 39.9,
     "pesquisa": 29.1,
-    "design": 22,
+    "design": 21.7,
     "navegador": 27.7,
     "conversa": 50
    },
    "posCategorias": {
     "agentico": 36,
-    "codigo": 55,
+    "codigo": 56,
     "raciocinio": 32,
     "dados": 27,
     "pesquisa": 35,
-    "design": 55,
+    "design": 56,
     "navegador": 36,
-    "conversa": 24
+    "conversa": 25
    },
-   "posicao": 63
+   "posicao": 64
   },
   {
    "chave": "solar-pro-4",
@@ -3813,8 +3864,8 @@
    "contexto": null,
    "precoEntrada": 0.3,
    "precoSaida": 1.2,
-   "velocidade": 77.19,
-   "ttft": 1.9,
+   "velocidade": 78.26,
+   "ttft": 1.88,
    "metricas": {
     "arena_texto": 1388,
     "arena_webdev": 1369,
@@ -3826,23 +3877,23 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 36.3,
-    "arena_texto": 7.6,
-    "arena_webdev": 8
+    "aa_inteligencia": 36.6,
+    "arena_texto": 8.3,
+    "arena_webdev": 7.5
    },
-   "nota": 26,
+   "nota": 26.3,
    "cobertura": 0.63,
    "categorias": {
-    "codigo": 29,
-    "design": 29,
-    "conversa": 28.8
+    "codigo": 28.8,
+    "design": 28.8,
+    "conversa": 29.1
    },
    "posCategorias": {
-    "codigo": 47,
-    "design": 47,
-    "conversa": 44
+    "codigo": 48,
+    "design": 48,
+    "conversa": 45
    },
-   "posicao": 64
+   "posicao": 65
   },
   {
    "chave": "command-a+",
@@ -3857,8 +3908,8 @@
    "contexto": null,
    "precoEntrada": 0,
    "precoSaida": 0,
-   "velocidade": 201.42,
-   "ttft": 0.49,
+   "velocidade": 214.37,
+   "ttft": 0.5,
    "metricas": {
     "aa_inteligencia": 6.2
    },
@@ -3867,12 +3918,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 16.9
+    "aa_inteligencia": 17.7
    },
-   "nota": 25.2,
+   "nota": 25.8,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 65
+   "posicao": 66
   },
   {
    "chave": "lfm3-1.7b",
@@ -3887,8 +3938,8 @@
    "contexto": null,
    "precoEntrada": 0.08,
    "precoSaida": 0.2,
-   "velocidade": 151.38,
-   "ttft": 0.42,
+   "velocidade": 157.38,
+   "ttft": 0.46,
    "metricas": {
     "aa_inteligencia": 6
    },
@@ -3897,12 +3948,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 15
+    "aa_inteligencia": 15.9
    },
-   "nota": 23.8,
+   "nota": 24.4,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 66
+   "posicao": 67
   },
   {
    "chave": "gemini-3.1-flash-lite",
@@ -3917,8 +3968,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.25,
    "precoSaida": 1.5,
-   "velocidade": 312.13,
-   "ttft": 4.41,
+   "velocidade": 324.6,
+   "ttft": 4.43,
    "metricas": {
     "arena_texto": 1416,
     "arena_webdev": 1256,
@@ -3932,26 +3983,26 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 16.9,
-    "arena_texto": 30.4,
+    "aa_inteligencia": 17.7,
+    "arena_texto": 31.3,
     "arena_webdev": 0,
     "arena_visao": 21.4
    },
-   "nota": 23,
+   "nota": 23.5,
    "cobertura": 0.68,
    "categorias": {
     "codigo": 25,
     "design": 25,
-    "conversa": 40.2,
+    "conversa": 40.6,
     "visao": 35.7
    },
    "posCategorias": {
-    "codigo": 54,
-    "design": 53,
-    "conversa": 33,
+    "codigo": 55,
+    "design": 54,
+    "conversa": 34,
     "visao": 23
    },
-   "posicao": 67
+   "posicao": 68
   },
   {
    "chave": "nemotron-3.5-lightning",
@@ -3966,8 +4017,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.07,
    "precoSaida": 0.2,
-   "velocidade": 276.65,
-   "ttft": 0.64,
+   "velocidade": 286.38,
+   "ttft": 0.62,
    "metricas": {
     "aa_inteligencia": 5.5
    },
@@ -3977,12 +4028,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 13.8
+    "aa_inteligencia": 14
    },
-   "nota": 22.9,
+   "nota": 23,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 68
+   "posicao": 69
   },
   {
    "chave": "nemotron-3.5-super-vl",
@@ -3997,8 +4048,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.15,
    "precoSaida": 0.5,
-   "velocidade": 277.53,
-   "ttft": 0.86,
+   "velocidade": 286.55,
+   "ttft": 0.83,
    "metricas": {
     "lb_geral": 47.01,
     "lb_agentico": 12,
@@ -4008,8 +4059,8 @@
     "lb_dados": 64.6,
     "lb_pesquisa": 67.1,
     "lb_design": 60,
-    "arena_texto": 1407,
-    "arena_webdev": 1401,
+    "arena_texto": 1408,
+    "arena_webdev": 1402,
     "arena_visao": 1214,
     "aa_inteligencia": 13.6
    },
@@ -4022,9 +4073,9 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 10.8,
-    "aa_inteligencia": 31.3,
-    "arena_texto": 23.9,
-    "arena_webdev": 12,
+    "aa_inteligencia": 31.7,
+    "arena_texto": 25,
+    "arena_webdev": 11.3,
     "arena_visao": 3.6,
     "lb_agentico": 13.5,
     "lb_raciocinio": 8.1,
@@ -4034,31 +4085,31 @@
     "lb_pesquisa": 16.2,
     "lb_design": 10.8
    },
-   "nota": 22.7,
+   "nota": 22.9,
    "cobertura": 1,
    "categorias": {
     "agentico": 31.8,
-    "codigo": 26.1,
+    "codigo": 25.8,
     "raciocinio": 29.1,
     "dados": 33.1,
     "pesquisa": 33.1,
-    "design": 24.3,
+    "design": 24,
     "navegador": 31.8,
-    "conversa": 37,
+    "conversa": 37.5,
     "visao": 26.8
    },
    "posCategorias": {
     "agentico": 33,
-    "codigo": 52,
+    "codigo": 54,
     "raciocinio": 35,
     "dados": 32,
     "pesquisa": 32,
-    "design": 54,
+    "design": 55,
     "navegador": 33,
-    "conversa": 36,
+    "conversa": 37,
     "visao": 28
    },
-   "posicao": 69
+   "posicao": 70
   },
   {
    "chave": "smaug-nemotron-3.5-nvfp4",
@@ -4112,14 +4163,59 @@
    },
    "posCategorias": {
     "agentico": 34,
-    "codigo": 46,
+    "codigo": 47,
     "raciocinio": 34,
     "dados": 31,
     "pesquisa": 33,
     "design": 45,
     "navegador": 30
    },
-   "posicao": 70
+   "posicao": 71
+  },
+  {
+   "chave": "claude-haiku-4.5",
+   "slug": "claude-haiku-4.5",
+   "familia": "claude-haiku",
+   "versao": 4.5,
+   "nome": "Claude Haiku 4.5",
+   "empresa": "Anthropic",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2025-10-15",
+   "contexto": 200000,
+   "precoEntrada": 1,
+   "precoSaida": 5,
+   "velocidade": 104.62,
+   "ttft": 21.15,
+   "metricas": {
+    "arena_texto": 1397,
+    "arena_webdev": 1330,
+    "aa_inteligencia": 7.4
+   },
+   "origens": {
+    "lmarena": "Claude Haiku 4.5 (20251001)",
+    "artificialanalysis": "claude-4-5-haiku-reasoning",
+    "openrouter": "anthropic/claude-haiku-4.5"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 20.7,
+    "arena_texto": 15.6,
+    "arena_webdev": 3.8
+   },
+   "nota": 21,
+   "cobertura": 0.63,
+   "categorias": {
+    "codigo": 26.9,
+    "design": 26.9,
+    "conversa": 32.8
+   },
+   "posCategorias": {
+    "codigo": 51,
+    "design": 51,
+    "conversa": 42
+   },
+   "posicao": 72
   },
   {
    "chave": "gemma-4-e4b",
@@ -4134,8 +4230,8 @@
    "contexto": null,
    "precoEntrada": 0.02,
    "precoSaida": 0.1,
-   "velocidade": 69.74,
-   "ttft": 0.86,
+   "velocidade": 69.64,
+   "ttft": 0.89,
    "metricas": {
     "aa_inteligencia": 4.8
    },
@@ -4144,12 +4240,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 11.3
+    "aa_inteligencia": 11
    },
-   "nota": 21,
+   "nota": 20.8,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 71
+   "posicao": 73
   },
   {
    "chave": "gemma-4-31b",
@@ -4164,8 +4260,8 @@
    "contexto": 262144,
    "precoEntrada": 0.2,
    "precoSaida": 0.4,
-   "velocidade": 34.66,
-   "ttft": 1.09,
+   "velocidade": 35.23,
+   "ttft": 1.07,
    "metricas": {
     "lb_geral": 32.43,
     "lb_agentico": 8.5,
@@ -4189,9 +4285,9 @@
    "parcial": false,
    "percentis": {
     "lb_geral": 0,
-    "aa_inteligencia": 7.5,
+    "aa_inteligencia": 7.3,
     "arena_texto": 50,
-    "arena_webdev": 10,
+    "arena_webdev": 9.4,
     "arena_visao": 64.3,
     "lb_agentico": 0,
     "lb_raciocinio": 0,
@@ -4201,76 +4297,31 @@
     "lb_pesquisa": 2.7,
     "lb_design": 5.4
    },
-   "nota": 20.4,
+   "nota": 20.3,
    "cobertura": 1,
    "categorias": {
     "agentico": 25,
-    "codigo": 20,
+    "codigo": 19.8,
     "raciocinio": 25,
     "dados": 26.4,
     "pesquisa": 26.4,
-    "design": 21.8,
+    "design": 21.6,
     "navegador": 25,
     "conversa": 50,
     "visao": 57.1
    },
    "posCategorias": {
     "agentico": 38,
-    "codigo": 56,
+    "codigo": 57,
     "raciocinio": 38,
     "dados": 37,
     "pesquisa": 37,
-    "design": 56,
+    "design": 57,
     "navegador": 38,
-    "conversa": 25,
+    "conversa": 26,
     "visao": 12
    },
-   "posicao": 72
-  },
-  {
-   "chave": "claude-haiku-4.5",
-   "slug": "claude-haiku-4.5",
-   "familia": "claude-haiku",
-   "versao": 4.5,
-   "nome": "Claude Haiku 4.5",
-   "empresa": "Anthropic",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2025-10-15",
-   "contexto": 200000,
-   "precoEntrada": 1,
-   "precoSaida": 5,
-   "velocidade": 100.59,
-   "ttft": 16.92,
-   "metricas": {
-    "arena_texto": 1396,
-    "arena_webdev": 1330,
-    "aa_inteligencia": 7.4
-   },
-   "origens": {
-    "lmarena": "Claude Haiku 4.5 (20251001)",
-    "artificialanalysis": "claude-4-5-haiku-reasoning",
-    "openrouter": "anthropic/claude-haiku-4.5"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 20,
-    "arena_texto": 13,
-    "arena_webdev": 4
-   },
-   "nota": 20,
-   "cobertura": 0.63,
-   "categorias": {
-    "codigo": 27,
-    "design": 27,
-    "conversa": 31.5
-   },
-   "posCategorias": {
-    "codigo": 50,
-    "design": 50,
-    "conversa": 41
-   },
-   "posicao": 73
+   "posicao": 74
   },
   {
    "chave": "mistral-3.5",
@@ -4285,8 +4336,8 @@
    "contexto": null,
    "precoEntrada": 1.5,
    "precoSaida": 7.5,
-   "velocidade": 157.58,
-   "ttft": 2.55,
+   "velocidade": 171.09,
+   "ttft": 2.42,
    "metricas": {
     "arena_texto": 1421,
     "arena_webdev": 1263,
@@ -4299,26 +4350,26 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 8.8,
-    "arena_texto": 32.6,
-    "arena_webdev": 2,
+    "aa_inteligencia": 8.5,
+    "arena_texto": 33.3,
+    "arena_webdev": 1.9,
     "arena_visao": 7.1
    },
-   "nota": 19.6,
+   "nota": 19.7,
    "cobertura": 0.68,
    "categorias": {
-    "codigo": 26,
-    "design": 26,
-    "conversa": 41.3,
+    "codigo": 25.9,
+    "design": 25.9,
+    "conversa": 41.6,
     "visao": 28.6
    },
    "posCategorias": {
     "codigo": 53,
-    "design": 52,
-    "conversa": 32,
+    "design": 53,
+    "conversa": 33,
     "visao": 27
    },
-   "posicao": 74
+   "posicao": 75
   },
   {
    "chave": "muse-glimmer",
@@ -4333,11 +4384,11 @@
    "contexto": null,
    "precoEntrada": 0.325,
    "precoSaida": 1.35,
-   "velocidade": 86.1,
+   "velocidade": 88.04,
    "ttft": 0.82,
    "metricas": {
     "arena_texto": 1389,
-    "arena_webdev": 1354,
+    "arena_webdev": 1353,
     "aa_inteligencia": 6.3
    },
    "origens": {
@@ -4346,23 +4397,23 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 18.8,
-    "arena_texto": 10.9,
-    "arena_webdev": 6
+    "aa_inteligencia": 19.5,
+    "arena_texto": 11.5,
+    "arena_webdev": 5.7
    },
-   "nota": 19.2,
+   "nota": 19.6,
    "cobertura": 0.63,
    "categorias": {
-    "codigo": 28,
-    "design": 28,
-    "conversa": 30.4
+    "codigo": 27.9,
+    "design": 27.9,
+    "conversa": 30.8
    },
    "posCategorias": {
-    "codigo": 48,
+    "codigo": 49,
     "design": 49,
-    "conversa": 42
+    "conversa": 44
    },
-   "posicao": 75
+   "posicao": 76
   },
   {
    "chave": "mistral-small-4",
@@ -4377,8 +4428,8 @@
    "contexto": null,
    "precoEntrada": 0.15,
    "precoSaida": 0.6,
-   "velocidade": 149.63,
-   "ttft": 0.97,
+   "velocidade": 157.15,
+   "ttft": 0.89,
    "metricas": {
     "aa_inteligencia": 4.3
    },
@@ -4387,12 +4438,50 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 6.3
+    "aa_inteligencia": 6.1
    },
-   "nota": 17.2,
+   "nota": 17.1,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 76
+   "posicao": 77
+  },
+  {
+   "chave": "granite-4.2-30b",
+   "slug": "granite-4.2-30b",
+   "familia": "granite-30b",
+   "versao": 4.2,
+   "nome": "Granite 4.2 30B",
+   "empresa": "IBM",
+   "aberto": true,
+   "hf": null,
+   "lancamento": "2026-08-25",
+   "contexto": null,
+   "precoEntrada": null,
+   "precoSaida": null,
+   "velocidade": null,
+   "ttft": null,
+   "metricas": {
+    "arena_texto": 1361,
+    "aa_inteligencia": 5.5
+   },
+   "origens": {
+    "lmarena": "Granite 4.2 30B",
+    "artificialanalysis": "granite-4-2-30b"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 14,
+    "arena_texto": 4.2
+   },
+   "nota": 16.7,
+   "cobertura": 0.53,
+   "categorias": {
+    "conversa": 27.1
+   },
+   "posCategorias": {
+    "conversa": 47
+   },
+   "posicao": 78
   },
   {
    "chave": "nemotron-super-vl-3.5-nvfp4",
@@ -4446,53 +4535,14 @@
    },
    "posCategorias": {
     "agentico": 35,
-    "codigo": 51,
+    "codigo": 52,
     "raciocinio": 37,
     "dados": 30,
     "pesquisa": 31,
-    "design": 51,
+    "design": 52,
     "navegador": 34
    },
-   "posicao": 77
-  },
-  {
-   "chave": "granite-4.2-8b",
-   "slug": "granite-4.2-8b",
-   "familia": "granite-8b",
-   "versao": 4.2,
-   "nome": "Granite 4.2 8B",
-   "empresa": "IBM",
-   "aberto": true,
-   "hf": "ibm-granite/granite-4.2-8b",
-   "lancamento": "2026-08-31",
-   "contexto": 131072,
-   "precoEntrada": 0.06,
-   "precoSaida": 0.15,
-   "velocidade": 103.34,
-   "ttft": 0.73,
-   "metricas": {
-    "arena_texto": 1319,
-    "aa_inteligencia": 5.1
-   },
-   "origens": {
-    "lmarena": "Granite 4.2 8B",
-    "artificialanalysis": "granite-4-2-8b",
-    "openrouter": "ibm-granite/granite-4.2-8b"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 12.5,
-    "arena_texto": 2.2
-   },
-   "nota": 15.3,
-   "cobertura": 0.53,
-   "categorias": {
-    "conversa": 26.1
-   },
-   "posCategorias": {
-    "conversa": 46
-   },
-   "posicao": 78
+   "posicao": 79
   },
   {
    "chave": "north-mini-code",
@@ -4507,8 +4557,8 @@
    "contexto": null,
    "precoEntrada": 0,
    "precoSaida": 0,
-   "velocidade": 152.45,
-   "ttft": 0.37,
+   "velocidade": 186.68,
+   "ttft": 0.36,
    "metricas": {
     "aa_inteligencia": 3.4
    },
@@ -4517,12 +4567,51 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 3.8
+    "aa_inteligencia": 3.7
    },
    "nota": 15.3,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 79
+   "posicao": 80
+  },
+  {
+   "chave": "granite-4.2-8b",
+   "slug": "granite-4.2-8b",
+   "familia": "granite-8b",
+   "versao": 4.2,
+   "nome": "Granite 4.2 8B",
+   "empresa": "IBM",
+   "aberto": true,
+   "hf": "ibm-granite/granite-4.2-8b",
+   "lancamento": "2026-08-31",
+   "contexto": 131072,
+   "precoEntrada": 0.06,
+   "precoSaida": 0.15,
+   "velocidade": 120.83,
+   "ttft": 0.78,
+   "metricas": {
+    "arena_texto": 1319,
+    "aa_inteligencia": 5.1
+   },
+   "origens": {
+    "lmarena": "Granite 4.2 8B",
+    "artificialanalysis": "granite-4-2-8b",
+    "openrouter": "ibm-granite/granite-4.2-8b"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 12.2,
+    "arena_texto": 2.1
+   },
+   "nota": 15.1,
+   "cobertura": 0.53,
+   "categorias": {
+    "conversa": 26.1
+   },
+   "posCategorias": {
+    "conversa": 48
+   },
+   "posicao": 81
   },
   {
    "chave": "k2-horizon-0.9b",
@@ -4547,12 +4636,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 2.5
+    "aa_inteligencia": 2.4
    },
-   "nota": 14.4,
+   "nota": 14.3,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 80
+   "posicao": 82
   },
   {
    "chave": "nvidia-nemotron-3-nano-4b",
@@ -4577,12 +4666,12 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 1.3
+    "aa_inteligencia": 1.2
    },
-   "nota": 13.5,
+   "nota": 13.4,
    "cobertura": 0.32,
    "categorias": {},
-   "posicao": 81
+   "posicao": 83
   },
   {
    "chave": "granite-4.2-3b",
@@ -4609,48 +4698,18 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 10,
+    "aa_inteligencia": 9.8,
     "arena_texto": 0
    },
-   "nota": 13.3,
+   "nota": 13.2,
    "cobertura": 0.53,
    "categorias": {
     "conversa": 25
    },
    "posCategorias": {
-    "conversa": 47
+    "conversa": 49
    },
-   "posicao": 82
-  },
-  {
-   "chave": "lfm3-vl-2b",
-   "slug": "lfm3-vl-2b",
-   "familia": "lfm-vl-2b",
-   "versao": 3,
-   "nome": "LFM3-VL-2B",
-   "empresa": "Liquid AI",
-   "aberto": null,
-   "hf": null,
-   "lancamento": "2026-10-27",
-   "contexto": null,
-   "precoEntrada": 0.1,
-   "precoSaida": 0.5,
-   "velocidade": 434.54,
-   "ttft": 0.35,
-   "metricas": {
-    "aa_inteligencia": 1.7
-   },
-   "origens": {
-    "artificialanalysis": "lfm3-vl-2b"
-   },
-   "parcial": false,
-   "percentis": {
-    "aa_inteligencia": 0
-   },
-   "nota": 12.5,
-   "cobertura": 0.32,
-   "categorias": {},
-   "posicao": 83
+   "posicao": 84
   },
   {
    "chave": "gpt-oss-120b",
@@ -4665,8 +4724,8 @@
    "contexto": 131072,
    "precoEntrada": 0.15,
    "precoSaida": 0.6,
-   "velocidade": 231.15,
-   "ttft": 0.74,
+   "velocidade": 235.16,
+   "ttft": 0.76,
    "metricas": {
     "arena_texto": 1366,
     "aa_inteligencia": 3.8
@@ -4678,18 +4737,48 @@
    },
    "parcial": false,
    "percentis": {
-    "aa_inteligencia": 5,
-    "arena_texto": 4.3
+    "aa_inteligencia": 4.9,
+    "arena_texto": 6.3
    },
-   "nota": 12.3,
+   "nota": 12.9,
    "cobertura": 0.53,
    "categorias": {
-    "conversa": 27.1
+    "conversa": 28.1
    },
    "posCategorias": {
-    "conversa": 45
+    "conversa": 46
    },
-   "posicao": 84
+   "posicao": 85
+  },
+  {
+   "chave": "lfm3-vl-2b",
+   "slug": "lfm3-vl-2b",
+   "familia": "lfm-vl-2b",
+   "versao": 3,
+   "nome": "LFM3-VL-2B",
+   "empresa": "Liquid AI",
+   "aberto": null,
+   "hf": null,
+   "lancamento": "2026-10-27",
+   "contexto": null,
+   "precoEntrada": 0.1,
+   "precoSaida": 0.5,
+   "velocidade": 435.43,
+   "ttft": 0.33,
+   "metricas": {
+    "aa_inteligencia": 1.7
+   },
+   "origens": {
+    "artificialanalysis": "lfm3-vl-2b"
+   },
+   "parcial": false,
+   "percentis": {
+    "aa_inteligencia": 0
+   },
+   "nota": 12.5,
+   "cobertura": 0.32,
+   "categorias": {},
+   "posicao": 86
   },
   {
    "chave": "claude-opus-4.6",
@@ -4704,8 +4793,8 @@
    "contexto": 1000000,
    "precoEntrada": 5,
    "precoSaida": 25,
-   "velocidade": 39.29,
-   "ttft": 1.74,
+   "velocidade": 40.14,
+   "ttft": 1.79,
    "metricas": {
     "arena_texto": 1501,
     "arena_webdev": 1547,
@@ -4718,8 +4807,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 85.1,
-    "arena_webdev": 27.5,
+    "arena_texto": 83.7,
+    "arena_webdev": 25.9,
     "arena_visao": 86.2
    },
    "nota": null,
@@ -4740,7 +4829,7 @@
    "contexto": 1000000,
    "precoEntrada": 10,
    "precoSaida": 50,
-   "velocidade": 59.04,
+   "velocidade": 63.69,
    "ttft": 82.54,
    "metricas": {
     "arena_texto": 1492,
@@ -4754,8 +4843,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 80.9,
-    "arena_webdev": 54.9,
+    "arena_texto": 78.6,
+    "arena_webdev": 50.9,
     "arena_visao": 100
    },
    "nota": null,
@@ -4776,8 +4865,8 @@
    "contexto": 1000000,
    "precoEntrada": 5,
    "precoSaida": 25,
-   "velocidade": 44.66,
-   "ttft": 0.9,
+   "velocidade": 47.24,
+   "ttft": 0.95,
    "metricas": {
     "arena_texto": 1490,
     "arena_webdev": 1557,
@@ -4790,8 +4879,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 78.7,
-    "arena_webdev": 27.5,
+    "arena_texto": 77.6,
+    "arena_webdev": 25.9,
     "arena_visao": 93.1
    },
    "nota": null,
@@ -4826,45 +4915,9 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 78.7,
-    "arena_webdev": 39.2,
+    "arena_texto": 77.6,
+    "arena_webdev": 37,
     "arena_visao": 86.2
-   },
-   "nota": null,
-   "cobertura": 0.37,
-   "categorias": {},
-   "posicao": null
-  },
-  {
-   "chave": "gemini-3.5-flash",
-   "slug": "gemini-3.5-flash",
-   "familia": "gemini-flash",
-   "versao": 3.5,
-   "nome": "Gemini 3.5 Flash",
-   "empresa": "Google",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-05-19",
-   "contexto": 1048576,
-   "precoEntrada": 1.5,
-   "precoSaida": 9,
-   "velocidade": 200.81,
-   "ttft": 14.45,
-   "metricas": {
-    "arena_texto": 1483,
-    "arena_webdev": 1500,
-    "arena_visao": 1308
-   },
-   "origens": {
-    "lmarena": "Gemini 3.5 Flash (High)",
-    "artificialanalysis": "gemini-3-5-flash",
-    "openrouter": "google/gemini-3.5-flash"
-   },
-   "parcial": true,
-   "percentis": {
-    "arena_texto": 76.6,
-    "arena_webdev": 21.6,
-    "arena_visao": 79.3
    },
    "nota": null,
    "cobertura": 0.37,
@@ -4884,10 +4937,10 @@
    "contexto": 1048576,
    "precoEntrada": 1.25,
    "precoSaida": 4.25,
-   "velocidade": 250.9,
-   "ttft": 12.03,
+   "velocidade": 273.87,
+   "ttft": 12.77,
    "metricas": {
-    "arena_texto": 1483,
+    "arena_texto": 1484,
     "arena_webdev": 1534,
     "arena_visao": 1305
    },
@@ -4898,8 +4951,44 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 76.6,
-    "arena_webdev": 27.5,
+    "arena_texto": 75.5,
+    "arena_webdev": 25.9,
+    "arena_visao": 79.3
+   },
+   "nota": null,
+   "cobertura": 0.37,
+   "categorias": {},
+   "posicao": null
+  },
+  {
+   "chave": "gemini-3.5-flash",
+   "slug": "gemini-3.5-flash",
+   "familia": "gemini-flash",
+   "versao": 3.5,
+   "nome": "Gemini 3.5 Flash",
+   "empresa": "Google",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-05-19",
+   "contexto": 1048576,
+   "precoEntrada": 1.5,
+   "precoSaida": 9,
+   "velocidade": 204.34,
+   "ttft": 16.89,
+   "metricas": {
+    "arena_texto": 1483,
+    "arena_webdev": 1500,
+    "arena_visao": 1308
+   },
+   "origens": {
+    "lmarena": "Gemini 3.5 Flash (High)",
+    "artificialanalysis": "gemini-3-5-flash",
+    "openrouter": "google/gemini-3.5-flash"
+   },
+   "parcial": true,
+   "percentis": {
+    "arena_texto": 75.5,
+    "arena_webdev": 20.4,
     "arena_visao": 79.3
    },
    "nota": null,
@@ -4933,8 +5022,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 76.6,
-    "arena_webdev": 19.6,
+    "arena_texto": 75.5,
+    "arena_webdev": 18.5,
     "arena_visao": 79.3
    },
    "nota": null,
@@ -4956,7 +5045,7 @@
    "precoEntrada": 2,
    "precoSaida": 12,
    "velocidade": 139.84,
-   "ttft": 19.92,
+   "ttft": 21.26,
    "metricas": {
     "arena_texto": 1480,
     "arena_webdev": 1446,
@@ -4969,8 +5058,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 76.6,
-    "arena_webdev": 19.6,
+    "arena_texto": 75.5,
+    "arena_webdev": 18.5,
     "arena_visao": 79.3
    },
    "nota": null,
@@ -4991,10 +5080,10 @@
    "contexto": 1048576,
    "precoEntrada": 0.75,
    "precoSaida": 3.75,
-   "velocidade": 189.17,
-   "ttft": 16.21,
+   "velocidade": 188.81,
+   "ttft": 15.42,
    "metricas": {
-    "arena_texto": 1479,
+    "arena_texto": 1480,
     "arena_webdev": 1538,
     "arena_visao": 1297
    },
@@ -5005,8 +5094,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 76.6,
-    "arena_webdev": 27.5,
+    "arena_texto": 75.5,
+    "arena_webdev": 25.9,
     "arena_visao": 79.3
    },
    "nota": null,
@@ -5027,11 +5116,11 @@
    "contexto": 1048576,
    "precoEntrada": 1.25,
    "precoSaida": 4.25,
-   "velocidade": 260.77,
-   "ttft": 10.58,
+   "velocidade": 276.57,
+   "ttft": 11.47,
    "metricas": {
     "arena_texto": 1479,
-    "arena_webdev": 1542,
+    "arena_webdev": 1541,
     "arena_visao": 1292
    },
    "origens": {
@@ -5041,8 +5130,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 76.6,
-    "arena_webdev": 27.5,
+    "arena_texto": 75.5,
+    "arena_webdev": 25.9,
     "arena_visao": 75.9
    },
    "nota": null,
@@ -5063,11 +5152,11 @@
    "contexto": 1000000,
    "precoEntrada": 1.475,
    "precoSaida": 4.425,
-   "velocidade": 198.29,
-   "ttft": 2.19,
+   "velocidade": 198.47,
+   "ttft": 2.09,
    "metricas": {
     "arena_texto": 1475,
-    "arena_webdev": 1515
+    "arena_webdev": 1516
    },
    "origens": {
     "lmarena": "Qwen3.7-Max-Preview",
@@ -5076,8 +5165,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 74.5,
-    "arena_webdev": 21.6
+    "arena_texto": 73.5,
+    "arena_webdev": 20.4
    },
    "nota": null,
    "cobertura": 0.32,
@@ -5109,7 +5198,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 72.3,
+    "arena_texto": 72.4,
     "arena_visao": 79.3
    },
    "nota": null,
@@ -5130,8 +5219,8 @@
    "contexto": 1050000,
    "precoEntrada": 5,
    "precoSaida": 30,
-   "velocidade": 75.45,
-   "ttft": 66.76,
+   "velocidade": 86.41,
+   "ttft": 72.42,
    "metricas": {
     "arena_texto": 1471,
     "arena_webdev": 1512,
@@ -5144,8 +5233,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 70.2,
-    "arena_webdev": 21.6,
+    "arena_texto": 70.4,
+    "arena_webdev": 20.4,
     "arena_visao": 79.3
    },
    "nota": null,
@@ -5176,7 +5265,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 70.2
+    "arena_texto": 70.4
    },
    "nota": null,
    "cobertura": 0.21,
@@ -5194,12 +5283,12 @@
    "hf": "zai-org/GLM-5.2",
    "lancamento": "2026-06-16",
    "contexto": 1048576,
-   "precoEntrada": 0.007,
-   "precoSaida": 6.8,
-   "velocidade": 146.9,
-   "ttft": 1.24,
+   "precoEntrada": 0.62,
+   "precoSaida": 2.42,
+   "velocidade": 137.5,
+   "ttft": 1.2,
    "metricas": {
-    "arena_texto": 1469,
+    "arena_texto": 1470,
     "arena_webdev": 1608
    },
    "origens": {
@@ -5209,8 +5298,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 69.1,
-    "arena_webdev": 44.1
+    "arena_texto": 68.4,
+    "arena_webdev": 41.7
    },
    "nota": null,
    "cobertura": 0.32,
@@ -5230,11 +5319,11 @@
    "contexto": 1050000,
    "precoEntrada": 2.5,
    "precoSaida": 15,
-   "velocidade": 55.76,
+   "velocidade": 54.61,
    "ttft": 1.86,
    "metricas": {
     "arena_texto": 1469,
-    "arena_webdev": 1462,
+    "arena_webdev": 1461,
     "arena_visao": 1301
    },
    "origens": {
@@ -5244,8 +5333,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 69.1,
-    "arena_webdev": 19.6,
+    "arena_texto": 67.3,
+    "arena_webdev": 18.5,
     "arena_visao": 79.3
    },
    "nota": null,
@@ -5276,7 +5365,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 68.1
+    "arena_texto": 67.3
    },
    "nota": null,
    "cobertura": 0.21,
@@ -5296,8 +5385,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.5,
    "precoSaida": 3,
-   "velocidade": 202.29,
-   "ttft": 0.81,
+   "velocidade": 210.4,
+   "ttft": 0.82,
    "metricas": {
     "arena_texto": 1466,
     "arena_webdev": 1440,
@@ -5310,8 +5399,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 68.1,
-    "arena_webdev": 19.6,
+    "arena_texto": 67.3,
+    "arena_webdev": 18.5,
     "arena_visao": 72.4
    },
    "nota": null,
@@ -5345,8 +5434,42 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 67,
-    "arena_webdev": 19.6
+    "arena_texto": 67.3,
+    "arena_webdev": 18.5
+   },
+   "nota": null,
+   "cobertura": 0.32,
+   "categorias": {},
+   "posicao": null
+  },
+  {
+   "chave": "glm-5.1",
+   "slug": "glm-5.1",
+   "familia": "glm",
+   "versao": 5.1,
+   "nome": "GLM 5.1",
+   "empresa": "Z.ai",
+   "aberto": true,
+   "hf": "zai-org/GLM-5.1",
+   "lancamento": "2026-04-07",
+   "contexto": 204800,
+   "precoEntrada": 1.19,
+   "precoSaida": 3.74,
+   "velocidade": 99.98,
+   "ttft": 1.15,
+   "metricas": {
+    "arena_texto": 1463,
+    "arena_webdev": 1508
+   },
+   "origens": {
+    "lmarena": "GLM-5.1",
+    "artificialanalysis": "glm-5-1",
+    "openrouter": "z-ai/glm-5.1"
+   },
+   "parcial": true,
+   "percentis": {
+    "arena_texto": 66.3,
+    "arena_webdev": 20.4
    },
    "nota": null,
    "cobertura": 0.32,
@@ -5366,8 +5489,8 @@
    "contexto": 1000000,
    "precoEntrada": 5,
    "precoSaida": 25,
-   "velocidade": 55.2,
-   "ttft": 31.4,
+   "velocidade": 57.47,
+   "ttft": 36.54,
    "metricas": {
     "arena_texto": 1462,
     "arena_webdev": 1555,
@@ -5380,46 +5503,12 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 66,
-    "arena_webdev": 27.5,
+    "arena_texto": 64.3,
+    "arena_webdev": 25.9,
     "arena_visao": 77.6
    },
    "nota": null,
    "cobertura": 0.37,
-   "categorias": {},
-   "posicao": null
-  },
-  {
-   "chave": "glm-5.1",
-   "slug": "glm-5.1",
-   "familia": "glm",
-   "versao": 5.1,
-   "nome": "GLM 5.1",
-   "empresa": "Z.ai",
-   "aberto": true,
-   "hf": "zai-org/GLM-5.1",
-   "lancamento": "2026-04-07",
-   "contexto": 204800,
-   "precoEntrada": 1.4,
-   "precoSaida": 4.4,
-   "velocidade": 92.36,
-   "ttft": 1.2,
-   "metricas": {
-    "arena_texto": 1462,
-    "arena_webdev": 1508
-   },
-   "origens": {
-    "lmarena": "GLM-5.1",
-    "artificialanalysis": "glm-5-1",
-    "openrouter": "z-ai/glm-5.1"
-   },
-   "parcial": true,
-   "percentis": {
-    "arena_texto": 66,
-    "arena_webdev": 21.6
-   },
-   "nota": null,
-   "cobertura": 0.32,
    "categorias": {},
    "posicao": null
   },
@@ -5436,8 +5525,8 @@
    "contexto": 1000000,
    "precoEntrada": 3,
    "precoSaida": 15,
-   "velocidade": 43.74,
-   "ttft": 1.19,
+   "velocidade": 44.83,
+   "ttft": 1.11,
    "metricas": {
     "arena_texto": 1458,
     "arena_webdev": 1522,
@@ -5450,8 +5539,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 63.8,
-    "arena_webdev": 25.5,
+    "arena_texto": 63.3,
+    "arena_webdev": 24.1,
     "arena_visao": 69
    },
    "nota": null,
@@ -5476,7 +5565,7 @@
    "ttft": null,
    "metricas": {
     "arena_texto": 1458,
-    "arena_webdev": 1226,
+    "arena_webdev": 1227,
     "arena_visao": 1263
    },
    "origens": {
@@ -5486,7 +5575,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 63.8,
+    "arena_texto": 63.3,
     "arena_webdev": 0,
     "arena_visao": 39.7
    },
@@ -5508,11 +5597,11 @@
    "contexto": 1050000,
    "precoEntrada": 4,
    "precoSaida": 20,
-   "velocidade": 106.95,
+   "velocidade": 107.44,
    "ttft": 3.2,
    "metricas": {
     "arena_texto": 1457,
-    "arena_webdev": 1616,
+    "arena_webdev": 1615,
     "arena_visao": 1282
    },
    "origens": {
@@ -5522,8 +5611,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 63.8,
-    "arena_webdev": 47.1,
+    "arena_texto": 63.3,
+    "arena_webdev": 44.4,
     "arena_visao": 69
    },
    "nota": null,
@@ -5544,11 +5633,11 @@
    "contexto": 262144,
    "precoEntrada": 0.65,
    "precoSaida": 3.41,
-   "velocidade": 39.9,
-   "ttft": 2.82,
+   "velocidade": 38.54,
+   "ttft": 2.88,
    "metricas": {
-    "arena_texto": 1455,
-    "arena_webdev": 1510,
+    "arena_texto": 1456,
+    "arena_webdev": 1509,
     "arena_visao": 1282
    },
    "origens": {
@@ -5558,8 +5647,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 63.8,
-    "arena_webdev": 21.6,
+    "arena_texto": 63.3,
+    "arena_webdev": 20.4,
     "arena_visao": 69
    },
    "nota": null,
@@ -5580,8 +5669,8 @@
    "contexto": 1000000,
    "precoEntrada": 0.32,
    "precoSaida": 1.28,
-   "velocidade": 57.59,
-   "ttft": 2.26,
+   "velocidade": 57.62,
+   "ttft": 2.2,
    "metricas": {
     "arena_texto": 1454,
     "arena_visao": 1277
@@ -5593,7 +5682,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 63.8,
+    "arena_texto": 63.3,
     "arena_visao": 58.6
    },
    "nota": null,
@@ -5614,11 +5703,11 @@
    "contexto": 200000,
    "precoEntrada": 5,
    "precoSaida": 25,
-   "velocidade": 49.71,
-   "ttft": 15.63,
+   "velocidade": 56.38,
+   "ttft": 16.85,
    "metricas": {
     "arena_texto": 1451,
-    "arena_webdev": 1493
+    "arena_webdev": 1494
    },
    "origens": {
     "lmarena": "Claude Opus 4.5 (20251101)",
@@ -5627,8 +5716,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 61.7,
-    "arena_webdev": 21.6
+    "arena_texto": 62.2,
+    "arena_webdev": 20.4
    },
    "nota": null,
    "cobertura": 0.32,
@@ -5662,8 +5751,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 61.7,
-    "arena_webdev": 11.8,
+    "arena_texto": 62.2,
+    "arena_webdev": 11.1,
     "arena_visao": 39.7
    },
    "nota": null,
@@ -5696,7 +5785,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 61.7,
+    "arena_texto": 62.2,
     "arena_visao": 34.5
    },
    "nota": null,
@@ -5727,7 +5816,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 58.5
+    "arena_texto": 58.2
    },
    "nota": null,
    "cobertura": 0.21,
@@ -5750,7 +5839,7 @@
    "velocidade": null,
    "ttft": null,
    "metricas": {
-    "arena_texto": 1448,
+    "arena_texto": 1449,
     "arena_visao": 1274
    },
    "origens": {
@@ -5758,7 +5847,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 57.4,
+    "arena_texto": 58.2,
     "arena_visao": 58.6
    },
    "nota": null,
@@ -5779,8 +5868,8 @@
    "contexto": 500000,
    "precoEntrada": 2,
    "precoSaida": 6,
-   "velocidade": 56.39,
-   "ttft": 9.7,
+   "velocidade": 61.02,
+   "ttft": 10.28,
    "metricas": {
     "arena_texto": 1448,
     "arena_webdev": 1552,
@@ -5793,8 +5882,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 57.4,
-    "arena_webdev": 27.5,
+    "arena_texto": 57.1,
+    "arena_webdev": 25.9,
     "arena_visao": 75.9
    },
    "nota": null,
@@ -5815,8 +5904,8 @@
    "contexto": 204800,
    "precoEntrada": 1,
    "precoSaida": 3.2,
-   "velocidade": 67.52,
-   "ttft": 1.81,
+   "velocidade": 68.58,
+   "ttft": 1.65,
    "metricas": {
     "arena_texto": 1446,
     "arena_webdev": 1435
@@ -5828,8 +5917,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 57.4,
-    "arena_webdev": 19.6
+    "arena_texto": 55.1,
+    "arena_webdev": 18.5
    },
    "nota": null,
    "cobertura": 0.32,
@@ -5861,11 +5950,41 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 57.4,
-    "arena_webdev": 19.6
+    "arena_texto": 55.1,
+    "arena_webdev": 18.5
    },
    "nota": null,
    "cobertura": 0.32,
+   "categorias": {},
+   "posicao": null
+  },
+  {
+   "chave": "grok-4.20-beta-1",
+   "slug": "grok-4.20-beta-1",
+   "familia": "grok-beta",
+   "versao": 4.2,
+   "nome": "Grok 4.20 Beta 1",
+   "empresa": "xAI",
+   "aberto": false,
+   "hf": null,
+   "lancamento": null,
+   "contexto": null,
+   "precoEntrada": null,
+   "precoSaida": null,
+   "velocidade": null,
+   "ttft": null,
+   "metricas": {
+    "arena_texto": 1445
+   },
+   "origens": {
+    "lmarena": "Grok 4.20 Beta 1"
+   },
+   "parcial": true,
+   "percentis": {
+    "arena_texto": 54.1
+   },
+   "nota": null,
+   "cobertura": 0.21,
    "categorias": {},
    "posicao": null
   },
@@ -5882,11 +6001,11 @@
    "contexto": 262144,
    "precoEntrada": 0.5,
    "precoSaida": 2.5,
-   "velocidade": 54.14,
-   "ttft": 1.68,
+   "velocidade": 49.81,
+   "ttft": 1.63,
    "metricas": {
     "arena_texto": 1445,
-    "arena_webdev": 1437,
+    "arena_webdev": 1436,
     "arena_visao": 1269
    },
    "origens": {
@@ -5896,8 +6015,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 55.3,
-    "arena_webdev": 19.6,
+    "arena_texto": 54.1,
+    "arena_webdev": 18.5,
     "arena_visao": 53.4
    },
    "nota": null,
@@ -5930,41 +6049,11 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 53.2,
+    "arena_texto": 53.1,
     "arena_visao": 27.6
    },
    "nota": null,
    "cobertura": 0.26,
-   "categorias": {},
-   "posicao": null
-  },
-  {
-   "chave": "grok-4.20-beta-1",
-   "slug": "grok-4.20-beta-1",
-   "familia": "grok-beta",
-   "versao": 4.2,
-   "nome": "Grok 4.20 Beta 1",
-   "empresa": "xAI",
-   "aberto": false,
-   "hf": null,
-   "lancamento": null,
-   "contexto": null,
-   "precoEntrada": null,
-   "precoSaida": null,
-   "velocidade": null,
-   "ttft": null,
-   "metricas": {
-    "arena_texto": 1444
-   },
-   "origens": {
-    "lmarena": "Grok 4.20 Beta 1"
-   },
-   "parcial": true,
-   "percentis": {
-    "arena_texto": 53.2
-   },
-   "nota": null,
-   "cobertura": 0.21,
    "categorias": {},
    "posicao": null
   },
@@ -5981,11 +6070,11 @@
    "contexto": 400000,
    "precoEntrada": 1.25,
    "precoSaida": 10,
-   "velocidade": 96.07,
-   "ttft": 44.01,
+   "velocidade": 93.61,
+   "ttft": 39.04,
    "metricas": {
     "arena_texto": 1443,
-    "arena_webdev": 1398,
+    "arena_webdev": 1397,
     "arena_visao": 1249
    },
    "origens": {
@@ -5996,7 +6085,7 @@
    "parcial": true,
    "percentis": {
     "arena_texto": 50,
-    "arena_webdev": 11.8,
+    "arena_webdev": 11.1,
     "arena_visao": 29.3
    },
    "nota": null,
@@ -6017,8 +6106,8 @@
    "contexto": 1000000,
    "precoEntrada": 2,
    "precoSaida": 10,
-   "velocidade": 63.25,
-   "ttft": 1.24,
+   "velocidade": 66.12,
+   "ttft": 1.26,
    "metricas": {
     "arena_texto": 1442,
     "arena_webdev": 1539,
@@ -6031,8 +6120,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 46.8,
-    "arena_webdev": 27.5,
+    "arena_texto": 46.9,
+    "arena_webdev": 25.9,
     "arena_visao": 58.6
    },
    "nota": null,
@@ -6053,8 +6142,8 @@
    "contexto": 204800,
    "precoEntrada": 0.5,
    "precoSaida": 2,
-   "velocidade": 37.39,
-   "ttft": 2.81,
+   "velocidade": 37.88,
+   "ttft": 3.88,
    "metricas": {
     "arena_texto": 1440,
     "arena_webdev": 1342
@@ -6066,8 +6155,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 45.7,
-    "arena_webdev": 5.9
+    "arena_texto": 44.9,
+    "arena_webdev": 5.6
    },
    "nota": null,
    "cobertura": 0.32,
@@ -6087,8 +6176,8 @@
    "contexto": 1000000,
    "precoEntrada": 3,
    "precoSaida": 15,
-   "velocidade": 45.03,
-   "ttft": 14.94,
+   "velocidade": 48.82,
+   "ttft": 13.98,
    "metricas": {
     "arena_texto": 1439,
     "arena_webdev": 1394
@@ -6100,8 +6189,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 44.7,
-    "arena_webdev": 11.8
+    "arena_texto": 44.9,
+    "arena_webdev": 11.1
    },
    "nota": null,
    "cobertura": 0.32,
@@ -6125,7 +6214,7 @@
    "ttft": null,
    "metricas": {
     "arena_texto": 1439,
-    "arena_webdev": 1506
+    "arena_webdev": 1505
    },
    "origens": {
     "lmarena": "Hy3",
@@ -6134,8 +6223,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 44.7,
-    "arena_webdev": 21.6
+    "arena_texto": 44.9,
+    "arena_webdev": 20.4
    },
    "nota": null,
    "cobertura": 0.32,
@@ -6166,7 +6255,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 44.7
+    "arena_texto": 44.9
    },
    "nota": null,
    "cobertura": 0.21,
@@ -6198,7 +6287,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 44.7,
+    "arena_texto": 44.9,
     "arena_visao": 50
    },
    "nota": null,
@@ -6220,7 +6309,7 @@
    "precoEntrada": 0.45,
    "precoSaida": 3,
    "velocidade": 58.27,
-   "ttft": 2.12,
+   "ttft": 2.09,
    "metricas": {
     "arena_texto": 1438,
     "arena_webdev": 1400,
@@ -6233,8 +6322,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 44.7,
-    "arena_webdev": 11.8,
+    "arena_texto": 44.9,
+    "arena_webdev": 11.1,
     "arena_visao": 37.9
    },
    "nota": null,
@@ -6266,7 +6355,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 43.6,
+    "arena_texto": 43.9,
     "arena_webdev": 0
    },
    "nota": null,
@@ -6290,8 +6379,8 @@
    "velocidade": null,
    "ttft": null,
    "metricas": {
-    "arena_texto": 1436,
-    "arena_webdev": 1434
+    "arena_texto": 1437,
+    "arena_webdev": 1435
    },
    "origens": {
     "lmarena": "MiMo-V2-Pro",
@@ -6299,8 +6388,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 42.6,
-    "arena_webdev": 19.6
+    "arena_texto": 43.9,
+    "arena_webdev": 18.5
    },
    "nota": null,
    "cobertura": 0.32,
@@ -6320,8 +6409,8 @@
    "contexto": 1000000,
    "precoEntrada": 0.325,
    "precoSaida": 1.95,
-   "velocidade": 54.92,
-   "ttft": 2.11,
+   "velocidade": 55.42,
+   "ttft": 2.08,
    "metricas": {
     "arena_texto": 1436,
     "arena_webdev": 1461
@@ -6333,8 +6422,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 42.6,
-    "arena_webdev": 19.6
+    "arena_texto": 42.9,
+    "arena_webdev": 18.5
    },
    "nota": null,
    "cobertura": 0.32,
@@ -6354,8 +6443,8 @@
    "contexto": 204800,
    "precoEntrada": 0.4,
    "precoSaida": 1.75,
-   "velocidade": 39.96,
-   "ttft": 1.59,
+   "velocidade": 40.24,
+   "ttft": 1.95,
    "metricas": {
     "arena_texto": 1435,
     "arena_webdev": 1436
@@ -6367,8 +6456,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 41.5,
-    "arena_webdev": 19.6
+    "arena_texto": 41.8,
+    "arena_webdev": 18.5
    },
    "nota": null,
    "cobertura": 0.32,
@@ -6388,8 +6477,8 @@
    "contexto": 262144,
    "precoEntrada": 0.09,
    "precoSaida": 0.3,
-   "velocidade": 76.88,
-   "ttft": 0.94,
+   "velocidade": 85.36,
+   "ttft": 0.95,
    "metricas": {
     "arena_texto": 1434,
     "arena_webdev": 1358,
@@ -6402,8 +6491,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 40.4,
-    "arena_webdev": 7.8,
+    "arena_texto": 40.8,
+    "arena_webdev": 7.4,
     "arena_visao": 36.2
    },
    "nota": null,
@@ -6422,13 +6511,13 @@
    "hf": null,
    "lancamento": "2026-08-01",
    "contexto": 1048576,
-   "precoEntrada": 0.0434,
-   "precoSaida": 0.3,
+   "precoEntrada": 0.0466,
+   "precoSaida": 0.1399,
    "velocidade": null,
    "ttft": null,
    "metricas": {
     "arena_texto": 1432,
-    "arena_webdev": 1582
+    "arena_webdev": 1581
    },
    "origens": {
     "lmarena": "DeepSeek-V4-Flash",
@@ -6437,8 +6526,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 40.4,
-    "arena_webdev": 36.3
+    "arena_texto": 40.8,
+    "arena_webdev": 32.4
    },
    "nota": null,
    "cobertura": 0.32,
@@ -6470,10 +6559,45 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 37.2
+    "arena_texto": 37.8
    },
    "nota": null,
    "cobertura": 0.21,
+   "categorias": {},
+   "posicao": null
+  },
+  {
+   "chave": "mistral-large-3",
+   "slug": "mistral-large-3",
+   "familia": "mistral-large",
+   "versao": 3,
+   "nome": "Mistral Large 3",
+   "empresa": "Mistral",
+   "aberto": true,
+   "hf": null,
+   "lancamento": "2025-12-02",
+   "contexto": null,
+   "precoEntrada": 0.5,
+   "precoSaida": 1.5,
+   "velocidade": 84.8,
+   "ttft": 1.25,
+   "metricas": {
+    "arena_texto": 1429,
+    "arena_webdev": 1233,
+    "arena_visao": 1222
+   },
+   "origens": {
+    "lmarena": "Mistral Large 3",
+    "artificialanalysis": "mistral-large-3"
+   },
+   "parcial": true,
+   "percentis": {
+    "arena_texto": 36.7,
+    "arena_webdev": 0,
+    "arena_visao": 8.6
+   },
+   "nota": null,
+   "cobertura": 0.37,
    "categorias": {},
    "posicao": null
   },
@@ -6493,7 +6617,7 @@
    "velocidade": null,
    "ttft": null,
    "metricas": {
-    "arena_texto": 1429,
+    "arena_texto": 1428,
     "arena_visao": 1243
    },
    "origens": {
@@ -6501,78 +6625,11 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 36.2,
+    "arena_texto": 36.7,
     "arena_visao": 24.1
    },
    "nota": null,
    "cobertura": 0.26,
-   "categorias": {},
-   "posicao": null
-  },
-  {
-   "chave": "mistral-large-3",
-   "slug": "mistral-large-3",
-   "familia": "mistral-large",
-   "versao": 3,
-   "nome": "Mistral Large 3",
-   "empresa": "Mistral",
-   "aberto": true,
-   "hf": null,
-   "lancamento": "2025-12-02",
-   "contexto": null,
-   "precoEntrada": 0.5,
-   "precoSaida": 1.5,
-   "velocidade": 85.47,
-   "ttft": 1.33,
-   "metricas": {
-    "arena_texto": 1429,
-    "arena_webdev": 1231,
-    "arena_visao": 1222
-   },
-   "origens": {
-    "lmarena": "Mistral Large 3",
-    "artificialanalysis": "mistral-large-3"
-   },
-   "parcial": true,
-   "percentis": {
-    "arena_texto": 36.2,
-    "arena_webdev": 0,
-    "arena_visao": 8.6
-   },
-   "nota": null,
-   "cobertura": 0.37,
-   "categorias": {},
-   "posicao": null
-  },
-  {
-   "chave": "deepseek-r1",
-   "slug": "deepseek-r1",
-   "familia": "deepseek-r",
-   "versao": 1,
-   "nome": "R1 0528",
-   "empresa": "DeepSeek",
-   "aberto": true,
-   "hf": "deepseek-ai/DeepSeek-R1-0528",
-   "lancamento": "2025-05-28",
-   "contexto": 163840,
-   "precoEntrada": 0.571,
-   "precoSaida": 2.286,
-   "velocidade": 166.63,
-   "ttft": 1.02,
-   "metricas": {
-    "arena_texto": 1428
-   },
-   "origens": {
-    "lmarena": "DeepSeek-R1 (0528)",
-    "artificialanalysis": "deepseek-r1-0120",
-    "openrouter": "deepseek/deepseek-r1-0528"
-   },
-   "parcial": true,
-   "percentis": {
-    "arena_texto": 35.1
-   },
-   "nota": null,
-   "cobertura": 0.21,
    "categorias": {},
    "posicao": null
   },
@@ -6592,7 +6649,7 @@
    "velocidade": null,
    "ttft": null,
    "metricas": {
-    "arena_texto": 1427,
+    "arena_texto": 1428,
     "arena_webdev": 1438,
     "arena_visao": 1248
    },
@@ -6603,12 +6660,44 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 34,
-    "arena_webdev": 19.6,
+    "arena_texto": 36.7,
+    "arena_webdev": 18.5,
     "arena_visao": 27.6
    },
    "nota": null,
    "cobertura": 0.37,
+   "categorias": {},
+   "posicao": null
+  },
+  {
+   "chave": "deepseek-r1",
+   "slug": "deepseek-r1",
+   "familia": "deepseek-r",
+   "versao": 1,
+   "nome": "R1 0528",
+   "empresa": "DeepSeek",
+   "aberto": true,
+   "hf": "deepseek-ai/DeepSeek-R1-0528",
+   "lancamento": "2025-05-28",
+   "contexto": 163840,
+   "precoEntrada": 0.571,
+   "precoSaida": 2.286,
+   "velocidade": 158.73,
+   "ttft": 1.02,
+   "metricas": {
+    "arena_texto": 1428
+   },
+   "origens": {
+    "lmarena": "DeepSeek-R1 (0528)",
+    "artificialanalysis": "deepseek-r1-0120",
+    "openrouter": "deepseek/deepseek-r1-0528"
+   },
+   "parcial": true,
+   "percentis": {
+    "arena_texto": 36.7
+   },
+   "nota": null,
+   "cobertura": 0.21,
    "categorias": {},
    "posicao": null
   },
@@ -6636,7 +6725,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 34
+    "arena_texto": 34.7
    },
    "nota": null,
    "cobertura": 0.21,
@@ -6666,7 +6755,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 34
+    "arena_texto": 34.7
    },
    "nota": null,
    "cobertura": 0.21,
@@ -6690,7 +6779,7 @@
    "ttft": null,
    "metricas": {
     "arena_texto": 1425,
-    "arena_webdev": 1362
+    "arena_webdev": 1363
    },
    "origens": {
     "lmarena": "DeepSeek-V3.2-Exp (Thinking)",
@@ -6699,8 +6788,41 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 34,
-    "arena_webdev": 7.8
+    "arena_texto": 34.7,
+    "arena_webdev": 7.4
+   },
+   "nota": null,
+   "cobertura": 0.32,
+   "categorias": {},
+   "posicao": null
+  },
+  {
+   "chave": "beam-1.0-501b-a23b",
+   "slug": "beam-1.0-501b-a23b",
+   "familia": "beam-501b-a23b",
+   "versao": 1,
+   "nome": "Beam 1.0 501B A23B",
+   "empresa": "Reflection",
+   "aberto": true,
+   "hf": "reflection/Beam-1.0-501B-A23B",
+   "lancamento": "2026-10-16",
+   "contexto": 1048576,
+   "precoEntrada": 0.25,
+   "precoSaida": 1,
+   "velocidade": null,
+   "ttft": null,
+   "metricas": {
+    "arena_texto": 1424,
+    "arena_webdev": 1437
+   },
+   "origens": {
+    "lmarena": "Beam 1.0 501B A23B",
+    "openrouter": "reflection/beam-1.0-501b-a23b"
+   },
+   "parcial": true,
+   "percentis": {
+    "arena_texto": 34.7,
+    "arena_webdev": 18.5
    },
    "nota": null,
    "cobertura": 0.32,
@@ -6723,7 +6845,7 @@
    "velocidade": null,
    "ttft": null,
    "metricas": {
-    "arena_texto": 1425,
+    "arena_texto": 1424,
     "arena_visao": 1172
    },
    "origens": {
@@ -6733,44 +6855,11 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 34,
+    "arena_texto": 34.7,
     "arena_visao": 0
    },
    "nota": null,
    "cobertura": 0.26,
-   "categorias": {},
-   "posicao": null
-  },
-  {
-   "chave": "beam-1.0-501b-a23b",
-   "slug": "beam-1.0-501b-a23b",
-   "familia": "beam-501b-a23b",
-   "versao": 1,
-   "nome": "Beam 1.0 501B A23B",
-   "empresa": "Reflection",
-   "aberto": true,
-   "hf": "reflection/Beam-1.0-501B-A23B",
-   "lancamento": "2026-10-16",
-   "contexto": 1048576,
-   "precoEntrada": 0.3,
-   "precoSaida": 1,
-   "velocidade": null,
-   "ttft": null,
-   "metricas": {
-    "arena_texto": 1424,
-    "arena_webdev": 1436
-   },
-   "origens": {
-    "lmarena": "Beam 1.0 501B A23B",
-    "openrouter": "reflection/beam-1.0-501b-a23b"
-   },
-   "parcial": true,
-   "percentis": {
-    "arena_texto": 34,
-    "arena_webdev": 19.6
-   },
-   "nota": null,
-   "cobertura": 0.32,
    "categorias": {},
    "posicao": null
   },
@@ -6799,7 +6888,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 34,
+    "arena_texto": 34.7,
     "arena_visao": 10.3
    },
    "nota": null,
@@ -6820,8 +6909,8 @@
    "contexto": null,
    "precoEntrada": 0.425,
    "precoSaida": 1.34,
-   "velocidade": 151.51,
-   "ttft": 1.39,
+   "velocidade": 125.2,
+   "ttft": 1.41,
    "metricas": {
     "arena_texto": 1420
    },
@@ -6831,10 +6920,75 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 31.9
+    "arena_texto": 32.7
    },
    "nota": null,
    "cobertura": 0.21,
+   "categorias": {},
+   "posicao": null
+  },
+  {
+   "chave": "deepseek-v3.1-terminus",
+   "slug": "deepseek-v3.1-terminus",
+   "familia": "deepseek-terminus",
+   "versao": 3.1,
+   "nome": "DeepSeek V3.1 Terminus",
+   "empresa": "DeepSeek",
+   "aberto": true,
+   "hf": "deepseek-ai/DeepSeek-V3.1-Terminus",
+   "lancamento": "2025-09-22",
+   "contexto": 163840,
+   "precoEntrada": 0.27,
+   "precoSaida": 1,
+   "velocidade": null,
+   "ttft": null,
+   "metricas": {
+    "arena_texto": 1420
+   },
+   "origens": {
+    "lmarena": "DeepSeek-V3.1-Terminus (Thinking)",
+    "artificialanalysis": "deepseek-v3-1-terminus-reasoning",
+    "openrouter": "deepseek/deepseek-v3.1-terminus"
+   },
+   "parcial": true,
+   "percentis": {
+    "arena_texto": 32.7
+   },
+   "nota": null,
+   "cobertura": 0.21,
+   "categorias": {},
+   "posicao": null
+  },
+  {
+   "chave": "gpt-5.5-instant",
+   "slug": "gpt-5.5-instant",
+   "familia": "gpt-instant",
+   "versao": 5.5,
+   "nome": "GPT-5.5 Instant",
+   "empresa": "OpenAI",
+   "aberto": false,
+   "hf": null,
+   "lancamento": "2026-06-25",
+   "contexto": null,
+   "precoEntrada": 5,
+   "precoSaida": 30,
+   "velocidade": 152.12,
+   "ttft": 1.87,
+   "metricas": {
+    "arena_texto": 1420,
+    "arena_visao": 1251
+   },
+   "origens": {
+    "lmarena": "GPT-5.5 Instant",
+    "artificialanalysis": "gpt-5-5-instant-06-26"
+   },
+   "parcial": true,
+   "percentis": {
+    "arena_texto": 32.7,
+    "arena_visao": 31
+   },
+   "nota": null,
+   "cobertura": 0.26,
    "categorias": {},
    "posicao": null
   },
@@ -6864,7 +7018,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 31.9,
+    "arena_texto": 32.7,
     "arena_visao": 27.6
    },
    "nota": null,
@@ -6898,76 +7052,11 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 31.9,
-    "arena_webdev": 11.8
+    "arena_texto": 32.7,
+    "arena_webdev": 11.1
    },
    "nota": null,
    "cobertura": 0.32,
-   "categorias": {},
-   "posicao": null
-  },
-  {
-   "chave": "deepseek-v3.1-terminus",
-   "slug": "deepseek-v3.1-terminus",
-   "familia": "deepseek-terminus",
-   "versao": 3.1,
-   "nome": "DeepSeek V3.1 Terminus",
-   "empresa": "DeepSeek",
-   "aberto": true,
-   "hf": "deepseek-ai/DeepSeek-V3.1-Terminus",
-   "lancamento": "2025-09-22",
-   "contexto": 163840,
-   "precoEntrada": 0.27,
-   "precoSaida": 1,
-   "velocidade": null,
-   "ttft": null,
-   "metricas": {
-    "arena_texto": 1419
-   },
-   "origens": {
-    "lmarena": "DeepSeek-V3.1-Terminus (Thinking)",
-    "artificialanalysis": "deepseek-v3-1-terminus-reasoning",
-    "openrouter": "deepseek/deepseek-v3.1-terminus"
-   },
-   "parcial": true,
-   "percentis": {
-    "arena_texto": 31.9
-   },
-   "nota": null,
-   "cobertura": 0.21,
-   "categorias": {},
-   "posicao": null
-  },
-  {
-   "chave": "gpt-5.5-instant",
-   "slug": "gpt-5.5-instant",
-   "familia": "gpt-instant",
-   "versao": 5.5,
-   "nome": "GPT-5.5 Instant",
-   "empresa": "OpenAI",
-   "aberto": false,
-   "hf": null,
-   "lancamento": "2026-06-25",
-   "contexto": null,
-   "precoEntrada": 5,
-   "precoSaida": 30,
-   "velocidade": 150.46,
-   "ttft": 1.97,
-   "metricas": {
-    "arena_texto": 1419,
-    "arena_visao": 1251
-   },
-   "origens": {
-    "lmarena": "GPT-5.5 Instant",
-    "artificialanalysis": "gpt-5-5-instant-06-26"
-   },
-   "parcial": true,
-   "percentis": {
-    "arena_texto": 31.9,
-    "arena_visao": 31
-   },
-   "nota": null,
-   "cobertura": 0.26,
    "categorias": {},
    "posicao": null
   },
@@ -6984,8 +7073,8 @@
    "contexto": 128000,
    "precoEntrada": 0.45,
    "precoSaida": 3.5,
-   "velocidade": 40.17,
-   "ttft": 1.23,
+   "velocidade": 42.85,
+   "ttft": 1.21,
    "metricas": {
     "arena_texto": 1419
    },
@@ -6996,10 +7085,46 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 31.9
+    "arena_texto": 32.7
    },
    "nota": null,
    "cobertura": 0.21,
+   "categorias": {},
+   "posicao": null
+  },
+  {
+   "chave": "qwen3.5-122b-a10b",
+   "slug": "qwen3.5-122b-a10b",
+   "familia": "qwen-122b-a10b",
+   "versao": 3.5,
+   "nome": "Qwen3.5-122B-A10B",
+   "empresa": "Alibaba",
+   "aberto": true,
+   "hf": "Qwen/Qwen3.5-122B-A10B",
+   "lancamento": "2026-02-25",
+   "contexto": 262144,
+   "precoEntrada": 0.26,
+   "precoSaida": 2.08,
+   "velocidade": 143.82,
+   "ttft": 2.21,
+   "metricas": {
+    "arena_texto": 1418,
+    "arena_webdev": 1360,
+    "arena_visao": 1244
+   },
+   "origens": {
+    "lmarena": "Qwen3.5-122B-A10B",
+    "artificialanalysis": "qwen3-5-122b-a10b-non-reasoning",
+    "openrouter": "qwen/qwen3.5-122b-a10b"
+   },
+   "parcial": true,
+   "percentis": {
+    "arena_texto": 32.7,
+    "arena_webdev": 7.4,
+    "arena_visao": 25.9
+   },
+   "nota": null,
+   "cobertura": 0.37,
    "categorias": {},
    "posicao": null
   },
@@ -7016,8 +7141,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.3,
    "precoSaida": 2.5,
-   "velocidade": 216.46,
-   "ttft": 14.35,
+   "velocidade": 224.65,
+   "ttft": 14.94,
    "metricas": {
     "arena_texto": 1417,
     "arena_visao": 1253
@@ -7029,7 +7154,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 31.9,
+    "arena_texto": 32.7,
     "arena_visao": 31
    },
    "nota": null,
@@ -7062,7 +7187,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 31.9,
+    "arena_texto": 32.7,
     "arena_visao": 0
    },
    "nota": null,
@@ -7083,8 +7208,8 @@
    "contexto": 262144,
    "precoEntrada": 0.1,
    "precoSaida": 1.1,
-   "velocidade": 153.86,
-   "ttft": 0.81,
+   "velocidade": 153.88,
+   "ttft": 0.79,
    "metricas": {
     "arena_texto": 1417
    },
@@ -7095,46 +7220,10 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 31.9
+    "arena_texto": 32.7
    },
    "nota": null,
    "cobertura": 0.21,
-   "categorias": {},
-   "posicao": null
-  },
-  {
-   "chave": "qwen3.5-122b-a10b",
-   "slug": "qwen3.5-122b-a10b",
-   "familia": "qwen-122b-a10b",
-   "versao": 3.5,
-   "nome": "Qwen3.5-122B-A10B",
-   "empresa": "Alibaba",
-   "aberto": true,
-   "hf": "Qwen/Qwen3.5-122B-A10B",
-   "lancamento": "2026-02-25",
-   "contexto": 262144,
-   "precoEntrada": 0.26,
-   "precoSaida": 2.08,
-   "velocidade": 140.45,
-   "ttft": 2.29,
-   "metricas": {
-    "arena_texto": 1417,
-    "arena_webdev": 1360,
-    "arena_visao": 1244
-   },
-   "origens": {
-    "lmarena": "Qwen3.5-122B-A10B",
-    "artificialanalysis": "qwen3-5-122b-a10b-non-reasoning",
-    "openrouter": "qwen/qwen3.5-122b-a10b"
-   },
-   "parcial": true,
-   "percentis": {
-    "arena_texto": 31.9,
-    "arena_webdev": 7.8,
-    "arena_visao": 25.9
-   },
-   "nota": null,
-   "cobertura": 0.37,
    "categorias": {},
    "posicao": null
   },
@@ -7151,8 +7240,8 @@
    "contexto": 400000,
    "precoEntrada": 1.75,
    "precoSaida": 14,
-   "velocidade": 72.14,
-   "ttft": 180.09,
+   "velocidade": 73.67,
+   "ttft": 143.79,
    "metricas": {
     "arena_texto": 1416,
     "arena_webdev": 1419,
@@ -7165,8 +7254,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 30.9,
-    "arena_webdev": 17.6,
+    "arena_texto": 31.6,
+    "arena_webdev": 16.7,
     "arena_visao": 27.6
    },
    "nota": null,
@@ -7190,7 +7279,7 @@
    "velocidade": null,
    "ttft": null,
    "metricas": {
-    "arena_texto": 1414,
+    "arena_texto": 1415,
     "arena_webdev": 1322
    },
    "origens": {
@@ -7198,8 +7287,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 28.7,
-    "arena_webdev": 3.9
+    "arena_texto": 30.6,
+    "arena_webdev": 3.7
    },
    "nota": null,
    "cobertura": 0.32,
@@ -7219,8 +7308,8 @@
    "contexto": 400000,
    "precoEntrada": 0.75,
    "precoSaida": 4.5,
-   "velocidade": 181.23,
-   "ttft": 5.22,
+   "velocidade": 187.06,
+   "ttft": 4.8,
    "metricas": {
     "arena_texto": 1412,
     "arena_webdev": 1398,
@@ -7233,8 +7322,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 27.7,
-    "arena_webdev": 11.8,
+    "arena_texto": 27.6,
+    "arena_webdev": 11.1,
     "arena_visao": 25.9
    },
    "nota": null,
@@ -7255,10 +7344,10 @@
    "contexto": null,
    "precoEntrada": 3,
    "precoSaida": 15,
-   "velocidade": 72.58,
-   "ttft": 8.1,
+   "velocidade": 74.62,
+   "ttft": 8.34,
    "metricas": {
-    "arena_texto": 1412,
+    "arena_texto": 1411,
     "arena_visao": 1210
    },
    "origens": {
@@ -7267,7 +7356,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 27.7,
+    "arena_texto": 26.5,
     "arena_visao": 0
    },
    "nota": null,
@@ -7292,7 +7381,7 @@
    "ttft": null,
    "metricas": {
     "arena_texto": 1411,
-    "arena_webdev": 1331
+    "arena_webdev": 1332
    },
    "origens": {
     "lmarena": "MiMo-V2-Flash (Non-Thinking)",
@@ -7300,8 +7389,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 26.6,
-    "arena_webdev": 5.9
+    "arena_texto": 26.5,
+    "arena_webdev": 5.6
    },
    "nota": null,
    "cobertura": 0.32,
@@ -7321,8 +7410,8 @@
    "contexto": 200000,
    "precoEntrada": 2,
    "precoSaida": 8,
-   "velocidade": 140.46,
-   "ttft": 7.43,
+   "velocidade": 135.77,
+   "ttft": 8.51,
    "metricas": {
     "arena_texto": 1410,
     "arena_visao": 1214
@@ -7334,7 +7423,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 25.5,
+    "arena_texto": 26.5,
     "arena_visao": 5.2
    },
    "nota": null,
@@ -7353,10 +7442,10 @@
    "hf": "Qwen/Qwen3.5-27B",
    "lancamento": "2026-02-25",
    "contexto": 262144,
-   "precoEntrada": 0.3,
-   "precoSaida": 2.4,
-   "velocidade": 23.82,
-   "ttft": 5.58,
+   "precoEntrada": 0.195,
+   "precoSaida": 1.56,
+   "velocidade": 23.5,
+   "ttft": 5.54,
    "metricas": {
     "arena_texto": 1409,
     "arena_webdev": 1357,
@@ -7369,8 +7458,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 25.5,
-    "arena_webdev": 7.8,
+    "arena_texto": 26.5,
+    "arena_webdev": 7.4,
     "arena_visao": 22.4
    },
    "nota": null,
@@ -7459,11 +7548,11 @@
    "contexto": 400000,
    "precoEntrada": 1.25,
    "precoSaida": 10,
-   "velocidade": 95.84,
-   "ttft": 62.12,
+   "velocidade": 95.11,
+   "ttft": 65.82,
    "metricas": {
     "arena_texto": 1406,
-    "arena_webdev": 1417,
+    "arena_webdev": 1418,
     "arena_visao": 1208
    },
    "origens": {
@@ -7473,8 +7562,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 23.4,
-    "arena_webdev": 17.6,
+    "arena_texto": 24.5,
+    "arena_webdev": 16.7,
     "arena_visao": 0
    },
    "nota": null,
@@ -7506,7 +7595,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 23.4,
+    "arena_texto": 24.5,
     "arena_visao": 0
    },
    "nota": null,
@@ -7527,8 +7616,8 @@
    "contexto": 196608,
    "precoEntrada": 0.21,
    "precoSaida": 0.84,
-   "velocidade": 51.51,
-   "ttft": 2.34,
+   "velocidade": 52.12,
+   "ttft": 2.23,
    "metricas": {
     "arena_texto": 1405,
     "arena_webdev": 1398
@@ -7540,8 +7629,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 23.4,
-    "arena_webdev": 11.8
+    "arena_texto": 24.5,
+    "arena_webdev": 11.1
    },
    "nota": null,
    "cobertura": 0.32,
@@ -7564,7 +7653,7 @@
    "velocidade": null,
    "ttft": null,
    "metricas": {
-    "arena_texto": 1404,
+    "arena_texto": 1403,
     "arena_visao": 1232
    },
    "origens": {
@@ -7572,7 +7661,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 23.4,
+    "arena_texto": 23.5,
     "arena_visao": 13.8
    },
    "nota": null,
@@ -7593,10 +7682,10 @@
    "contexto": null,
    "precoEntrada": 0.1,
    "precoSaida": 0.3,
-   "velocidade": 145.51,
-   "ttft": 3.36,
+   "velocidade": 143.54,
+   "ttft": 3.32,
    "metricas": {
-    "arena_texto": 1402
+    "arena_texto": 1403
    },
    "origens": {
     "lmarena": "Step-3.5-Flash",
@@ -7604,7 +7693,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 21.3
+    "arena_texto": 23.5
    },
    "nota": null,
    "cobertura": 0.21,
@@ -7634,7 +7723,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 21.3
+    "arena_texto": 22.4
    },
    "nota": null,
    "cobertura": 0.21,
@@ -7654,7 +7743,7 @@
    "contexto": 1000000,
    "precoEntrada": 1.25,
    "precoSaida": 2.5,
-   "velocidade": 70.95,
+   "velocidade": 75.26,
    "ttft": 16.07,
    "metricas": {
     "arena_texto": 1397,
@@ -7668,8 +7757,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 16,
-    "arena_webdev": 7.8,
+    "arena_texto": 16.3,
+    "arena_webdev": 7.4,
     "arena_visao": 10.3
    },
    "nota": null,
@@ -7694,14 +7783,14 @@
    "ttft": null,
    "metricas": {
     "arena_texto": 1397,
-    "arena_webdev": 1244
+    "arena_webdev": 1243
    },
    "origens": {
     "lmarena": "Qwen3.5-Flash"
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 16,
+    "arena_texto": 16.3,
     "arena_webdev": 0
    },
    "nota": null,
@@ -7722,8 +7811,8 @@
    "contexto": 262144,
    "precoEntrada": 0.14,
    "precoSaida": 1,
-   "velocidade": 153.55,
-   "ttft": 2,
+   "velocidade": 154.87,
+   "ttft": 1.91,
    "metricas": {
     "arena_texto": 1395,
     "arena_webdev": 1253
@@ -7735,7 +7824,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 12.8,
+    "arena_texto": 14.3,
     "arena_webdev": 0
    },
    "nota": null,
@@ -7768,8 +7857,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 12.8,
-    "arena_webdev": 11.8
+    "arena_texto": 14.3,
+    "arena_webdev": 11.1
    },
    "nota": null,
    "cobertura": 0.32,
@@ -7799,7 +7888,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 11.7
+    "arena_texto": 12.2
    },
    "nota": null,
    "cobertura": 0.21,
@@ -7831,7 +7920,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 6.4
+    "arena_texto": 8.2
    },
    "nota": null,
    "cobertura": 0.21,
@@ -7851,7 +7940,7 @@
    "contexto": 262144,
    "precoEntrada": 0.1,
    "precoSaida": 0.3,
-   "velocidade": 107.91,
+   "velocidade": 96.9,
    "ttft": 0.55,
    "metricas": {
     "arena_texto": 1384
@@ -7863,7 +7952,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 6.4
+    "arena_texto": 8.2
    },
    "nota": null,
    "cobertura": 0.21,
@@ -7883,8 +7972,8 @@
    "contexto": 1047576,
    "precoEntrada": 2,
    "precoSaida": 8,
-   "velocidade": 183.1,
-   "ttft": 1.78,
+   "velocidade": 171.33,
+   "ttft": 1.71,
    "metricas": {
     "arena_texto": 1383,
     "arena_visao": 1210
@@ -7896,7 +7985,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 6.4,
+    "arena_texto": 8.2,
     "arena_visao": 0
    },
    "nota": null,
@@ -7917,8 +8006,8 @@
    "contexto": 262144,
    "precoEntrada": 0.6,
    "precoSaida": 2.5,
-   "velocidade": 47.94,
-   "ttft": 1.8,
+   "velocidade": 44.67,
+   "ttft": 1.73,
    "metricas": {
     "arena_texto": 1380
    },
@@ -7929,7 +8018,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 6.4
+    "arena_texto": 8.2
    },
    "nota": null,
    "cobertura": 0.21,
@@ -7949,8 +8038,8 @@
    "contexto": 1048576,
    "precoEntrada": 0.1,
    "precoSaida": 0.4,
-   "velocidade": 273.39,
-   "ttft": 0.32,
+   "velocidade": 275.4,
+   "ttft": 0.3,
    "metricas": {
     "arena_texto": 1379,
     "arena_visao": 1198
@@ -7962,7 +8051,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 6.4,
+    "arena_texto": 8.2,
     "arena_visao": 0
    },
    "nota": null,
@@ -7995,41 +8084,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 6.4,
-    "arena_visao": 0
-   },
-   "nota": null,
-   "cobertura": 0.26,
-   "categorias": {},
-   "posicao": null
-  },
-  {
-   "chave": "glm-4.6v",
-   "slug": "glm-4.6v",
-   "familia": "glm-4.6v",
-   "versao": 0,
-   "nome": "GLM 4.6V",
-   "empresa": "Z.ai",
-   "aberto": true,
-   "hf": "zai-org/GLM-4.6V",
-   "lancamento": "2025-12-08",
-   "contexto": 131072,
-   "precoEntrada": 0.3,
-   "precoSaida": 0.9,
-   "velocidade": 84.89,
-   "ttft": 4.21,
-   "metricas": {
-    "arena_texto": 1377,
-    "arena_visao": 1163
-   },
-   "origens": {
-    "lmarena": "GLM-4.6V",
-    "artificialanalysis": "glm-4-6v",
-    "openrouter": "z-ai/glm-4.6v"
-   },
-   "parcial": true,
-   "percentis": {
-    "arena_texto": 6.4,
+    "arena_texto": 8.2,
     "arena_visao": 0
    },
    "nota": null,
@@ -8060,7 +8115,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 6.4
+    "arena_texto": 8.2
    },
    "nota": null,
    "cobertura": 0.21,
@@ -8080,8 +8135,8 @@
    "contexto": 262144,
    "precoEntrada": 0.075,
    "precoSaida": 0.4,
-   "velocidade": 141.12,
-   "ttft": 1.06,
+   "velocidade": 131.76,
+   "ttft": 0.8,
    "metricas": {
     "arena_texto": 1377
    },
@@ -8092,10 +8147,44 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 6.4
+    "arena_texto": 8.2
    },
    "nota": null,
    "cobertura": 0.21,
+   "categorias": {},
+   "posicao": null
+  },
+  {
+   "chave": "glm-4.6v",
+   "slug": "glm-4.6v",
+   "familia": "glm-4.6v",
+   "versao": 0,
+   "nome": "GLM 4.6V",
+   "empresa": "Z.ai",
+   "aberto": true,
+   "hf": "zai-org/GLM-4.6V",
+   "lancamento": "2025-12-08",
+   "contexto": 131072,
+   "precoEntrada": 0.3,
+   "precoSaida": 0.9,
+   "velocidade": 76.93,
+   "ttft": 4.03,
+   "metricas": {
+    "arena_texto": 1376,
+    "arena_visao": 1163
+   },
+   "origens": {
+    "lmarena": "GLM-4.6V",
+    "artificialanalysis": "glm-4-6v",
+    "openrouter": "z-ai/glm-4.6v"
+   },
+   "parcial": true,
+   "percentis": {
+    "arena_texto": 8.2,
+    "arena_visao": 0
+   },
+   "nota": null,
+   "cobertura": 0.26,
    "categorias": {},
    "posicao": null
   },
@@ -8112,8 +8201,8 @@
    "contexto": null,
    "precoEntrada": 0.32,
    "precoSaida": 0.89,
-   "velocidade": 80.19,
-   "ttft": 0.88,
+   "velocidade": 84.02,
+   "ttft": 0.91,
    "metricas": {
     "arena_texto": 1375
    },
@@ -8123,7 +8212,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 6.4
+    "arena_texto": 8.2
    },
    "nota": null,
    "cobertura": 0.21,
@@ -8143,8 +8232,8 @@
    "contexto": 400000,
    "precoEntrada": 0.25,
    "precoSaida": 2,
-   "velocidade": 103.35,
-   "ttft": 89.37,
+   "velocidade": 101.9,
+   "ttft": 86.58,
    "metricas": {
     "arena_texto": 1373,
     "arena_visao": 1202
@@ -8156,7 +8245,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 6.4,
+    "arena_texto": 8.2,
     "arena_visao": 0
    },
    "nota": null,
@@ -8177,8 +8266,8 @@
    "contexto": 400000,
    "precoEntrada": 0.2,
    "precoSaida": 1.25,
-   "velocidade": 163.53,
-   "ttft": 4.97,
+   "velocidade": 162.36,
+   "ttft": 5.87,
    "metricas": {
     "arena_texto": 1372,
     "arena_visao": 1196
@@ -8190,7 +8279,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 6.4,
+    "arena_texto": 8.2,
     "arena_visao": 0
    },
    "nota": null,
@@ -8222,7 +8311,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 6.4
+    "arena_texto": 8.2
    },
    "nota": null,
    "cobertura": 0.21,
@@ -8242,7 +8331,7 @@
    "contexto": 131072,
    "precoEntrada": 0.44,
    "precoSaida": 2.2,
-   "velocidade": 44.13,
+   "velocidade": 44.49,
    "ttft": 2.4,
    "metricas": {
     "arena_texto": 1370,
@@ -8255,7 +8344,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 6.4,
+    "arena_texto": 8.2,
     "arena_visao": 0
    },
    "nota": null,
@@ -8287,7 +8376,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 6.4
+    "arena_texto": 8.2
    },
    "nota": null,
    "cobertura": 0.21,
@@ -8319,7 +8408,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 5.3,
+    "arena_texto": 7.1,
     "arena_visao": 0
    },
    "nota": null,
@@ -8350,38 +8439,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3
-   },
-   "nota": null,
-   "cobertura": 0.21,
-   "categorias": {},
-   "posicao": null
-  },
-  {
-   "chave": "granite-4.2-30b",
-   "slug": "granite-4.2-30b",
-   "familia": "granite-30b",
-   "versao": 4.2,
-   "nome": "Granite 4.2 30B",
-   "empresa": "IBM",
-   "aberto": true,
-   "hf": null,
-   "lancamento": "2026-08-25",
-   "contexto": null,
-   "precoEntrada": null,
-   "precoSaida": null,
-   "velocidade": null,
-   "ttft": null,
-   "metricas": {
-    "arena_texto": 1362
-   },
-   "origens": {
-    "lmarena": "Granite 4.2 30B",
-    "artificialanalysis": "granite-4-2-30b"
-   },
-   "parcial": true,
-   "percentis": {
-    "arena_texto": 4.3
+    "arena_texto": 6.1
    },
    "nota": null,
    "cobertura": 0.21,
@@ -8401,7 +8459,7 @@
    "contexto": null,
    "precoEntrada": 0.14,
    "precoSaida": 0.57,
-   "velocidade": 6.15,
+   "velocidade": 7.51,
    "ttft": 2.48,
    "metricas": {
     "arena_texto": 1361
@@ -8412,7 +8470,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3
+    "arena_texto": 5.1
    },
    "nota": null,
    "cobertura": 0.21,
@@ -8432,8 +8490,8 @@
    "contexto": 198000,
    "precoEntrada": 0.295,
    "precoSaida": 1.2,
-   "velocidade": 51.1,
-   "ttft": 1.78,
+   "velocidade": 54.64,
+   "ttft": 2.06,
    "metricas": {
     "arena_texto": 1359,
     "arena_webdev": 1386
@@ -8445,8 +8503,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3,
-    "arena_webdev": 11.8
+    "arena_texto": 4.1,
+    "arena_webdev": 11.1
    },
    "nota": null,
    "cobertura": 0.32,
@@ -8465,7 +8523,7 @@
    "lancamento": "2025-03-12",
    "contexto": 131072,
    "precoEntrada": 0.08,
-   "precoSaida": 0.45,
+   "precoSaida": 0.16,
    "velocidade": null,
    "ttft": null,
    "metricas": {
@@ -8479,44 +8537,11 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3,
+    "arena_texto": 4.1,
     "arena_visao": 0
    },
    "nota": null,
    "cobertura": 0.26,
-   "categorias": {},
-   "posicao": null
-  },
-  {
-   "chave": "qwen3-coder-480b-a35b",
-   "slug": "qwen3-coder-480b-a35b",
-   "familia": "qwen-coder-480b-a35b",
-   "versao": 3,
-   "nome": "Qwen3 Coder 480B A35B Instruct",
-   "empresa": "Alibaba",
-   "aberto": true,
-   "hf": null,
-   "lancamento": "2025-07-22",
-   "contexto": null,
-   "precoEntrada": 0.375,
-   "precoSaida": 1.4,
-   "velocidade": 89.51,
-   "ttft": 1.18,
-   "metricas": {
-    "arena_texto": 1357,
-    "arena_webdev": 1274
-   },
-   "origens": {
-    "lmarena": "Qwen3-Coder-480B-A35B-Instruct",
-    "artificialanalysis": "qwen3-coder-480b-a35b-instruct"
-   },
-   "parcial": true,
-   "percentis": {
-    "arena_texto": 4.3,
-    "arena_webdev": 3.9
-   },
-   "nota": null,
-   "cobertura": 0.32,
    "categorias": {},
    "posicao": null
   },
@@ -8544,10 +8569,43 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3
+    "arena_texto": 4.1
    },
    "nota": null,
    "cobertura": 0.21,
+   "categorias": {},
+   "posicao": null
+  },
+  {
+   "chave": "qwen3-coder-480b-a35b",
+   "slug": "qwen3-coder-480b-a35b",
+   "familia": "qwen-coder-480b-a35b",
+   "versao": 3,
+   "nome": "Qwen3 Coder 480B A35B Instruct",
+   "empresa": "Alibaba",
+   "aberto": true,
+   "hf": null,
+   "lancamento": "2025-07-22",
+   "contexto": null,
+   "precoEntrada": 0.375,
+   "precoSaida": 1.4,
+   "velocidade": 85.72,
+   "ttft": 1.2,
+   "metricas": {
+    "arena_texto": 1356,
+    "arena_webdev": 1274
+   },
+   "origens": {
+    "lmarena": "Qwen3-Coder-480B-A35B-Instruct",
+    "artificialanalysis": "qwen3-coder-480b-a35b-instruct"
+   },
+   "parcial": true,
+   "percentis": {
+    "arena_texto": 4.1,
+    "arena_webdev": 3.7
+   },
+   "nota": null,
+   "cobertura": 0.32,
    "categorias": {},
    "posicao": null
   },
@@ -8564,8 +8622,8 @@
    "contexto": null,
    "precoEntrada": 0.25,
    "precoSaida": 0.75,
-   "velocidade": 495.32,
-   "ttft": 8.02,
+   "velocidade": 532.72,
+   "ttft": 8.37,
    "metricas": {
     "arena_texto": 1355,
     "arena_webdev": 1171
@@ -8576,7 +8634,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3,
+    "arena_texto": 4.1,
     "arena_webdev": 0
    },
    "nota": null,
@@ -8609,7 +8667,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3,
+    "arena_texto": 4.1,
     "arena_visao": 0
    },
    "nota": null,
@@ -8630,7 +8688,7 @@
    "contexto": null,
    "precoEntrada": 1.1,
    "precoSaida": 4.4,
-   "velocidade": 100.88,
+   "velocidade": 98.68,
    "ttft": 22.35,
    "metricas": {
     "arena_texto": 1353,
@@ -8642,7 +8700,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3,
+    "arena_texto": 4.1,
     "arena_visao": 0
    },
    "nota": null,
@@ -8675,7 +8733,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3,
+    "arena_texto": 4.1,
     "arena_visao": 0
    },
    "nota": null,
@@ -8696,8 +8754,8 @@
    "contexto": 200000,
    "precoEntrada": 0.0605,
    "precoSaida": 0.4,
-   "velocidade": 87.44,
-   "ttft": 1.02,
+   "velocidade": 100.18,
+   "ttft": 1.03,
    "metricas": {
     "arena_texto": 1351
    },
@@ -8708,7 +8766,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3
+    "arena_texto": 4.1
    },
    "nota": null,
    "cobertura": 0.21,
@@ -8739,7 +8797,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3,
+    "arena_texto": 4.1,
     "arena_visao": 0
    },
    "nota": null,
@@ -8760,8 +8818,8 @@
    "contexto": 262144,
    "precoEntrada": 0.06,
    "precoSaida": 0.24,
-   "velocidade": 302.79,
-   "ttft": 0.5,
+   "velocidade": 317.48,
+   "ttft": 0.49,
    "metricas": {
     "arena_texto": 1348
    },
@@ -8772,7 +8830,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3
+    "arena_texto": 4.1
    },
    "nota": null,
    "cobertura": 0.21,
@@ -8802,7 +8860,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3
+    "arena_texto": 4.1
    },
    "nota": null,
    "cobertura": 0.21,
@@ -8822,8 +8880,8 @@
    "contexto": 1047576,
    "precoEntrada": 0.4,
    "precoSaida": 1.6,
-   "velocidade": 120.75,
-   "ttft": 1.67,
+   "velocidade": 109.61,
+   "ttft": 1.58,
    "metricas": {
     "arena_texto": 1341,
     "arena_visao": 1181
@@ -8835,7 +8893,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3,
+    "arena_texto": 4.1,
     "arena_visao": 0
    },
    "nota": null,
@@ -8856,8 +8914,8 @@
    "contexto": null,
    "precoEntrada": 0.3,
    "precoSaida": 1.2,
-   "velocidade": 128.16,
-   "ttft": 1.04,
+   "velocidade": 126.34,
+   "ttft": 1.05,
    "metricas": {
     "arena_texto": 1340,
     "arena_webdev": 1299
@@ -8868,8 +8926,8 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3,
-    "arena_webdev": 3.9
+    "arena_texto": 4.1,
+    "arena_webdev": 3.7
    },
    "nota": null,
    "cobertura": 0.32,
@@ -8889,8 +8947,8 @@
    "contexto": 131072,
    "precoEntrada": 0.08,
    "precoSaida": 0.28,
-   "velocidade": 25.75,
-   "ttft": 1.5,
+   "velocidade": 24.73,
+   "ttft": 1.52,
    "metricas": {
     "arena_texto": 1340
    },
@@ -8901,7 +8959,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3
+    "arena_texto": 4.1
    },
    "nota": null,
    "cobertura": 0.21,
@@ -8925,7 +8983,7 @@
    "ttft": null,
    "metricas": {
     "arena_texto": 1340,
-    "arena_webdev": 1237
+    "arena_webdev": 1236
    },
    "origens": {
     "lmarena": "Trinity Large Thinking",
@@ -8933,7 +8991,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3,
+    "arena_texto": 4.1,
     "arena_webdev": 0
    },
    "nota": null,
@@ -8964,7 +9022,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3
+    "arena_texto": 4.1
    },
    "nota": null,
    "cobertura": 0.21,
@@ -8984,8 +9042,8 @@
    "contexto": null,
    "precoEntrada": 0.075,
    "precoSaida": 0.2,
-   "velocidade": 49.5,
-   "ttft": 0.94,
+   "velocidade": 49.14,
+   "ttft": 0.91,
    "metricas": {
     "arena_texto": 1338,
     "arena_visao": 1142
@@ -8996,7 +9054,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3,
+    "arena_texto": 4.1,
     "arena_visao": 0
    },
    "nota": null,
@@ -9017,8 +9075,8 @@
    "contexto": null,
    "precoEntrada": 1.1,
    "precoSaida": 4.4,
-   "velocidade": 241.49,
-   "ttft": 17.92,
+   "velocidade": 248.56,
+   "ttft": 18.41,
    "metricas": {
     "arena_texto": 1337
    },
@@ -9028,7 +9086,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3
+    "arena_texto": 4.1
    },
    "nota": null,
    "cobertura": 0.21,
@@ -9059,7 +9117,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3,
+    "arena_texto": 4.1,
     "arena_visao": 0
    },
    "nota": null,
@@ -9092,7 +9150,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3
+    "arena_texto": 4.1
    },
    "nota": null,
    "cobertura": 0.21,
@@ -9123,7 +9181,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3
+    "arena_texto": 4.1
    },
    "nota": null,
    "cobertura": 0.21,
@@ -9143,8 +9201,8 @@
    "contexto": 65536,
    "precoEntrada": 0.6,
    "precoSaida": 1.8,
-   "velocidade": 36.64,
-   "ttft": 3.74,
+   "velocidade": 36.93,
+   "ttft": 3.73,
    "metricas": {
     "arena_texto": 1333,
     "arena_visao": 1154
@@ -9156,7 +9214,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3,
+    "arena_texto": 4.1,
     "arena_visao": 0
    },
    "nota": null,
@@ -9177,8 +9235,8 @@
    "contexto": 256000,
    "precoEntrada": 2.5,
    "precoSaida": 10,
-   "velocidade": 61.41,
-   "ttft": 1.73,
+   "velocidade": 65.65,
+   "ttft": 1.71,
    "metricas": {
     "arena_texto": 1331
    },
@@ -9189,7 +9247,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3
+    "arena_texto": 4.1
    },
    "nota": null,
    "cobertura": 0.21,
@@ -9219,7 +9277,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3
+    "arena_texto": 4.1
    },
    "nota": null,
    "cobertura": 0.21,
@@ -9251,7 +9309,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3,
+    "arena_texto": 4.1,
     "arena_visao": 0
    },
    "nota": null,
@@ -9275,14 +9333,14 @@
    "velocidade": null,
    "ttft": null,
    "metricas": {
-    "arena_texto": 1329
+    "arena_texto": 1330
    },
    "origens": {
     "lmarena": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B (NVFP4)"
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3
+    "arena_texto": 4.1
    },
    "nota": null,
    "cobertura": 0.21,
@@ -9313,7 +9371,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3
+    "arena_texto": 4.1
    },
    "nota": null,
    "cobertura": 0.21,
@@ -9344,7 +9402,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3
+    "arena_texto": 4.1
    },
    "nota": null,
    "cobertura": 0.21,
@@ -9374,7 +9432,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3
+    "arena_texto": 4.1
    },
    "nota": null,
    "cobertura": 0.21,
@@ -9394,8 +9452,8 @@
    "contexto": 400000,
    "precoEntrada": 0.05,
    "precoSaida": 0.4,
-   "velocidade": 144.25,
-   "ttft": 1.87,
+   "velocidade": 142.78,
+   "ttft": 1.8,
    "metricas": {
     "arena_texto": 1320,
     "arena_visao": 1159
@@ -9407,7 +9465,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3,
+    "arena_texto": 4.1,
     "arena_visao": 0
    },
    "nota": null,
@@ -9439,7 +9497,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 4.3
+    "arena_texto": 4.1
    },
    "nota": null,
    "cobertura": 0.21,
@@ -9471,7 +9529,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 3.2,
+    "arena_texto": 3.1,
     "arena_visao": 0
    },
    "nota": null,
@@ -9503,7 +9561,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 2.1
+    "arena_texto": 2
    },
    "nota": null,
    "cobertura": 0.21,
@@ -9535,7 +9593,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 2.1,
+    "arena_texto": 2,
     "arena_visao": 0
    },
    "nota": null,
@@ -9566,7 +9624,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 2.1
+    "arena_texto": 2
    },
    "nota": null,
    "cobertura": 0.21,
@@ -9597,7 +9655,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 2.1
+    "arena_texto": 2
    },
    "nota": null,
    "cobertura": 0.21,
@@ -9628,7 +9686,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 2.1
+    "arena_texto": 2
    },
    "nota": null,
    "cobertura": 0.21,
@@ -9659,7 +9717,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 2.1
+    "arena_texto": 2
    },
    "nota": null,
    "cobertura": 0.21,
@@ -9690,7 +9748,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 2.1
+    "arena_texto": 2
    },
    "nota": null,
    "cobertura": 0.21,
@@ -9720,7 +9778,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 2.1
+    "arena_texto": 2
    },
    "nota": null,
    "cobertura": 0.21,
@@ -9753,7 +9811,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 2.1,
+    "arena_texto": 2,
     "arena_visao": 0
    },
    "nota": null,
@@ -9785,7 +9843,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 2.1
+    "arena_texto": 2
    },
    "nota": null,
    "cobertura": 0.21,
@@ -9815,7 +9873,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 2.1
+    "arena_texto": 2
    },
    "nota": null,
    "cobertura": 0.21,
@@ -9847,7 +9905,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 2.1,
+    "arena_texto": 2,
     "arena_visao": 0
    },
    "nota": null,
@@ -9879,7 +9937,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 2.1
+    "arena_texto": 2
    },
    "nota": null,
    "cobertura": 0.21,
@@ -9902,14 +9960,14 @@
    "velocidade": null,
    "ttft": null,
    "metricas": {
-    "arena_texto": 1292
+    "arena_texto": 1291
    },
    "origens": {
     "lmarena": "Athene V2 Chat"
    },
    "parcial": true,
    "percentis": {
-    "arena_texto": 1.1
+    "arena_texto": 0
    },
    "nota": null,
    "cobertura": 0.21,
@@ -9994,8 +10052,8 @@
    "contexto": 131072,
    "precoEntrada": 0.018,
    "precoSaida": 0.09,
-   "velocidade": 202.59,
-   "ttft": 0.89,
+   "velocidade": 128.03,
+   "ttft": 0.93,
    "metricas": {
     "arena_texto": 1288
    },
@@ -10153,8 +10211,8 @@
    "contexto": 128000,
    "precoEntrada": 0.15,
    "precoSaida": 0.6,
-   "velocidade": 62.14,
-   "ttft": 2.1,
+   "velocidade": 68.05,
+   "ttft": 1.92,
    "metricas": {
     "arena_texto": 1286,
     "arena_visao": 1066
@@ -10187,8 +10245,8 @@
    "contexto": 1047576,
    "precoEntrada": 0.1,
    "precoSaida": 0.4,
-   "velocidade": 282.44,
-   "ttft": 1.16,
+   "velocidade": 263.64,
+   "ttft": 1.06,
    "metricas": {
     "arena_texto": 1285,
     "arena_visao": 1063
@@ -10527,8 +10585,8 @@
    "contexto": null,
    "precoEntrada": 10,
    "precoSaida": 30,
-   "velocidade": 124.43,
-   "ttft": 1.4,
+   "velocidade": 144.69,
+   "ttft": 1.55,
    "metricas": {
     "arena_texto": 1272,
     "arena_visao": 1090
@@ -11490,7 +11548,7 @@
    "contexto": 16384,
    "precoEntrada": 0.07,
    "precoSaida": 0.14,
-   "velocidade": 36.73,
+   "velocidade": 36.59,
    "ttft": 2.63,
    "metricas": {
     "arena_texto": 1217
@@ -13073,7 +13131,7 @@
    "velocidade": null,
    "ttft": null,
    "metricas": {
-    "arena_texto": 1084
+    "arena_texto": 1083
    },
    "origens": {
     "lmarena": "Qwen1.5-7B-Chat"
@@ -14126,7 +14184,7 @@
    "velocidade": null,
    "ttft": null,
    "metricas": {
-    "arena_texto": 919
+    "arena_texto": 918
    },
    "origens": {
     "lmarena": "ChatGLM 6B"
@@ -14366,7 +14424,7 @@
    "velocidade": null,
    "ttft": null,
    "metricas": {
-    "arena_webdev": 1195
+    "arena_webdev": 1196
    },
    "origens": {
     "lmarena": "Devstral 2",
@@ -14397,7 +14455,7 @@
    "velocidade": null,
    "ttft": null,
    "metricas": {
-    "arena_webdev": 1071
+    "arena_webdev": 1072
    },
    "origens": {
     "lmarena": "Devstral Medium (2507)",
@@ -14458,8 +14516,8 @@
    "contexto": 400000,
    "precoEntrada": 1.25,
    "precoSaida": 10,
-   "velocidade": 127.51,
-   "ttft": 8.9,
+   "velocidade": 125.37,
+   "ttft": 9.47,
    "metricas": {
     "arena_webdev": 1338
    },
@@ -14470,7 +14528,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_webdev": 5.9
+    "arena_webdev": 5.6
    },
    "nota": null,
    "cobertura": 0.11,
@@ -14491,9 +14549,9 @@
    "precoEntrada": 0.25,
    "precoSaida": 2,
    "velocidade": 176.04,
-   "ttft": 7.39,
+   "ttft": 7.37,
    "metricas": {
-    "arena_webdev": 1243
+    "arena_webdev": 1244
    },
    "origens": {
     "lmarena": "GPT-5.1-Codex-Mini",
@@ -14523,7 +14581,7 @@
    "precoEntrada": 1.75,
    "precoSaida": 14,
    "velocidade": 131.73,
-   "ttft": 85.23,
+   "ttft": 74.86,
    "metricas": {
     "arena_webdev": 1339
    },
@@ -14534,7 +14592,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_webdev": 5.9
+    "arena_webdev": 5.6
    },
    "nota": null,
    "cobertura": 0.11,
@@ -14554,7 +14612,7 @@
    "contexto": 400000,
    "precoEntrada": 1.75,
    "precoSaida": 14,
-   "velocidade": 81.08,
+   "velocidade": 78.78,
    "ttft": 68.55,
    "metricas": {
     "arena_webdev": 1406
@@ -14566,7 +14624,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_webdev": 13.7
+    "arena_webdev": 13
    },
    "nota": null,
    "cobertura": 0.11,
@@ -14589,7 +14647,7 @@
    "velocidade": null,
    "ttft": null,
    "metricas": {
-    "arena_webdev": 1165
+    "arena_webdev": 1166
    },
    "origens": {
     "lmarena": "Grok Code Fast 1",
@@ -14650,7 +14708,7 @@
    "velocidade": null,
    "ttft": null,
    "metricas": {
-    "arena_webdev": 1632
+    "arena_webdev": 1631
    },
    "origens": {
     "lmarena": "Hy4 preview",
@@ -14658,7 +14716,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_webdev": 54.9
+    "arena_webdev": 51.9
    },
    "nota": null,
    "cobertura": 0.11,
@@ -14749,7 +14807,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_webdev": 2
+    "arena_webdev": 1.9
    },
    "nota": null,
    "cobertura": 0.11,
@@ -14767,12 +14825,12 @@
    "hf": "moonshotai/Kimi-K2.7-Code",
    "lancamento": "2026-06-12",
    "contexto": 262144,
-   "precoEntrada": 0.6,
+   "precoEntrada": 0.65,
    "precoSaida": 3.5,
-   "velocidade": 58.09,
-   "ttft": 2.89,
+   "velocidade": 60.38,
+   "ttft": 2.85,
    "metricas": {
-    "arena_webdev": 1474
+    "arena_webdev": 1475
    },
    "origens": {
     "lmarena": "Kimi K2.7 Code",
@@ -14781,7 +14839,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_webdev": 19.6
+    "arena_webdev": 18.5
    },
    "nota": null,
    "cobertura": 0.11,
@@ -14811,7 +14869,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_webdev": 5.9
+    "arena_webdev": 5.6
    },
    "nota": null,
    "cobertura": 0.11,
@@ -14841,7 +14899,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_webdev": 3.9
+    "arena_webdev": 3.7
    },
    "nota": null,
    "cobertura": 0.11,
@@ -15384,7 +15442,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_webdev": 22.5
+    "arena_webdev": 21.3
    },
    "nota": null,
    "cobertura": 0.11,
@@ -15414,7 +15472,7 @@
    },
    "parcial": true,
    "percentis": {
-    "arena_webdev": 21.6
+    "arena_webdev": 20.4
    },
    "nota": null,
    "cobertura": 0.11,
@@ -15497,14 +15555,14 @@
    "velocidade": null,
    "ttft": null,
    "metricas": {
-    "arena_webdev": 1612
+    "arena_webdev": 1609
    },
    "origens": {
     "lmarena": "U2 Flash"
    },
    "parcial": true,
    "percentis": {
-    "arena_webdev": 47.1
+    "arena_webdev": 42.6
    },
    "nota": null,
    "cobertura": 0.11,
