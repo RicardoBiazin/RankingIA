@@ -1,6 +1,6 @@
 {
  "fonte": "livebench",
- "coletadoEm": "2026-11-19T17:50:43.568Z",
+ "coletadoEm": "2026-11-20T17:25:57.907Z",
  "release": "2026-11-06",
  "categorias": [
   "Long Agentic",
@@ -76,9 +76,9 @@
   {
    "origem": "claude-sonnet-5.5",
    "chave": "claude-sonnet-5.5",
-   "geral": 76.99,
+   "geral": 76.79,
    "categorias": {
-    "Long Agentic": 63.4,
+    "Long Agentic": 62.5,
     "Reasoning": 91.6,
     "Coding": 77.2,
     "Browser": 89.3,
@@ -132,9 +132,9 @@
   {
    "origem": "gemini-4-carbon",
    "chave": "gemini-4-carbon",
-   "geral": 83.53,
+   "geral": 83.33,
    "categorias": {
-    "Long Agentic": 72.7,
+    "Long Agentic": 71.8,
     "Reasoning": 90.6,
     "Coding": 91,
     "Browser": 80,
@@ -155,6 +155,20 @@
     "Data Analysis": 83.2,
     "Research": 86.8,
     "Design": 77.3
+   }
+  },
+  {
+   "origem": "gemini-4-neon",
+   "chave": "gemini-4-neon",
+   "geral": 87.44,
+   "categorias": {
+    "Long Agentic": 82.6,
+    "Reasoning": 89.6,
+    "Coding": 89.7,
+    "Browser": 95.6,
+    "Data Analysis": 85.3,
+    "Research": 94.5,
+    "Design": 81.5
    }
   },
   {
@@ -202,9 +216,9 @@
   {
    "origem": "gpt-6-astra",
    "chave": "gpt-6-astra",
-   "geral": 84.45,
+   "geral": 84.25,
    "categorias": {
-    "Long Agentic": 75.6,
+    "Long Agentic": 74.7,
     "Reasoning": 92.7,
     "Coding": 87.5,
     "Browser": 91.3,
@@ -230,9 +244,9 @@
   {
    "origem": "gpt-6.1-sol",
    "chave": "gpt-6.1-sol",
-   "geral": 81.37,
+   "geral": 81.17,
    "categorias": {
-    "Long Agentic": 65.6,
+    "Long Agentic": 64.7,
     "Reasoning": 92.6,
     "Coding": 82.1,
     "Browser": 93.3,
@@ -244,9 +258,9 @@
   {
    "origem": "gpt-6.1-terra",
    "chave": "gpt-6.1-terra",
-   "geral": 78.77,
+   "geral": 78.57,
    "categorias": {
-    "Long Agentic": 56.2,
+    "Long Agentic": 55.3,
     "Reasoning": 88.7,
     "Coding": 89.2,
     "Browser": 93.1,
@@ -510,9 +524,9 @@
   {
    "origem": "qwen4-max",
    "chave": "qwen4",
-   "geral": 73.26,
+   "geral": 73.06,
    "categorias": {
-    "Long Agentic": 47.5,
+    "Long Agentic": 46.6,
     "Reasoning": 92.2,
     "Coding": 69.8,
     "Browser": 80.7,
@@ -654,19 +668,20 @@
     "claude-fable-5.2": 84.88,
     "claude-haiku-5.5": 68.94,
     "claude-opus-5.5": 83.44,
-    "claude-sonnet-5.5": 76.99,
+    "claude-sonnet-5.5": 76.79,
     "deepseek-v4.1-flash": 70.26,
     "gemini-3.8-flash": 57.26,
     "gemini-4-argon": 77.69,
-    "gemini-4-carbon": 83.53,
+    "gemini-4-carbon": 83.33,
     "gemini-4-hydrogen": 77,
+    "gemini-4-neon": 87.44,
     "gemma-4-31b": 32.43,
     "glm-5.3-flash": 60.67,
     "gpt-5.6-terra": 67.15,
-    "gpt-6-astra": 84.45,
+    "gpt-6-astra": 84.25,
     "gpt-6-luna": 60.42,
-    "gpt-6.1-sol": 81.37,
-    "gpt-6.1-terra": 78.77,
+    "gpt-6.1-sol": 81.17,
+    "gpt-6.1-terra": 78.57,
     "gpt-6.2-astra": 84.87,
     "gpt-6.2-sol": 80.31,
     "grok-4.6": 63.51,
@@ -685,7 +700,7 @@
     "nemotron-super-vl-3.5": 47.01,
     "qwen3.8-27b": 54.05,
     "qwen3.8": 60.92,
-    "qwen4": 73.26,
+    "qwen4": 73.06,
     "smaug-nemotron-3.5-nvfp4": 47.04,
     "step-5": 54.89
    }
