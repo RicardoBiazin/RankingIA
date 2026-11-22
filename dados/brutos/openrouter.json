@@ -1,6 +1,6 @@
 {
  "fonte": "openrouter",
- "coletadoEm": "2026-11-22T20:05:42.481Z",
+ "coletadoEm": "2026-11-22T20:07:36.585Z",
  "modelos": [
   {
    "origem": "thinkingmachines/inkling-2-mini",
@@ -907,8 +907,8 @@
    "chave": "deepseek-pro",
    "nome": "DeepSeek Pro Latest",
    "empresa": "~deepseek",
-   "precoEntrada": 0.1188,
-   "precoSaida": 8,
+   "precoEntrada": 0.111,
+   "precoSaida": 4.44,
    "contexto": 1048576,
    "lancamento": "2026-09-14",
    "aberto": false,

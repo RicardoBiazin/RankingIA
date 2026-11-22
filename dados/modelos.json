@@ -1,20 +1,20 @@
 {
- "geradoEm": "2026-11-22T20:05:59.462Z",
+ "geradoEm": "2026-11-22T20:07:40.217Z",
  "fontes": {
   "openrouter": {
    "ok": true,
-   "coletadoEm": "2026-11-22T20:05:42.481Z",
+   "coletadoEm": "2026-11-22T20:07:36.585Z",
    "erro": null
   },
   "livebench": {
    "ok": true,
-   "coletadoEm": "2026-11-22T20:05:42.856Z",
+   "coletadoEm": "2026-11-22T20:07:36.984Z",
    "erro": null,
    "release": "2026-11-06"
   },
   "lmarena": {
    "ok": true,
-   "coletadoEm": "2026-11-22T20:05:46.845Z",
+   "coletadoEm": "2026-11-22T20:07:39.065Z",
    "erro": null,
    "datas": {
     "texto": "2026-11-19",
@@ -24,12 +24,12 @@
   },
   "artificialanalysis": {
    "ok": true,
-   "coletadoEm": "2026-11-22T20:05:48.722Z",
+   "coletadoEm": "2026-11-22T20:07:40.055Z",
    "erro": null
   },
   "cambio": {
    "ok": true,
-   "coletadoEm": "2026-11-22T20:05:49.335Z",
+   "coletadoEm": "2026-11-22T20:07:40.155Z",
    "erro": null
   }
  },
