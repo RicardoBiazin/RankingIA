@@ -1,4 +1,5 @@
-// Artificial Analysis: Intelligence Index, preço e velocidade. Endpoint grátis da API
+// Artificial Analysis: Intelligence Index, índices por área (finanças, jurídico, saúde...),
+// custo por tarefa, preço e velocidade. Endpoint grátis da API
 // V2 (/api/v2/language/models/free), com chave (AA_API_KEY); citação obrigatória no
 // site. Sem chave a fonte é pulada. O endpoint grátis não traz os benchmarks
 // avulsos (HLE, Terminal-Bench, GPQA, contexto longo); o legado /api/v2/data/* saiu
@@ -29,6 +30,16 @@ export function converter(j) {
       precoSaida: num(m.pricing?.price_1m_output_tokens),
       velocidade: num(p.median_output_tokens_per_second),
       ttft: num(p.median_time_to_first_token_seconds),
+      tempoFim: num(p.median_end_to_end_response_time_seconds),
+      precoCache: num(m.pricing?.price_1m_cache_hit_tokens),
+      custoTarefa: num(m.artificial_analysis_intelligence_index_cost?.cost_per_task?.total_cost),
+      custoIndice: num(m.artificial_analysis_intelligence_index_cost?.total_cost),
+      financas: num(e.artificial_analysis_finance_and_accounting_index),
+      estrategia: num(e.artificial_analysis_strategy_and_ops_index),
+      juridico: num(e.artificial_analysis_legal_index),
+      saude: num(e.artificial_analysis_healthcare_and_medical_index),
+      engenharia: num(e.artificial_analysis_engineering_index),
+      economia: num(e.artificial_analysis_economics_index),
     };
     const atual = porChave.get(x.chave);
     if (!atual || (x.inteligencia ?? -1) > (atual.inteligencia ?? -1)) porChave.set(x.chave, x);

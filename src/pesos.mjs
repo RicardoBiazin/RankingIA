@@ -7,6 +7,14 @@ export const METRICAS = [
   { id: 'arena_texto', nome: 'Arena texto (Elo)', curto: 'Arena', fonte: 'lmarena', peso: 2, unidade: 'Elo', desc: 'Preferência humana em conversas de texto (LMArena).' },
   { id: 'arena_webdev', nome: 'Arena WebDev (Elo)', curto: 'WebDev', fonte: 'lmarena', peso: 1, unidade: 'Elo', desc: 'Preferência humana em criar páginas e apps web (LMArena).' },
   { id: 'arena_visao', nome: 'Arena visão (Elo)', curto: 'Visão', fonte: 'lmarena', peso: 0.5, unidade: 'Elo', desc: 'Preferência humana em tarefas com imagem (LMArena).' },
+  // Índices por área da Artificial Analysis: usam as mesmas avaliações do índice de
+  // inteligência, então ficam com peso 0 (senão contariam duas vezes) e só alimentam categorias.
+  { id: 'aa_financas', nome: 'Índice AA Finanças e Contabilidade', curto: 'AA Finanças', fonte: 'artificialanalysis', peso: 0, unidade: '', desc: 'Artificial Analysis Finance & Accounting Index.' },
+  { id: 'aa_estrategia', nome: 'Índice AA Estratégia e Operações', curto: 'AA Estratégia', fonte: 'artificialanalysis', peso: 0, unidade: '', desc: 'Artificial Analysis Strategy & Ops Index.' },
+  { id: 'aa_juridico', nome: 'Índice AA Jurídico', curto: 'AA Jurídico', fonte: 'artificialanalysis', peso: 0, unidade: '', desc: 'Artificial Analysis Legal Index.' },
+  { id: 'aa_saude', nome: 'Índice AA Saúde e Medicina', curto: 'AA Saúde', fonte: 'artificialanalysis', peso: 0, unidade: '', desc: 'Artificial Analysis Healthcare & Medical Index.' },
+  { id: 'aa_engenharia', nome: 'Índice AA Engenharia', curto: 'AA Engenharia', fonte: 'artificialanalysis', peso: 0, unidade: '', desc: 'Artificial Analysis Engineering Index.' },
+  { id: 'aa_economia', nome: 'Índice AA Economia', curto: 'AA Economia', fonte: 'artificialanalysis', peso: 0, unidade: '', desc: 'Artificial Analysis Economics Index.' },
 ];
 
 // Categorias do LiveBench 2.0 -> id e nome em português. Categoria nova sem
@@ -49,6 +57,12 @@ export const CATEGORIAS = [
   { id: 'navegador', nome: 'Navegador', metricas: ['lb_navegador'] },
   { id: 'conversa', nome: 'Conversa', metricas: ['arena_texto'] },
   { id: 'visao', nome: 'Visão', metricas: ['arena_visao'] },
+  { id: 'financas', nome: 'Finanças', metricas: ['aa_financas'] },
+  { id: 'estrategia', nome: 'Estratégia e operações', metricas: ['aa_estrategia'] },
+  { id: 'juridico', nome: 'Jurídico', metricas: ['aa_juridico'] },
+  { id: 'saude', nome: 'Saúde', metricas: ['aa_saude'] },
+  { id: 'engenharia', nome: 'Engenharia', metricas: ['aa_engenharia'] },
+  { id: 'economia', nome: 'Economia', metricas: ['aa_economia'] },
 ];
 
 // Encolhimento: a nota soma este peso extra com percentil 50. Quem tem só uma

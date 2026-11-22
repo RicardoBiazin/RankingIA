@@ -1,6 +1,6 @@
 {
  "fonte": "openrouter",
- "coletadoEm": "2026-11-22T16:47:46.359Z",
+ "coletadoEm": "2026-11-22T20:05:42.481Z",
  "modelos": [
   {
    "origem": "thinkingmachines/inkling-2-mini",
@@ -907,7 +907,7 @@
    "chave": "deepseek-pro",
    "nome": "DeepSeek Pro Latest",
    "empresa": "~deepseek",
-   "precoEntrada": 0.0999,
+   "precoEntrada": 0.1188,
    "precoSaida": 8,
    "contexto": 1048576,
    "lancamento": "2026-09-14",
@@ -3355,8 +3355,8 @@
    "chave": "gpt-oss-20b",
    "nome": "gpt-oss-20b",
    "empresa": "OpenAI",
-   "precoEntrada": 0.075,
-   "precoSaida": 0.3,
+   "precoEntrada": 0.03,
+   "precoSaida": 0.13,
    "contexto": 131072,
    "lancamento": "2025-08-05",
    "aberto": true,

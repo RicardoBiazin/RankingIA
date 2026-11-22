@@ -58,7 +58,7 @@ if (aa) {
     if (r.origens.artificialanalysis) continue;
     r.origens.artificialanalysis = m.origem;
     r.aa = m;
-    for (const [id, campo] of [['aa_inteligencia', 'inteligencia']]) {
+    for (const [id, campo] of [['aa_inteligencia', 'inteligencia'], ['aa_financas', 'financas'], ['aa_estrategia', 'estrategia'], ['aa_juridico', 'juridico'], ['aa_saude', 'saude'], ['aa_engenharia', 'engenharia'], ['aa_economia', 'economia']]) {
       if (m[campo] != null) r.metricas[id] = m[campo];
     }
   }
@@ -89,6 +89,10 @@ const lista = [...modelos.values()].map((r) => {
     precoSaida: o?.precoSaida ?? r.aa?.precoSaida ?? null,
     velocidade: r.aa?.velocidade ?? null,
     ttft: r.aa?.ttft ?? null,
+    tempoFim: r.aa?.tempoFim ?? null,
+    precoCache: r.aa?.precoCache ?? null,
+    custoTarefa: r.aa?.custoTarefa ?? null,
+    custoIndice: r.aa?.custoIndice ?? null,
     metricas: r.metricas,
     origens: r.origens,
   };
@@ -142,6 +146,16 @@ lista.sort((a, b) => (a.parcial - b.parcial) || ((b.nota ?? -1) - (a.nota ?? -1)
   || ((b.metricas.arena_texto ?? -1) - (a.metricas.arena_texto ?? -1)) || a.nome.localeCompare(b.nome));
 let pos = 0;
 for (const x of lista) x.posicao = x.parcial ? null : ++pos;
+
+// Fronteira de Pareto (nota × preço médio 3:1 entrada:saída): modelo sem outro que seja ao mesmo
+// tempo mais barato (ou igual) e de nota maior. Grátis (preço 0) não entra.
+{
+  const preco = (x) => (x.precoEntrada == null || x.precoSaida == null ? null : (3 * x.precoEntrada + x.precoSaida) / 4);
+  const cand = lista.filter((x) => !x.parcial && preco(x) > 0).sort((a, b) => preco(a) - preco(b) || b.nota - a.nota);
+  let melhor = -Infinity;
+  for (const x of lista) x.pareto = false;
+  for (const x of cand) if (x.nota > melhor) { x.pareto = true; melhor = x.nota; }
+}
 
 // Candidatos a alias: chave de qualidade sem par no OpenRouter, mas parecida com uma de lá.
 const chavesOR = [...porChaveOR.keys()];

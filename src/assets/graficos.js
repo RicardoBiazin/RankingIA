@@ -5,7 +5,7 @@
   var graficos = [];
   var MARCAS = [0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, 20, 50, 100];
 
-  function dispersao(id, pontosPorSerie, eixoX, eixoY, logX) {
+  function dispersao(id, pontosPorSerie, eixoX, eixoY, logX, linha) {
     var canvas = document.getElementById('g-' + id);
     if (!canvas) return;
     graficos.push(new Chart(canvas, {
@@ -16,7 +16,10 @@
             label: s.nome, data: s.pontos, backgroundColor: R.serie(i), borderColor: R.cor('--superficie'),
             borderWidth: 2, pointRadius: 5, pointHoverRadius: 8, pointHitRadius: 10,
           };
-        }),
+        }).concat(linha ? [{
+          type: 'line', label: linha.nome, data: linha.pontos, borderColor: R.serie(2), backgroundColor: R.serie(2),
+          borderWidth: 2, borderDash: [6, 4], pointRadius: 0, pointHitRadius: 8, stepped: 'after', order: 0,
+        }] : []),
       },
       options: {
         maintainAspectRatio: false,
@@ -73,7 +76,10 @@
     dispersao('nota-preco', [
       { nome: R.t('js.pesosFechados'), pontos: np.filter(function (m) { return !m.a; }).map(function (m) { return ponto(m, m.nota, R.t('js.nota', { n: R.nf(m.nota) }) + ' · ' + R.preco(R.precoMedio(m)) + '/1M'); }) },
       { nome: R.t('js.pesosAbertos'), pontos: np.filter(function (m) { return m.a; }).map(function (m) { return ponto(m, m.nota, R.t('js.nota', { n: R.nf(m.nota) }) + ' · ' + R.preco(R.precoMedio(m)) + '/1M'); }) },
-    ], R.t('js.precoMedio', { s: MOEDA.sigla() }), R.t('js.notaRankingIA'), true);
+    ], R.t('js.precoMedio', { s: MOEDA.sigla() }), R.t('js.notaRankingIA'), true, {
+      nome: R.t('js.pareto'),
+      pontos: np.filter(function (m) { return m.pf; }).sort(function (a, b) { return R.precoMedio(a) - R.precoMedio(b); }).map(function (m) { return ponto(m, m.nota, R.t('js.nota', { n: R.nf(m.nota) }) + ' · ' + R.preco(R.precoMedio(m))); }),
+    });
     dados('nota-preco', [R.t('js.modelo'), R.t('th.nota'), R.t('js.precoMedioCurto')], np.map(function (m) { return [m.n, R.nf(m.nota), R.preco(R.precoMedio(m))]; }));
 
     // 2. Arena × preço (inclui quem está fora do ranking).

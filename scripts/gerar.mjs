@@ -60,7 +60,7 @@ gravarJSON('public/dados/ranking.json', {
   metricas,
   modelos: modelos.map((m) => ({
     c: m.chave, s: m.slug, n: m.nome, e: m.empresa, a: m.aberto, l: m.lancamento, ctx: m.contexto,
-    pi: m.precoEntrada, po: m.precoSaida, v: m.velocidade, t: m.ttft, nota: m.nota, pos: m.posicao, cob: m.cobertura,
+    pi: m.precoEntrada, po: m.precoSaida, v: m.velocidade, t: m.ttft, pf: m.pareto ? 1 : 0, nota: m.nota, pos: m.posicao, cob: m.cobertura,
     m: m.metricas, p: m.percentis,
   })),
   historicoNota,
@@ -285,6 +285,9 @@ ${m.parcial
 <div class="cartao"><dt>${t('th.contexto')}</dt><dd>${contexto(m.contexto)}</dd><small>${t('mod.tokens')}</small></div>
 <div class="cartao"><dt>${t('mod.lancamento')}</dt><dd>${data(m.lancamento)}</dd><small>${t('mod.lancamentoFonte')}</small></div>
 <div class="cartao"><dt>${t('mod.pesos')}</dt><dd>${m.aberto ? t('mod.abertos') : m.aberto === false ? t('mod.fechados') : '—'}</dd><small>${m.hf ? `<a href="https://huggingface.co/${esc(m.hf)}" rel="noopener">${esc(m.hf)}</a>` : '&nbsp;'}</small></div>
+${m.custoTarefa != null ? `<div class="cartao"><dt>${t('mod.custoTarefa')}</dt><dd>${precoH(m.custoTarefa)}</dd><small>${t('mod.custoTarefa.nota', { s: m.custoIndice != null ? precoH(m.custoIndice) : '—' })}</small></div>` : ''}
+${m.tempoFim != null ? `<div class="cartao"><dt>${t('mod.tempo')}</dt><dd>${nf(m.tempoFim, 1)} s</dd><small>${t('mod.tempo.nota')}</small></div>` : ''}
+${!m.parcial && m.precoEntrada != null && m.precoSaida != null && m.precoEntrada + m.precoSaida > 0 ? `<div class="cartao"><dt>${t('mod.pareto')}</dt><dd>${m.pareto ? t('mod.pareto.sim') : t('mod.pareto.nao')}</dd><small>${t('mod.pareto.nota')}</small></div>` : ''}
 ${m.velocidade != null ? `<div class="cartao"><dt>${t('mod.velocidade')}</dt><dd>${nf(m.velocidade, 0)} tok/s</dd><small>${t('mod.ttft', { s: nf(m.ttft, 2) })}</small></div>` : ''}
 </dl>
 ${temFamilia ? `<section class="cartao grafico" aria-labelledby="t-familia">

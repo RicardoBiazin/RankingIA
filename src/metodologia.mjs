@@ -37,6 +37,14 @@ ${c.cats}
 <p>Modelos da mesma família (por exemplo Claude Opus 3, 4, 4.5 e 5.5) são agrupados pelo nome sem o número da versão. A página de cada modelo mostra a família inteira em ordem de lançamento.</p>
 <h2>Nomes dos modelos</h2>
 <p>Cada fonte escreve o nome de um jeito ("Claude Opus 5.5 (High)", "anthropic/claude-opus-5.5"). Juntamos por uma chave sem empresa, data e modo de esforço; os casos que a regra não pega ficam numa lista de apelidos revisada à mão. Se algum modelo aparecer duplicado ou trocado, ${ISSUE('abra uma issue')}.</p>
+<h2>Indicadores informativos</h2>
+<p>Alguns indicadores aparecem nas telas, mas não entram na Nota RankingIA:</p>
+<ul>
+<li>Índices por área da Artificial Analysis (finanças, estratégia e operações, jurídico, saúde, engenharia e economia): usam as mesmas avaliações do índice de inteligência, então somá-los contaria duas vezes. Viram categorias próprias.</li>
+<li>Custo por tarefa e custo para rodar o índice inteiro (Artificial Analysis): quanto custa, em média, uma tarefa do índice, contando os tokens de raciocínio e de resposta. Modelos que "pensam" mais saem mais caros do que o preço por token sugere.</li>
+<li>Tempo de resposta: mediana do pedido até o último token, medida pela Artificial Analysis.</li>
+<li>Fronteira de Pareto: modelos sem outro que seja ao mesmo tempo mais barato e de nota maior, pelo preço médio (3 partes de entrada para 1 de saída). Aparece como linha tracejada no gráfico nota × preço.</li>
+</ul>
 <h2>Limites</h2>
 <ul>
 <li>Percentil depende do grupo: quando um modelo forte entra, os outros podem cair sem ter piorado.</li>
@@ -48,6 +56,8 @@ ${c.cats}
 <ul>
 <li>${L('https://benchlm.ai/', 'BenchLM')}: agrega centenas de benchmarks. Os termos dele pedem um acordo à parte para exibir os dados num site público.</li>
 <li>${L('https://hai.stanford.edu/ai-index', 'Stanford HAI — AI Index')}: relatório anual sobre o estado da IA; não é um placar por modelo atualizado todo dia.</li>
+<li>${L('https://ia.com.br/melhores-ias', 'ia.com.br — Melhores IAs')}: ranking em português que reexibe dados da Artificial Analysis, OpenRouter e Design Arena; não tem API, não explica o cálculo da pontuação nem libera o reuso dos dados, e repete fontes que o RankingIA já usa direto.</li>
+<li>${L('https://www.designarena.ai/', 'Design Arena')}: Elo por votos de pessoas em sites, apps, imagens e vídeos. O robots.txt veda o acesso automático à API e não há licença de reuso dos dados.</li>
 <li>${L('https://swen.ia.br/ranking', 'SWEN.AI')}: ranking em português feito só com dados da Artificial Analysis, que o RankingIA já usa direto da fonte.</li>
 </ul>
 <h2>Situação das fontes</h2>
@@ -79,6 +89,14 @@ ${c.cats}
 <p>Models of the same family (for example Claude Opus 3, 4, 4.5 and 5.5) are grouped by name without the version number. Each model page shows the whole family in release order.</p>
 <h2>Model names</h2>
 <p>Each source writes names differently ("Claude Opus 5.5 (High)", "anthropic/claude-opus-5.5"). We match them with a key without company, date and effort mode; cases the rule misses go into a hand-reviewed alias list. If a model looks duplicated or mixed up, ${ISSUE('open an issue')}.</p>
+<h2>Informational indicators</h2>
+<p>Some indicators appear on the pages but do not count toward the RankingIA score:</p>
+<ul>
+<li>Artificial Analysis area indexes (finance, strategy and operations, legal, healthcare, engineering and economics): they reuse the evaluations of the intelligence index, so adding them would count the same work twice. They become categories of their own.</li>
+<li>Cost per task and cost to run the whole index (Artificial Analysis): what an index task costs on average, counting reasoning and answer tokens. Models that "think" more end up costlier than the per-token price suggests.</li>
+<li>Response time: median from the request to the last token, measured by Artificial Analysis.</li>
+<li>Pareto frontier: models with no other that is both cheaper and higher-scoring, using the blended price (3 parts input to 1 part output). It shows as a dashed line on the score × price chart.</li>
+</ul>
 <h2>Limitations</h2>
 <ul>
 <li>Percentiles depend on the group: when a strong model arrives, others can drop without getting worse.</li>
@@ -90,6 +108,8 @@ ${c.cats}
 <ul>
 <li>${L('https://benchlm.ai/', 'BenchLM')}: aggregates hundreds of benchmarks. Its terms require a separate agreement to display its data on a public site.</li>
 <li>${L('https://hai.stanford.edu/ai-index', 'Stanford HAI — AI Index')}: annual report on the state of AI; not a per-model leaderboard updated daily.</li>
+<li>${L('https://ia.com.br/melhores-ias', 'ia.com.br — Melhores IAs')}: Portuguese-language ranking that republishes Artificial Analysis, OpenRouter and Design Arena data; it has no API, does not explain how its score is computed and gives no licence to reuse the data, and it repeats sources RankingIA already reads directly.</li>
+<li>${L('https://www.designarena.ai/', 'Design Arena')}: Elo from people’s votes on websites, apps, images and video. Its robots.txt disallows automated access to the API and there is no licence to reuse the data.</li>
 <li>${L('https://swen.ia.br/ranking', 'SWEN.AI')}: Portuguese-language ranking built only on Artificial Analysis data, which RankingIA already uses directly.</li>
 </ul>
 <h2>Source status</h2>
@@ -121,6 +141,14 @@ ${c.cats}
 <p>Los modelos de la misma familia (por ejemplo Claude Opus 3, 4, 4.5 y 5.5) se agrupan por el nombre sin el número de versión. La página de cada modelo muestra toda la familia en orden de lanzamiento.</p>
 <h2>Nombres de los modelos</h2>
 <p>Cada fuente escribe el nombre a su manera ("Claude Opus 5.5 (High)", "anthropic/claude-opus-5.5"). Los unimos con una clave sin empresa, fecha ni modo de esfuerzo; los casos que la regla no capta van a una lista de alias revisada a mano. Si un modelo aparece duplicado o mezclado, ${ISSUE('abre un issue')}.</p>
+<h2>Indicadores informativos</h2>
+<p>Algunos indicadores aparecen en las pantallas, pero no entran en la nota RankingIA:</p>
+<ul>
+<li>Índices por área de Artificial Analysis (finanzas, estrategia y operaciones, jurídico, salud, ingeniería y economía): usan las mismas evaluaciones del índice de inteligencia, así que sumarlos contaría dos veces lo mismo. Se convierten en categorías propias.</li>
+<li>Coste por tarea y coste de ejecutar todo el índice (Artificial Analysis): cuánto cuesta, de media, una tarea del índice, contando los tokens de razonamiento y de respuesta. Los modelos que "piensan" más salen más caros de lo que sugiere el precio por token.</li>
+<li>Tiempo de respuesta: mediana desde la solicitud hasta el último token, medida por Artificial Analysis.</li>
+<li>Frontera de Pareto: modelos sin otro que sea a la vez más barato y de mayor nota, según el precio medio (3 partes de entrada por 1 de salida). Aparece como una línea discontinua en el gráfico nota × precio.</li>
+</ul>
 <h2>Límites</h2>
 <ul>
 <li>El percentil depende del grupo: cuando entra un modelo fuerte, los otros pueden bajar sin haber empeorado.</li>
@@ -132,6 +160,8 @@ ${c.cats}
 <ul>
 <li>${L('https://benchlm.ai/', 'BenchLM')}: agrega cientos de benchmarks. Sus términos exigen un acuerdo aparte para mostrar sus datos en un sitio público.</li>
 <li>${L('https://hai.stanford.edu/ai-index', 'Stanford HAI — AI Index')}: informe anual sobre el estado de la IA; no es una tabla por modelo actualizada a diario.</li>
+<li>${L('https://ia.com.br/melhores-ias', 'ia.com.br — Melhores IAs')}: ranking en portugués que reexhibe datos de Artificial Analysis, OpenRouter y Design Arena; no tiene API, no explica cómo calcula la puntuación ni autoriza reutilizar los datos, y repite fuentes que RankingIA ya usa directamente.</li>
+<li>${L('https://www.designarena.ai/', 'Design Arena')}: Elo a partir de votos de personas en sitios web, apps, imágenes y vídeo. Su robots.txt prohíbe el acceso automático a la API y no hay licencia para reutilizar los datos.</li>
 <li>${L('https://swen.ia.br/ranking', 'SWEN.AI')}: ranking en portugués hecho solo con datos de Artificial Analysis, que RankingIA ya usa directamente.</li>
 </ul>
 <h2>Estado de las fuentes</h2>
@@ -163,6 +193,14 @@ ${c.cats}
 <p>Les modèles d’une même famille (par exemple Claude Opus 3, 4, 4.5 et 5.5) sont regroupés par leur nom sans numéro de version. La page de chaque modèle montre toute la famille dans l’ordre de sortie.</p>
 <h2>Noms des modèles</h2>
 <p>Chaque source écrit les noms à sa façon (« Claude Opus 5.5 (High) », « anthropic/claude-opus-5.5 »). Nous les rapprochons par une clé sans entreprise, date ni mode d’effort ; les cas non couverts vont dans une liste d’alias revue à la main. Si un modèle semble dupliqué ou confondu, ${ISSUE('ouvrez une issue')}.</p>
+<h2>Indicateurs à titre informatif</h2>
+<p>Certains indicateurs apparaissent dans les pages mais ne comptent pas dans le score RankingIA :</p>
+<ul>
+<li>Indices par domaine d’Artificial Analysis (finance, stratégie et opérations, juridique, santé, ingénierie et économie) : ils reprennent les évaluations de l’indice d’intelligence, les additionner compterait deux fois le même travail. Ils deviennent des catégories à part.</li>
+<li>Coût par tâche et coût d’exécution de l’indice complet (Artificial Analysis) : ce que coûte en moyenne une tâche de l’indice, en comptant les tokens de raisonnement et de réponse. Les modèles qui « réfléchissent » davantage coûtent plus cher que le prix par token ne le laisse penser.</li>
+<li>Temps de réponse : médiane entre la requête et le dernier token, mesurée par Artificial Analysis.</li>
+<li>Frontière de Pareto : modèles pour lesquels aucun autre n’est à la fois moins cher et mieux noté, selon le prix moyen (3 parts d’entrée pour 1 de sortie). Elle apparaît en pointillés sur le graphique score × prix.</li>
+</ul>
 <h2>Limites</h2>
 <ul>
 <li>Le percentile dépend du groupe : quand un modèle fort arrive, les autres peuvent baisser sans s’être dégradés.</li>
@@ -174,6 +212,8 @@ ${c.cats}
 <ul>
 <li>${L('https://benchlm.ai/', 'BenchLM')} : agrège des centaines de benchmarks. Ses conditions exigent un accord séparé pour afficher ses données sur un site public.</li>
 <li>${L('https://hai.stanford.edu/ai-index', 'Stanford HAI — AI Index')} : rapport annuel sur l’état de l’IA ; pas un classement par modèle mis à jour chaque jour.</li>
+<li>${L('https://ia.com.br/melhores-ias', 'ia.com.br — Melhores IAs')} : classement en portugais qui republie des données d’Artificial Analysis, d’OpenRouter et de Design Arena ; sans API, sans explication du calcul du score ni licence de réutilisation des données, et il reprend des sources que RankingIA lit déjà directement.</li>
+<li>${L('https://www.designarena.ai/', 'Design Arena')} : Elo issu des votes de personnes sur des sites web, applis, images et vidéos. Son robots.txt interdit l’accès automatisé à l’API et aucune licence ne permet de réutiliser les données.</li>
 <li>${L('https://swen.ia.br/ranking', 'SWEN.AI')} : classement en portugais construit uniquement sur les données d’Artificial Analysis, que RankingIA utilise déjà directement.</li>
 </ul>
 <h2>État des sources</h2>
@@ -205,6 +245,14 @@ ${c.cats}
 <p>同一系列的模型（例如 Claude Opus 3、4、4.5 和 5.5）按去掉版本号后的名称归为一组。每个模型页面按发布顺序展示整个系列。</p>
 <h2>模型名称</h2>
 <p>各来源的命名方式不同（"Claude Opus 5.5 (High)"、"anthropic/claude-opus-5.5"）。我们用去掉公司、日期和推理模式后的键进行匹配；规则无法覆盖的情况放入人工维护的别名列表。如发现模型重复或混淆，请${ISSUE('提交 issue')}。</p>
+<h2>信息性指标</h2>
+<p>以下指标会显示在页面上，但不计入 RankingIA 评分：</p>
+<ul>
+<li>Artificial Analysis 的分领域指数（财务、战略与运营、法律、医疗健康、工程、经济学）：它们复用智能指数的评测项，相加会重复计算，因此单独作为类别呈现。</li>
+<li>每项任务成本与跑完整个指数的成本（Artificial Analysis）：指数中一项任务的平均花费，包含推理和回答的 token。“思考”更多的模型，实际成本会高于按 token 计价所显示的水平。</li>
+<li>响应时间：从发出请求到最后一个 token 的中位数，由 Artificial Analysis 测量。</li>
+<li>帕累托前沿：没有其他模型同时更便宜且评分更高（按平均价格，输入与输出之比为 3:1）。在“评分 × 价格”图中以虚线显示。</li>
+</ul>
 <h2>局限</h2>
 <ul>
 <li>百分位取决于群体：强模型加入后，其他模型可能在没有变差的情况下名次下降。</li>
@@ -216,6 +264,8 @@ ${c.cats}
 <ul>
 <li>${L('https://benchlm.ai/', 'BenchLM')}：汇总数百项基准。其条款规定，在公开网站展示其数据需另行签订协议。</li>
 <li>${L('https://hai.stanford.edu/ai-index', 'Stanford HAI — AI Index')}：关于 AI 现状的年度报告，并非每日更新的逐模型榜单。</li>
+<li>${L('https://ia.com.br/melhores-ias', 'ia.com.br — Melhores IAs')}：葡萄牙语排行榜，转载 Artificial Analysis、OpenRouter 和 Design Arena 的数据；没有 API，未说明评分如何计算，也未授权复用数据，且其数据源 RankingIA 已直接使用。</li>
+<li>${L('https://www.designarena.ai/', 'Design Arena')}：根据用户对网站、应用、图像和视频的投票得出 Elo。其 robots.txt 禁止自动访问 API，也没有数据复用许可。</li>
 <li>${L('https://swen.ia.br/ranking', 'SWEN.AI')}：仅基于 Artificial Analysis 数据的葡萄牙语排行榜，RankingIA 已直接使用该来源。</li>
 </ul>
 <h2>数据源状态</h2>

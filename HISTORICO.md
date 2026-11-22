@@ -1,5 +1,16 @@
 # Histórico
 
+## 0.8.0 — 22/11/2026
+
+Novos indicadores, a partir da metodologia da Artificial Analysis (endpoint grátis da API V2), do LiveBench e do ia.com.br.
+
+- 6 índices por área da Artificial Analysis (finanças, estratégia e operações, jurídico, saúde, engenharia, economia): viram 6 categorias novas. Têm peso 0 na nota geral porque reaproveitam as avaliações do índice de inteligência (contariam duas vezes).
+- Página do modelo: custo por tarefa e custo para rodar o índice inteiro (AA), tempo de resposta (mediana ponta a ponta, AA) e se o modelo está na fronteira de Pareto.
+- Fronteira de Pareto (nota × preço médio 3:1) calculada em `normalizar.mjs` e desenhada como linha tracejada no gráfico nota × preço.
+- Metodologia nos 5 idiomas: seção "Indicadores informativos" e, em "Outras referências", ia.com.br/melhores-ias e Design Arena.
+- Não entraram como fonte: o ia.com.br só reexibe Artificial Analysis, OpenRouter e Design Arena, sem API, sem fórmula da pontuação e sem licença de reuso; a Design Arena veda a API no robots.txt e não licencia os dados.
+- Testes: 6 índices por área, custo por tarefa, e propriedades da fronteira de Pareto.
+
 ## 0.7.2 — 07/11/2026
 
 - Visibilidade para agentes de IA (GEO): `public/llms.txt` (índice com as páginas principais e os 25 modelos de maior nota) e `public/llms-full.txt` (ranking completo em texto).

@@ -38,6 +38,13 @@ const aaTeste = converter({ data: [
 conferir(aaTeste.length === 1 && aaTeste[0].chave === 'modelo-x' && aaTeste[0].nome === 'Modelo X', 'Artificial Analysis: modos do mesmo modelo viram uma chave');
 conferir(aaTeste[0].inteligencia === 70.2 && aaTeste[0].velocidade === 100 && aaTeste[0].precoSaida === 4, 'Artificial Analysis: fica o melhor modo; velocidade vem de performance');
 
+const aaArea = converter({ data: [{ id: 'z', name: 'Modelo Z', slug: 'modelo-z', model_creator: { name: 'OpenAI' },
+  evaluations: { artificial_analysis_intelligence_index: 50, artificial_analysis_finance_and_accounting_index: 41.5, artificial_analysis_legal_index: 38, artificial_analysis_engineering_index: 30, artificial_analysis_economics_index: 39, artificial_analysis_healthcare_and_medical_index: 40, artificial_analysis_strategy_and_ops_index: 46 },
+  artificial_analysis_intelligence_index_cost: { total_cost: 679.16, cost_per_task: { total_cost: 0.7807 } },
+  pricing: { price_1m_input_tokens: 2, price_1m_output_tokens: 10, price_1m_cache_hit_tokens: 0.1 }, performance: { median_end_to_end_response_time_seconds: 10.3 } }] })[0];
+conferir(aaArea.financas === 41.5 && aaArea.juridico === 38 && aaArea.engenharia === 30 && aaArea.economia === 39 && aaArea.saude === 40 && aaArea.estrategia === 46, 'Artificial Analysis: 6 índices por área');
+conferir(aaArea.custoTarefa === 0.7807 && aaArea.custoIndice === 679.16 && aaArea.precoCache === 0.1 && aaArea.tempoFim === 10.3, 'Artificial Analysis: custo por tarefa, custo do índice, preço de cache e tempo de resposta');
+
 // ---------- dados ----------
 const d = lerJSON('dados/modelos.json');
 conferir(d && Array.isArray(d.modelos), 'dados/modelos.json existe');
@@ -48,6 +55,16 @@ conferir(ranking.every((m, i) => i === 0 || ranking[i - 1].nota >= m.nota), 'ran
 conferir(ranking.every((m) => m.nota >= 0 && m.nota <= 100), 'notas entre 0 e 100');
 conferir(d.modelos.filter((m) => m.parcial).every((m) => m.nota === null && m.posicao === null), 'modelos fora do ranking sem nota nem posição');
 conferir(d.modelos.every((m) => Object.values(m.percentis).every((p) => p >= 0 && p <= 100)), 'percentis entre 0 e 100');
+// Fronteira de Pareto: ninguém fora dela é ao mesmo tempo mais barato (ou igual) e de nota maior.
+{
+  const preco = (m) => (m.precoEntrada == null || m.precoSaida == null ? null : (3 * m.precoEntrada + m.precoSaida) / 4);
+  const com = ranking.filter((m) => preco(m) > 0);
+  const fora = com.filter((m) => !m.pareto);
+  conferir(com.filter((m) => m.pareto).length >= 1, 'Pareto: ao menos um modelo na fronteira');
+  conferir(fora.every((m) => com.some((o) => o.pareto && preco(o) <= preco(m) && o.nota >= m.nota)), 'Pareto: todo modelo fora da fronteira é dominado por um dentro dela');
+  conferir(com.filter((m) => m.pareto).every((m) => !com.some((o) => o !== m && preco(o) <= preco(m) && o.nota >= m.nota && (preco(o) < preco(m) || o.nota > m.nota))), 'Pareto: nenhum modelo da fronteira é dominado');
+}
+for (const c of d.categorias ?? []) conferir(c.metricas.every((id) => d.metricas.some((m) => m.id === id)), `categoria ${c.id} só com métricas existentes`);
 const slugs = d.modelos.map((m) => m.slug);
 conferir(new Set(slugs).size === slugs.length, 'slugs únicos');
 conferir(slugs.every((s) => /^[a-z0-9.-]+$/.test(s)), 'slugs só com a-z 0-9 . -');
