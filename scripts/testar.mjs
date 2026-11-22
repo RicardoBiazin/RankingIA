@@ -78,7 +78,7 @@ if (candidatos.length) console.log(`aviso ${candidatos.length} nomes sem par no 
 // ---------- site ----------
 const pub = (rel) => caminho('public/' + rel);
 const { IDIOMAS, TEXTOS } = await import('../src/i18n.mjs');
-// Traduções: todo texto nos 5 idiomas, sem vazio, com os mesmos {marcadores}.
+// Traduções: todo texto em todos os idiomas, sem vazio, com os mesmos {marcadores}.
 const marcas = (x) => [...x.matchAll(/\{(\w+)\}/g)].map((m) => m[1]).sort().join(',');
 const ruins = Object.entries(TEXTOS).filter(([, v]) => v.length !== IDIOMAS.length || v.some((x) => !x) || v.some((x) => marcas(x) !== marcas(v[0]))).map(([k]) => k);
 conferir(!ruins.length, `${Object.keys(TEXTOS).length} textos traduzidos nos ${IDIOMAS.length} idiomas ${ruins.slice(0, 5).join(' ')}`);
@@ -88,7 +88,7 @@ for (const i of IDIOMAS) {
   paginas.push(...['index.html', 'graficos.html', 'comparar.html', 'metodologia.html', '404.html'].map((a) => pre + a), ...readdirSync(pub(pre + 'modelo')).map((a) => pre + 'modelo/' + a));
   conferir(d.modelos.every((m) => existsSync(pub(`${pre}modelo/${m.slug}.html`))), `${i.codigo}: uma página por modelo (${d.modelos.length})`);
   const html = readFileSync(pub(pre + 'index.html'), 'utf8');
-  conferir(html.includes(`<html lang="${i.codigo}"`) && IDIOMAS.every((j) => html.includes(`hreflang="${j.codigo}"`)), `${i.codigo}: lang e hreflang dos ${IDIOMAS.length} idiomas`);
+  conferir(html.includes(`<html lang="${i.codigo}"${i.dir ? ` dir="${i.dir}"` : ''}`) && IDIOMAS.every((j) => html.includes(`hreflang="${j.codigo}"`)), `${i.codigo}: lang e hreflang dos ${IDIOMAS.length} idiomas`);
   conferir(existsSync(pub(`assets/t-${i.pasta || 'pt'}.js`)), `${i.codigo}: textos do navegador`);
   if (i.i > 0) {
     // Texto em português que não pode vazar para os outros idiomas.
@@ -133,7 +133,7 @@ for (const i of IDIOMAS) {
   const desc = [...(h.match(/<meta name="description" content="([^"]*)">/)?.[1] ?? '').replace(/&[a-z#0-9]+;/g, '_')].length;
   const url = `https://rankingia.biazin.com.br${i.pasta ? '/' + i.pasta : ''}/`;
   const ld = h.match(/<script type="application\/ld\+json">([^<]*)<\/script>/)?.[1];
-  const ok = [...tit].length <= 60 && (i.pasta === 'zh' || (desc >= 140 && desc <= 160))
+  const ok = [...tit].length <= 60 && (['zh', 'ja'].includes(i.pasta) || (desc >= 140 && desc <= 160))
     && h.includes(`<link rel="canonical" href="${url}">`) && h.includes(`<meta property="og:url" content="${url}">`)
     && h.includes('<meta property="og:site_name" content="RankingIA">') && h.includes('hreflang="x-default" href="https://rankingia.biazin.com.br/"')
     && ld && JSON.parse(ld)['@type'] === 'WebSite' && JSON.parse(ld).url === url;

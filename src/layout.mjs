@@ -53,7 +53,7 @@ export function pagina({ idioma, t, rel, titulo, descricao, conteudo, scripts = 
   const arq = idioma.pasta || 'pt';
 
   return `<!doctype html>
-<html lang="${idioma.codigo}"${taxas ? ` data-cambio="${esc(JSON.stringify(taxas))}"` : ''}>
+<html lang="${idioma.codigo}"${idioma.dir ? ` dir="${idioma.dir}"` : ''}${taxas ? ` data-cambio="${esc(JSON.stringify(taxas))}"` : ''}>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">

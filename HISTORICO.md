@@ -1,5 +1,15 @@
 # Histórico
 
+## 0.9.0 — 22/11/2026
+
+Seis idiomas novos, os mais falados que faltavam: hindi (`/hi`), árabe (`/ar`), bengali (`/bn`), russo (`/ru`), japonês (`/ja`) e indonésio (`/id`). O site passa a ter 11 idiomas.
+
+- Cada idioma extra tem o seu arquivo em `src/idiomas/<código>.mjs` (256 textos, metodologia, título e cabeçalho do status); `i18n.mjs` e `metodologia.mjs` anexam esses textos aos 5 idiomas originais.
+- Novo `scripts/validar-idioma.mjs <código>`: confere chaves, {marcadores}, tags HTML, esqueleto e links da metodologia, title até 60 e description de 140 a 160 caracteres (japonês e chinês dispensados da faixa).
+- Árabe da direita para a esquerda: `<html dir="rtl">` e espelhamento em `estilo.css`. Números sempre com dígitos latinos (`ar-u-nu-latn`, `bn-BD-u-nu-latn`).
+- 404 por pasta no `netlify.toml`, `llms.txt` com os novos idiomas, `hreflang` e sitemap de todos os 11 idiomas; o `testar` confere o `dir` do árabe.
+- Traduções feitas por modelo de linguagem, sem revisão de falante nativo.
+
 ## 0.8.0 — 22/11/2026
 
 Novos indicadores, a partir da metodologia da Artificial Analysis (endpoint grátis da API V2), do LiveBench e do ia.com.br.

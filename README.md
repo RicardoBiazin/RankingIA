@@ -11,9 +11,9 @@ O site junta placares públicos numa nota de 0 a 100 e mostra preço, contexto e
 
 ## Idiomas
 
-O site existe em português (raiz), inglês (`/en`), espanhol (`/es`), francês (`/fr`) e chinês (`/zh`).
+O site existe em 11 idiomas: português (raiz), inglês (`/en`), espanhol (`/es`), francês (`/fr`), chinês (`/zh`), hindi (`/hi`), árabe (`/ar`, da direita para a esquerda), bengali (`/bn`), russo (`/ru`), japonês (`/ja`) e indonésio (`/id`).
 
-- Os textos ficam em [`src/i18n.mjs`](src/i18n.mjs), no formato `[pt, en, es, fr, zh]`.
+- Os textos dos 5 primeiros ficam em [`src/i18n.mjs`](src/i18n.mjs), no formato `[pt, en, es, fr, zh]`; cada idioma extra tem o seu arquivo em [`src/idiomas/`](src/idiomas) (textos, metodologia, título e cabeçalho do status), conferido por `node scripts/validar-idioma.mjs <código>`.
 - A metodologia fica em [`src/metodologia.mjs`](src/metodologia.mjs).
 - O `testar` falha se faltar tradução.
 
@@ -85,7 +85,7 @@ Para publicar à mão: `npm run publicar`, ou rodar o workflow pelo GitHub (`gh 
 
 ## Buscadores
 
-Cada idioma tem URL própria (`/`, `/en/`, `/es/`, `/fr/`, `/zh/`), então toda página leva `canonical` próprio, `hreflang` dos cinco idiomas e `x-default` apontando para o português. Também leva Open Graph (com `og:locale:alternate`) e cartão do Twitter. A página inicial tem JSON-LD `WebSite`; a CSP não bloqueia porque o JSON-LD é dado e não roda. O `gerar` escreve `robots.txt` e `sitemap.xml` com todas as páginas nos cinco idiomas. O `testar` confere, na página inicial de cada idioma, title de até 60 caracteres e description entre 140 e 160 (o chinês fica de fora da faixa).
+Cada idioma tem URL própria (`/`, `/en/`, `/es/`, `/fr/`, `/zh/`, `/hi/`, `/ar/`, `/bn/`, `/ru/`, `/ja/`, `/id/`), então toda página leva `canonical` próprio, `hreflang` de todos os idiomas e `x-default` apontando para o português. Também leva Open Graph (com `og:locale:alternate`) e cartão do Twitter. A página inicial tem JSON-LD `WebSite`; a CSP não bloqueia porque o JSON-LD é dado e não roda. O `gerar` escreve `robots.txt` e `sitemap.xml` com todas as páginas em todos os idiomas. O `testar` confere, na página inicial de cada idioma, title de até 60 caracteres e description entre 140 e 160 (chinês e japonês ficam de fora da faixa).
 
 ## Licença
 

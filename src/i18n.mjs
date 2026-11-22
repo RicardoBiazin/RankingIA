@@ -1,5 +1,14 @@
 // Idiomas do site. O português fica na raiz; os outros em /<pasta>/.
-// Cada texto é [pt, en, es, fr, zh], na ordem de IDIOMAS. {x} é substituído por t(chave, { x }).
+// Cada texto é [pt, en, es, fr, zh, ...], na ordem de IDIOMAS. {x} é substituído por t(chave, { x }).
+// Os 5 primeiros idiomas têm os textos aqui; os extras (hi, ar, bn, ru, ja, id) ficam em src/idiomas/<código>.mjs
+// e são anexados a cada texto logo depois da tabela T.
+
+import hi from './idiomas/hi.mjs';
+import ar from './idiomas/ar.mjs';
+import bn from './idiomas/bn.mjs';
+import ru from './idiomas/ru.mjs';
+import ja from './idiomas/ja.mjs';
+import id from './idiomas/id.mjs';
 
 export const IDIOMAS = [
   { i: 0, codigo: 'pt-BR', pasta: '', nome: 'Português', curto: 'PT', og: 'pt_BR', locale: 'pt-BR' },
@@ -7,6 +16,12 @@ export const IDIOMAS = [
   { i: 2, codigo: 'es', pasta: 'es', nome: 'Español', curto: 'ES', og: 'es_ES', locale: 'es-ES' },
   { i: 3, codigo: 'fr', pasta: 'fr', nome: 'Français', curto: 'FR', og: 'fr_FR', locale: 'fr-FR' },
   { i: 4, codigo: 'zh-CN', pasta: 'zh', nome: '中文', curto: '中文', og: 'zh_CN', locale: 'zh-CN' },
+  { i: 5, codigo: 'hi', pasta: 'hi', nome: 'हिन्दी', curto: 'HI', og: 'hi_IN', locale: 'hi-IN' },
+  { i: 6, codigo: 'ar', pasta: 'ar', nome: 'العربية', curto: 'AR', og: 'ar_AR', locale: 'ar-u-nu-latn', dir: 'rtl' },
+  { i: 7, codigo: 'bn', pasta: 'bn', nome: 'বাংলা', curto: 'BN', og: 'bn_BD', locale: 'bn-BD-u-nu-latn' },
+  { i: 8, codigo: 'ru', pasta: 'ru', nome: 'Русский', curto: 'RU', og: 'ru_RU', locale: 'ru-RU' },
+  { i: 9, codigo: 'ja', pasta: 'ja', nome: '日本語', curto: 'JA', og: 'ja_JP', locale: 'ja-JP' },
+  { i: 10, codigo: 'id', pasta: 'id', nome: 'Bahasa Indonesia', curto: 'ID', og: 'id_ID', locale: 'id-ID' },
 ];
 
 const T = {
@@ -286,6 +301,10 @@ const T = {
   'mod.pareto.nota': ['sim = nenhum modelo é ao mesmo tempo mais barato e de nota maior (nota × preço médio)', 'yes = no model is both cheaper and higher-scoring (score × blended price)', 'sí = ningún modelo es a la vez más barato y de mayor nota (nota × precio medio)', 'oui = aucun modèle n’est à la fois moins cher et mieux noté (score × prix moyen)', '是 = 没有模型同时更便宜且评分更高（评分 × 平均价格）'],
   'js.pareto': ['Fronteira de Pareto', 'Pareto frontier', 'Frontera de Pareto', 'Frontière de Pareto', '帕累托前沿'],
 };
+
+// Idiomas extras: anexa o texto de cada um, na ordem de IDIOMAS (i = 5, 6, ...).
+const EXTRAS = [hi, ar, bn, ru, ja, id];
+for (const [chave, v] of Object.entries(T)) for (const e of EXTRAS) v.push(e.t[chave]);
 
 export function tradutor(idioma) {
   const t = (chave, vars = {}) => {

@@ -251,3 +251,19 @@ main.conteudo { padding-top: 24px; padding-bottom: 48px; }
 .idiomas li a:hover { background: var(--superficie-2); text-decoration: none; }
 .idiomas li a[aria-current="true"] { color: var(--destaque-texto); font-weight: 600; }
 .rodape .autonomo { font-style: italic; }
+
+/* Idiomas da direita para a esquerda (árabe): espelha o que usa left/right. */
+[dir="rtl"] .menu { margin-left: 0; margin-right: auto; }
+[dir="rtl"] .moeda { margin-left: 0; margin-right: auto; }
+[dir="rtl"] .aviso { border-left: 0; border-right: 4px solid var(--aviso); }
+[dir="rtl"] .filtros .contagem { margin-left: 0; margin-right: auto; }
+[dir="rtl"] .rotulo-chips { margin-right: 0; margin-left: 4px; }
+[dir="rtl"] .tabela th, [dir="rtl"] .tabela td { text-align: left; }
+[dir="rtl"] .tabela th.esq, [dir="rtl"] .tabela td.esq { text-align: right; }
+[dir="rtl"] .selo { margin-left: 0; margin-right: 6px; }
+[dir="rtl"] .barra { margin-left: 0; margin-right: 8px; }
+[dir="rtl"] .placar { text-align: left; }
+[dir="rtl"] .tabela-comp th, [dir="rtl"] .tabela-comp td { text-align: left; }
+[dir="rtl"] .tabela-comp th:first-child, [dir="rtl"] .tabela-comp td:first-child { text-align: right; }
+[dir="rtl"] .texto th, [dir="rtl"] .texto td { text-align: right; }
+[dir="rtl"] .idiomas ul { right: auto; left: 0; }

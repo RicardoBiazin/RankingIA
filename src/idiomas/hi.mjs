@@ -1,0 +1,323 @@
+// Hindi. Gerado a partir de pt/en; validar com: node scripts/validar-idioma.mjs hi
+const L = (url, nome) => `<a href="${url}" rel="noopener">${nome}</a>`;
+const LB = L('https://livebench.ai/', 'LiveBench');
+const LA = L('https://arena.ai/leaderboard', 'LMArena (arena.ai)');
+const OR = L('https://openrouter.ai/models', 'OpenRouter');
+const AA = L('https://artificialanalysis.ai/', 'Artificial Analysis');
+const FR = L('https://frankfurter.dev/', 'Frankfurter');
+const GH = L('https://github.com/RicardoBiazin/RankingIA', 'github.com/RicardoBiazin/RankingIA');
+const ISSUE = (txt) => L('https://github.com/RicardoBiazin/RankingIA/issues', txt);
+
+export default {
+  t: {
+    'nav.ranking': 'रैंकिंग',
+    'nav.graficos': 'चार्ट',
+    'nav.comparar': 'तुलना',
+    'nav.metodologia': 'पद्धति',
+    'nav.principal': 'मुख्य',
+    'versao.titulo': 'साइट का संस्करण',
+    'tema.titulo': 'लाइट/डार्क थीम बदलें',
+    'moeda.titulo': 'कीमतों की मुद्रा',
+    'idioma.titulo': 'भाषा',
+    'rodape.dados': 'डेटा',
+    'rodape.release': '{d} की रिलीज़',
+    'rodape.placar': '{d} का लीडरबोर्ड',
+    'rodape.atualizado': '{d} को अपडेट किया गया।',
+    'rodape.aa': 'इंडेक्स, कीमतें और गति {l} से।',
+    'rodape.cambio': '{d} को ECB ({l}) की संदर्भ विनिमय दरें: {lista}। मूल कीमतें अमेरिकी डॉलर में हैं।',
+    'rodape.falha': '{f} ने पिछले संग्रह में जवाब नहीं दिया; {d} का डेटा दिखाया जा रहा है',
+    'rodape.feito': 'निर्माता:',
+    'rodape.codigo': 'ओपन सोर्स (MIT)',
+    'rodape.conduta': 'आचार संहिता',
+    'rodape.como': 'स्कोर कैसे निकाला जाता है',
+    'rodape.autonomo': 'इस साइट का डेटा संग्रह और नतीजे हर दिन सॉफ़्टवेयर द्वारा अपने आप तैयार किए जाते हैं; स्कोर में कोई मैन्युअल बदलाव नहीं होता।',
+    'fam.titulo': 'परिवार का इतिहास',
+    'fam.texto': 'इस परिवार के {n} संस्करण, रिलीज़ तारीख के अनुसार पहले से सबसे नए तक। संस्करण खोलने के लिए किसी बिंदु पर क्लिक करें।',
+    'js.familiaNota': 'RankingIA स्कोर',
+    'js.familiaElo': 'Arena Elo (टेक्स्ट)',
+    'js.familiaAA': 'AA इंटेलिजेंस इंडेक्स',
+    'pos': '#{n}',
+    'ctx.mil': '{n}K',
+    'ctx.mi': '{n}M',
+    'gratis': 'मुफ़्त',
+    'ate': '{p} / 1M तक',
+    'idx.titulo': 'AI मॉडल (LLM) लीडरबोर्ड · RankingIA',
+    'idx.desc': '{n} AI मॉडलों की रैंकिंग: LiveBench, LMArena और Artificial Analysis के स्कोर तथा OpenRouter की कीमतें। GPT, Claude, Gemini, DeepSeek और Qwen की तुलना करें।',
+    'idx.h1': 'AI मॉडल लीडरबोर्ड',
+    'idx.intro': '0 से 100 का एक स्कोर, जो सार्वजनिक बेंचमार्क ({fontes}) को जोड़ता है और बताता है कि हर मॉडल की कीमत कितनी है। स्कोर बताता है कि रैंक किए गए कितने % मॉडलों से यह मॉडल आगे है, भारित औसत के रूप में। {l}।',
+    'idx.como': 'हम कैसे गणना करते हैं',
+    'podio.primeiro': 'कुल मिलाकर #1',
+    'podio.custo': 'सबसे किफ़ायती',
+    'podio.aberto': 'सर्वश्रेष्ठ ओपन-वेट्स मॉडल',
+    'podio.arena': 'लोगों की पसंद (Arena)',
+    'nota.n': 'स्कोर {n}',
+    'por1m': 'प्रति 1M',
+    'lugar': '{p} स्थान',
+    'filtro.busca': 'मॉडल या कंपनी खोजें',
+    'filtro.empresas': 'सभी कंपनियां',
+    'filtro.empresa': 'कंपनी',
+    'filtro.tipo': 'प्रकार',
+    'tipo.todos': 'ओपन और क्लोज़्ड',
+    'tipo.abertos': 'केवल ओपन वेट्स',
+    'tipo.fechados': 'केवल क्लोज़्ड',
+    'filtro.preco': 'इनपुट कीमत',
+    'preco.qualquer': 'कोई भी कीमत',
+    'mostrar': 'दिखाएं',
+    'mostrar.titulo': 'हर तालिका में कितने मॉडल दिखाएं',
+    'todos': 'सभी',
+    'categoria': 'श्रेणी',
+    'cat.todas': 'सभी',
+    'th.posicao': 'रैंक',
+    'th.modelo': 'मॉडल',
+    'th.nota': 'स्कोर',
+    'th.nota.titulo': 'RankingIA का कुल स्कोर (0–100)',
+    'th.notaCat': '{c} स्कोर',
+    'th.notaCat.titulo': '{c} में स्कोर (0–100): {m} के पर्सेंटाइल का औसत',
+    'th.entrada': 'इनपुट',
+    'th.entrada.titulo': '1 मिलियन इनपुट टोकन की कीमत',
+    'th.saida': 'आउटपुट',
+    'th.saida.titulo': '1 मिलियन आउटपुट टोकन की कीमत',
+    'th.contexto': 'कॉन्टेक्स्ट',
+    'th.contexto.titulo': 'टोकन में कॉन्टेक्स्ट विंडो',
+    'th.lancado': 'रिलीज़',
+    'th.lancado.titulo': 'रिलीज़ की तारीख',
+    'th.comparar': 'तुलना',
+    'caption.ranking': 'कुल रैंकिंग: वस्तुनिष्ठ बेंचमार्क वाले {n} मॉडल',
+    'selo.aberto': 'ओपन',
+    'selo.aberto.titulo': 'ओपन वेट्स',
+    'outros.h2': 'अन्य मॉडल (केवल मानवीय पसंद)',
+    'outros.texto': 'इन {n} मॉडलों का अभी कोई वस्तुनिष्ठ बेंचमार्क ({fontes}) नहीं है, इसलिए इन्हें स्कोर नहीं मिलता। ये LMArena Elo के क्रम में हैं; वही फ़िल्टर और चुनी हुई पंक्तियों की संख्या यहां भी लागू होती है।',
+    'ou': 'या',
+    'comparar.aria': '{m} की तुलना करें',
+    'limpar': 'साफ़ करें',
+    'mod.titulo': '{m} — स्कोर, बेंचमार्क और कीमत | RankingIA',
+    'mod.desc': 'RankingIA पर {m} का स्थान {pos} है, स्कोर {n}। स्रोत और श्रेणी के अनुसार स्कोर, कीमत (प्रति 1M टोकन {p}) और कॉन्टेक्स्ट देखें।',
+    'mod.descParcial': '{m}: LMArena Elo {e}, कीमत प्रति 1M टोकन {p} और कॉन्टेक्स्ट {c}।',
+    'mod.empresaNA': 'कंपनी की जानकारी नहीं',
+    'mod.fora': 'स्कोर नहीं: कोई वस्तुनिष्ठ बेंचमार्क नहीं',
+    'mod.posDe': 'कुल रैंकिंग में {n} में से {pos}',
+    'mod.entradaSaida': 'इनपुट / आउटपुट',
+    'mod.por1mTokens': 'प्रति 1M टोकन {s}',
+    'mod.tokens': 'टोकन',
+    'mod.lancamento': 'रिलीज़',
+    'mod.lancamentoFonte': 'रिलीज़ की तारीख',
+    'mod.pesos': 'वेट्स',
+    'mod.abertos': 'ओपन',
+    'mod.fechados': 'क्लोज़्ड',
+    'mod.velocidade': 'गति',
+    'mod.ttft': 'पहला टोकन {s} सेकंड में',
+    'mod.notasFonte': 'स्रोत के अनुसार स्कोर',
+    'mod.percentilExpl': 'पर्सेंटाइल = रैंक किए गए जितने % मॉडलों से यह आगे है',
+    'mod.metrica': 'मेट्रिक',
+    'mod.valor': 'मान',
+    'mod.percentil': 'पर्सेंटाइल',
+    'mod.fonte': 'स्रोत',
+    'mod.peso': 'भार {p}',
+    'mod.peso.titulo': 'स्कोर में भार {p} के साथ गिना जाता है',
+    'mod.porCategoria': 'श्रेणी के अनुसार',
+    'mod.posicao': 'रैंक',
+    'mod.metricas': 'मेट्रिक',
+    'mod.evolucao': 'इतिहास',
+    'mod.evolucao.texto': 'संग्रह के हर दिन का RankingIA स्कोर (रैंक देखने के लिए माउस ले जाएं)।',
+    'mod.evolucao.aria': '{m} के स्कोर का इतिहास',
+    'mod.evolucao.espera': 'रोज़ का संग्रह {d} को शुरू हुआ। चार्ट मॉडल के रैंकिंग में आने के दूसरे दिन से दिखता है।',
+    'mod.compararOutros': 'अन्य मॉडलों से तुलना करें',
+    'mod.nasFontes': 'स्रोतों पर',
+    'mod.hf': 'Hugging Face (वेट्स)',
+    'gr.titulo': 'चार्ट — AI मॉडलों की गुणवत्ता बनाम कीमत | RankingIA',
+    'gr.desc': 'AI मॉडलों (LLM) के चार्ट: गुणवत्ता बनाम कीमत, मानवीय पसंद बनाम कीमत और मॉडलों का विकास।',
+    'gr.h1': 'चार्ट',
+    'gr.intro': 'मॉडल देखने के लिए किसी बिंदु पर माउस ले जाएं (या टैप करें)। उसका पेज खोलने के लिए बिंदु पर क्लिक करें। कीमत प्रति मिलियन टोकन इनपुट और आउटपुट का 3:1 मिश्रण है, लॉग स्केल पर।',
+    'gr.verDados': 'डेटा तालिका के रूप में देखें',
+    'gr.notaPreco': 'RankingIA स्कोर बनाम कीमत',
+    'gr.notaPreco.texto': 'जितना ऊपर और बाईं ओर, उतना बेहतर मूल्य।',
+    'gr.arenaPreco': 'मानवीय पसंद (Arena) बनाम कीमत',
+    'gr.arenaPreco.texto': 'LMArena का टेक्स्ट Elo; कुल रैंकिंग से बाहर के मॉडल भी शामिल हैं।',
+    'gr.velocidade': 'RankingIA स्कोर बनाम गति',
+    'gr.velocidade.texto': 'Artificial Analysis द्वारा मापे गए टोकन प्रति सेकंड।',
+    'gr.fronteira': 'AI का विकास',
+    'gr.fronteira.texto': 'हर बिंदु रैंकिंग का एक मॉडल है, उसकी रिलीज़ तारीख पर। रेखाएं क्लोज़्ड और ओपन वेट्स के लिए हर तारीख तक रिलीज़ हुआ सबसे अच्छा स्कोर दिखाती हैं।',
+    'gr.livebench': 'समय के साथ LiveBench',
+    'gr.livebench.texto': 'रैंकिंग के शीर्ष 8 मॉडलों के लिए हर रिलीज़ पर LiveBench 2.0 का कुल स्कोर।',
+    'gr.historico': 'समय के साथ RankingIA स्कोर',
+    'gr.historico.texto': 'साइट पर संग्रह शुरू होने से अब तक रैंकिंग के शीर्ष 8 मॉडलों का दैनिक स्कोर।',
+    'cmp.titulo': 'AI मॉडलों की आमने-सामने तुलना | RankingIA',
+    'cmp.desc': 'अधिकतम 4 AI मॉडल चुनें और स्कोर, बेंचमार्क, LMArena Elo, कीमत और कॉन्टेक्स्ट की आमने-सामने तुलना करें।',
+    'cmp.h1': 'मॉडलों की तुलना',
+    'cmp.intro': '2 से 4 मॉडल चुनें। पेज का पता आपका चुनाव याद रखता है, इसलिए आप लिंक साझा कर सकते हैं।',
+    'cmp.escolha': 'मॉडल चयन',
+    'cmp.modeloN': 'मॉडल {i}',
+    'cmp.opcional': '(वैकल्पिक)',
+    'cmp.tabela': 'तुलना तालिका',
+    'cmp.escolhaAcima': 'ऊपर मॉडल चुनें।',
+    'cmp.perfil': 'श्रेणी के अनुसार प्रोफ़ाइल',
+    'cmp.perfil.texto': 'हर मेट्रिक में पर्सेंटाइल (100 = रैंकिंग में सबसे अच्छा)।',
+    'cmp.radar.aria': 'हर मेट्रिक में हर मॉडल के पर्सेंटाइल वाला रडार',
+    'e404.titulo': 'पेज नहीं मिला | RankingIA',
+    'e404.desc': 'RankingIA पर पेज नहीं मिला। स्कोर, कीमतें और तुलनाएं देखने के लिए AI मॉडल लीडरबोर्ड पर लौटें।',
+    'e404.h1': 'पेज नहीं मिला',
+    'e404.texto': 'हो सकता है किसी स्रोत में मॉडल का नाम बदल गया हो।',
+    'e404.voltar': 'लीडरबोर्ड पर वापस जाएं',
+    'js.n': '{n} मॉडल',
+    'js.n1': '1 मॉडल',
+    'js.parcial': '{b} में से {a}',
+    'js.total': '(कुल {t})',
+    'js.maisUm': '(एक और चुनें)',
+    'js.notaRankingIA': 'RankingIA स्कोर',
+    'js.entrada': 'इनपुट ({s}/1M)',
+    'js.saida': 'आउटपुट ({s}/1M)',
+    'js.velocidade': 'गति (tok/s)',
+    'js.fora': 'रैंक से बाहर',
+    'js.rankingGeral': 'कुल रैंकिंग',
+    'js.outros': 'अन्य मॉडल',
+    'js.abertos': 'ओपन',
+    'js.fechados': 'क्लोज़्ड',
+    'js.erroDados': 'डेटा लोड नहीं हो सका ({e})।',
+    'js.pesosFechados': 'क्लोज़्ड वेट्स',
+    'js.pesosAbertos': 'ओपन वेट्स',
+    'js.modelos': 'मॉडल',
+    'js.precoMedio': 'मिश्रित कीमत ({s} / 1M टोकन, लॉग स्केल)',
+    'js.eloTexto': 'LMArena Elo (टेक्स्ट)',
+    'js.tokSeg': 'टोकन प्रति सेकंड',
+    'js.lbGeral': 'LiveBench कुल (%)',
+    'js.nota': 'स्कोर {n}',
+    'js.lancadoEm': '{d} को रिलीज़',
+    'js.recorde': '{d} को नया रिकॉर्ड',
+    'js.melhorHoje': 'आज तक का सर्वश्रेष्ठ',
+    'js.melhorFechado': 'सर्वश्रेष्ठ क्लोज़्ड',
+    'js.melhorAberto': 'सर्वश्रेष्ठ ओपन',
+    'js.modelosFechados': 'क्लोज़्ड मॉडल',
+    'js.modelosAbertos': 'ओपन मॉडल',
+    'js.modelo': 'मॉडल',
+    'js.precoMedioCurto': 'मिश्रित कीमत / 1M',
+    'js.data': 'तारीख',
+    'js.recordista': 'रिकॉर्डधारी',
+    'js.tipo': 'प्रकार',
+    'js.fechado': 'क्लोज़्ड',
+    'js.aberto': 'ओपन',
+    'js.umRelease': 'LiveBench 2.0 की अब तक सिर्फ़ एक रिलीज़ है।',
+    'js.histEspera': 'रोज़ का संग्रह {d} को शुरू हुआ। चार्ट दूसरे दिन से दिखता है।',
+    'js.erroGraficos': 'चार्ट का डेटा लोड नहीं हो सका ({e})।',
+    'met.lb_geral': 'LiveBench',
+    'met.lb_geral.desc': 'LiveBench 2.0 का कुल स्कोर (लंबे, संदूषण-मुक्त कार्य), LiveBench के अपने भार के साथ।',
+    'met.aa_inteligencia': 'AA इंटेलिजेंस इंडेक्स',
+    'met.aa_inteligencia.curto': 'AA इंटेल.',
+    'met.aa_inteligencia.desc': 'Artificial Analysis Intelligence Index।',
+    'met.arena_texto': 'Arena टेक्स्ट (Elo)',
+    'met.arena_texto.curto': 'Arena',
+    'met.arena_texto.desc': 'टेक्स्ट बातचीत में मानवीय पसंद (LMArena)।',
+    'met.arena_webdev': 'Arena WebDev (Elo)',
+    'met.arena_webdev.curto': 'WebDev',
+    'met.arena_webdev.desc': 'वेब पेज और ऐप बनाने में मानवीय पसंद (LMArena)।',
+    'met.arena_visao': 'Arena विज़न (Elo)',
+    'met.arena_visao.curto': 'विज़न',
+    'met.arena_visao.desc': 'इमेज वाले कार्यों में मानवीय पसंद (LMArena)।',
+    'met.lb': 'LiveBench {c}',
+    'met.lb.curto': 'LB {c}',
+    'met.lb.desc': 'LiveBench 2.0 की “{c}” श्रेणी।',
+    'lb.lb_agentico': 'लंबा एजेंटिक',
+    'lb.lb_raciocinio': 'तर्क',
+    'lb.lb_codigo': 'कोडिंग',
+    'lb.lb_navegador': 'ब्राउज़र',
+    'lb.lb_dados': 'डेटा विश्लेषण',
+    'lb.lb_pesquisa': 'शोध',
+    'lb.lb_design': 'डिज़ाइन',
+    'lb.lb_matematica': 'गणित',
+    'lb.lb_linguagem': 'भाषा',
+    'cat.agentico': 'एजेंटिक',
+    'cat.codigo': 'कोडिंग',
+    'cat.raciocinio': 'तर्क',
+    'cat.dados': 'डेटा विश्लेषण',
+    'cat.pesquisa': 'शोध',
+    'cat.design': 'डिज़ाइन',
+    'cat.navegador': 'ब्राउज़र उपयोग',
+    'cat.conversa': 'चैट',
+    'cat.visao': 'विज़न',
+    'met.aa_financas': 'AA वित्त और लेखा इंडेक्स',
+    'met.aa_financas.curto': 'AA वित्त',
+    'met.aa_financas.desc': 'Artificial Analysis Finance & Accounting Index: वित्त से जुड़े ज्ञान-कार्य के मूल्यांकन।',
+    'met.aa_estrategia': 'AA रणनीति और संचालन इंडेक्स',
+    'met.aa_estrategia.curto': 'AA रणनीति',
+    'met.aa_estrategia.desc': 'Artificial Analysis Strategy & Ops Index: व्यावसायिक रणनीति और संचालन के मूल्यांकन।',
+    'met.aa_juridico': 'AA कानूनी इंडेक्स',
+    'met.aa_juridico.curto': 'AA कानून',
+    'met.aa_juridico.desc': 'Artificial Analysis Legal Index: कानूनी कार्य के मूल्यांकन।',
+    'met.aa_saude': 'AA स्वास्थ्य और चिकित्सा इंडेक्स',
+    'met.aa_saude.curto': 'AA स्वास्थ्य',
+    'met.aa_saude.desc': 'Artificial Analysis Healthcare & Medical Index: स्वास्थ्य और चिकित्सा के मूल्यांकन।',
+    'met.aa_engenharia': 'AA इंजीनियरिंग इंडेक्स',
+    'met.aa_engenharia.curto': 'AA इंजी.',
+    'met.aa_engenharia.desc': 'Artificial Analysis Engineering Index: इंजीनियरिंग, विज्ञान और एजेंटिक कोडिंग के मूल्यांकन।',
+    'met.aa_economia': 'AA अर्थशास्त्र इंडेक्स',
+    'met.aa_economia.curto': 'AA अर्थ.',
+    'met.aa_economia.desc': 'Artificial Analysis Economics Index: अर्थशास्त्र के मूल्यांकन।',
+    'cat.financas': 'वित्त',
+    'cat.estrategia': 'रणनीति और संचालन',
+    'cat.juridico': 'कानून',
+    'cat.saude': 'स्वास्थ्य',
+    'cat.engenharia': 'इंजीनियरिंग',
+    'cat.economia': 'अर्थशास्त्र',
+    'mod.custoTarefa': 'प्रति कार्य लागत',
+    'mod.custoTarefa.nota': 'AA इंडेक्स पर औसत; पूरा इंडेक्स चलाने की लागत {s} रही',
+    'mod.tempo': 'प्रतिक्रिया समय',
+    'mod.tempo.nota': 'माध्यिका, अनुरोध से आखिरी टोकन तक (AA)',
+    'mod.pareto': 'पैरेटो फ्रंटियर',
+    'mod.pareto.sim': 'हां',
+    'mod.pareto.nao': 'नहीं',
+    'mod.pareto.nota': 'हां = कोई भी मॉडल एक साथ सस्ता और ऊंचे स्कोर वाला नहीं है (स्कोर × मिश्रित कीमत)',
+    'js.pareto': 'पैरेटो फ्रंटियर',
+  },
+  metodologia: (c) => `<h1>पद्धति</h1>
+<p>RankingIA अपने परीक्षण नहीं चलाता। यह अलग-अलग चीज़ें मापने वाले सार्वजनिक लीडरबोर्ड को जोड़कर एक ही जगह दिखाता है, कीमत और कॉन्टेक्स्ट के साथ। डेटा दिन में एक बार इकट्ठा किया जाता है।</p>
+<h2>स्रोत</h2>
+<ul>
+<li>${LB}: वस्तुनिष्ठ बेंचमार्क, जिसमें संदूषण से बचने के लिए हर रिलीज़ पर नए प्रश्न होते हैं। हम LiveBench 2.0 का कुल स्कोर और हर श्रेणी का स्कोर इस्तेमाल करते हैं।</li>
+<li>${LA}: लोग दो गुमनाम उत्तरों की तुलना करके वोट देते हैं; इससे Elo रेटिंग बनती है। हम टेक्स्ट, WebDev और विज़न एरिना इस्तेमाल करते हैं। जब किसी मॉडल के कई मोड हों ("High", "Max"), तो सबसे अच्छा Elo रखा जाता है।</li>
+<li>${OR}: प्रति मिलियन टोकन कीमत, कॉन्टेक्स्ट विंडो, रिलीज़ की तारीख और वेट्स ओपन हैं या नहीं।</li>
+<li>${AA}: इंटेलिजेंस इंडेक्स, साथ में कीमत और गति (API V2 का मुफ़्त एंडपॉइंट)। ${c.aa ? 'उपयोग में है।' : 'अभी उपयोग में नहीं है।'}</li>
+<li>${FR}: यूरोपीय सेंट्रल बैंक की संदर्भ दरें, ताकि कीमतें अन्य मुद्राओं में दिखाई जा सकें।</li>
+</ul>
+<h2>RankingIA स्कोर</h2>
+<ol>
+<li>कुल रैंकिंग में वे मॉडल शामिल हैं जिनका कम से कम एक वस्तुनिष्ठ बेंचमार्क (${c.exige}) है। बाकी "अन्य मॉडल" में बिना स्कोर के दिखते हैं।</li>
+<li>हर मेट्रिक के लिए हम <strong>पर्सेंटाइल</strong> निकालते हैं: रैंक किए गए मॉडलों का वह हिस्सा जिससे यह मॉडल आगे है (बराबरी आधी गिनी जाती है)। इससे Elo रेटिंग और सटीकता दोनों 0–100 के एक ही पैमाने पर आ जाती हैं।</li>
+<li>स्कोर मॉडल के पास मौजूद पर्सेंटाइल का भारित औसत है। जो मेट्रिक नहीं है, वह न पक्ष में गिनी जाती है न विपक्ष में।</li>
+<li>ताकि कम प्रमाण वाला मॉडल सिर्फ़ एक मेट्रिक के दम पर शीर्ष पर न पहुंच जाए, औसत में पर्सेंटाइल 50 पर ${c.neutro} अतिरिक्त भार जोड़ा जाता है।</li>
+</ol>
+${c.pesos}
+<h2>श्रेणियां</h2>
+<p>हर श्रेणी का अपना स्कोर होता है: उसकी मेट्रिक के पर्सेंटाइल का औसत, उसी संकुचन के साथ। श्रेणियां और उनकी मेट्रिक:</p>
+${c.cats}
+<h2>हर मॉडल का इतिहास</h2>
+<p>एक ही परिवार के मॉडल (जैसे Claude Opus 3, 4, 4.5 और 5.5) संस्करण संख्या हटाकर नाम के आधार पर एक साथ रखे जाते हैं। हर मॉडल का पेज पूरे परिवार को रिलीज़ के क्रम में दिखाता है।</p>
+<h2>मॉडलों के नाम</h2>
+<p>हर स्रोत नाम अलग तरह से लिखता है ("Claude Opus 5.5 (High)", "anthropic/claude-opus-5.5")। हम उन्हें कंपनी, तारीख और प्रयास मोड हटाकर बनी कुंजी से मिलाते हैं; जो मामले यह नियम नहीं पकड़ पाता, वे हाथ से जांची गई उपनाम सूची में जाते हैं। अगर कोई मॉडल दोहराया हुआ या गड़बड़ दिखे, तो ${ISSUE('issue खोलें')}।</p>
+<h2>सूचनात्मक संकेतक</h2>
+<p>कुछ संकेतक पेजों पर दिखते हैं, लेकिन RankingIA स्कोर में नहीं गिने जाते:</p>
+<ul>
+<li>Artificial Analysis के क्षेत्रवार इंडेक्स (वित्त, रणनीति और संचालन, कानून, स्वास्थ्य, इंजीनियरिंग और अर्थशास्त्र): ये इंटेलिजेंस इंडेक्स के ही मूल्यांकन दोबारा इस्तेमाल करते हैं, इसलिए इन्हें जोड़ने से एक ही काम दो बार गिना जाता। ये अलग श्रेणियां बन जाते हैं।</li>
+<li>प्रति कार्य लागत और पूरा इंडेक्स चलाने की लागत (Artificial Analysis): इंडेक्स के एक कार्य की औसत लागत, तर्क और उत्तर दोनों के टोकन गिनकर। जो मॉडल ज़्यादा "सोचते" हैं, वे प्रति टोकन कीमत से लगने वाले अंदाज़े से महंगे पड़ते हैं।</li>
+<li>प्रतिक्रिया समय: अनुरोध से आखिरी टोकन तक की माध्यिका, Artificial Analysis द्वारा मापी गई।</li>
+<li>पैरेटो फ्रंटियर: वे मॉडल जिनसे बेहतर कोई ऐसा मॉडल नहीं जो एक साथ सस्ता और ऊंचे स्कोर वाला हो, मिश्रित कीमत (3 भाग इनपुट, 1 भाग आउटपुट) के आधार पर। यह स्कोर × कीमत चार्ट में बिंदीदार रेखा के रूप में दिखता है।</li>
+</ul>
+<h2>सीमाएं</h2>
+<ul>
+<li>पर्सेंटाइल समूह पर निर्भर है: जब कोई मज़बूत मॉडल आता है, तो बाकी मॉडल बिना खराब हुए नीचे जा सकते हैं।</li>
+<li>Elo पसंद मापता है, सटीकता नहीं। उत्तर की शैली और लंबाई का असर पड़ता है।</li>
+<li>कीमत OpenRouter की है (प्रदाताओं में सबसे कम); निर्माता की अपनी कीमत अलग हो सकती है।</li>
+</ul>
+<h2>अन्य संदर्भ</h2>
+<p>ये साइटें भी AI मॉडलों पर नज़र रखती हैं, लेकिन स्कोर का हिस्सा नहीं हैं:</p>
+<ul>
+<li>${L('https://benchlm.ai/', 'BenchLM')}: सैकड़ों बेंचमार्क जोड़ता है। उसकी शर्तों के अनुसार सार्वजनिक साइट पर उसका डेटा दिखाने के लिए अलग समझौता चाहिए।</li>
+<li>${L('https://hai.stanford.edu/ai-index', 'Stanford HAI — AI Index')}: AI की स्थिति पर वार्षिक रिपोर्ट; यह हर दिन अपडेट होने वाला मॉडलवार लीडरबोर्ड नहीं है।</li>
+<li>${L('https://ia.com.br/melhores-ias', 'ia.com.br — Melhores IAs')}: पुर्तगाली भाषा की रैंकिंग जो Artificial Analysis, OpenRouter और Design Arena का डेटा दोबारा प्रकाशित करती है; इसमें API नहीं है, स्कोर की गणना नहीं बताई गई है, डेटा के पुन: उपयोग की अनुमति नहीं है, और यह उन्हीं स्रोतों को दोहराती है जिन्हें RankingIA पहले से सीधे पढ़ता है।</li>
+<li>${L('https://www.designarena.ai/', 'Design Arena')}: वेबसाइट, ऐप, इमेज और वीडियो पर लोगों के वोट से बना Elo। उसका robots.txt API की स्वचालित पहुंच रोकता है और डेटा के पुन: उपयोग का कोई लाइसेंस नहीं है।</li>
+<li>${L('https://swen.ia.br/ranking', 'SWEN.AI')}: पुर्तगाली भाषा की रैंकिंग जो सिर्फ़ Artificial Analysis के डेटा पर बनी है, जिसे RankingIA पहले से सीधे इस्तेमाल करता है।</li>
+</ul>
+<h2>स्रोतों की स्थिति</h2>
+${c.status}
+<p>हर स्रोत का डेटा उसके मालिकों का है और उनकी शर्तों के अधीन है। RankingIA का कोड ओपन सोर्स है, MIT लाइसेंस के तहत, ${GH} पर।</p>`,
+  titulo: ['पद्धति — RankingIA स्कोर कैसे निकाला जाता है', 'RankingIA का डेटा कहां से आता है, LiveBench, LMArena, OpenRouter और Artificial Analysis को 0–100 के स्कोर में कैसे जोड़ा जाता है, और इसकी सीमाएं क्या हैं।'],
+  status: ['स्रोत', 'अंतिम संग्रह', 'डेटा की तारीख', 'मेट्रिक', 'भार', 'श्रेणी', 'मेट्रिक', 'विफल'],
+};

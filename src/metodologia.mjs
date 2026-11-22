@@ -2,6 +2,13 @@
 // exige (métricas exigidas), pesos (tabela), cats (lista de categorias), status (tabela),
 // aa (Artificial Analysis em uso?), neutro (peso extra do encolhimento).
 
+import hi from './idiomas/hi.mjs';
+import ar from './idiomas/ar.mjs';
+import bn from './idiomas/bn.mjs';
+import ru from './idiomas/ru.mjs';
+import ja from './idiomas/ja.mjs';
+import id from './idiomas/id.mjs';
+
 const L = (url, nome) => `<a href="${url}" rel="noopener">${nome}</a>`;
 const LB = L('https://livebench.ai/', 'LiveBench');
 const LA = L('https://arena.ai/leaderboard', 'LMArena (arena.ai)');
@@ -288,3 +295,10 @@ export const STATUS_CAB = {
   fr: ['Source', 'Dernière collecte', 'Données du', 'Métrique', 'Poids', 'Catégorie', 'Métriques', 'échec'],
   'zh-CN': ['来源', '最近采集', '数据日期', '指标', '权重', '类别', '指标', '失败'],
 };
+
+// Idiomas extras (src/idiomas/<código>.mjs): metodologia, título/descrição e cabeçalho do status.
+for (const [cod, e] of Object.entries({ hi, ar, bn, ru, ja, id })) {
+  METODOLOGIA[cod] = e.metodologia;
+  METODOLOGIA_TITULO[cod] = e.titulo;
+  STATUS_CAB[cod] = e.status;
+}
