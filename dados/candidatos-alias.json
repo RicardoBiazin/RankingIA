@@ -74,6 +74,12 @@
   ]
  },
  {
+  "chave": "mimo-v2.5-pro",
+  "parecidas": [
+   "mimo-v2.5"
+  ]
+ },
+ {
   "chave": "qwen3.6",
   "parecidas": [
    "qwen3.6-flash",
