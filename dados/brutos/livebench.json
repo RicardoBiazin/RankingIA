@@ -1,6 +1,6 @@
 {
  "fonte": "livebench",
- "coletadoEm": "2026-11-23T20:43:28.366Z",
+ "coletadoEm": "2026-11-24T19:49:14.699Z",
  "release": "2026-11-06",
  "categorias": [
   "Long Agentic",
@@ -323,6 +323,34 @@
     "Data Analysis": 76.9,
     "Research": 89.5,
     "Design": 75
+   }
+  },
+  {
+   "origem": "inkling-2-mini",
+   "chave": "inkling-2-mini",
+   "geral": 54.93,
+   "categorias": {
+    "Long Agentic": 18.9,
+    "Reasoning": 78.9,
+    "Coding": 59,
+    "Browser": 35.7,
+    "Data Analysis": 71.6,
+    "Research": 71.8,
+    "Design": 73.4
+   }
+  },
+  {
+   "origem": "inkling-2-small",
+   "chave": "inkling-2-small",
+   "geral": 62.82,
+   "categorias": {
+    "Long Agentic": 28.8,
+    "Reasoning": 87.1,
+    "Coding": 78.9,
+    "Browser": 37.1,
+    "Data Analysis": 78.2,
+    "Research": 88.5,
+    "Design": 65.7
    }
   },
   {
@@ -686,6 +714,8 @@
     "gpt-6.2-sol": 80.31,
     "grok-4.6": 63.51,
     "grok-4.7": 67.91,
+    "inkling-2-mini": 54.93,
+    "inkling-2-small": 62.82,
     "inkling": 44.32,
     "kimi-k3.1-pro": 68.65,
     "kimi-k3": 64.98,
