@@ -32,6 +32,12 @@
   ]
  },
  {
+  "chave": "solar-pro-4",
+  "parecidas": [
+   "solar-pro-4-contributor"
+  ]
+ },
+ {
   "chave": "mistral-small-4",
   "parecidas": [
    "mistral-small"
@@ -362,6 +368,12 @@
   "chave": "grok-code-fast-1",
   "parecidas": [
    "grok"
+  ]
+ },
+ {
+  "chave": "solar-mini-4",
+  "parecidas": [
+   "solar-mini-4-5"
   ]
  }
 ]
