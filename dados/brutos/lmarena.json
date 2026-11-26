@@ -1,6 +1,6 @@
 {
  "fonte": "lmarena",
- "coletadoEm": "2026-11-25T18:54:48.696Z",
+ "coletadoEm": "2026-11-26T18:43:46.962Z",
  "arenas": {
   "texto": {
    "data": "2026-11-22",
@@ -3925,37 +3925,37 @@
    ]
   },
   "visao": {
-   "data": "2026-11-19",
+   "data": "2026-11-25",
    "modelos": [
     {
      "origem": "Claude Fable 5 (High)",
      "chave": "claude-fable-5",
-     "elo": 1325,
-     "votos": 15449,
+     "elo": 1326,
+     "votos": 15428,
      "empresa": "Anthropic",
      "aberto": false
     },
     {
      "origem": "Claude Fable 5.1 (Max)",
      "chave": "claude-fable-5.1",
-     "elo": 1322,
-     "votos": 7185,
+     "elo": 1321,
+     "votos": 7598,
      "empresa": "Anthropic",
      "aberto": false
     },
     {
      "origem": "Claude Opus 5.5 (High)",
      "chave": "claude-opus-5.5",
-     "elo": 1322,
-     "votos": 5903,
+     "elo": 1321,
+     "votos": 6457,
      "empresa": "Anthropic",
      "aberto": false
     },
     {
      "origem": "Claude Opus 4.7",
      "chave": "claude-opus-4.7",
-     "elo": 1317,
-     "votos": 24930,
+     "elo": 1318,
+     "votos": 25450,
      "empresa": "Anthropic",
      "aberto": false
     },
@@ -3963,7 +3963,7 @@
      "origem": "Claude Opus 5 (High)",
      "chave": "claude-opus-5",
      "elo": 1317,
-     "votos": 19229,
+     "votos": 19202,
      "empresa": "Anthropic",
      "aberto": false
     },
@@ -3971,7 +3971,7 @@
      "origem": "Gemini 3.8 Flash (High)",
      "chave": "gemini-3.8-flash",
      "elo": 1316,
-     "votos": 9782,
+     "votos": 10812,
      "empresa": "Google",
      "aberto": false
     },
@@ -3979,7 +3979,7 @@
      "origem": "Claude Opus 4.6 (High)",
      "chave": "claude-opus-4.6",
      "elo": 1315,
-     "votos": 22067,
+     "votos": 22041,
      "empresa": "Anthropic",
      "aberto": false
     },
@@ -3987,47 +3987,47 @@
      "origem": "Gemini 3.7 Flash (High)",
      "chave": "gemini-3.7-flash",
      "elo": 1314,
-     "votos": 6776,
+     "votos": 6769,
      "empresa": "Google",
      "aberto": false
     },
     {
      "origem": "Claude Fable 5.2 (Max)",
      "chave": "claude-fable-5.2",
-     "elo": 1313,
-     "votos": 1176,
+     "elo": 1310,
+     "votos": 1776,
      "empresa": "Anthropic",
-     "aberto": false
-    },
-    {
-     "origem": "Gemini 3.5 Flash (High)",
-     "chave": "gemini-3.5-flash",
-     "elo": 1308,
-     "votos": 15228,
-     "empresa": "Google",
      "aberto": false
     },
     {
      "origem": "Qwen3.8-Max",
      "chave": "qwen3.8",
      "elo": 1307,
-     "votos": 10833,
+     "votos": 11466,
      "empresa": "Alibaba",
      "aberto": false
     },
     {
-     "origem": "Muse Spark 1.3 (Max)",
-     "chave": "muse-spark-1.3",
-     "elo": 1306,
-     "votos": 9287,
-     "empresa": "Meta",
+     "origem": "Gemini 3.5 Flash (High)",
+     "chave": "gemini-3.5-flash",
+     "elo": 1307,
+     "votos": 15221,
+     "empresa": "Google",
      "aberto": false
     },
     {
      "origem": "Muse Spark",
      "chave": "muse-spark",
      "elo": 1306,
-     "votos": 5835,
+     "votos": 5824,
+     "empresa": "Meta",
+     "aberto": false
+    },
+    {
+     "origem": "Muse Spark 1.3 (Max)",
+     "chave": "muse-spark-1.3",
+     "elo": 1305,
+     "votos": 10036,
      "empresa": "Meta",
      "aberto": false
     },
@@ -4035,7 +4035,7 @@
      "origem": "Gemini 3 Pro",
      "chave": "gemini-3-pro",
      "elo": 1305,
-     "votos": 13482,
+     "votos": 13465,
      "empresa": "Google",
      "aberto": false
     },
@@ -4043,7 +4043,7 @@
      "origem": "Muse Spark 1.2 (xHigh)",
      "chave": "muse-spark-1.2",
      "elo": 1304,
-     "votos": 1922,
+     "votos": 1921,
      "empresa": "Meta",
      "aberto": false
     },
@@ -4051,7 +4051,7 @@
      "origem": "GPT-5.4 (High)",
      "chave": "gpt-5.4",
      "elo": 1301,
-     "votos": 31907,
+     "votos": 31848,
      "empresa": "OpenAI",
      "aberto": false
     },
@@ -4059,15 +4059,7 @@
      "origem": "Gemini 3.6 Flash (High)",
      "chave": "gemini-3.6-flash",
      "elo": 1297,
-     "votos": 10275,
-     "empresa": "Google",
-     "aberto": false
-    },
-    {
-     "origem": "Gemini 3.1 Pro Preview",
-     "chave": "gemini-3.1-pro",
-     "elo": 1296,
-     "votos": 48038,
+     "votos": 10268,
      "empresa": "Google",
      "aberto": false
     },
@@ -4075,15 +4067,23 @@
      "origem": "GLM-5.3-Flash",
      "chave": "glm-5.3-flash",
      "elo": 1296,
-     "votos": 36497,
+     "votos": 38935,
      "empresa": "Z.ai",
      "aberto": true
+    },
+    {
+     "origem": "Gemini 3.1 Pro Preview",
+     "chave": "gemini-3.1-pro",
+     "elo": 1296,
+     "votos": 47993,
+     "empresa": "Google",
+     "aberto": false
     },
     {
      "origem": "GPT-5.5",
      "chave": "gpt-5.5",
      "elo": 1296,
-     "votos": 29925,
+     "votos": 29897,
      "empresa": "OpenAI",
      "aberto": false
     },
@@ -4091,7 +4091,7 @@
      "origem": "Claude Opus 4.8 (High)",
      "chave": "claude-opus-4.8",
      "elo": 1294,
-     "votos": 18113,
+     "votos": 18104,
      "empresa": "Anthropic",
      "aberto": false
     },
@@ -4099,7 +4099,7 @@
      "origem": "Muse Spark 1.1",
      "chave": "muse-spark-1.1",
      "elo": 1291,
-     "votos": 13311,
+     "votos": 13298,
      "empresa": "Meta",
      "aberto": false
     },
@@ -4107,15 +4107,15 @@
      "origem": "Grok 4.5",
      "chave": "grok-4.5",
      "elo": 1288,
-     "votos": 13903,
+     "votos": 13896,
      "empresa": "xAI",
      "aberto": false
     },
     {
      "origem": "Claude Sonnet 5.5 (xHigh)",
      "chave": "claude-sonnet-5.5",
-     "elo": 1286,
-     "votos": 5388,
+     "elo": 1285,
+     "votos": 5903,
      "empresa": "Anthropic",
      "aberto": false
     },
@@ -4123,23 +4123,23 @@
      "origem": "Gemini 3 Flash",
      "chave": "gemini-3-flash",
      "elo": 1285,
-     "votos": 38733,
+     "votos": 38692,
      "empresa": "Google",
      "aberto": false
     },
     {
      "origem": "GPT-6.1 Sol (Max)",
      "chave": "gpt-6.1-sol",
-     "elo": 1284,
-     "votos": 5043,
+     "elo": 1283,
+     "votos": 5555,
      "empresa": "OpenAI",
      "aberto": false
     },
     {
      "origem": "Claude Sonnet 4.6",
      "chave": "claude-sonnet-4.6",
-     "elo": 1282,
-     "votos": 27131,
+     "elo": 1283,
+     "votos": 27102,
      "empresa": "Anthropic",
      "aberto": false
     },
@@ -4147,7 +4147,7 @@
      "origem": "Kimi K2.6",
      "chave": "kimi-k2.6",
      "elo": 1282,
-     "votos": 16241,
+     "votos": 16226,
      "empresa": "Moonshot AI",
      "aberto": true
     },
@@ -4155,7 +4155,7 @@
      "origem": "GPT-5.6 Sol (xHigh)",
      "chave": "gpt-5.6-sol",
      "elo": 1282,
-     "votos": 12244,
+     "votos": 12237,
      "empresa": "OpenAI",
      "aberto": false
     },
@@ -4163,7 +4163,7 @@
      "origem": "Gemma 4 31B",
      "chave": "gemma-4-31b",
      "elo": 1279,
-     "votos": 42217,
+     "votos": 42173,
      "empresa": "Google",
      "aberto": true
     },
@@ -4171,7 +4171,7 @@
      "origem": "DeepSeek-V4.1-Flash-20260910 (Max)",
      "chave": "deepseek-v4.1-flash",
      "elo": 1278,
-     "votos": 4192,
+     "votos": 4195,
      "empresa": "DeepSeek",
      "aberto": true
     },
@@ -4179,15 +4179,15 @@
      "origem": "Qwen3.7-Plus",
      "chave": "qwen3.7-plus",
      "elo": 1277,
-     "votos": 15084,
+     "votos": 15067,
      "empresa": "Alibaba",
      "aberto": false
     },
     {
      "origem": "GPT-6 Astra (Max)",
      "chave": "gpt-6-astra",
-     "elo": 1276,
-     "votos": 6436,
+     "elo": 1275,
+     "votos": 6907,
      "empresa": "OpenAI",
      "aberto": false
     },
@@ -4195,47 +4195,47 @@
      "origem": "Dola Seed 2.0 Pro",
      "chave": "dola-seed-2.0-pro",
      "elo": 1274,
-     "votos": 10914,
+     "votos": 10904,
      "empresa": "ByteDance",
-     "aberto": false
-    },
-    {
-     "origem": "Claude Sonnet 5 (High)",
-     "chave": "claude-sonnet-5",
-     "elo": 1272,
-     "votos": 14701,
-     "empresa": "Anthropic",
      "aberto": false
     },
     {
      "origem": "Qwen3.8-27B",
      "chave": "qwen3.8-27b",
-     "elo": 1271,
-     "votos": 10910,
+     "elo": 1274,
+     "votos": 11516,
      "empresa": "Alibaba",
      "aberto": true
     },
     {
-     "origem": "GPT-5.6 Terra (xHigh)",
-     "chave": "gpt-5.6-terra",
-     "elo": 1270,
-     "votos": 13166,
-     "empresa": "OpenAI",
+     "origem": "Claude Sonnet 5 (High)",
+     "chave": "claude-sonnet-5",
+     "elo": 1272,
+     "votos": 14697,
+     "empresa": "Anthropic",
      "aberto": false
     },
     {
      "origem": "Kimi K2.5 (Thinking)",
      "chave": "kimi-k2.5",
      "elo": 1269,
-     "votos": 27947,
+     "votos": 27930,
      "empresa": "Moonshot AI",
      "aberto": true
+    },
+    {
+     "origem": "GPT-5.6 Terra (xHigh)",
+     "chave": "gpt-5.6-terra",
+     "elo": 1269,
+     "votos": 13148,
+     "empresa": "OpenAI",
+     "aberto": false
     },
     {
      "origem": "Gemini 3.5 Flash-Lite",
      "chave": "gemini-3.5-flash-lite",
      "elo": 1268,
-     "votos": 10713,
+     "votos": 10715,
      "empresa": "Google",
      "aberto": false
     },
@@ -4243,39 +4243,39 @@
      "origem": "GPT-5.2 Chat (20260210)",
      "chave": "gpt-5.2-chat",
      "elo": 1268,
-     "votos": 16336,
+     "votos": 16329,
      "empresa": "OpenAI",
      "aberto": false
     },
     {
      "origem": "MiMo-V2.6-Pro",
      "chave": "mimo-v2.6-pro",
-     "elo": 1266,
-     "votos": 1812,
+     "elo": 1265,
+     "votos": 1802,
      "empresa": "Xiaomi",
      "aberto": true
     },
     {
-     "origem": "Grok 4.6 (High)",
-     "chave": "grok-4.6",
-     "elo": 1265,
-     "votos": 8578,
-     "empresa": "xAI",
+     "origem": "Step 5 Preview",
+     "chave": "step-5",
+     "elo": 1264,
+     "votos": 4439,
+     "empresa": "StepFun",
      "aberto": false
     },
     {
-     "origem": "Step 5 Preview",
-     "chave": "step-5",
-     "elo": 1265,
-     "votos": 4395,
-     "empresa": "StepFun",
+     "origem": "Grok 4.6 (High)",
+     "chave": "grok-4.6",
+     "elo": 1264,
+     "votos": 8576,
+     "empresa": "xAI",
      "aberto": false
     },
     {
      "origem": "Gemini 2.5 Pro",
      "chave": "gemini-2.5-pro",
      "elo": 1263,
-     "votos": 88464,
+     "votos": 88442,
      "empresa": "Google",
      "aberto": false
     },
@@ -4283,7 +4283,7 @@
      "origem": "Grok 4.20 Beta (Reasoning, 0309)",
      "chave": "grok-4.20",
      "elo": 1263,
-     "votos": 26501,
+     "votos": 26480,
      "empresa": "xAI",
      "aberto": false
     },
@@ -4291,15 +4291,15 @@
      "origem": "Qwen3.5-397B-A17B",
      "chave": "qwen3.5-397b-a17b",
      "elo": 1262,
-     "votos": 33471,
+     "votos": 33444,
      "empresa": "Alibaba",
      "aberto": true
     },
     {
      "origem": "Grok 4.20 Multi-Agent Beta (0309)",
      "chave": "grok-4.20-multi-agent",
-     "elo": 1259,
-     "votos": 24292,
+     "elo": 1260,
+     "votos": 24269,
      "empresa": "xAI",
      "aberto": false
     },
@@ -4307,7 +4307,7 @@
      "origem": "Gemma 4 26B A4B",
      "chave": "gemma-4-26b-a4b",
      "elo": 1259,
-     "votos": 23681,
+     "votos": 23662,
      "empresa": "Google",
      "aberto": true
     },
@@ -4315,7 +4315,7 @@
      "origem": "MiMo-V2.6-Flash",
      "chave": "mimo-v2.6-flash",
      "elo": 1258,
-     "votos": 9656,
+     "votos": 10865,
      "empresa": "Xiaomi",
      "aberto": true
     },
@@ -4323,7 +4323,7 @@
      "origem": "GPT-5.6 Luna (xHigh)",
      "chave": "gpt-5.6-luna",
      "elo": 1256,
-     "votos": 10996,
+     "votos": 10977,
      "empresa": "OpenAI",
      "aberto": false
     },
@@ -4331,15 +4331,23 @@
      "origem": "Gemini 2.5 Flash Preview (09-2025)",
      "chave": "gemini-2.5-flash",
      "elo": 1253,
-     "votos": 4759,
+     "votos": 4755,
      "empresa": "Google",
      "aberto": false
     },
     {
      "origem": "GPT-5.5 Instant",
      "chave": "gpt-5.5-instant",
-     "elo": 1251,
-     "votos": 7549,
+     "elo": 1250,
+     "votos": 7545,
+     "empresa": "OpenAI",
+     "aberto": false
+    },
+    {
+     "origem": "GPT-6.1 Terra (Max)",
+     "chave": "gpt-6.1-terra",
+     "elo": 1249,
+     "votos": 3463,
      "empresa": "OpenAI",
      "aberto": false
     },
@@ -4347,7 +4355,7 @@
      "origem": "GPT-5.1 (High)",
      "chave": "gpt-5.1",
      "elo": 1249,
-     "votos": 9775,
+     "votos": 9761,
      "empresa": "OpenAI",
      "aberto": false
     },
@@ -4355,7 +4363,7 @@
      "origem": "MiniMax-M3",
      "chave": "minimax-m3",
      "elo": 1248,
-     "votos": 21034,
+     "votos": 21024,
      "empresa": "MiniMax",
      "aberto": true
     },
@@ -4363,7 +4371,7 @@
      "origem": "ERNIE-5.0-Preview (1220)",
      "chave": "ernie-5.0",
      "elo": 1248,
-     "votos": 3330,
+     "votos": 3322,
      "empresa": "Baidu",
      "aberto": false
     },
@@ -4371,47 +4379,39 @@
      "origem": "MiMo-V2.5",
      "chave": "mimo-v2.5",
      "elo": 1247,
-     "votos": 29320,
+     "votos": 29278,
      "empresa": "Xiaomi",
      "aberto": true
-    },
-    {
-     "origem": "GPT-6.1 Terra (Max)",
-     "chave": "gpt-6.1-terra",
-     "elo": 1247,
-     "votos": 2796,
-     "empresa": "OpenAI",
-     "aberto": false
     },
     {
      "origem": "Qwen3-VL-235B-A22B-Instruct",
      "chave": "qwen3-vl-235b-a22b",
      "elo": 1247,
-     "votos": 12648,
+     "votos": 12638,
      "empresa": "Alibaba",
-     "aberto": true
-    },
-    {
-     "origem": "Mistral Large 4",
-     "chave": "mistral-large-4",
-     "elo": 1246,
-     "votos": 3699,
-     "empresa": "Mistral",
      "aberto": true
     },
     {
      "origem": "GPT-5.2 (High)",
      "chave": "gpt-5.2",
      "elo": 1246,
-     "votos": 18881,
+     "votos": 18870,
      "empresa": "OpenAI",
      "aberto": false
     },
     {
+     "origem": "Mistral Large 4",
+     "chave": "mistral-large-4",
+     "elo": 1245,
+     "votos": 4410,
+     "empresa": "Mistral",
+     "aberto": true
+    },
+    {
      "origem": "GPT-5.4 mini (High)",
      "chave": "gpt-5.4-mini",
-     "elo": 1244,
-     "votos": 25461,
+     "elo": 1245,
+     "votos": 25435,
      "empresa": "OpenAI",
      "aberto": false
     },
@@ -4419,7 +4419,7 @@
      "origem": "Qwen3.5-122B-A10B",
      "chave": "qwen3.5-122b-a10b",
      "elo": 1244,
-     "votos": 13158,
+     "votos": 13148,
      "empresa": "Alibaba",
      "aberto": true
     },
@@ -4427,7 +4427,7 @@
      "origem": "ChatGPT-4o Latest (20250326)",
      "chave": "chatgpt-4o",
      "elo": 1243,
-     "votos": 23305,
+     "votos": 23288,
      "empresa": "OpenAI",
      "aberto": false
     },
@@ -4435,7 +4435,7 @@
      "origem": "Gemini 3.1 Flash-Lite Preview",
      "chave": "gemini-3.1-flash-lite",
      "elo": 1240,
-     "votos": 27378,
+     "votos": 27356,
      "empresa": "Google",
      "aberto": false
     },
@@ -4443,15 +4443,23 @@
      "origem": "Qwen3.5-27B",
      "chave": "qwen3.5-27b",
      "elo": 1239,
-     "votos": 31190,
+     "votos": 31162,
      "empresa": "Alibaba",
+     "aberto": true
+    },
+    {
+     "origem": "Inkling 2 Small",
+     "chave": "inkling-2-small",
+     "elo": 1239,
+     "votos": 1572,
+     "empresa": "Thinky",
      "aberto": true
     },
     {
      "origem": "Inkling-Small",
      "chave": "inkling-small",
      "elo": 1236,
-     "votos": 9182,
+     "votos": 9178,
      "empresa": "Thinky",
      "aberto": true
     },
@@ -4459,7 +4467,7 @@
      "origem": "GPT-6 Sol (Max)",
      "chave": "gpt-6-sol",
      "elo": 1232,
-     "votos": 6202,
+     "votos": 6760,
      "empresa": "OpenAI",
      "aberto": false
     },
@@ -4467,15 +4475,15 @@
      "origem": "GPT-5 Chat",
      "chave": "gpt-5-chat",
      "elo": 1232,
-     "votos": 39816,
+     "votos": 39811,
      "empresa": "OpenAI",
      "aberto": false
     },
     {
      "origem": "Grok 4.7 (xHigh)",
      "chave": "grok-4.7",
-     "elo": 1231,
-     "votos": 7761,
+     "elo": 1230,
+     "votos": 8429,
      "empresa": "xAI",
      "aberto": false
     },
@@ -4483,7 +4491,7 @@
      "origem": "Grok 4.3",
      "chave": "grok-4.3",
      "elo": 1228,
-     "votos": 29102,
+     "votos": 29056,
      "empresa": "xAI",
      "aberto": false
     },
@@ -4491,7 +4499,7 @@
      "origem": "MiMo-V2-Omni",
      "chave": "mimo-v2-omni",
      "elo": 1228,
-     "votos": 10573,
+     "votos": 10566,
      "empresa": "Xiaomi",
      "aberto": false
     },
@@ -4499,15 +4507,15 @@
      "origem": "Mistral Medium 3.5",
      "chave": "mistral-3.5",
      "elo": 1222,
-     "votos": 5327,
+     "votos": 5311,
      "empresa": "Mistral",
      "aberto": true
     },
     {
      "origem": "Mistral Large 3",
      "chave": "mistral-large-3",
-     "elo": 1222,
-     "votos": 10071,
+     "elo": 1221,
+     "votos": 10064,
      "empresa": "Mistral",
      "aberto": true
     },
@@ -4515,31 +4523,39 @@
      "origem": "o3 (2025-04-16)",
      "chave": "o3",
      "elo": 1214,
-     "votos": 45482,
+     "votos": 45479,
      "empresa": "OpenAI",
      "aberto": false
-    },
-    {
-     "origem": "NVIDIA-Nemotron-3.5-Super-VL-120B-A12B (NVFP4)",
-     "chave": "nvidia-nemotron-3.5-super-vl-120b-a12b",
-     "elo": 1213,
-     "votos": 7022,
-     "empresa": "NVIDIA",
-     "aberto": true
     },
     {
      "origem": "Qwen-VL-Max (2025-08-13)",
      "chave": "qwen-vl",
      "elo": 1212,
-     "votos": 3157,
+     "votos": 3156,
      "empresa": "Alibaba",
+     "aberto": false
+    },
+    {
+     "origem": "NVIDIA-Nemotron-3.5-Super-VL-120B-A12B (NVFP4)",
+     "chave": "nvidia-nemotron-3.5-super-vl-120b-a12b",
+     "elo": 1212,
+     "votos": 7737,
+     "empresa": "NVIDIA",
+     "aberto": true
+    },
+    {
+     "origem": "GPT-6 Luna (Max)",
+     "chave": "gpt-6-luna",
+     "elo": 1211,
+     "votos": 8456,
+     "empresa": "OpenAI",
      "aberto": false
     },
     {
      "origem": "GPT-4.1 (2025-04-14)",
      "chave": "gpt-4.1",
-     "elo": 1210,
-     "votos": 40925,
+     "elo": 1211,
+     "votos": 40914,
      "empresa": "OpenAI",
      "aberto": false
     },
@@ -4547,23 +4563,15 @@
      "origem": "Grok 4 (0709)",
      "chave": "grok-4",
      "elo": 1210,
-     "votos": 30106,
+     "votos": 30105,
      "empresa": "xAI",
-     "aberto": false
-    },
-    {
-     "origem": "GPT-6 Luna (Max)",
-     "chave": "gpt-6-luna",
-     "elo": 1210,
-     "votos": 7728,
-     "empresa": "OpenAI",
      "aberto": false
     },
     {
      "origem": "GPT-5 (High)",
      "chave": "gpt-5",
      "elo": 1208,
-     "votos": 34338,
+     "votos": 34325,
      "empresa": "OpenAI",
      "aberto": false
     },
@@ -4571,7 +4579,7 @@
      "origem": "GPT-5 mini (High)",
      "chave": "gpt-5-mini",
      "elo": 1203,
-     "votos": 28878,
+     "votos": 28874,
      "empresa": "OpenAI",
      "aberto": false
     },
@@ -4579,7 +4587,7 @@
      "origem": "Grok 4.1 Fast (Reasoning)",
      "chave": "grok-4.1-fast",
      "elo": 1201,
-     "votos": 13282,
+     "votos": 13277,
      "empresa": "xAI",
      "aberto": false
     },
@@ -4587,7 +4595,7 @@
      "origem": "Gemini 2.5 Flash-Lite Preview (Non-Thinking, 09-2025)",
      "chave": "gemini-2.5-flash-lite",
      "elo": 1198,
-     "votos": 4841,
+     "votos": 4839,
      "empresa": "Google",
      "aberto": false
     },
@@ -4595,7 +4603,7 @@
      "origem": "GPT-5.4 nano (High)",
      "chave": "gpt-5.4-nano",
      "elo": 1195,
-     "votos": 25347,
+     "votos": 25306,
      "empresa": "OpenAI",
      "aberto": false
     },
@@ -4611,7 +4619,7 @@
      "origem": "o4-mini (2025-04-16)",
      "chave": "o4-mini",
      "elo": 1194,
-     "votos": 41255,
+     "votos": 41243,
      "empresa": "OpenAI",
      "aberto": false
     },
@@ -4635,7 +4643,7 @@
      "origem": "Step-1o Turbo (202506)",
      "chave": "step-1o-turbo",
      "elo": 1185,
-     "votos": 1894,
+     "votos": 1893,
      "empresa": "StepFun",
      "aberto": false
     },
@@ -4643,9 +4651,17 @@
      "origem": "GPT-4.1 mini (2025-04-14)",
      "chave": "gpt-4.1-mini",
      "elo": 1181,
-     "votos": 40139,
+     "votos": 40132,
      "empresa": "OpenAI",
      "aberto": false
+    },
+    {
+     "origem": "Inkling 2 Mini",
+     "chave": "inkling-2-mini",
+     "elo": 1181,
+     "votos": 1509,
+     "empresa": "Thinky",
+     "aberto": true
     },
     {
      "origem": "Hunyuan Large Vision",
@@ -4659,7 +4675,7 @@
      "origem": "Hunyuan Vision 1.5 Thinking",
      "chave": "hunyuan-vision-1.5",
      "elo": 1179,
-     "votos": 2414,
+     "votos": 2412,
      "empresa": "Tencent",
      "aberto": false
     },
@@ -4667,7 +4683,7 @@
      "origem": "Step-3",
      "chave": "step-3",
      "elo": 1176,
-     "votos": 3187,
+     "votos": 3186,
      "empresa": "StepFun",
      "aberto": true
     },
@@ -4675,7 +4691,7 @@
      "origem": "Mistral Medium 3.1 (2508)",
      "chave": "mistral-3.1",
      "elo": 1172,
-     "votos": 41496,
+     "votos": 41482,
      "empresa": "Mistral",
      "aberto": false
     },
@@ -4699,7 +4715,7 @@
      "origem": "Gemma 3 27B IT",
      "chave": "gemma-3-27b",
      "elo": 1164,
-     "votos": 16928,
+     "votos": 16925,
      "empresa": "Google",
      "aberto": true
     },
@@ -4707,7 +4723,7 @@
      "origem": "GLM-4.6V",
      "chave": "glm-4.6v",
      "elo": 1163,
-     "votos": 2440,
+     "votos": 2438,
      "empresa": "Z.ai",
      "aberto": true
     },
@@ -4731,7 +4747,7 @@
      "origem": "Gemini 2.0 Flash (001)",
      "chave": "gemini-2.0-flash",
      "elo": 1158,
-     "votos": 10120,
+     "votos": 10118,
      "empresa": "Google",
      "aberto": false
     },
@@ -4739,7 +4755,7 @@
      "origem": "Mistral Medium 3 (2505)",
      "chave": "mistral-3",
      "elo": 1157,
-     "votos": 10769,
+     "votos": 10767,
      "empresa": "Mistral",
      "aberto": false
     },
@@ -4747,7 +4763,7 @@
      "origem": "GLM-4.5V",
      "chave": "glm-4.5v",
      "elo": 1154,
-     "votos": 3236,
+     "votos": 3234,
      "empresa": "Z.ai",
      "aberto": true
     },
@@ -4763,7 +4779,7 @@
      "origem": "Mistral Small 3.2 (2506)",
      "chave": "mistral-small-3.2",
      "elo": 1142,
-     "votos": 10814,
+     "votos": 10811,
      "empresa": "Mistral",
      "aberto": true
     },
@@ -4771,7 +4787,7 @@
      "origem": "Llama 4 Maverick 17B 128E Instruct",
      "chave": "llama-4-maverick-17b-128e",
      "elo": 1142,
-     "votos": 6909,
+     "votos": 6907,
      "empresa": "Meta",
      "aberto": true
     },
@@ -4795,7 +4811,7 @@
      "origem": "Mistral Small 3.1 24B Instruct (2503)",
      "chave": "mistral-small-3.1-24b",
      "elo": 1136,
-     "votos": 28440,
+     "votos": 28439,
      "empresa": "Mistral",
      "aberto": true
     },
@@ -4867,7 +4883,7 @@
      "origem": "Molmo 2 8B",
      "chave": "molmo-2-8b",
      "elo": 1081,
-     "votos": 1185,
+     "votos": 1182,
      "empresa": "Allenai",
      "aberto": true
     },
@@ -4930,7 +4946,7 @@
     {
      "origem": "Pixtral 12B (2409)",
      "chave": "pixtral-12b",
-     "elo": 1008,
+     "elo": 1009,
      "votos": 7511,
      "empresa": "Mistral",
      "aberto": true
@@ -4938,9 +4954,9 @@
     {
      "origem": "InternVL2 26B",
      "chave": "internvl2-26b",
-     "elo": 1004,
+     "elo": 1005,
      "votos": 5148,
-     "empresa": null,
+     "empresa": "Opengvlab",
      "aberto": true
     },
     {
@@ -4962,7 +4978,7 @@
     {
      "origem": "Aya Vision 32B",
      "chave": "aya-vision-32b",
-     "elo": 995,
+     "elo": 996,
      "votos": 847,
      "empresa": "Cohere",
      "aberto": true
@@ -5004,7 +5020,7 @@
      "chave": "yi-vision",
      "elo": 978,
      "votos": 1219,
-     "empresa": null,
+     "empresa": "Zeroone Ai",
      "aberto": false
     },
     {
@@ -5036,7 +5052,7 @@
      "chave": "internvl2-4b",
      "elo": 941,
      "votos": 3703,
-     "empresa": null,
+     "empresa": "Opengvlab",
      "aberto": true
     },
     {
@@ -5052,7 +5068,7 @@
      "chave": "llava-1.6-34b",
      "elo": 936,
      "votos": 4531,
-     "empresa": null,
+     "empresa": "Llava",
      "aberto": true
     },
     {
@@ -5068,7 +5084,7 @@
      "chave": "llava-onevision-qwen2-72b-ov",
      "elo": 923,
      "votos": 1321,
-     "empresa": null,
+     "empresa": "Llava",
      "aberto": true
     },
     {
@@ -5076,7 +5092,7 @@
      "chave": "minicpm-v-2.6",
      "elo": 912,
      "votos": 1987,
-     "empresa": null,
+     "empresa": "Openbmb",
      "aberto": true
     },
     {

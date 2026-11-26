@@ -145,7 +145,8 @@
  {
   "chave": "kimi-k2-turbo",
   "parecidas": [
-   "kimi"
+   "kimi",
+   "kimi-k2"
   ]
  },
  {
@@ -176,12 +177,6 @@
   "chave": "qwen3.5-flash",
   "parecidas": [
    "qwen3.5-flash-02-23"
-  ]
- },
- {
-  "chave": "kimi-k2",
-  "parecidas": [
-   "kimi"
   ]
  },
  {
