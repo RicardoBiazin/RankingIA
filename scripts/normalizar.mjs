@@ -79,7 +79,7 @@ const lista = [...modelos.values()].map((r) => {
     slug: r.chave.replace(/\+/g, '-plus'),
     familia: familia(r.chave),
     versao: versao(r.chave),
-    nome: o?.nome ?? r.aa?.nome ?? r.nomeArena ?? r.nomeLB ?? r.chave,
+    nome: String(o?.nome ?? r.aa?.nome ?? r.nomeArena ?? r.nomeLB ?? r.chave).replace(/\s+/g, ' ').trim(),
     empresa: o?.empresa ?? r.aa?.empresa ?? r.empresaArena ?? empresaPorNome(r.chave),
     aberto: o ? (o.aberto || r.abertoArena === true) : (r.abertoArena ?? null),
     hf: o?.hf ?? null,

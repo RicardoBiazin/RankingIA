@@ -65,6 +65,7 @@ conferir(d.modelos.every((m) => Object.values(m.percentis).every((p) => p >= 0 &
   conferir(com.filter((m) => m.pareto).every((m) => !com.some((o) => o !== m && preco(o) <= preco(m) && o.nota >= m.nota && (preco(o) < preco(m) || o.nota > m.nota))), 'Pareto: nenhum modelo da fronteira é dominado');
 }
 for (const c of d.categorias ?? []) conferir(c.metricas.every((id) => d.metricas.some((m) => m.id === id)), `categoria ${c.id} só com métricas existentes`);
+conferir(d.modelos.every((m) => m.nome === m.nome.replace(/\s+/g, ' ').trim()), 'nomes sem espaço sobrando (llms-full.txt compara o nome exato)');
 const slugs = d.modelos.map((m) => m.slug);
 conferir(new Set(slugs).size === slugs.length, 'slugs únicos');
 conferir(slugs.every((s) => /^[a-z0-9.-]+$/.test(s)), 'slugs só com a-z 0-9 . -');

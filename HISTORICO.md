@@ -1,5 +1,9 @@
 # Histórico
 
+## 0.9.1 — 27/11/2026
+
+- Corrige a coleta diária que falhava no `testar` ("llms-full.txt tem todos os modelos do ranking"): o OpenRouter devolveu "Gemma 4 26B A4B " com espaço no fim. O nome agora é normalizado em `normalizar.mjs` (espaços colapsados e aparados) e o `testar` confere isso.
+
 ## 0.9.0 — 22/11/2026
 
 Seis idiomas novos, os mais falados que faltavam: hindi (`/hi`), árabe (`/ar`), bengali (`/bn`), russo (`/ru`), japonês (`/ja`) e indonésio (`/id`). O site passa a ter 11 idiomas.

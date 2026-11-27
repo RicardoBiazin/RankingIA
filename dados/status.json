@@ -1,27 +1,27 @@
 {
  "openrouter": {
   "ok": true,
-  "coletadoEm": "2026-11-26T18:43:45.822Z",
-  "tentativa": "2026-11-26T18:43:45.822Z"
+  "coletadoEm": "2026-11-27T18:38:09.667Z",
+  "tentativa": "2026-11-27T18:38:09.667Z"
  },
  "livebench": {
   "ok": true,
-  "coletadoEm": "2026-11-26T18:43:46.068Z",
-  "tentativa": "2026-11-26T18:43:46.068Z"
+  "coletadoEm": "2026-11-27T18:38:10.630Z",
+  "tentativa": "2026-11-27T18:38:10.630Z"
  },
  "lmarena": {
   "ok": true,
-  "coletadoEm": "2026-11-26T18:43:46.962Z",
-  "tentativa": "2026-11-26T18:43:46.962Z"
+  "coletadoEm": "2026-11-27T18:38:14.528Z",
+  "tentativa": "2026-11-27T18:38:14.528Z"
  },
  "artificialanalysis": {
   "ok": true,
-  "coletadoEm": "2026-11-26T18:43:47.938Z",
-  "tentativa": "2026-11-26T18:43:47.938Z"
+  "coletadoEm": "2026-11-27T18:38:16.473Z",
+  "tentativa": "2026-11-27T18:38:16.473Z"
  },
  "cambio": {
   "ok": true,
-  "coletadoEm": "2026-11-26T18:43:48.245Z",
-  "tentativa": "2026-11-26T18:43:48.245Z"
+  "coletadoEm": "2026-11-27T18:38:17.072Z",
+  "tentativa": "2026-11-27T18:38:17.072Z"
  }
 }
