@@ -97,3 +97,20 @@ Regras:
 - Não esconda conteúdo, não mude a ordem lógica, não reduza contraste, não remova o foco visível. Cabeçalho não pode estourar em 390 px (o seletor `.visuais` desce para linha própria no celular: mantenha). RTL (`ar`): propriedades lógicas.
 - Sem imagem/fonte externa. Não mexa nos `.js`.
 - Teste: `RK_PUBLIC="$TEMP/rk-<id>" node scripts/gerar.mjs` e `testar.mjs`; sirva com CSP (como acima) e, no Playwright, antes de abrir a página faça `localStorage.setItem('visual','<id>')` (via `addInitScript`) para ver o skin. Confira as 5 páginas (um modelo com gráfico de família, graficos, comparar com 2–3 modelos escolhidos pelo link `?m=` do próprio site — veja `src/assets/comparar.js` —, metodologia e 404) em 1280 e 390 px, claro e escuro, pt/en/ar/ja. Olhe as capturas, corrija. Zero erro de console, zero rolagem horizontal da página.
+
+---
+
+# Logos das empresas (substituem a inicial)
+
+Os avatares das empresas/modelos mostram o **logo original** da empresa/IA, e não mais a inicial. O gerar já entrega:
+- `m.logo` em cada item de `d.ranking` e de `d.outros.lista`: caminho `'/logos/x.svg'` ou `null` (empresa sem logo → **cai na inicial**, como hoje).
+- `d.logoEmpresa(nomeDaEmpresa)` → `'/logos/x.svg'` ou `null` (para stories/filtros por empresa a partir de `d.empresas`).
+Os SVG ficam em `src/logos/` e saem em `public/logos/` (colorido quando existe; os monocromáticos são pretos). Atribuição em `src/logos/LEIA.txt`.
+
+Regras:
+- Use `<img src="${m.logo}" alt="" width="N" height="N" loading="lazy" decoding="async">` (alt vazio: o nome da empresa já está ao lado em texto; se o logo for o único rótulo do controle, use `alt` com o nome da empresa, escapado). Tamanho por CSS (`object-fit: contain`). A CSP já permite `img-src 'self'`.
+- Como alguns logos são pretos, **ponha sempre o logo sobre um fundo claro** (ladrilho/círculo branco `#fff` com um pouco de padding), também no tema escuro. Nada de `filter: invert`.
+- Sem logo (`null`): mantenha a inicial com a cor por classe `.c0`..`.c11` como hoje.
+- Em RTL e em todos os temas o logo não espelha. Não use `style` inline.
+- Atualize **só** `modelos/<seu-id>/` (`modelo.mjs`, `estilo.css`, `filtro.js` se precisar). Troque a inicial em TODOS os lugares do visual: stories/avatares dos cartões, visor grande (Lens), avatar do pódio, lista de "outros modelos" etc. O skin.css (páginas do Padrão) não tem avatar: não mexa.
+- Teste: `RK_PUBLIC="$TEMP/rk-<id>" node scripts/gerar.mjs`, `testar.mjs` (a linha "visuais mostram o logo da empresa" tem de passar), e capture 1280/390 px, claro/escuro, em pt e ar: confira nitidez, proporção, que nenhum logo estoura o ladrilho, e que as empresas sem logo (ex.: "Institute Of Foundation Models", "Thinking Machines") continuam com a inicial.

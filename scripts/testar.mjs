@@ -228,6 +228,20 @@ conferir(/^\.env$/m.test(gi), '.env no .gitignore');
   conferir(home.includes('<body data-inicio>') && /<nav class="visuais"/.test(home) && home.includes('/assets/visual.js'), 'inicial do Padrão tem o seletor de visual e data-inicio');
   conferir(['graficos.html', 'comparar.html', 'metodologia.html', 'modelo/' + readdirSync(pub('modelo'))[0]].every((p) => readFileSync(pub(p), 'utf8').includes('<nav class="visuais"')), 'seletor de visual nas demais páginas');
   conferir(!/\/(instagram|lens|apple)\//.test(readFileSync(pub('sitemap.xml'), 'utf8')), 'visuais fora do sitemap');
+  // Logos das empresas (src/logos.mjs): arquivo existe, SVG sem script/estilo inline, e cobre a maioria do ranking.
+  const { LOGOS, logoDe } = await import('../src/logos.mjs');
+  const logoFalta = [...new Set(Object.values(LOGOS))].filter((a) => !existsSync(pub(`logos/${a}.svg`)));
+  conferir(!logoFalta.length, `logos mapeados existem em public/logos ${logoFalta.join(' ')}`);
+  const logoRuim = readdirSync(pub('logos')).filter((a) => a.endsWith('.svg') && /<script|\sstyle=|\son[a-z]+=|href="https?:|<image/.test(readFileSync(pub(`logos/${a}`), 'utf8')));
+  conferir(!logoRuim.length, `logos SVG sem script, estilo inline nem recurso externo ${logoRuim.join(' ')}`);
+  const comLogo = ranking.filter((m) => logoDe(m.empresa)).length;
+  conferir(comLogo / ranking.length >= 0.75, `${comLogo} dos ${ranking.length} modelos do ranking têm logo da empresa`);
+  const semLogoNaPagina = [];
+  for (const x of TEMAS_ALTERNATIVOS) {
+    const h = readFileSync(pub(`${x.id}/index.html`), 'utf8');
+    if (!/<img[^>]+src="\/logos\/[a-z0-9]+\.svg"/.test(h)) semLogoNaPagina.push(x.id);
+  }
+  conferir(!semLogoNaPagina.length, `visuais mostram o logo da empresa (img /logos/) ${semLogoNaPagina.join(' ')}`);
   // Skin: o visual escolhido também veste as páginas do Padrão (modelo, gráficos, comparar, metodologia).
   const cedo = readFileSync(pub('assets/visual-cedo.js'), 'utf8');
   const lista = cedo.match(/VISUAIS = \[([^\]]*)\]/)?.[1].replace(/['\s]/g, '');

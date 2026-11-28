@@ -201,12 +201,16 @@ h1 {
 .b0 .fatos { border-top-color: rgb(255 255 255 / 0.16); }
 .b0 .selo { color: #d8d8de; border-color: rgb(255 255 255 / 0.3); }
 
-/* Avatar com a inicial da empresa */
+/* Avatar: logo da empresa sobre ladrilho branco (também no escuro); sem logo, a inicial colorida */
 .av {
   display: inline-flex; align-items: center; justify-content: center; flex: none;
   width: 28px; height: 28px; border-radius: 9px; font-size: 13px; font-weight: 700; color: #fff; letter-spacing: 0;
   background: linear-gradient(135deg, #0071e3, #005bb5);
 }
+.av-img { background: #fff; padding: 5px; box-sizing: border-box; box-shadow: inset 0 0 0 1px rgb(0 0 0 / 0.08); }
+.av-img img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.b0 .av { width: 40px; height: 40px; border-radius: 12px; font-size: 18px; }
+.b0 .av-img { padding: 7px; box-shadow: 0 0 0 1px rgb(255 255 255 / 0.5), 0 4px 14px rgb(0 0 0 / 0.35); }
 .c1 { background: linear-gradient(135deg, #bf4800, #8f3600); }
 .c2 { background: linear-gradient(135deg, #248a3d, #1a6b2e); }
 .c3 { background: linear-gradient(135deg, #8944ab, #6a2f87); }
@@ -282,6 +286,7 @@ h1 {
 .l-pos { text-align: center; font-size: 15px; font-weight: 500; color: var(--fg2); font-variant-numeric: tabular-nums; }
 .l-modelo { display: flex; align-items: center; gap: 12px; min-width: 0; }
 .l-modelo .av { width: 36px; height: 36px; border-radius: 11px; font-size: 16px; }
+.l-modelo .av-img { padding: 6px; }
 .l-nomes { display: flex; flex-direction: column; min-width: 0; }
 .l-nome { font-size: 17px; font-weight: 600; color: var(--fg); line-height: 1.25; overflow-wrap: anywhere; }
 .l-nome:hover { color: var(--link); text-decoration: none; }
@@ -320,8 +325,13 @@ h1 {
 .qtd { font-size: 14px; font-weight: 600; padding: 3px 12px; border-radius: 999px; background: var(--seg); color: var(--fg2); font-variant-numeric: tabular-nums; }
 .outros-texto { max-width: 60em; margin-top: 22px; font-size: 15px; color: var(--fg2); }
 .outros-lista { margin-top: 18px; column-width: 270px; column-gap: 36px; }
-.outros-lista li { break-inside: avoid; padding: 8px 0; border-bottom: 1px solid var(--linha); font-size: 15px; line-height: 1.35; }
-.outros-lista li > span { display: block; font-size: 13px; color: var(--fg2); }
+.outros-lista li { break-inside: avoid; display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--linha); font-size: 15px; line-height: 1.35; }
+.outros-lista li[hidden] { display: none; }
+.outros-lista .o-txt { min-width: 0; }
+.outros-lista .o-txt > a { overflow-wrap: anywhere; }
+.outros-lista .o-txt > span { display: block; font-size: 13px; color: var(--fg2); }
+.outros-lista .av.mini { width: 24px; height: 24px; border-radius: 8px; font-size: 11px; }
+.outros-lista .av-img.mini { padding: 4px; }
 
 /* ---------- Rodapé ---------- */
 .rodape { margin-top: 56px; background: var(--tile); color: var(--fg2); font-size: 12px; line-height: 1.55; }
@@ -363,6 +373,7 @@ h1 {
   .cabeca-lista { display: none; }
   .lin { grid-template-columns: 30px minmax(0, 1fr) auto; column-gap: 10px; row-gap: 8px; padding: 16px 0; }
   .l-modelo .av { width: 32px; height: 32px; border-radius: 10px; }
+  .l-modelo .av-img { padding: 5px; }
   .l-nota { align-items: flex-end; min-width: 64px; }
   .barra { width: 64px; }
   .l-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 14px; grid-column: 2 / -1; font-size: 13px; }

@@ -36,6 +36,10 @@ const ic = (n, cls = 'ico') => `<svg class="${cls}" viewBox="0 0 24 24" aria-hid
 // A data em árabe vem com marcas RLM que embaralham o trecho; o span dir="ltr" resolve sem elas.
 const limpaBidi = (s) => String(s).replace(/[‎‏؜]/g, '');
 const inicial = (s) => (Array.from(String(s).trim())[0] ?? '?').toUpperCase();
+// Miolo do avatar: logo original da empresa em círculo branco (classe .logo) ou, sem logo, a inicial.
+const miolo = (logo, nome) => (logo
+  ? `<span class="ini logo"><img src="${esc(logo)}" alt="" width="40" height="40" loading="lazy" decoding="async"></span>`
+  : `<span class="ini">${esc(inicial(nome))}</span>`);
 // Largura da barra: inteiro 0..100 (classe .wN no CSS, sem style inline).
 const largura = (n) => (n == null ? 0 : Math.max(0, Math.min(100, Math.round(n))));
 
@@ -58,9 +62,10 @@ export function render(d) {
       <ul>${d.idiomas.map((i) => `<li><a href="${esc(i.href)}" lang="${esc(i.codigo)}" hreflang="${esc(i.codigo)}"${i.atual ? ' aria-current="true"' : ''}>${esc(i.nome)}</a></li>`).join('')}</ul>
     </details>`;
 
-  const stories = empresasOrdem.map((e) => `<li><button type="button" class="story ${cor(e)}" data-emp="${esc(e)}" aria-pressed="false"><span class="anel" aria-hidden="true"><span class="ini">${esc(inicial(e))}</span></span><span class="story-nome">${esc(e)}</span><span class="story-qtd">${qtd.get(e) ?? 0}</span></button></li>`).join('\n      ');
+  const stories = empresasOrdem.map((e) => `<li><button type="button" class="story ${cor(e)}" data-emp="${esc(e)}" aria-pressed="false"><span class="anel" aria-hidden="true">${miolo(d.logoEmpresa(e), e)}</span><span class="story-nome">${esc(e)}</span><span class="story-qtd">${qtd.get(e) ?? 0}</span></button></li>`).join('\n      ');
 
   const destaque = (p, n) => `<li class="destaque d${n % 4}"><a href="${esc(p.m.url)}">
+        <span class="anel dest-avatar ${cor(p.m.empresa)}" aria-hidden="true">${miolo(p.m.logo, p.m.empresa || p.m.nome)}</span>
         <span class="dest-rotulo">${ic(['trofeu', 'moeda', 'aberto', 'estrela'][n % 4])}<span>${esc(p.rotulo)}</span></span>
         <span class="dest-nome">${esc(p.m.nome)}</span>
         <span class="dest-quem">${esc(p.m.empresa)}</span>
@@ -72,7 +77,7 @@ export function render(d) {
     const c = cor(m.empresa);
     return `<article class="post ${c}" id="m-${esc(m.slug)}" data-slug="${esc(m.slug)}" data-pos="${m.pos}" data-emp="${esc(m.empresa)}" data-aberto="${m.aberto ? 1 : 0}" data-busca="${m.busca}">
       <header class="post-topo">
-        <span class="anel avatar" aria-hidden="true"><span class="ini">${esc(inicial(m.empresa || m.nome))}</span></span>
+        <span class="anel avatar" aria-hidden="true">${miolo(m.logo, m.empresa || m.nome)}</span>
         <div class="post-quem">
           <h3 class="post-nome"><a href="${esc(m.url)}">${esc(m.nome)}</a></h3>
           <p class="post-sub">${m.empresa ? `<span>${esc(m.empresa)}</span> · ` : ''}<span dir="ltr">${esc(limpaBidi(m.lancamento))}</span></p>
@@ -104,7 +109,7 @@ export function render(d) {
     </article>`;
   };
 
-  const outro = (m) => `<li class="outro ${cor(m.empresa)}" data-emp="${esc(m.empresa)}" data-aberto="${m.aberto ? 1 : 0}" data-busca="${m.busca}"><span class="anel mini" aria-hidden="true"><span class="ini">${esc(inicial(m.empresa || m.nome))}</span></span><a href="${esc(m.url)}">${esc(m.nome)}</a><span class="outro-sub">${esc(m.empresa)}${m.elo != null ? ` · Elo ${m.elo}` : ''}${m.aberto ? ` · ${esc(t('selo.aberto'))}` : ''}</span></li>`;
+  const outro = (m) => `<li class="outro ${cor(m.empresa)}" data-emp="${esc(m.empresa)}" data-aberto="${m.aberto ? 1 : 0}" data-busca="${m.busca}"><span class="anel mini" aria-hidden="true">${miolo(m.logo, m.empresa || m.nome)}</span><a href="${esc(m.url)}">${esc(m.nome)}</a><span class="outro-sub">${esc(m.empresa)}${m.elo != null ? ` · Elo ${m.elo}` : ''}${m.aberto ? ` · ${esc(t('selo.aberto'))}` : ''}</span></li>`;
 
   const chips = d.cats.map((c) => `<button type="button" class="chip" data-cat="${esc(c.id)}" aria-pressed="false" title="${esc(c.metricas)}">${esc(c.nome)}</button>`).join('\n        ');
 

@@ -179,6 +179,8 @@ button { cursor: pointer; }
 .nome a::after { content: ''; position: absolute; inset: 0; border-radius: 20px; }
 .card .visor { position: relative; width: 100%; aspect-ratio: 1; border-radius: 14px; overflow: hidden; container-type: size; background: radial-gradient(circle at 50% 42%, color-mix(in srgb, var(--cor) 26%, var(--cartao)) 0, color-mix(in srgb, var(--cor) 11%, var(--cartao)) 70%); }
 .ini { position: absolute; inset: 0; display: grid; place-items: center; font-size: 64px; font-size: 44cqw; font-weight: 600; line-height: 1; color: var(--cor); }
+.logo-ladrilho { position: absolute; inset: 0; margin: auto; width: 96px; width: min(62cqw, 58cqh); aspect-ratio: 1; height: auto; display: grid; place-items: center; padding: 8cqmin; background: #fff; border-radius: 22%; box-shadow: 0 1px 4px rgb(60 64 67 / .28), 0 0 0 1px rgb(60 64 67 / .08); }
+.logo-ladrilho img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .q { position: absolute; width: 22px; height: 22px; border: 0 solid var(--cor); opacity: .8; transition: inset .18s; }
 .q1 { inset-block-start: 10px; inset-inline-start: 10px; border-block-start-width: 3px; border-inline-start-width: 3px; border-start-start-radius: 9px; }
 .q2 { inset-block-start: 10px; inset-inline-end: 10px; border-block-start-width: 3px; border-inline-end-width: 3px; border-start-end-radius: 9px; }
@@ -254,6 +256,8 @@ button { cursor: pointer; }
 [dir="rtl"] .outro a { padding: 8px 8px 8px 12px; }
 .outro a:hover { box-shadow: var(--card-sombra); text-decoration: none; }
 .mini { display: grid; place-items: center; width: 34px; height: 34px; flex: none; border-radius: 10px; background: color-mix(in srgb, var(--cor) 18%, var(--cartao)); color: var(--cor); font-size: 16px; font-weight: 700; }
+.mini-logo { background: #fff; padding: 5px; box-shadow: inset 0 0 0 1px var(--borda); }
+.mini-logo img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .o-txt { display: flex; flex-direction: column; min-width: 0; flex: 1; line-height: 1.25; }
 .o-nome { font-size: 14px; font-weight: 500; overflow-wrap: anywhere; }
 .o-emp { color: var(--suave); font-size: 12px; overflow-wrap: anywhere; }

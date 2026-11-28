@@ -19,7 +19,12 @@ export function render(d) {
     const i = d.empresas.indexOf(empresa);
     return 'c' + (i < 0 ? 0 : i % 12);
   };
-  const avatar = (empresa) => `<span class="av ${cor(empresa)}" aria-hidden="true">${esc(Array.from(empresa || '·')[0].toUpperCase())}</span>`;
+  // Logo original da empresa sobre ladrilho branco; sem logo, a inicial com cor por classe.
+  const avatar = (empresa, logo, extra = '') => {
+    const src = logo !== undefined ? logo : d.logoEmpresa(empresa);
+    if (src) return `<span class="av av-img${extra}" aria-hidden="true"><img src="${esc(src)}" alt="" width="24" height="24" loading="lazy" decoding="async"></span>`;
+    return `<span class="av ${cor(empresa)}${extra}" aria-hidden="true">${esc(Array.from(empresa || '·')[0].toUpperCase())}</span>`;
+  };
   const selo = (m) => (m.aberto ? `<span class="selo" title="${ta('selo.aberto.titulo')}">${t('selo.aberto')}</span>` : '');
   const preco = (m) => `${m.precoEntrada} / ${m.precoSaida}`;
   const porMilhao = `${t('th.entrada')} / ${t('th.saida')} · ${t('por1m')}`;
@@ -29,7 +34,7 @@ export function render(d) {
 <article class="bento b0">
 <p class="rot">${esc(lider.rotulo)}</p>
 <h2><a class="nome-grande" href="${lider.m.url}">${esc(lider.m.nome)}</a></h2>
-<p class="emp">${avatar(lider.m.empresa)}<span>${esc(lider.m.empresa)}</span>${selo(lider.m)}</p>
+<p class="emp">${avatar(lider.m.empresa, lider.m.logo)}<span>${esc(lider.m.empresa)}</span>${selo(lider.m)}</p>
 <p class="nota-gigante" aria-label="${esc(t('nota.n', { n: lider.m.notaTxt }))}"><span>${lider.m.notaTxt}</span><small>/100</small></p>
 <dl class="fatos">
 <div><dt>${t('th.entrada')} / ${t('th.saida')}</dt><dd>${preco(lider.m)} <small>${t('por1m')}</small></dd></div>
@@ -41,14 +46,14 @@ export function render(d) {
 <article class="bento b${i + 1}">
 <p class="rot">${esc(p.rotulo)}</p>
 <h2><a class="nome-medio" href="${p.m.url}">${esc(p.m.nome)}</a></h2>
-<p class="emp">${avatar(p.m.empresa)}<span>${esc(p.m.empresa)}</span>${selo(p.m)}</p>
+<p class="emp">${avatar(p.m.empresa, p.m.logo)}<span>${esc(p.m.empresa)}</span>${selo(p.m)}</p>
 <p class="valor">${p.valor}</p>
 </article>`).join('');
 
   const linha = (m, i) => `
 <li class="lin" data-i="${i}" data-pos="${m.pos}" data-aberto="${m.aberto ? 1 : 0}" data-emp="${esc(m.empresa)}" data-busca="${m.busca}">
 <span class="l-pos">${m.pos}</span>
-<div class="l-modelo">${avatar(m.empresa)}<div class="l-nomes"><a class="l-nome" href="${m.url}">${esc(m.nome)}</a><span class="l-emp">${esc(m.empresa)}${selo(m)}</span></div></div>
+<div class="l-modelo">${avatar(m.empresa, m.logo)}<div class="l-nomes"><a class="l-nome" href="${m.url}">${esc(m.nome)}</a><span class="l-emp">${esc(m.empresa)}${selo(m)}</span></div></div>
 <div class="l-nota"><span class="num" data-geral="${m.notaTxt}">${m.notaTxt}</span><progress class="barra" max="100" value="${m.nota ?? 0}" data-geral="${m.nota ?? 0}" aria-hidden="true"></progress></div>
 <div class="l-meta"><div class="l-preco"><span>${preco(m)}</span><small>${t('por1m')}</small></div>
 <span class="l-ctx" data-rot="${ta('th.contexto')}">${esc(m.contexto)}</span>
@@ -58,7 +63,7 @@ export function render(d) {
 </details>
 </li>`;
 
-  const outro = (o) => `<li data-aberto="${o.aberto ? 1 : 0}" data-emp="${esc(o.empresa)}" data-busca="${o.busca}"><a href="${o.url}">${esc(o.nome)}</a><span>${esc(o.empresa)}${o.elo != null ? ` · Elo ${o.elo}` : ''}${selo(o)}</span></li>`;
+  const outro = (o) => `<li data-aberto="${o.aberto ? 1 : 0}" data-emp="${esc(o.empresa)}" data-busca="${o.busca}">${o.empresa || o.logo ? avatar(o.empresa, o.logo, ' mini') : ''}<div class="o-txt"><a href="${o.url}">${esc(o.nome)}</a><span>${esc(o.empresa)}${o.elo != null ? ` · Elo ${o.elo}` : ''}${selo(o)}</span></div></li>`;
 
   const outrosTags = d.menu.filter((x) => x.chave !== 'nav.ranking');
 

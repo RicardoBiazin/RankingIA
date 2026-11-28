@@ -10,6 +10,7 @@ import { FONTES, PESO_NEUTRO } from '../src/pesos.mjs';
 import { formatar, MOEDAS } from '../src/moedas.mjs';
 import { TEMAS_ALTERNATIVOS, seletorVisual, urlTema } from '../src/temas.mjs';
 import { carregarModelos } from '../modelos/_base.mjs';
+import { logoDe } from '../src/logos.mjs';
 import { IDIOMAS, tradutor, textosCliente } from '../src/i18n.mjs';
 import { METODOLOGIA, METODOLOGIA_TITULO, STATUS_CAB } from '../src/metodologia.mjs';
 import { PERFIL } from '../src/perfil.mjs';
@@ -247,6 +248,7 @@ ${outros.map(linhaOutro).join('\n')}
       elo: m.metricas.arena_texto != null ? Math.round(m.metricas.arena_texto) : null,
       cats: cats.map((c) => ({ id: c.id, nome: nomeCat(c.id), nota: m.categorias?.[c.id] ?? null, notaTxt: m.categorias?.[c.id] != null ? nf(m.categorias[c.id]) : '—', pos: m.posCategorias?.[c.id] ?? null })),
       busca: busca(m), // já escapado para atributo HTML
+      logo: logoDe(m.empresa),
     });
     const dVisual = {
       idioma, t, pre, versao, dados, esc, nf, data, nomeSite: 'RankingIA', logo: LOGO,
@@ -262,8 +264,9 @@ ${outros.map(linhaOutro).join('\n')}
       ].filter((p) => p.m),
       cats: cats.map((c) => ({ id: c.id, nome: nomeCat(c.id), metricas: c.metricas.map(nomeMet).join(', ') })),
       empresas,
+      logoEmpresa: logoDe, // nome da empresa -> '/logos/x.svg' ou null (cai na inicial)
       ranking: ranking.map(ficha),
-      outros: { n: outros.length, texto: t('outros.texto', { n: outros.length, fontes: dados.exigeUmaDe.map(nomeMet).join(` ${t('ou')} `) }), lista: outros.map((m) => ({ nome: m.nome, empresa: m.empresa ?? '', url: linkModelo(m), elo: m.metricas.arena_texto != null ? Math.round(m.metricas.arena_texto) : null, aberto: Boolean(m.aberto), busca: busca(m) })) },
+      outros: { n: outros.length, texto: t('outros.texto', { n: outros.length, fontes: dados.exigeUmaDe.map(nomeMet).join(` ${t('ou')} `) }), lista: outros.map((m) => ({ nome: m.nome, empresa: m.empresa ?? '', logo: logoDe(m.empresa), url: linkModelo(m), elo: m.metricas.arena_texto != null ? Math.round(m.metricas.arena_texto) : null, aberto: Boolean(m.aberto), busca: busca(m) })) },
       moeda: `<label class="oculto" for="moeda">${esc(t('moeda.titulo'))}</label><select id="moeda" class="moeda" title="${esc(t('moeda.titulo'))}">${MOEDAS.map((x) => `<option value="${x.codigo}" data-curto="${esc(x.simbolo)}" data-longo="${esc(`${x.simbolo} · ${x.nome}`)}">${esc(x.simbolo)}</option>`).join('')}</select>`,
       botaoTema: `<button class="botao-tema" type="button" id="tema" title="${esc(t('tema.titulo'))}" aria-label="${esc(t('tema.titulo'))}">${SOL_LUA}</button>`,
       rodape: pagina({ ...base, rel: '/', parte: 'rodape' }),
@@ -453,6 +456,8 @@ const css = readFileSync(caminho('src/assets/estilo.css'), 'utf8')
   + ['todas', ...cats.map((c) => c.id)].map((id) => `#ranking[data-cat="${id}"] [data-cats~="${id}"] { display: table-cell; }`).join('\n') + '\n'
   + '\n/* Larguras das barras (geradas) */\n' + Array.from({ length: 101 }, (_, i) => `.barra i.w${i}{width:${i}%}`).join('\n') + '\n';
 gravarTexto('public/assets/estilo.css', css);
+mkdirSync(caminho('public/logos'), { recursive: true });
+for (const a of readdirSync(caminho('src/logos')).filter((n) => n.endsWith('.svg'))) copyFileSync(caminho(`src/logos/${a}`), caminho(`public/logos/${a}`));
 for (const x of TEMAS_ALTERNATIVOS) {
   mkdirSync(caminho(`public/${x.id}`), { recursive: true });
   for (const a of readdirSync(caminho(`modelos/${x.id}`)).filter((n) => !n.endsWith('.mjs'))) copyFileSync(caminho(`modelos/${x.id}/${a}`), caminho(`public/${x.id}/${a}`));

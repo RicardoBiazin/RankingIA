@@ -84,10 +84,17 @@ button { cursor: pointer; }
 .anel > .ini svg { width: 100%; height: 100%; }
 .anel.avatar { width: 48px; height: 48px; padding: 2px; }
 .anel.avatar > .ini { border-width: 2px; font-size: 18px; background: var(--sup-2); }
+.anel.avatar > .ini.logo { padding: 5px; }
 .anel.mini { width: 32px; height: 32px; padding: 2px; grid-row: 1 / span 2; }
 .anel.mini > .ini { border-width: 2px; font-size: 13px; background: var(--sup-2); }
+.anel.mini > .ini.logo { padding: 3px; }
 .anel.grande { width: 84px; height: 84px; padding: 4px; background: var(--grad); }
 .anel.grande > .ini { border-width: 5px; background: var(--sup); padding: 8px; }
+/* logo original da empresa: sempre sobre círculo branco (também no escuro), contido sem cortar */
+.anel > .ini.logo,
+.anel.avatar > .ini.logo,
+.anel.mini > .ini.logo { background: #fff; border-color: var(--sup); padding: 18%; }
+.anel > .ini.logo img { display: block; width: 100%; height: 100%; object-fit: contain; border-radius: 0; }
 
 /* cor por empresa (índice em d.empresas) */
 .c0 { --g: linear-gradient(135deg, #6a3df0, #d62976); }
@@ -197,6 +204,9 @@ h1 { font-size: 26px; line-height: 1.2; font-weight: 800; letter-spacing: -.02em
   position: relative; display: flex; flex-direction: column; gap: 2px; height: 100%; padding: 16px; border-radius: 18px;
   color: #fff; text-decoration: none; overflow: hidden; min-height: 150px;
 }
+.anel.dest-avatar { position: absolute; inset-inline-end: 12px; top: 12px; z-index: 1; width: 44px; height: 44px; padding: 2px; }
+.anel.dest-avatar > .ini { border-width: 2px; font-size: 17px; background: #fff; border-color: transparent; color: #121217; }
+.anel.dest-avatar > .ini.logo { padding: 5px; }
 .destaque a::after { content: ""; position: absolute; inset-inline-end: -36px; top: -36px; width: 120px; height: 120px; border-radius: 50%; background: rgb(255 255 255 / .14); }
 .destaque.d0 a { background: linear-gradient(135deg, #6a3df0, #d62976); }
 .destaque.d1 a { background: linear-gradient(135deg, #be185d, #c2410c); }

@@ -1,6 +1,6 @@
 // Visual "Lens": busca visual estilo Google Lens / Google Imagens para o ranking de modelos de IA.
 // Campo de busca grande e redondo, chips de filtro, "melhor correspondência" em destaque e uma grade
-// de cartões com "visor" (cantos de enquadramento de câmera) onde a inicial da empresa ocupa o centro.
+// de cartões com "visor" (cantos de enquadramento de câmera) onde o logo da empresa (ou a inicial, sem logo) ocupa o centro.
 import { head, esc, scripts } from '../_base.mjs';
 
 export const meta = {
@@ -19,6 +19,8 @@ const FECHAR = (cls) => svg(cls, '<path d="M6 6l12 12M18 6L6 18"/>');
 const GLOBO = (cls) => svg(cls, '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>');
 const SETA = (cls) => svg(cls, '<path d="M15 5l-7 7 7 7"/>');
 
+// Logo da empresa (m.logo = '/logos/x.svg' ou null). Sem logo: inicial colorida pela classe .cN.
+const logoImg = (src) => `<img src="${esc(src)}" alt="" width="96" height="96" loading="lazy" decoding="async">`;
 const inicial = (s) => (Array.from(s || '').find((c) => /[\p{L}\p{N}]/u.test(c)) ?? '?').toUpperCase();
 // Faixas das notas (0 a 100): os quartis do ranking ficam perto de 27, 45 e 64.
 const faixa = (v) => (v == null ? 'n-nd' : v >= 60 ? 'n-alta' : v >= 35 ? 'n-media' : 'n-baixa');
@@ -27,7 +29,7 @@ export function render(d) {
   const t = d.t;
   const corDe = (empresa) => { const i = d.empresas.indexOf(empresa); return i < 0 ? 'c-nd' : `c${i % NCORES}`; };
 
-  const visor = (m, pos) => `<div class="visor" aria-hidden="true"><i class="q q1"></i><i class="q q2"></i><i class="q q3"></i><i class="q q4"></i><span class="ini">${esc(inicial(m.empresa))}</span>${pos != null ? `<span class="pos">#${pos}</span>` : ''}</div>`;
+  const visor = (m, pos) => `<div class="visor" aria-hidden="true"><i class="q q1"></i><i class="q q2"></i><i class="q q3"></i><i class="q q4"></i>${m.logo ? `<span class="logo-ladrilho">${logoImg(m.logo)}</span>` : `<span class="ini">${esc(inicial(m.empresa))}</span>`}${pos != null ? `<span class="pos">#${pos}</span>` : ''}</div>`;
   const selo = (m) => (m.aberto ? ` <span class="selo" title="${esc(t('selo.aberto.titulo'))}">${t('selo.aberto')}</span>` : '');
   const dados = (m) => `<p class="un">${t('por1m')}</p>
 <dl class="dados">
@@ -72,7 +74,7 @@ ${i === 0 ? dados(m) : ''}
   const chipsTipo = [['', 'tipo.todos', true], ['1', 'tipo.abertos', false], ['0', 'tipo.fechados', false]]
     .map(([v, k, on]) => `<button type="button" class="chip" data-tipo="${v}" aria-pressed="${on}">${t(k)}</button>`).join('\n');
 
-  const outros = d.outros.lista.map((o) => `<li class="outro ${corDe(o.empresa)}" data-aberto="${o.aberto ? 1 : 0}" data-empresa="${esc(o.empresa)}" data-busca="${o.busca}"><a href="${o.url}"><span class="mini">${esc(inicial(o.empresa))}</span><span class="o-txt"><span class="o-nome">${esc(o.nome)}</span><span class="o-emp">${esc(o.empresa)}</span></span>${o.elo != null ? `<span class="o-elo">Elo ${o.elo}</span>` : ''}</a></li>`).join('\n');
+  const outros = d.outros.lista.map((o) => `<li class="outro ${corDe(o.empresa)}" data-aberto="${o.aberto ? 1 : 0}" data-empresa="${esc(o.empresa)}" data-busca="${o.busca}"><a href="${o.url}">${o.logo ? `<span class="mini mini-logo">${logoImg(o.logo)}</span>` : `<span class="mini">${esc(inicial(o.empresa))}</span>`}<span class="o-txt"><span class="o-nome">${esc(o.nome)}</span><span class="o-emp">${esc(o.empresa)}</span></span>${o.elo != null ? `<span class="o-elo">Elo ${o.elo}</span>` : ''}</a></li>`).join('\n');
 
   const idiomas = `<details class="idiomas"><summary aria-label="${esc(t('idioma.titulo'))}" title="${esc(t('idioma.titulo'))}">${GLOBO('ico')}<span>${esc(d.idiomas.find((i) => i.atual)?.curto ?? '')}</span></summary>
 <ul>${d.idiomas.map((i) => `<li><a href="${i.href}" lang="${i.codigo}" hreflang="${i.codigo}"${i.atual ? ' aria-current="true"' : ''}><span class="curto">${esc(i.curto)}</span>${esc(i.nome)}</a></li>`).join('')}</ul></details>`;

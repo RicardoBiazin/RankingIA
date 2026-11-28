@@ -1,5 +1,15 @@
 # Histórico
 
+## 0.12.0 — 28/11/2026
+
+Os visuais Instagram, Lens e Apple mostram o logo original da empresa/IA no lugar da inicial.
+
+- 40 logos SVG em `src/logos/` (pacote `@lobehub/icons-static-svg` 1.106.0, MIT; marcas dos respectivos donos, só para identificar o modelo; nota em `src/logos/LEIA.txt`), copiados para `public/logos/`. Mapa empresa → logo em `src/logos.mjs` (onde há logo do produto, usa esse: Google → Gemini, Alibaba → Qwen, Anthropic → Claude, xAI → Grok, Moonshot → Kimi). Sem `currentColor`/`style` nos SVG (pretos fixos).
+- `d.ranking[].logo`, `d.outros.lista[].logo` e `d.logoEmpresa(nome)` no `d` dos visuais; empresa sem logo (ex.: Institute Of Foundation Models, Thinking Machines) continua com a inicial colorida.
+- Instagram: logos nos stories, cartões, pódio (avatar novo) e lista de outros. Lens: logo grande no ladrilho branco dentro do visor. Apple: avatar no hero, pódio, linhas do ranking e (novo) lista de outros. Ladrilho branco também no tema escuro.
+- Testes: logos mapeados existem, SVG sem script/estilo/recurso externo, ao menos 75% do ranking com logo (hoje 70 de 88) e cada visual mostra `<img src="/logos/...">`.
+- Limites: conferido em pt e ar (Apple/Lens/Instagram); logos pretos (OpenAI, Grok, IBM...) dependem do ladrilho branco.
+
 ## 0.11.0 — 28/11/2026
 
 O visual escolhido (Instagram, Lens ou Apple) passa a vestir também as páginas do Padrão: modelo, gráficos, comparar, metodologia e 404, nos 11 idiomas.
