@@ -82,3 +82,18 @@ Pare o servidor ao terminar. Scripts e capturas temporários ficam em `%TEMP%`, 
 ## Ao terminar
 
 Responda com: arquivos entregues, a ideia do layout em 2-3 linhas, o resultado do `testar.mjs`, e limitações.
+
+---
+
+# Skin: o visual nas demais páginas do Padrão
+
+Além da inicial (`modelo.mjs`), cada visual entrega **`modelos/<id>/skin.css`**: veste as páginas do Padrão (`/modelo/<slug>.html`, `/graficos.html`, `/comparar.html`, `/metodologia.html`, `/404.html`, em todos os idiomas) quando o visitante escolheu esse visual. Não há HTML novo: `src/assets/visual-cedo.js` (no `<head>`) lê a escolha salva, põe `data-visual="<id>"` no `<html>` e liga `/<id>/skin.css` (`<link>` próprio, não o `estilo.css` da inicial).
+
+Regras:
+- **Só CSS, só `modelos/<id>/skin.css`.** Não mude o HTML do Padrão nem `src/assets/estilo.css`. Leia `src/assets/estilo.css` inteiro e as páginas geradas (cabeçalho `.topo`, `.menu`, `.moeda`, `.idiomas`, `.visuais`, `.tema`, `.intro`, `.cartao`, `.tabela`, `.chip`, `.filtros`, `.fichas`, `.placar`, `.grafico`, `.seletor`, `.texto`, `.rodape`...) para ver o que existe.
+- **Todo seletor começa por `html[data-visual="<id>"]`** (o `testar` rejeita regra fora disso, e `@import`/`url(http...)`). Isso garante que o Padrão não muda. Dentro de `@media`, vale a mesma regra.
+- Comece trocando os **tokens** (`--fundo`, `--superficie`, `--superficie-2`, `--borda`, `--texto`, `--texto-2`, `--texto-3`, `--destaque`, `--destaque-texto`, `--destaque-fundo`, `--barra`, `--barra-fundo`, `--ouro`, `--bom`, `--aviso`, `--serie-1..8`, `--grade`, `--sombra`) em `html[data-visual="<id>"]`: os gráficos (Chart.js) leem `--serie-N`, `--grade`, `--texto*` em tempo de execução, então precisam de contraste nos dois temas. Depois ajuste forma (raios, sombras, espaçamento, tipografia de sistema), cabeçalho e navegação, cartões, tabelas, chips e botões para lembrar o visual da inicial. Mesma paleta e mesmo "clima" da inicial.
+- Escuro: o Padrão usa `@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {...} }` e `:root[data-theme="dark"] {...}`. Sua versão escura precisa de especificidade maior: `html[data-visual="<id>"]:not([data-theme="light"])` dentro do `@media (prefers-color-scheme: dark)` e `html[data-visual="<id>"][data-theme="dark"]` fora dele.
+- Não esconda conteúdo, não mude a ordem lógica, não reduza contraste, não remova o foco visível. Cabeçalho não pode estourar em 390 px (o seletor `.visuais` desce para linha própria no celular: mantenha). RTL (`ar`): propriedades lógicas.
+- Sem imagem/fonte externa. Não mexa nos `.js`.
+- Teste: `RK_PUBLIC="$TEMP/rk-<id>" node scripts/gerar.mjs` e `testar.mjs`; sirva com CSP (como acima) e, no Playwright, antes de abrir a página faça `localStorage.setItem('visual','<id>')` (via `addInitScript`) para ver o skin. Confira as 5 páginas (um modelo com gráfico de família, graficos, comparar com 2–3 modelos escolhidos pelo link `?m=` do próprio site — veja `src/assets/comparar.js` —, metodologia e 404) em 1280 e 390 px, claro e escuro, pt/en/ar/ja. Olhe as capturas, corrija. Zero erro de console, zero rolagem horizontal da página.

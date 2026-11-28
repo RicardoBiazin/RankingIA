@@ -228,6 +228,23 @@ conferir(/^\.env$/m.test(gi), '.env no .gitignore');
   conferir(home.includes('<body data-inicio>') && /<nav class="visuais"/.test(home) && home.includes('/assets/visual.js'), 'inicial do Padrão tem o seletor de visual e data-inicio');
   conferir(['graficos.html', 'comparar.html', 'metodologia.html', 'modelo/' + readdirSync(pub('modelo'))[0]].every((p) => readFileSync(pub(p), 'utf8').includes('<nav class="visuais"')), 'seletor de visual nas demais páginas');
   conferir(!/\/(instagram|lens|apple)\//.test(readFileSync(pub('sitemap.xml'), 'utf8')), 'visuais fora do sitemap');
+  // Skin: o visual escolhido também veste as páginas do Padrão (modelo, gráficos, comparar, metodologia).
+  const cedo = readFileSync(pub('assets/visual-cedo.js'), 'utf8');
+  const lista = cedo.match(/VISUAIS = \[([^\]]*)\]/)?.[1].replace(/['\s]/g, '');
+  conferir(lista === TEMAS_ALTERNATIVOS.map((x) => x.id).join(','), `visual-cedo.js conhece os visuais (${lista})`);
+  const semSkin = TEMAS_ALTERNATIVOS.filter((x) => !existsSync(pub(`${x.id}/skin.css`)));
+  conferir(!semSkin.length, `skin.css publicado em cada visual ${semSkin.map((x) => x.id).join(' ')}`);
+  const skinRuim = [];
+  for (const x of TEMAS_ALTERNATIVOS) {
+    const css = existsSync(pub(`${x.id}/skin.css`)) ? readFileSync(pub(`${x.id}/skin.css`), 'utf8').replace(/\/\*[\s\S]*?\*\//g, '') : '';
+    // Toda regra precisa começar por html[data-visual="<id>"] (ou ser @media/@keyframes), para não vazar para o Padrão.
+    const soltas = css.split('}').map((b) => (b.includes('{') ? b.split('{')[0].trim() : '')).filter((s) => s && !s.startsWith('@') && !/^(?:from|to|[\d.]+%)$/.test(s) && !s.split(',').every((p) => p.trim().startsWith(`html[data-visual="${x.id}"]`)));
+    if (soltas.length) skinRuim.push(`${x.id}: ${soltas[0].slice(0, 60)}`);
+    if (/@import|url\(\s*['"]?https?:/.test(css)) skinRuim.push(`${x.id}: recurso externo`);
+  }
+  conferir(!skinRuim.length, `skin.css só com regras sob html[data-visual="id"] e sem recurso externo ${skinRuim.slice(0, 2).join(' | ')}`);
+  const comCedo = ['graficos.html', 'comparar.html', 'metodologia.html', 'en/graficos.html', 'modelo/' + readdirSync(pub('modelo'))[0]].every((p) => readFileSync(pub(p), 'utf8').includes('/assets/visual-cedo.js'));
+  conferir(comCedo && !TEMAS_ALTERNATIVOS.some((x) => readFileSync(pub(`${x.id}/index.html`), 'utf8').includes('visual-cedo.js')), 'visual-cedo.js nas páginas do Padrão e fora das inicias dos visuais');
 }
 
 console.log(falhas ? `\n${falhas} falha(s)` : '\ntudo ok');

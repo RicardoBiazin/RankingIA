@@ -1,5 +1,16 @@
 # Histórico
 
+## 0.11.0 — 28/11/2026
+
+O visual escolhido (Instagram, Lens ou Apple) passa a vestir também as páginas do Padrão: modelo, gráficos, comparar, metodologia e 404, nos 11 idiomas.
+
+- Cada visual ganha `modelos/<id>/skin.css` (feito por 3 agentes em paralelo, contrato na seção "Skin" de `modelos/CONTRATO.md`): troca os tokens de cor, forma, cabeçalho, cartões, tabelas e chips; os gráficos Chart.js leem os tokens `--serie-N`, `--grade` e `--texto*`, então acompanham a paleta, claro e escuro.
+- `src/assets/visual-cedo.js` (no `<head>` das páginas do Padrão) lê o visual salvo, marca `<html data-visual>` e liga o skin antes de a página aparecer; sem JS ou sem escolha, é o Padrão. Não há páginas novas nem HTML duplicado. `visual.js` marca no menu o visual escolhido.
+- Todo seletor do skin começa por `html[data-visual="id"]`, então o Padrão não muda.
+- Testes: `visual-cedo.js` conhece os 3 visuais, `skin.css` existe em cada um, só regras sob `html[data-visual]` e sem recurso externo, e o script está nas páginas do Padrão e fora das inicias dos visuais.
+- Corrige o estouro de largura da página comparar em 390 px (grade `1fr` sem `min-width:0`) também no Padrão: a tabela passa a rolar dentro do cartão.
+- Limites: tabelas largas rolam dentro do cartão no celular; conferido só em pt, en, ar, ja (e ru no Apple).
+
 ## 0.10.0 — 27/11/2026
 
 Visuais alternativos da página inicial, no mesmo método do Streaming Radar: Instagram, Lens e Apple.

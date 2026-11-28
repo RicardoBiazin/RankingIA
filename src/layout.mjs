@@ -83,6 +83,7 @@ ${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(
 <link rel="stylesheet" href="/assets/estilo.css?v=${versao}">
 <script src="/assets/t-${arq}.js?v=${versao}"></script>
 <script src="/assets/tema.js?v=${versao}"></script>
+<script src="/assets/visual-cedo.js?v=${versao}"></script>
 <script src="/assets/moeda.js?v=${versao}"></script>
 </head>
 <body${corpo ? ' ' + corpo : ''}>

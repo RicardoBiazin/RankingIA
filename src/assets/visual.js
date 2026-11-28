@@ -12,6 +12,14 @@
     });
   });
 
+  // Nas páginas do Padrão vestidas por um skin (visual-cedo.js), o menu marca o visual escolhido.
+  var vestido = document.documentElement.getAttribute('data-visual');
+  if (atual === 'padrao' && vestido) {
+    [].forEach.call(menu.querySelectorAll('a[data-visual]'), function (a) {
+      if (a.getAttribute('data-visual') === vestido) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
+    });
+  }
+
   // Só a página inicial do Padrão redireciona; os outros visuais já são a escolha.
   if (atual !== 'padrao' || !document.body.hasAttribute('data-inicio')) return;
   var salvo = null;

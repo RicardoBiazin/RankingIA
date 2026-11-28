@@ -204,8 +204,8 @@ tr[hidden] { display: none; }
 .fichas .cartao { padding: 12px 14px; }
 .fichas dt { font-size: .78rem; text-transform: uppercase; letter-spacing: .04em; color: var(--texto-3); font-weight: 600; }
 .fichas dd { margin: 2px 0 0; font-weight: 650; font-size: 1.05rem; }
-.grade-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-@media (max-width: 860px) { .grade-2 { grid-template-columns: 1fr; } }
+.grade-2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+@media (max-width: 860px) { .grade-2 { grid-template-columns: minmax(0, 1fr); } }
 .links { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 0; padding: 0; list-style: none; }
 
 /* Gráficos */

@@ -457,7 +457,7 @@ for (const x of TEMAS_ALTERNATIVOS) {
   mkdirSync(caminho(`public/${x.id}`), { recursive: true });
   for (const a of readdirSync(caminho(`modelos/${x.id}`)).filter((n) => !n.endsWith('.mjs'))) copyFileSync(caminho(`modelos/${x.id}/${a}`), caminho(`public/${x.id}/${a}`));
 }
-for (const a of ['visual.js', 'tema.js', 'moeda.js', 'tabela.js', 'graficos.js', 'comparar.js', 'comum.js', 'modelo.js']) copyFileSync(caminho('src/assets/' + a), caminho('public/assets/' + a));
+for (const a of ['visual.js', 'visual-cedo.js', 'tema.js', 'moeda.js', 'tabela.js', 'graficos.js', 'comparar.js', 'comum.js', 'modelo.js']) copyFileSync(caminho('src/assets/' + a), caminho('public/assets/' + a));
 mkdirSync(caminho('public/vendor'), { recursive: true });
 copyFileSync(caminho('node_modules/chart.js/dist/chart.umd.min.js'), caminho('public/vendor/chart.umd.min.js'));
 gravarTexto('public/favicon.svg', '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#2a78d6"/><rect x="7" y="17" width="4.5" height="8" rx="1.5" fill="#fff"/><rect x="13.75" y="8" width="4.5" height="17" rx="1.5" fill="#fff"/><rect x="20.5" y="13" width="4.5" height="12" rx="1.5" fill="#fff"/></svg>\n');

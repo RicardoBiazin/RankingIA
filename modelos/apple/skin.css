@@ -1,0 +1,299 @@
+/* Skin "Apple" do RankingIA: veste modelo, gráficos, comparar, metodologia e 404 quando o visitante escolheu o visual Apple.
+   Mesma paleta da inicial (#f5f5f7 / #1d1d1f, azul #0066cc / #2997ff): cabeçalho fino de vidro, muito ar,
+   títulos grandes em peso 600, cartões de cantos grandes sem borda, divisores finos e botões em pílula. Só CSS. */
+
+/* ---------- Tokens (claro) ---------- */
+html[data-visual="apple"] {
+  color-scheme: light;
+  --fundo: #fff;
+  --superficie: #f5f5f7;
+  --superficie-2: #e8e8ed;
+  --borda: #d2d2d7;
+  --texto: #1d1d1f;
+  --texto-2: #515154;
+  --texto-3: #6e6e73;
+  --destaque: #0071e3;
+  --destaque-texto: #0066cc;
+  --destaque-fundo: #e5f0fc;
+  --barra: #0071e3;
+  --barra-fundo: #e0e0e5;
+  --ouro: #946200;
+  --bom: #1d7a34;
+  --aviso: #b34000;
+  --serie-1: #0071e3;
+  --serie-2: #c93f00;
+  --serie-3: #248a3d;
+  --serie-4: #a87500;
+  --serie-5: #d12f68;
+  --serie-6: #5856d6;
+  --serie-7: #8944ab;
+  --serie-8: #0e7490;
+  --grade: #e5e5ea;
+  --sombra: none;
+  --ap-vidro: rgb(255 255 255 / 0.74);
+  --ap-pop: rgb(255 255 255 / 0.94);
+  --ap-foco: #0071e3;
+  --ap-seg: rgb(0 0 0 / 0.06);
+  --ap-seg-sel: #fff;
+  --ap-seg-sombra: 0 1px 3px rgb(0 0 0 / 0.14);
+  --ap-raio: 22px;
+  --ap-ls-titulo: -0.035em;
+  --ap-ls-corpo: -0.01em;
+}
+/* ---------- Tokens (escuro) ---------- */
+@media (prefers-color-scheme: dark) {
+  html[data-visual="apple"]:not([data-theme="light"]) {
+    color-scheme: dark;
+    --fundo: #000;
+    --superficie: #1d1d1f;
+    --superficie-2: #2c2c2e;
+    --borda: #424245;
+    --texto: #f5f5f7;
+    --texto-2: #c7c7cc;
+    --texto-3: #98989d;
+    --destaque: #0071e3;
+    --destaque-texto: #2997ff;
+    --destaque-fundo: #0a2a4d;
+    --barra: #2997ff;
+    --barra-fundo: #3a3a3c;
+    --ouro: #ffd60a;
+    --bom: #30d158;
+    --aviso: #ff9f0a;
+    --serie-1: #2997ff;
+    --serie-2: #ff9f0a;
+    --serie-3: #30d158;
+    --serie-4: #ffd60a;
+    --serie-5: #ff6482;
+    --serie-6: #bf5af2;
+    --serie-7: #8e8cff;
+    --serie-8: #64d2ff;
+    --grade: #2c2c2e;
+    --sombra: none;
+    --ap-vidro: rgb(22 22 23 / 0.74);
+    --ap-pop: rgb(34 34 36 / 0.95);
+    --ap-foco: #2997ff;
+    --ap-seg: rgb(255 255 255 / 0.12);
+    --ap-seg-sel: #48484a;
+    --ap-seg-sombra: 0 1px 3px rgb(0 0 0 / 0.5);
+  }
+}
+html[data-visual="apple"][data-theme="dark"] {
+  color-scheme: dark;
+  --fundo: #000;
+  --superficie: #1d1d1f;
+  --superficie-2: #2c2c2e;
+  --borda: #424245;
+  --texto: #f5f5f7;
+  --texto-2: #c7c7cc;
+  --texto-3: #98989d;
+  --destaque: #0071e3;
+  --destaque-texto: #2997ff;
+  --destaque-fundo: #0a2a4d;
+  --barra: #2997ff;
+  --barra-fundo: #3a3a3c;
+  --ouro: #ffd60a;
+  --bom: #30d158;
+  --aviso: #ff9f0a;
+  --serie-1: #2997ff;
+  --serie-2: #ff9f0a;
+  --serie-3: #30d158;
+  --serie-4: #ffd60a;
+  --serie-5: #ff6482;
+  --serie-6: #bf5af2;
+  --serie-7: #8e8cff;
+  --serie-8: #64d2ff;
+  --grade: #2c2c2e;
+  --sombra: none;
+  --ap-vidro: rgb(22 22 23 / 0.74);
+  --ap-pop: rgb(34 34 36 / 0.95);
+  --ap-foco: #2997ff;
+  --ap-seg: rgb(255 255 255 / 0.12);
+  --ap-seg-sel: #48484a;
+  --ap-seg-sombra: 0 1px 3px rgb(0 0 0 / 0.5);
+}
+/* Escritas sem espaçamento negativo entre letras (ligaduras, ideogramas) */
+html[data-visual="apple"]:lang(ar), html[data-visual="apple"]:lang(ja), html[data-visual="apple"]:lang(zh), html[data-visual="apple"]:lang(hi), html[data-visual="apple"]:lang(bn) { --ap-ls-titulo: 0em; --ap-ls-corpo: 0em; }
+
+/* ---------- Base ---------- */
+html[data-visual="apple"] body { font: 400 17px/1.47 system-ui, -apple-system, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; letter-spacing: var(--ap-ls-corpo); -webkit-font-smoothing: antialiased; overflow-wrap: break-word; }
+html[data-visual="apple"] a { color: var(--destaque-texto); }
+html[data-visual="apple"] :focus-visible { outline: 3px solid var(--ap-foco); outline-offset: 2px; border-radius: 8px; }
+html[data-visual="apple"] h1, html[data-visual="apple"] h2, html[data-visual="apple"] h3 { letter-spacing: var(--ap-ls-titulo); font-weight: 600; }
+html[data-visual="apple"] h1 { font-size: clamp(34px, 6vw, 56px); line-height: 1.08; margin-bottom: .35em; }
+html[data-visual="apple"] h2 { font-size: clamp(24px, 3.4vw, 32px); line-height: 1.12; margin-top: 2em; margin-bottom: .6em; }
+html[data-visual="apple"] h3 { font-size: 21px; }
+html[data-visual="apple"] p { letter-spacing: var(--ap-ls-corpo); }
+html[data-visual="apple"] small, html[data-visual="apple"] .fraco { color: var(--texto-3); }
+html[data-visual="apple"] main.conteudo { max-width: 1160px; padding: 40px 22px 72px; min-height: 55vh; }
+html[data-visual="apple"] .conteudo { max-width: 1160px; padding-inline: 22px; }
+html[data-visual="apple"] main.conteudo > nav.fraco { font-size: 14px; margin-bottom: 22px; }
+
+/* ---------- Cabeçalho de vidro ---------- */
+html[data-visual="apple"] .topo {
+  background: var(--ap-vidro); border-bottom: 1px solid var(--borda);
+  -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
+}
+html[data-visual="apple"] .topo .conteudo { min-height: 48px; gap: 8px 14px; }
+html[data-visual="apple"] .marca { gap: 8px; font-weight: 600; font-size: 16px; letter-spacing: var(--ap-ls-corpo); color: var(--texto); }
+html[data-visual="apple"] .marca svg { width: 20px; height: 20px; }
+html[data-visual="apple"] .versao { font-size: 11px; font-weight: 500; color: var(--texto-3); border-color: var(--borda); padding: 1px 8px; }
+html[data-visual="apple"] .menu { margin-left: 0; margin-right: 0; margin-inline-start: auto; gap: 4px 22px; justify-content: center; }
+html[data-visual="apple"] .menu a { color: var(--texto); font-size: 13px; font-weight: 400; opacity: .8; padding: 4px 0; border-radius: 0; background: none; transition: opacity .2s; }
+html[data-visual="apple"] .menu a:hover { background: none; opacity: 1; text-decoration: none; }
+html[data-visual="apple"] .menu a[aria-current="page"] { background: none; color: var(--texto); opacity: 1; font-weight: 600; }
+html[data-visual="apple"] .moeda { width: auto; height: auto; font-size: 12px; padding: 5px 10px; border-radius: 999px; border-color: var(--borda); background: transparent; color: var(--texto); }
+html[data-visual="apple"] .moeda option { color: #1d1d1f; background: #fff; }
+html[data-visual="apple"] .tema { width: 32px; height: 32px; border-radius: 50%; border-color: var(--borda); color: var(--texto); transition: background-color .2s; }
+html[data-visual="apple"] .tema:hover { background: var(--ap-seg); }
+html[data-visual="apple"] .tema svg { width: 16px; height: 16px; }
+html[data-visual="apple"] .idiomas summary { height: auto; min-width: 0; padding: 5px 11px; border-radius: 999px; border-color: var(--borda); color: var(--texto); font-size: 12px; font-weight: 500; }
+html[data-visual="apple"] .idiomas summary:hover { background: var(--ap-seg); }
+html[data-visual="apple"] .idiomas ul {
+  top: calc(100% + 8px); padding: 6px; border-radius: 14px; border-color: var(--borda); background: var(--ap-pop); min-width: 190px; max-height: 70vh; overflow-y: auto;
+  -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px); box-shadow: 0 12px 40px rgb(0 0 0 / 0.18);
+}
+html[data-visual="apple"] .idiomas li a { padding: 7px 12px; border-radius: 9px; font-size: 14px; }
+html[data-visual="apple"] .idiomas li a:hover { background: var(--ap-seg); }
+html[data-visual="apple"] .idiomas li a[aria-current="true"] { color: var(--destaque-texto); font-weight: 600; }
+/* Seletor de visual: controle segmentado */
+html[data-visual="apple"] .visuais { gap: 2px; padding: 3px; border: 0; border-radius: 17px; background: var(--ap-seg); font-size: 12px; }
+html[data-visual="apple"] .visuais .rotulo-visual { color: var(--texto-3); padding: 0 8px; }
+html[data-visual="apple"] .visuais a { color: var(--texto-2); padding: 4px 11px; border-radius: 14px; font-weight: 400; transition: background-color .2s, color .2s; }
+html[data-visual="apple"] .visuais a:hover { background: none; color: var(--texto); }
+html[data-visual="apple"] .visuais a[aria-current="true"] { background: var(--ap-seg-sel); color: var(--texto); font-weight: 600; box-shadow: var(--ap-seg-sombra); }
+
+/* ---------- Título da página (hero) ---------- */
+html[data-visual="apple"] .intro { display: block; text-align: center; margin: 12px auto 48px; max-width: 880px; }
+html[data-visual="apple"] .intro > div { display: block; }
+html[data-visual="apple"] .intro h1 { font-size: clamp(38px, 7vw, 72px); line-height: 1.05; margin: 0 auto .3em; }
+html[data-visual="apple"] .intro p { color: var(--texto-2); font-size: clamp(17px, 1.9vw, 21px); line-height: 1.4; max-width: 42em; margin: 0 auto; }
+html[data-visual="apple"] .texto { max-width: 760px; margin: 0 auto; }
+html[data-visual="apple"] .texto h1 { font-size: clamp(38px, 7vw, 64px); line-height: 1.05; text-align: center; margin: 12px 0 .6em; }
+html[data-visual="apple"] .texto > p:first-of-type { font-size: 21px; line-height: 1.4; color: var(--texto-2); }
+html[data-visual="apple"] .texto h2 { margin-top: 2.2em; padding-top: 1em; border-top: 1px solid var(--borda); }
+html[data-visual="apple"] .texto li { margin-bottom: .5em; }
+html[data-visual="apple"] .texto ul, html[data-visual="apple"] .texto ol { padding-inline-start: 1.3em; margin: 0 0 1.2em; }
+html[data-visual="apple"] .texto table { margin: 12px 0 24px; width: 100%; border-collapse: collapse; }
+html[data-visual="apple"] .texto th { font-size: 12px; font-weight: 400; color: var(--texto-3); }
+html[data-visual="apple"] .texto th, html[data-visual="apple"] .texto td { padding: 10px 12px; border-bottom: 1px solid var(--borda); }
+html[data-visual="apple"] .aviso { border: 0; border-inline-start: 4px solid var(--aviso); background: var(--superficie); border-radius: 14px; padding: 14px 18px; }
+html[data-visual="apple"][dir="rtl"] .aviso { border-left: 0; border-right: 0; border-inline-start: 4px solid var(--aviso); }
+
+/* ---------- Cartões, fichas ---------- */
+html[data-visual="apple"] .cartao { background: var(--superficie); border: 0; border-radius: var(--ap-raio); box-shadow: none; }
+html[data-visual="apple"] .cartao.pad, html[data-visual="apple"] .pad { padding: 20px 24px; }
+html[data-visual="apple"] .fichas { grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; margin-bottom: 36px; }
+html[data-visual="apple"] .fichas .cartao { padding: 22px 24px; }
+html[data-visual="apple"] .fichas dt { font-size: 13px; text-transform: none; letter-spacing: 0; font-weight: 400; color: var(--texto-3); }
+html[data-visual="apple"] .fichas dd { font-size: 24px; font-weight: 600; line-height: 1.2; margin-top: 6px; letter-spacing: var(--ap-ls-titulo); }
+html[data-visual="apple"] .fichas small { font-size: 13px; }
+html[data-visual="apple"] .cabeca-modelo { align-items: flex-end; margin-bottom: 36px; gap: 20px 32px; }
+html[data-visual="apple"] .cabeca-modelo h1 { font-size: clamp(36px, 6.5vw, 64px); margin: 0 0 .15em; overflow-wrap: anywhere; }
+html[data-visual="apple"] .cabeca-modelo .empresa { font-size: 21px; color: var(--texto-2); }
+html[data-visual="apple"] .placar { text-align: end; }
+html[data-visual="apple"] .placar .grande { font-size: clamp(64px, 11vw, 112px); font-weight: 600; line-height: .95; letter-spacing: var(--ap-ls-titulo); }
+html[data-visual="apple"] .placar .fraco { font-size: 14px; margin-top: 6px; }
+html[data-visual="apple"] .grade-2 { gap: 14px; }
+html[data-visual="apple"] .grade-2 > *, html[data-visual="apple"] .graficos > * { min-width: 0; }
+html[data-visual="apple"] .links { gap: 10px; }
+html[data-visual="apple"] .selo { font-size: 11px; font-weight: 600; line-height: 1; padding: 4px 9px; border-color: var(--borda); color: var(--texto-2); letter-spacing: 0; vertical-align: .15em; }
+html[data-visual="apple"] .selo.aberto { color: var(--bom); border-color: currentColor; }
+html[data-visual="apple"] h1 .selo { font-size: 13px; vertical-align: middle; margin-left: 0; margin-right: 0; margin-inline-start: 12px; }
+
+/* ---------- Botões, chips, controles ---------- */
+html[data-visual="apple"] .botao { padding: 10px 22px; font-size: 15px; font-weight: 400; background: var(--destaque); color: #fff; border: 0; border-radius: 999px; transition: background-color .2s; }
+html[data-visual="apple"] .botao:hover { filter: none; background: #0077ed; text-decoration: none; }
+html[data-visual="apple"] .botao.leve { background: var(--superficie); color: var(--destaque-texto); border: 0; padding: 8px 18px; font-size: 14px; }
+html[data-visual="apple"] .botao.leve:hover { background: var(--superficie-2); }
+html[data-visual="apple"] .chips { gap: 4px; padding: 14px 20px; border-bottom: 1px solid var(--borda); }
+html[data-visual="apple"] .rotulo-chips { font-size: 12px; text-transform: none; letter-spacing: 0; font-weight: 400; color: var(--texto-3); }
+html[data-visual="apple"] .chip { font-size: 13px; padding: 6px 14px; border: 0; background: var(--ap-seg); color: var(--texto-2); transition: background-color .2s, color .2s; }
+html[data-visual="apple"] .chip:hover { background: var(--superficie-2); color: var(--texto); }
+html[data-visual="apple"] .chip[aria-pressed="true"] { background: var(--destaque); color: #fff; font-weight: 600; }
+html[data-visual="apple"] .filtros { padding: 18px 24px; border-bottom: 1px solid var(--borda); gap: 8px 14px; }
+html[data-visual="apple"] .filtros strong { font-size: 17px; font-weight: 600; letter-spacing: var(--ap-ls-titulo); }
+html[data-visual="apple"] .filtros .contagem { font-size: 14px; color: var(--texto-3); margin-left: 0; margin-right: 0; margin-inline-start: auto; }
+html[data-visual="apple"] .filtros input[type="search"], html[data-visual="apple"] .filtros select, html[data-visual="apple"] .seletor select {
+  font-size: 16px; color: var(--texto); background-color: var(--fundo); border: 0; border-radius: 12px; min-height: 44px; padding: 8px 14px;
+  box-shadow: inset 0 0 0 1px var(--borda);
+}
+html[data-visual="apple"] .filtros input[type="search"]:focus, html[data-visual="apple"] .seletor select:focus { outline: 3px solid var(--ap-foco); outline-offset: 0; box-shadow: none; }
+html[data-visual="apple"] .seletor { padding: 22px 24px; gap: 12px; }
+html[data-visual="apple"] .seletor select {
+  appearance: none; -webkit-appearance: none; cursor: pointer; padding-inline-end: 40px;
+  background-image: linear-gradient(45deg, transparent 50%, var(--texto-3) 50%), linear-gradient(135deg, var(--texto-3) 50%, transparent 50%);
+  background-size: 6px 6px, 6px 6px; background-repeat: no-repeat;
+  background-position: calc(100% - 20px) 50%, calc(100% - 14px) 50%;
+}
+html[data-visual="apple"][dir="rtl"] .seletor select { background-position: 20px 50%, 14px 50%; }
+html[data-visual="apple"] .seletor select option { color: #1d1d1f; background: #fff; }
+html[data-visual="apple"] .comparar-barra { background: var(--texto); color: var(--fundo); box-shadow: 0 10px 34px rgb(0 0 0 / 0.28); }
+
+/* ---------- Tabelas ---------- */
+html[data-visual="apple"] .tabela th { font-size: 12px; font-weight: 400; text-transform: none; letter-spacing: 0; color: var(--texto-3); background: var(--superficie); }
+html[data-visual="apple"] .tabela th, html[data-visual="apple"] .tabela td { padding: 14px 10px; border-bottom: 1px solid var(--borda); }
+html[data-visual="apple"] .tabela tbody tr:last-child th, html[data-visual="apple"] .tabela tbody tr:last-child td { border-bottom: 0; }
+html[data-visual="apple"] .tabela tbody tr:hover { background: var(--superficie-2); }
+html[data-visual="apple"] .tabela tbody th { font-weight: 600; color: var(--texto); background: none; }
+html[data-visual="apple"] .tabela td.modelo a { color: var(--texto); font-weight: 600; }
+html[data-visual="apple"] .tabela td.nota { font-weight: 600; }
+html[data-visual="apple"] .tabela th:first-child, html[data-visual="apple"] .tabela td:first-child { padding-inline-start: 24px; }
+html[data-visual="apple"] .tabela th:last-child, html[data-visual="apple"] .tabela td:last-child { padding-inline-end: 24px; }
+html[data-visual="apple"] .barra { width: 52px; height: 4px; background: var(--barra-fundo); border-radius: 2px; margin-left: 0; margin-right: 0; margin-inline-start: 10px; }
+html[data-visual="apple"] .barra i { background: var(--barra); border-radius: 2px; }
+html[data-visual="apple"] .tabela-comp th, html[data-visual="apple"] .tabela-comp td { padding: 14px 16px; border-bottom: 1px solid var(--borda); }
+html[data-visual="apple"] .tabela-comp thead th { font-weight: 600; font-size: 14px; color: var(--texto); }
+html[data-visual="apple"] .tabela-comp tbody tr:last-child td, html[data-visual="apple"] .tabela-comp tbody tr:last-child th { border-bottom: 0; }
+html[data-visual="apple"] .tabela-comp td:first-child, html[data-visual="apple"] .tabela-comp th:first-child { padding-inline-start: 24px; font-size: 14px; }
+html[data-visual="apple"] .tabela-comp td.melhor { color: var(--bom); font-weight: 600; }
+
+/* ---------- Gráficos ---------- */
+html[data-visual="apple"] .graficos { gap: 14px; }
+html[data-visual="apple"] .grafico { padding: 28px 28px 24px; }
+html[data-visual="apple"] .grafico h2 { font-size: clamp(21px, 2.6vw, 26px); font-weight: 600; margin: 0 0 6px; padding: 0; border: 0; letter-spacing: var(--ap-ls-titulo); }
+html[data-visual="apple"] .grafico p { font-size: 15px; color: var(--texto-2); margin-bottom: 14px; }
+html[data-visual="apple"] .tela { height: 380px; }
+html[data-visual="apple"] .tela.baixa { height: 320px; }
+html[data-visual="apple"] .grafico details { margin-top: 14px; font-size: 14px; }
+html[data-visual="apple"] .grafico summary { cursor: pointer; color: var(--destaque-texto); list-style: none; display: inline-flex; align-items: center; gap: 8px; }
+html[data-visual="apple"] .grafico summary::-webkit-details-marker { display: none; }
+html[data-visual="apple"] .grafico summary::after { content: ''; width: 6px; height: 6px; margin-top: -3px; border-right: 1.6px solid currentColor; border-bottom: 1.6px solid currentColor; transform: rotate(45deg); transition: transform .25s; }
+html[data-visual="apple"] .grafico details[open] summary::after { transform: rotate(225deg); margin-top: 3px; }
+html[data-visual="apple"] .grafico details .rolagem { margin-top: 10px; border-top: 1px solid var(--borda); }
+
+/* ---------- Rodapé ---------- */
+html[data-visual="apple"] .rodape { border-top: 0; background: var(--superficie); color: var(--texto-3); font-size: 12px; line-height: 1.55; padding: 32px 0 44px; margin-top: 24px; }
+html[data-visual="apple"] .rodape p { margin: 0 0 10px; }
+html[data-visual="apple"] .rodape a { color: var(--destaque-texto); }
+html[data-visual="apple"] .rodape .fontes-falha { color: var(--aviso); }
+
+/* ---------- Telas médias e celular ---------- */
+@media (max-width: 860px) {
+  html[data-visual="apple"] .grade-2 { grid-template-columns: minmax(0, 1fr); }
+  html[data-visual="apple"] .grafico { padding: 22px 18px 18px; }
+}
+@media (max-width: 720px) {
+  html[data-visual="apple"] body { font-size: 16px; }
+  html[data-visual="apple"] main.conteudo { padding: 28px 16px 56px; }
+  html[data-visual="apple"] .conteudo { padding-inline: 16px; }
+  html[data-visual="apple"] .topo .conteudo { padding-top: 6px; padding-bottom: 8px; gap: 6px 10px; }
+  html[data-visual="apple"] .menu { margin-inline-start: 0; justify-content: flex-start; gap: 4px 20px; padding-bottom: 2px; }
+  html[data-visual="apple"] .moeda { margin-left: 0; margin-right: 0; margin-inline-start: auto; }
+  html[data-visual="apple"] .visuais { justify-content: center; }
+  html[data-visual="apple"] .intro { margin: 4px auto 32px; }
+  html[data-visual="apple"] .cabeca-modelo { align-items: flex-start; }
+  html[data-visual="apple"] .placar { text-align: start; }
+  html[data-visual="apple"] .fichas { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  html[data-visual="apple"] .fichas .cartao { padding: 16px; }
+  html[data-visual="apple"] .fichas dd { font-size: 20px; }
+  html[data-visual="apple"] .cartao { border-radius: 20px; }
+  html[data-visual="apple"] .filtros, html[data-visual="apple"] .seletor { padding: 16px; }
+  html[data-visual="apple"] .tabela th:first-child, html[data-visual="apple"] .tabela td:first-child, html[data-visual="apple"] .tabela-comp td:first-child, html[data-visual="apple"] .tabela-comp th:first-child { padding-inline-start: 16px; }
+  html[data-visual="apple"] .tabela th:last-child, html[data-visual="apple"] .tabela td:last-child { padding-inline-end: 16px; }
+  html[data-visual="apple"] .tela { height: 320px; }
+  html[data-visual="apple"] .tela.baixa { height: 280px; }
+  html[data-visual="apple"] .texto > p:first-of-type { font-size: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html[data-visual="apple"] *, html[data-visual="apple"] *::before, html[data-visual="apple"] *::after { transition: none !important; animation: none !important; }
+}

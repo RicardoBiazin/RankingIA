@@ -1,0 +1,299 @@
+/* Skin "Instagram" do RankingIA: veste modelo, gráficos, comparar, metodologia e 404 do Padrão.
+   Só CSS (sem imagem externa). Tudo sob html[data-visual="instagram"]. Mesma paleta da inicial:
+   degradê laranja-rosa-roxo nos destaques, cartões brancos de cantos grandes com borda fina, pílulas, anel de story.
+   Os gráficos leem --serie-N / --grade / --texto* (6 dígitos hex: o JS acrescenta alfa), por isso há tokens para os dois temas. */
+
+/* ---------- Tokens: claro ---------- */
+html[data-visual="instagram"] {
+  --fundo: #fafafa;
+  --superficie: #ffffff;
+  --superficie-2: #f1f1f4;
+  --borda: #e2e2e8;
+  --texto: #121217;
+  --texto-2: #3f3f48;
+  --texto-3: #62626d;
+  --destaque: #d62976;
+  --destaque-texto: #b8237f;
+  --destaque-fundo: #fcebf4;
+  --barra: #d62976;
+  --barra-fundo: #ececf1;
+  --ouro: #a86a00;
+  --bom: #15803d;
+  --aviso: #a85a00;
+  --serie-1: #d62976;
+  --serie-2: #4f5bd5;
+  --serie-3: #e8650a;
+  --serie-4: #0e8f87;
+  --serie-5: #8b3dd6;
+  --serie-6: #3f9b2f;
+  --serie-7: #c98500;
+  --serie-8: #0a84c6;
+  --grade: #e6e6ec;
+  --sombra: 0 1px 2px rgb(18 18 23 / .05), 0 8px 24px rgb(18 18 23 / .06);
+  /* extras do skin */
+  --ig-grad: linear-gradient(45deg, #feda75 0%, #fa7e1e 24%, #d62976 52%, #962fbf 76%, #4f5bd5 100%);
+  --ig-grad-t: linear-gradient(45deg, #d9442f 0%, #d02672 55%, #7c3aed 100%);
+  --ig-grad-num: linear-gradient(45deg, #e8590c 0%, #d62976 50%, #7c3aed 100%);
+  --ig-r: 20px;
+}
+@media (prefers-color-scheme: dark) {
+  html[data-visual="instagram"]:not([data-theme="light"]) {
+    --fundo: #0a0a0d;
+    --superficie: #15151a;
+    --superficie-2: #202028;
+    --borda: #2b2b35;
+    --texto: #f5f5f8;
+    --texto-2: #d2d2da;
+    --texto-3: #a0a0ad;
+    --destaque: #ff5c9d;
+    --destaque-texto: #ff8ac0;
+    --destaque-fundo: #3a1a2e;
+    --barra: #ff5c9d;
+    --barra-fundo: #2b2b35;
+    --ouro: #ffc83d;
+    --bom: #4ade80;
+    --aviso: #ffb454;
+    --serie-1: #ff5c9d;
+    --serie-2: #8a96ff;
+    --serie-3: #ff9040;
+    --serie-4: #2dd4bf;
+    --serie-5: #b57cff;
+    --serie-6: #6dd66b;
+    --serie-7: #ffc83d;
+    --serie-8: #4cb8ff;
+    --grade: #2f2f3a;
+    --sombra: 0 1px 2px rgb(0 0 0 / .4), 0 8px 24px rgb(0 0 0 / .35);
+    --ig-grad-num: linear-gradient(45deg, #ffb347 0%, #ff5c9d 50%, #b57cff 100%);
+  }
+}
+html[data-visual="instagram"][data-theme="dark"] {
+  --fundo: #0a0a0d;
+  --superficie: #15151a;
+  --superficie-2: #202028;
+  --borda: #2b2b35;
+  --texto: #f5f5f8;
+  --texto-2: #d2d2da;
+  --texto-3: #a0a0ad;
+  --destaque: #ff5c9d;
+  --destaque-texto: #ff8ac0;
+  --destaque-fundo: #3a1a2e;
+  --barra: #ff5c9d;
+  --barra-fundo: #2b2b35;
+  --ouro: #ffc83d;
+  --bom: #4ade80;
+  --aviso: #ffb454;
+  --serie-1: #ff5c9d;
+  --serie-2: #8a96ff;
+  --serie-3: #ff9040;
+  --serie-4: #2dd4bf;
+  --serie-5: #b57cff;
+  --serie-6: #6dd66b;
+  --serie-7: #ffc83d;
+  --serie-8: #4cb8ff;
+  --grade: #2f2f3a;
+  --sombra: 0 1px 2px rgb(0 0 0 / .4), 0 8px 24px rgb(0 0 0 / .35);
+  --ig-grad-num: linear-gradient(45deg, #ffb347 0%, #ff5c9d 50%, #b57cff 100%);
+}
+
+/* ---------- Base ---------- */
+html[data-visual="instagram"] body { -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+html[data-visual="instagram"] :focus-visible { outline: 2px solid var(--destaque); outline-offset: 2px; border-radius: 10px; }
+html[data-visual="instagram"] a { text-underline-offset: 3px; }
+html[data-visual="instagram"] a:hover { text-decoration: underline; }
+html[data-visual="instagram"] h1 { font-size: 1.9rem; font-weight: 800; letter-spacing: -.025em; color: var(--texto); overflow-wrap: anywhere; }
+html[data-visual="instagram"] h2 { font-weight: 800; letter-spacing: -.015em; color: var(--texto); }
+html[data-visual="instagram"] h1::after {
+  content: ""; display: block; width: 52px; height: 4px; margin-top: 10px; border-radius: 99px; background: var(--ig-grad);
+}
+html[data-visual="instagram"] .conteudo { max-width: 1320px; }
+html[data-visual="instagram"] main.conteudo { padding-top: 26px; }
+html[data-visual="instagram"] .fraco, html[data-visual="instagram"] small { color: var(--texto-3); }
+
+/* ---------- Topo ---------- */
+html[data-visual="instagram"] .topo { background: var(--superficie); border-bottom: 1px solid var(--borda); }
+html[data-visual="instagram"] .topo .conteudo { gap: 12px 14px; min-height: 60px; padding-block: 8px; }
+html[data-visual="instagram"] .marca {
+  font-size: 1.3rem; font-weight: 800; letter-spacing: -.03em;
+  background: var(--ig-grad-t); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+html[data-visual="instagram"] .marca svg { width: 30px; height: 30px; border-radius: 9px; background: var(--ig-grad); }
+html[data-visual="instagram"] .marca svg rect:first-child { fill: transparent; }
+html[data-visual="instagram"] .versao { border: 0; background: var(--superficie-2); color: var(--texto-3); padding: 2px 9px; }
+
+html[data-visual="instagram"] .menu { gap: 4px; }
+html[data-visual="instagram"] .menu a { color: var(--texto); padding: 7px 14px; border-radius: 99px; font-weight: 600; }
+html[data-visual="instagram"] .menu a:hover { background: var(--superficie-2); }
+html[data-visual="instagram"] .menu a[aria-current="page"] { color: var(--destaque-texto); background: var(--destaque-fundo); font-weight: 800; }
+
+html[data-visual="instagram"] .moeda { height: 36px; border-radius: 99px; background: var(--superficie); color: var(--texto-2); padding: 0 10px; }
+html[data-visual="instagram"] .tema { width: 36px; height: 36px; border-radius: 50%; background: var(--superficie); color: var(--texto-2); }
+html[data-visual="instagram"] .tema:hover, html[data-visual="instagram"] .moeda:hover, html[data-visual="instagram"] .idiomas summary:hover { background: var(--superficie-2); }
+html[data-visual="instagram"] .idiomas summary { height: 36px; min-width: 44px; padding: 0 12px; border-radius: 99px; background: var(--superficie); font-weight: 700; }
+html[data-visual="instagram"] .idiomas ul { border-radius: 16px; padding: 6px; max-height: 70vh; overflow-y: auto; }
+html[data-visual="instagram"] .idiomas li a { border-radius: 10px; color: var(--texto-2); font-weight: 500; }
+html[data-visual="instagram"] .idiomas li a[aria-current="true"] { color: var(--destaque-texto); background: var(--destaque-fundo); font-weight: 800; }
+
+html[data-visual="instagram"] .visuais { border: 0; background: var(--superficie-2); border-radius: 99px; padding: 3px; gap: 2px; }
+html[data-visual="instagram"] .visuais .rotulo-visual { color: var(--texto-3); font-weight: 700; font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; }
+html[data-visual="instagram"] .visuais a { border-radius: 99px; padding: 4px 11px; font-weight: 600; color: var(--texto-2); }
+html[data-visual="instagram"] .visuais a:hover { background: var(--borda); }
+html[data-visual="instagram"] .visuais a[aria-current="true"] { background: var(--ig-grad-t); color: #fff; font-weight: 800; }
+
+/* ---------- Cartões e formas ---------- */
+html[data-visual="instagram"] .cartao { background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--ig-r); box-shadow: var(--sombra); }
+html[data-visual="instagram"] .cartao > .rolagem { border-radius: var(--ig-r); }
+html[data-visual="instagram"] .cartao.pad, html[data-visual="instagram"] .pad { padding: 18px 20px; }
+html[data-visual="instagram"] .aviso { border-radius: 14px; border-left-color: var(--aviso); background: var(--superficie); }
+html[data-visual="instagram"] .intro p { color: var(--texto-2); }
+
+/* ---------- Página do modelo: perfil ---------- */
+html[data-visual="instagram"] .fraco a { font-weight: 600; }
+html[data-visual="instagram"] .cabeca-modelo {
+  align-items: center; gap: 18px 20px; padding: 18px 22px; margin-bottom: 20px;
+  background: var(--superficie); border: 1px solid var(--borda); border-radius: 24px; box-shadow: var(--sombra);
+}
+html[data-visual="instagram"] .cabeca-modelo > div:first-child { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 18px; align-items: center; min-width: 0; flex: 1 1 280px; }
+html[data-visual="instagram"] .cabeca-modelo > div:first-child::before {
+  content: ""; grid-row: 1 / span 2; width: 76px; height: 76px; border-radius: 50%; border: 4px solid transparent;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='7' y='17' width='4.5' height='8' rx='1.5' fill='%23d62976'/%3E%3Crect x='13.75' y='8' width='4.5' height='17' rx='1.5' fill='%23962fbf'/%3E%3Crect x='20.5' y='13' width='4.5' height='12' rx='1.5' fill='%234f5bd5'/%3E%3C/svg%3E") center / 62% no-repeat padding-box,
+    linear-gradient(var(--superficie), var(--superficie)) padding-box,
+    var(--ig-grad) border-box;
+}
+html[data-visual="instagram"] .cabeca-modelo h1 { margin: 0; }
+html[data-visual="instagram"] .cabeca-modelo h1::after { display: none; }
+html[data-visual="instagram"] .cabeca-modelo .empresa { color: var(--texto-3); font-weight: 600; margin-top: 2px; }
+html[data-visual="instagram"] .placar { text-align: end; display: flex; flex-direction: column; align-items: flex-end; padding: 8px 18px; border-radius: 18px; background: var(--superficie-2); }
+html[data-visual="instagram"] .placar .grande {
+  font-size: 2.9rem; font-weight: 800; letter-spacing: -.04em; line-height: 1.05;
+  background: var(--ig-grad-num); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+html[data-visual="instagram"] .placar .fraco { max-width: 26ch; font-weight: 600; }
+
+html[data-visual="instagram"] .fichas { gap: 12px; }
+html[data-visual="instagram"] .fichas .cartao { padding: 14px 16px; border-radius: 18px; }
+html[data-visual="instagram"] .fichas dt { color: var(--texto-3); font-weight: 700; letter-spacing: .05em; }
+html[data-visual="instagram"] .fichas dd { font-weight: 800; font-size: 1.15rem; color: var(--texto); letter-spacing: -.01em; }
+html[data-visual="instagram"] .fichas small { display: block; margin-top: 2px; }
+
+html[data-visual="instagram"] main > h2 { margin-top: 1.6em; }
+html[data-visual="instagram"] main > h2::before {
+  content: ""; display: inline-block; width: 10px; height: 10px; margin-inline-end: 10px; border-radius: 50%; background: var(--ig-grad); vertical-align: 1px;
+}
+html[data-visual="instagram"] .links { gap: 10px; }
+
+/* ---------- Botões, chips, filtros ---------- */
+html[data-visual="instagram"] .botao { background: var(--ig-grad-t); color: #fff; border-radius: 99px; padding: 9px 20px; font-weight: 800; }
+html[data-visual="instagram"] .botao:hover { filter: brightness(1.1); text-decoration: none; }
+html[data-visual="instagram"] .botao.leve { background: var(--superficie-2); color: var(--texto); border: 1px solid var(--borda); font-weight: 700; }
+html[data-visual="instagram"] .botao.leve:hover { background: var(--borda); filter: none; }
+html[data-visual="instagram"] .chip { border-radius: 99px; padding: 6px 14px; font-weight: 600; color: var(--texto-2); }
+html[data-visual="instagram"] .chip[aria-pressed="true"] { background: var(--ig-grad-t); border-color: transparent; color: #fff; font-weight: 800; }
+html[data-visual="instagram"] .filtros input[type="search"],
+html[data-visual="instagram"] .filtros select,
+html[data-visual="instagram"] .seletor select {
+  background: var(--superficie-2); color: var(--texto); border: 1px solid transparent; border-radius: 14px; min-height: 40px; padding: 6px 12px;
+}
+html[data-visual="instagram"] .filtros input[type="search"] { border-radius: 99px; padding-inline: 16px; }
+html[data-visual="instagram"] .filtros input[type="search"]:focus, html[data-visual="instagram"] .seletor select:focus, html[data-visual="instagram"] .filtros select:focus { border-color: var(--destaque); }
+html[data-visual="instagram"] .filtros, html[data-visual="instagram"] .chips { border-bottom-color: var(--borda); }
+html[data-visual="instagram"] .contagem { color: var(--texto-3); }
+html[data-visual="instagram"] .comparar-barra { border-radius: 99px; }
+
+/* ---------- Tabelas ---------- */
+html[data-visual="instagram"] .tabela th { background: var(--superficie); color: var(--texto-3); font-weight: 700; letter-spacing: .05em; font-size: .74rem; padding: 10px 8px; border-bottom: 1px solid var(--borda); }
+html[data-visual="instagram"] .tabela td, html[data-visual="instagram"] .tabela tbody th { padding: 10px 8px; border-bottom: 1px solid var(--borda); }
+html[data-visual="instagram"] .tabela tbody tr:last-child th, html[data-visual="instagram"] .tabela tbody tr:last-child td { border-bottom: 0; }
+html[data-visual="instagram"] .tabela tbody tr:hover { background: var(--superficie-2); }
+html[data-visual="instagram"] .tabela tbody th { font-weight: 700; color: var(--texto); }
+html[data-visual="instagram"] .tabela td:first-child, html[data-visual="instagram"] .tabela th:first-child { padding-inline-start: 16px; }
+html[data-visual="instagram"] .tabela td:last-child, html[data-visual="instagram"] .tabela th:last-child { padding-inline-end: 16px; }
+html[data-visual="instagram"] .tabela tr.top1 { background: var(--destaque-fundo); }
+html[data-visual="instagram"] .tabela tr.top1 th, html[data-visual="instagram"] .tabela tr.top1 td { color: var(--destaque-texto); font-weight: 800; }
+html[data-visual="instagram"] .tabela td.nota { font-weight: 800; }
+html[data-visual="instagram"] .tabela td a, html[data-visual="instagram"] .tabela th a { font-weight: 700; }
+
+html[data-visual="instagram"] .barra { width: 56px; height: 8px; border-radius: 99px; background: var(--barra-fundo); }
+html[data-visual="instagram"] .barra i { border-radius: 99px; background: var(--ig-grad); }
+html[data-visual="instagram"] .selo { border-radius: 99px; background: var(--superficie-2); border-color: transparent; color: var(--texto-2); font-weight: 700; }
+html[data-visual="instagram"] .selo.aberto { background: transparent; border-color: currentColor; color: var(--bom); }
+
+/* ---------- Gráficos ---------- */
+html[data-visual="instagram"] .graficos { gap: 20px; }
+html[data-visual="instagram"] .grafico { padding: 20px 22px; }
+html[data-visual="instagram"] .grafico h2 { font-size: 1.1rem; font-weight: 800; margin-bottom: 4px; }
+html[data-visual="instagram"] .grafico > p { color: var(--texto-2); }
+html[data-visual="instagram"] .grafico details { margin-top: 12px; }
+html[data-visual="instagram"] .grafico summary {
+  display: inline-block; cursor: pointer; padding: 6px 14px; border-radius: 99px; background: var(--superficie-2);
+  color: var(--destaque-texto); font-weight: 700; font-size: .88rem; list-style-position: inside;
+}
+html[data-visual="instagram"] .grafico summary:hover { background: var(--destaque-fundo); }
+html[data-visual="instagram"] .grafico details[open] summary { margin-bottom: 10px; }
+html[data-visual="instagram"] .grafico details .rolagem { border: 1px solid var(--borda); border-radius: 14px; }
+
+/* ---------- Comparar ---------- */
+html[data-visual="instagram"] .seletor { gap: 12px; padding: 18px; }
+html[data-visual="instagram"] .tabela-comp th, html[data-visual="instagram"] .tabela-comp td { padding: 10px 14px; border-bottom: 1px solid var(--borda); }
+html[data-visual="instagram"] .tabela-comp thead th { color: var(--texto); font-weight: 800; background: var(--superficie); }
+html[data-visual="instagram"] .tabela-comp th:first-child, html[data-visual="instagram"] .tabela-comp td:first-child { color: var(--texto-2); font-weight: 600; }
+html[data-visual="instagram"] .tabela-comp tbody tr:hover { background: var(--superficie-2); }
+html[data-visual="instagram"] .tabela-comp td.melhor { color: var(--bom); font-weight: 800; }
+html[data-visual="instagram"] .grade-2 { gap: 20px; align-items: start; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+html[data-visual="instagram"] .grade-2 > * { min-width: 0; }
+@media (max-width: 860px) { html[data-visual="instagram"] .grade-2 { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Texto longo (metodologia, 404) ---------- */
+html[data-visual="instagram"] .texto { max-width: 800px; }
+html[data-visual="instagram"] .texto > p, html[data-visual="instagram"] .texto li { color: var(--texto-2); line-height: 1.65; }
+html[data-visual="instagram"] .texto strong { color: var(--texto); }
+html[data-visual="instagram"] .texto a { color: var(--destaque-texto); font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; }
+html[data-visual="instagram"] .texto h2 { margin-top: 1.8em; font-size: 1.3rem; }
+html[data-visual="instagram"] .texto h2::before {
+  content: ""; display: inline-block; width: 5px; height: .95em; margin-inline-end: 10px; border-radius: 99px; background: var(--ig-grad); vertical-align: -.1em;
+}
+html[data-visual="instagram"] .texto table {
+  display: block; max-width: 100%; overflow-x: auto; margin: 10px 0 18px;
+  background: var(--superficie); border: 1px solid var(--borda); border-radius: 16px; box-shadow: var(--sombra);
+}
+html[data-visual="instagram"] .texto table thead th { background: var(--superficie-2); color: var(--texto-3); font-size: .74rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; }
+html[data-visual="instagram"] .texto th, html[data-visual="instagram"] .texto td { padding: 10px 14px; }
+html[data-visual="instagram"] .texto tbody tr:last-child td { border-bottom: 0; }
+/* 404: página só com título e um parágrafo */
+html[data-visual="instagram"] .texto:not(:has(h2)) { text-align: center; margin-inline: auto; padding: 36px 16px; }
+html[data-visual="instagram"] .texto:not(:has(h2))::before {
+  content: "404"; display: block; font-size: clamp(4.5rem, 22vw, 8rem); font-weight: 800; letter-spacing: -.05em; line-height: 1;
+  background: var(--ig-grad-num); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+html[data-visual="instagram"] .texto:not(:has(h2)) h1::after { margin-inline: auto; }
+html[data-visual="instagram"] .texto:not(:has(h2)) a {
+  display: inline-block; margin-top: 8px; padding: 8px 20px; border-radius: 99px; background: var(--ig-grad-t); color: #fff; text-decoration: none; font-weight: 800;
+}
+
+/* ---------- Rodapé ---------- */
+html[data-visual="instagram"] .rodape { background: var(--superficie); border-top: 1px solid var(--borda); color: var(--texto-2); }
+html[data-visual="instagram"] .rodape a { color: var(--destaque-texto); font-weight: 600; }
+html[data-visual="instagram"] .rodape .fontes-falha { color: var(--aviso); }
+
+/* ---------- Celular ---------- */
+@media (max-width: 720px) {
+  html[data-visual="instagram"] h1 { font-size: 1.55rem; }
+  html[data-visual="instagram"] .topo .conteudo { gap: 8px 6px; }
+  html[data-visual="instagram"] .marca { font-size: 1.12rem; gap: 6px; }
+  html[data-visual="instagram"] .marca svg { width: 26px; height: 26px; border-radius: 8px; }
+  html[data-visual="instagram"] .versao { font-size: .66rem; padding: 1px 6px; }
+  html[data-visual="instagram"] .moeda { width: 4.7em; height: 34px; padding: 0 4px; }
+  html[data-visual="instagram"] .tema { width: 34px; height: 34px; }
+  html[data-visual="instagram"] .idiomas summary { height: 34px; min-width: 38px; padding: 0 8px; }
+  html[data-visual="instagram"] .menu { gap: 0; justify-content: space-between; }
+  html[data-visual="instagram"] .menu a { padding: 7px 9px; font-size: .92rem; }
+  html[data-visual="instagram"] .visuais { justify-content: center; }
+  html[data-visual="instagram"] .cabeca-modelo { padding: 16px; border-radius: 20px; }
+  html[data-visual="instagram"] .cabeca-modelo > div:first-child { column-gap: 14px; flex-basis: 100%; }
+  html[data-visual="instagram"] .cabeca-modelo > div:first-child::before { width: 62px; height: 62px; }
+  html[data-visual="instagram"] .placar { align-items: flex-start; text-align: start; width: 100%; flex-direction: row; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  html[data-visual="instagram"] .placar .grande { font-size: 2.4rem; }
+  html[data-visual="instagram"] .grafico { padding: 16px; }
+  html[data-visual="instagram"] .tela { height: 320px; }
+  html[data-visual="instagram"] .tela.baixa { height: 270px; }
+}

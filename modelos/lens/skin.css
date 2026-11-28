@@ -1,0 +1,268 @@
+/* Tokens: claro, escuro pelo sistema e escuro escolhido no botão. */
+html[data-visual="lens"] {
+    color-scheme: light;
+    --fundo: #ffffff;
+    --superficie: #ffffff;
+    --superficie-2: #f1f3f4;
+    --borda: #dadce0;
+    --texto: #202124;
+    --texto-2: #4d5156;
+    --texto-3: #5f6368;
+    --destaque: #1a73e8;
+    --destaque-texto: #1967d2;
+    --destaque-fundo: #e8f0fe;
+    --barra: #1a73e8;
+    --barra-fundo: #e8eaed;
+    --ouro: #b06000;
+    --bom: #137333;
+    --aviso: #b06000;
+    --serie-1: #1a73e8;
+    --serie-2: #d93025;
+    --serie-3: #e37400;
+    --serie-4: #188038;
+    --serie-5: #9334e6;
+    --serie-6: #00838f;
+    --serie-7: #d01884;
+    --serie-8: #795548;
+    --grade: #e3e5e8;
+    --sombra: 0 1px 2px rgb(60 64 67 / .25), 0 1px 3px 1px rgb(60 64 67 / .12);
+    --lens-azul: #1a73e8;
+    --lens-vermelho: #d93025;
+    --lens-amarelo: #f9ab00;
+    --lens-verde: #1e8e3e;
+    --lens-chip-bg: #e8f0fe;
+    --lens-chip-tx: #174ea6;
+    --lens-sobre: #ffffff;
+    --lens-popup: 0 2px 6px 2px rgb(60 64 67 / .22), 0 1px 2px rgb(60 64 67 / .3);
+}
+@media (prefers-color-scheme: dark) {
+  html[data-visual="lens"]:not([data-theme="light"]) {
+    color-scheme: dark;
+    --fundo: #1c212b;
+    --superficie: #262c39;
+    --superficie-2: #2f3646;
+    --borda: #444d62;
+    --texto: #e8eaed;
+    --texto-2: #c4cad6;
+    --texto-3: #a9b1c2;
+    --destaque: #8ab4f8;
+    --destaque-texto: #8ab4f8;
+    --destaque-fundo: #36486b;
+    --barra: #8ab4f8;
+    --barra-fundo: #444d62;
+    --ouro: #fdd663;
+    --bom: #81c995;
+    --aviso: #fdd663;
+    --serie-1: #8ab4f8;
+    --serie-2: #f28b82;
+    --serie-3: #fdd663;
+    --serie-4: #81c995;
+    --serie-5: #c58af9;
+    --serie-6: #78d9ec;
+    --serie-7: #ff8bcb;
+    --serie-8: #d7b9a6;
+    --grade: #3a4357;
+    --sombra: 0 1px 2px rgb(0 0 0 / .5), 0 1px 3px 1px rgb(0 0 0 / .3);
+    --lens-azul: #8ab4f8;
+    --lens-vermelho: #f28b82;
+    --lens-amarelo: #fdd663;
+    --lens-verde: #81c995;
+    --lens-chip-bg: #36486b;
+    --lens-chip-tx: #d2e3fc;
+    --lens-sobre: #202124;
+    --lens-popup: 0 2px 8px 2px rgb(0 0 0 / .5), 0 1px 2px rgb(0 0 0 / .6);
+  }
+}
+html[data-visual="lens"][data-theme="dark"] {
+    color-scheme: dark;
+    --fundo: #1c212b;
+    --superficie: #262c39;
+    --superficie-2: #2f3646;
+    --borda: #444d62;
+    --texto: #e8eaed;
+    --texto-2: #c4cad6;
+    --texto-3: #a9b1c2;
+    --destaque: #8ab4f8;
+    --destaque-texto: #8ab4f8;
+    --destaque-fundo: #36486b;
+    --barra: #8ab4f8;
+    --barra-fundo: #444d62;
+    --ouro: #fdd663;
+    --bom: #81c995;
+    --aviso: #fdd663;
+    --serie-1: #8ab4f8;
+    --serie-2: #f28b82;
+    --serie-3: #fdd663;
+    --serie-4: #81c995;
+    --serie-5: #c58af9;
+    --serie-6: #78d9ec;
+    --serie-7: #ff8bcb;
+    --serie-8: #d7b9a6;
+    --grade: #3a4357;
+    --sombra: 0 1px 2px rgb(0 0 0 / .5), 0 1px 3px 1px rgb(0 0 0 / .3);
+    --lens-azul: #8ab4f8;
+    --lens-vermelho: #f28b82;
+    --lens-amarelo: #fdd663;
+    --lens-verde: #81c995;
+    --lens-chip-bg: #36486b;
+    --lens-chip-tx: #d2e3fc;
+    --lens-sobre: #202124;
+    --lens-popup: 0 2px 8px 2px rgb(0 0 0 / .5), 0 1px 2px rgb(0 0 0 / .6);
+}
+
+/* Skin "Lens" (busca visual do Google): veste modelo, gráficos, comparar, metodologia e 404 do Padrão.
+   Claro com azul/vermelho/amarelo/verde; escuro cinza-azulado; campos e chips redondos; cartões de cantos grandes com sombra suave;
+   cantos de enquadramento de câmera nos títulos. Só CSS: nada muda no HTML do Padrão. */
+
+/* Base */
+html[data-visual="lens"] body { background: var(--fundo); color: var(--texto); font-size: 15px; line-height: 1.55; }
+html[data-visual="lens"] a { color: var(--destaque-texto); }
+html[data-visual="lens"] :focus-visible { outline: 3px solid var(--destaque); outline-offset: 2px; border-radius: 8px; }
+html[data-visual="lens"] h1 { font-size: clamp(1.65rem, 4vw, 2.3rem); font-weight: 500; letter-spacing: -.02em; }
+html[data-visual="lens"] h2 { font-weight: 500; letter-spacing: -.01em; }
+html[data-visual="lens"] small, html[data-visual="lens"] .fraco { color: var(--texto-3); }
+html[data-visual="lens"] main.conteudo { padding-top: 28px; padding-bottom: 56px; }
+html[data-visual="lens"] .conteudo { max-width: 1240px; }
+
+/* Topo */
+html[data-visual="lens"] .topo { background: var(--fundo); border-bottom: 1px solid var(--borda); }
+html[data-visual="lens"] .topo .conteudo { gap: 8px 14px; min-height: 64px; padding-block: 8px; }
+html[data-visual="lens"] .marca { font-weight: 600; font-size: 1.25rem; letter-spacing: -.01em; }
+html[data-visual="lens"] .marca svg { width: 32px; height: 32px; }
+html[data-visual="lens"] .marca svg rect:first-child { rx: 16px; fill: var(--lens-azul); }
+html[data-visual="lens"] .marca svg rect:not(:first-child) { fill: var(--lens-sobre); }
+html[data-visual="lens"] .versao { border: 0; background: var(--superficie-2); color: var(--texto-3); border-radius: 10px; padding: 1px 9px; font-weight: 500; }
+html[data-visual="lens"] .menu { margin-left: 0; margin-right: 0; margin-inline-start: auto; gap: 2px; }
+html[data-visual="lens"] .menu a { color: var(--texto-2); padding: 7px 14px; border-radius: 18px; white-space: nowrap; }
+html[data-visual="lens"] .menu a:hover { background: var(--superficie-2); color: var(--texto); }
+html[data-visual="lens"] .menu a[aria-current="page"] { background: var(--lens-chip-bg); color: var(--lens-chip-tx); font-weight: 600; }
+html[data-visual="lens"] .tema { width: 36px; height: 36px; border-radius: 50%; background: var(--superficie); color: var(--texto); }
+html[data-visual="lens"] .tema:hover, html[data-visual="lens"] .moeda:hover, html[data-visual="lens"] .idiomas summary:hover { background: var(--superficie-2); }
+html[data-visual="lens"] .moeda { height: 36px; border-radius: 18px; background: var(--superficie); color: var(--texto); padding: 0 10px; margin-left: 0; margin-right: 0; }
+html[data-visual="lens"] .idiomas summary { height: 36px; min-width: 44px; padding: 0 14px; border-radius: 18px; background: var(--superficie); color: var(--texto); font-weight: 600; }
+html[data-visual="lens"] .idiomas ul { right: auto; left: auto; inset-inline-end: 0; top: calc(100% + 6px); border: 0; border-radius: 16px; background: var(--superficie); box-shadow: var(--lens-popup); max-height: 70vh; overflow-y: auto; }
+html[data-visual="lens"] .idiomas li a { border-radius: 10px; padding: 7px 12px; }
+html[data-visual="lens"] .idiomas li a:hover { background: var(--superficie-2); }
+html[data-visual="lens"] .idiomas li a[aria-current="true"] { background: var(--lens-chip-bg); color: var(--lens-chip-tx); }
+html[data-visual="lens"] .visuais { gap: 2px; padding: 3px; border-radius: 20px; font-size: .82rem; max-width: 100%; overflow-x: auto; scrollbar-width: none; }
+html[data-visual="lens"] .visuais::-webkit-scrollbar { display: none; }
+html[data-visual="lens"] .visuais .rotulo-visual { color: var(--texto-3); white-space: nowrap; }
+html[data-visual="lens"] .visuais a { color: var(--texto-2); padding: 4px 12px; border-radius: 16px; white-space: nowrap; }
+html[data-visual="lens"] .visuais a:hover { background: var(--superficie-2); color: var(--texto); }
+html[data-visual="lens"] .visuais a[aria-current="true"] { background: var(--lens-chip-bg); color: var(--lens-chip-tx); font-weight: 600; }
+@media (max-width: 720px) {
+  html[data-visual="lens"] .topo .conteudo { min-height: 0; gap: 6px 8px; }
+  html[data-visual="lens"] .marca { font-size: 1.1rem; gap: 6px; }
+  html[data-visual="lens"] .marca svg { width: 28px; height: 28px; }
+  html[data-visual="lens"] .versao { padding: 1px 7px; }
+  html[data-visual="lens"] .moeda { width: 4.6em; padding: 0 6px; }
+  html[data-visual="lens"] .idiomas summary { min-width: 40px; padding: 0 10px; }
+  html[data-visual="lens"] .menu { margin-inline-start: 0; overflow-x: auto; scrollbar-width: none; padding-bottom: 4px; }
+  html[data-visual="lens"] .menu::-webkit-scrollbar { display: none; }
+  html[data-visual="lens"] .moeda { margin-inline-start: auto; }
+  html[data-visual="lens"] .visuais { justify-content: center; }
+}
+
+/* Título da página: cantos de enquadramento (azul no início, verde no fim) */
+html[data-visual="lens"] .intro, html[data-visual="lens"] .cabeca-modelo { position: relative; padding: 24px 32px; margin-bottom: 24px; }
+html[data-visual="lens"] .cabeca-modelo { margin-top: 14px; }
+html[data-visual="lens"] .intro::before, html[data-visual="lens"] .cabeca-modelo::before,
+html[data-visual="lens"] .intro::after, html[data-visual="lens"] .cabeca-modelo::after { content: ""; position: absolute; width: 28px; height: 28px; border: 0 solid var(--lens-azul); pointer-events: none; }
+html[data-visual="lens"] .intro::before, html[data-visual="lens"] .cabeca-modelo::before { inset-block-start: 0; inset-inline-start: 0; border-block-start-width: 3px; border-inline-start-width: 3px; border-start-start-radius: 14px; }
+html[data-visual="lens"] .intro::after, html[data-visual="lens"] .cabeca-modelo::after { inset-block-end: 0; inset-inline-end: 0; border-color: var(--lens-verde); border-block-end-width: 3px; border-inline-end-width: 3px; border-end-end-radius: 14px; }
+html[data-visual="lens"] .intro p { color: var(--texto-2); }
+html[data-visual="lens"] .cabeca-modelo { align-items: center; }
+html[data-visual="lens"] .cabeca-modelo .empresa { color: var(--texto-2); font-size: 1.05rem; }
+html[data-visual="lens"] .placar { text-align: end; }
+html[data-visual="lens"] .placar .grande { font-weight: 500; color: var(--destaque-texto); letter-spacing: -.02em; }
+html[data-visual="lens"] .texto h1::after { content: ""; display: block; width: 72px; height: 4px; margin-top: 12px; border-radius: 2px; background: linear-gradient(90deg, var(--lens-azul) 0 25%, var(--lens-vermelho) 0 50%, var(--lens-amarelo) 0 75%, var(--lens-verde) 0); }
+
+/* Cartões */
+html[data-visual="lens"] .cartao { border: 0; border-radius: 20px; background: var(--superficie); box-shadow: var(--sombra); overflow: hidden; }
+html[data-visual="lens"] .cartao.pad, html[data-visual="lens"] .pad { padding: 16px 20px; }
+html[data-visual="lens"] .aviso { border: 0; border-inline-start: 4px solid var(--aviso); border-radius: 16px; background: var(--superficie-2); color: var(--texto-2); }
+html[data-visual="lens"] .fichas { gap: 14px; }
+html[data-visual="lens"] .fichas .cartao { padding: 14px 18px; border-radius: 18px; }
+html[data-visual="lens"] .fichas dt { font-size: .74rem; color: var(--texto-3); }
+html[data-visual="lens"] .fichas dd { font-weight: 600; }
+html[data-visual="lens"] .fichas small { display: block; margin-top: 2px; }
+html[data-visual="lens"] .grade-2 { gap: 18px; }
+html[data-visual="lens"] .podio .cartao { border-radius: 20px; padding: 16px 18px; }
+html[data-visual="lens"] .podio .rotulo { color: var(--lens-chip-tx); background: var(--lens-chip-bg); align-self: flex-start; padding: 1px 10px; border-radius: 12px; letter-spacing: .02em; margin-bottom: 4px; }
+
+/* Botões, chips e links de ação */
+html[data-visual="lens"] .botao { background: var(--destaque); color: var(--lens-sobre); border-radius: 99px; padding: 8px 20px; font-weight: 600; }
+html[data-visual="lens"] .botao:hover { filter: none; background: color-mix(in srgb, var(--destaque) 88%, var(--texto)); }
+html[data-visual="lens"] .botao.leve { background: var(--superficie); color: var(--destaque-texto); border: 1px solid var(--borda); }
+html[data-visual="lens"] .botao.leve:hover { background: var(--superficie-2); }
+html[data-visual="lens"] .links { gap: 10px; }
+html[data-visual="lens"] .chips { gap: 8px; padding: 12px 16px; }
+html[data-visual="lens"] .chip { min-height: 36px; padding: 0 16px; border-radius: 18px; background: var(--superficie); color: var(--texto); font-weight: 500; }
+html[data-visual="lens"] .chip:hover { background: var(--superficie-2); }
+html[data-visual="lens"] .chip[aria-pressed="true"] { background: var(--lens-chip-bg); border-color: transparent; color: var(--lens-chip-tx); font-weight: 600; }
+html[data-visual="lens"] .rotulo-chips { color: var(--texto-3); }
+html[data-visual="lens"] .comparar-barra { background: var(--texto); color: var(--fundo); box-shadow: var(--lens-popup); }
+html[data-visual="lens"] .comparar-barra .botao { background: var(--lens-azul); color: var(--lens-sobre); }
+html[data-visual="lens"] .comparar-barra .botao.leve { background: transparent; color: inherit; border-color: color-mix(in srgb, var(--fundo) 40%, transparent); }
+
+/* Campos */
+html[data-visual="lens"] .filtros { padding: 14px 18px; gap: 10px 12px; }
+html[data-visual="lens"] .filtros input[type="search"], html[data-visual="lens"] .filtros select, html[data-visual="lens"] .seletor select {
+  background: var(--superficie); color: var(--texto); border: 1px solid var(--borda); border-radius: 20px; padding: 6px 16px; min-height: 40px;
+}
+html[data-visual="lens"] .filtros input[type="search"]:hover, html[data-visual="lens"] .filtros select:hover, html[data-visual="lens"] .seletor select:hover { background: var(--superficie-2); }
+html[data-visual="lens"] .filtros input[type="search"]:focus-visible, html[data-visual="lens"] .filtros select:focus-visible, html[data-visual="lens"] .seletor select:focus-visible { outline: 3px solid var(--destaque); outline-offset: 1px; border-radius: 20px; }
+html[data-visual="lens"] .filtros .contagem { color: var(--texto-3); margin-left: 0; margin-right: 0; margin-inline-start: auto; }
+html[data-visual="lens"] .seletor { gap: 12px; padding: 20px; }
+
+/* Tabelas */
+html[data-visual="lens"] .tabela th, html[data-visual="lens"] .tabela td { padding: 10px 6px; border-bottom-color: var(--borda); }
+html[data-visual="lens"] .tabela thead th { font-size: .78rem; font-weight: 600; text-transform: none; letter-spacing: .01em; color: var(--texto-3); background: var(--superficie); }
+html[data-visual="lens"] .tabela tbody th { color: var(--texto); font-weight: 600; }
+html[data-visual="lens"] .tabela tbody tr:hover { background: var(--superficie-2); }
+html[data-visual="lens"] .tabela tbody tr:last-child td, html[data-visual="lens"] .tabela tbody tr:last-child th { border-bottom: 0; }
+html[data-visual="lens"] .tabela td.modelo a { color: var(--texto); }
+html[data-visual="lens"] .tabela tr.top1 .pos { color: var(--ouro); }
+html[data-visual="lens"] .selo { border: 1px solid var(--borda); border-radius: 10px; padding: 0 8px; margin-left: 0; margin-right: 0; margin-inline-start: 6px; color: var(--texto-2); background: transparent; }
+html[data-visual="lens"] .selo.aberto { color: var(--bom); border-color: currentColor; }
+html[data-visual="lens"] .barra { width: 56px; height: 8px; border-radius: 4px; background: var(--barra-fundo); margin-left: 0; margin-right: 0; margin-inline-start: 8px; }
+html[data-visual="lens"] .barra i { border-radius: 4px; background: var(--barra); }
+html[data-visual="lens"] .tabela-comp th, html[data-visual="lens"] .tabela-comp td { padding: 10px 14px; border-bottom-color: var(--borda); }
+html[data-visual="lens"] .tabela-comp tbody tr:last-child td { border-bottom: 0; }
+html[data-visual="lens"] .tabela-comp thead th { font-weight: 600; color: var(--texto); }
+html[data-visual="lens"] .tabela-comp td.melhor { background: color-mix(in srgb, var(--bom) 14%, transparent); color: var(--bom); font-weight: 700; }
+
+/* Gráficos */
+html[data-visual="lens"] .graficos { gap: 18px; }
+html[data-visual="lens"] .grafico { padding: 20px 22px; }
+html[data-visual="lens"] .grafico h2 { margin-top: 0; font-size: 1.1rem; font-weight: 500; }
+html[data-visual="lens"] .grafico p { color: var(--texto-2); }
+html[data-visual="lens"] .grafico details { margin-top: 12px; border-top: 1px solid var(--borda); padding-top: 10px; }
+html[data-visual="lens"] .grafico summary { cursor: pointer; color: var(--destaque-texto); font-weight: 500; }
+html[data-visual="lens"] .grafico details .rolagem { margin-top: 8px; }
+
+/* Texto longo (metodologia, 404) */
+html[data-visual="lens"] .texto { max-width: 820px; }
+html[data-visual="lens"] .texto h2 { font-size: 1.35rem; margin-top: 2em; }
+html[data-visual="lens"] .texto p, html[data-visual="lens"] .texto li { color: var(--texto); }
+html[data-visual="lens"] .texto a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+html[data-visual="lens"] .texto table { border-collapse: separate; border-spacing: 0; border: 1px solid var(--borda); border-radius: 16px; overflow: hidden; margin: 12px 0 20px; }
+html[data-visual="lens"] .texto th { background: var(--superficie-2); color: var(--texto-2); font-weight: 600; font-size: .85rem; }
+html[data-visual="lens"] .texto th, html[data-visual="lens"] .texto td { padding: 9px 14px; border-bottom-color: var(--borda); }
+html[data-visual="lens"] .texto tbody tr:last-child td { border-bottom: 0; }
+
+/* Rodapé */
+html[data-visual="lens"] .rodape { border-top: 0; background: var(--superficie-2); color: var(--texto-2); margin-top: 24px; padding: 28px 0 36px; }
+html[data-visual="lens"] .rodape a { color: var(--destaque-texto); text-decoration: underline; text-underline-offset: 2px; }
+html[data-visual="lens"] .rodape .fontes-falha { color: var(--aviso); }
+
+@media (max-width: 720px) {
+  html[data-visual="lens"] .intro, html[data-visual="lens"] .cabeca-modelo { padding: 20px 22px; }
+  html[data-visual="lens"] .grafico { padding: 16px; }
+  html[data-visual="lens"] .cartao.pad, html[data-visual="lens"] .pad { padding: 14px 16px; }
+  html[data-visual="lens"] .tela { height: 320px; }
+  html[data-visual="lens"] .tela.baixa { height: 280px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html[data-visual="lens"] *, html[data-visual="lens"] *::before, html[data-visual="lens"] *::after { transition: none !important; animation: none !important; }
+}

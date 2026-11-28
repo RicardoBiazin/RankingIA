@@ -11,7 +11,7 @@ O site junta placares públicos numa nota de 0 a 100 e mostra preço, contexto e
 
 ## Visuais
 
-A página inicial tem 3 visuais alternativos além do Padrão, escolhidos no menu "Visual" do cabeçalho: **Instagram** (`/instagram/`, feed com stories das empresas), **Lens** (`/lens/`, busca visual com mosaico) e **Apple** (`/apple/`, tipografia grande e grade bento). Existem nos 11 idiomas, ficam fora do índice de busca e só mudam o ranking; as outras páginas são as do Padrão. Cada visual fica em [`modelos/<id>/`](modelos) e segue o [contrato](modelos/CONTRATO.md). Para gerar e conferir sem apagar o `public/`: `RK_PUBLIC=<pasta absoluta> node scripts/gerar.mjs`.
+A página inicial tem 3 visuais alternativos além do Padrão, escolhidos no menu "Visual" do cabeçalho: **Instagram** (`/instagram/`, feed com stories das empresas), **Lens** (`/lens/`, busca visual com mosaico) e **Apple** (`/apple/`, tipografia grande e grade bento). Existem nos 11 idiomas e ficam fora do índice de busca. A inicial de cada um é uma página própria; modelo, gráficos, comparar, metodologia e 404 continuam as do Padrão, vestidas com o `skin.css` do visual escolhido (aplicado no navegador). Cada visual fica em [`modelos/<id>/`](modelos) e segue o [contrato](modelos/CONTRATO.md). Para gerar e conferir sem apagar o `public/`: `RK_PUBLIC=<pasta absoluta> node scripts/gerar.mjs`.
 
 ## Idiomas
 
