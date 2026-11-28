@@ -5,9 +5,11 @@
 
 import { readFileSync, readdirSync, rmSync, copyFileSync, mkdirSync } from 'node:fs';
 import { caminho, chave, esc, gravarJSON, gravarTexto, lerJSON } from './util.mjs';
-import { pagina, prefixo, formatos, SITE } from '../src/layout.mjs';
+import { pagina, prefixo, formatos, SITE, MENU, LOGO, SOL_LUA } from '../src/layout.mjs';
 import { FONTES, PESO_NEUTRO } from '../src/pesos.mjs';
-import { formatar } from '../src/moedas.mjs';
+import { formatar, MOEDAS } from '../src/moedas.mjs';
+import { TEMAS_ALTERNATIVOS, seletorVisual, urlTema } from '../src/temas.mjs';
+import { carregarModelos } from '../modelos/_base.mjs';
 import { IDIOMAS, tradutor, textosCliente } from '../src/i18n.mjs';
 import { METODOLOGIA, METODOLOGIA_TITULO, STATUS_CAB } from '../src/metodologia.mjs';
 import { PERFIL } from '../src/perfil.mjs';
@@ -69,6 +71,7 @@ gravarJSON('public/dados/ranking.json', {
 }, true);
 
 // ---------- um idioma por vez ----------
+const VISUAIS = await carregarModelos(); // modelos/<id>/modelo.mjs: visuais alternativos da inicial
 const urlsSitemap = [];
 for (const idioma of IDIOMAS) {
   const t = tradutor(idioma);
@@ -168,7 +171,7 @@ ${cats.map((c) => `<button type="button" class="chip" data-cat="${c.id}" aria-pr
   const nomesFontes = ponderadas.map((m) => FONTES[m.fonte].nome).filter((v, i, a) => a.indexOf(v) === i).map(esc).join(', ');
 
   grava('/', pagina({
-    ...base, rel: '/',
+    ...base, rel: '/', corpo: 'data-inicio',
     titulo: t('idx.titulo'),
     descricao: t('idx.desc', { n: ranking.length }),
     jsonLd: {
@@ -233,6 +236,46 @@ ${outros.map(linhaOutro).join('\n')}
 <a class="botao" id="comparar-ir" href="${pre}/comparar.html">${t('th.comparar')}</a>
 </div>`,
   }));
+
+  // ---------- visuais alternativos da inicial (modelos/<id>/, contrato em modelos/CONTRATO.md) ----------
+  {
+    const ficha = (m) => ({
+      pos: m.posicao, slug: m.slug, nome: m.nome, empresa: m.empresa ?? '', aberto: Boolean(m.aberto), url: linkModelo(m),
+      nota: m.nota, notaTxt: nf(m.nota), pareto: Boolean(m.pareto),
+      precoEntrada: precoH(m.precoEntrada), precoSaida: precoH(m.precoSaida), contexto: contexto(m.contexto), lancamento: data(m.lancamento),
+      velocidade: m.velocidade != null ? `${nf(m.velocidade, 0)} tok/s` : null,
+      elo: m.metricas.arena_texto != null ? Math.round(m.metricas.arena_texto) : null,
+      cats: cats.map((c) => ({ id: c.id, nome: nomeCat(c.id), nota: m.categorias?.[c.id] ?? null, notaTxt: m.categorias?.[c.id] != null ? nf(m.categorias[c.id]) : '—', pos: m.posCategorias?.[c.id] ?? null })),
+      busca: busca(m), // já escapado para atributo HTML
+    });
+    const dVisual = {
+      idioma, t, pre, versao, dados, esc, nf, data, nomeSite: 'RankingIA', logo: LOGO,
+      total: ranking.length, cambio: dados.cambio?.taxas ?? null, homePadrao: `${pre}/`,
+      h1: t('idx.h1'),
+      intro: t('idx.intro', { fontes: nomesFontes, l: `<a href="${pre}/metodologia.html">${t('idx.como')}</a>` }),
+      menu: MENU.map(([href, chave]) => ({ href: pre + href, rotulo: t(chave), chave })),
+      podio: [
+        { rotulo: t('podio.primeiro'), m: top ? ficha(top) : null, valor: t('nota.n', { n: nf(top?.nota) }) },
+        { rotulo: t('podio.custo'), m: custoBeneficio ? ficha(custoBeneficio) : null, valor: custoBeneficio ? `${t('nota.n', { n: nf(custoBeneficio.nota) })} · ${precoH(custoBeneficio.precoEntrada)} / ${precoH(custoBeneficio.precoSaida)} ${t('por1m')}` : '' },
+        { rotulo: t('podio.aberto'), m: topAberto ? ficha(topAberto) : null, valor: topAberto ? `${t('nota.n', { n: nf(topAberto.nota) })} · ${t('lugar', { p: posicao(topAberto.posicao) })}` : '' },
+        { rotulo: t('podio.arena'), m: topArena ? ficha(topArena) : null, valor: topArena ? `Elo ${Math.round(topArena.metricas.arena_texto)}` : '' },
+      ].filter((p) => p.m),
+      cats: cats.map((c) => ({ id: c.id, nome: nomeCat(c.id), metricas: c.metricas.map(nomeMet).join(', ') })),
+      empresas,
+      ranking: ranking.map(ficha),
+      outros: { n: outros.length, texto: t('outros.texto', { n: outros.length, fontes: dados.exigeUmaDe.map(nomeMet).join(` ${t('ou')} `) }), lista: outros.map((m) => ({ nome: m.nome, empresa: m.empresa ?? '', url: linkModelo(m), elo: m.metricas.arena_texto != null ? Math.round(m.metricas.arena_texto) : null, aberto: Boolean(m.aberto), busca: busca(m) })) },
+      moeda: `<label class="oculto" for="moeda">${esc(t('moeda.titulo'))}</label><select id="moeda" class="moeda" title="${esc(t('moeda.titulo'))}">${MOEDAS.map((x) => `<option value="${x.codigo}" data-curto="${esc(x.simbolo)}" data-longo="${esc(`${x.simbolo} · ${x.nome}`)}">${esc(x.simbolo)}</option>`).join('')}</select>`,
+      botaoTema: `<button class="botao-tema" type="button" id="tema" title="${esc(t('tema.titulo'))}" aria-label="${esc(t('tema.titulo'))}">${SOL_LUA}</button>`,
+      rodape: pagina({ ...base, rel: '/', parte: 'rodape' }),
+    };
+    for (const x of TEMAS_ALTERNATIVOS) {
+      grava(`/${x.id}/index.html`, VISUAIS[x.id].render({
+        ...dVisual, tema: x.id,
+        seletor: seletorVisual(idioma, t, x.id),
+        idiomas: IDIOMAS.map((i) => ({ codigo: i.codigo, nome: i.nome, curto: i.curto, href: urlTema(i, x.id), atual: i === idioma })),
+      }));
+    }
+  }
 
   // ---------- página de cada modelo ----------
   const paginaModelo = (m) => {
@@ -410,7 +453,11 @@ const css = readFileSync(caminho('src/assets/estilo.css'), 'utf8')
   + ['todas', ...cats.map((c) => c.id)].map((id) => `#ranking[data-cat="${id}"] [data-cats~="${id}"] { display: table-cell; }`).join('\n') + '\n'
   + '\n/* Larguras das barras (geradas) */\n' + Array.from({ length: 101 }, (_, i) => `.barra i.w${i}{width:${i}%}`).join('\n') + '\n';
 gravarTexto('public/assets/estilo.css', css);
-for (const a of ['tema.js', 'moeda.js', 'tabela.js', 'graficos.js', 'comparar.js', 'comum.js', 'modelo.js']) copyFileSync(caminho('src/assets/' + a), caminho('public/assets/' + a));
+for (const x of TEMAS_ALTERNATIVOS) {
+  mkdirSync(caminho(`public/${x.id}`), { recursive: true });
+  for (const a of readdirSync(caminho(`modelos/${x.id}`)).filter((n) => !n.endsWith('.mjs'))) copyFileSync(caminho(`modelos/${x.id}/${a}`), caminho(`public/${x.id}/${a}`));
+}
+for (const a of ['visual.js', 'tema.js', 'moeda.js', 'tabela.js', 'graficos.js', 'comparar.js', 'comum.js', 'modelo.js']) copyFileSync(caminho('src/assets/' + a), caminho('public/assets/' + a));
 mkdirSync(caminho('public/vendor'), { recursive: true });
 copyFileSync(caminho('node_modules/chart.js/dist/chart.umd.min.js'), caminho('public/vendor/chart.umd.min.js'));
 gravarTexto('public/favicon.svg', '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#2a78d6"/><rect x="7" y="17" width="4.5" height="8" rx="1.5" fill="#fff"/><rect x="13.75" y="8" width="4.5" height="17" rx="1.5" fill="#fff"/><rect x="20.5" y="13" width="4.5" height="12" rx="1.5" fill="#fff"/></svg>\n');

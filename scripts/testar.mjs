@@ -180,5 +180,55 @@ conferir(d.modelos.filter((m) => !m.parcial).every((m) => llmsFull.includes(`###
 const gi = readFileSync(caminho('.gitignore'), 'utf8');
 conferir(/^\.env$/m.test(gi), '.env no .gitignore');
 
+// ---------- visuais alternativos da inicial (modelos/<id>/): /instagram/, /lens/, /apple/ em cada idioma ----------
+{
+  const { TEMAS_ALTERNATIVOS } = await import('../src/temas.mjs');
+  const r = { fora: [], inline: [], h1: [], noindex: [], modelos: [], seletor: [], rodape: [], topo: [], idioma: [], externo: [], quebrado: [], vaza: [], pasta: [] };
+  const arquivosPublicados = (id) => existsSync(pub(`${id}/estilo.css`));
+  for (const x of TEMAS_ALTERNATIVOS) if (!arquivosPublicados(x.id)) r.pasta.push(x.id);
+  const alvos = new Set();
+  for (const i of IDIOMAS) {
+    const pre = i.pasta ? '/' + i.pasta : '';
+    for (const x of TEMAS_ALTERNATIVOS) {
+      const rel = `${i.pasta ? i.pasta + '/' : ''}${x.id}/index.html`;
+      if (!existsSync(pub(rel))) { r.fora.push(rel); continue; }
+      const h = readFileSync(pub(rel), 'utf8');
+      if (/\sstyle=/.test(h) || /<style[\s>]/.test(h) || /<script(?![^>]*\bsrc=)[^>]*>/.test(h) || /\son[a-z]+=/.test(h)) r.inline.push(rel);
+      if ((h.match(/<h1[\s>]/g) ?? []).length !== 1) r.h1.push(rel);
+      if (!h.includes('<meta name="robots" content="noindex">') || !h.includes(`<link rel="canonical" href="https://rankingia.biazin.com.br${pre}/">`)) r.noindex.push(rel);
+      const faltam = ranking.filter((m) => !h.includes(`href="${pre}/modelo/${m.slug}.html"`));
+      if (faltam.length) r.modelos.push(`${rel} (${faltam.length} sem link, ex. ${faltam[0].slug})`);
+      const sel = h.match(/<nav class="visuais"[^>]*>.*?<\/nav>/s)?.[0] ?? '';
+      if ((sel.match(/<a /g) ?? []).length !== 4 || !sel.includes(`data-atual="${x.id}"`) || !sel.includes(`href="${pre}/"`)) r.seletor.push(rel);
+      if (!/href="https:\/\/www\.netlify\.com"[^>]*>This site is powered by Netlify</.test(h) || !/class="autonomo"/.test(h) || !h.includes(`v${versao}`) || !h.includes('id="moeda"') || !h.includes('id="tema"') || !h.includes('data-usd="')) r.rodape.push(rel);
+      if (!h.includes(`<html lang="${i.codigo}"${i.dir ? ` dir="${i.dir}"` : ''}`) || !h.includes(`/assets/t-${i.pasta || 'pt'}.js`) || !h.includes('/assets/visual.js')) r.idioma.push(rel);
+      if (/<(?:script|link)[^>]+(?:src|href)="https?:\/\/(?!static\.cloudflareinsights\.com)[^"]*"[^>]*(?:src|rel="stylesheet")/.test(h) || /url\(\s*['"]?https?:/.test(h)) r.externo.push(rel);
+      for (const m of h.matchAll(/(?:href|src)="(\/[^"#]*)"/g)) alvos.add(m[1].split('?')[0]);
+      if (i.i > 0) {
+        const vaza = ['Buscar modelo ou', 'Notas por fonte', 'Comparar com outros', 'Outros modelos (só', 'Mostrar categorias'].filter((s) => h.includes(s));
+        if (vaza.length) r.vaza.push(`${rel}: ${vaza.join(', ')}`);
+      }
+    }
+  }
+  for (const l of alvos) if (!existsSync(pub(l.endsWith('/') ? l.slice(1) + 'index.html' : l.slice(1)))) r.quebrado.push(l);
+  const n = IDIOMAS.length * TEMAS_ALTERNATIVOS.length;
+  conferir(!r.pasta.length, `visuais com estilo.css publicado (${TEMAS_ALTERNATIVOS.map((x) => x.id).join(', ')}) ${r.pasta.join(' ')}`);
+  conferir(!r.fora.length, `${n} páginas de visual (${TEMAS_ALTERNATIVOS.length} visuais × ${IDIOMAS.length} idiomas) ${r.fora.slice(0, 3).join(' ')}`);
+  conferir(!r.inline.length, `visuais sem style/script/handler inline (CSP) ${r.inline.slice(0, 3).join(' ')}`);
+  conferir(!r.h1.length, `visuais com um h1 ${r.h1.slice(0, 3).join(' ')}`);
+  conferir(!r.noindex.length, `visuais noindex e canonical na inicial do Padrão ${r.noindex.slice(0, 3).join(' ')}`);
+  conferir(!r.modelos.length, `visuais linkam todos os ${ranking.length} modelos do ranking ${r.modelos.slice(0, 3).join(' ')}`);
+  conferir(!r.seletor.length, `visuais com o seletor de visual (4 links) ${r.seletor.slice(0, 3).join(' ')}`);
+  conferir(!r.rodape.length, `visuais com rodapé, versão, moeda, botão de tema e preços data-usd ${r.rodape.slice(0, 3).join(' ')}`);
+  conferir(!r.idioma.length, `visuais com lang/dir, textos do navegador e visual.js ${r.idioma.slice(0, 3).join(' ')}`);
+  conferir(!r.externo.length, `visuais sem recurso externo ${r.externo.slice(0, 3).join(' ')}`);
+  conferir(!r.vaza.length, `visuais sem texto em português nos outros idiomas ${r.vaza.slice(0, 2).join(' | ')}`);
+  conferir(!r.quebrado.length, `${alvos.size} links internos dos visuais existem ${r.quebrado.slice(0, 5).join(' ')}`);
+  const home = readFileSync(pub('index.html'), 'utf8');
+  conferir(home.includes('<body data-inicio>') && /<nav class="visuais"/.test(home) && home.includes('/assets/visual.js'), 'inicial do Padrão tem o seletor de visual e data-inicio');
+  conferir(['graficos.html', 'comparar.html', 'metodologia.html', 'modelo/' + readdirSync(pub('modelo'))[0]].every((p) => readFileSync(pub(p), 'utf8').includes('<nav class="visuais"')), 'seletor de visual nas demais páginas');
+  conferir(!/\/(instagram|lens|apple)\//.test(readFileSync(pub('sitemap.xml'), 'utf8')), 'visuais fora do sitemap');
+}
+
 console.log(falhas ? `\n${falhas} falha(s)` : '\ntudo ok');
 process.exit(falhas ? 1 : 0);

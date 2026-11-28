@@ -9,6 +9,10 @@ O site junta placares públicos numa nota de 0 a 100 e mostra preço, contexto e
 - **Página por modelo**: todas as notas por fonte, com percentil, preço, contexto e links.
 - **Comparar**: de 2 a 4 modelos lado a lado, mais um radar de percentis. O link guarda a escolha.
 
+## Visuais
+
+A página inicial tem 3 visuais alternativos além do Padrão, escolhidos no menu "Visual" do cabeçalho: **Instagram** (`/instagram/`, feed com stories das empresas), **Lens** (`/lens/`, busca visual com mosaico) e **Apple** (`/apple/`, tipografia grande e grade bento). Existem nos 11 idiomas, ficam fora do índice de busca e só mudam o ranking; as outras páginas são as do Padrão. Cada visual fica em [`modelos/<id>/`](modelos) e segue o [contrato](modelos/CONTRATO.md). Para gerar e conferir sem apagar o `public/`: `RK_PUBLIC=<pasta absoluta> node scripts/gerar.mjs`.
+
 ## Idiomas
 
 O site existe em 11 idiomas: português (raiz), inglês (`/en`), espanhol (`/es`), francês (`/fr`), chinês (`/zh`), hindi (`/hi`), árabe (`/ar`, da direita para a esquerda), bengali (`/bn`), russo (`/ru`), japonês (`/ja`) e indonésio (`/id`).

@@ -267,3 +267,14 @@ main.conteudo { padding-top: 24px; padding-bottom: 48px; }
 [dir="rtl"] .tabela-comp th:first-child, [dir="rtl"] .tabela-comp td:first-child { text-align: right; }
 [dir="rtl"] .texto th, [dir="rtl"] .texto td { text-align: right; }
 [dir="rtl"] .idiomas ul { right: auto; left: 0; }
+
+/* Seletor de visual (Padrão · Instagram · Lens · Apple) */
+.visuais { display: flex; align-items: center; gap: 2px; font-size: .85rem; border: 1px solid var(--borda); border-radius: 8px; padding: 2px; }
+.visuais .rotulo-visual { color: var(--texto-3); padding: 0 6px; }
+.visuais a { color: var(--texto-2); padding: 4px 8px; border-radius: 6px; font-weight: 500; }
+.visuais a:hover { background: var(--superficie-2); text-decoration: none; }
+.visuais a[aria-current="true"] { color: var(--destaque-texto); background: var(--destaque-fundo); }
+@media (max-width: 720px) {
+  .visuais { order: 4; width: 100%; justify-content: center; }
+  .visuais .rotulo-visual { display: none; }
+}

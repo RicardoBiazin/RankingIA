@@ -1,10 +1,14 @@
 // Funções comuns aos scripts: chave canônica de modelo, nome de empresa, JSON e HTML.
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
-import { dirname } from 'node:path';
+import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-export const caminho = (rel) => fileURLToPath(new URL('../' + rel, import.meta.url));
+// RK_PUBLIC (pasta absoluta) troca a saída `public/` por outra: serve para gerar e conferir o site
+// sem apagar o public/ de quem está trabalhando em paralelo (ex.: um agente por visual).
+export const caminho = (rel) => (process.env.RK_PUBLIC && /^public(\/|$)/.test(rel))
+  ? resolve(process.env.RK_PUBLIC, rel.slice(7))
+  : fileURLToPath(new URL('../' + rel, import.meta.url));
 
 export function lerJSON(rel, padrao = null) {
   const arq = caminho(rel);

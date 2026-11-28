@@ -1,5 +1,17 @@
 # Histórico
 
+## 0.10.0 — 27/11/2026
+
+Visuais alternativos da página inicial, no mesmo método do Streaming Radar: Instagram, Lens e Apple.
+
+- Seletor "Visual" (Padrão · Instagram · Lens · Apple) no cabeçalho de todas as páginas, nos 11 idiomas; a escolha fica só no navegador (`src/assets/visual.js`) e a inicial do Padrão leva ao visual escolhido.
+- Os visuais ficam em `modelos/<id>/` (`modelo.mjs`, `estilo.css`, `filtro.js`), feitos por 3 agentes em paralelo a partir de `modelos/CONTRATO.md` e `modelos/_base.mjs`. Saem em `/instagram/`, `/lens/` e `/apple/` (e `/en/instagram/` etc.), `noindex`, com canonical na inicial do Padrão e fora do sitemap. Só a inicial muda; modelo, gráficos, comparar e metodologia são as do Padrão.
+- Instagram: feed com stories das empresas, pódio em cartões, abas Ranking/Por categoria, curtir (favoritos no navegador). Lens: busca visual com chips, "melhor correspondência" e mosaico de cartões com visor. Apple: hero tipográfico, pódio em grade bento, lista limpa com controle segmentado.
+- Texto só com chaves que já existiam (3 chaves novas: `visual.rotulo`, `visual.titulo`, `visual.padrao`, nos 11 idiomas). Árabe em RTL com propriedades lógicas.
+- `RK_PUBLIC` (pasta absoluta) troca a saída `public/` em `gerar` e `testar`, para gerar e conferir sem apagar o `public/` de quem trabalha em paralelo.
+- Testes: 3 visuais × 11 idiomas (CSP sem inline, um h1, os 88 modelos linkados, seletor, rodapé, moeda, tema, lang/dir, sem recurso externo, sem texto em português nos outros idiomas, links internos).
+- Limites: favoritos e rótulos de ícone do Instagram sem tradução própria; Lens sem masonry de verdade (mantém a ordem do ranking); sem JS os filtros somem e a lista completa fica.
+
 ## 0.9.1 — 27/11/2026
 
 - Corrige a coleta diária que falhava no `testar` ("llms-full.txt tem todos os modelos do ranking"): o OpenRouter devolveu "Gemma 4 26B A4B " com espaço no fim. O nome agora é normalizado em `normalizar.mjs` (espaços colapsados e aparados) e o `testar` confere isso.

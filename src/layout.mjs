@@ -6,13 +6,14 @@ import { FONTES } from './pesos.mjs';
 import { PERFIL } from './perfil.mjs';
 import { MOEDAS } from './moedas.mjs';
 import { IDIOMAS } from './i18n.mjs';
+import { seletorVisual } from './temas.mjs';
 
 export const SITE = 'https://rankingia.biazin.com.br';
 
-const LOGO = '<svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#2a78d6"/><rect x="7" y="17" width="4.5" height="8" rx="1.5" fill="#fff"/><rect x="13.75" y="8" width="4.5" height="17" rx="1.5" fill="#fff"/><rect x="20.5" y="13" width="4.5" height="12" rx="1.5" fill="#fff"/></svg>';
-const SOL_LUA = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>';
+export const LOGO = '<svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#2a78d6"/><rect x="7" y="17" width="4.5" height="8" rx="1.5" fill="#fff"/><rect x="13.75" y="8" width="4.5" height="17" rx="1.5" fill="#fff"/><rect x="20.5" y="13" width="4.5" height="12" rx="1.5" fill="#fff"/></svg>';
+export const SOL_LUA = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>';
 
-const MENU = [['/', 'nav.ranking'], ['/graficos.html', 'nav.graficos'], ['/comparar.html', 'nav.comparar'], ['/metodologia.html', 'nav.metodologia']];
+export const MENU = [['/', 'nav.ranking'], ['/graficos.html', 'nav.graficos'], ['/comparar.html', 'nav.comparar'], ['/metodologia.html', 'nav.metodologia']];
 
 // Prefixo de URL do idioma: '' para o português, '/en' etc.
 export const prefixo = (idioma) => (idioma.pasta ? '/' + idioma.pasta : '');
@@ -26,7 +27,8 @@ export function formatos(idioma) {
   };
 }
 
-export function pagina({ idioma, t, rel, titulo, descricao, conteudo, scripts = [], versao, dados, noindex = false, jsonLd = null }) {
+// parte: 'rodape' devolve só os parágrafos do rodapé (para os visuais de src/temas.mjs).
+export function pagina({ idioma, t, rel, titulo, descricao, conteudo, scripts = [], versao, dados, noindex = false, jsonLd = null, corpo = '', parte = '' }) {
   const pre = prefixo(idioma);
   const { data, dataHora } = formatos(idioma);
   const url = (i, r = rel) => SITE + prefixo(i) + r;
@@ -51,6 +53,11 @@ export function pagina({ idioma, t, rel, titulo, descricao, conteudo, scripts = 
     lista: 'US$ 1 = ' + MOEDAS.filter((m) => taxas[m.codigo]).map((m) => `${m.simbolo} ${taxas[m.codigo].toLocaleString(idioma.locale, { maximumFractionDigits: 4 })}`).join(' · '),
   }) : '';
   const arq = idioma.pasta || 'pt';
+  const rodapeHtml = `<p>${t('rodape.dados')}: ${partes.join(' · ')}. ${t('rodape.atualizado', { d: dataHora(dados.geradoEm) })}${usaAA ? ' ' + t('rodape.aa', { l: '<a href="https://artificialanalysis.ai/" rel="noopener">Artificial Analysis</a>' }) : ''}</p>
+<p class="autonomo">${t('rodape.autonomo')}</p>
+${cambio ? `<p>${cambio}</p>\n` : ''}${falhas.length ? `<p class="fontes-falha">${falhas.map(esc).join('. ')}.</p>\n` : ''}<p>RankingIA v${esc(versao)} · ${t('rodape.feito')} <a href="https://biazin.com.br/">${esc(PERFIL.nome)}</a> · <a href="https://github.com/RicardoBiazin/RankingIA" rel="noopener">${t('rodape.codigo')}</a> · <a href="${pre}/metodologia.html">${t('rodape.como')}</a> · <a href="https://github.com/RicardoBiazin/RankingIA/blob/main/CODE_OF_CONDUCT.md" rel="noopener">${t('rodape.conduta')}</a></p>
+<p><a href="https://www.netlify.com" rel="noopener">This site is powered by Netlify</a></p>`;
+  if (parte === 'rodape') return rodapeHtml;
 
   return `<!doctype html>
 <html lang="${idioma.codigo}"${idioma.dir ? ` dir="${idioma.dir}"` : ''}${taxas ? ` data-cambio="${esc(JSON.stringify(taxas))}"` : ''}>
@@ -78,7 +85,7 @@ ${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(
 <script src="/assets/tema.js?v=${versao}"></script>
 <script src="/assets/moeda.js?v=${versao}"></script>
 </head>
-<body>
+<body${corpo ? ' ' + corpo : ''}>
 <header class="topo">
 <div class="conteudo">
 <a class="marca" href="${pre}/">${LOGO}RankingIA</a>
@@ -87,6 +94,7 @@ ${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(
 <label class="oculto" for="moeda">${esc(t('moeda.titulo'))}</label>
 <select id="moeda" class="moeda" title="${esc(t('moeda.titulo'))}">${MOEDAS.map((m) => `<option value="${m.codigo}" data-curto="${esc(m.simbolo)}" data-longo="${esc(`${m.simbolo} · ${m.nome}`)}">${esc(m.simbolo)}</option>`).join('')}</select>
 <details class="idiomas"><summary title="${esc(t('idioma.titulo'))}" aria-label="${esc(t('idioma.titulo'))}">${esc(idioma.curto)}</summary><ul>${idiomas}</ul></details>
+${seletorVisual(idioma, t, 'padrao', rel)}
 <button class="tema" type="button" id="tema" title="${esc(t('tema.titulo'))}" aria-label="${esc(t('tema.titulo'))}">${SOL_LUA}</button>
 </div>
 </header>
@@ -95,12 +103,10 @@ ${conteudo}
 </main>
 <footer class="rodape">
 <div class="conteudo">
-<p>${t('rodape.dados')}: ${partes.join(' · ')}. ${t('rodape.atualizado', { d: dataHora(dados.geradoEm) })}${usaAA ? ' ' + t('rodape.aa', { l: '<a href="https://artificialanalysis.ai/" rel="noopener">Artificial Analysis</a>' }) : ''}</p>
-<p class="autonomo">${t('rodape.autonomo')}</p>
-${cambio ? `<p>${cambio}</p>\n` : ''}${falhas.length ? `<p class="fontes-falha">${falhas.map(esc).join('. ')}.</p>\n` : ''}<p>RankingIA v${esc(versao)} · ${t('rodape.feito')} <a href="https://biazin.com.br/">${esc(PERFIL.nome)}</a> · <a href="https://github.com/RicardoBiazin/RankingIA" rel="noopener">${t('rodape.codigo')}</a> · <a href="${pre}/metodologia.html">${t('rodape.como')}</a> · <a href="https://github.com/RicardoBiazin/RankingIA/blob/main/CODE_OF_CONDUCT.md" rel="noopener">${t('rodape.conduta')}</a></p>
-<p><a href="https://www.netlify.com" rel="noopener">This site is powered by Netlify</a></p>
+${rodapeHtml}
 </div>
 </footer>
+<script src="/assets/visual.js?v=${versao}"></script>
 ${scripts.map((s) => `<script src="${s}?v=${versao}"></script>`).join('\n')}
 ${PERFIL.cloudflareToken ? `<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "${PERFIL.cloudflareToken}"}'></script>\n` : ''}</body>
 </html>
