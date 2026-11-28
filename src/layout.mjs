@@ -15,6 +15,9 @@ export const SOL_LUA = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColo
 
 export const MENU = [['/', 'nav.ranking'], ['/graficos.html', 'nav.graficos'], ['/comparar.html', 'nav.comparar'], ['/metodologia.html', 'nav.metodologia']];
 
+/** Beacon do Cloudflare Web Analytics (sem cookies); vazio se `PERFIL.cloudflareToken` estiver vazio. */
+export const beaconCloudflare = () => (PERFIL.cloudflareToken ? `<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "${PERFIL.cloudflareToken}"}'></script>\n` : '');
+
 // Prefixo de URL do idioma: '' para o português, '/en' etc.
 export const prefixo = (idioma) => (idioma.pasta ? '/' + idioma.pasta : '');
 
@@ -109,7 +112,7 @@ ${rodapeHtml}
 </footer>
 <script src="/assets/visual.js?v=${versao}"></script>
 ${scripts.map((s) => `<script src="${s}?v=${versao}"></script>`).join('\n')}
-${PERFIL.cloudflareToken ? `<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "${PERFIL.cloudflareToken}"}'></script>\n` : ''}</body>
+${beaconCloudflare()}</body>
 </html>
 `;
 }

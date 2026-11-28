@@ -164,6 +164,17 @@ conferir((sitemap.match(/<loc>/g) ?? []).length === (d.modelos.length + 4) * IDI
 const toml = readFileSync(caminho('netlify.toml'), 'utf8');
 conferir(/script-src 'self'/.test(toml) && !/unsafe-inline/.test(toml), "CSP do netlify.toml sem 'unsafe-inline'");
 conferir(existsSync(caminho('CODE_OF_CONDUCT.md')), 'CODE_OF_CONDUCT.md na raiz (exigido pelo programa de código aberto da Netlify)');
+// Cloudflare Web Analytics: com token, todas as páginas (inclusive os visuais e o 404) têm o beacon uma vez, com o token certo; sem token, nenhuma tem.
+{
+  const htmls = readdirSync(caminho('public'), { recursive: true }).filter((n) => String(n).endsWith('.html')).map(String);
+  const beacon = /<script defer src="https:\/\/static\.cloudflareinsights\.com\/beacon\.min\.js" data-cf-beacon='\{"token": "([0-9a-f]{32})"\}'><\/script>/g;
+  const ruins = htmls.filter((n) => {
+    const achados = [...readFileSync(caminho('public/' + n), 'utf8').matchAll(beacon)].map((m) => m[1]);
+    return PERFIL.cloudflareToken ? !(achados.length === 1 && achados[0] === PERFIL.cloudflareToken) : readFileSync(caminho('public/' + n), 'utf8').includes('cloudflareinsights');
+  });
+  conferir(!ruins.length, `beacon do Cloudflare Web Analytics coerente com o token em ${htmls.length} páginas ${ruins.slice(0, 3).join(' ')}`);
+  conferir(!PERFIL.cloudflareToken || /^[0-9a-f]{32}$/.test(PERFIL.cloudflareToken), 'token do Cloudflare com 32 hexadecimais');
+}
 conferir(readdirSync(caminho('public'), { recursive: true }).filter((n) => String(n).endsWith('.html')).every((n) => /href="https:\/\/www\.netlify\.com"[^>]*>This site is powered by Netlify</.test(readFileSync(caminho('public/' + n), 'utf8'))), 'todas as páginas têm o link "This site is powered by Netlify"');
 // Agentes de IA (GEO): robots liberado, llms.txt com as páginas principais, llms-full.txt sem "undefined".
 const { RASTREADORES_IA } = await import('../src/ia.mjs');

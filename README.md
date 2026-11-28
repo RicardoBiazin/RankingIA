@@ -87,6 +87,10 @@ O workflow precisa destes secrets:
 
 Para publicar à mão: `npm run publicar`, ou rodar o workflow pelo GitHub (`gh workflow run atualizar.yml`), que coleta, commita e publica do jeito do dia a dia.
 
+## Estatísticas de acesso
+
+O site usa o Cloudflare Web Analytics (contagem de visitas sem cookies e sem identificar quem visita). O token do site, que é público, fica em `src/perfil.mjs` (`cloudflareToken`); `src/layout.mjs` e `modelos/_base.mjs` colocam o beacon em todas as páginas, e o `testar` confere isso. A CSP do `netlify.toml` libera só `static.cloudflareinsights.com` e `cloudflareinsights.com`. Token vazio desliga o beacon.
+
 ## Buscadores
 
 Cada idioma tem URL própria (`/`, `/en/`, `/es/`, `/fr/`, `/zh/`, `/hi/`, `/ar/`, `/bn/`, `/ru/`, `/ja/`, `/id/`), então toda página leva `canonical` próprio, `hreflang` de todos os idiomas e `x-default` apontando para o português. Também leva Open Graph (com `og:locale:alternate`) e cartão do Twitter. A página inicial tem JSON-LD `WebSite`; a CSP não bloqueia porque o JSON-LD é dado e não roda. O `gerar` escreve `robots.txt` e `sitemap.xml` com todas as páginas em todos os idiomas. O `testar` confere, na página inicial de cada idioma, title de até 60 caracteres e description entre 140 e 160 (chinês e japonês ficam de fora da faixa).

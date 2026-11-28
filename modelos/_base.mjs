@@ -2,7 +2,7 @@
 // O `d` que cada `render(d)` recebe é montado em scripts/gerar.mjs (veja modelos/CONTRATO.md).
 
 import { esc } from '../scripts/util.mjs';
-import { SITE, LOGO, SOL_LUA } from '../src/layout.mjs';
+import { SITE, LOGO, SOL_LUA, beaconCloudflare } from '../src/layout.mjs';
 import { TEMAS_ALTERNATIVOS } from '../src/temas.mjs';
 
 export { esc, LOGO, SOL_LUA, TEMAS_ALTERNATIVOS };
@@ -34,9 +34,9 @@ export function head(id, d, { titulo, descricao } = {}) {
 </head>`;
 }
 
-/** Scripts do fim do `<body>`: seletor de visual (obrigatório) e os do visual (`/<id>/filtro.js`). */
+/** Scripts do fim do `<body>`: seletor de visual (obrigatório), os do visual (`/<id>/filtro.js`) e o beacon do Cloudflare Web Analytics (se houver token). */
 export function scripts(id, d, arquivos = ['filtro.js']) {
-  return [`<script src="/assets/visual.js?v=${d.versao}"></script>`, ...arquivos.map((a) => `<script src="/${id}/${a}?v=${d.versao}" defer></script>`)].join('\n');
+  return [`<script src="/assets/visual.js?v=${d.versao}"></script>`, ...arquivos.map((a) => `<script src="/${id}/${a}?v=${d.versao}" defer></script>`), beaconCloudflare().trim()].filter(Boolean).join('\n');
 }
 
 /** Visuais alternativos que existem (pasta com modelo.mjs), na ordem de src/temas.mjs. */

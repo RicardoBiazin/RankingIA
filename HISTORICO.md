@@ -1,5 +1,13 @@
 # Histórico
 
+## 0.12.1 — 28/11/2026
+
+Liga o Cloudflare Web Analytics (sem cookies) em todas as páginas.
+
+- `cloudflareToken` preenchido em `src/perfil.mjs`; o beacon sai em todas as páginas do Padrão (`src/layout.mjs`) e agora também nos visuais Instagram, Lens e Apple (`beaconCloudflare()` exportado pelo layout e usado em `modelos/_base.mjs`), que antes ficavam sem o beacon.
+- Teste novo: com token, as 4873 páginas (todos os idiomas, modelos, 404 e visuais) têm o beacon uma vez com o token certo; sem token, nenhuma tem. O token precisa ter 32 hexadecimais.
+- O site não tem política de privacidade nem aviso de cookies, então não há texto a corrigir; a CSP já liberava só os dois domínios do Cloudflare.
+
 ## 0.12.0 — 28/11/2026
 
 Os visuais Instagram, Lens e Apple mostram o logo original da empresa/IA no lugar da inicial.
