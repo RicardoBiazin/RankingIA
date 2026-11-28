@@ -1,6 +1,6 @@
 {
  "fonte": "openrouter",
- "coletadoEm": "2026-11-28T15:59:16.652Z",
+ "coletadoEm": "2026-11-28T17:16:38.948Z",
  "modelos": [
   {
    "origem": "inclusionai/lingsante-3.1-air-vl",
@@ -1183,8 +1183,8 @@
    "chave": "hy4",
    "nome": "Hy4 preview",
    "empresa": "Tencent",
-   "precoEntrada": 0.834,
-   "precoSaida": 2.501,
+   "precoEntrada": 0.7506,
+   "precoSaida": 2.2509,
    "contexto": 1048576,
    "lancamento": "2026-08-28",
    "aberto": true,
@@ -1711,8 +1711,8 @@
    "chave": "hy3",
    "nome": "Hy3",
    "empresa": "Tencent",
-   "precoEntrada": 0.132,
-   "precoSaida": 0.528,
+   "precoEntrada": 0.0825,
+   "precoSaida": 0.33,
    "contexto": 262144,
    "lancamento": "2026-07-06",
    "aberto": true,
